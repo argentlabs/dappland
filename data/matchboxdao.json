@@ -1,0 +1,34 @@
+{
+  "name": "MatchBoxDAO",
+  "description": "MatchboxDAO is a collective of developers, artists, and designers building the infrastructure of on-chain game with StarkNet",
+  "short_description": "DAO to ignite and fuel fully on-chain games",
+  "tags": ["DAOs"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://matchboxdao.com/?utm_source=dappland",
+    "careers": "",
+    "twitter": "https://twitter.com/matchbox_dao",
+    "telegram": "",
+    "discord": "https://discord.gg/g3GRRngN",
+    "github": "https://github.com/Matchbox-DAO",
+    "youtube": "https://www.youtube.com/channel/UCpvSkagEOgWD_hGC0Q8M9cw",
+    "medium": "",
+    "mirror": "https://mirror.xyz/matchboxdao.eth"
+  },
+  "twitterName": "matchbox_dao",
+  "teamInfo": {
+    "founded": "2022-02-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/matchbox/dapp-icon-matchbox.png",
+    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/matchbox/dapp-header-matchbox.jpg",
+    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/matchbox/dapp-preview-matchbox.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}

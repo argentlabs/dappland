@@ -1,0 +1,39 @@
+{
+  "name": "Alpha Road",
+  "description": "Alpha Road is a decentralized non-custodial platform allowing users to exploit unique financial products in a secure, efficient and simple way.\nBuilt on Starknet, the safest and most powerful Layer 2 scaling solution on Ethereum, it allows us to leverage on the most secure network while maximizing performance and user experience on DeFi Ecosystem.",
+  "short_description": "One-click AMM",
+  "tags": ["DeFi", "NFTs"],
+  "contracts": [],
+  "goerliContracts": [
+    {
+      "name": "SwapController",
+      "address": "0x4aec73f0611a9be0524e7ef21ab1679bdf9c97dc7d72614f15373d431226b6a"
+    }
+  ],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://testnet.app.alpharoad.fi/?utm_source=dappland",
+    "careers": "https://linktr.ee/alpharoad_fi/?utm_source=dappland",
+    "twitter": "https://twitter.com/alpharoad_fi",
+    "telegram": "https://t.me/alpharoad_fi",
+    "discord": "https://discord.gg/alpharoad-fi",
+    "github": "",
+    "youtube": "",
+    "medium": "https://alpharoad.medium.com/",
+    "mirror": ""
+  },
+  "twitterName": "alpharoad_fi",
+  "teamInfo": {
+    "founded": "",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/alpha-road/dapp-icon-alpha-road.png",
+    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/alpha-road/dapp-header-alpha-road.png",
+    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/alpha-road/dapp-header-alpha-road.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}

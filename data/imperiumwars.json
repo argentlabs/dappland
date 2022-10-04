@@ -1,0 +1,34 @@
+{
+  "name": "Imperium Wars",
+  "description": "A Conquer to Earn NFT game where five empires from all over the globe will ally, betray and fight in order to reach Glory and Fortune.",
+  "short_description": "A Conquer and Earn NFT game",
+  "tags": ["Games", "NFTs"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://imperiumwars.xyz/?utm_source=dappland",
+    "careers": "",
+    "twitter": "https://twitter.com/ImperiumWars",
+    "telegram": "",
+    "discord": "https://discord.gg/VqXSJaeFK4",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "ImperiumWars",
+  "teamInfo": {
+    "founded": "2022-06-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://pbs.twimg.com/profile_images/1532442782031396867/4mQEWxX8_400x400.jpg",
+    "bannerUrl": "https://pbs.twimg.com/profile_banners/1532439497488617504/1658075155/1500x500",
+    "previewUrl": "https://pbs.twimg.com/profile_banners/1532439497488617504/1658075155/1500x500",
+    "videoUrl": "",
+    "gallery": []
+  }
+}

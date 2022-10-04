@@ -1,0 +1,53 @@
+{
+  "name": "Aspect",
+  "description": "Aspect is an NFT marketplace built on the most scalable and secure layer 2 blockchain on Ethereum.",
+  "short_description": "Discover and trade NFTs",
+  "tags": ["NFTs", "Social"],
+  "contracts": [
+    {
+      "name": "Aspect NFT Marketplace",
+      "address": "0x06e0d9c78d2e51bd2c9017771fb038ddab1cd224ed5ad603bf96f06060714751"
+    }
+  ],
+  "goerliContracts": [
+    {
+      "name": "0x06e0d9c78d2e51bd2c9017771fb038ddab1cd224ed5ad603bf96f06060714751",
+      "address": "0x06e0d9c78d2e51bd2c9017771fb038ddab1cd224ed5ad603bf96f06060714751"
+    }
+  ],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://aspect.co/?utm_source=dappland",
+    "careers": "mailto:jobs@aspect.co?subject=Job+enquiry+via+Dappland",
+    "twitter": "https://twitter.com/aspectdotco",
+    "telegram": "https://t.me/aspectco",
+    "discord": "http://discord.gg/aR2U7KtbgD",
+    "github": "https://github.com/aspectco",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "aspectdotco",
+  "teamInfo": {
+    "founded": "2022-01-24T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/aspect/dapp-icon-aspect.png",
+    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/aspect/dapp-header-aspect.png",
+    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/aspect/dapp-header-aspect.png",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/aspect/aspect-01.jpg",
+        "description": "Aspect is a NFT marketplace on StarkNet"
+      },
+      {
+        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/aspect/aspect-02.jpg",
+        "description": "Aspect NFT marketplace listings"
+      }
+    ]
+  }
+}

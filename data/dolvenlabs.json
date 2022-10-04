@@ -1,0 +1,51 @@
+{
+  "name": "Dolven Labs",
+  "description": "Dolven Labs is a DAO Based Ecosystem Catalyst for projects built on the StarkNet Network it is an initiative to empower, accelerate and support innovative projects in the StarkNet ecosystem by providing them with early-stage investment. We aim to be the future of investment, deal flow, and value creation in the StarkNet ecosystem.",
+  "short_description": "DAO Based Ecosystem Catalyst for projects built on Starknet",
+  "tags": ["DAOs", "DeFi"],
+  "contracts": [],
+  "goerliContracts": [
+    {
+      "name": "StrategyVault",
+      "address": "0x02dcc7bbea2ddbefa7492a10df128cfebaf3bf532a6ac168222d0adb64c917a9"
+    },
+    {
+      "name": "Undelegate Strategy",
+      "address": "0x0155bf4832449a8df5e8373c3f5ec05173cef62cdf3e9021fc0eca3b0019113e"
+    },
+    {
+      "name": "DL Distributor",
+      "address": "0x033531b2a6fca8b928b64da1b93dd8f463611da0915cce7f5150d559a18075cc"
+    },
+    {
+      "name": "DLV Token",
+      "address": "0x01dd02e3ced0361cf2de88c692d98c4b359d8a76ba60826051e41236a7ed9a73"
+    }
+  ],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://dolvenlabs.com/?utm_source=dappland",
+    "careers": "mailto:info@dolvenlabs.com?subject=Job+enquiry+via+Dappland",
+    "twitter": "https://twitter.com/dolvenlabs",
+    "telegram": "https://t.me/dolven_announcements",
+    "discord": "https://discord.com/invite/dolvenlabs",
+    "github": "https://github.com/dolven-labs-catalyst",
+    "youtube": "https://www.youtube.com/channel/UCfeZ1L1BHyOQvE9_a8xRPrQ",
+    "medium": "https://medium.com/@dolvenlabs",
+    "mirror": ""
+  },
+  "twitterName": "dolvenlabs",
+  "teamInfo": {
+    "founded": "2022-02-21T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/dolven/dapp-icon-dolven.png",
+    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/dolven/dapp-header-dolven.jpg",
+    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/dolven/dapp-preview-dolven.jpg",
+    "videoUrl": "",
+    "gallery": []
+  }
+}

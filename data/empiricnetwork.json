@@ -1,0 +1,47 @@
+{
+  "name": "Empiric Network",
+  "description": "Empiric is the leading oracle on StarkNet. Live with 20+ price feeds - powered by data sources that send their proprietary market data directly on-chain, including Alameda Research, Jane Street, Gemini, & more. Empiric's robust feeds empower leading protocols like zkLend, Nostra, Serity & CurveZero to access data that is as verifiable, transparent & secure as the smart contracts themselves.",
+  "short_description": "Decentralized & composable data infrastructure",
+  "tags": ["Oracles"],
+  "contracts": [],
+  "goerliContracts": [
+    {
+      "name": "PublisherRegistry",
+      "address": "https://goerli.voyager.online/contract/0x0743e8140a56d5ee9ed08eb77a92bcbcf8257da34ab2a2ee93110709e61ab11a"
+    },
+    {
+      "name": "OracleController",
+      "address": "https://goerli.voyager.online/contract/0x012fadd18ec1a23a160cc46981400160fbf4a7a5eed156c4669e39807265bcd4"
+    },
+    {
+      "name": "OracleImplementation (primary)",
+      "address": "https://goerli.voyager.online/contract/0x05a88457f9292d0596090300713e80724631024e7a92989302d458271c98cad4"
+    }
+  ],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://empiric.network/?utm_source=dappland",
+    "careers": "https://empiric.network/about/?utm_source=dappland",
+    "twitter": "https://twitter.com/EmpiricNetwork",
+    "telegram": "",
+    "discord": "https://discord.gg/N7sM7VzfJB",
+    "github": "https://github.com/42labs",
+    "youtube": "",
+    "medium": "https://medium.com/@EmpiricNetwork",
+    "mirror": ""
+  },
+  "twitterName": "EmpiricNetwork",
+  "teamInfo": {
+    "founded": "2022-04-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/empiric/dapp-icon-empiric.png",
+    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/empiric/dapp-header-empiric.jpg",
+    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/empiric/dapp-preview-empiric.jpg",
+    "videoUrl": "",
+    "gallery": []
+  }
+}

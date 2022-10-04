@@ -1,0 +1,34 @@
+{
+  "name": "Banxa",
+  "description": "Banxa is the world's leading fiat to crypto on-ramp having been in operation since 2014.\nBanxa's pioneering  infrastructure  provides easy access to enterprise-grade core payments and local regulatory infrastructure meaning higher conversions, higher transaction sizes, cheaper fees all using local currencies and bank transfer options.",
+  "short_description": "The leading global on & off-ramp solution",
+  "tags": ["Onramps", "DeFi", "Bridges"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://www.banxa.com/?utm_source=dappland",
+    "careers": "https://banxa.com/careers/?utm_source=dappland",
+    "twitter": "https://twitter.com/BanxaOfficial",
+    "telegram": "",
+    "discord": "",
+    "github": "",
+    "youtube": "https://www.youtube.com/channel/UCKSlMGMv-WmruOUx2ho3OyA",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "BanxaOfficial",
+  "teamInfo": {
+    "founded": "2014-01-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/banxa/dapp-icon-banxa.png",
+    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/banxa/dapp-header-banxa.png",
+    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/banxa/dapp-preview-banxa.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}

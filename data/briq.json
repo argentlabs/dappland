@@ -1,0 +1,61 @@
+{
+  "name": "briq",
+  "description": "briq is an NFT construction protocol based around fundamental elements called briqs. You can assemble your briqs into an NFT and disassemble it to get the briqs back and build something else. briqs are NFT building blocks!",
+  "short_description": "The NFT building protocol",
+  "tags": ["NFTs", "Games"],
+  "contracts": [],
+  "goerliContracts": [
+    {
+      "name": "briq contract",
+      "address": "0x01317354276941f7f799574c73fd8fe53fa3f251084b4c04d88cf601b6bd915e"
+    },
+    {
+      "name": "Set contract",
+      "address": "0x0266b1276d23ffb53d99da3f01be7e29fa024dd33cd7f7b1eb7a46c67891c9d0"
+    }
+  ],
+  "audits": [
+    {
+      "name": "Nethermind audit #1",
+      "url": "https://drive.google.com/file/d/1NACPVVtGuic_GS5MqsconqcRJt423BO5/view?usp=sharing"
+    }
+  ],
+  "dotw": false,
+  "links": {
+    "website": "https://briq.construction/?utm_source=dappland",
+    "careers": "",
+    "twitter": "https://twitter.com/briqNFT",
+    "telegram": "",
+    "discord": "http://discord.gg/kpvbDCw5pr",
+    "github": "https://github.com/briqNFT/",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "briqNFT",
+  "teamInfo": {
+    "founded": "2021-09-24T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/briq/dapp-icon-briq.png",
+    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/briq/dapp-header-briq.png",
+    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/briq/dapp-preview-briq.png",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/briq/briq-01.jpg",
+        "description": "briq homepage – build NFTs using briqs (voxels) on StarkNet"
+      },
+      {
+        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/briq/briq-02.jpg",
+        "description": "briq gallery – construct your NFTs using briqs (voxels) on StarkNet"
+      },
+      {
+        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/briq/briq-03.jpg",
+        "description": "briq construction interface"
+      }
+    ]
+  }
+}

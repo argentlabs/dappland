@@ -1,0 +1,60 @@
+{
+  "name": "Frens Lands",
+  "description": "Frens Lands is an on-chain world builder RTS game built on StarkNet. Harvest resources & create your dream community.",
+  "short_description": "World builder game to create your dream community",
+  "tags": ["NFTs", "Games"],
+  "contracts": [],
+  "goerliContracts": [
+    {
+      "name": "Lands (erc721)",
+      "address": "0x052c936c5624517d671a6378ab0ede31e4c6d4584357ebb432bb1313af93599c"
+    },
+    {
+      "name": "Game",
+      "address": "0x00a7a315c7463b4bc491239e1d995fe736fe4830d3345d109a25182fb918ddd2"
+    },
+    {
+      "name": "Building",
+      "address": "0x0442d2bfd1e20db5b59286805727241e3f26e37c223c2eed852f1a9450476c00"
+    }
+  ],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://www.frenslands.xyz/?utm_source=dappland",
+    "careers": "",
+    "twitter": "https://twitter.com/FrensLands",
+    "telegram": "",
+    "discord": "https://discord.gg/gehYZU9Trf",
+    "github": "https://github.com/FrensLands",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "FrensLands",
+  "teamInfo": {
+    "founded": "2022-07-03T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://www.frenslands.xyz/resources/front/Press_Logo_TrueScale.png",
+    "bannerUrl": "https://www.frenslands.xyz/resources/front/Press_Banner400x160_4.png",
+    "previewUrl": "https://www.frenslands.xyz/resources/front/Press_Banner400x160_4.png",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "https://www.frenslands.xyz/resources/screens/1.png",
+        "description": "Frens Lands grass biome"
+      },
+      {
+        "url": "https://www.frenslands.xyz/resources/screens/2.png",
+        "description": "Frens Lands shadow biome"
+      },
+      {
+        "url": "https://www.frenslands.xyz/resources/screens/3.png",
+        "description": "Frens Lands mountain biome"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "StarkBoard",
+  "description": "StarkBoard is the go-to dashboard tracking StarkNet related metrics. It's also the best way to keep up with the whole ecosystem.",
+  "short_description": "Analytics Data Hub",
+  "tags": ["Social", "DAOs", "Oracles"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://starkboard.io?utm_source=dappland",
+    "careers": "",
+    "twitter": "https://twitter.com/starkboard",
+    "telegram": "",
+    "discord": "https://discord.gg/starkboard",
+    "github": "",
+    "youtube": "",
+    "medium": "https://medium.com/@starkboard/starkboard-keep-up-with-starknet-5a1e37fb31df",
+    "mirror": ""
+  },
+  "twitterName": "starkboard",
+  "teamInfo": {
+    "founded": "2022-06-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkboard/dapp-icon-starkboard.png",
+    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkboard/dapp-header-starkboard.png",
+    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkboard/dapp-preview-starkboard.png",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkboard/starkboard-01.png",
+        "description": "StarkNet total value locked (TVL) on Starkboard"
+      },
+      {
+        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkboard/starkboard-02.png",
+        "description": "StarkNet total wallets evolution on Starkboard"
+      },
+      {
+        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkboard/starkboard-03.png",
+        "description": "StarkNet ecosystem on Starkboard"
+      }
+    ]
+  }
+}

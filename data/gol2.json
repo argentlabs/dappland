@@ -1,0 +1,34 @@
+{
+  "name": "GoL2",
+  "description": "Game of Life (also knows as \"Life\"), is the most well known example of a cellular automaton. With StarkNet, Game of Life transitions can be computed inside the contract, with each of the 225 cells living or dying according to the game rules. These rules are enforced by a STARK proof, which then displays the game updates to Ethereum - this means the results are guaranteed to be correct.",
+  "short_description": "Experiment in Layer 2 gaming",
+  "tags": ["Games"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://www.gol2.io/?utm_source=dappland",
+    "careers": "https://www.yuki.wtf/?utm_source=dappland",
+    "twitter": "https://twitter.com/GoL2io",
+    "telegram": "",
+    "discord": "",
+    "github": "https://github.com/yuki-wtf/GoL2-Feedback/discussions",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "GoL2io",
+  "teamInfo": {
+    "founded": "2022-02-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/gol2/dapp-icon-gol2.png",
+    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/gol2/dapp-header-gol2.png",
+    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/gol2/dapp-preview-gol2.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}

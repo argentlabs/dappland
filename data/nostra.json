@@ -1,0 +1,34 @@
+{
+  "name": "Nostra",
+  "description": "Nostra is a permissionless non-custodial lending and borrowing protocol built on StarkNet, where everyday users can lend and borrow crypto assets without the need for a trusted third party to act as an intermediary.",
+  "short_description": "Liquidity at your fingertips",
+  "tags": ["DeFi"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://nostra.finance/?utm_source=dappland",
+    "careers": "https://angel.co/company/tempusfinance/jobs",
+    "twitter": "https://twitter.com/nostrafinance",
+    "telegram": "https://www.t.me/nostrafinance",
+    "discord": "https://discord.com/invite/Eqp53YafYP",
+    "github": "",
+    "youtube": "https://www.youtube.com/channel/UCNpgWHKk22_zmpQHMt7Hg-w",
+    "medium": "",
+    "mirror": "https://mirror.xyz/0x845605C411132BAA06024a521a85B653F3C802dF"
+  },
+  "twitterName": "nostrafinance",
+  "teamInfo": {
+    "founded": "2022-08-15T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/nostra/dapp-icon-nostra.png",
+    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/nostra/dapp-header-nostra.png",
+    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/nostra/dapp-preview-nostra.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
