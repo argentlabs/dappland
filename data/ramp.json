@@ -1,0 +1,39 @@
+{
+  "name": "Ramp",
+  "description": "Ramp is building the infrastructure to seamlessly connect Web3 with today’s global financial system. Through its core on- and off-ramp products, Ramp provides businesses and individuals across 150+ countries with a streamlined conversion between crypto and fiat. Ramp supports the major global payment methods, including debit and credit cards, bank transfers, Apple Pay, Google Pay, and more.",
+  "short_description": "Safe and easy way to buy crypto",
+  "tags": ["Onramps"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [
+    {
+      "name": "App penetration tests conducted by Securitum.",
+      "url": "https://research.securitum.com/penetration-testing/"
+    }
+  ],
+  "dotw": false,
+  "links": {
+    "website": "https://ramp.network/",
+    "careers": "https://join.ramp.network/",
+    "twitter": "https://twitter.com/RampNetwork",
+    "telegram": "",
+    "discord": "https://discord.gg/vTwqTcsq",
+    "github": "https://github.com/rampnetwork",
+    "youtube": "https://www.youtube.com/channel/UC3dMUc4V0ucYwf8c9a925yA",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "RampNetwork",
+  "teamInfo": {
+    "founded": "2018-10-10T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/ramp/dapp-icon-ramp.png",
+    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/ramp/dapp-header-ramp.png",
+    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/ramp/dapp-preview-ramp.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
