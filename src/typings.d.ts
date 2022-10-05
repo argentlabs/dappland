@@ -59,10 +59,10 @@ interface TeamInfo {
   founded: string
   anonymous: boolean
   name: string
-  tokenType: string
 }
 
 interface Token {
+  symbol: string
   address: string
 }
 
