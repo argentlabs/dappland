@@ -50,7 +50,7 @@ export const Layout = ({
           }
         />
         {description && <meta name="og:description" content={description} />}
-        {image && <meta name="og:image" content={image} />}
+        <meta name="og:image" content={image ?? "https://www.dappland.com/share-preview.png"} />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
