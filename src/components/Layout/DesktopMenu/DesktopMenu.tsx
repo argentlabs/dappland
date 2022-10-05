@@ -57,7 +57,7 @@ const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
           variant="primary"
           className="h-min"
           style={{ padding: "13px 24px", lineHeight: "normal" }}
-          href="https://github.com/argentlabs/dappland"
+          href="https://github.com/argentlabs/dappland#-add-your-dapp-to-dappland"
           target="_blank"
           rel="noopener noreferrer"
         >
