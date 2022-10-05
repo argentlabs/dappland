@@ -37,7 +37,10 @@ const Home = ({
       <div className="container px-4 mx-auto mb-16 lg:mb-32">
         <StyledSection className="lg:grid lg:mt-20">
           <FeaturedCard videoUrl="/promo.mp4" className="featured" />
-          <Categories className="categories" dappCards={dappCards} />
+          <Categories
+            className="categories lg:max-w-[340px]"
+            dappCards={dappCards}
+          />
           <div className="cards">
             <h3 className="lg:hidden font-semibold text-xl leading-none mb-5">
               All dapps
