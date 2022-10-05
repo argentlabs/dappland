@@ -161,7 +161,7 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
             variant="primary"
             className="w-full"
             withoutMobile
-            href="https://github.com/argentlabs/dappland"
+            href="https://github.com/argentlabs/dappland#-add-your-dapp-to-dappland"
             target="_blank"
             rel="noopener noreferrer"
           >
