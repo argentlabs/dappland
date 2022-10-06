@@ -1,0 +1,38 @@
+{
+    "name": "Early Starkers",
+    "description": "Early Starkers is the first non-freemint NFT collection of the StarkNet. There are 1234 ranked stars from 1 to 1234, which can be on-chain nameable by the owner. Also, every NFT star has a profile page and unique opportunities for the holders. Early Starkers is the community of pioneers, project owners, builders, researchers, adventurers and holders.",
+    "short_description": "1234 Star NFTs on the sky-map enable unique utilities and prove you are an Early Adopter on StarkNet",
+    "tags": [
+        "NFTs",
+        "Social",
+        "DAOs"
+    ],
+    "contracts": [
+        {
+            "name": "Main",
+            "address": "0x0708e824e3b83b1e9b644b52b9b9281f949acca5516f65a5df37f19bdc846a5b"
+        }
+    ],
+    "dotw": false,
+    "links": {
+        "website": "https://earlystarkers.io",
+        "careers": "'mailto:earlystarkers@proton.me",
+        "twitter": "https://twitter.com/earlystarkers "
+    },
+    "twitterName": "earlystarkers",
+    "teamInfo": {
+        "founded": "2022-07-19T00:00:00.000z",
+        "anonymous": "true"
+    },
+    "tokens": [
+        {
+            "address": "not yet!",
+            "symbol": "STARDUST"
+        }
+    ],
+    "media": {
+        "logoUrl": "https://i.ibb.co/3mbkn57/Early-Starkers-logo-320x320.png",
+        "bannerUrl": "https://i.ibb.co/SVpbDPT/early-starkers-1900x400.png",
+        "previewUrl": "https://i.ibb.co/chdPzRQ/Early-Starkers-header-700x400.png"
+    }
+}
