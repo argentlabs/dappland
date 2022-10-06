@@ -1,0 +1,74 @@
+{
+  "name": "Starksheet",
+  "description": "Like a spreadsheet, powered by the open web: each cell can call any contract using any on-chain data.",
+  "short_description": "The web3 spreadsheet",
+  "tags": [
+    "Onramp",
+    "DeFi",
+    "NFTs",
+    "Social",
+    "DAOs"
+  ], //Remove all that don't apply
+  "contracts": [
+    {
+      "name": "Starksheet",
+      "address": "0x028850a764600d53b2009b17428ae9eb980a4c4ea930a69ed8668048ef082a04"
+    },
+    {
+      "name": "Origin",
+      "address": "0x4acd4b2a59eae7196f6a5c26ead8cb5f9d7ad3d911096418a23357bb2eac075"
+    },
+    {
+      "name": "BasicCellRenderer",
+      "address": "0x0501c3c89faeecdd0f09d9d1c162caa401165f17dee32a224c6f6188fc16b7b1"
+    },
+    {
+      "name": "math",
+      "address": "0x00f3be869afa2abb57ab452c2659a2239cb4c83594902fd7f4d07d91316e9894" 
+    }
+  ],
+  "goerliContracts": [
+    [
+      {
+        "name": "Starksheet",
+        "address": "0x00b45604338d4d9b4daf5a8eb368b7d9d0447b2029d64684e47fd2fc4be3f497"
+      },
+      {
+        "name": "Origin",
+        "address": "0x160ced9da188040d8be670d95d68219fb11c2eebe6fa4cc1bdf5e36ae6b5f6c"
+      },
+      {
+        "name": "BasicCellRenderer",
+        "address": "0x048ee4bccae62f50ec929c757d1c53141ac3866e5ca67d5cff0edaa8e833f34b"
+      },
+      {
+        "name": "math",
+        "address": "0x021e46c69d5e116b2d7fce672cad513038ea9ad1d8a32050139201f6168cdf8c" 
+      }
+    ]
+  ],
+  "dotw": false, //leave 'false'
+  "links": {
+    "website": "https://www.starksheet.xyz",
+    "careers": "",
+    "twitter": "https://twitter.com/starksheet",
+    "telegram": "",
+    "discord": "https://discord.gg/BtuD5HguDX",
+    "github": "https://github.com/the-candy-shop/starksheet-monorepo",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "starksheet",
+  "teamInfo": {
+    "founded": "2022-05-24T00:00:00.000Z >",
+    "anonymous": false // If at least one of the founders has a public profile with their real name linked to the project, set this to true.
+  },
+  "media": {
+    "logoUrl": "https://github.com/the-candy-shop/starksheet-monorepo/raw/testnet/packages/starksheet-webapp/public/Starksheet%20512.png",
+    "bannerUrl": "https://raw.githubusercontent.com/the-candy-shop/starksheet-monorepo/testnet/packages/starksheet-webapp/public/Banner.png",
+    "previewUrl": "https://raw.githubusercontent.com/the-candy-shop/starksheet-monorepo/testnet/packages/starksheet-webapp/public/starksheet-preview.png",
+    "videoUrl": "https://www.loom.com/share/2ac2ff08bd28421184061dd9a0145fe1",
+    "gallery": []
+  }
+}
