@@ -38,7 +38,7 @@
     "logoUrl": "https://public-rabbitx.s3.ap-northeast-1.amazonaws.com/square_logo_on_white_background.png",
     "bannerUrl": "https://public-rabbitx.s3.ap-northeast-1.amazonaws.com/rabbitX+logo++%2B+horizontal+%2B+dark.png",
     "previewUrl": "https://public-rabbitx.s3.ap-northeast-1.amazonaws.com/logo/Logo1/Light+Background/Logo.png",
-    "videoUrl": "<URL for a video of the dapp (hosted externally)>",
+    "videoUrl": "",
     "gallery": [
     ]
   }
