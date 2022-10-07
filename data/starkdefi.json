@@ -1,0 +1,38 @@
+{
+  "name": "StarkDefi",
+  "description": "A permissionless & trustless hub of comprehensive defi solutions to leverage ZK-Rollup on StarkNet's L2",
+  "short_description": "The Portal to StarkNet",
+  "tags": [
+    "DeFi",
+    "Games",
+    "NFTs"
+  ],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://www.starkdefi.com",
+    "careers": "mailto:careers@starkdefi.com",
+    "twitter": "https://twitter.com/StarkDefi",
+    "telegram": "https://t.me/starkdefi_ann",
+    "discord": "https://discord.com/invite/starkdefi",
+    "github": "https://github.com/Starkdefi",
+    "youtube": "https://www.youtube.com/channel/UCNx0pPz1eIu63LM2w5R-NTQ",
+    "medium": "https://starkdefi.medium.com/",
+    "mirror": ""
+  },
+  "twitterName": "StarkDefi",
+  "teamInfo": {
+    "founded": "2022-02-13T08:30:00.000Z",
+    "anonymous": false 
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://www.starkdefi.com/dapland/logo.jpg",
+    "bannerUrl": "https://www.starkdefi.com/dapland/starkdefi-banner.png",
+    "previewUrl": "https://www.starkdefi.com/dapland/preview-url.jpg",
+    "videoUrl": "https://www.starkdefi.com/dapland/preview-video.mp4",
+    "gallery": []
+  }
+}
