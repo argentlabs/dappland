@@ -27,6 +27,7 @@ const nextConfig = {
       "www.frenslands.xyz",
       "raw.githubusercontent.com",
       "lh3.googleusercontent.com",
+      "i.ibb.co"
     ],
   },
   experimental: {
