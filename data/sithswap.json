@@ -5,7 +5,12 @@
   "tags": ["DeFi"],
   "contracts": [],
   "goerliContracts": [],
-  "audits": [],
+  "audits": [
+    {
+      "name": "Nethermind Cairo Audit (AMM)",
+      "url": "https://gateway.pinata.cloud/ipfs/QmVazibGDwm8UsZL466NnW1UDZ4dWZ3oSVyuqZQ71TYhdP"
+    }
+  ],
   "dotw": false,
   "links": {
     "website": "https://sithswap.com/",
