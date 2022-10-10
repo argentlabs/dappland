@@ -27,7 +27,7 @@ const nextConfig = {
       "www.frenslands.xyz",
       "raw.githubusercontent.com",
       "lh3.googleusercontent.com",
-      "starkdefi.com",
+      "www.starkdefi.com",
     ],
   },
   experimental: {
