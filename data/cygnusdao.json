@@ -1,0 +1,43 @@
+{
+  "name": "CygnusDAO",
+  "description": "CygnusDAO is a decentralized Stablecoin Lending and Margin Trading protocol. Lenders can supply their stablecoins in isolated lending pools acting as investors in these without the risk of impermanent loss. Borrowers can deposit their LP Tokens as collateral to borrow these stablecoins or leverage their position up to 13x. Cygnus aims to bring profitability to liquidity providers and stablecoin hodlers alike.",
+  "short_description": "Decentralized Stablecoin Lending and Margin Trading Protocol",
+  "tags": ["DeFi", "DAOs"],
+  "contracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://cygnusdao.finance",
+    "careers": "",
+    "twitter": "https://twitter.com/CygnusDAO",
+    "telegram": "",
+    "discord": "",
+    "github": "https://github.com/CygnusDAO",
+    "youtube": "",
+    "medium": "https://cygnusdao.medium.com/",
+    "mirror": ""
+  },
+  "twitterName": "CygnusDAO",
+  "teamInfo": {
+    "founded": "2022-03-15T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [
+    {
+      "address": "",
+      "symbol": "CYG"
+    }
+  ],
+  "media": {
+    "logoUrl": "https://2711419109-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FNOhzFVgSva7KRpPaSAC9%2Fuploads%2FpEUi2PgR8jttx71DsV0y%2Fcyx-coin-upg-large.png?alt=media&token=96b37be7-b93c-444f-b4bf-1badbed687f4",
+    "bannerUrl": "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FNOhzFVgSva7KRpPaSAC9%2Fuploads%2FpgOgNFjxv1XdinhpEjxq%2Fbanner.png?alt=media&token=a1c472eb-9d1e-40a5-877a-e963ab90a1df",
+    "previewUrl": "",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FNOhzFVgSva7KRpPaSAC9%2Fuploads%2FTjQ7Oou2nNHu3G9wVI3X%2Fimage.png?alt=media&token=cf2bc8ca-1ebc-4791-a2f9-94ab1e1cc66a",
+        "description": "DAO Revenue Vault"
+      }
+    ]
+  }
+}
