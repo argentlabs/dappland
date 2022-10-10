@@ -3,12 +3,12 @@
   "description": "Like a spreadsheet, powered by the open web: each cell can call any contract using any on-chain data.",
   "short_description": "The web3 spreadsheet",
   "tags": [
-    "Onramp",
     "DeFi",
     "NFTs",
-    "Social",
     "DAOs"
-  ], //Remove all that don't apply
+  ],
+  "audits": [],
+  "tokens": [],
   "contracts": [
     {
       "name": "Starksheet",
@@ -47,7 +47,7 @@
       }
     ]
   ],
-  "dotw": false, //leave 'false'
+  "dotw": false,
   "links": {
     "website": "https://www.starksheet.xyz",
     "careers": "",
@@ -61,8 +61,8 @@
   },
   "twitterName": "starksheet",
   "teamInfo": {
-    "founded": "2022-05-24T00:00:00.000Z >",
-    "anonymous": false // If at least one of the founders has a public profile with their real name linked to the project, set this to true.
+    "founded": "2022-05-24T00:00:00.000Z",
+    "anonymous": false
   },
   "media": {
     "logoUrl": "https://github.com/the-candy-shop/starksheet-monorepo/raw/testnet/packages/starksheet-webapp/public/Starksheet%20512.png",
