@@ -28,6 +28,7 @@ const nextConfig = {
       "raw.githubusercontent.com",
       "lh3.googleusercontent.com",
       "www.starkdefi.com",
+      "static.cartridge.gg",
     ],
   },
   experimental: {

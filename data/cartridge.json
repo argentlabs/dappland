@@ -1,0 +1,34 @@
+{
+  "name": "Cartridge",
+  "description": "Starknet Gaming Console. Play your favorite games.",
+  "short_description": "Starknet Gaming Console",
+  "tags": ["Games"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://cartridge.gg/",
+    "careers": "",
+    "twitter": "https://twitter.com/cartridge_gg",
+    "telegram": "",
+    "discord": "https://discord.gg/cartridge",
+    "github": "https://github.com/cartridge-gg",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "cartridge_gg",
+  "teamInfo": {
+    "founded": "2022-04-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://static.cartridge.gg/logo.jpeg",
+    "bannerUrl": "https://static.cartridge.gg/banner.png",
+    "previewUrl": "https://static.cartridge.gg/preview.jpeg",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
