@@ -60,7 +60,12 @@ const DappPageTwitter = ({ dappInfo, twitterPosts }: DappPageTwitterProps) => {
                     href={`https://twitter.com/${twitterPosts.includes.users[0].username}/status/${post.id}`}
                   >
                     <a target="_blank" rel="noopener noreferrer">
-                      <Image src={twitter} alt="icon twitter" />
+                      <Image
+                        src={twitter}
+                        alt="icon twitter"
+                        width={24}
+                        height={24}
+                      />
                     </a>
                   </Link>
                 </div>

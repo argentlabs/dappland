@@ -1,10 +1,11 @@
-import DiscordIcon from "../../assets/icons/socials/icon-discord.icon.svg"
-import GithubIcon from "../../assets/icons/socials/icon-github.icon.svg"
-import MediumIcon from "../../assets/icons/socials/icon-medium.icon.svg"
-import MirrorIcon from "../../assets/icons/socials/icon-mirror.icon.svg"
-import TelegramIcon from "../../assets/icons/socials/icon-telegram.icon.svg"
-import TwitterIcon from "../../assets/icons/socials/icon-twitter.icon.svg"
-import YoutubeIcon from "../../assets/icons/socials/icon-youtube.icon.svg"
+import discordIcon from "../../assets/icons/socials/icon-discord.icon.svg"
+import githubIcon from "../../assets/icons/socials/icon-github.icon.svg"
+import mediumIcon from "../../assets/icons/socials/icon-medium.icon.svg"
+import mirrorIcon from "../../assets/icons/socials/icon-mirror.icon.svg"
+import telegramIcon from "../../assets/icons/socials/icon-telegram.icon.svg"
+import twitterIcon from "../../assets/icons/socials/icon-twitter.icon.svg"
+import youtubeIcon from "../../assets/icons/socials/icon-youtube.icon.svg"
+import Image from "next/image"
 import Link from "next/link"
 import styled from "styled-components"
 
@@ -24,13 +25,21 @@ interface SocialLinkProps {
 const icons: {
   [key in keyof Partial<Links>]: any
 } = {
-  discord: <DiscordIcon />,
-  github: <GithubIcon />,
-  mirror: <MirrorIcon />,
-  medium: <MediumIcon />,
-  twitter: <TwitterIcon />,
-  youtube: <YoutubeIcon />,
-  telegram: <TelegramIcon />,
+  discord: (
+    <Image src={discordIcon} alt="discord icon" height={24} width={24} />
+  ),
+  github: <Image src={githubIcon} alt="github icon" height={24} width={24} />,
+  medium: <Image src={mediumIcon} alt="medium icon" height={24} width={24} />,
+  mirror: <Image src={mirrorIcon} alt="mirror icon" height={24} width={24} />,
+  telegram: (
+    <Image src={telegramIcon} alt="telegram icon" height={24} width={24} />
+  ),
+  twitter: (
+    <Image src={twitterIcon} alt="twitter icon" height={24} width={24} />
+  ),
+  youtube: (
+    <Image src={youtubeIcon} alt="youtube icon" height={24} width={24} />
+  ),
 }
 
 const SocialLink = ({ name, link }: SocialLinkProps) => {

@@ -25,10 +25,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/nostra/dapp-icon-nostra.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/nostra/dapp-header-nostra.png",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/nostra/dapp-preview-nostra.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/nostra/dapp-icon-nostra.png",
+    "bannerUrl": "/dapps/nostra/dapp-header-nostra.png",
+    "previewUrl": "/dapps/nostra/dapp-preview-nostra.png",
     "gallery": []
   }
 }

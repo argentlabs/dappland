@@ -5,24 +5,8 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  webpack(config) {
-    const fileLoaderRule = config.module.rules.find(
-      (rule) => rule.test && rule.test.test(".svg"),
-    )
-    fileLoaderRule.exclude = /\.icon\.svg$/
-    config.module.rules.push({
-      test: /\.icon\.svg$/,
-      loader: require.resolve("@svgr/webpack"),
-    })
-    return config
-  },
   images: {
-    domains: [
-      "dv3jj1unlp2jl.cloudfront.net",
-      "pbs.twimg.com",
-      "www.frenslands.xyz",
-      "static.cartridge.gg",
-    ],
+    domains: ["pbs.twimg.com"], // to load images from twitter
   },
   experimental: {
     scrollRestoration: true,

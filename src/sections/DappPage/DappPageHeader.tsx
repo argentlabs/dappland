@@ -1,7 +1,5 @@
-import award from "../../assets/award-dotw.png"
 import expandIcon from "../../assets/icons/expand.svg"
 import flagIcon from "../../assets/icons/flag.svg"
-import shareIcon from "../../assets/icons/share.svg"
 import Button from "../../components/Button/Button"
 import SocialLink from "../../components/SocialLink/SocialLink"
 import Tag from "../../components/Tag/Tag"
@@ -61,7 +59,12 @@ const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
                 >
                   {new URL(dappInfo.links.website).hostname}
                   <sup className="ml-2">
-                    <Image src={expandIcon} alt="expand icon" />
+                    <Image
+                      src={expandIcon}
+                      alt="expand icon"
+                      width={24}
+                      height={24}
+                    />
                   </sup>
                 </a>
               </Link>
@@ -73,7 +76,7 @@ const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
             rel="noopener noreferrer"
             className="flex items-center font-semibold text-[15px] leading-[20px] text-lightgrey ml-4"
           >
-            <Image src={flagIcon} alt="flag icon" />
+            <Image src={flagIcon} alt="flag icon" width={24} height={24} />
             <span className="ml-2">Report</span>
           </a>
         </div>
@@ -110,11 +113,6 @@ const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
             ))}
           </div>
         </div>
-        {dappInfo.dotw && (
-          <div className="mt-12 max-w-[130px]">
-            <Image src={award} alt="award" />
-          </div>
-        )}
       </div>
     </section>
   )

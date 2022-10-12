@@ -34,29 +34,28 @@
     }
   ],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/realms/dapp-icon-realms.jpeg",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/realms/dapp-header-realms.jpeg",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/realms/dapp-preview-realms.jpeg",
-    "videoUrl": "",
+    "logoUrl": "/dapps/realms/dapp-icon-realms.jpeg",
+    "bannerUrl": "/dapps/realms/dapp-header-realms.jpeg",
+    "previewUrl": "/dapps/realms/dapp-preview-realms.jpeg",
     "gallery": [
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/realms/realms-01.jpeg",
+        "url": "/dapps/realms/realms-01.jpeg",
         "description": "A fully on-chain fantasy gaming universe that will run forever"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/realms/realms-02.jpeg",
+        "url": "/dapps/realms/realms-02.jpeg",
         "description": "You are free to build your might in the Realms however you please."
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/realms/realms-03.jpeg",
+        "url": "/dapps/realms/realms-03.jpeg",
         "description": "Will you build powerful armies to conquer your enemies?"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/realms/realms-04.jpeg",
+        "url": "/dapps/realms/realms-04.jpeg",
         "description": "Or master the markets to extend your influence?"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/realms/realms-05.jpeg",
+        "url": "/dapps/realms/realms-05.jpeg",
         "description": "Your orders, my Lord?"
       }
     ]

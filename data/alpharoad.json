@@ -30,10 +30,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/alpha-road/dapp-icon-alpha-road.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/alpha-road/dapp-header-alpha-road.png",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/alpha-road/dapp-header-alpha-road.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/alpharoad/dapp-icon-alpha-road.png",
+    "bannerUrl": "/dapps/alpharoad/dapp-header-alpha-road.png",
+    "previewUrl": "/dapps/alpharoad/dapp-header-alpha-road.png",
     "gallery": []
   }
 }

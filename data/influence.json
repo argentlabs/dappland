@@ -51,25 +51,25 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://pbs.twimg.com/profile_images/1401629107998298112/WEG3UrcU_400x400.jpg",
-    "bannerUrl": "https://pbs.twimg.com/profile_banners/971188623268827137/1638212080/1500x500",
-    "previewUrl": "https://pbs.twimg.com/profile_banners/971188623268827137/1638212080/1500x500",
-    "videoUrl": "https://www.youtube.com/watch?v=JkN57lZeLfI",
+    "logoUrl": "/dapps/influence/WEG3UrcU_400x400.jpg",
+    "bannerUrl": "/dapps/influence/1500x500.jpeg",
+    "previewUrl": "/dapps/influence/1500x500.jpeg",
+    "videoUrl": "/dapps/influence/watch.html; charset=utf-8",
     "gallery": [
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/influence/influence-01.jpg",
+        "url": "/dapps/influence/influence-01.jpg",
         "description": "Influence StarkNet space strategy game video still"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/influence/influence-02.jpg",
+        "url": "/dapps/influence/influence-02.jpg",
         "description": "Influence StarkNet MMO in game graphics"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/influence/influence-03.jpg",
+        "url": "/dapps/influence/influence-03.jpg",
         "description": "Asteroid closeup from Influence StarkNet MMO game"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/influence/influence-04.jpg",
+        "url": "/dapps/influence/influence-04.jpg",
         "description": "Asteroid from Influence StarkNet MMO game"
       }
     ]

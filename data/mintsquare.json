@@ -43,10 +43,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/mintsquare/dapp-icon-mintsquare.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/mintsquare/dapp-header-mintsquare.png",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/mintsquare/dapp-preview-mintsquare.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/mintsquare/dapp-icon-mintsquare.png",
+    "bannerUrl": "/dapps/mintsquare/dapp-header-mintsquare.png",
+    "previewUrl": "/dapps/mintsquare/dapp-preview-mintsquare.png",
     "gallery": []
   }
 }

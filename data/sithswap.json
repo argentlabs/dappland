@@ -30,21 +30,20 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://pbs.twimg.com/profile_images/1497535280512999424/HCaScPSz_400x400.jpg",
-    "bannerUrl": "https://pbs.twimg.com/profile_banners/1494635968141398043/1655664434/1500x500",
-    "previewUrl": "https://pbs.twimg.com/profile_banners/1494635968141398043/1655664434/1500x500",
-    "videoUrl": "",
+    "logoUrl": "/dapps/sithswap/HCaScPSz_400x400.jpg",
+    "bannerUrl": "/dapps/sithswap/1500x500.jpeg",
+    "previewUrl": "/dapps/sithswap/1500x500.jpeg",
     "gallery": [
       {
-        "url": "https://media.discordapp.net/attachments/947063677197090826/1027559639556038717/Screenshot_from_2022-10-06_15-32-26.png",
+        "url": "/dapps/sithswap/Screenshot_from_2022-10-06_15-32-26.png",
         "description": "SithSwap is an advanced, composable and permissionless stableswap protocol built for StarkNet"
       },
       {
-        "url": "https://media.discordapp.net/attachments/947063677197090826/1027559639891587152/Screenshot_from_2022-10-06_15-33-01.png",
+        "url": "/dapps/sithswap/Screenshot_from_2022-10-06_15-33-01.png",
         "description": "Seamlessly swap across correlated and uncorrelated pairs with variable fees and minimal slippage"
       },
       {
-        "url": "https://media.discordapp.net/attachments/947063677197090826/1027559640264888341/Screenshot_from_2022-10-06_15-33-29.png",
+        "url": "/dapps/sithswap/Screenshot_from_2022-10-06_15-33-29.png",
         "description": "Provide liquidity for correlated and uncorrelated pairs and start earning weekly SITH rewards"
       }
     ]

@@ -25,10 +25,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://pbs.twimg.com/profile_images/1558096338386141185/oT4BGZQr_400x400.jpg",
-    "bannerUrl": "https://pbs.twimg.com/profile_banners/1558095394558644225/1660314194/1500x500",
-    "previewUrl": "https://pbs.twimg.com/profile_images/1558096338386141185/oT4BGZQr_400x400.jpg",
-    "videoUrl": "",
+    "logoUrl": "/dapps/starkscan/oT4BGZQr_400x400.jpg",
+    "bannerUrl": "/dapps/starkscan/1500x500.jpeg",
+    "previewUrl": "/dapps/starkscan/oT4BGZQr_400x400.jpg",
     "gallery": []
   }
 }

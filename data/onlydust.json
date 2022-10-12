@@ -25,10 +25,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/onlydust/dapp-icon-onlydust.png",
-    "bannerUrl": "https://pbs.twimg.com/profile_banners/1484577159922470912/1659362858/1500x500",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/onlydust/dapp-preview-onlydust.jpg",
-    "videoUrl": "",
+    "logoUrl": "/dapps/onlydust/dapp-icon-onlydust.png",
+    "bannerUrl": "/dapps/onlydust/1500x500.png",
+    "previewUrl": "/dapps/onlydust/dapp-preview-onlydust.jpg",
     "gallery": []
   }
 }
