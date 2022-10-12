@@ -102,6 +102,7 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
               src={currentTheme === "dark" ? logoLight : logo}
               alt="logo"
               width={133}
+              height={40}
               style={{ height: "auto !important" }}
             />
           </a>

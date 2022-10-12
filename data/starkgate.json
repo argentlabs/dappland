@@ -25,17 +25,16 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkgate/dapp-icon-starkgate.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkgate/dapp-header-starkgate.png",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkgate/dapp-preview-starkgate.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/starkgate/dapp-icon-starkgate.png",
+    "bannerUrl": "/dapps/starkgate/dapp-header-starkgate.png",
+    "previewUrl": "/dapps/starkgate/dapp-preview-starkgate.png",
     "gallery": [
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkgate/starkgate-01.jpg",
+        "url": "/dapps/starkgate/starkgate-01.jpg",
         "description": "Starkgate is the official Ethereum to StarkNet bridge"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkgate/starkgate-02.jpg",
+        "url": "/dapps/starkgate/starkgate-02.jpg",
         "description": "Tokens available to bridge to StarkNet using Starkgate"
       }
     ]

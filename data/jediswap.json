@@ -34,10 +34,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/jediswap/dapp-icon-jediswap.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/jediswap/dapp-header-jediswap.png",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/jediswap/dapp-preview-jediswap.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/jediswap/dapp-icon-jediswap.png",
+    "bannerUrl": "/dapps/jediswap/dapp-header-jediswap.png",
+    "previewUrl": "/dapps/jediswap/dapp-preview-jediswap.png",
     "gallery": []
   }
 }

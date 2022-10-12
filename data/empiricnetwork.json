@@ -38,10 +38,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/empiric/dapp-icon-empiric.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/empiric/dapp-header-empiric.jpg",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/empiric/dapp-preview-empiric.jpg",
-    "videoUrl": "",
+    "logoUrl": "/dapps/empiricnetwork/dapp-icon-empiric.png",
+    "bannerUrl": "/dapps/empiricnetwork/dapp-header-empiric.jpg",
+    "previewUrl": "/dapps/empiricnetwork/dapp-preview-empiric.jpg",
     "gallery": []
   }
 }

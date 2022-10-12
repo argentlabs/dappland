@@ -25,21 +25,20 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkboard/dapp-icon-starkboard.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkboard/dapp-header-starkboard.png",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkboard/dapp-preview-starkboard.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/starkboard/dapp-icon-starkboard.png",
+    "bannerUrl": "/dapps/starkboard/dapp-header-starkboard.png",
+    "previewUrl": "/dapps/starkboard/dapp-preview-starkboard.png",
     "gallery": [
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkboard/starkboard-01.png",
+        "url": "/dapps/starkboard/starkboard-01.png",
         "description": "StarkNet total value locked (TVL) on Starkboard"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkboard/starkboard-02.png",
+        "url": "/dapps/starkboard/starkboard-02.png",
         "description": "StarkNet total wallets evolution on Starkboard"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/starkboard/starkboard-03.png",
+        "url": "/dapps/starkboard/starkboard-03.png",
         "description": "StarkNet ecosystem on Starkboard"
       }
     ]

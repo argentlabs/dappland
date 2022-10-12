@@ -25,10 +25,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://static.cartridge.gg/logo.jpeg",
-    "bannerUrl": "https://static.cartridge.gg/banner.png",
-    "previewUrl": "https://static.cartridge.gg/preview.jpeg",
-    "videoUrl": "",
+    "logoUrl": "/dapps/cartridge/logo.jpeg",
+    "bannerUrl": "/dapps/cartridge/banner.png",
+    "previewUrl": "/dapps/cartridge/preview.jpeg",
     "gallery": []
   }
 }

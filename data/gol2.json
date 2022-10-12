@@ -25,10 +25,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/gol2/dapp-icon-gol2.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/gol2/dapp-header-gol2.png",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/gol2/dapp-preview-gol2.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/gol2/dapp-icon-gol2.png",
+    "bannerUrl": "/dapps/gol2/dapp-header-gol2.png",
+    "previewUrl": "/dapps/gol2/dapp-preview-gol2.png",
     "gallery": []
   }
 }
