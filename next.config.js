@@ -20,13 +20,7 @@ const nextConfig = {
     domains: [
       "dv3jj1unlp2jl.cloudfront.net",
       "pbs.twimg.com",
-      "github.com",
-      "eykar.org",
-      "drive.google.com",
-      "mintsquare.sfo3.cdn.digitaloceanspaces.com",
       "www.frenslands.xyz",
-      "raw.githubusercontent.com",
-      "lh3.googleusercontent.com",
       "static.cartridge.gg",
     ],
   },
