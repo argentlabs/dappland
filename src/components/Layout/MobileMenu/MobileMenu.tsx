@@ -135,12 +135,7 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
             <li key={item.name}>
               <Link href={item.href}>
                 <a className="flex items-center py-3 px-6 bg-white dark:bg-light-black uppercase font-medium font-base">
-                  <Image
-                    src={item.icon}
-                    alt={item.name}
-                    width={24}
-                    height={24}
-                  />
+                  <Image src={item.icon} alt={item.name} />
                   <p>{item.name}</p>
                 </a>
               </Link>
@@ -156,8 +151,6 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
             >
               <Image
                 src={currentTheme === "dark" ? sun : moon}
-                width={24}
-                height={24}
                 alt="dark mode icon"
               />
               <p>Dark mode</p>

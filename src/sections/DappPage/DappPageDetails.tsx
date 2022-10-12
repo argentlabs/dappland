@@ -79,7 +79,7 @@ const DappPageDetails = ({ dappInfo }: { dappInfo: DappInfo }) => {
             >
               view{" "}
               <sup>
-                <Image src={expand} alt="expand icon" width={24} height={24} />
+                <Image src={expand} alt="expand icon" />
               </sup>
             </a>
           )}

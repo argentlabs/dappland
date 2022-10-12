@@ -79,7 +79,7 @@ const DappPage: NextPage<DappPageProps> = ({ dappInfo, twitterPosts }) => {
           onClick={() => Router.back()}
           className="text-pink text-xl leading-[26px] font-semibold mb-16 mt-2"
         >
-          <Image src={arrow} alt="arrow" width={24} height={24} />{" "}
+          <Image src={arrow} alt="arrow" />{" "}
           <span className="ml-2">Back to search results</span>
         </button>
       </div>

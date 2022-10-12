@@ -59,12 +59,7 @@ const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
                 >
                   {new URL(dappInfo.links.website).hostname}
                   <sup className="ml-2">
-                    <Image
-                      src={expandIcon}
-                      alt="expand icon"
-                      width={24}
-                      height={24}
-                    />
+                    <Image src={expandIcon} alt="expand icon" />
                   </sup>
                 </a>
               </Link>
@@ -76,7 +71,7 @@ const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
             rel="noopener noreferrer"
             className="flex items-center font-semibold text-[15px] leading-[20px] text-lightgrey ml-4"
           >
-            <Image src={flagIcon} alt="flag icon" width={24} height={24} />
+            <Image src={flagIcon} alt="flag icon" />
             <span className="ml-2">Report</span>
           </a>
         </div>
