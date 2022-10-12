@@ -25,9 +25,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "/dapps/starkscan/oT4BGZQr_400x400.jpg",
-    "bannerUrl": "/dapps/starkscan/1500x500.jpeg",
-    "previewUrl": "/dapps/starkscan/oT4BGZQr_400x400.jpg",
+    "logoUrl": "/dapps/starkscan/dapp-icon-starkscan.png",
+    "bannerUrl": "/dapps/starkscan/dapp-header-starkscan.png",
+    "previewUrl": "/dapps/starkscan/dapp-preview-starkscan.png",
     "gallery": []
   }
 }
