@@ -2,7 +2,7 @@
   "name": "StarkBoard",
   "description": "StarkBoard is the go-to dashboard tracking StarkNet related metrics. It's also the best way to keep up with the whole ecosystem.",
   "short_description": "Analytics Data Hub",
-  "tags": ["Social", "DAOs", "Oracles"],
+  "tags": ["Social", "DAOs", "Infrastructure"],
   "contracts": [],
   "goerliContracts": [],
   "audits": [],
