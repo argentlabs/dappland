@@ -1,0 +1,45 @@
+{
+  "name": "Commercium",
+  "description": "We enable DEX aggregation algorithms to be executed on-chain. Thus creating a truly decentralized and permissionless DEX aggregation protocol.",
+  "short_description": "On-Chain DEX Aggregator",
+  "tags": ["DeFi"],
+  "contracts": [],
+  "goerliContracts": [
+    [
+      {
+        "name": "Hub Contract",
+        "address": "0x006ebfcdaa2d47342f321249a0024e1f778894a05b8bed8393ba60d6f36af7c4"
+      }
+    ]
+  ],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://www.commercium.app/",
+    "careers": "",
+    "twitter": "https://twitter.com/TheCommercium",
+    "telegram": "",
+    "discord": "https://discord.gg/4nxZrT2R",
+    "github": "https://github.com/AdeptusDigitales",
+    "youtube": "",
+    "medium": "https://medium.com/@adeptusdigitales",
+    "mirror": ""
+  },
+  "twitterName": "TheCommercium",
+  "teamInfo": {
+    "founded": "2022-04-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "https://lh3.googleusercontent.com/yuxCj7qNIG75VwfDYKRofZN80Se2QxmKMXKQSiGbx3niDpaEbBcXjc2liIuqyOQOIEA=w2400",
+    "bannerUrl": "https://lh3.googleusercontent.com/jSN4prlT_jmuYI3_Yy8z6dneLYn1iaO5sOim-lVKW2nYCoCpXsmASYoMO-cFkEpWM48=w2400",
+    "previewUrl": "https://lh5.googleusercontent.com/EyIjm4KrdPhbuhfGYiuViK3MRfMEz5aHFOhi9r_iky0kXNzMTwKvMYcP46MrYBq2KrA=w2400",
+    "gallery": [
+      {
+        "url": "https://lh5.googleusercontent.com/K2FBrH7waUtyWAOYiypygceYSFP6Jbn4GyP7Vuwc84NyKmZV20UE3XkhnGVwJS3iJmo=w2400",
+        "description": "Retail traders can make use of the on-chain algorithms via the Commercium web-interface"
+      }
+    ]
+  }
+}

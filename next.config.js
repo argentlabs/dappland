@@ -17,7 +17,11 @@ const nextConfig = {
     return config
   },
   images: {
-    domains: ["pbs.twimg.com"], // to load images from twitter
+    domains: [
+      "pbs.twimg.com",
+      "lh3.googleusercontent.com",
+      "lh5.googleusercontent.com",
+    ], // to load images from twitter
   },
   experimental: {
     scrollRestoration: true,
