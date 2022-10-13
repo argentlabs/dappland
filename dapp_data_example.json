@@ -10,7 +10,7 @@
     "NFTs",
     "Social",
     "DAOs",
-    "Oracles"
+    "Infrastructure"
   ], //Remove all that don't apply
   "contracts": [
     {

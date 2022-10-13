@@ -30,7 +30,6 @@ export const categories = [
   { key: "games", name: "Games", icon: gaming, iconDark: gamingLight },
   { key: "nfts", name: "NFTs", icon: gallery, iconDark: galleryLight },
   { key: "social", name: "Social", icon: heart, iconDark: heartLight },
-  { key: "oracles", name: "Oracles", icon: ball, iconDark: ballLight },
   {
     key: "infrastructure",
     name: "Infrastructure",
