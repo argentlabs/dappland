@@ -22,12 +22,7 @@
     "founded": "2022-03-15T00:00:00.000Z",
     "anonymous": true
   },
-  "tokens": [
-    {
-      "address": "",
-      "symbol": "CYG"
-    }
-  ],
+  "tokens": [],
   "media": {
     "logoUrl": "/dapps/cygnus/dapp-icon-cygnus.png",
     "bannerUrl": "/dapps/cygnus/dapp-header-cygnus.png",
