@@ -52,7 +52,7 @@ const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
               {dappInfo.name}
             </h1>
             {dappInfo.links?.website && (
-              <Link href={dappInfo.links.website}>
+              <Link href={dappInfo.links.website + "?utm_source=dappland"}>
                 <a
                   className="block text-xl leading-[26px] font-semibold text-pink mt-4"
                   target="_blank"
@@ -79,7 +79,10 @@ const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
           {dappInfo.description}
         </p>
         <HeaderButtonsContainer className="flex mt-8">
-          <Link href={dappInfo.links?.website || "/"} passHref>
+          <Link
+            href={dappInfo.links?.website + "?utm_source=dappland" || "/"}
+            passHref
+          >
             <Button variant="primary" className="mr-3 visit-button">
               Visit Dapp
             </Button>
