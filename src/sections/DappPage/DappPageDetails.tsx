@@ -22,7 +22,6 @@ const DetailsContainer = styled.div`
   .divider {
     height: 1px;
     margin: 2.5rem 0;
-    background: #c2c0be;
 
     @media (min-width: 1024px) {
       width: 1px;
@@ -36,7 +35,7 @@ const DetailsContainer = styled.div`
 const DappPageDetails = ({ dappInfo }: { dappInfo: DappInfo }) => {
   return (
     <DetailsContainer
-      className={`bg-white dark:bg-dark-charcoal rounded-2xl shadow-box-image-shadow mt-16`}
+      className={`bg-white dark:bg-white/10 rounded-2xl shadow-box-image-shadow mt-16`}
     >
       <div className="details-box">
         <h3 className="font-bold text-[22px] leading-normal">Team</h3>
@@ -61,7 +60,7 @@ const DappPageDetails = ({ dappInfo }: { dappInfo: DappInfo }) => {
         </p>
       </div>
 
-      <div className="divider"></div>
+      <div className="divider bg-clay dark:bg-white/30"></div>
 
       <div className="details-box">
         <h3 className="font-bold text-[22px] leading-normal">Safety checks</h3>
@@ -118,7 +117,7 @@ const DappPageDetails = ({ dappInfo }: { dappInfo: DappInfo }) => {
         )}
       </div>
 
-      <div className="divider"></div>
+      <div className="divider bg-clay dark:bg-white/30"></div>
 
       <div className="details-box">
         <h3 className="font-bold text-[22px] leading-normal">Token info</h3>
