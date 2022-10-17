@@ -31,7 +31,7 @@ const DappPageTwitter = ({ dappInfo, twitterPosts }: DappPageTwitterProps) => {
           {twitterPosts.data.slice(0, 2).map((post) => (
             <div
               key={post.created_at}
-              className="twitter-post bg-white dark:bg-dark-charcoal p-8 mb-6 rounded-xl flex flex-col shadow-box-image-shadow"
+              className="twitter-post bg-white dark:bg-dark-charcoal/1Z0 p-8 mb-6 rounded-xl flex flex-col shadow-box-image-shadow"
             >
               <div className="flex items-center">
                 <Image
