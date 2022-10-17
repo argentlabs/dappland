@@ -21,7 +21,7 @@ const MenuContainer = styled.div`
   }
 
   ul li {
-    border-top: 1px solid #ededed;
+    border-top: 1px solid rgba(150, 150, 150, 0.2);
 
     p {
       margin-left: 16px;
