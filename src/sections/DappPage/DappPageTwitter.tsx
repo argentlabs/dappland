@@ -31,7 +31,7 @@ const DappPageTwitter = ({ dappInfo, twitterPosts }: DappPageTwitterProps) => {
           {twitterPosts.data.slice(0, 2).map((post) => (
             <div
               key={post.created_at}
-              className="twitter-post bg-white dark:bg-dark-charcoal/1Z0 p-8 mb-6 rounded-xl flex flex-col shadow-box-image-shadow"
+              className="twitter-post bg-white dark:bg-white/10 p-8 mb-6 rounded-xl flex flex-col shadow-box-image-shadow"
             >
               <div className="flex items-center">
                 <Image
@@ -84,7 +84,7 @@ const DappPageTwitter = ({ dappInfo, twitterPosts }: DappPageTwitterProps) => {
         </PostsContainer>
       )}
       {dappInfo.links.careers && (
-        <div className="p-12 flex flex-col items-center justify-center bg-black rounded-2xl shadow-box-image-shadow xl:h-full lg:min-h-[350px]">
+        <div className="p-12 flex flex-col items-center justify-center bg-black dark:bg-white/10 rounded-2xl shadow-box-image-shadow xl:h-full lg:min-h-[350px]">
           <h2 className="font-bold text-[40px] leading-[52px] text-center text-white">
             Work with {dappInfo.name}
           </h2>

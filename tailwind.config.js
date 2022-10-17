@@ -25,7 +25,7 @@ module.exports = {
       pink: "#FF5B81",
       lightgrey: "#8F8D8C",
       clay: "#C2C0BE",
-      "light-black": "#2e2e2e",
+      "light-black": "#181818",
       "smoked-white": "#f7f7f7",
       "light-charcoal": "#8F8E8C",
       "border-grey": "#ededed",
