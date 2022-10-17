@@ -8,7 +8,7 @@
   "audits": [],
   "dotw": false,
   "links": {
-    "website": "https://www.orbiter.finance/?utm_source=dappland",
+    "website": "https://www.orbiter.finance/",
     "careers": "",
     "twitter": "https://twitter.com/Orbiter_Finance",
     "telegram": "",
@@ -25,10 +25,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/orbiter/dapp-icon-orbiter.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/orbiter/dapp-header-orbiter.png",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/orbiter/dapp-preview-orbiter.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/orbiterfinance/dapp-icon-orbiter.png",
+    "bannerUrl": "/dapps/orbiterfinance/dapp-header-orbiter.png",
+    "previewUrl": "/dapps/orbiterfinance/dapp-preview-orbiter.png",
     "gallery": []
   }
 }

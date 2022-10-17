@@ -8,7 +8,7 @@
   "audits": [],
   "dotw": false,
   "links": {
-    "website": "https://imperiumwars.xyz/?utm_source=dappland",
+    "website": "https://imperiumwars.xyz/",
     "careers": "",
     "twitter": "https://twitter.com/ImperiumWars",
     "telegram": "",
@@ -25,10 +25,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://pbs.twimg.com/profile_images/1532442782031396867/4mQEWxX8_400x400.jpg",
-    "bannerUrl": "https://pbs.twimg.com/profile_banners/1532439497488617504/1658075155/1500x500",
-    "previewUrl": "https://pbs.twimg.com/profile_banners/1532439497488617504/1658075155/1500x500",
-    "videoUrl": "",
+    "logoUrl": "/dapps/imperiumwars/4mQEWxX8_400x400.jpg",
+    "bannerUrl": "/dapps/imperiumwars/1500x500.jpeg",
+    "previewUrl": "/dapps/imperiumwars/1500x500.jpeg",
     "gallery": []
   }
 }

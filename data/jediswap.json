@@ -17,7 +17,7 @@
   "audits": [],
   "dotw": false,
   "links": {
-    "website": "https://jediswap.xyz/?utm_source=dappland",
+    "website": "https://jediswap.xyz/",
     "careers": "https://bip.so/@meshfinance/Become-a-Contributor-hZlTa/public",
     "twitter": "https://twitter.com/jediswap",
     "telegram": "https://t.me/jediswap",
@@ -34,10 +34,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/jediswap/dapp-icon-jediswap.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/jediswap/dapp-header-jediswap.png",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/jediswap/dapp-preview-jediswap.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/jediswap/dapp-icon-jediswap.png",
+    "bannerUrl": "/dapps/jediswap/dapp-header-jediswap.png",
+    "previewUrl": "/dapps/jediswap/dapp-preview-jediswap.png",
     "gallery": []
   }
 }

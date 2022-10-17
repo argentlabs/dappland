@@ -1,0 +1,34 @@
+{
+  "name": "Voyager",
+  "description": "Voyager is the first block explorer for StarkNet. Developed by an in-house team at Nethermind, it provides a window for anyone to interact with the most cutting edge ZK-Rollup. With its clean and minimal UI, Voyager is an essential component on StarkNet, providing users with transparency and convenience.",
+  "short_description": "StarkNet block explorer",
+  "tags": ["Infrastructure"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://voyager.online/",
+    "careers": "https://nethermind.io/voyager/",
+    "twitter": "https://twitter.com/0xvoyageronline",
+    "telegram": "",
+    "discord": "https://discord.gg/pkKQmuEw",
+    "github": "",
+    "youtube": "",
+    "medium": "https://medium.com/nethermind-eth",
+    "mirror": ""
+  },
+  "twitterName": "@0xvoyageronline",
+  "teamInfo": {
+    "founded": "2021-05-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/voyager/dapp-icon-voyager.png",
+    "bannerUrl": "/dapps/voyager/dapp-header-voyager.png",
+    "previewUrl": "/dapps/voyager/dapp-preview-voyager.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}

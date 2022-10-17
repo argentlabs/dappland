@@ -8,7 +8,7 @@
   "audits": [],
   "dotw": false,
   "links": {
-    "website": "https://layerswap.io/?utm_source=dappland",
+    "website": "https://layerswap.io/",
     "careers": "",
     "twitter": "https://twitter.com/layerswap",
     "telegram": "",
@@ -25,10 +25,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/layerswap/dapp-icon-layerswap.png",
-    "bannerUrl": "https://pbs.twimg.com/profile_banners/1436924739918958592/1651224733/1500x500",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/layerswap/dapp-preview-layerswap.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/layerswap/dapp-icon-layerswap.png",
+    "bannerUrl": "/dapps/layerswap/dapp-header-layerswap.png",
+    "previewUrl": "/dapps/layerswap/dapp-preview-layerswap.png",
     "gallery": []
   }
 }

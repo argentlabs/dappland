@@ -1,0 +1,33 @@
+{
+  "name": "STARKSCAN",
+  "description": "Next-generation StarkNet block explorer.",
+  "short_description": "StarkNet block explorer",
+  "tags": ["Infrastructure"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://starkscan.co/",
+    "careers": "mailto:jobs@aspect.co",
+    "twitter": "https://twitter.com/StarkscanCo",
+    "telegram": "",
+    "discord": "https://discord.gg/Pdt4Wr6gx7",
+    "github": "https://github.com/starkscan",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "StarkscanCo",
+  "teamInfo": {
+    "founded": "2022-09-28T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/starkscan/dapp-icon-starkscan.png",
+    "bannerUrl": "/dapps/starkscan/dapp-header-starkscan.png",
+    "previewUrl": "/dapps/starkscan/dapp-preview-starkscan.png",
+    "gallery": []
+  }
+}

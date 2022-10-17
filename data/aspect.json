@@ -18,7 +18,7 @@
   "audits": [],
   "dotw": false,
   "links": {
-    "website": "https://aspect.co/?utm_source=dappland",
+    "website": "https://aspect.co/",
     "careers": "mailto:jobs@aspect.co?subject=Job+enquiry+via+Dappland",
     "twitter": "https://twitter.com/aspectdotco",
     "telegram": "https://t.me/aspectco",
@@ -35,17 +35,16 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/aspect/dapp-icon-aspect.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/aspect/dapp-header-aspect.png",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/aspect/dapp-header-aspect.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/aspect/dapp-icon-aspect.png",
+    "bannerUrl": "/dapps/aspect/dapp-header-aspect.png",
+    "previewUrl": "/dapps/aspect/dapp-header-aspect.png",
     "gallery": [
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/aspect/aspect-01.jpg",
+        "url": "/dapps/aspect/aspect-01.jpg",
         "description": "Aspect is a NFT marketplace on StarkNet"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/aspect/aspect-02.jpg",
+        "url": "/dapps/aspect/aspect-02.jpg",
         "description": "Aspect NFT marketplace listings"
       }
     ]

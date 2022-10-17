@@ -26,7 +26,7 @@
   "audits": [],
   "dotw": false,
   "links": {
-    "website": "https://pxls.wtf/?utm_source=dappland",
+    "website": "https://pxls.wtf/",
     "careers": "",
     "twitter": "https://twitter.com/PxlsWtf",
     "telegram": "",
@@ -43,25 +43,24 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/pxls/dapp-icon-pxls.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/pxls/dapp-header-pxls.png",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/pxls/dapp-preview-pxls.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/pxls/dapp-icon-pxls.png",
+    "bannerUrl": "/dapps/pxls/dapp-header-pxls.png",
+    "previewUrl": "/dapps/pxls/dapp-preview-pxls.png",
     "gallery": [
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/pxls/pxls-01.png",
+        "url": "/dapps/pxls/pxls-01.png",
         "description": "rtwrk #1"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/pxls/pxls-02.png",
+        "url": "/dapps/pxls/pxls-02.png",
         "description": "rtwrk #2"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/pxls/pxls-03.png",
+        "url": "/dapps/pxls/pxls-03.png",
         "description": "rtwrk #3"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/pxls/pxls-04.png",
+        "url": "/dapps/pxls/pxls-04.png",
         "description": "rtwrk #4"
       }
     ]

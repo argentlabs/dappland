@@ -2,7 +2,7 @@
   "name": "Empiric Network",
   "description": "Empiric is the leading oracle on StarkNet. Live with 20+ price feeds - powered by data sources that send their proprietary market data directly on-chain, including Alameda Research, Jane Street, Gemini, & more. Empiric's robust feeds empower leading protocols like zkLend, Nostra, Serity & CurveZero to access data that is as verifiable, transparent & secure as the smart contracts themselves.",
   "short_description": "Decentralized & composable data infrastructure",
-  "tags": ["Oracles"],
+  "tags": ["Infrastructure"],
   "contracts": [],
   "goerliContracts": [
     {
@@ -21,8 +21,8 @@
   "audits": [],
   "dotw": false,
   "links": {
-    "website": "https://empiric.network/?utm_source=dappland",
-    "careers": "https://empiric.network/about/?utm_source=dappland",
+    "website": "https://empiric.network/",
+    "careers": "https://empiric.network/about/",
     "twitter": "https://twitter.com/EmpiricNetwork",
     "telegram": "",
     "discord": "https://discord.gg/N7sM7VzfJB",
@@ -38,10 +38,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/empiric/dapp-icon-empiric.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/empiric/dapp-header-empiric.jpg",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/empiric/dapp-preview-empiric.jpg",
-    "videoUrl": "",
+    "logoUrl": "/dapps/empiricnetwork/dapp-icon-empiric.png",
+    "bannerUrl": "/dapps/empiricnetwork/dapp-header-empiric.jpg",
+    "previewUrl": "/dapps/empiricnetwork/dapp-preview-empiric.jpg",
     "gallery": []
   }
 }

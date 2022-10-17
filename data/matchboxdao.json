@@ -8,7 +8,7 @@
   "audits": [],
   "dotw": false,
   "links": {
-    "website": "https://matchboxdao.com/?utm_source=dappland",
+    "website": "https://matchboxdao.com/",
     "careers": "",
     "twitter": "https://twitter.com/matchbox_dao",
     "telegram": "",
@@ -25,10 +25,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/matchbox/dapp-icon-matchbox.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/matchbox/dapp-header-matchbox.jpg",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/matchbox/dapp-preview-matchbox.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/matchboxdao/dapp-icon-matchbox.png",
+    "bannerUrl": "/dapps/matchboxdao/dapp-header-matchbox.jpg",
+    "previewUrl": "/dapps/matchboxdao/dapp-preview-matchbox.png",
     "gallery": []
   }
 }

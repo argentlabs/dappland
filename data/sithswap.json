@@ -1,0 +1,51 @@
+{
+  "name": "SithSwap",
+  "description": "SithSwap is an advanced, composable and permissionless stableswap protocol built for StarkNet, where users and contracts can trade uncorrelated and correlated assets with variable fees and extremely low slippage. SithSwap offers an advanced and all-encompassing rewards system where users and projects can sponsor and earn weekly rewards to drive volume and liquidity to the AMM",
+  "short_description": "Powerful Stableswap and AMM Aggregator on StarkNet",
+  "tags": ["DeFi"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [
+    {
+      "name": "Nethermind Cairo Audit (AMM)",
+      "url": "https://gateway.pinata.cloud/ipfs/QmVazibGDwm8UsZL466NnW1UDZ4dWZ3oSVyuqZQ71TYhdP"
+    }
+  ],
+  "dotw": false,
+  "links": {
+    "website": "https://sithswap.com/",
+    "careers": "",
+    "twitter": "https://twitter.com/SithSwap",
+    "telegram": "https://t.me/SithWars",
+    "discord": "https://discord.gg/gAD2wuzeNf",
+    "github": "https://github.com/SithSwap",
+    "youtube": "",
+    "medium": "",
+    "mirror": "https://mirror.xyz/sithswap.eth"
+  },
+  "twitterName": "SithSwap",
+  "teamInfo": {
+    "founded": "2022-02-17T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/sithswap/HCaScPSz_400x400.jpg",
+    "bannerUrl": "/dapps/sithswap/1500x500.jpeg",
+    "previewUrl": "/dapps/sithswap/1500x500.jpeg",
+    "gallery": [
+      {
+        "url": "/dapps/sithswap/Screenshot_from_2022-10-06_15-32-26.png",
+        "description": "SithSwap is an advanced, composable and permissionless stableswap protocol built for StarkNet"
+      },
+      {
+        "url": "/dapps/sithswap/Screenshot_from_2022-10-06_15-33-01.png",
+        "description": "Seamlessly swap across correlated and uncorrelated pairs with variable fees and minimal slippage"
+      },
+      {
+        "url": "/dapps/sithswap/Screenshot_from_2022-10-06_15-33-29.png",
+        "description": "Provide liquidity for correlated and uncorrelated pairs and start earning weekly SITH rewards"
+      }
+    ]
+  }
+}

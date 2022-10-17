@@ -22,7 +22,7 @@
   ],
   "dotw": false,
   "links": {
-    "website": "https://briq.construction/?utm_source=dappland",
+    "website": "https://briq.construction/",
     "careers": "",
     "twitter": "https://twitter.com/briqNFT",
     "telegram": "",
@@ -39,21 +39,20 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/briq/dapp-icon-briq.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/briq/dapp-header-briq.png",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/briq/dapp-preview-briq.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/briq/dapp-icon-briq.png",
+    "bannerUrl": "/dapps/briq/dapp-header-briq.png",
+    "previewUrl": "/dapps/briq/dapp-preview-briq.png",
     "gallery": [
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/briq/briq-01.jpg",
+        "url": "/dapps/briq/briq-01.jpg",
         "description": "briq homepage – build NFTs using briqs (voxels) on StarkNet"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/briq/briq-02.jpg",
+        "url": "/dapps/briq/briq-02.jpg",
         "description": "briq gallery – construct your NFTs using briqs (voxels) on StarkNet"
       },
       {
-        "url": "https://dv3jj1unlp2jl.cloudfront.net/dappland/briq/briq-03.jpg",
+        "url": "/dapps/briq/briq-03.jpg",
         "description": "briq construction interface"
       }
     ]

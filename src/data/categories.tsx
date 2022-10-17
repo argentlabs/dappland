@@ -6,6 +6,8 @@ import contacts from "../assets/icons/contacts.svg"
 import contactsLight from "../assets/icons/contactsLight.svg"
 import ballLight from "../assets/icons/crystal-ball-light.svg"
 import ball from "../assets/icons/crystal-ball.svg"
+import database from "../assets/icons/database.svg"
+import databaseLight from "../assets/icons/databaseLight.svg"
 import dotw from "../assets/icons/dotw.svg"
 import dotwLight from "../assets/icons/dotwLight.svg"
 import gallery from "../assets/icons/gallery.svg"
@@ -28,7 +30,12 @@ export const categories = [
   { key: "games", name: "Games", icon: gaming, iconDark: gamingLight },
   { key: "nfts", name: "NFTs", icon: gallery, iconDark: galleryLight },
   { key: "social", name: "Social", icon: heart, iconDark: heartLight },
-  { key: "oracles", name: "Oracles", icon: ball, iconDark: ballLight },
+  {
+    key: "infrastructure",
+    name: "Infrastructure",
+    icon: database,
+    iconDark: databaseLight,
+  },
   { key: "daos", name: "DAOs", icon: contacts, iconDark: contactsLight },
 ]
 

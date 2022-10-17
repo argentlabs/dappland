@@ -8,7 +8,7 @@
   "audits": [],
   "dotw": false,
   "links": {
-    "website": "https://eykar.org/?utm_source=dappland",
+    "website": "https://eykar.org/",
     "careers": "https://github.com/age-of-eykar",
     "twitter": "https://twitter.com/AgeOfEykar",
     "telegram": "",
@@ -25,10 +25,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/age-of-eykar/dapp-icon-age-of-eykar.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/age-of-eykar/dapp-header-age-of-eykar.jpg",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/age-of-eykar/dapp-preview-age-of-eykar.jpg",
-    "videoUrl": "",
+    "logoUrl": "/dapps/ageofeykar/dapp-icon-age-of-eykar.png",
+    "bannerUrl": "/dapps/ageofeykar/dapp-header-age-of-eykar.jpg",
+    "previewUrl": "/dapps/ageofeykar/dapp-preview-age-of-eykar.jpg",
     "gallery": []
   }
 }

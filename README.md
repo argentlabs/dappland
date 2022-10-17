@@ -31,9 +31,22 @@ If you are building a dapp on StarkNet and want to showcase it in Dappland, you 
 
 Steps:
 
-1. Copy `dapp_data_example.json`, rename it with your dapp's name in lowercase and move it to `/data`
-2. Fill out the fields in the json file with your dapp's data
-3. Create the PR
+1. Create your images: 320x320 logo, 1920x400 banner and 700x400 preview
+2. Please ensure they are optimised – tinypng.com is a good option
+3. Create a new folder with your dapp name under `/public/dapps/`
+4. Add your optimised images to the folder
+5. Copy `dapp_data_example.json`, rename it with your dapp's name in lowercase and move it to `/data`
+6. Fill out the fields in the json file with your dapp's data
+7. Ensure the json points to your images, i.e. 
+```
+  "media": {
+    "logoUrl": "/dapps/yourdapp/yourdapp-logo.png",
+    "bannerUrl": "/dapps/yourdapp/yourdapp-banner.png",
+    "previewUrl": "/dapps/yourdapp/yourdapp-preview.png",
+    … etc
+  }
+```
+8. Create the PR
 
 And that's it! 🚀
 

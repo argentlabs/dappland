@@ -94,7 +94,7 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
           (category) =>
             renderCategoryCount(category.name) > 0 && (
               <li
-                className={`flex flex-col items-center justify-center bg-white dark:bg-dark-charcoal shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
+                className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
                   selectedCategory === category.key ? "active" : ""
                 } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
                 key={category.name}
@@ -141,7 +141,7 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
           (category) =>
             renderCategoryCount(category.name) > 0 && (
               <li
-                className={`flex flex-col items-center justify-center bg-white dark:bg-dark-charcoal shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
+                className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
                   selectedCategory === category.key ? "active" : ""
                 } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
                 key={category.name}

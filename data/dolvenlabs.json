@@ -25,7 +25,7 @@
   "audits": [],
   "dotw": false,
   "links": {
-    "website": "https://dolvenlabs.com/?utm_source=dappland",
+    "website": "https://dolvenlabs.com/",
     "careers": "mailto:info@dolvenlabs.com?subject=Job+enquiry+via+Dappland",
     "twitter": "https://twitter.com/dolvenlabs",
     "telegram": "https://t.me/dolven_announcements",
@@ -42,10 +42,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/dolven/dapp-icon-dolven.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/dolven/dapp-header-dolven.jpg",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/dolven/dapp-preview-dolven.jpg",
-    "videoUrl": "",
+    "logoUrl": "/dapps/dolvenlabs/dapp-icon-dolven.png",
+    "bannerUrl": "/dapps/dolvenlabs/dapp-header-dolven.jpg",
+    "previewUrl": "/dapps/dolvenlabs/dapp-preview-dolven.jpg",
     "gallery": []
   }
 }

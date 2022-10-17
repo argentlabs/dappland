@@ -21,7 +21,7 @@
   "audits": [],
   "dotw": false,
   "links": {
-    "website": "https://www.frenslands.xyz/?utm_source=dappland",
+    "website": "https://www.frenslands.xyz/",
     "careers": "",
     "twitter": "https://twitter.com/FrensLands",
     "telegram": "",
@@ -38,21 +38,20 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://www.frenslands.xyz/resources/front/Press_Logo_TrueScale.png",
-    "bannerUrl": "https://www.frenslands.xyz/resources/front/Press_Banner400x160_4.png",
-    "previewUrl": "https://www.frenslands.xyz/resources/front/Press_Banner400x160_4.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/frenslands/Press_Logo_TrueScale.png",
+    "bannerUrl": "/dapps/frenslands/Press_Banner400x160_4.png",
+    "previewUrl": "/dapps/frenslands/Press_Banner400x160_4.png",
     "gallery": [
       {
-        "url": "https://www.frenslands.xyz/resources/screens/1.png",
+        "url": "/dapps/frenslands/1.png",
         "description": "Frens Lands grass biome"
       },
       {
-        "url": "https://www.frenslands.xyz/resources/screens/2.png",
+        "url": "/dapps/frenslands/2.png",
         "description": "Frens Lands shadow biome"
       },
       {
-        "url": "https://www.frenslands.xyz/resources/screens/3.png",
+        "url": "/dapps/frenslands/3.png",
         "description": "Frens Lands mountain biome"
       }
     ]

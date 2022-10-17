@@ -8,8 +8,8 @@
   "audits": [],
   "dotw": false,
   "links": {
-    "website": "https://www.banxa.com/?utm_source=dappland",
-    "careers": "https://banxa.com/careers/?utm_source=dappland",
+    "website": "https://www.banxa.com/",
+    "careers": "https://banxa.com/careers/",
     "twitter": "https://twitter.com/BanxaOfficial",
     "telegram": "",
     "discord": "",
@@ -25,10 +25,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/banxa/dapp-icon-banxa.png",
-    "bannerUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/banxa/dapp-header-banxa.png",
-    "previewUrl": "https://dv3jj1unlp2jl.cloudfront.net/dappland/banxa/dapp-preview-banxa.png",
-    "videoUrl": "",
+    "logoUrl": "/dapps/banxa/dapp-icon-banxa.png",
+    "bannerUrl": "/dapps/banxa/dapp-header-banxa.png",
+    "previewUrl": "/dapps/banxa/dapp-preview-banxa.png",
     "gallery": []
   }
 }
