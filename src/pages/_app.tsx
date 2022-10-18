@@ -7,11 +7,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
       <Script
-        id="plausible"
         strategy="afterInteractive"
         defer
         data-domain="dappland.com"
-        src="https://plausible.io/js/plausible.js"
+        data-api="/x/api/event"
+        src="/x/js/script.js"
       />
       <Component {...pageProps} />
     </ThemeProvider>
