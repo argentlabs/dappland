@@ -3,7 +3,7 @@
   "description": "<100 to 500 characters description of your project>",
   "short_description": "<One-liner description. Max 20 characters>",
   "tags": [
-    "Onramp",
+    "Onramps",
     "Bridges",
     "DeFi",
     "Games",
@@ -52,9 +52,9 @@
     "medium": "<URL of the dapp's Medium>. Leave empty if non-existent",
     "mirror": "<URL of the dapp's Mirror page>. Leave empty if non-existent"
   },
-  "twitterName": "Twitter username. Leave empty if non-existent",
+  "twitterName": "Twitter username. Leave empty if none",
   "teamInfo": {
-    "founded": "<Founding date of the project. FORMAT:  yyyy-MM-dd'T'HH:mm:ss.SSSz EXAMPLE: 2022-05-24T00:00:00.000Z >",
+    "founded": "Founding date of the project. EXAMPLE: 2022-05-24T00:00:00.000Z",
     "anonymous": false // If at least one of the founders has a public profile with their real name linked to the project, set this to true.
   },
   "tokens": [
@@ -64,9 +64,9 @@
     }
   ],
   "media": {
-    "logoUrl": "<URL for the logo of the dapp (hosted externally) Square. and at least 320 × 320 pixels>",
-    "bannerUrl": "<URL for the banner of the dapp (hosted externally) Resolution: at least 1900 × 400 pixels>",
-    "previewUrl": "<URL for a preview image of the dapp (hosted externally) Resolution: at least 700 × 400 pixels>",
+    "logoUrl": "/dapps/yourdappname/yourdappname-logo.[png, jpg or webp] Resolution: 320 × 320 pixels>",
+    "bannerUrl": "/dapps/yourdappname/yourdappname-banner.[png, jpg or webp] Resolution: 1920 × 400 pixels>",
+    "previewUrl": "/dapps/yourdappname/yourdappname-preview.[png, jpg or webp] Resolution: 700 × 400 pixels>",
     "videoUrl": "<URL for a video of the dapp (hosted externally)>",
     "gallery": [
       {
