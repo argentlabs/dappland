@@ -53,7 +53,6 @@ export const chain = [
     icon: starknet,
     iconDark: starknetLight,
   },
-  { key: "zksync", name: "zkSync", icon: ball, iconDark: ballLight },
 ]
 
 export const allCategories = [...categories, ...reputation, ...chain]
