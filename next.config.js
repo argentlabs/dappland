@@ -22,6 +22,18 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
   },
+  async rewrites() {
+    return [
+      {
+        source: "/x/js/script.js",
+        destination: "https://plausible.io/js/script.js",
+      },
+      {
+        source: "/x/api/event",
+        destination: "https://plausible.io/api/event",
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig

@@ -31,9 +31,9 @@ If you are building a dapp on StarkNet and want to showcase it in Dappland, you 
 
 Steps:
 
-1. Create your images: 320x320 logo, 1920x400 banner and 700x400 preview
-2. Please ensure they are optimised – tinypng.com is a good option
-3. Create a new folder with your dapp name under `/public/dapps/`
+1. Create your images: 320x320 logo, 1920x400 banner and 700x400 preview. Use the <a href="https://www.figma.com/community/file/1163928128813560560">Dappland Figma template</a> to help you.
+2. Please optimise your images using tinypng.com – JPGs are best for photos and PNGs for graphics. Or you can convert to WebP.
+3. Fork this repo and create a new folder with your dapp name under `/public/dapps/`
 4. Add your optimised images to the folder
 5. Copy `dapp_data_example.json`, rename it with your dapp's name in lowercase and move it to `/data`
 6. Fill out the fields in the json file with your dapp's data
