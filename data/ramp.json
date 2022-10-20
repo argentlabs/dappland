@@ -2,6 +2,7 @@
   "name": "Ramp",
   "description": "Ramp is building the infrastructure to seamlessly connect Web3 with today’s global financial system. Through its core on- and off-ramp products, Ramp provides businesses and individuals across 150+ countries with a streamlined conversion between crypto and fiat. Ramp supports the major global payment methods, including debit and credit cards, bank transfers, Apple Pay, Google Pay, and more.",
   "short_description": "Safe and easy way to buy crypto",
+  "chain": ["StarkNet"],
   "tags": ["Onramps"],
   "contracts": [],
   "goerliContracts": [],

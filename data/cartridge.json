@@ -2,6 +2,7 @@
   "name": "Cartridge",
   "description": "Starknet Gaming Console. Play your favorite games.",
   "short_description": "Starknet Gaming Console",
+  "chain": ["StarkNet"],
   "tags": ["Games"],
   "contracts": [],
   "goerliContracts": [],

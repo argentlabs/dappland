@@ -2,6 +2,7 @@
   "name": "Alpha Road",
   "description": "Alpha Road is a decentralized non-custodial platform allowing users to exploit unique financial products in a secure, efficient and simple way.\nBuilt on Starknet, the safest and most powerful Layer 2 scaling solution on Ethereum, it allows us to leverage on the most secure network while maximizing performance and user experience on DeFi Ecosystem.",
   "short_description": "One-click AMM",
+  "chain": ["StarkNet"],
   "tags": ["DeFi", "NFTs"],
   "contracts": [],
   "goerliContracts": [

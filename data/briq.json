@@ -2,6 +2,7 @@
   "name": "briq",
   "description": "briq is an NFT construction protocol based around fundamental elements called briqs. You can assemble your briqs into an NFT and disassemble it to get the briqs back and build something else. briqs are NFT building blocks!",
   "short_description": "The NFT building protocol",
+  "chain": ["StarkNet"],
   "tags": ["NFTs", "Games"],
   "contracts": [],
   "goerliContracts": [

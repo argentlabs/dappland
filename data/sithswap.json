@@ -2,6 +2,7 @@
   "name": "SithSwap",
   "description": "SithSwap is an advanced, composable and permissionless stableswap protocol built for StarkNet, where users and contracts can trade uncorrelated and correlated assets with variable fees and extremely low slippage. SithSwap offers an advanced and all-encompassing rewards system where users and projects can sponsor and earn weekly rewards to drive volume and liquidity to the AMM",
   "short_description": "Powerful Stableswap and AMM Aggregator on StarkNet",
+  "chain": ["StarkNet"],
   "tags": ["DeFi"],
   "contracts": [],
   "goerliContracts": [],

@@ -2,6 +2,7 @@
   "name": "Imperium Wars",
   "description": "A Conquer to Earn NFT game where five empires from all over the globe will ally, betray and fight in order to reach Glory and Fortune.",
   "short_description": "A Conquer and Earn NFT game",
+  "chain": ["StarkNet"],
   "tags": ["Games", "NFTs"],
   "contracts": [],
   "goerliContracts": [],

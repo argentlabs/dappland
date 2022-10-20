@@ -2,6 +2,7 @@
   "name": "Influence",
   "description": "Influence is an open-economy, space strategy MMO in which players own all of their content. Colonize asteroids, build infrastructure, discover technologies, engage in combat. Expand your influence across the belt.",
   "short_description": "A grand strategy space MMO",
+  "chain": ["StarkNet"],
   "tags": ["NFTs", "Games", "DAOs"],
   "contracts": [
     {

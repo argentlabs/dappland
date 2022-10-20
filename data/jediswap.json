@@ -2,6 +2,7 @@
   "name": "JediSwap",
   "description": "A community-led fully permissionless and composable AMM on Starknet",
   "short_description": "Community driven AMM",
+  "chain": ["StarkNet"],
   "tags": ["DeFi", "DAOs", "NFTs"],
   "contracts": [],
   "goerliContracts": [

@@ -2,6 +2,7 @@
   "name": "Starksheet",
   "description": "Like a spreadsheet, powered by the open web: each cell can call any contract using any on-chain data.",
   "short_description": "The web3 spreadsheet",
+  "chain": ["StarkNet"],
   "tags": ["DeFi", "Infrastructure"],
   "audits": [],
   "tokens": [],

@@ -2,6 +2,7 @@
   "name": "<Name of your Dapp>",
   "description": "<100 to 500 characters description of your project>",
   "short_description": "<One-liner description. Max 20 characters>",
+  "chain": "StarkNet",
   "tags": [
     "Onramp",
     "Bridges",

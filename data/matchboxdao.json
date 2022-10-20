@@ -2,6 +2,7 @@
   "name": "MatchBoxDAO",
   "description": "MatchboxDAO is a collective of developers, artists, and designers building the infrastructure of on-chain game with StarkNet",
   "short_description": "DAO to ignite and fuel fully on-chain games",
+  "chain": ["StarkNet"],
   "tags": ["DAOs"],
   "contracts": [],
   "goerliContracts": [],

@@ -2,6 +2,7 @@
   "name": "Banxa",
   "description": "Banxa is the world's leading fiat to crypto on-ramp having been in operation since 2014.\nBanxa's pioneering  infrastructure  provides easy access to enterprise-grade core payments and local regulatory infrastructure meaning higher conversions, higher transaction sizes, cheaper fees all using local currencies and bank transfer options.",
   "short_description": "The leading global on & off-ramp solution",
+  "chain": ["StarkNet"],
   "tags": ["Onramps", "DeFi", "Bridges"],
   "contracts": [],
   "goerliContracts": [],

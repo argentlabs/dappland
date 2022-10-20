@@ -20,6 +20,8 @@ import legal from "../assets/icons/legal.svg"
 import legalLight from "../assets/icons/legalLight.svg"
 import profile from "../assets/icons/profile.svg"
 import profileLight from "../assets/icons/profileLight.svg"
+import starknet from "../assets/icons/starknet.svg"
+import starknetLight from "../assets/icons/starknetLight.svg"
 import swap from "../assets/icons/swap.svg"
 import swapLight from "../assets/icons/swapLight.svg"
 
@@ -44,7 +46,17 @@ export const reputation = [
   { key: "audited", name: "Audited", icon: legal, iconDark: legalLight },
 ]
 
-export const allCategories = [...categories, ...reputation]
+export const chain = [
+  {
+    key: "starknet",
+    name: "StarkNet",
+    icon: starknet,
+    iconDark: starknetLight,
+  },
+  { key: "zksync", name: "zkSync", icon: ball, iconDark: ballLight },
+]
+
+export const allCategories = [...categories, ...reputation, ...chain]
 
 export const changeTagsToCategoriesSlug = (tags: string[]) => {
   let categories: Array<string> = []

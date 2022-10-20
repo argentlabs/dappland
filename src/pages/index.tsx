@@ -63,12 +63,13 @@ export const getStaticProps = async () => {
   const parsedDapps = dapps.map((dapp: DappInfo & { url: string }) => ({
     short_description: dapp.short_description,
     title: dapp.name,
+    chain: dapp.chain,
     tags: dapp.tags,
     url: dapp.url,
     logo: dapp.media.logoUrl,
     image: dapp.media.previewUrl,
     featured: dapp.dotw,
-    annonymous: dapp.teamInfo.anonymous,
+    anonymous: dapp.teamInfo.anonymous,
     audits: dapp.audits,
   }))
 

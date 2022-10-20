@@ -8,6 +8,7 @@ interface DappInfo {
   description: string
   short_description: string
   name: string
+  chain: string[]
   tags: string[]
   contracts?: Contract[]
   goerliContracts?: Contract[]
@@ -92,11 +93,12 @@ interface TwitterData {
 interface DappCard {
   short_description: string
   title: string
+  chain: string[]
   tags: string[]
   url: string
   image: string
   logo: string
   featured: boolean
-  annonymous: boolean
+  anonymous: boolean
   audits: Audit[]
 }

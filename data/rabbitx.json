@@ -1,7 +1,8 @@
 {
   "name": "RabbitX",
   "description": "Perpetuals. Order book liquidity. A full crypto derivatives suite. Built atop Ethereum ZK rollups. No fees. Maximum security. Maximum leverage. DeFi, evolved.",
-  "short_description": "Perpetuals Trading.",
+  "short_description": "Perpetuals Trading",
+  "chain": ["StarkNet"],
   "tags": ["DeFi"],
   "contracts": [],
   "goerliContracts": [],
