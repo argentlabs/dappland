@@ -2,7 +2,10 @@ import expandIcon from "../../assets/icons/expand.svg"
 import flagIcon from "../../assets/icons/flag.svg"
 import Button from "../../components/Button/Button"
 import { DappStoreButton } from "../../components/Button/DappStore"
-import { DownloadButton } from "../../components/Button/Download"
+import {
+  DownloadButton,
+  getStoreVersionFromBrowser,
+} from "../../components/Button/Download"
 import SocialLink from "../../components/SocialLink/SocialLink"
 import Tag from "../../components/Tag/Tag"
 import Image from "next/image"
@@ -33,9 +36,11 @@ const linkOrder = [
 ] as unknown as Array<keyof Links>
 
 const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
-  const [hasArgentX, setHasArgentX] = useState(false)
+  const [showArgentXInstallGuide, setArgentXInstallGuide] = useState(false)
   useEffect(() => {
-    setHasArgentX((window as any).starknet?.id === "argentX")
+    const argentXInstalled = (window as any).starknet?.id === "argentX"
+    const browserSupportsArgentX = getStoreVersionFromBrowser() !== null
+    setArgentXInstallGuide(browserSupportsArgentX && !argentXInstalled)
   }, [])
 
   const handleLinksOrder = () => {
@@ -87,7 +92,7 @@ const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
           {dappInfo.description}
         </p>
         <HeaderButtonsContainer className="flex mt-8">
-          {hasArgentX ? (
+          {!showArgentXInstallGuide ? (
             <Link
               href={dappInfo.links?.website + "?utm_source=dappland" || "/"}
               passHref
