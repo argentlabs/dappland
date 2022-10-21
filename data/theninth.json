@@ -30,7 +30,7 @@
   "twitterName": "ninth_gg",
   "teamInfo": {
     "founded": "2021-03T00:00:00.000Z",
-    "anonymous": false
+    "anonymous": true
   },
   "tokens": [],
   "media": {
