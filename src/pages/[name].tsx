@@ -9,7 +9,7 @@ import { GetStaticPaths, GetStaticProps, NextPage } from "next"
 import Image from "next/image"
 import Router from "next/router"
 import path from "path"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import styled from "styled-components"
 import { Swiper, SwiperSlide } from "swiper/react"
 
@@ -47,9 +47,14 @@ interface DappPageProps {
 }
 
 const DappPage: NextPage<DappPageProps> = ({ dappInfo, twitterPosts }) => {
+  const [showPrev, setShowPrev] = useState(false)
   useEffect(() => {
     // @ts-ignore
     import("swiper/css")
+    const pid = setTimeout(() => {
+      setShowPrev(!history.state?.options?.shallow)
+    }, 40) // need to wait for next router to update
+    return () => clearTimeout(pid)
   }, [])
 
   return (
@@ -74,19 +79,22 @@ const DappPage: NextPage<DappPageProps> = ({ dappInfo, twitterPosts }) => {
           />
         </div>
       </div>
-      <div className="px-4 md:mx-[10vw] xl:mx-[15vw] 2xl:mx-[20vw] hidden lg:block max-w-[1200px]">
-        <button
-          onClick={() => Router.back()}
-          className="text-pink text-xl leading-[26px] font-semibold mb-16 mt-2"
-        >
-          <Image src={arrow} alt="arrow" />{" "}
-          <span className="ml-2">Back to search results</span>
-        </button>
-      </div>
+      {showPrev && (
+        <div className="px-4 md:mx-[10vw] xl:mx-[15vw] 2xl:mx-[20vw] hidden lg:block max-w-[1200px]">
+          <button
+            onClick={() => Router.back()}
+            className="text-pink text-xl leading-[26px] font-semibold mb-16 mt-2"
+          >
+            <Image src={arrow} alt="arrow" />{" "}
+            <span className="ml-2">Back to search results</span>
+          </button>
+        </div>
+      )}
       <div className="px-4 md:mx-[10vw] xl:mx-[15vw] 2xl:mx-[20vw] max-w-[1200px]">
         <DappPageHeader dappInfo={dappInfo} />
       </div>
-      {dappInfo.media?.gallery && dappInfo.media.gallery.length > 0 && (
+      {((dappInfo.media?.gallery && dappInfo.media.gallery.length > 0) ||
+        dappInfo.media.videoUrl) && (
         <div className="pl-4">
           <section className="mt-20 mb-16">
             <SwiperContainer>
@@ -96,6 +104,20 @@ const DappPage: NextPage<DappPageProps> = ({ dappInfo, twitterPosts }) => {
                   paddingBottom: "4px",
                 }}
               >
+                {dappInfo.media.videoUrl && (
+                  <SwiperSlide key={dappInfo.media.videoUrl}>
+                    <video
+                      src={dappInfo.media.videoUrl}
+                      className={
+                        "rounded-2xl h-[240px] sm:h-[300px] lg:h-[330px] shadow-box-image-shadow object-cover"
+                      }
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    />
+                  </SwiperSlide>
+                )}
                 {dappInfo.media.gallery.map((image, i) => (
                   <SwiperSlide key={image.url}>
                     <div

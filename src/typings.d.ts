@@ -46,7 +46,7 @@ interface Media {
   logoUrl: string
   bannerUrl: string
   previewUrl: string
-  videoUrl: string
+  videoUrl?: string
   gallery: Gallery[]
 }
 

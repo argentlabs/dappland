@@ -33,7 +33,7 @@
     "logoUrl": "/dapps/redline/dapp-icon-redline.png",
     "bannerUrl": "/dapps/redline/dapp-header-redline.jpg",
     "previewUrl": "/dapps/redline/dapp-preview-redline.png",
-    "videoUrl": "https://redline.game/media/hero-bg.mp4",
+    "videoUrl": "/dapps/redline/video.mp4",
     "gallery": [
       {
         "url": "https://redline.game/media/screenshots/city-sunset.webp",
