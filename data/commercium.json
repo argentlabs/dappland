@@ -2,6 +2,7 @@
   "name": "Commercium",
   "description": "We enable DEX aggregation algorithms to be executed on-chain. Thus creating a truly decentralized and permissionless DEX aggregation protocol.",
   "short_description": "On-Chain DEX Aggregator",
+  "chain": ["StarkNet"],
   "tags": ["DeFi"],
   "contracts": [],
   "goerliContracts": [

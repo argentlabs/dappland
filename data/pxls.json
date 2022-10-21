@@ -2,6 +2,7 @@
   "name": "Pxls",
   "description": "Pxls is an experimental attempt to create on-chain collaborative artworks (”rtwrks”).\n\nEvery day, our 400-member community creates a new artwork by colorizing a 20*20 pixels grid. Our goal is to create amazing artworks, of course, but also to explore how a group of people gets common inspiration, creates and learns together.",
   "short_description": "Collaborative artworks",
+  "chain": ["StarkNet"],
   "tags": ["Games", "NFTs"],
   "contracts": [
     {

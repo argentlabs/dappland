@@ -2,6 +2,7 @@
   "name": "StarkGate",
   "description": "StarkGate is the Ethereum↔StarkNet token bridge developed by StarkWare. Each supported token is associated with an L1 and L2 bridge contracts that are communicating via StarkNet's messaging mechanism.",
   "short_description": "Ethereum <> StarkNet Bridge",
+  "chain": ["StarkNet"],
   "tags": ["Bridges"],
   "contracts": [],
   "goerliContracts": [],

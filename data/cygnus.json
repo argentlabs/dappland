@@ -2,6 +2,7 @@
   "name": "CygnusDAO",
   "description": "CygnusDAO is a decentralized Stablecoin Lending and Margin Trading protocol. Lenders can supply their stablecoins in isolated lending pools acting as investors in these without the risk of impermanent loss. Borrowers can deposit their LP Tokens as collateral to borrow these stablecoins or leverage their position up to 13x. Cygnus aims to bring profitability to liquidity providers and stablecoin hodlers alike.",
   "short_description": "Decentralized Stablecoin Lending and Margin Trading Protocol",
+  "chain": ["StarkNet"],
   "tags": ["DeFi", "DAOs"],
   "contracts": [],
   "audits": [],

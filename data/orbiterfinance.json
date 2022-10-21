@@ -2,6 +2,7 @@
   "name": "Orbiter.Finance",
   "description": "Orbiter Finance is a decentralized cross-rollup bridge for transferring the Ethereum native assets, which is the infrastructure of Layer 2, it offers low cost and almost instant transfers.",
   "short_description": "Decentralized cross-rollup bridge",
+  "chain": ["StarkNet"],
   "tags": ["Bridges"],
   "contracts": [],
   "goerliContracts": [],

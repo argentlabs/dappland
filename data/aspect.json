@@ -3,6 +3,7 @@
   "description": "Aspect is an NFT marketplace built on the most scalable and secure layer 2 blockchain on Ethereum.",
   "short_description": "Discover and trade NFTs",
   "tags": ["NFTs", "Social"],
+  "chain": ["StarkNet"],
   "contracts": [
     {
       "name": "Aspect NFT Marketplace",

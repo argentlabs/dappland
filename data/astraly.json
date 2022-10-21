@@ -2,6 +2,7 @@
   "name": "Astraly",
   "description": "Astraly builds the infrastructure around decentralized reputation, helping users own their content and reputation so that any application that wants to build on-chain reputation-based systems can do so with ease. Astraly aggregates and sorts all reputation sources in an optimized way, all on-chain. In addition, Astraly is developing the first on top of this reputation protocol, the first ever repu",
   "short_description": "Reputation based token distribution platform",
+  "chain": ["StarkNet"],
   "tags": ["Social"],
   "contracts": [],
   "goerliContracts": [],

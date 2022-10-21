@@ -2,6 +2,7 @@
   "name": "Mint Square",
   "description": "Mint Square is an NFT Marketplace on Ethereum L2 ZK Rollups (StarkNet, zkSync). Mint Square enables NFT minting and trading with cheaper transactions and faster confirmation time. All NFT collections are automatically indexed and tradable on Mint Square.",
   "short_description": "NFT Marketplace",
+  "chain": ["StarkNet"],
   "tags": ["NFTs", "Games"],
   "contracts": [
     {

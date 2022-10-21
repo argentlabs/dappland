@@ -2,6 +2,7 @@
   "name": "Empiric Network",
   "description": "Empiric is the leading oracle on StarkNet. Live with 20+ price feeds - powered by data sources that send their proprietary market data directly on-chain, including Alameda Research, Jane Street, Gemini, & more. Empiric's robust feeds empower leading protocols like zkLend, Nostra, Serity & CurveZero to access data that is as verifiable, transparent & secure as the smart contracts themselves.",
   "short_description": "Decentralized & composable data infrastructure",
+  "chain": ["StarkNet"],
   "tags": ["Infrastructure"],
   "contracts": [],
   "goerliContracts": [

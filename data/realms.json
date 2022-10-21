@@ -2,6 +2,7 @@
   "name": "Realms",
   "description": "Dare you enter the Realms?\nExplore an eternal on-chain universe, filled with heroes, villains, magic and monsters.\nThere are multiple games set in the Realms universe, connected by a shared economy, resources and game assets.\nStep forth, begin your journey, and enjoy true ownership of the value you create through play.",
   "short_description": "Massive multiplayer on-chain game of economics and chivalry",
+  "chain": ["StarkNet"],
   "tags": ["Games", "NFTs", "DAOs"],
   "contracts": [
     {

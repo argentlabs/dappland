@@ -6,6 +6,7 @@ import {
   categories,
   changeTagsToCategoriesSlug,
   reputation,
+  chain,
 } from "../../data/categories"
 import { getAllDapps } from "../../hooks/getAllDapps"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
@@ -38,11 +39,14 @@ const CategoryPage = ({
   const selectedCategory = useCategoryStore()((state) => state.selectedCategory)
 
   const filteredDapps = dappCards.filter((dapp) => {
+    if (category === "starknet") {
+      return dapp.chain
+    }
     if (category === "dotw") {
       return dapp.featured
     }
     if (category === "doxxed") {
-      return !dapp.annonymous
+      return !dapp.anonymous
     }
     if (category === "audited") {
       return dapp.audits && dapp.audits.length > 0
@@ -84,13 +88,14 @@ export const getStaticProps: GetStaticProps<{ dappCards: DappCard[] }> = async (
   const parsedDapps = dapps.map((dapp: DappInfo & { url: string }) => ({
     short_description: dapp.short_description,
     title: dapp.name,
+    chain: dapp.chain,
     tags: dapp.tags,
     url: `/${dapp.url}`,
     logo: dapp.media.logoUrl,
     image: dapp.media.previewUrl,
     categories: changeTagsToCategoriesSlug(dapp.tags),
     featured: dapp.dotw,
-    annonymous: dapp.teamInfo.anonymous,
+    anonymous: dapp.teamInfo.anonymous,
     audits: dapp.audits,
   }))
 
@@ -106,7 +111,7 @@ export const getStaticPaths: GetStaticPaths<{
   category: string
 }> = () => {
   return {
-    paths: [...categories, ...reputation].map((item) => ({
+    paths: [...categories, ...reputation, ...chain].map((item) => ({
       params: {
         category: item.key,
       },

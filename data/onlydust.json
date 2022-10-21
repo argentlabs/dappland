@@ -2,6 +2,7 @@
   "name": "Only Dust",
   "description": "Contribute to the best projects within the StarkNet Ecosystem\nWork on the best open-source repo, gain credibility, meet amazing teams, and get paid in TOKENS or USDC.",
   "short_description": "Contribute to the best projects on StarkNet",
+  "chain": ["StarkNet"],
   "tags": ["Social"],
   "contracts": [],
   "goerliContracts": [],

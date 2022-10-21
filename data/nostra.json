@@ -2,6 +2,7 @@
   "name": "Nostra",
   "description": "Nostra is a permissionless non-custodial lending and borrowing protocol built on StarkNet, where everyday users can lend and borrow crypto assets without the need for a trusted third party to act as an intermediary.",
   "short_description": "Liquidity at your fingertips",
+  "chain": ["StarkNet"],
   "tags": ["DeFi"],
   "contracts": [],
   "goerliContracts": [],
