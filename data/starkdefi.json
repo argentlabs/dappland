@@ -28,7 +28,7 @@
     "logoUrl": "/dapps/starkdefi/dapp-icon-starkdefi.png",
     "bannerUrl": "/dapps/starkdefi/dapp-header-starkdefi.png",
     "previewUrl": "/dapps/starkdefi/dapp-preview-starkdefi.png",
-    "videoUrl": "https://www.starkdefi.com/dapland/preview-video.mp4",
+    "videoUrl": "/dapps/starkdefi/video.mp4",
     "gallery": []
   }
 }
