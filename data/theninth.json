@@ -1,0 +1,43 @@
+{
+  "name": "The Ninth",
+  "description": "The Ninth is a strongly on-chain PlayFi Metaverse powered by the StarkNet. Land is the most important and limited digital asset in The Ninth. The LAND acts as a hub that connects different game players who are interacting and earning in our Metaverse.",
+  "short_description": "Truly fun, secure and crypto-native games",
+  "tags": ["Games"],
+  "contracts": [],
+  "goerliContracts": [
+    {
+      "name": "Ninth (erc20)",
+      "address": "0x06fbd3f381ddcdf541d361a938717e97ff12ba3c77e4f96f9517d79055123293"
+    },
+    {
+      "name": "Koma (erc721)",
+      "address": "0x0192e5bc40dc9ef4ce7b7dcdf07c8c6adda7d138989ef918caf741eb93a85e49"
+    }
+  ],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://ninth.gg/",
+    "careers": "mailto:ninth@info.com",
+    "twitter": "https://twitter.com/ninth_gg",
+    "telegram": "https://t.me/TheNinthOfficial",
+    "discord": "https://discord.com/invite/mJeFBtdabx",
+    "github": "https://github.com/the-ninth",
+    "youtube": "https://www.youtube.com/channel/UCkTUr1LAAkwEBJyfhjjtyQw",
+    "medium": "https://medium.com/@the_ninth",
+    "mirror": ""
+  },
+  "twitterName": "ninth_gg",
+  "teamInfo": {
+    "founded": "2021-03T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/theninth/dapp-icon-theninth.png",
+    "bannerUrl": "/dapps/theninth/dapp-banner-theninth.jpg",
+    "previewUrl": "/dapps/theninth/dapp-preview-theninth.jpg",
+    "videoUrl": "/dapps/theninth/video.mp4",
+    "gallery": []
+  }
+}

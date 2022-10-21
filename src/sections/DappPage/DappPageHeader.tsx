@@ -1,10 +1,16 @@
 import expandIcon from "../../assets/icons/expand.svg"
 import flagIcon from "../../assets/icons/flag.svg"
 import Button from "../../components/Button/Button"
+import { DappStoreButton } from "../../components/Button/DappStore"
+import {
+  DownloadButton,
+  getStoreVersionFromBrowser,
+} from "../../components/Button/Download"
 import SocialLink from "../../components/SocialLink/SocialLink"
 import Tag from "../../components/Tag/Tag"
 import Image from "next/image"
 import Link from "next/link"
+import { useEffect, useState } from "react"
 import styled from "styled-components"
 
 const HeaderButtonsContainer = styled.div`
@@ -30,6 +36,13 @@ const linkOrder = [
 ] as unknown as Array<keyof Links>
 
 const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
+  const [showArgentXInstallGuide, setArgentXInstallGuide] = useState(false)
+  useEffect(() => {
+    const argentXInstalled = (window as any).starknet?.id === "argentX"
+    const browserSupportsArgentX = getStoreVersionFromBrowser() !== null
+    setArgentXInstallGuide(browserSupportsArgentX && !argentXInstalled)
+  }, [])
+
   const handleLinksOrder = () => {
     const links = dappInfo.links
     const orderedLinks: Array<{ name: keyof Links; link: string }> = []
@@ -79,17 +92,31 @@ const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
           {dappInfo.description}
         </p>
         <HeaderButtonsContainer className="flex mt-8">
-          <Link
-            href={dappInfo.links?.website + "?utm_source=dappland" || "/"}
-            passHref
-          >
-            <Button variant="primary" className="mr-3 visit-button">
-              Visit Dapp
-            </Button>
-          </Link>
-          {/* <button className="flex items-center justify-center rounded-full bg-black share-button">
-            <Image src={shareIcon} alt="share icon" />
-          </button> */}
+          {!showArgentXInstallGuide ? (
+            <Link
+              href={dappInfo.links?.website + "?utm_source=dappland" || "/"}
+              passHref
+            >
+              <Button variant="primary" className="mr-3 visit-button">
+                Visit Dapp
+              </Button>
+            </Link>
+          ) : (
+            <div className="flex gap-10 flex-col sm:flex-row">
+              <div>
+                <h3 className="font-bold text-lg mb-2">1. Install Argent X</h3>
+                <DownloadButton />
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-2">2. Visit Dapp</h3>
+                <DappStoreButton
+                  iconUrl={dappInfo.media.logoUrl}
+                  name={dappInfo.name}
+                  href={dappInfo.links.website + "?utm_source=dappland"}
+                />
+              </div>
+            </div>
+          )}
         </HeaderButtonsContainer>
       </div>
       <div>

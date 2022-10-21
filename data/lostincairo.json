@@ -1,0 +1,33 @@
+{
+  "name": "Lost in Cairo",
+  "description": "Year 2208: A quest for meaning in the Post-Information Society. Escaping the Solarpunk walled society of New Cairo was only the first step. In this Autonomous World, you will have to rebuild a new community alongside fellow explorers, gathered in the ruins of Cairo. Collaborate to survive and find answers about a lost collective memory in this MMORPG built on Starknet.",
+  "short_description": "A collaborative and narrative MMORPG on Starknet",
+  "tags": ["Games"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://lostincairo.com/",
+    "careers": "",
+    "twitter": "https://twitter.com/lostincairogame/",
+    "telegram": "https://t.me/+us-5SjDDLec1NmQ0/",
+    "discord": "https://discord.gg/gAh6MfEwdb",
+    "github": "https://github.com/lostincairo",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "lostincairogame",
+  "teamInfo": {
+    "founded": "2022-09-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/lostincairo/dapp-icon-lostincairo.png",
+    "bannerUrl": "/dapps/lostincairo/dapp-header-lostincairo.jpg",
+    "previewUrl": "/dapps/lostincairo/dapp-preview-lostincairo.png",
+    "gallery": []
+  }
+}
