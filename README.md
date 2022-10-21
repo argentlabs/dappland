@@ -1,15 +1,12 @@
-
 <div align="center">
     <img src="./src/assets/logo-dappland.gif" alt="Dappland logo animated"width=400 alt="dappland-logo" />
     <h4>The home for all dapps in the StarkNet ecosystem</h4>
     <p>Built with ❤️ by <a style="text-decoration: underline; color:black" href="https://argent.xyz">Argent</p>
 </div>
 
-[![Node.js CI](https://github.com/argentlabs/dappland/actions/workflows/node.js.yml/badge.svg)](https://github.com/argentlabs/dappland/actions/workflows/node.js.yml)
+[![Node.js CI](https://github.com/argentlabs/dappland/actions/workflows/deploy.yml/badge.svg)](https://github.com/argentlabs/dappland/actions/workflows/deploy.yml)
 
-
-##  🧭  Explore the StarkNet ecosystem
-
+## 🧭 Explore the StarkNet ecosystem
 
 Visit <a href="https://dappland.com"><b>Dappland</b></a> to explore the most influential dapps in the StarkNet ecosystem.
 
@@ -27,7 +24,7 @@ To use them, download <a href="https://github.com/argentlabs/argent-x"><b>Argent
 
 ## ✅ Add your dapp to Dappland
 
-If you are building a dapp on StarkNet and want to showcase it in Dappland, you just need to submit a PR to this repository. 
+If you are building a dapp on StarkNet and want to showcase it in Dappland, you just need to submit a PR to this repository.
 
 Steps:
 
@@ -37,7 +34,8 @@ Steps:
 4. Add your optimised images to the folder
 5. Copy `dapp_data_example.json`, rename it with your dapp's name in lowercase and move it to `/data`
 6. Fill out the fields in the json file with your dapp's data
-7. Ensure the json points to your images, i.e. 
+7. Ensure the json points to your images, i.e.
+
 ```
   "media": {
     "logoUrl": "/dapps/yourdapp/yourdapp-logo.png",
@@ -46,6 +44,7 @@ Steps:
     … etc
   }
 ```
+
 8. Create the PR
 
 And that's it! 🚀
@@ -68,4 +67,3 @@ Run locally with npm:
 npm install
 npm run dev
 ```
-
