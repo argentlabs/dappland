@@ -14,6 +14,7 @@ specifiers:
   '@types/styled-components': ^5.1.26
   autoprefixer: ^10.4.8
   babel-plugin-styled-components: ^2.0.7
+  bowser: ^2.11.0
   eslint: 8.21.0
   eslint-config-next: 12.2.4
   husky: '>=7'
@@ -33,6 +34,7 @@ specifiers:
   zustand: ^4.1.1
 
 dependencies:
+  bowser: 2.11.0
   lottie-react: 2.3.1_biqbaboplfbrettd7655fr4n2y
   next: 12.2.4_biqbaboplfbrettd7655fr4n2y
   next-themes: 0.2.0_vyccxgqxcnj5vudpssiumaxlme
@@ -2511,6 +2513,10 @@ packages:
   /boolbase/1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
     dev: true
+
+  /bowser/2.11.0:
+    resolution: {integrity: sha512-AlcaJBi/pqqJBIQ8U9Mcpc9i8Aqxn88Skv5d+xBX006BY5u8N3mGLHa5Lgppa7L/HfwgwLgZ6NYs+Ag6uUmJRA==}
+    dev: false
 
   /brace-expansion/1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
