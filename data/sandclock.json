@@ -1,7 +1,12 @@
 {
-  "name": "<Name of your Dapp>",
-  "description": "<100 to 500 characters description of your project>",
-  "short_description": "<One-liner description. Max 20 characters>",
+  "name": "Sandclock",
+  "description": "The world’s first trustless wealth management platform. 
+  When you deposit to Sandclock, the contract invests your initial deposit 
+  to a predetermined strategy chosen by you, then, it automagically splits 
+  your principal from the yield generated. You can then subdivide them however 
+  many times you want and stream your yield (or principal) to anything you want, 
+  allowing you to keep, give, invest, or allocate to another wallet or contract.",
+  "short_description": "The world’s first trustless wealth management platform.",
   "tags": [
     "Onramps",
     "DeFi",
