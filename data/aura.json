@@ -1,0 +1,36 @@
+{
+    "name": "Aura",
+    "description": "An advanced on-chain cross-margin borrowing solution for synthetic assets",
+    "short_description": "Autonomous and dynamic synthetic issuance platform",
+    "tags": [
+      "DeFi"
+    ],
+    "contracts": [],
+    "goerliContracts": [],
+    "audits": [],
+    "dotw": false,
+    "links": {
+      "website": "https://www.auraprotocol.com/",
+      "careers": "https://www.lindylabs.net/",
+      "twitter": "https://twitter.com/AuraProtocol",
+      "telegram": "",
+      "discord": "",
+      "github": "https://github.com/lindy-labs",
+      "youtube": "",
+      "medium": "https://medium.com/aura-protocol",
+      "mirror": ""
+    },
+    "twitterName": "AuraProtocol",
+    "teamInfo": {
+      "founded": "2022-01-01T00:00:00.000Z",
+      "anonymous": false
+    },
+    "tokens": [],
+    "media": {
+      "logoUrl": "/dapps/aura/aura-logo.png",
+      "bannerUrl": "/dapps/aura/aura-banner.png",
+      "previewUrl": "/dapps/aura/aura-preview.png",
+      "gallery": []
+    }
+  }
+  
