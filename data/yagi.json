@@ -4,20 +4,18 @@
   "short_description": "The StarkNet Yield Aggregator",
   "tags": ["DeFi", "Infrastructure"],
   "goerliContracts": [
-    [
-      {
-        "name": "TaskRegistry",
-        "address": "0x033830ce413e4c096eef81b5e6ffa9b9f5d963f57b8cd63c9ae4c839c383c1a6"
-      },
-      {
-        "name": "JediSwap Joint Liquidity DAI/ETH (ETH tranche)",
-        "address": "0xdeacbc83303420ea41fd3720c205a7779b025f9f3f6515ac10cabb666ff207"
-      },
-      {
-        "name": "JediSwap Joint Liquidity DAI/ETH (DAI tranche)",
-        "address": "0x02fb753a26955185a3024ec69d6d80bbbfb8d42802a8e9a9ac328fed3ee47394"
-      }
-    ]
+    {
+      "name": "TaskRegistry",
+      "address": "0x033830ce413e4c096eef81b5e6ffa9b9f5d963f57b8cd63c9ae4c839c383c1a6"
+    },
+    {
+      "name": "JediSwap Joint Liquidity DAI/ETH (ETH tranche)",
+      "address": "0xdeacbc83303420ea41fd3720c205a7779b025f9f3f6515ac10cabb666ff207"
+    },
+    {
+      "name": "JediSwap Joint Liquidity DAI/ETH (DAI tranche)",
+      "address": "0x02fb753a26955185a3024ec69d6d80bbbfb8d42802a8e9a9ac328fed3ee47394"
+    }
   ],
   "audits": [],
   "dotw": false,
@@ -42,7 +40,7 @@
     "logoUrl": "/dapps/yagi/dapp-icon-yagi.png",
     "bannerUrl": "/dapps/yagi/dapp-header-yagi.png",
     "previewUrl": "/dapps/yagi/dapp-preview-yagi.png",
-    "videoUrl": "https://www.youtube.com/watch?v=Szb0FJLQhQw",
+    "videoUrl": "",
     "gallery": [
       {
         "url": "https://yagi.fi/static/vaults.png",
