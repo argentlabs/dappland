@@ -1,0 +1,68 @@
+{
+  "name": "ViewBlock",
+  "description": "StarkNet Explorer with full decoding, advanced analytics and prime token/NFT support.",
+  "short_description": "StarkNet Block Explorer",
+  "tags": [
+    "Infrastructure"
+  ],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://v2.viewblock.io/starknet",
+    "careers": "mailto:hiring@viewblock.io",
+    "twitter": "https://twitter.com/ViewBlock",
+    "telegram": "",
+    "discord": "",
+    "github": "https://github.com/ViewBlock",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "ViewBlock",
+  "teamInfo": {
+    "founded": "2018-08-29T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/viewblock/logo.png",
+    "bannerUrl": "/dapps/viewblock/banner.png",
+    "previewUrl": "/dapps/viewblock/preview.png",
+    "gallery": [
+      {
+        "url": "/dapps/viewblock/gallery1.png",
+        "description": ""
+      },
+      {
+        "url": "/dapps/viewblock/gallery2.png",
+        "description": ""
+      },
+      {
+        "url": "/dapps/viewblock/gallery2.png",
+        "description": ""
+      },
+      {
+        "url": "/dapps/viewblock/gallery3.png",
+        "description": ""
+      },
+      {
+        "url": "/dapps/viewblock/gallery4.png",
+        "description": ""
+      },
+      {
+        "url": "/dapps/viewblock/gallery5.png",
+        "description": ""
+      },
+      {
+        "url": "/dapps/viewblock/gallery6.png",
+        "description": ""
+      },
+      {
+        "url": "/dapps/viewblock/gallery7.png",
+        "description": ""
+      }
+    ]
+  }
+}
