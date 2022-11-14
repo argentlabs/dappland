@@ -1,0 +1,47 @@
+{
+  "name": "Dynamic",
+  "description": "A smart, beautiful and dynamic multi-chain wallet login flow, and powerful developer tools to match",
+  "short_description": "Your multi-chain web3 auth platform",
+  "tags": [
+    "Infrastructure"
+  ],
+  "contracts": [
+  ],
+  "goerliContracts": [
+    [
+    ]
+  ],
+  "audits": [
+  ],
+  "dotw": false,
+  "links": {
+    "website": "https://www.dynamic.xyz/",
+    "careers": "https://www.dynamic.xyz/careers",
+    "twitter": "https://twitter.com/dynamic_xyz",
+    "telegram": "",
+    "discord": "",
+    "github": "https://github.com/dynamic-labs",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "dynamic_xyz",
+  "teamInfo": {
+    "founded": "2021",
+    "anonymous": false
+  },
+  "tokens": [
+    {
+      "address": "",
+      "symbol": ""
+    }
+  ],
+  "media": {
+    "logoUrl": "/dapps/dynamic/dapp-logo.jpg",
+    "bannerUrl": "/dapps/dynamic/dapp-header.jpg",
+    "previewUrl": "/dapps/dynamic/dapp-preview.jpg",
+    "videoUrl": "https://assets-global.website-files.com/626692727bba3f384e008e8a/63404e1add1499be9993648b_V6-Homepage-transcode.mp4",
+    "gallery": [
+    ]
+  }
+}
