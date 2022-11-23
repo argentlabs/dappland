@@ -17,7 +17,7 @@ const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
   return (
     <div className="hidden lg:block bg-white dark:bg-light-black">
       <AnnouncementBar>
-        Built with ❤️ by{" "}
+        The best StarkNet Dapps. Built by{" "}
         <a href="https://www.argent.xyz/?utm_source=dappland">Argent</a>
       </AnnouncementBar>
       <div className="relative w-full flex justify-between items-center pr-6 border-t border-b border-border-grey dark:border-white/10">
