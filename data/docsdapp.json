@@ -1,0 +1,59 @@
+{
+    "name": "DocsDapp",
+    "description": "An example dapp to educate developers on how they could add their dapps to Dappland",
+    "short_description": "Argent Dappland example",
+    "tags": [
+      "Onramps",
+      "Social",
+      "DAOs"
+    ], //Remove all that don't apply
+    "contracts": [
+      {
+        "name": "docsDapp contract",
+        "address": "0x06e0d9c78d2e51bd2c9017771fb038ddab1cd224ed5ad603bf96f06060714751"
+      }
+    ],
+    "goerliContracts": [
+      [
+        {
+          "name": "docsDapp goerli contract",
+          "address": "0x06e0d9c78d2e51bd2c9017771fb038ddab1cd224ed5ad603bf96f06060714751"
+        }
+      ]
+    ],
+    "audits": [
+      {
+        "name": "Nethermind audits",
+        "url": "https://docsdapp-nethermind-audit.com"
+      }
+    ],
+    "dotw": false, //leave 'false'
+    "links": {
+      "website": "https://docsdapp.com",
+      "careers": "https://docsdapp.com/careers",
+      "twitter": "https://twitter.com/docsdapp",
+      "telegram": "",
+      "discord": "",
+      "github": "https://github.com/docsdapp",
+      "youtube": "",
+      "medium": "",
+      "mirror": "https://mirror.xyz/docsdapp"
+    },
+    "twitterName": "docsdapp",
+    "teamInfo": {
+      "founded": "2022-05-24T00:00:00.000Z",
+      "anonymous": false // If at least one of the founders has a public profile with their real name linked to the project, set this to true.
+    },
+    "tokens": [],
+    "media": {
+      "logoUrl": "/dapps/docsdapp/dapp-logo-docsdapp.png",
+      "bannerUrl": "/dapps/docsdapp/dapp-preview-docsdapp.png",
+      "previewUrl": "/dapps/docsdapp/dapp-header-docsdapp.png",
+      "gallery": [
+        {
+          "url": "/dapps/docsdapp/dapp-header-docsdapp.png",
+          "description": "Gallery Preview"
+        }
+      ]
+    }
+  }
