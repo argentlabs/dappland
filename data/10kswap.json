@@ -1,6 +1,6 @@
 {
   "name": "10KSwap",
-  "description": "10KSwap(10kswap.com), being built on StarkNet, is an AMM protocol that advances with Ethereum. 10K aims to revolutionize the performance of the AMM protocol by leveraging the rollup feature, bringing lower fees, less friction, and ultimately better liquidity to the L2 world and advance DeFi adoption.",
+  "description": "10KSwap, being built on StarkNet, is an AMM protocol that advances with Ethereum. 10K aims to revolutionize the performance of the AMM protocol by leveraging the rollup feature, bringing lower fees, less friction, and ultimately better liquidity to the L2 world and advance DeFi adoption.",
   "short_description": "A Layer2 AMM protocol",
   "tags": ["DeFi", "Infrastructure"],
   "contracts": [
