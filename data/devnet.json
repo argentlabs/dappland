@@ -2,9 +2,7 @@
   "name": "StarkNet Devnet",
   "description": "To speed up the testing and interactions of contracts with StarkNet by using StarkNet Devnet. It runs a local network aimed to mimic the official StarkNet testnet.",
   "short_description": "Ganache for StarkNet",
-  "tags": [
-    "Infrastructure"
-  ],
+  "tags": ["Infrastructure"],
   "contracts": [],
   "goerliContracts": [],
   "audits": [],
@@ -28,8 +26,8 @@
   "tokens": [],
   "media": {
     "logoUrl": "/dapps/spaceshard/320x320-devnet.png",
-    "bannerUrl": "/dapps/spaceshard/1920x400-spaceshard.png",
-    "previewUrl": "/dapps/spaceshard/700x400-spaceshard.png",
+    "bannerUrl": "/dapps/spaceshard/1920x400-devnet.png",
+    "previewUrl": "/dapps/spaceshard/700x400-devnet.png",
     "videoUrl": "",
     "gallery": [
       {
