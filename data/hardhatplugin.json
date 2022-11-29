@@ -2,9 +2,7 @@
   "name": "StarkNet Hardhat Plugin",
   "description": "By using StarkNet Hardhat Plugin, you adapt Hardhat environment to work with StarkNet smart contracts. Apart from compiling and deploying contracts, you can interact with them and test them with JavaScript.",
   "short_description": "Use Hardhat on StarkNet",
-  "tags": [
-    "Infrastructure"
-  ],
+  "tags": ["Infrastructure"],
   "contracts": [],
   "goerliContracts": [],
   "audits": [],
@@ -28,8 +26,8 @@
   "tokens": [],
   "media": {
     "logoUrl": "/dapps/spaceshard/320x320-hh.png",
-    "bannerUrl": "/dapps/spaceshard/1920x400-spaceshard.png",
-    "previewUrl": "/dapps/spaceshard/700x400-spaceshard.png",
+    "bannerUrl": "/dapps/spaceshard/1920x400-hh.png",
+    "previewUrl": "/dapps/spaceshard/700x400-hh.png",
     "videoUrl": "",
     "gallery": [
       {
