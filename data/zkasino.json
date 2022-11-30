@@ -1,7 +1,7 @@
 {
   "name": "ZKasino",
   "description": "ZKasino is a decentralized casino built on Layer 2 ZK-Rollups technology allowing for infinite scalability whilst keeping optimal decentralization from the Ethereum network. Play in a trustless manner (no KYC), allowing for your funds and winning probabilities to be presented in full transparency through the solid law of smart contracts.",
-  "short_description": "Decentralized Casino and Betting Platform On ZK-Rollups",
+  "short_description": "Decentralized Casino and Betting Platform",
   "tags": ["Games"],
   "contracts": [
     {
