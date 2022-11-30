@@ -1,0 +1,46 @@
+{
+  "name": "ZKasino",
+  "description": "ZKasino is a decentralized casino built on Layer 2 ZK-Rollups technology allowing for infinite scalability whilst keeping optimal decentralization from the Ethereum network. Play in a trustless manner (no KYC), allowing for your funds and winning probabilities to be presented in full transparency through the solid law of smart contracts.",
+  "short_description": "Decentralized Casino and Betting Platform",
+  "tags": ["Games"],
+  "contracts": [
+    {
+      "name": "Dice Mainnet Contract",
+      "address": "0x0022d096be050d5838e5ff81f50151eab61affaee5e95dabe3455afebc68c248"
+    }
+  ],
+  "goerliContracts": [
+    [
+      {
+        "name": "Dice Testnet Contract",
+        "address": "0x03e3927d75dc47e1376ae04ace262ca21fe42aeda5dcc7672f411c3246ed5684"
+      }
+    ]
+  ],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://app.starklink.io",
+    "careers": "https://zkasino.io/contact",
+    "twitter": "https://twitter.com/zKasino_io",
+    "telegram": "https://t.me/ZKasino",
+    "discord": "https://discord.gg/mRBERmGVs3",
+    "github": "https://github.com/zkasino",
+    "youtube": "",
+    "medium": "https://zkasino.medium.com/",
+    "mirror": ""
+  },
+  "twitterName": "ZKasino_io",
+  "teamInfo": {
+    "founded": "2022-01-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/zkasino/logo-zkasino.png",
+    "bannerUrl": "/dapps/zkasino/banner-zkasino.jpg",
+    "previewUrl": "/dapps/zkasino/preview-zkasino.jpg",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
