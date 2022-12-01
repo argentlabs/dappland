@@ -1,0 +1,51 @@
+{
+  "name": "Yagi Finance",
+  "description": "Grow your Ethereum assets cheaply on the most sophisticated Layer 2. Yagi develops trustless ERC4626-compatible vaults that provide exposure to the leading StarkNet DeFi and GameFi protocols. We also expose automation infrastructure to other StarkNet developers in the form of our keeper network.",
+  "short_description": "The StarkNet Yield Aggregator",
+  "tags": ["DeFi", "Infrastructure"],
+  "goerliContracts": [
+    {
+      "name": "TaskRegistry",
+      "address": "0x033830ce413e4c096eef81b5e6ffa9b9f5d963f57b8cd63c9ae4c839c383c1a6"
+    },
+    {
+      "name": "JediSwap Joint Liquidity DAI/ETH (ETH tranche)",
+      "address": "0xdeacbc83303420ea41fd3720c205a7779b025f9f3f6515ac10cabb666ff207"
+    },
+    {
+      "name": "JediSwap Joint Liquidity DAI/ETH (DAI tranche)",
+      "address": "0x02fb753a26955185a3024ec69d6d80bbbfb8d42802a8e9a9ac328fed3ee47394"
+    }
+  ],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://www.yagi.finance",
+    "careers": "mailto:peteris@auditless.com",
+    "twitter": "https://www.twitter.com/yagi_fi",
+    "telegram": "",
+    "discord": "https://discord.gg/49TYpjfkUn",
+    "github": "https://github.com/auditless/cairo-erc4626",
+    "youtube": "",
+    "medium": "https://medium.com/yagi-fi",
+    "mirror": ""
+  },
+  "twitterName": "yagi_fi",
+  "teamInfo": {
+    "founded": "2022-01-16T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/yagi/dapp-icon-yagi.png",
+    "bannerUrl": "/dapps/yagi/dapp-header-yagi.png",
+    "previewUrl": "/dapps/yagi/dapp-preview-yagi.png",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "https://yagi.fi/static/vaults.png",
+        "description": "Yagi Vaults"
+      }
+    ]
+  }
+}

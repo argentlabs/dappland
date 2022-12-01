@@ -1,0 +1,34 @@
+{
+  "name": "zkLend",
+  "description": "zkLend is a money-market protocol combining zk-rollup scalability, superior transaction speed, and cost-savings with Ethereum's security.",
+  "short_description": "Money-market protocol",
+  "tags": ["DeFi"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://zklend.com/",
+    "careers": "mailto:info@zklend.com",
+    "twitter": "https://twitter.com/zkLend",
+    "telegram": "https://t.me/zkLendAnnouncements",
+    "discord": "https://discord.com/invite/3v7RhwtJ8S",
+    "github": "https://github.com/zkLend",
+    "youtube": "",
+    "medium": "https://medium.com/zklend",
+    "mirror": ""
+  },
+  "twitterName": "zkLend",
+  "teamInfo": {
+    "founded": "",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/zklend/zklend-logo.png",
+    "bannerUrl": "/dapps/zklend/zklend-banner.png",
+    "previewUrl": "/dapps/zklend/zklend-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}

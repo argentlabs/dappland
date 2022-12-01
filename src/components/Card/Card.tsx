@@ -53,7 +53,7 @@ const Card = ({
           )}
         </div>
         <CardContainer className="lg:mt-4 grid items-center">
-          <div className="flex items-center w-16 h-16 shadow-box-image-shadow rounded-lg dark:bg-white relative">
+          <div className="flex items-center w-16 h-16 shadow-box-image-shadow rounded-lg relative">
             <Image
               src={logo}
               alt={`${title} - logo`}

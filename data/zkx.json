@@ -1,0 +1,38 @@
+{
+  "name": "ZKX",
+  "description": "ZKX is a permissionless protocol for derivatives built on Starknet, with a decentralized order book and a unique way to offer complex financial instruments as swaps.",
+  "short_description": "The first perpetual futures exchange on StarkNet",
+  "tags": ["DeFi", "DAOs"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [
+    {
+      "name": "Nethermind",
+      "url": "https://zkx-apollo-media.s3.us-east-2.amazonaws.com/audits/NM0056_FINAL_ZKX.pdf"
+    }
+  ],
+  "dotw": false,
+  "links": {
+    "website": "https://zkx.fi",
+    "careers": "",
+    "twitter": "https://twitter.com/zkxprotocol",
+    "telegram": "https://t.me/zkxcommunity",
+    "discord": "https://discord.com/invite/7YrNHdwNyu",
+    "github": "",
+    "youtube": "",
+    "medium": "https://zkxprotocol.medium.com/",
+    "mirror": ""
+  },
+  "twitterName": "Twitter username. Leave empty if none",
+  "teamInfo": {
+    "founded": "2021-09-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/zkx/zkx-icon.png",
+    "bannerUrl": "/dapps/zkx/zkx-banner.png",
+    "previewUrl": "/dapps/zkx/zkx-preview.png",
+    "gallery": []
+  }
+}
