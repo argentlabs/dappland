@@ -1,7 +1,7 @@
 {
   "name": "ZKX",
   "description": "ZKX is a permissionless protocol for derivatives built on Starknet, with a decentralized order book and a unique way to offer complex financial instruments as swaps.",
-  "short_description": "The first perpetual futures exchange built on StarkNet that offers complex financial instruments as swaps.",
+  "short_description": "The first perpetual futures exchange on StarkNet",
   "tags": ["DeFi", "DAOs"],
   "contracts": [],
   "goerliContracts": [],
