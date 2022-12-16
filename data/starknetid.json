@@ -1,0 +1,38 @@
+{
+  "name": "Starknet.id",
+  "description": "Mint your starknet identity for free and connect it to your twitter, discord or github account. Transact directly from domain to domain instead of a cryptic key by claiming your unique .stark domain linked to your starknet identity.",
+  "short_description": "All in one identity service on starknet",
+  "tags": ["NFTs", "Social"],
+  "contracts": [
+    {
+      "name": "Naming contract",
+      "address": "0x06ac597f8116f886fa1c97a23fa4e08299975ecaf6b598873ca6792b9bbfb678"
+    }
+  ],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://www.starknet.id/",
+    "careers": "",
+    "twitter": "https://twitter.com/starknet_id",
+    "telegram": "",
+    "discord": "https://t.co/eiYKYWUvVR",
+    "github": "https://github.com/starknet-id",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "starknet_id",
+  "teamInfo": {
+    "founded": "2022-07-05T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/starknetid/starknetid-logo.png",
+    "bannerUrl": "/dapps/starknetid/starknetid-banner.png",
+    "previewUrl": "/dapps/starknetid/starknetid-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
