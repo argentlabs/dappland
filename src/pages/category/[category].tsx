@@ -7,6 +7,7 @@ import {
   changeTagsToCategoriesSlug,
   reputation,
 } from "../../data/categories"
+import getDayDifferenceBetweenTwoDates from "../../helpers/getDayDifferenceBetweenTwoDates"
 import { getAllDapps } from "../../hooks/getAllDapps"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { GetStaticPaths, GetStaticProps } from "next"
@@ -46,6 +47,11 @@ const CategoryPage = ({
     }
     if (category === "audited") {
       return dapp.audits && dapp.audits.length > 0
+    }
+    if (category === "recent") {
+      const dateAdded = new Date(dapp.date_added)
+      const dateNow = new Date()
+      return dateAdded && getDayDifferenceBetweenTwoDates(dateNow, dateAdded)
     }
     return dapp.categories.includes(category)
   })
@@ -92,6 +98,7 @@ export const getStaticProps: GetStaticProps<{ dappCards: DappCard[] }> = async (
     featured: dapp.dotw,
     annonymous: dapp.teamInfo.anonymous,
     audits: dapp.audits,
+    date_added: dapp.date_added || null,
   }))
 
   return {

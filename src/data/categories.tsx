@@ -18,6 +18,8 @@ import heart from "../assets/icons/heart.svg"
 import heartLight from "../assets/icons/heartLight.svg"
 import legal from "../assets/icons/legal.svg"
 import legalLight from "../assets/icons/legalLight.svg"
+import recent from "../assets/icons/new.svg"
+import recentLight from "../assets/icons/newLight.svg"
 import profile from "../assets/icons/profile.svg"
 import profileLight from "../assets/icons/profileLight.svg"
 import swap from "../assets/icons/swap.svg"
@@ -42,6 +44,12 @@ export const categories = [
 export const reputation = [
   { key: "doxxed", name: "Public team", icon: profile, iconDark: profileLight },
   { key: "audited", name: "Audited", icon: legal, iconDark: legalLight },
+  {
+    key: "recent",
+    name: "Recently launched",
+    icon: recent,
+    iconDark: recentLight,
+  },
 ]
 
 export const allCategories = [...categories, ...reputation]

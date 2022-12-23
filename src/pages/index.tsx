@@ -70,6 +70,7 @@ export const getStaticProps = async () => {
     featured: dapp.dotw,
     annonymous: dapp.teamInfo.anonymous,
     audits: dapp.audits,
+    date_added: dapp.date_added || null,
   }))
 
   return {
