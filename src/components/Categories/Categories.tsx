@@ -1,5 +1,5 @@
 import { categories, reputation } from "../../data/categories"
-import getDayDifferenceBetweenTwoDates from "../../helpers/getDayDifferenceBetweenTwoDates"
+import checkIfDateDifferenceIsLessThanValue from "../../helpers/checkIfDateDifferenceIsLessThanValue"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { useDarkMode } from "../../hooks/useDarkMode"
 import Image from "next/image"
@@ -58,7 +58,7 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
         if (currentValue.date_added) {
           const dateAdded = new Date(currentValue.date_added)
           const dateNow = new Date()
-          if (getDayDifferenceBetweenTwoDates(dateNow, dateAdded)) {
+          if (checkIfDateDifferenceIsLessThanValue(dateNow, dateAdded)) {
             return prevValue + 1
           }
         }

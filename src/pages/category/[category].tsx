@@ -7,7 +7,7 @@ import {
   changeTagsToCategoriesSlug,
   reputation,
 } from "../../data/categories"
-import getDayDifferenceBetweenTwoDates from "../../helpers/getDayDifferenceBetweenTwoDates"
+import checkIfDateDifferenceIsLessThanValue from "../../helpers/checkIfDateDifferenceIsLessThanValue"
 import { getAllDapps } from "../../hooks/getAllDapps"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { GetStaticPaths, GetStaticProps } from "next"
@@ -51,7 +51,9 @@ const CategoryPage = ({
     if (category === "recent") {
       const dateAdded = new Date(dapp.date_added)
       const dateNow = new Date()
-      return dateAdded && getDayDifferenceBetweenTwoDates(dateNow, dateAdded)
+      return (
+        dateAdded && checkIfDateDifferenceIsLessThanValue(dateNow, dateAdded)
+      )
     }
     return dapp.categories.includes(category)
   })
