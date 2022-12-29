@@ -21,7 +21,7 @@ const Tooltip = ({ children, text }: Props) => {
     }
   }
   return (
-    <div className="relative flex flex-col items-center" role="tooltip">
+    <div className="relative flex flex-col items-center m-[2px]" role="tooltip">
       <button
         role="button"
         className="p-0 m-0 outline-0 bg-none border-none"
@@ -31,14 +31,14 @@ const Tooltip = ({ children, text }: Props) => {
         {children}
       </button>
       <div
-        className="max-w-xs absolute whitespace-no-wrap bg-tooltip-dark text-white px-4 py-4 rounded flex items-center justify-center bottom-full transition-all duration-150 opacity-0"
+        className="max-w-xs absolute text-base whitespace-no-wrap bg-tooltip-dark dark:bg-white text-white dark:text-tooltip-dark px-4 py-4 rounded flex items-center justify-center bottom-full transition-all duration-150 opacity-0"
         ref={ref}
         style={{
           width: "max-content",
           maxWidth: "238px",
         }}
       >
-        <div className="bg-tooltip-dark h-3 w-3 absolute transform rotate-45 -bottom-1.5" />
+        <div className="bg-tooltip-dark dark:bg-white h-3 w-3 absolute transform rotate-45 -bottom-1.5 " />
         {text}
       </div>
     </div>

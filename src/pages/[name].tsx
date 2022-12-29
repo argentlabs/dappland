@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import DappPageDetails from "../sections/DappPage/DappPageDetails"
 import DappPageHeader from "../sections/DappPage/DappPageHeader"
 import DappPageTwitter from "../sections/DappPage/DappPageTwitter"
+import NFTPageStats from "../sections/NFTPage/NFTPageStats"
 import { readdir, readFile } from "fs/promises"
 import { GetStaticPaths, GetStaticProps, NextPage } from "next"
 import Image from "next/image"
@@ -134,6 +135,7 @@ const DappPage: NextPage<DappPageProps> = ({ dappInfo, twitterPosts }) => {
       <div className="px-4 md:mx-[10vw] xl:mx-[15vw] 2xl:mx-[20vw] mb-16 lg:mb-32 max-w-[1200px]">
         <DappPageDetails dappInfo={dappInfo} />
         <DappPageTwitter dappInfo={dappInfo} twitterPosts={twitterPosts} />
+        <NFTPageStats />
       </div>
     </Layout>
   )
