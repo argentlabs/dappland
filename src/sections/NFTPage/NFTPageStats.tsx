@@ -5,7 +5,7 @@ const NFTPageStats = () => {
   return (
     <section className="mt-24">
       <div className="mb-24">
-        <h2 className="text-center font-bold text-[54px] mb-12">Last 7 Days</h2>
+        <h2 className="text-center font-bold text-5xl mb-12">Last 7 Days</h2>
         <div className="lg:grid xl:grid-cols-4 lg:gap-x-16 lg:gap-y-16 xl:justify-between bg-white lg:grid-cols-2 dark:bg-white/10 p-8 rounded-xl flex flex-col shadow-box-image-shadow">
           <div className="flex flex-col gap-1">
             <p className="text-light-charcoal dark:text-clay font-medium text-xl leading-6 flex gap-1 flex-wrap">
@@ -49,10 +49,10 @@ const NFTPageStats = () => {
       </div>
       <div className="mb-8">
         <div className="mb-12">
-          <h2 className="text-center font-bold text-[54px] leading-10 mb-2">
+          <h2 className="text-center font-bold text-5xl leading-10 mb-2">
             Star Monsterz
           </h2>
-          <h3 className="text-center font-bold text-[28px]">NFT Collection</h3>
+          <h3 className="text-center font-bold text-2xl">NFT Collection</h3>
         </div>
         <div className="lg:grid xl:grid-cols-4 lg:gap-x-16 lg:gap-y-16 xl:justify-between bg-white lg:grid-cols-2 dark:bg-white/10 p-8 rounded-xl flex flex-col shadow-box-image-shadow">
           <div className="flex flex-col gap-1">
