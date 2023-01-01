@@ -4,24 +4,6 @@
   "short_description": "The NFT building protocol",
   "tags": ["NFTs", "Games"],
   "contracts": [],
-  "nftCollectionPreview": [
-    {
-      "image_url": "https://mintsquare.sfo3.cdn.digitaloceanspaces.com/mintsquare/assets/0x059df550c89bebee3808b2256d76001e1a3703817e04781c17bd75b17b4959f2/QmcXQBTqPrchbvWBV35qnqR3YHQFU4KkjyhkGduMsef9Gf",
-      "name": "Star Monsterz #51"
-    },
-    {
-      "image_url": "https://mintsquare.sfo3.cdn.digitaloceanspaces.com/mintsquare/assets/0x059df550c89bebee3808b2256d76001e1a3703817e04781c17bd75b17b4959f2/QmS1aZh8NDcULS4rKLJQYAx1aseygU6s1GuxEenz4Pi1tr",
-      "name": "Star Monsterz #52"
-    },
-    {
-      "image_url": "https://mintsquare.sfo3.cdn.digitaloceanspaces.com/mintsquare/assets/0x059df550c89bebee3808b2256d76001e1a3703817e04781c17bd75b17b4959f2/QmThmPoGdro8dgBUXAy43NrBmURvRkDf4echH64ZH6VuiK",
-      "name": "Star Monsterz #53"
-    },
-    {
-      "image_url": "https://mintsquare.sfo3.cdn.digitaloceanspaces.com/mintsquare/assets/0x059df550c89bebee3808b2256d76001e1a3703817e04781c17bd75b17b4959f2/QmTaQgNoLaxqNJjNbpLeXBNKP1SBwEP2siuAjBJn5X1Pbm",
-      "name": "Star Monsterz #54"
-    }
-  ],
   "goerliContracts": [
     {
       "name": "briq contract",

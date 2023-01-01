@@ -140,7 +140,9 @@ const DappPage: NextPage<DappPageProps> = ({
       <div className="px-4 md:mx-[10vw] xl:mx-[15vw] 2xl:mx-[20vw] mb-16 lg:mb-32 max-w-[1200px]">
         <NFTPageStats
           data={nftData}
-          nftCollectionPreview={dappInfo.nftCollectionPreview}
+          nftCollectionPreview={dappInfo?.nft?.collectionPreview}
+          nftCollectionLink={dappInfo?.nft?.collectionLink}
+          nftCollectionName={dappInfo?.nft?.collectionName}
         />
         <DappPageDetails dappInfo={dappInfo} />
         <DappPageTwitter dappInfo={dappInfo} twitterPosts={twitterPosts} />
@@ -163,13 +165,18 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
 
   const dappInfo: DappInfo = JSON.parse(content)
 
-  const contract =
-    "0x03090623ea32d932ca1236595076b00702e7d860696faf300ca9eb13bfe0a78c"
-  const nftCollectionUrl = `https://api.aspect.co/api/v0/contract/${contract}`
+  const contracts = dappInfo.contracts
+  const erc721Contract = (contracts || []).find((contract) =>
+    contract.name.toLowerCase().includes("721"),
+  )
+  const contract = erc721Contract ? erc721Contract.address : null
 
-  const nftData = dappInfo.tags.includes("NFTs")
-    ? await fetch(nftCollectionUrl).then((res) => res.json())
-    : null
+  const nftData =
+    contract && dappInfo.tags.includes("NFTs")
+      ? await fetch(`https://api.aspect.co/api/v0/contract/${contract}`).then(
+          (res) => res.json(),
+        )
+      : null
   const twitterName =
     dappInfo.twitterName ||
     (dappInfo.links?.twitter.length > 0 &&

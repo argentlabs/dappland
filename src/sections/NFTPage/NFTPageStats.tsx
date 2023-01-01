@@ -1,20 +1,33 @@
 import Button from "../../components/Button/Button"
 import TooltipIconButton from "../../components/Tooltip/TooltipIconButton"
 import Image from "next/image"
+import Link from "next/link"
 import React from "react"
+import styled from "styled-components"
+
+const ButtonsContainer = styled.div`
+  .visit-button {
+    padding: 10px 24px;
+    line-height: normal;
+  }
+`
 
 const NFTPageStats = ({
   data,
   nftCollectionPreview,
+  nftCollectionLink,
+  nftCollectionName,
 }: {
   data: NFTData | null
   nftCollectionPreview?: { name: string; image_url: string }[]
+  nftCollectionLink?: string
+  nftCollectionName?: string
 }) => {
   if (!nftCollectionPreview) {
     return null
   }
   const totalVolume = data?.total_volume_all_time
-    ? Math.round((data?.total_volume_all_time / 1e18) * 1000 + Number.EPSILON) /
+    ? Math.floor((data?.total_volume_all_time / 1e18) * 1000 + Number.EPSILON) /
       1000
     : "N/A"
   let floorPrice = null
@@ -23,18 +36,19 @@ const NFTPageStats = ({
     if (displayFloorPrice < 0.001) {
       floorPrice = "< 0.001"
     } else {
-      floorPrice = displayFloorPrice.toFixed(3)
+      floorPrice =
+        Math.round(displayFloorPrice * 10000 + Number.EPSILON) / 10000
     }
   } else {
     floorPrice = "N/A"
   }
 
   return (
-    <section className="mt-24 mb-12">
+    <section className="lg:mt-24 lg:mb-24 mt-12 mb-12">
       <div className="mb-8">
         <div className="mb-12">
           <h2 className="text-center font-bold text-5xl leading-10 mb-2">
-            {data?.name}
+            {data?.name_custom || data?.name || nftCollectionName}
           </h2>
           <h3 className="text-center font-bold text-2xl">NFT Collection</h3>
         </div>
@@ -85,7 +99,7 @@ const NFTPageStats = ({
           </div>
         </div>
       ) : null}
-      <div className="mb-12 grid xl:grid-cols-4 gap-4 xl:justify-between xl:mt-4 lg:grid-cols-4 grid-cols-2 rounded-xl">
+      <div className="mb-8 grid xl:grid-cols-4 gap-4 xl:justify-between xl:mt-4 lg:grid-cols-4 grid-cols-2 rounded-xl">
         {nftCollectionPreview.map((nft) => (
           <div
             key={nft.name}
@@ -104,9 +118,15 @@ const NFTPageStats = ({
           </div>
         ))}
       </div>
-      <div className="flex items-center justify-center w-full">
-        <Button variant="primary">Explore Full Collection</Button>
-      </div>
+      <ButtonsContainer>
+        <div className="flex items-center lg:justify-center w-full justify-items-start">
+          <Link href={nftCollectionLink || "/"} passHref>
+            <Button variant="primary" className="visit-button">
+              Explore Full Collection
+            </Button>
+          </Link>
+        </div>
+      </ButtonsContainer>
     </section>
   )
 }

@@ -6,6 +6,7 @@ declare module "*.svg" {
 
 interface NFTData {
   name: string
+  name_custom: string
   total_volume_all_time: number
   total_volume_720_hours?: number
   total_volume_168_hours?: number
@@ -32,10 +33,14 @@ interface DappInfo {
   media: Media
   dotw: boolean
   twitterName: string
-  nftCollectionPreview?: {
-    image_url: string
-    name: string
-  }[]
+  nft?: {
+    collectionLink: string
+    collectionName: string
+    collectionPreview: {
+      image_url: string
+      name: string
+    }[]
+  }
 }
 
 interface Audit {
