@@ -17,7 +17,7 @@ const nextConfig = {
     return config
   },
   images: {
-    domains: ["pbs.twimg.com"], // to load images from twitter
+    domains: ["pbs.twimg.com", "mintsquare.sfo3.cdn.digitaloceanspaces.com"], // to load images from twitter
   },
   experimental: {
     scrollRestoration: true,

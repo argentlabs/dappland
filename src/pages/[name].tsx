@@ -45,9 +45,14 @@ const SwiperContainer = styled.div`
 interface DappPageProps {
   dappInfo: DappInfo
   twitterPosts: TwitterData
+  nftData: NFTData | null
 }
 
-const DappPage: NextPage<DappPageProps> = ({ dappInfo, twitterPosts }) => {
+const DappPage: NextPage<DappPageProps> = ({
+  dappInfo,
+  twitterPosts,
+  nftData,
+}) => {
   const [showPrev, setShowPrev] = useState(false)
   useEffect(() => {
     // @ts-ignore
@@ -133,9 +138,12 @@ const DappPage: NextPage<DappPageProps> = ({ dappInfo, twitterPosts }) => {
         </div>
       )}
       <div className="px-4 md:mx-[10vw] xl:mx-[15vw] 2xl:mx-[20vw] mb-16 lg:mb-32 max-w-[1200px]">
+        <NFTPageStats
+          data={nftData}
+          nftCollectionPreview={dappInfo.nftCollectionPreview}
+        />
         <DappPageDetails dappInfo={dappInfo} />
         <DappPageTwitter dappInfo={dappInfo} twitterPosts={twitterPosts} />
-        <NFTPageStats />
       </div>
     </Layout>
   )
@@ -155,6 +163,13 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
 
   const dappInfo: DappInfo = JSON.parse(content)
 
+  const contract =
+    "0x03090623ea32d932ca1236595076b00702e7d860696faf300ca9eb13bfe0a78c"
+  const nftCollectionUrl = `https://api.aspect.co/api/v0/contract/${contract}`
+
+  const nftData = dappInfo.tags.includes("NFTs")
+    ? await fetch(nftCollectionUrl).then((res) => res.json())
+    : null
   const twitterName =
     dappInfo.twitterName ||
     (dappInfo.links?.twitter.length > 0 &&
@@ -186,6 +201,7 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
     props: {
       dappInfo,
       twitterPosts,
+      nftData,
     },
   }
 }
