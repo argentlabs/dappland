@@ -10,6 +10,8 @@ import {
 import { getAllDapps } from "../../hooks/getAllDapps"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { GetStaticPaths, GetStaticProps } from "next"
+import { useRouter } from "next/router"
+import { useEffect } from "react"
 import styled from "styled-components"
 
 const StyledSection = styled.section`
@@ -35,8 +37,13 @@ const CategoryPage = ({
   dappCards: Array<DappCard & { categories: string[] }>
   category: string
 }) => {
+  const router = useRouter()
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
+  const changeCategory = useCategoryStore((state) => state.changeCategory)
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
+  useEffect(() => {
+    changeCategory((router?.query?.category as string) || "all")
+  }, [])
 
   const categoryDapps = dappCards.filter((dapp) => {
     if (category === "dotw") {

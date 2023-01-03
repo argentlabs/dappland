@@ -37,19 +37,28 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
   const { currentTheme } = useDarkMode()
 
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
-
   const changeCategory = useCategoryStore((state) => state.changeCategory)
-
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
-
   const addFilter = useCategoryStore((state) => state.addFilter)
-
-  const resetFilters = useCategoryStore((state) => state.resetFilters)
+  const setFilters = useCategoryStore((state) => state.setFilters)
 
   useEffect(() => {
-    changeCategory((router?.query?.category as string) || "all")
-    resetFilters()
-  }, [])
+    if (router.isReady) {
+      const filters = (router?.query?.filters as string)?.split(",") || []
+      setFilters(filters)
+    }
+  }, [router.isReady, selectedCategory])
+
+  useEffect(() => {
+    if (selectedCategory !== "all") {
+      const allFilters = selectedFilters.join(",")
+      router.push(
+        `/category/${selectedCategory}${
+          selectedFilters.length ? `?filters=${allFilters}` : ``
+        }`,
+      )
+    }
+  }, [selectedFilters])
 
   const renderCategoryCount = (category: string) =>
     dappCards.reduce((prevValue, currentValue) => {

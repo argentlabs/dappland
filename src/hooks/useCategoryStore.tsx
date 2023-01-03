@@ -6,16 +6,16 @@ interface CategoryState {
   changeCategory: (category: string) => void
   selectedFilters: string[]
   addFilter: (category: string) => void
-  resetFilters: () => void
+  setFilters: (s: string[]) => void
 }
 
 export const useCategoryStore = create<CategoryState>((set) => ({
   selectedCategory: "all",
   changeCategory: (category) => set(() => ({ selectedCategory: category })),
   selectedFilters: [],
-  resetFilters: () =>
+  setFilters: (s) =>
     set(() => ({
-      selectedFilters: [],
+      selectedFilters: s,
     })),
   addFilter: (category) =>
     set((state) => {
