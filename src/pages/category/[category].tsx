@@ -38,18 +38,40 @@ const CategoryPage = ({
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
 
-  const filteredDapps = dappCards.filter((dapp) => {
-    if (category === "dotw" || selectedFilters.includes("dotw")) {
+  const categoryDapps = dappCards.filter((dapp) => {
+    if (category === "dotw") {
       return dapp.featured
     }
-    if (category === "doxxed" || selectedFilters.includes("doxxed")) {
+    if (category === "doxxed") {
       return !dapp.annonymous
     }
-    if (category === "audited" || selectedFilters.includes("audited")) {
+    if (category === "audited") {
       return dapp.audits && dapp.audits.length > 0
     }
     return dapp.categories.includes(category)
   })
+
+  // Check if all filters apply to a category
+  const filteredDapps = categoryDapps.filter((dapp) => {
+    return (
+      selectedFilters.reduce((acc, val) => {
+        if (val === "dotw" && dapp.featured) {
+          acc = acc + 1
+        }
+        if (val === "doxxed" && !dapp.annonymous) {
+          acc = acc + 1
+        }
+        if (val === "audited" && dapp.audits && dapp.audits.length > 0) {
+          acc = acc + 1
+        }
+        if (dapp.categories.includes(val)) {
+          acc = acc + 1
+        }
+        return acc
+      }, 0) === selectedFilters.length
+    )
+  })
+
   return (
     <Layout>
       <div className="container px-4 mx-auto mb-16 lg:mb-32">

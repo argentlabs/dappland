@@ -44,9 +44,12 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
 
   const addFilter = useCategoryStore((state) => state.addFilter)
 
+  const resetFilters = useCategoryStore((state) => state.resetFilters)
+
   useEffect(() => {
     changeCategory((router?.query?.category as string) || "all")
-  })
+    resetFilters()
+  }, [])
 
   const renderCategoryCount = (category: string) =>
     dappCards.reduce((prevValue, currentValue) => {
@@ -219,40 +222,42 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
         onMouseOver={(e) => !hovered && setHovered(true)}
         onMouseLeave={(e) => hovered && setHovered(false)}
       >
-        {reputation.map(
-          (category) =>
-            renderCategoryCount(category.name) > 0 && (
-              <li
-                className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
-                  selectedCategory === category.key ? "active" : ""
-                } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
-                key={category.name}
-                tabIndex={0}
-                onClick={() => {
-                  addFilter(category.key)
-                }}
-              >
-                <div className="flex items-center justify-between w-full py-4 px-4">
-                  <div className="flex items-center">
-                    <Image
-                      src={
-                        currentTheme === "dark"
-                          ? category.iconDark
-                          : category.icon
-                      }
-                      alt={category.name}
-                    />
-                    <p className="mt-2 font-semibold leading-none text-sm lg:ml-3 lg:mt-0 text-black dark:text-white">
-                      {category.name}
+        {reputation
+          .filter((rep) => !selectedFilters.includes(rep.key))
+          .map(
+            (category) =>
+              renderCategoryCount(category.name) > 0 && (
+                <li
+                  className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
+                    selectedCategory === category.key ? "active" : ""
+                  } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
+                  key={category.name}
+                  tabIndex={0}
+                  onClick={() => {
+                    addFilter(category.key)
+                  }}
+                >
+                  <div className="flex items-center justify-between w-full py-4 px-4">
+                    <div className="flex items-center">
+                      <Image
+                        src={
+                          currentTheme === "dark"
+                            ? category.iconDark
+                            : category.icon
+                        }
+                        alt={category.name}
+                      />
+                      <p className="mt-2 font-semibold leading-none text-sm lg:ml-3 lg:mt-0 text-black dark:text-white">
+                        {category.name}
+                      </p>
+                    </div>
+                    <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
+                      {renderCategoryCount(category.name)}
                     </p>
                   </div>
-                  <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
-                    {renderCategoryCount(category.name)}
-                  </p>
-                </div>
-              </li>
-            ),
-        )}
+                </li>
+              ),
+          )}
       </ul>
     </CategoryContainer>
   )
