@@ -35,16 +35,17 @@ const CategoryPage = ({
   dappCards: Array<DappCard & { categories: string[] }>
   category: string
 }) => {
-  const selectedCategory = useCategoryStore()((state) => state.selectedCategory)
+  const selectedCategory = useCategoryStore((state) => state.selectedCategory)
+  const selectedFilters = useCategoryStore((state) => state.selectedFilters)
 
   const filteredDapps = dappCards.filter((dapp) => {
-    if (category === "dotw") {
+    if (category === "dotw" || selectedFilters.includes("dotw")) {
       return dapp.featured
     }
-    if (category === "doxxed") {
+    if (category === "doxxed" || selectedFilters.includes("doxxed")) {
       return !dapp.annonymous
     }
-    if (category === "audited") {
+    if (category === "audited" || selectedFilters.includes("audited")) {
       return dapp.audits && dapp.audits.length > 0
     }
     return dapp.categories.includes(category)
