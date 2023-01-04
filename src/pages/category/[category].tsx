@@ -54,6 +54,7 @@ const CategoryPage = ({
 
   useEffect(() => {
     changeCategory((router?.query?.category as string) || "all")
+    return () => changeCategory("all")
   }, [])
 
   const categoryDapps = dappCards.filter((dapp) => {

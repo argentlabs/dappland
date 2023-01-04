@@ -42,8 +42,6 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
   const addFilter = useCategoryStore((state) => state.addFilter)
   const setFilters = useCategoryStore((state) => state.setFilters)
 
-  console.log(selectedFilters)
-
   useEffect(() => {
     if (router.isReady) {
       const filters = (router?.query?.filters as string)?.split(",") || []
