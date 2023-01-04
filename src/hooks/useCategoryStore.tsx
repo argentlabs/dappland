@@ -14,7 +14,6 @@ export const useCategoryStore = create<CategoryState>((set) => ({
   changeCategory: (category) =>
     set(() => ({
       selectedCategory: category,
-      selectedFilters: [],
     })),
   selectedFilters: [],
   setFilters: (s) =>

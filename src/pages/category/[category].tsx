@@ -42,13 +42,12 @@ const CategoryPage = ({
   const changeCategory = useCategoryStore((state) => state.changeCategory)
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
   useEffect(() => {
+    const allFilters = selectedFilters.join(",")
     if (selectedCategory !== "all") {
-      const allFilters = selectedFilters.join(",")
-      router.push(
-        `/category/${selectedCategory}${
-          selectedFilters.length ? `?filters=${allFilters}` : ``
-        }`,
-      )
+      const url = `/category/${selectedCategory}${
+        selectedFilters.length ? `?filters=${allFilters}` : ``
+      }`
+      router.push(url)
     }
   }, [selectedFilters])
 

@@ -123,7 +123,6 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
                     tabIndex={0}
                     onClick={() => {
                       if (category.key === selectedCategory) {
-                        setFilters([])
                         changeCategory("all")
                         router.push("/")
                       } else {

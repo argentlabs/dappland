@@ -3,6 +3,9 @@ import Categories from "../components/Categories/Categories"
 import FeaturedCard from "../components/FeaturedCard/FeaturedVideoCard"
 import Layout from "../components/Layout"
 import { getAllDapps } from "../hooks/getAllDapps"
+import { useCategoryStore } from "../hooks/useCategoryStore"
+import { useRouter } from "next/router"
+import { useEffect } from "react"
 import styled from "styled-components"
 
 const StyledSection = styled.section`
@@ -32,6 +35,31 @@ const Home = ({
   dappCards: DappCard[]
   featuredDapp?: DappCard
 }) => {
+  const router = useRouter()
+  const selectedFilters = useCategoryStore((state) => state.selectedFilters)
+  useEffect(() => {
+    if (selectedFilters.length) {
+      const allFilters = selectedFilters.join(",")
+      router.push(`/?filters=${allFilters}`)
+    }
+  }, [selectedFilters])
+
+  const filteredDapps = dappCards.filter((dapp) => {
+    return (
+      selectedFilters.reduce((acc, val) => {
+        if (val === "dotw" && dapp.featured) {
+          acc = acc + 1
+        }
+        if (val === "doxxed" && !dapp.annonymous) {
+          acc = acc + 1
+        }
+        if (val === "audited" && dapp.audits && dapp.audits.length > 0) {
+          acc = acc + 1
+        }
+        return acc
+      }, 0) === selectedFilters.length
+    )
+  })
   return (
     <Layout>
       <div className="container px-4 mx-auto mb-16 lg:mb-32">
@@ -46,7 +74,7 @@ const Home = ({
               All dapps
             </h3>
             <div className="grid grid-cols-1 w-full gap-y-8 justify-center md:grid-cols-2 lg:grid-cols-1 lg:mx-0 gap-x-8 lg:gap-y-20 xl:grid-cols-2 2xl:grid-cols-3 lg:">
-              {dappCards.map((card) => (
+              {filteredDapps.map((card) => (
                 <Card key={card.url} {...card} />
               ))}
             </div>
