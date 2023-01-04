@@ -42,23 +42,14 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
   const addFilter = useCategoryStore((state) => state.addFilter)
   const setFilters = useCategoryStore((state) => state.setFilters)
 
+  console.log(selectedFilters)
+
   useEffect(() => {
     if (router.isReady) {
       const filters = (router?.query?.filters as string)?.split(",") || []
       setFilters(filters)
     }
   }, [router.isReady, selectedCategory])
-
-  useEffect(() => {
-    if (selectedCategory !== "all") {
-      const allFilters = selectedFilters.join(",")
-      router.push(
-        `/category/${selectedCategory}${
-          selectedFilters.length ? `?filters=${allFilters}` : ``
-        }`,
-      )
-    }
-  }, [selectedFilters])
 
   const renderCategoryCount = (category: string) =>
     dappCards.reduce((prevValue, currentValue) => {
@@ -99,8 +90,10 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
   }
 
   const getFilteredCategories = () => {
-    return [...categories, ...reputation].filter((category) =>
-      selectedFilters.includes(category.key),
+    return [...categories, ...reputation].filter(
+      (category) =>
+        selectedFilters.includes(category.key) ||
+        category.key === selectedCategory,
     )
   }
 
@@ -126,13 +119,18 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
               (category) =>
                 renderCategoryCount(category.name) > 0 && (
                   <li
-                    className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
-                      selectedCategory === category.key ? "active" : ""
+                    className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start active
                     } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
                     key={category.name}
                     tabIndex={0}
                     onClick={() => {
-                      addFilter(category.key)
+                      if (category.key === selectedCategory) {
+                        setFilters([])
+                        changeCategory("all")
+                        router.push("/")
+                      } else {
+                        addFilter(category.key)
+                      }
                     }}
                   >
                     <div className="flex items-center justify-between w-full py-4 px-4">
@@ -184,40 +182,44 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
         onMouseOver={(e) => !hovered && setHovered(true)}
         onMouseLeave={(e) => hovered && setHovered(false)}
       >
-        {categories.map(
-          (category) =>
-            renderCategoryCount(category.name) > 0 && (
-              <li
-                className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
-                  selectedCategory === category.key ? "active" : ""
-                } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
-                key={category.name}
-                tabIndex={0}
-                onClick={() => changeCategory(category.key)}
-              >
-                <Link href={`/category/${category.key}`}>
-                  <a className="flex items-center justify-center w-full lg:justify-between py-4 px-4">
-                    <div className="flex items-center flex-col lg:flex-row">
-                      <Image
-                        src={
-                          currentTheme === "dark"
-                            ? category.iconDark
-                            : category.icon
-                        }
-                        alt={category.name}
-                      />
-                      <p className="mt-2 font-semibold leading-none text-sm lg:ml-3 lg:mt-0 text-black dark:text-white">
-                        {category.name}
+        {categories
+          .filter((category) => category.key !== selectedCategory)
+          .map(
+            (category) =>
+              renderCategoryCount(category.name) > 0 && (
+                <li
+                  className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
+                    selectedCategory === category.key ? "active" : ""
+                  } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
+                  key={category.name}
+                  tabIndex={0}
+                  onClick={() => {
+                    changeCategory(category.key)
+                  }}
+                >
+                  <Link href={`/category/${category.key}`}>
+                    <a className="flex items-center justify-center w-full lg:justify-between py-4 px-4">
+                      <div className="flex items-center flex-col lg:flex-row">
+                        <Image
+                          src={
+                            currentTheme === "dark"
+                              ? category.iconDark
+                              : category.icon
+                          }
+                          alt={category.name}
+                        />
+                        <p className="mt-2 font-semibold leading-none text-sm lg:ml-3 lg:mt-0 text-black dark:text-white">
+                          {category.name}
+                        </p>
+                      </div>
+                      <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
+                        {renderCategoryCount(category.name)}
                       </p>
-                    </div>
-                    <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
-                      {renderCategoryCount(category.name)}
-                    </p>
-                  </a>
-                </Link>
-              </li>
-            ),
-        )}
+                    </a>
+                  </Link>
+                </li>
+              ),
+          )}
       </ul>
       {checkIfCategoryHasDapps(reputation) && (
         <h3 className="hidden lg:block font-semibold text-xl leading-none lg:text-[22px] lg:font-bold pt-5 lg:pt-10">
