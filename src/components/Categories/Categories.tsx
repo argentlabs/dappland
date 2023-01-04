@@ -1,4 +1,5 @@
-import { categories, reputation } from "../../data/categories"
+import star from "../../assets/icons/star.svg"
+import { categories, reputation, ratings } from "../../data/categories"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { useDarkMode } from "../../hooks/useDarkMode"
 import Image from "next/image"
@@ -171,6 +172,37 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
               </li>
             ),
         )}
+        {ratings.map((category) => (
+          <li
+            className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
+              selectedCategory === category.key ? "active" : ""
+            } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
+            key={category.name}
+            tabIndex={0}
+            onClick={() => changeCategory(category.key)}
+          >
+            <Link href={`/category/${category.key}`}>
+              <a className="flex items-center justify-between w-full py-4 px-4">
+                <div className="flex items-center">
+                  <div className="flex items-center gap-2">
+                    {Array.from(Array(parseInt(category.name)).keys()).map(
+                      () => (
+                        <Image
+                          key={category.name}
+                          src={star}
+                          alt={category.name}
+                        />
+                      ),
+                    )}
+                  </div>
+                </div>
+                <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
+                  {renderCategoryCount(category.name)}
+                </p>
+              </a>
+            </Link>
+          </li>
+        ))}
       </ul>
     </CategoryContainer>
   )

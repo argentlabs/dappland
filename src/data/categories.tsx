@@ -44,7 +44,15 @@ export const reputation = [
   { key: "audited", name: "Audited", icon: legal, iconDark: legalLight },
 ]
 
-export const allCategories = [...categories, ...reputation]
+export const ratings = [
+  { key: "5_stars", name: "5" },
+  { key: "4_stars", name: "4" },
+  { key: "3_stars", name: "3" },
+  { key: "2_stars", name: "2" },
+  { key: "1_star", name: "1" },
+]
+
+export const allCategories = [...categories, ...reputation, ...ratings]
 
 export const changeTagsToCategoriesSlug = (tags: string[]) => {
   let categories: Array<string> = []
