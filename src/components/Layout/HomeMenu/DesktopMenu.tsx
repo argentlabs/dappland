@@ -16,17 +16,12 @@ interface DesktopMenuProps {
 
 const HomeDesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
   return (
-    <div className="hidden lg:block bg-white dark:bg-light-black">
-      <div className="relative w-full flex justify-between items-center pr-6 border-t border-b border-border-grey dark:border-white/10">
+    <div className="hidden lg:block bg-white dark:bg-light-black dark:border-b dark:border-white/10">
+      <div className="relative w-full flex justify-between items-center pr-6">
         <div className="flex">
-          <Link href="/">
-            <a className="p-6 flex justify-center items-center uppercase font-medium font-base border-r border-border-grey dark:border-white/10">
-              HOME
-            </a>
-          </Link>
           <button
             type="button"
-            className="p-6 flex justify-center items-center border-r border-border-grey dark:border-white/10"
+            className="p-6 flex justify-center items-center"
             onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
           >
             {currentTheme === "dark" ? (
