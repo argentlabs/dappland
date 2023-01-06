@@ -38,10 +38,8 @@ const Home = ({
   const router = useRouter()
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
   useEffect(() => {
-    if (selectedFilters.length) {
-      const allFilters = selectedFilters.join(",")
-      router.push(`/?filters=${allFilters}`)
-    }
+    const allFilters = selectedFilters.join(",")
+    router.push(`/${allFilters ? `?filters=${allFilters}` : ``}`)
   }, [selectedFilters])
 
   const filteredDapps = dappCards.filter((dapp) => {
