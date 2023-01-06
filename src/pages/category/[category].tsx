@@ -40,6 +40,7 @@ const CategoryPage = ({
   const router = useRouter()
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
   const changeCategory = useCategoryStore((state) => state.changeCategory)
+  const setFilters = useCategoryStore((state) => state.setFilters)
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
   useEffect(() => {
     const allFilters = selectedFilters.join(",")
@@ -53,7 +54,10 @@ const CategoryPage = ({
 
   useEffect(() => {
     changeCategory((router?.query?.category as string) || "all")
-    return () => changeCategory("all")
+    return () => {
+      setFilters([])
+      changeCategory("all")
+    }
   }, [])
 
   const categoryDapps = dappCards.filter((dapp) => {
