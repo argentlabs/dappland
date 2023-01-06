@@ -12,6 +12,7 @@ interface DappInfo {
   contracts?: Contract[]
   goerliContracts?: Contract[]
   audits: Audit[]
+  verified: boolean
   links: Links
   teamInfo: TeamInfo
   tokens: Token[]
@@ -21,6 +22,11 @@ interface DappInfo {
 }
 
 interface Audit {
+  name: string
+  url: string
+}
+
+interface Verified {
   name: string
   url: string
 }
@@ -99,4 +105,5 @@ interface DappCard {
   featured: boolean
   annonymous: boolean
   audits: Audit[]
+  verified: boolean
 }

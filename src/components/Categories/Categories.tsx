@@ -69,6 +69,11 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
           return prevValue + 1
         }
       }
+      if (category === "Verified contracts") {
+        if (currentValue.verified) {
+          return prevValue + 1
+        }
+      }
       if (currentValue.tags.indexOf(category) !== -1) {
         return prevValue + 1
       }

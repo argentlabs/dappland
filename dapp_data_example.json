@@ -38,6 +38,7 @@
       "url": "URL to access the security audit. Only audits that are publicly available will be considered to be included in Dappland. If they're private, please don't include them in the 'audits' array>"
     }
   ],
+  "verified": false, // change to true if your contracts are verified on StarkScan
   "dotw": false, //leave 'false'
   "links": {
     "website": "<URL of the dapp's website. Leave empty if non-existent>",
