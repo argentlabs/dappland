@@ -3,6 +3,28 @@
   "description": "Pxls is an experimental attempt to create on-chain collaborative artworks (”rtwrks”).\n\nEvery day, our 400-member community creates a new artwork by colorizing a 20*20 pixels grid. Our goal is to create amazing artworks, of course, but also to explore how a group of people gets common inspiration, creates and learns together.",
   "short_description": "Collaborative artworks",
   "tags": ["Games", "NFTs"],
+  "nft": {
+    "collectionLink": "link_here",
+    "collectionName": "name_here",
+    "collectionPreview": [
+      {
+        "image_url": "https://mintsquare.sfo3.cdn.digitaloceanspaces.com/mintsquare/assets/0x059df550c89bebee3808b2256d76001e1a3703817e04781c17bd75b17b4959f2/QmUUMEZqqeBK8e9TrXgRNA8nSAMKDzdSRfVfq5rCSbenbV",
+        "name": "pxl1"
+      },
+      {
+        "image_url": "https://mintsquare.sfo3.cdn.digitaloceanspaces.com/mintsquare/assets/0x059df550c89bebee3808b2256d76001e1a3703817e04781c17bd75b17b4959f2/QmUhCDShky2CwbU44eSpSp19MPc2Hc2pXeSwn3dTGdJ5Po",
+        "name": "pxl2"
+      },
+      {
+        "image_url": "https://mintsquare.sfo3.cdn.digitaloceanspaces.com/mintsquare/assets/0x059df550c89bebee3808b2256d76001e1a3703817e04781c17bd75b17b4959f2/QmNmZKKiYn9zNHZUiMCU6jhYrfLpYLUsRy642qMrGbX7x7",
+        "name": "pxl3"
+      },
+      {
+        "image_url": "https://mintsquare.sfo3.cdn.digitaloceanspaces.com/mintsquare/assets/0x059df550c89bebee3808b2256d76001e1a3703817e04781c17bd75b17b4959f2/QmS4QesKFCHe1KJVyKNXFW9zpUMQpbAC9pt3348ThQGCkF",
+        "name": "pxl4"
+      }
+    ]
+  },
   "contracts": [
     {
       "name": "Pxls ERC-721",

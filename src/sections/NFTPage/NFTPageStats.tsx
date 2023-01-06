@@ -42,7 +42,6 @@ const NFTPageStats = ({
   } else {
     floorPrice = "N/A"
   }
-
   return (
     <section className="lg:mt-24 lg:mb-24 mt-12 mb-12">
       <div className="mb-8">
@@ -81,7 +80,7 @@ const NFTPageStats = ({
             <p className="text-light-charcoal dark:text-clay font-medium text-xl leading-6 flex gap-1">
               Floor price
               <TooltipIconButton
-                text={"Lowest price of the collection item (ETH)"}
+                text={"Lowest price of an item in collection (ETH)"}
               />
             </p>
             <div className="text-black dark:text-white font-bold text-[34px] leading-9">
