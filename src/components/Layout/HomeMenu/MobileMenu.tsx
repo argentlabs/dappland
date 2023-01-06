@@ -63,7 +63,7 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
   }, [])
 
   const handleScroll = () => {
-    const position = window.pageYOffset
+    const position = window.scrollY
     if (nav.current) {
       if (position > 15) {
         setIsNavbarScrolled(true)
