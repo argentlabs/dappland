@@ -10,6 +10,8 @@ import {
 import { getAllDapps } from "../../hooks/getAllDapps"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { GetStaticPaths, GetStaticProps } from "next"
+import { useRouter } from "next/router"
+import { useEffect } from "react"
 import styled from "styled-components"
 
 const StyledSection = styled.section`
@@ -35,9 +37,30 @@ const CategoryPage = ({
   dappCards: Array<DappCard & { categories: string[] }>
   category: string
 }) => {
-  const selectedCategory = useCategoryStore()((state) => state.selectedCategory)
+  const router = useRouter()
+  const selectedCategory = useCategoryStore((state) => state.selectedCategory)
+  const changeCategory = useCategoryStore((state) => state.changeCategory)
+  const setFilters = useCategoryStore((state) => state.setFilters)
+  const selectedFilters = useCategoryStore((state) => state.selectedFilters)
+  useEffect(() => {
+    const allFilters = selectedFilters.join(",")
+    if (selectedCategory !== "all") {
+      const url = `/category/${selectedCategory}${
+        selectedFilters.length ? `?filters=${allFilters}` : ``
+      }`
+      router.push(url)
+    }
+  }, [selectedFilters])
 
-  const filteredDapps = dappCards.filter((dapp) => {
+  useEffect(() => {
+    changeCategory((router?.query?.category as string) || "all")
+    return () => {
+      setFilters([])
+      changeCategory("all")
+    }
+  }, [])
+
+  const categoryDapps = dappCards.filter((dapp) => {
     if (category === "dotw") {
       return dapp.featured
     }
@@ -49,6 +72,28 @@ const CategoryPage = ({
     }
     return dapp.categories.includes(category)
   })
+
+  // Check if all filters apply to a category
+  const filteredDapps = categoryDapps.filter((dapp) => {
+    return (
+      selectedFilters.reduce((acc, val) => {
+        if (val === "dotw" && dapp.featured) {
+          acc = acc + 1
+        }
+        if (val === "doxxed" && !dapp.annonymous) {
+          acc = acc + 1
+        }
+        if (val === "audited" && dapp.audits && dapp.audits.length > 0) {
+          acc = acc + 1
+        }
+        if (dapp.categories.includes(val)) {
+          acc = acc + 1
+        }
+        return acc
+      }, 0) === selectedFilters.length
+    )
+  })
+
   return (
     <Layout>
       <div className="container px-4 mx-auto mb-16 lg:mb-32">

@@ -1,9 +1,12 @@
+import crossCircle from "../../assets/icons/crossCircle.svg"
+import crossCircleLight from "../../assets/icons/crossCircleLight.svg"
 import { categories, reputation } from "../../data/categories"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { useDarkMode } from "../../hooks/useDarkMode"
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
+import { useRouter } from "next/router"
+import { useEffect, useState } from "react"
 import styled from "styled-components"
 
 const CategoryContainer = styled.div`
@@ -28,13 +31,23 @@ interface CategoriesProps {
 }
 
 const Categories = ({ className, dappCards }: CategoriesProps) => {
+  const router = useRouter()
   const [hovered, setHovered] = useState(false)
 
   const { currentTheme } = useDarkMode()
 
-  const selectedCategory = useCategoryStore()((state) => state.selectedCategory)
+  const selectedCategory = useCategoryStore((state) => state.selectedCategory)
+  const changeCategory = useCategoryStore((state) => state.changeCategory)
+  const selectedFilters = useCategoryStore((state) => state.selectedFilters)
+  const addFilter = useCategoryStore((state) => state.addFilter)
+  const setFilters = useCategoryStore((state) => state.setFilters)
 
-  const changeCategory = useCategoryStore()((state) => state.changeCategory)
+  useEffect(() => {
+    if (router.isReady) {
+      const filters = (router?.query?.filters as string)?.split(",") || []
+      setFilters(filters)
+    }
+  }, [router.isReady, selectedCategory])
 
   const renderCategoryCount = (category: string) =>
     dappCards.reduce((prevValue, currentValue) => {
@@ -74,10 +87,86 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
     return Boolean(activeCategories)
   }
 
+  const getFilteredCategories = () => {
+    return [...categories, ...reputation].filter(
+      (category) =>
+        selectedFilters.includes(category.key) ||
+        category.key === selectedCategory,
+    )
+  }
+
+  const filteredCategories = getFilteredCategories()
+
   return (
     <CategoryContainer
       className={["mb-4", className ? className : ""].join(" ")}
     >
+      {filteredCategories.length > 0 && (
+        <>
+          <h3 className="font-semibold text-xl leading-none lg:text-[22px] lg:font-bold pb-3 lg:pb-4">
+            Active Filters
+          </h3>
+          <ul
+            className={`hidden lg:block pt-3 pb-5 pl-1 lg:pt-4 ${
+              hovered ? "hovered" : ""
+            }`}
+            onMouseOver={(e) => !hovered && setHovered(true)}
+            onMouseLeave={(e) => hovered && setHovered(false)}
+          >
+            {filteredCategories.map(
+              (category) =>
+                renderCategoryCount(category.name) > 0 && (
+                  <li
+                    className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start active
+                    } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
+                    key={category.name}
+                    tabIndex={0}
+                    onClick={() => {
+                      if (category.key === selectedCategory) {
+                        changeCategory("all")
+                        router.push("/")
+                      } else {
+                        addFilter(category.key)
+                      }
+                    }}
+                  >
+                    <div className="flex items-center justify-between w-full py-4 px-4">
+                      <div className="flex items-center">
+                        <Image
+                          src={
+                            currentTheme === "dark"
+                              ? category.iconDark
+                              : category.icon
+                          }
+                          alt={category.name}
+                        />
+                        <p className="mt-2 font-semibold leading-none text-sm lg:ml-3 lg:mt-0 text-black dark:text-white">
+                          {category.name}
+                        </p>
+                      </div>
+                      <button
+                        role="button"
+                        className="p-0 m-0 outline-0 bg-none border-none flex"
+                        onClick={() => {}}
+                      >
+                        <Image
+                          width={16}
+                          height={16}
+                          alt="remove-button"
+                          src={
+                            currentTheme === "dark"
+                              ? crossCircleLight
+                              : crossCircle
+                          }
+                        />
+                      </button>
+                    </div>
+                  </li>
+                ),
+            )}
+          </ul>
+        </>
+      )}
       {checkIfCategoryHasDapps(categories) && (
         <h3 className="font-semibold text-xl leading-none lg:text-[22px] lg:font-bold pb-3 lg:pb-4">
           Categories
@@ -90,40 +179,44 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
         onMouseOver={(e) => !hovered && setHovered(true)}
         onMouseLeave={(e) => hovered && setHovered(false)}
       >
-        {categories.map(
-          (category) =>
-            renderCategoryCount(category.name) > 0 && (
-              <li
-                className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
-                  selectedCategory === category.key ? "active" : ""
-                } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
-                key={category.name}
-                tabIndex={0}
-                onClick={() => changeCategory(category.key)}
-              >
-                <Link href={`/category/${category.key}`}>
-                  <a className="flex items-center justify-center w-full lg:justify-between py-4 px-4">
-                    <div className="flex items-center flex-col lg:flex-row">
-                      <Image
-                        src={
-                          currentTheme === "dark"
-                            ? category.iconDark
-                            : category.icon
-                        }
-                        alt={category.name}
-                      />
-                      <p className="mt-2 font-semibold leading-none text-sm lg:ml-3 lg:mt-0 text-black dark:text-white">
-                        {category.name}
+        {categories
+          .filter((category) => category.key !== selectedCategory)
+          .map(
+            (category) =>
+              renderCategoryCount(category.name) > 0 && (
+                <li
+                  className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
+                    selectedCategory === category.key ? "active" : ""
+                  } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
+                  key={category.name}
+                  tabIndex={0}
+                  onClick={() => {
+                    changeCategory(category.key)
+                  }}
+                >
+                  <Link href={`/category/${category.key}`}>
+                    <a className="flex items-center justify-center w-full lg:justify-between py-4 px-4">
+                      <div className="flex items-center flex-col lg:flex-row">
+                        <Image
+                          src={
+                            currentTheme === "dark"
+                              ? category.iconDark
+                              : category.icon
+                          }
+                          alt={category.name}
+                        />
+                        <p className="mt-2 font-semibold leading-none text-sm lg:ml-3 lg:mt-0 text-black dark:text-white">
+                          {category.name}
+                        </p>
+                      </div>
+                      <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
+                        {renderCategoryCount(category.name)}
                       </p>
-                    </div>
-                    <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
-                      {renderCategoryCount(category.name)}
-                    </p>
-                  </a>
-                </Link>
-              </li>
-            ),
-        )}
+                    </a>
+                  </Link>
+                </li>
+              ),
+          )}
       </ul>
       {checkIfCategoryHasDapps(reputation) && (
         <h3 className="hidden lg:block font-semibold text-xl leading-none lg:text-[22px] lg:font-bold pt-5 lg:pt-10">
@@ -137,19 +230,22 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
         onMouseOver={(e) => !hovered && setHovered(true)}
         onMouseLeave={(e) => hovered && setHovered(false)}
       >
-        {reputation.map(
-          (category) =>
-            renderCategoryCount(category.name) > 0 && (
-              <li
-                className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
-                  selectedCategory === category.key ? "active" : ""
-                } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
-                key={category.name}
-                tabIndex={0}
-                onClick={() => changeCategory(category.key)}
-              >
-                <Link href={`/category/${category.key}`}>
-                  <a className="flex items-center justify-between w-full py-4 px-4">
+        {reputation
+          .filter((rep) => !selectedFilters.includes(rep.key))
+          .map(
+            (category) =>
+              renderCategoryCount(category.name) > 0 && (
+                <li
+                  className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
+                    selectedCategory === category.key ? "active" : ""
+                  } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
+                  key={category.name}
+                  tabIndex={0}
+                  onClick={() => {
+                    addFilter(category.key)
+                  }}
+                >
+                  <div className="flex items-center justify-between w-full py-4 px-4">
                     <div className="flex items-center">
                       <Image
                         src={
@@ -166,11 +262,10 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
                     <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
                       {renderCategoryCount(category.name)}
                     </p>
-                  </a>
-                </Link>
-              </li>
-            ),
-        )}
+                  </div>
+                </li>
+              ),
+          )}
       </ul>
     </CategoryContainer>
   )
