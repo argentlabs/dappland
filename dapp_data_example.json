@@ -23,16 +23,14 @@
     }
   ],
   "goerliContracts": [
-    [
-      {
-        "name": "<Name of Goerli contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
-        "address": "<Address of Goerli contract 1>"
-      },
-      {
-        "name": "<Name of Goerli contract 2 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
-        "address": "<Address of Goerli contract 2>"
-      }
-    ]
+    {
+      "name": "<Name of Goerli contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
+      "address": "<Address of Goerli contract 1>"
+    },
+    {
+      "name": "<Name of Goerli contract 2 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
+      "address": "<Address of Goerli contract 2>"
+    }
   ],
   "audits": [
     {
@@ -55,7 +53,7 @@
   "twitterName": "Twitter username. Leave empty if none",
   "teamInfo": {
     "founded": "Founding date of the project. EXAMPLE: 2022-05-24T00:00:00.000Z",
-    "anonymous": false // If at least one of the founders has a public profile with their real name linked to the project, set this to true.
+    "anonymous": true // If at least one of the founders has a public profile with their real name linked to the project, set this to true.
   },
   "tokens": [
     {
