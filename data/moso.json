@@ -1,0 +1,48 @@
+{
+  "name": "moso",
+  "description": "Moso will allow NFT trading with much cheaper fees compared to their counterparts, and helps artists who are not knowledgeable in coding to create NFT collections easily with its permissionless launchpad. Moreover, moso will try to fill the gap between DeFi and NFTs.",
+  "short_description": "Friendly NFT marketplace of StarkNet. From artists to artists",
+  "tags": [
+    "Games",
+    "NFTs"
+  ], 
+  "contracts": [],
+  "goerliContracts": [
+    [
+      {
+        "name": "Proxy Contract",
+        "address": "0x00c3dea50f9f5970b1ad5b0f9e51250f1cd15af2c585bfb041ec88eced660353"
+      },
+      {
+        "name": "Exchange classh hash",
+        "address": "0x02cdadf589f766ce7b3009c1b7ec629770773b6d031fd4a0ce65ea0a727dbe0d"
+      }
+    ]
+  ],
+  "audits": [],
+  "dotw": false, 
+  "links": {
+    "website": "https://moso.gallery/",
+    "careers": "",
+    "twitter": "https://twitter.com/mosoGallery",
+    "telegram": "",
+    "discord": "",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": "https://medium.com/@mosoGallery"
+  },
+  "twitterName": "mosoGallery",
+  "teamInfo": {
+    "founded": "2022-08-01T00:00:00.000Z",
+    "anonymous": false 
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/moso/dapp-icon-moso.jpg",
+    "bannerUrl": "/dapps/moso/dapp-header-moso.jpg",
+    "previewUrl": "/dapps/moso/dapp-preview-moso.jpg",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
