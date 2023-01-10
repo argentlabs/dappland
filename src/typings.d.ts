@@ -18,6 +18,7 @@ interface DappInfo {
   media: Media
   dotw: boolean
   twitterName: string
+  date_added?: string
 }
 
 interface Audit {
@@ -99,4 +100,5 @@ interface DappCard {
   featured: boolean
   annonymous: boolean
   audits: Audit[]
+  date_added: string
 }
