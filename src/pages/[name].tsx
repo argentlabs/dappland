@@ -44,9 +44,14 @@ const SwiperContainer = styled.div`
 interface DappPageProps {
   dappInfo: DappInfo
   twitterPosts: TwitterData
+  averageRating: number | null
 }
 
-const DappPage: NextPage<DappPageProps> = ({ dappInfo, twitterPosts }) => {
+const DappPage: NextPage<DappPageProps> = ({
+  dappInfo,
+  twitterPosts,
+  averageRating,
+}) => {
   const [showPrev, setShowPrev] = useState(false)
   useEffect(() => {
     // @ts-ignore
@@ -91,7 +96,7 @@ const DappPage: NextPage<DappPageProps> = ({ dappInfo, twitterPosts }) => {
         </div>
       )}
       <div className="px-4 md:mx-[10vw] xl:mx-[15vw] 2xl:mx-[20vw] max-w-[1200px]">
-        <DappPageHeader dappInfo={dappInfo} />
+        <DappPageHeader dappInfo={dappInfo} averageRating={averageRating} />
       </div>
       {((dappInfo.media?.gallery && dappInfo.media.gallery.length > 0) ||
         dappInfo.media.videoUrl) && (
@@ -153,6 +158,10 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
 
   const dappInfo: DappInfo = JSON.parse(content)
 
+  const dappRating = await fetch(
+    `https://cloud-dev.argent-api.com/v1/tokens/dapps/ratings/${name}`,
+  ).then((res) => res.json())
+
   const twitterName =
     dappInfo.twitterName ||
     (dappInfo.links?.twitter.length > 0 &&
@@ -183,6 +192,7 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
   return {
     props: {
       dappInfo,
+      averageRating: dappRating?.averageRating || null,
       twitterPosts,
     },
   }

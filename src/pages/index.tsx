@@ -59,6 +59,9 @@ const Home = ({
 
 export const getStaticProps = async () => {
   const dapps = await getAllDapps()
+  const ratings = await fetch(
+    "https://cloud-dev.argent-api.com/v1/tokens/dapps/ratings?pageSize=5&page=0",
+  ).then((res) => res.json())
 
   const parsedDapps = dapps.map((dapp: DappInfo & { url: string }) => ({
     short_description: dapp.short_description,

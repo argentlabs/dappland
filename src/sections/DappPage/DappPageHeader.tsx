@@ -37,7 +37,13 @@ const linkOrder = [
   "mirror",
 ] as unknown as Array<keyof Links>
 
-const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
+const DappPageHeader = ({
+  dappInfo,
+  averageRating,
+}: {
+  dappInfo: DappInfo
+  averageRating: number | null
+}) => {
   const [showArgentXInstallGuide, setArgentXInstallGuide] = useState(false)
   useEffect(() => {
     const argentXInstalled = (window as any).starknet?.id === "argentX"
@@ -141,7 +147,7 @@ const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
           </div>
         </div>
       </div>
-      <DappPageRating />
+      <DappPageRating dappKey={dappInfo.name} avgRating={averageRating} />
     </section>
   )
 }
