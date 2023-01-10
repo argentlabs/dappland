@@ -172,10 +172,10 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
   const contract = erc721Contract ? erc721Contract.address : null
 
   const nftData =
-    contract && dappInfo.tags.includes("NFTs")
-      ? await fetch(`https://api.aspect.co/api/v0/contract/${contract}`).then(
-          (res) => res.json(),
-        )
+    dappInfo?.nft && dappInfo?.nft?.collectionContract
+      ? await fetch(
+          `https://api.aspect.co/api/v0/contract/${dappInfo.nft.collectionContract}`,
+        ).then((res) => res.json())
       : null
   const twitterName =
     dappInfo.twitterName ||

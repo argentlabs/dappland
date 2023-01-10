@@ -35,6 +35,7 @@ interface DappInfo {
   twitterName: string
   nft?: {
     collectionLink: string
+    collectionContract: string
     collectionName: string
     collectionPreview: {
       image_url: string
