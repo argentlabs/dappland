@@ -1,12 +1,14 @@
 import Card from "../../components/Card/Card"
 import Categories from "../../components/Categories/Categories"
 import Layout from "../../components/Layout"
+import Select from "../../components/Select/Select"
 import {
   allCategories,
   categories,
   changeTagsToCategoriesSlug,
   reputation,
 } from "../../data/categories"
+import sortByAttribute from "../../helpers/sort"
 import { getAllDapps } from "../../hooks/getAllDapps"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { GetStaticPaths, GetStaticProps } from "next"
@@ -42,6 +44,8 @@ const CategoryPage = ({
   const changeCategory = useCategoryStore((state) => state.changeCategory)
   const setFilters = useCategoryStore((state) => state.setFilters)
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
+  const selectedSort = useCategoryStore((state) => state.selectedSort)
+  const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
   useEffect(() => {
     const allFilters = selectedFilters.join(",")
     if (selectedCategory !== "all") {
@@ -93,7 +97,7 @@ const CategoryPage = ({
       }, 0) === selectedFilters.length
     )
   })
-
+  const sortedDapps = sortByAttribute(filteredDapps, selectedSort)
   return (
     <Layout>
       <div className="container px-4 mx-auto mb-16 lg:mb-32">
@@ -107,8 +111,20 @@ const CategoryPage = ({
               }{" "}
               dapps
             </h3>
+            <div className="w-[164px] float-right">
+              <Select
+                placeholder="Sort By"
+                options={[
+                  { label: "A-Z", value: "A-Z" },
+                  { label: "Z-A", value: "Z-A" },
+                  { label: "Rating", value: "rating" },
+                  { label: "New", value: "new" },
+                ]}
+                onChange={(sortBy) => setSelectedSort(sortBy)}
+              />
+            </div>
             <div className="grid grid-cols-1 w-full gap-y-8 justify-center md:grid-cols-2 lg:grid-cols-1 lg:mx-0 gap-x-8 lg:gap-y-20 xl:grid-cols-2 2xl:grid-cols-3 lg:">
-              {filteredDapps.map((card) => (
+              {sortedDapps.map((card) => (
                 <Card key={card.url} {...card} />
               ))}
             </div>

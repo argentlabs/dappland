@@ -41,11 +41,14 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
   const addFilter = useCategoryStore((state) => state.addFilter)
   const setFilters = useCategoryStore((state) => state.setFilters)
+  const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
 
   useEffect(() => {
     if (router.isReady) {
       const filters = (router?.query?.filters as string)?.split(",") || []
+      const sortBy = router?.query?.sort as string
       setFilters(filters)
+      setSelectedSort(sortBy && sortBy.length ? sortBy : null)
     }
   }, [router.isReady, selectedCategory])
 

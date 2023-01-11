@@ -7,6 +7,8 @@ interface CategoryState {
   selectedFilters: string[]
   addFilter: (category: string) => void
   setFilters: (s: string[]) => void
+  selectedSort: string | null
+  setSelectedSort: (sortBy: string | null) => void
 }
 
 export const useCategoryStore = create<CategoryState>((set) => ({
@@ -14,6 +16,11 @@ export const useCategoryStore = create<CategoryState>((set) => ({
   changeCategory: (category) =>
     set(() => ({
       selectedCategory: category,
+    })),
+  selectedSort: null,
+  setSelectedSort: (sortBy) =>
+    set(() => ({
+      selectedSort: sortBy,
     })),
   selectedFilters: [],
   setFilters: (s) =>

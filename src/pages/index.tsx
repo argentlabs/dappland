@@ -2,6 +2,8 @@ import Card from "../components/Card/Card"
 import Categories from "../components/Categories/Categories"
 import FeaturedCard from "../components/FeaturedCard/FeaturedVideoCard"
 import Layout from "../components/Layout"
+import Select from "../components/Select/Select"
+import sortByAttribute from "../helpers/sort"
 import { getAllDapps } from "../hooks/getAllDapps"
 import { useCategoryStore } from "../hooks/useCategoryStore"
 import { useRouter } from "next/router"
@@ -37,10 +39,22 @@ const Home = ({
 }) => {
   const router = useRouter()
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
+  const selectedSort = useCategoryStore((state) => state.selectedSort)
+  const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
   useEffect(() => {
     const allFilters = selectedFilters.join(",")
-    router.push(`/${allFilters.length ? `?filters=${allFilters}` : ``}`)
-  }, [selectedFilters])
+    const sortBy = selectedSort
+    let url = "/"
+    if (allFilters.length) {
+      url += `?filters=${allFilters}`
+    }
+    if (sortBy && sortBy.length) {
+      url += `${allFilters.length ? "&" : "?"}sort=${sortBy}`
+    }
+    if (router.pathname !== url) {
+      router.push(url)
+    }
+  }, [selectedFilters, selectedSort])
 
   const filteredDapps = dappCards.filter((dapp) => {
     return (
@@ -58,6 +72,7 @@ const Home = ({
       }, 0) === selectedFilters.length
     )
   })
+  const sortedDapps = sortByAttribute(filteredDapps, selectedSort)
   return (
     <Layout>
       <div className="container px-4 mx-auto mb-16 lg:mb-32">
@@ -71,8 +86,20 @@ const Home = ({
             <h3 className="lg:hidden font-semibold text-xl leading-none mb-5">
               All dapps
             </h3>
+            <div className="w-[164px] float-right">
+              <Select
+                placeholder="Sort By"
+                options={[
+                  { label: "A-Z", value: "A-Z" },
+                  { label: "Z-A", value: "Z-A" },
+                  { label: "Rating", value: "rating" },
+                  { label: "New", value: "new" },
+                ]}
+                onChange={(sortBy) => setSelectedSort(sortBy)}
+              />
+            </div>
             <div className="grid grid-cols-1 w-full gap-y-8 justify-center md:grid-cols-2 lg:grid-cols-1 lg:mx-0 gap-x-8 lg:gap-y-20 xl:grid-cols-2 2xl:grid-cols-3 lg:">
-              {filteredDapps.map((card) => (
+              {sortedDapps.map((card) => (
                 <Card key={card.url} {...card} />
               ))}
             </div>
