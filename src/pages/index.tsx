@@ -51,7 +51,7 @@ const Home = ({
     if (sortBy && sortBy.length) {
       url += `${allFilters.length ? "&" : "?"}sort=${sortBy}`
     }
-    if (router.pathname !== url) {
+    if (router.isReady) {
       router.push(url)
     }
   }, [selectedFilters, selectedSort])
@@ -89,6 +89,7 @@ const Home = ({
             <div className="w-[164px] float-right">
               <Select
                 placeholder="Sort By"
+                defaultValue={selectedSort}
                 options={[
                   { label: "A-Z", value: "A-Z" },
                   { label: "Z-A", value: "Z-A" },

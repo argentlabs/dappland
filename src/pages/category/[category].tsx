@@ -50,16 +50,21 @@ const CategoryPage = ({
     const allFilters = selectedFilters.join(",")
     if (selectedCategory !== "all") {
       const url = `/category/${selectedCategory}${
-        selectedFilters.length ? `?filters=${allFilters}` : ``
+        selectedFilters.length
+          ? `?filters=${allFilters}${
+              selectedSort ? `&sort=${selectedSort}` : ""
+            }`
+          : `${selectedSort ? `?sort=${selectedSort}` : ""}`
       }`
       router.push(url)
     }
-  }, [selectedFilters])
+  }, [selectedFilters, selectedSort])
 
   useEffect(() => {
     changeCategory((router?.query?.category as string) || "all")
     return () => {
       setFilters([])
+      setSelectedSort(null)
       changeCategory("all")
     }
   }, [])
@@ -113,6 +118,7 @@ const CategoryPage = ({
             </h3>
             <div className="w-[164px] float-right">
               <Select
+                defaultValue={selectedSort}
                 placeholder="Sort By"
                 options={[
                   { label: "A-Z", value: "A-Z" },
