@@ -1,5 +1,7 @@
 import starEmpty from "../../assets/icons/empty_star.svg"
 import star from "../../assets/icons/star.svg"
+import ConnectWalletModal from "../../components/Modal/ConnectWalletModal"
+import Modal from "../../components/Modal/Modal"
 import { connect } from "@argent/get-starknet"
 import Image from "next/image"
 import React, { useState } from "react"
@@ -19,23 +21,23 @@ const DappPageRating = ({
   const [currentRating, setCurrentRating] = useState<number | null>(
     rating || null,
   )
+  const [isRatingModalOpen, setRatingModalOpen] = useState(false)
 
-  const connectToWalletAndRate = async (rating: number) => {
-    const starknet = await connect()
+  const connectToWalletAndRate = async () => {
+    const starknet = await connect({})
     if (!starknet) {
       throw Error("User rejected wallet selection or wallet not found")
     }
-    setCurrentRating(rating)
     try {
       await starknet.enable()
       if (starknet.isConnected) {
         const signature = await starknet.account.signMessage({
           message: {
             dappKey: dappKey,
-            rating,
+            rating: currentRating,
           },
           domain: {
-            name: "Example DApp",
+            name: "Dappland",
             chainId: "SN_GOERLI",
             version: "0.0.1",
           },
@@ -55,12 +57,11 @@ const DappPageRating = ({
 
         const bodyData = {
           dappKey,
-          rating,
+          rating: currentRating,
           signature,
           signer: starknet.selectedAddress,
         }
 
-        console.log(bodyData)
         /*
         const response = await fetch(
           "https://cloud-dev.argent-api.com/v1/tokens/dapps/ratings",
@@ -71,6 +72,8 @@ const DappPageRating = ({
         )
         
        */
+      } else {
+        setCurrentRating(null)
       }
     } catch (err) {
       setCurrentRating(null)
@@ -81,10 +84,29 @@ const DappPageRating = ({
     <div>
       <div className="xl:mt-0 mt-12">
         <h2 className="text-[28px] leading-[34px] font-bold mb-4">Rating</h2>
+        <ConnectWalletModal
+          isOpen={isRatingModalOpen}
+          onClose={() => {
+            setCurrentRating(null)
+            setRatingModalOpen(false)
+          }}
+          onConfirm={() => {
+            setRatingModalOpen(false)
+            connectToWalletAndRate()
+          }}
+        />
         <div className="flex items-end gap-1 mb-6">
-          <h3 className="text-[64px] leading-[64px] font-bold">{avgRating}</h3>
-          <div>/</div>
-          <div>5</div>
+          {avgRating ? (
+            <>
+              <h3 className="text-[64px] leading-[64px] font-bold">
+                {avgRating}
+              </h3>
+              <div>/</div>
+              <div>5</div>
+            </>
+          ) : (
+            <h3 className="text-[24px] leading-[30px]">Not Rated</h3>
+          )}
         </div>
         <div className="mb-2">Your Rating</div>
         <div className="flex items-center gap-1">
@@ -93,7 +115,10 @@ const DappPageRating = ({
               key={val}
               onMouseEnter={() => setHoverIndex(val)}
               onMouseLeave={() => setHoverIndex(null)}
-              onClick={() => connectToWalletAndRate(val)}
+              onClick={() => {
+                setCurrentRating(val)
+                setRatingModalOpen(true)
+              }}
             >
               <Image
                 width={28}

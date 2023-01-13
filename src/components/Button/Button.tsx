@@ -76,6 +76,7 @@ const Button = React.forwardRef(
       <button
         type={type || "button"}
         disabled={disabled}
+        onClick={onClick}
         className={[handleClassName(), className ? className : ""].join(" ")}
         style={style}
       >
