@@ -110,7 +110,7 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
             Active Filters
           </h3>
           <ul
-            className={`hidden lg:block pt-3 pb-5 pl-1 lg:pt-4 ${
+            className={`block pt-3 pb-5 pl-1 lg:pt-4 ${
               hovered ? "hovered" : ""
             }`}
             onMouseOver={(e) => !hovered && setHovered(true)}
@@ -120,7 +120,7 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
               (category) =>
                 renderCategoryCount(category.name) > 0 && (
                   <li
-                    className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start active
+                    className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer flex-row mb-2 justify-start active
                     } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
                     key={category.name}
                     tabIndex={0}
@@ -143,7 +143,7 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
                           }
                           alt={category.name}
                         />
-                        <p className="mt-2 font-semibold leading-none text-sm lg:ml-3 lg:mt-0 text-black dark:text-white">
+                        <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
                           {category.name}
                         </p>
                       </div>

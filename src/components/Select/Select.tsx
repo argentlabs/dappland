@@ -28,6 +28,9 @@ const Select = ({
     const foundOption = options.find((option) => option.value === defaultValue)
     if (foundOption) {
       setSelectedOption(foundOption)
+      if (onChange) {
+        onChange(foundOption.value)
+      }
     }
   }, [defaultValue])
 

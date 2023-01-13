@@ -86,7 +86,7 @@ const Home = ({
             <h3 className="lg:hidden font-semibold text-xl leading-none mb-5">
               All dapps
             </h3>
-            <div className="w-[164px] float-right">
+            <div className="w-[164px] float-left lg:float-right">
               <Select
                 placeholder="Sort By"
                 defaultValue={selectedSort}

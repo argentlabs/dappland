@@ -56,7 +56,9 @@ const CategoryPage = ({
             }`
           : `${selectedSort ? `?sort=${selectedSort}` : ""}`
       }`
-      router.push(url)
+      if (router.asPath !== url && router.isReady) {
+        router.push(url)
+      }
     }
   }, [selectedFilters, selectedSort])
 
@@ -116,7 +118,7 @@ const CategoryPage = ({
               }{" "}
               dapps
             </h3>
-            <div className="w-[164px] float-right">
+            <div className="w-[164px] float-left lg:float-right">
               <Select
                 defaultValue={selectedSort}
                 placeholder="Sort By"
