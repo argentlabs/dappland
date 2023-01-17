@@ -106,13 +106,11 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
     >
       {filteredCategories.length > 0 && (
         <>
-          <h3 className="font-semibold text-xl leading-none lg:text-[22px] lg:font-bold pb-3 lg:pb-4">
-            Active Filters
+          <h3 className="font-semibold text-xl leading-none pt-8 pb-4 lg:text-[22px] lg:font-bold">
+            Active filters
           </h3>
           <ul
-            className={`block pt-3 pb-5 pl-1 lg:pt-4 ${
-              hovered ? "hovered" : ""
-            }`}
+            className={`block ${hovered ? "hovered" : ""}`}
             onMouseOver={(e) => !hovered && setHovered(true)}
             onMouseLeave={(e) => hovered && setHovered(false)}
           >
@@ -171,12 +169,12 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
         </>
       )}
       {checkIfCategoryHasDapps(categories) && (
-        <h3 className="font-semibold text-xl leading-none lg:text-[22px] lg:font-bold pb-3 lg:pb-4">
+        <h3 className="font-semibold text-xl leading-none pt-8 pb-4 lg:text-[22px] lg:font-bold">
           Categories
         </h3>
       )}
       <ul
-        className={`flex overflow-x-scroll pl-1 lg:flex-col lg:overflow-auto ${
+        className={`flex overflow-x-scroll lg:flex-col lg:overflow-auto ${
           hovered ? "hovered" : ""
         }`}
         onMouseOver={(e) => !hovered && setHovered(true)}
@@ -222,14 +220,12 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
           )}
       </ul>
       {checkIfCategoryHasDapps(reputation) && (
-        <h3 className="hidden lg:block font-semibold text-xl leading-none lg:text-[22px] lg:font-bold pt-5 lg:pt-10">
+        <h3 className="hidden lg:block font-semibold text-xl leading-none pt-8 pb-4 lg:text-[22px] lg:font-bold">
           Reputation
         </h3>
       )}
       <ul
-        className={`hidden lg:block pt-3 pb-5 pl-1 lg:pt-4 ${
-          hovered ? "hovered" : ""
-        }`}
+        className={`hidden lg:block pb-5 ${hovered ? "hovered" : ""}`}
         onMouseOver={(e) => !hovered && setHovered(true)}
         onMouseLeave={(e) => hovered && setHovered(false)}
       >
