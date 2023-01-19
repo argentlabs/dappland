@@ -17,6 +17,7 @@ const DappPageRating = ({
   rating,
   avgRating = 4.8,
 }: Props) => {
+  const [averageRating, setAverageRating] = useState(avgRating)
   const [hoverIndex, setHoverIndex] = useState<number | null>(null)
   const [currentRating, setCurrentRating] = useState<number | null>(
     rating || null,
@@ -28,18 +29,21 @@ const DappPageRating = ({
     if (!starknet) {
       throw Error("User rejected wallet selection or wallet not found")
     }
+    if (!currentRating) {
+      throw Error("Not rated")
+    }
     try {
       await starknet.enable()
       if (starknet.isConnected) {
         const signature = await starknet.account.signMessage({
           message: {
             dappKey: dappKey,
-            rating: currentRating,
+            rating: currentRating + 1,
           },
           domain: {
             name: "Dappland",
             chainId: "SN_GOERLI",
-            version: "0.0.1",
+            version: "0.1.0",
           },
           types: {
             StarkNetDomain: [
@@ -57,21 +61,19 @@ const DappPageRating = ({
 
         const bodyData = {
           dappKey,
-          rating: currentRating,
-          signature,
+          rating: currentRating + 1,
+          signature: "0x01231AF",
           signer: starknet.selectedAddress,
         }
-
-        /*
         const response = await fetch(
           "https://cloud-dev.argent-api.com/v1/tokens/dapps/ratings",
           {
             method: "POST",
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify(bodyData),
           },
-        )
-        
-       */
+        ).then((res) => res.json())
+        setAverageRating(response.avgRating)
       } else {
         setCurrentRating(null)
       }
