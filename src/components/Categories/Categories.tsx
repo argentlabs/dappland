@@ -111,11 +111,11 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
     >
       {filteredCategories.length > 0 && (
         <>
-          <h3 className="font-semibold text-xl leading-none pt-8 pb-4 lg:text-[22px] lg:font-bold">
+          <h3 className="hidden lg:block font-semibold text-xl leading-none pt-8 pb-4 lg:text-[22px] lg:font-bold">
             Active filters
           </h3>
           <ul
-            className={`block ${hovered ? "hovered" : ""}`}
+            className={`hidden lg:block ${hovered ? "hovered" : ""}`}
             onMouseOver={(e) => !hovered && setHovered(true)}
             onMouseLeave={(e) => hovered && setHovered(false)}
           >

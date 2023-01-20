@@ -1,5 +1,7 @@
+import filter from "../../assets/icons/filter.svg"
 import Card from "../../components/Card/Card"
 import Categories from "../../components/Categories/Categories"
+import FilterMenu from "../../components/FilterMenu/FilterMenu"
 import Layout from "../../components/Layout"
 import Select from "../../components/Select/Select"
 import {
@@ -12,8 +14,9 @@ import sortByAttribute from "../../helpers/sort"
 import { getAllDapps } from "../../hooks/getAllDapps"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { GetStaticPaths, GetStaticProps } from "next"
+import Image from "next/image"
 import { useRouter } from "next/router"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import styled from "styled-components"
 
 const StyledSection = styled.section`
@@ -40,6 +43,7 @@ const CategoryPage = ({
   category: string
 }) => {
   const router = useRouter()
+  const [showMobileFilters, setShowMobileFilters] = useState(false)
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
   const changeCategory = useCategoryStore((state) => state.changeCategory)
   const setFilters = useCategoryStore((state) => state.setFilters)
@@ -110,6 +114,18 @@ const CategoryPage = ({
       }, 0) === selectedFilters.length
     )
   })
+
+  const getFilterCount = () => {
+    let count = 0
+    if (selectedCategory !== "all") {
+      count++
+    }
+    count += selectedFilters.length
+    return count
+  }
+
+  const filterCount = getFilterCount()
+
   const sortedDapps = sortByAttribute(filteredDapps, selectedSort)
   return (
     <Layout>
@@ -117,26 +133,48 @@ const CategoryPage = ({
         <StyledSection className="lg:grid lg:mt-20">
           <Categories className="categories" dappCards={dappCards} />
           <div className="cards">
-            <h3 className="lg:hidden font-semibold text-xl leading-none mb-5">
+            <h3 className="hidden font-semibold text-xl leading-none mb-5">
               {
                 allCategories.find((item) => item.key === selectedCategory)
                   ?.name
               }{" "}
               dapps
             </h3>
-            <div className="w-[164px] float-left lg:float-right">
-              <Select
-                defaultValue={selectedSort}
-                placeholder="Sort By"
-                options={[
-                  { label: "A-Z", value: "A-Z" },
-                  { label: "Z-A", value: "Z-A" },
-                  { label: "Rating", value: "rating" },
-                  { label: "New", value: "new" },
-                ]}
-                onChange={(sortBy) => setSelectedSort(sortBy)}
-              />
+            <div className="lg:block flex w-full">
+              <button
+                onClick={() => setShowMobileFilters(true)}
+                className="lg:hidden px-4 mr-4 bg-white dark:bg-[#333] shadow-box-image-shadow rounded-lg cursor-pointer relative w-[100px] h-[40px] flex justify-between items-center"
+              >
+                <Image
+                  src={filter}
+                  alt="filter-icon"
+                  className="w-[20px] h-[20px]"
+                />
+                <div className="text-[14px] leading-[14px] color-black dark:color-white font-semibold">
+                  Filter {filterCount > 0 ? `(${filterCount})` : null}
+                </div>
+              </button>
+              <div className="w-[164px] float-left lg:float-right">
+                <Select
+                  defaultValue={selectedSort}
+                  placeholder="Sort By"
+                  options={[
+                    { label: "A-Z", value: "A-Z" },
+                    { label: "Z-A", value: "Z-A" },
+                    { label: "Rating", value: "rating" },
+                    { label: "New", value: "new" },
+                  ]}
+                  onChange={(sortBy) => setSelectedSort(sortBy)}
+                />
+              </div>
             </div>
+            {showMobileFilters && (
+              <FilterMenu
+                dappCards={dappCards}
+                isMobileMenuOpen={showMobileFilters}
+                setIsMobileMenuOpen={setShowMobileFilters}
+              />
+            )}
             <div className="grid grid-cols-1 w-full gap-y-8 justify-center md:grid-cols-2 lg:grid-cols-1 lg:mx-0 gap-x-8 lg:gap-y-20 xl:grid-cols-2 2xl:grid-cols-3 lg:">
               {sortedDapps.map((card) => (
                 <Card key={card.url} {...card} />
