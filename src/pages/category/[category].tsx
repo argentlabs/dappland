@@ -55,19 +55,17 @@ const CategoryPage = ({
   const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
   useEffect(() => {
     const allFilters = selectedFilters.join(",")
-    if (selectedCategory !== "all") {
-      const url = `/category/${selectedCategory}${
-        selectedFilters.length
-          ? `?filters=${allFilters}${
-              selectedSort ? `&sort=${selectedSort}` : ""
-            }`
-          : `${selectedSort ? `?sort=${selectedSort}` : ""}`
-      }`
-      if (router.asPath !== url && router.isReady) {
-        router.push(url)
-      }
+    const categoryUrl =
+      selectedCategory === "all" ? "/" : `/category/${category}`
+    const url = `${categoryUrl}${
+      selectedFilters.length
+        ? `?filters=${allFilters}${selectedSort ? `&sort=${selectedSort}` : ""}`
+        : `${selectedSort ? `?sort=${selectedSort}` : ""}`
+    }`
+    if (router.asPath !== url && router.isReady) {
+      router.push(url)
     }
-  }, [selectedFilters, selectedSort])
+  }, [selectedFilters, selectedSort, selectedCategory])
 
   useEffect(() => {
     changeCategory((router?.query?.category as string) || "all")

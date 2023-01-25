@@ -6,6 +6,7 @@ import moon from "../../../assets/icons/moon.svg"
 import sun from "../../../assets/icons/sun.svg"
 import logoLight from "../../../assets/logo-dappland-mobile-light.svg"
 import logo from "../../../assets/logo-dappland-mobile.svg"
+import { useCategoryStore } from "../../../hooks/useCategoryStore"
 import Button from "../../Button/Button"
 import Image from "next/image"
 import Link from "next/link"
@@ -86,6 +87,10 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
     }
   }, [])
 
+  const setFilters = useCategoryStore((state) => state.setFilters)
+  const changeCategory = useCategoryStore((state) => state.changeCategory)
+  const setSort = useCategoryStore((state) => state.setSelectedSort)
+
   return (
     <MenuContainer
       className={[
@@ -134,7 +139,14 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
           {navbarItems.map((item) => (
             <li key={item.name}>
               <Link href={item.href}>
-                <a className="flex items-center py-3 px-6 bg-white dark:bg-light-black uppercase font-medium font-base">
+                <a
+                  className="flex items-center py-3 px-6 bg-white dark:bg-light-black uppercase font-medium font-base"
+                  onClick={() => {
+                    setFilters([])
+                    setSort(null)
+                    changeCategory("all")
+                  }}
+                >
                   <Image src={item.icon} alt={item.name} />
                   <p>{item.name}</p>
                 </a>

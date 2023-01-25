@@ -52,9 +52,9 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
     }
   }, [
     router.isReady,
-    selectedCategory,
     router?.query?.filters,
     router?.query?.sort,
+    router?.query?.category,
   ])
 
   const renderCategoryCount = (category: string) =>
@@ -135,7 +135,6 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
                     onClick={() => {
                       if (category.key === selectedCategory) {
                         changeCategory("all")
-                        router.push("/")
                       } else {
                         addFilter(category.key)
                       }
@@ -205,26 +204,24 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
                     changeCategory(category.key)
                   }}
                 >
-                  <Link href={`/category/${category.key}`}>
-                    <a className="flex items-center justify-center w-full lg:justify-between py-4 px-4">
-                      <div className="flex items-center flex-col lg:flex-row">
-                        <Image
-                          src={
-                            currentTheme === "dark"
-                              ? category.iconDark
-                              : category.icon
-                          }
-                          alt={category.name}
-                        />
-                        <p className="mt-2 font-semibold leading-none text-sm lg:ml-3 lg:mt-0 text-black dark:text-white">
-                          {category.name}
-                        </p>
-                      </div>
-                      <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
-                        {renderCategoryCount(category.name)}
+                  <div className="flex items-center justify-center w-full lg:justify-between py-4 px-4">
+                    <div className="flex items-center flex-col lg:flex-row">
+                      <Image
+                        src={
+                          currentTheme === "dark"
+                            ? category.iconDark
+                            : category.icon
+                        }
+                        alt={category.name}
+                      />
+                      <p className="mt-2 font-semibold leading-none text-sm lg:ml-3 lg:mt-0 text-black dark:text-white">
+                        {category.name}
                       </p>
-                    </a>
-                  </Link>
+                    </div>
+                    <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
+                      {renderCategoryCount(category.name)}
+                    </p>
+                  </div>
                 </li>
               ),
           )}
