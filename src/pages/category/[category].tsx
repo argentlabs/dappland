@@ -56,7 +56,7 @@ const CategoryPage = ({
   useEffect(() => {
     const allFilters = selectedFilters.join(",")
     const categoryUrl =
-      selectedCategory === "all" ? "/" : `/category/${category}`
+      selectedCategory === "all" ? "/" : `/category/${selectedCategory}`
     const url = `${categoryUrl}${
       selectedFilters.length
         ? `?filters=${allFilters}${selectedSort ? `&sort=${selectedSort}` : ""}`
