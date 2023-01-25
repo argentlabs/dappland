@@ -16,7 +16,7 @@ const FilterButton = ({
   return (
     <button
       onClick={onClick}
-      className="lg:hidden px-4 mr-4 bg-white dark:bg-[#333] shadow-box-image-shadow rounded-lg cursor-pointer relative w-[100px] h-[40px] flex justify-between items-center"
+      className="lg:hidden px-4 mr-4 bg-white dark:bg-[#333] shadow-box-image-shadow rounded-lg cursor-pointer relative gap-2 h-[40px] flex justify-between items-center"
     >
       <Image
         src={currentTheme === "dark" ? filterLight : filter}

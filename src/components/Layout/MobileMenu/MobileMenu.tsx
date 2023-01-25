@@ -94,13 +94,13 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
   return (
     <MenuContainer
       className={[
-        "lg:hidden z-[999] fixed top-0 left-0 w-full bg-smoked-white dark:bg-light-black",
+        "lg:hidden z-[999] fixed top-0 left-0 w-full",
         isNavbarScrolled ? "navbar-scrolled" : "",
         isMobileMenuOpen ? "is-active-menu" : "",
       ].join(" ")}
       ref={nav}
     >
-      <div className="flex justify-center py-2 relative z-50">
+      <div className="flex justify-center py-2 relative z-50 bg-smoked-white dark:bg-light-black">
         <Link href="/">
           <a className="flex items-center">
             <Image

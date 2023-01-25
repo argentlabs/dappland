@@ -299,7 +299,7 @@ const MobileMenu = ({
           onClick={() => {
             setIsMobileMenuOpen(!isMobileMenuOpen)
           }}
-          style={{ width: "100%" }}
+          style={{ width: "100%", marginBottom: 10 }}
         >
           Filter Dapps
         </Button>
