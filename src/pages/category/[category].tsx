@@ -1,4 +1,6 @@
 import filter from "../../assets/icons/filter.svg"
+import filterLight from "../../assets/icons/filterLight.svg"
+import FilterButton from "../../components/Button/FilterButton"
 import Card from "../../components/Card/Card"
 import Categories from "../../components/Categories/Categories"
 import FilterMenu from "../../components/FilterMenu/FilterMenu"
@@ -10,6 +12,7 @@ import {
   changeTagsToCategoriesSlug,
   reputation,
 } from "../../data/categories"
+import { filterCategoryDapps, filterDapps } from "../../helpers/category"
 import sortByAttribute from "../../helpers/sort"
 import { getAllDapps } from "../../hooks/getAllDapps"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
@@ -75,44 +78,12 @@ const CategoryPage = ({
     }
   }, [])
 
-  const categoryDapps = dappCards.filter((dapp) => {
-    if (category === "dotw") {
-      return dapp.featured
-    }
-    if (category === "doxxed") {
-      return !dapp.annonymous
-    }
-    if (category === "audited") {
-      return dapp.audits && dapp.audits.length > 0
-    }
-    if (category === "verified") {
-      return dapp.verified
-    }
-    return dapp.categories.includes(category)
-  })
+  const categoryDapps = filterCategoryDapps({ dappCards, category })
 
   // Check if all filters apply to a category
-  const filteredDapps = categoryDapps.filter((dapp) => {
-    return (
-      selectedFilters.reduce((acc, val) => {
-        if (val === "dotw" && dapp.featured) {
-          acc = acc + 1
-        }
-        if (val === "doxxed" && !dapp.annonymous) {
-          acc = acc + 1
-        }
-        if (val === "audited" && dapp.audits && dapp.audits.length > 0) {
-          acc = acc + 1
-        }
-        if (val === "verified" && dapp.verified) {
-          acc = acc + 1
-        }
-        if (dapp.categories.includes(val)) {
-          acc = acc + 1
-        }
-        return acc
-      }, 0) === selectedFilters.length
-    )
+  const filteredDapps = filterDapps({
+    dappCards: categoryDapps,
+    filters: selectedFilters,
   })
 
   const getFilterCount = () => {
@@ -141,19 +112,10 @@ const CategoryPage = ({
               dapps
             </h3>
             <div className="lg:block flex w-full">
-              <button
+              <FilterButton
                 onClick={() => setShowMobileFilters(true)}
-                className="lg:hidden px-4 mr-4 bg-white dark:bg-[#333] shadow-box-image-shadow rounded-lg cursor-pointer relative w-[100px] h-[40px] flex justify-between items-center"
-              >
-                <Image
-                  src={filter}
-                  alt="filter-icon"
-                  className="w-[20px] h-[20px]"
-                />
-                <div className="text-[14px] leading-[14px] color-black dark:color-white font-semibold">
-                  Filter {filterCount > 0 ? `(${filterCount})` : null}
-                </div>
-              </button>
+                filterCount={filterCount}
+              />
               <div className="w-[164px] float-left lg:float-right">
                 <Select
                   defaultValue={selectedSort}

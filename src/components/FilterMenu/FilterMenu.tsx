@@ -3,12 +3,14 @@ import crossCircleLight from "../../assets/icons/crossCircleLight.svg"
 import { categories, reputation } from "../../data/categories"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { useDarkMode } from "../../hooks/useDarkMode"
+import Button from "../Button/Button"
 import Image from "next/image"
 import { useRouter } from "next/router"
 import { useEffect, useRef, useState } from "react"
 import styled from "styled-components"
 
 const CategoryContainer = styled.div`
+  overflow: auto;
   ul.hovered li {
     transition: opacity 0.2s ease-in-out;
     opacity: 0.6;
@@ -33,8 +35,6 @@ const MenuContainer = styled.div`
   }
 
   ul li {
-    border-top: 1px solid rgba(150, 150, 150, 0.2);
-
     p {
       margin-left: 16px;
     }
@@ -45,7 +45,7 @@ const MenuContainer = styled.div`
   }
 
   .is-active-menu {
-    display: block;
+    display: flex;
   }
 `
 
@@ -162,7 +162,7 @@ const MobileMenu = ({
       ].join(" ")}
       ref={nav}
     >
-      <div className="flex justify-center py-4 relative z-50 bg-white">
+      <div className="flex justify-center py-4 relative z-50 bg-smoked-white dark:bg-light-black">
         <div className="font-semibold text-[18px]">Filters</div>
         <div className="hamburger-wrapper absolute right-2 top-1/2 -translate-y-1/2">
           <button
@@ -183,7 +183,7 @@ const MobileMenu = ({
       </div>
       <div
         className={[
-          "absolute top-0 left-0 w-full h-screen hidden pt-[56px] bg-[#F7F7F7] py-3 px-4",
+          "absolute top-0 left-0 w-full h-screen hidden pt-[56px] bg-smoked-white dark:bg-light-black py-3 px-4 flex flex-col justify-between",
           isMobileMenuOpen ? "is-active-menu" : "",
         ].join(" ")}
       >
@@ -202,8 +202,8 @@ const MobileMenu = ({
                   (category) =>
                     renderCategoryCount(category.name) > 0 && (
                       <li
-                        className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer flex-row mb-2 justify-start active
-                    } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
+                        className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg min-w-[108px] mx-1 cursor-pointer flex-row mb-2 justify-start active
+                    ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
                         key={category.name}
                         tabIndex={0}
                         onClick={() => {
@@ -264,7 +264,7 @@ const MobileMenu = ({
               >
                 {remainingFilters.map((category) => (
                   <li
-                    className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg min-w-[108px] cursor-pointer flex-row mb-2 justify-start ${
+                    className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mx-1 min-w-[108px] cursor-pointer flex-row mb-2 justify-start ${
                       selectedCategory === category.key ? "active" : ""
                     }`}
                     key={category.name}
@@ -294,6 +294,15 @@ const MobileMenu = ({
             </>
           ) : null}
         </CategoryContainer>
+        <Button
+          variant="primary"
+          onClick={() => {
+            setIsMobileMenuOpen(!isMobileMenuOpen)
+          }}
+          style={{ width: "100%" }}
+        >
+          Filter Dapps
+        </Button>
       </div>
     </MenuContainer>
   )

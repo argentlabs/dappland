@@ -1,13 +1,15 @@
+import FilterButton from "../components/Button/FilterButton"
 import Card from "../components/Card/Card"
 import Categories from "../components/Categories/Categories"
 import FeaturedCard from "../components/FeaturedCard/FeaturedVideoCard"
+import FilterMenu from "../components/FilterMenu/FilterMenu"
 import Layout from "../components/Layout"
 import Select from "../components/Select/Select"
 import sortByAttribute from "../helpers/sort"
 import { getAllDapps } from "../hooks/getAllDapps"
 import { useCategoryStore } from "../hooks/useCategoryStore"
 import { useRouter } from "next/router"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import styled from "styled-components"
 
 const StyledSection = styled.section`
@@ -37,6 +39,7 @@ const Home = ({
   dappCards: DappCard[]
   featuredDapp?: DappCard
 }) => {
+  const [showMobileFilters, setShowMobileFilters] = useState(false)
   const router = useRouter()
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
   const selectedSort = useCategoryStore((state) => state.selectedSort)
@@ -76,6 +79,8 @@ const Home = ({
     )
   })
   const sortedDapps = sortByAttribute(filteredDapps, selectedSort)
+
+  const filterCount = selectedFilters.length
   return (
     <Layout>
       <div className="container px-4 mx-auto mb-16 lg:mb-32">
@@ -89,19 +94,32 @@ const Home = ({
             <h3 className="lg:hidden font-semibold text-xl leading-none mb-5">
               All dapps
             </h3>
-            <div className="w-[164px] float-left lg:float-right">
-              <Select
-                placeholder="Sort By"
-                defaultValue={selectedSort}
-                options={[
-                  { label: "A-Z", value: "A-Z" },
-                  { label: "Z-A", value: "Z-A" },
-                  { label: "Rating", value: "rating" },
-                  { label: "New", value: "new" },
-                ]}
-                onChange={(sortBy) => setSelectedSort(sortBy)}
+            <div className="lg:block flex w-full">
+              <FilterButton
+                onClick={() => setShowMobileFilters(true)}
+                filterCount={filterCount}
               />
+              <div className="w-[164px] float-left lg:float-right">
+                <Select
+                  defaultValue={selectedSort}
+                  placeholder="Sort By"
+                  options={[
+                    { label: "A-Z", value: "A-Z" },
+                    { label: "Z-A", value: "Z-A" },
+                    { label: "Rating", value: "rating" },
+                    { label: "New", value: "new" },
+                  ]}
+                  onChange={(sortBy) => setSelectedSort(sortBy)}
+                />
+              </div>
             </div>
+            {showMobileFilters && (
+              <FilterMenu
+                dappCards={dappCards}
+                isMobileMenuOpen={showMobileFilters}
+                setIsMobileMenuOpen={setShowMobileFilters}
+              />
+            )}
             <div className="grid grid-cols-1 w-full gap-y-8 justify-center md:grid-cols-2 lg:grid-cols-1 lg:mx-0 gap-x-8 lg:gap-y-20 xl:grid-cols-2 2xl:grid-cols-3 lg:">
               {sortedDapps.map((card) => (
                 <Card key={card.url} {...card} />
