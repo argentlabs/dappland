@@ -50,7 +50,12 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
       setFilters(filters)
       setSelectedSort(sortBy && sortBy.length ? sortBy : null)
     }
-  }, [router.isReady, selectedCategory])
+  }, [
+    router.isReady,
+    selectedCategory,
+    router?.query?.filters,
+    router?.query?.sort,
+  ])
 
   const renderCategoryCount = (category: string) =>
     dappCards.reduce((prevValue, currentValue) => {
