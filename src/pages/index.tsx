@@ -45,7 +45,6 @@ const Home = ({
   const selectedSort = useCategoryStore((state) => state.selectedSort)
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
   const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
-  const changeCategory = useCategoryStore((state) => state.changeCategory)
 
   useEffect(() => {
     const allFilters = selectedFilters.join(",")

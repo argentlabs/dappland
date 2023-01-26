@@ -1,7 +1,5 @@
 import home from "../../../assets/icons/home.svg"
 import homeDark from "../../../assets/icons/home_dark.svg"
-import info from "../../../assets/icons/info-circle.svg"
-import infoDark from "../../../assets/icons/info-circle_dark.svg"
 import moon from "../../../assets/icons/moon.svg"
 import sun from "../../../assets/icons/sun.svg"
 import logoLight from "../../../assets/logo-dappland-mobile-light.svg"
