@@ -28,9 +28,10 @@ const CategoryContainer = styled.div`
 interface CategoriesProps {
   className?: string
   dappCards: DappCard[]
+  isHome?: boolean
 }
 
-const Categories = ({ className, dappCards }: CategoriesProps) => {
+const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
   const router = useRouter()
   const [hovered, setHovered] = useState(false)
 
@@ -47,8 +48,10 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
     if (router.isReady) {
       const filters = (router?.query?.filters as string)?.split(",") || []
       const sortBy = router?.query?.sort as string
+      const category = (router?.query?.category as string) || "all"
       setFilters(filters)
       setSelectedSort(sortBy && sortBy.length ? sortBy : null)
+      changeCategory(category)
     }
   }, [
     router.isReady,
@@ -201,7 +204,12 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
                   key={category.name}
                   tabIndex={0}
                   onClick={() => {
-                    changeCategory(category.key)
+                    if (isHome) {
+                      changeCategory(category.key)
+                      router.push(`/category/${category.key}`)
+                    } else {
+                      changeCategory(category.key)
+                    }
                   }}
                 >
                   <div className="flex items-center justify-center w-full lg:justify-between py-4 px-4">

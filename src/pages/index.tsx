@@ -45,10 +45,12 @@ const Home = ({
   const selectedSort = useCategoryStore((state) => state.selectedSort)
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
   const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
+  const changeCategory = useCategoryStore((state) => state.changeCategory)
+
   useEffect(() => {
     const allFilters = selectedFilters.join(",")
     const sortBy = selectedSort
-    let url = selectedCategory === "all" ? "/" : `/category/${selectedCategory}`
+    let url = "/"
     if (allFilters.length) {
       url += `?filters=${allFilters}`
     }
@@ -88,6 +90,7 @@ const Home = ({
         <StyledSection className="lg:grid lg:mt-20">
           <FeaturedCard videoUrl="/promo.mp4" className="featured" />
           <Categories
+            isHome
             className="categories lg:max-w-[340px]"
             dappCards={dappCards}
           />
