@@ -1,6 +1,7 @@
 import crossCircle from "../../assets/icons/crossCircle.svg"
 import crossCircleLight from "../../assets/icons/crossCircleLight.svg"
 import { categories, reputation } from "../../data/categories"
+import { generateUrl } from "../../helpers/category"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { useDarkMode } from "../../hooks/useDarkMode"
 import Image from "next/image"
@@ -39,6 +40,7 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
   const changeCategory = useCategoryStore((state) => state.changeCategory)
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
+  const selectedSort = useCategoryStore((state) => state.selectedSort)
   const addFilter = useCategoryStore((state) => state.addFilter)
   const setFilters = useCategoryStore((state) => state.setFilters)
   const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
@@ -137,6 +139,13 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
                     onClick={() => {
                       if (category.key === selectedCategory) {
                         changeCategory("all")
+                        router.push(
+                          generateUrl({
+                            selectedSort,
+                            selectedFilters,
+                            selectedCategory: "all",
+                          }),
+                        )
                       } else {
                         addFilter(category.key)
                       }
@@ -205,7 +214,13 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
                   onClick={() => {
                     if (isHome) {
                       changeCategory(category.key)
-                      router.push(`/category/${category.key}`)
+                      router.push(
+                        generateUrl({
+                          selectedSort,
+                          selectedFilters,
+                          selectedCategory: category.key,
+                        }),
+                      )
                     } else {
                       changeCategory(category.key)
                     }

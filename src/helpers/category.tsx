@@ -52,3 +52,23 @@ export const filterDapps = ({
     )
   })
 }
+
+export const generateUrl = ({
+  selectedSort,
+  selectedFilters,
+  selectedCategory,
+}: {
+  selectedCategory: string
+  selectedSort: string | null
+  selectedFilters: string[]
+}) => {
+  const allFilters = selectedFilters.join(",")
+  const categoryUrl =
+    selectedCategory === "all" ? "/" : `/category/${selectedCategory}`
+  const url = `${categoryUrl}${
+    selectedFilters.length
+      ? `?filters=${allFilters}${selectedSort ? `&sort=${selectedSort}` : ""}`
+      : `${selectedSort ? `?sort=${selectedSort}` : ""}`
+  }`
+  return url
+}

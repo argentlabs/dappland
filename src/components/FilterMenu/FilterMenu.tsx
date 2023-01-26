@@ -1,6 +1,7 @@
 import crossCircle from "../../assets/icons/crossCircle.svg"
 import crossCircleLight from "../../assets/icons/crossCircleLight.svg"
 import { categories, reputation } from "../../data/categories"
+import { generateUrl } from "../../helpers/category"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { useDarkMode } from "../../hooks/useDarkMode"
 import Button from "../Button/Button"
@@ -67,6 +68,7 @@ const MobileMenu = ({
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
   const changeCategory = useCategoryStore((state) => state.changeCategory)
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
+  const selectedSort = useCategoryStore((state) => state.selectedSort)
   const addFilter = useCategoryStore((state) => state.addFilter)
 
   const nav = useRef<HTMLDivElement>(null)
@@ -209,7 +211,13 @@ const MobileMenu = ({
                         onClick={() => {
                           if (category.key === selectedCategory) {
                             changeCategory("all")
-                            router.push("/")
+                            router.push(
+                              generateUrl({
+                                selectedSort,
+                                selectedFilters,
+                                selectedCategory: "all",
+                              }),
+                            )
                           } else {
                             addFilter(category.key)
                           }

@@ -10,7 +10,11 @@ import {
   changeTagsToCategoriesSlug,
   reputation,
 } from "../../data/categories"
-import { filterCategoryDapps, filterDapps } from "../../helpers/category"
+import {
+  filterCategoryDapps,
+  filterDapps,
+  generateUrl,
+} from "../../helpers/category"
 import sortByAttribute from "../../helpers/sort"
 import { getAllDapps } from "../../hooks/getAllDapps"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
@@ -51,15 +55,12 @@ const CategoryPage = ({
   const selectedSort = useCategoryStore((state) => state.selectedSort)
   const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
   useEffect(() => {
-    const allFilters = selectedFilters.join(",")
-    const categoryUrl =
-      selectedCategory === "all" ? "/" : `/category/${selectedCategory}`
-    const url = `${categoryUrl}${
-      selectedFilters.length
-        ? `?filters=${allFilters}${selectedSort ? `&sort=${selectedSort}` : ""}`
-        : `${selectedSort ? `?sort=${selectedSort}` : ""}`
-    }`
-    if (router.asPath !== url && router.isReady) {
+    const url = generateUrl({
+      selectedCategory,
+      selectedSort,
+      selectedFilters,
+    })
+    if (router.isReady && selectedCategory !== "all") {
       router.push(url)
     }
   }, [selectedFilters, selectedSort, selectedCategory])
