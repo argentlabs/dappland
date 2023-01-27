@@ -55,10 +55,10 @@ const NFTPageStats = ({
       {data ? (
         <div className="lg:grid xl:grid-cols-4 gap-y-8 lg:gap-x-16 xl:justify-between bg-white lg:grid-cols-2 dark:bg-white/10 p-8 rounded-xl flex flex-col shadow-box-image-shadow mb-8">
           <div className="flex flex-col gap-1">
-            <p className="text-light-charcoal dark:text-clay font-medium text-xl leading-6 flex gap-1 flex-wrap">
+            <div className="text-light-charcoal dark:text-clay font-medium text-xl leading-6 flex gap-1 flex-wrap">
               Items
               <TooltipIconButton text={"Total NFTs in collection"} />
-            </p>
+            </div>
             <div className="text-black dark:text-white font-bold text-[34px] leading-9">
               {data?.number_of_assets
                 ? parseInt(data?.number_of_assets).toLocaleString("en-US")
@@ -66,10 +66,10 @@ const NFTPageStats = ({
             </div>
           </div>
           <div className="flex flex-col gap-1">
-            <p className="text-light-charcoal dark:text-clay font-medium text-xl leading-6 flex gap-1">
+            <div className="text-light-charcoal dark:text-clay font-medium text-xl leading-6 flex gap-1">
               Owners
               <TooltipIconButton text={"Total number of owners"} />
-            </p>
+            </div>
             <div className="text-black dark:text-white font-bold text-[34px] leading-9">
               {data?.number_of_owners
                 ? parseInt(data?.number_of_owners).toLocaleString("en-US")
@@ -77,23 +77,23 @@ const NFTPageStats = ({
             </div>
           </div>
           <div className="flex flex-col gap-1">
-            <p className="text-light-charcoal dark:text-clay font-medium text-xl leading-6 flex gap-1">
+            <div className="text-light-charcoal dark:text-clay font-medium text-xl leading-6 flex gap-1">
               Floor price
               <TooltipIconButton
                 text={"Lowest price of an item in collection (ETH)"}
               />
-            </p>
+            </div>
             <div className="text-black dark:text-white font-bold text-[34px] leading-9">
               {floorPrice}
             </div>
           </div>
           <div className="flex flex-col gap-1">
-            <p className="text-light-charcoal dark:text-clay font-medium text-xl leading-6 flex gap-1">
+            <div className="text-light-charcoal dark:text-clay font-medium text-xl leading-6 flex gap-1">
               Total volume
               <TooltipIconButton
                 text={"Total value of all trades for this collection"}
               />
-            </p>
+            </div>
             <div className="text-black dark:text-white font-bold text-[34px] leading-9">
               {totalVolume} ETH
             </div>
