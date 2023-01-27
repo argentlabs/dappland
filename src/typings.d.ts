@@ -33,6 +33,7 @@ interface DappInfo {
   media: Media
   dotw: boolean
   twitterName: string
+  date_added?: string
   nft?: {
     collectionLink: string
     collectionContract: string
@@ -123,4 +124,5 @@ interface DappCard {
   featured: boolean
   annonymous: boolean
   audits: Audit[]
+  date_added: string
 }

@@ -1,4 +1,5 @@
 import { categories, reputation } from "../../data/categories"
+import checkIfDateDifferenceIsLessThanValue from "../../helpers/checkIfDateDifferenceIsLessThanValue"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { useDarkMode } from "../../hooks/useDarkMode"
 import Image from "next/image"
@@ -51,6 +52,15 @@ const Categories = ({ className, dappCards }: CategoriesProps) => {
       if (category === "Audited") {
         if (currentValue.audits && currentValue.audits.length > 0) {
           return prevValue + 1
+        }
+      }
+      if (category === "Recently launched") {
+        if (currentValue.date_added) {
+          const dateAdded = new Date(currentValue.date_added)
+          const dateNow = new Date()
+          if (checkIfDateDifferenceIsLessThanValue(dateNow, dateAdded)) {
+            return prevValue + 1
+          }
         }
       }
       if (currentValue.tags.indexOf(category) !== -1) {
