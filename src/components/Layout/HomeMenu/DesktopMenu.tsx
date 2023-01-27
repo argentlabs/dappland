@@ -57,12 +57,12 @@ const HomeDesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
             }
           />
         </Link>
-        <div className="bg-black dark:bg-white text-white dark:text-black pl-4 pr-4 pt-1 pb-2 text-center text-[32px] font-bold leading-[38px] rounded-md mb-6">
+        <h1 className="bg-black dark:bg-white text-white dark:text-black pl-4 pr-4 pt-1 pb-2 text-center text-[32px] font-bold leading-[38px] rounded-md mb-6">
           Discover the best dapps on StarkNet
-        </div>
-        <div className="text-black dark:text-white text-[28px] leading-[34px] font-lighter">
+        </h1>
+        <h2 className="text-black dark:text-white text-[28px] leading-[34px] font-lighter">
           Games, NFTs, DeFi, DAOs and more.
-        </div>
+        </h2>
         <p className="text-center font-normal text-base leading-[16px] mt-16">
           Built with ❤️ by{" "}
           <a href="https://www.argent.xyz/?utm_source=dappland">Argent</a>
