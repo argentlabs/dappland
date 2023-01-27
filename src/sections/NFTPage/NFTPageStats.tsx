@@ -100,7 +100,7 @@ const NFTPageStats = ({
           </div>
         </div>
       ) : null}
-      <div className="mb-8 grid xl:grid-cols-4 gap-4 xl:justify-between xl:mt-4 lg:grid-cols-4 grid-cols-2 rounded-xl">
+      <div className="mb-8 grid xl:grid-cols-4 gap-8 xl:justify-between xl:mt-4 lg:grid-cols-4 grid-cols-2 rounded-xl">
         {nftCollectionPreview.map((nft) => (
           <div
             key={nft.name}
