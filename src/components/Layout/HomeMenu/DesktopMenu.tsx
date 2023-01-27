@@ -63,6 +63,10 @@ const HomeDesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
         <div className="text-black dark:text-white text-[28px] leading-[34px] font-lighter">
           Games, NFTs, DeFi, DAOs and more.
         </div>
+        <p className="text-center font-normal text-base leading-[16px] mt-16">
+          Built with ❤️ by{" "}
+          <a href="https://www.argent.xyz/?utm_source=dappland">Argent</a>
+        </p>
       </div>
     </div>
   )
