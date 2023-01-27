@@ -167,7 +167,7 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
         </div>
       </MenuContainer>
       <div
-        className={`flex flex-col justify-center items-center pb-8 mt-3 pt-[56px] bg-white dark:bg-hero-dark`}
+        className={`flex flex-col justify-center items-center pb-8 mt-3 pt-[56px] bg-white dark:bg-hero-dark lg:hidden`}
       >
         <div className="bg-black dark:bg-white text-white dark:text-black pl-4 pr-4 pt-1 pb-2 text-center text-[18px] font-semibold leading-[22px] rounded-md mb-2">
           Discover the best dapps on StarkNet
