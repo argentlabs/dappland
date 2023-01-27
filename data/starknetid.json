@@ -5,18 +5,26 @@
   "tags": ["NFTs", "Social"],
   "contracts": [
     {
+      "name": "StarknetID contract",
+      "address": "0x05dbdedc203e92749e2e746e2d40a768d966bd243df04a6b712e222bc040a9af"
+    },
+    {
       "name": "Naming contract",
       "address": "0x06ac597f8116f886fa1c97a23fa4e08299975ecaf6b598873ca6792b9bbfb678"
+    },
+    {
+      "name": "Pricing contract",
+      "address": "0x2383504fa1365cf31921c1411e14ea45b6376e9a0da8890d51359fd05575f48"
     }
   ],
   "audits": [],
   "dotw": false,
   "links": {
-    "website": "https://www.starknet.id/",
+    "website": "https://starknet.id/",
     "careers": "",
     "twitter": "https://twitter.com/starknet_id",
     "telegram": "",
-    "discord": "https://t.co/eiYKYWUvVR",
+    "discord": "https://discord.com/invite/8uS2Mgcsza",
     "github": "https://github.com/starknet-id",
     "youtube": "",
     "medium": "",
