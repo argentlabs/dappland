@@ -4,6 +4,21 @@ declare module "*.svg" {
   export default src
 }
 
+interface NFTData {
+  name: string
+  name_custom: string
+  total_volume_all_time: number
+  total_volume_720_hours?: number
+  total_volume_168_hours?: number
+  total_volume_24_hours?: number
+  volume_change_basis_points_720_hours?: number | string
+  volume_change_basis_points_168_hours?: number | string
+  volume_change_basis_points_24_hours?: number | string
+  number_of_owners: string
+  number_of_assets: string
+  floor_list_price: number
+}
+
 interface DappInfo {
   description: string
   short_description: string
@@ -19,6 +34,15 @@ interface DappInfo {
   dotw: boolean
   twitterName: string
   date_added?: string
+  nft?: {
+    collectionLink: string
+    collectionContract: string
+    collectionName: string
+    collectionPreview: {
+      image_url: string
+      name: string
+    }[]
+  }
 }
 
 interface Audit {
