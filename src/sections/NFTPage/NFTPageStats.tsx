@@ -84,7 +84,7 @@ const NFTPageStats = ({
               />
             </div>
             <div className="text-black dark:text-white font-bold text-[34px] leading-9">
-              {floorPrice}
+              {floorPrice} ETH
             </div>
           </div>
           <div className="flex flex-col gap-1">
