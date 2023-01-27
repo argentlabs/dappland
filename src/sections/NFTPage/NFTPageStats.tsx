@@ -57,7 +57,7 @@ const NFTPageStats = ({
           <div className="flex flex-col gap-1">
             <p className="text-light-charcoal dark:text-clay font-medium text-xl leading-6 flex gap-1 flex-wrap">
               Items
-              <TooltipIconButton text={"Total number of NFTS"} />
+              <TooltipIconButton text={"Total NFTs in collection"} />
             </p>
             <div className="text-black dark:text-white font-bold text-[34px] leading-9">
               {data?.number_of_assets
@@ -90,10 +90,12 @@ const NFTPageStats = ({
           <div className="flex flex-col gap-1">
             <p className="text-light-charcoal dark:text-clay font-medium text-xl leading-6 flex gap-1">
               Total volume
-              <TooltipIconButton text={"Total Volume"} />
+              <TooltipIconButton
+                text={"Total value of all trades for this collection"}
+              />
             </p>
             <div className="text-black dark:text-white font-bold text-[34px] leading-9">
-              {totalVolume}
+              {totalVolume} ETH
             </div>
           </div>
         </div>
