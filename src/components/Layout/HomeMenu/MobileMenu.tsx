@@ -81,47 +81,93 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
   }, [])
 
   return (
-    <MenuContainer
-      className={[
-        "lg:hidden z-[999] fixed top-0 left-0 w-full bg-white dark:bg-hero-dark shadow-[0_0_20px_0_rgba(0,0,0,0.3)]",
-        isNavbarScrolled ? "navbar-scrolled" : "",
-        isMobileMenuOpen ? "is-active-menu" : "",
-      ].join(" ")}
-      ref={nav}
-    >
-      <div className="flex justify-center py-2 relative z-50 ">
-        <Link href="/">
-          <a className="flex items-center">
-            <Image
-              src={currentTheme === "dark" ? logoLight : logo}
-              alt="logo"
-              width={133}
-              height={40}
-              style={{ height: "auto !important" }}
-            />
-          </a>
-        </Link>
-        <div className="hamburger-wrapper absolute right-2 top-1/2 -translate-y-1/2">
-          <button
-            className={[
-              "hamburger",
-              isMobileMenuOpen ? "is-active" : "",
-              mounted && currentTheme === "dark" ? "is-dark" : "",
-              "absolute",
-            ].join(" ")}
-            type="button"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            <span className="hamburger-box">
-              <span className="hamburger-inner"></span>
-            </span>
-          </button>
+    <>
+      <MenuContainer
+        className={[
+          "lg:hidden z-[999] fixed top-0 left-0 w-full bg-white dark:bg-hero-dark shadow-[0_0_20px_0_rgba(0,0,0,0.3)]",
+          isNavbarScrolled ? "navbar-scrolled" : "",
+          isMobileMenuOpen ? "is-active-menu" : "",
+        ].join(" ")}
+        ref={nav}
+      >
+        <div className="flex justify-center py-2 relative z-50 ">
+          <Link href="/">
+            <a className="flex items-center">
+              <Image
+                src={currentTheme === "dark" ? logoLight : logo}
+                alt="logo"
+                width={133}
+                height={40}
+                style={{ height: "auto !important" }}
+              />
+            </a>
+          </Link>
+          <div className="hamburger-wrapper absolute right-2 top-1/2 -translate-y-1/2">
+            <button
+              className={[
+                "hamburger",
+                isMobileMenuOpen ? "is-active" : "",
+                mounted && currentTheme === "dark" ? "is-dark" : "",
+                "absolute",
+              ].join(" ")}
+              type="button"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              <span className="hamburger-box">
+                <span className="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
         </div>
-      </div>
+        <div
+          className={[
+            "absolute top-0 left-0 w-full h-screen hidden pt-[56px] bg-white dark:bg-light-black",
+            isMobileMenuOpen ? "is-active-menu" : "",
+          ].join(" ")}
+        >
+          <ul className="list-none mb-3">
+            {navbarItems.map((item) => (
+              <li key={item.name}>
+                <Link href={item.href}>
+                  <a className="flex items-center py-3 px-6 bg-white dark:bg-light-black uppercase font-medium font-base">
+                    <Image src={item.icon} alt={item.name} />
+                    <p>{item.name}</p>
+                  </a>
+                </Link>
+              </li>
+            ))}
+            <li className="py-3 px-6 bg-white dark:bg-light-black">
+              <button
+                type="button"
+                onClick={() =>
+                  setTheme(currentTheme === "dark" ? "light" : "dark")
+                }
+                className="flex items-center uppercase font-medium font-base"
+              >
+                <Image
+                  src={currentTheme === "dark" ? sun : moon}
+                  alt="dark mode icon"
+                />
+                <p>Dark mode</p>
+              </button>
+            </li>
+          </ul>
+          <div className="mx-7">
+            <Button
+              variant="primary"
+              className="w-full"
+              withoutMobile
+              href="https://github.com/argentlabs/dappland#-add-your-dapp-to-dappland"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Add your Dapp
+            </Button>
+          </div>
+        </div>
+      </MenuContainer>
       <div
-        className={`flex flex-col justify-center items-center pb-8 mt-3 ${
-          isNavbarScrolled ? "hidden" : ""
-        }`}
+        className={`flex flex-col justify-center items-center pb-8 mt-3 pt-[56px] bg-white dark:bg-hero-dark`}
       >
         <div className="bg-black dark:bg-white text-white dark:text-black pl-4 pr-4 pt-1 pb-2 text-center text-[18px] font-semibold leading-[22px] rounded-md mb-2">
           Discover the best dapps on StarkNet
@@ -130,53 +176,7 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
           Games, NFTs, DeFi, DAOs and more.
         </div>
       </div>
-      <div
-        className={[
-          "absolute top-0 left-0 w-full h-screen hidden pt-[56px] bg-white dark:bg-light-black",
-          isMobileMenuOpen ? "is-active-menu" : "",
-        ].join(" ")}
-      >
-        <ul className="list-none mb-3">
-          {navbarItems.map((item) => (
-            <li key={item.name}>
-              <Link href={item.href}>
-                <a className="flex items-center py-3 px-6 bg-white dark:bg-light-black uppercase font-medium font-base">
-                  <Image src={item.icon} alt={item.name} />
-                  <p>{item.name}</p>
-                </a>
-              </Link>
-            </li>
-          ))}
-          <li className="py-3 px-6 bg-white dark:bg-light-black">
-            <button
-              type="button"
-              onClick={() =>
-                setTheme(currentTheme === "dark" ? "light" : "dark")
-              }
-              className="flex items-center uppercase font-medium font-base"
-            >
-              <Image
-                src={currentTheme === "dark" ? sun : moon}
-                alt="dark mode icon"
-              />
-              <p>Dark mode</p>
-            </button>
-          </li>
-        </ul>
-        <div className="mx-7">
-          <Button
-            variant="primary"
-            className="w-full"
-            withoutMobile
-            href="https://github.com/argentlabs/dappland#-add-your-dapp-to-dappland"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Add your Dapp
-          </Button>
-        </div>
-      </div>
-    </MenuContainer>
+    </>
   )
 }
 

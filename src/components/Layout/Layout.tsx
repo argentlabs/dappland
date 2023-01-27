@@ -4,8 +4,8 @@ import HomeHeader from "./HomeHeader"
 import Head from "next/head"
 import styled from "styled-components"
 
-const MainContainer = styled.main<{ isHome?: boolean }>`
-  padding-top: ${(p) => (p.isHome ? "196px" : "56px")};
+const MainContainer = styled.main`
+  padding-top: 56px};
   @media (min-width: 1024px) {
     padding-top: 0;
   }
@@ -95,7 +95,7 @@ export const Layout = ({
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       {!isHome ? <Header /> : <HomeHeader />}
-      <MainContainer isHome={isHome}>{children}</MainContainer>
+      <MainContainer>{children}</MainContainer>
       <Footer />
     </>
   )
