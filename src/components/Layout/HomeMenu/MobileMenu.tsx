@@ -14,7 +14,6 @@ import styled from "styled-components"
 
 const MenuContainer = styled.div`
   box-shadow: none;
-  transition: all 0.2s ease;
 
   &.navbar-scrolled:not(.is-active-menu) {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -65,7 +64,7 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
   const handleScroll = () => {
     const position = window.scrollY
     if (nav.current) {
-      if (position > 15) {
+      if (position > 30) {
         setIsNavbarScrolled(true)
       } else {
         setIsNavbarScrolled(false)
@@ -84,13 +83,13 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
   return (
     <MenuContainer
       className={[
-        "lg:hidden z-[999] fixed top-0 left-0 w-full bg-white dark:bg-light-black pb-8 shadow-[0_0_20px_0_rgba(0,0,0,0.3)] dark:border-b dark:border-white/10",
+        "lg:hidden z-[999] fixed top-0 left-0 w-full bg-white dark:bg-hero-dark shadow-[0_0_20px_0_rgba(0,0,0,0.3)]",
         isNavbarScrolled ? "navbar-scrolled" : "",
         isMobileMenuOpen ? "is-active-menu" : "",
       ].join(" ")}
       ref={nav}
     >
-      <div className="flex justify-center py-2 relative z-50 mb-3">
+      <div className="flex justify-center py-2 relative z-50 ">
         <Link href="/">
           <a className="flex items-center">
             <Image
@@ -119,7 +118,11 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
           </button>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div
+        className={`flex flex-col justify-center items-center pb-8 mt-3 ${
+          isNavbarScrolled ? "hidden" : ""
+        }`}
+      >
         <div className="bg-black dark:bg-white text-white dark:text-black pl-4 pr-4 pt-1 pb-2 text-center text-[18px] font-semibold leading-[22px] rounded-md mb-2">
           Discover the best dapps on StarkNet
         </div>

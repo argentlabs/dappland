@@ -16,7 +16,7 @@ interface DesktopMenuProps {
 
 const HomeDesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
   return (
-    <div className="hidden lg:block bg-white dark:bg-light-black dark:border-b dark:border-white/10">
+    <div className="hidden lg:block bg-white dark:bg-hero-dark ">
       <div className="relative w-full flex justify-between items-center pr-6">
         <div className="flex">
           <button
