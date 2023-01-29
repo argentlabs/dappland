@@ -72,3 +72,22 @@ export const generateUrl = ({
   }`
   return url
 }
+
+export const checkIfCategoryExists = (dappCard: DappCard, category: string) => {
+  switch (category) {
+    case "Dapp of the Week":
+    case "featured":
+      return dappCard.featured
+    case "Public team":
+    case "doxxed":
+      return !dappCard.annonymous
+    case "Audited":
+    case "audited":
+      return dappCard.audits && dappCard.audits.length
+    case "Verified contracts":
+    case "verified":
+      return dappCard.verified
+    default:
+      return dappCard.tags.indexOf(category) !== -1
+  }
+}

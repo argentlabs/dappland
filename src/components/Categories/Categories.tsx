@@ -1,7 +1,7 @@
 import crossCircle from "../../assets/icons/crossCircle.svg"
 import crossCircleLight from "../../assets/icons/crossCircleLight.svg"
 import { categories, reputation } from "../../data/categories"
-import { generateUrl } from "../../helpers/category"
+import { checkIfCategoryExists, generateUrl } from "../../helpers/category"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { useDarkMode } from "../../hooks/useDarkMode"
 import Image from "next/image"
@@ -61,33 +61,23 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
     router?.query?.category,
   ])
 
-  const renderCategoryCount = (category: string) =>
-    dappCards.reduce((prevValue, currentValue) => {
-      if (category === "Dapp of the Week") {
-        if (currentValue.featured) {
-          return prevValue + 1
-        }
-      }
-      if (category === "Public team") {
-        if (!currentValue.annonymous) {
-          return prevValue + 1
-        }
-      }
-      if (category === "Audited") {
-        if (currentValue.audits && currentValue.audits.length > 0) {
-          return prevValue + 1
-        }
-      }
-      if (category === "Verified contracts") {
-        if (currentValue.verified) {
-          return prevValue + 1
-        }
-      }
-      if (currentValue.tags.indexOf(category) !== -1) {
-        return prevValue + 1
-      }
-      return prevValue
+  const renderCategoryCount = (category: string, isMainCategory?: boolean) => {
+    const selectedCategoryName =
+      selectedCategory !== "all"
+        ? categories.find((cat) => cat.key === selectedCategory)?.name
+        : null
+    const allFilters =
+      selectedCategoryName && !isMainCategory
+        ? [selectedCategoryName, category, ...selectedFilters]
+        : [category, ...selectedFilters]
+    return dappCards.reduce((prevValue, currentValue) => {
+      const filtersCount = allFilters.reduce((prevFiltersCount, nextFilter) => {
+        const filterMatched = checkIfCategoryExists(currentValue, nextFilter)
+        return filterMatched ? prevFiltersCount + 1 : prevFiltersCount
+      }, 0)
+      return filtersCount === allFilters.length ? prevValue + 1 : prevValue
     }, 0)
+  }
 
   const checkIfAnyCategoryIsActive = () =>
     [...categories, ...reputation].some(
@@ -99,7 +89,11 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
   ) => {
     let activeCategories = 0
     category.forEach((item) => {
-      if (renderCategoryCount(item.name) > 0) activeCategories++
+      if (
+        renderCategoryCount(item.name) > 0 &&
+        !selectedFilters.includes(item.key)
+      )
+        activeCategories++
     })
     return Boolean(activeCategories)
   }
@@ -139,10 +133,12 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
                     onClick={() => {
                       if (category.key === selectedCategory) {
                         changeCategory("all")
+                        setSelectedSort(null)
+                        setFilters([])
                         router.push(
                           generateUrl({
-                            selectedSort,
-                            selectedFilters,
+                            selectedSort: null,
+                            selectedFilters: [],
                             selectedCategory: "all",
                           }),
                         )
@@ -204,7 +200,9 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
           .filter((category) => category.key !== selectedCategory)
           .map(
             (category) =>
-              renderCategoryCount(category.name) > 0 && (
+              (renderCategoryCount(category.name, true) > 0 ||
+                selectedFilters.length ||
+                selectedCategory !== "all") && (
                 <li
                   className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
                     selectedCategory === category.key ? "active" : ""
@@ -212,18 +210,16 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
                   key={category.name}
                   tabIndex={0}
                   onClick={() => {
-                    if (isHome) {
-                      changeCategory(category.key)
-                      router.push(
-                        generateUrl({
-                          selectedSort,
-                          selectedFilters,
-                          selectedCategory: category.key,
-                        }),
-                      )
-                    } else {
-                      changeCategory(category.key)
-                    }
+                    changeCategory(category.key)
+                    setFilters([])
+                    setSelectedSort(null)
+                    router.push(
+                      generateUrl({
+                        selectedSort: null,
+                        selectedFilters: [],
+                        selectedCategory: category.key,
+                      }),
+                    )
                   }}
                 >
                   <div className="flex items-center justify-center w-full lg:justify-between py-4 px-4">
@@ -241,7 +237,9 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
                       </p>
                     </div>
                     <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
-                      {renderCategoryCount(category.name)}
+                      {!selectedFilters.length
+                        ? renderCategoryCount(category.name, true)
+                        : ""}
                     </p>
                   </div>
                 </li>
