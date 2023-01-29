@@ -1,7 +1,7 @@
 import crossCircle from "../../assets/icons/crossCircle.svg"
 import crossCircleLight from "../../assets/icons/crossCircleLight.svg"
 import { categories, reputation } from "../../data/categories"
-import { generateUrl } from "../../helpers/category"
+import { checkIfCategoryExists, generateUrl } from "../../helpers/category"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { useDarkMode } from "../../hooks/useDarkMode"
 import Button from "../Button/Button"
@@ -117,33 +117,23 @@ const MobileMenu = ({
     return Boolean(activeCategories)
   }
 
-  const renderCategoryCount = (category: string) =>
-    dappCards.reduce((prevValue, currentValue) => {
-      if (category === "Dapp of the Week") {
-        if (currentValue.featured) {
-          return prevValue + 1
-        }
-      }
-      if (category === "Public team") {
-        if (!currentValue.annonymous) {
-          return prevValue + 1
-        }
-      }
-      if (category === "Audited") {
-        if (currentValue.audits && currentValue.audits.length > 0) {
-          return prevValue + 1
-        }
-      }
-      if (category === "Verified contracts") {
-        if (currentValue.verified) {
-          return prevValue + 1
-        }
-      }
-      if (currentValue.tags.indexOf(category) !== -1) {
-        return prevValue + 1
-      }
-      return prevValue
+  const renderCategoryCount = (category: string, isMainCategory?: boolean) => {
+    const selectedCategoryName =
+      selectedCategory !== "all"
+        ? categories.find((cat) => cat.key === selectedCategory)?.name
+        : null
+    const allFilters =
+      selectedCategoryName && !isMainCategory
+        ? [selectedCategoryName, category, ...selectedFilters]
+        : [category, ...selectedFilters]
+    return dappCards.reduce((prevValue, currentValue) => {
+      const filtersCount = allFilters.reduce((prevFiltersCount, nextFilter) => {
+        const filterMatched = checkIfCategoryExists(currentValue, nextFilter)
+        return filterMatched ? prevFiltersCount + 1 : prevFiltersCount
+      }, 0)
+      return filtersCount === allFilters.length ? prevValue + 1 : prevValue
     }, 0)
+  }
 
   const getFilteredCategories = () => {
     return [...categories, ...reputation].filter(
@@ -262,42 +252,50 @@ const MobileMenu = ({
           )}
           {remainingFilters.length ? (
             <>
-              <h3 className="block font-semibold text-xl leading-none pt-8 pb-4 text-[22px] font-semibold">
-                Reputation
-              </h3>
+              {checkIfCategoryHasDapps(remainingFilters) && (
+                <h3 className="block font-semibold text-xl leading-none pt-8 pb-4 lg:text-[22px] lg:font-bold">
+                  Reputation
+                </h3>
+              )}
               <ul
                 className={`block pb-5 ${hovered ? "hovered" : ""}`}
                 onMouseOver={(e) => !hovered && setHovered(true)}
                 onMouseLeave={(e) => hovered && setHovered(false)}
               >
-                {remainingFilters.map((category) => (
-                  <li
-                    className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mx-1 min-w-[108px] cursor-pointer flex-row mb-2 justify-start ${
-                      selectedCategory === category.key ? "active" : ""
-                    }`}
-                    key={category.name}
-                    tabIndex={0}
-                    onClick={() => {
-                      addFilter(category.key)
-                    }}
-                  >
-                    <div className="flex items-center justify-between w-full py-4 px-4">
-                      <div className="flex items-center">
-                        <Image
-                          src={
-                            currentTheme === "dark"
-                              ? category.iconDark
-                              : category.icon
-                          }
-                          alt={category.name}
-                        />
-                        <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
-                          {category.name}
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                ))}
+                {remainingFilters.map(
+                  (category) =>
+                    renderCategoryCount(category.name) > 0 && (
+                      <li
+                        className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mx-1 min-w-[108px] cursor-pointer flex-row mb-2 justify-start ${
+                          selectedCategory === category.key ? "active" : ""
+                        }`}
+                        key={category.name}
+                        tabIndex={0}
+                        onClick={() => {
+                          addFilter(category.key)
+                        }}
+                      >
+                        <div className="flex items-center justify-between w-full py-4 px-4">
+                          <div className="flex items-center">
+                            <Image
+                              src={
+                                currentTheme === "dark"
+                                  ? category.iconDark
+                                  : category.icon
+                              }
+                              alt={category.name}
+                            />
+                            <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
+                              {category.name}
+                            </p>
+                          </div>
+                          <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto block">
+                            {renderCategoryCount(category.name)}
+                          </p>
+                        </div>
+                      </li>
+                    ),
+                )}
               </ul>
             </>
           ) : null}
