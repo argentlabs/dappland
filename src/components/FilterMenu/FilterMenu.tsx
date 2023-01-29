@@ -299,16 +299,17 @@ const MobileMenu = ({
               </ul>
             </>
           ) : null}
+          <Button
+            variant="primary"
+            withoutMobile
+            className="w-full"
+            onClick={() => {
+              setIsMobileMenuOpen(!isMobileMenuOpen)
+            }}
+          >
+            Filter Dapps
+          </Button>
         </CategoryContainer>
-        <Button
-          variant="primary"
-          onClick={() => {
-            setIsMobileMenuOpen(!isMobileMenuOpen)
-          }}
-          style={{ width: "100%", marginBottom: 10 }}
-        >
-          Filter Dapps
-        </Button>
       </div>
     </MenuContainer>
   )
