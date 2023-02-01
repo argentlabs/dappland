@@ -3,10 +3,33 @@
   "description": "Pxls is an experimental attempt to create on-chain collaborative artworks (”rtwrks”).\n\nEvery day, our 400-member community creates a new artwork by colorizing a 20*20 pixels grid. Our goal is to create amazing artworks, of course, but also to explore how a group of people gets common inspiration, creates and learns together.",
   "short_description": "Collaborative artworks",
   "tags": ["Games", "NFTs"],
+  "nft": {
+    "collectionContract": "0x07f87b400e9cc3f56a3eb26a924a46a053ebae4eea9ba85f58c17f7a09331aa1",
+    "collectionLink": "https://aspect.co/collection/0x07f87b400e9cc3f56a3eb26a924a46a053ebae4eea9ba85f58c17f7a09331aa1",
+    "collectionName": "Pxls",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/pxls/pxls-nft-01.svg",
+        "name": "Pxls #78"
+      },
+      {
+        "image_url": "/dapps/pxls/pxls-nft-02.svg",
+        "name": "Pxls #348"
+      },
+      {
+        "image_url": "/dapps/pxls/pxls-nft-03.svg",
+        "name": "Pxls #23"
+      },
+      {
+        "image_url": "/dapps/pxls/pxls-nft-04.svg",
+        "name": "Pxls #140"
+      }
+    ]
+  },
   "contracts": [
     {
       "name": "Pxls ERC-721",
-      "address": "0x045963ea13d95f22b58a5f0662ed172278e6b420cded736f846ca9bde8ea476a"
+      "address": "0x07f87b400e9cc3f56a3eb26a924a46a053ebae4eea9ba85f58c17f7a09331aa1"
     },
     {
       "name": "Pxls Drawer",
@@ -24,6 +47,7 @@
     }
   ],
   "audits": [],
+  "verified": false,
   "dotw": false,
   "links": {
     "website": "https://pxls.wtf/",
