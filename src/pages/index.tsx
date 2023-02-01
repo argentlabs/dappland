@@ -56,7 +56,7 @@ const Home = ({
     if (sortBy && sortBy.length) {
       url += `${allFilters.length ? "&" : "?"}sort=${sortBy}`
     }
-    if (router.isReady) {
+    if (router.isReady && selectedCategory === "all") {
       router.push(url)
     }
   }, [selectedFilters, selectedSort, selectedCategory])
@@ -87,7 +87,9 @@ const Home = ({
     <Layout>
       <div className="container px-4 mx-auto mb-16 lg:mb-32">
         <StyledSection className="lg:grid lg:mt-20">
-          <FeaturedCard videoUrl="/promo.mp4" className="featured" />
+          {!selectedFilters.length && (
+            <FeaturedCard videoUrl="/promo.mp4" className="featured" />
+          )}
           <Categories
             isHome
             className="categories lg:max-w-[340px]"

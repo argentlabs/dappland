@@ -60,10 +60,10 @@ const CategoryPage = ({
       selectedSort,
       selectedFilters,
     })
-    if (router.isReady && selectedCategory !== "all") {
+    if (router.isReady && selectedCategory !== "all" && router.asPath !== url) {
       router.push(url)
     }
-  }, [selectedFilters, selectedSort, selectedCategory])
+  }, [selectedFilters, selectedSort])
 
   useEffect(() => {
     changeCategory((router?.query?.category as string) || "all")

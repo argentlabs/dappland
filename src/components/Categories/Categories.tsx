@@ -5,6 +5,7 @@ import { checkIfCategoryExists, generateUrl } from "../../helpers/category"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { useDarkMode } from "../../hooks/useDarkMode"
 import Image from "next/image"
+import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import styled from "styled-components"
@@ -86,12 +87,13 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
 
   const checkIfCategoryHasDapps = (
     category: Array<{ key: string; name: string; icon: any }>,
+    isMainCategory?: boolean,
   ) => {
     let activeCategories = 0
     category.forEach((item) => {
       if (
-        renderCategoryCount(item.name) > 0 &&
-        !selectedFilters.includes(item.key)
+        renderCategoryCount(item.name, isMainCategory) > 0 &&
+        (isMainCategory || !selectedFilters.includes(item.key))
       )
         activeCategories++
     })
@@ -122,69 +124,62 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
             onMouseOver={(e) => !hovered && setHovered(true)}
             onMouseLeave={(e) => hovered && setHovered(false)}
           >
-            {filteredCategories.map(
-              (category) =>
-                renderCategoryCount(category.name) > 0 && (
-                  <li
-                    className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer flex-row mb-2 justify-start active
+            {filteredCategories.map((category) => (
+              <li
+                className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer flex-row mb-2 justify-start active
                     } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
-                    key={category.name}
-                    tabIndex={0}
-                    onClick={() => {
-                      if (category.key === selectedCategory) {
-                        changeCategory("all")
-                        setSelectedSort(null)
-                        setFilters([])
-                        router.push(
-                          generateUrl({
-                            selectedSort: null,
-                            selectedFilters: [],
-                            selectedCategory: "all",
-                          }),
-                        )
-                      } else {
-                        addFilter(category.key)
+                key={category.name}
+                tabIndex={0}
+                onClick={() => {
+                  if (category.key === selectedCategory) {
+                    changeCategory("all")
+                    router.push(
+                      generateUrl({
+                        selectedSort: selectedSort,
+                        selectedFilters: selectedFilters,
+                        selectedCategory: "all",
+                      }),
+                    )
+                  } else {
+                    addFilter(category.key)
+                  }
+                }}
+              >
+                <div className="flex items-center justify-between w-full py-4 px-4">
+                  <div className="flex items-center">
+                    <Image
+                      src={
+                        currentTheme === "dark"
+                          ? category.iconDark
+                          : category.icon
                       }
-                    }}
+                      alt={category.name}
+                    />
+                    <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
+                      {category.name}
+                    </p>
+                  </div>
+                  <button
+                    role="button"
+                    className="p-0 m-0 outline-0 bg-none border-none flex"
+                    onClick={() => {}}
                   >
-                    <div className="flex items-center justify-between w-full py-4 px-4">
-                      <div className="flex items-center">
-                        <Image
-                          src={
-                            currentTheme === "dark"
-                              ? category.iconDark
-                              : category.icon
-                          }
-                          alt={category.name}
-                        />
-                        <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
-                          {category.name}
-                        </p>
-                      </div>
-                      <button
-                        role="button"
-                        className="p-0 m-0 outline-0 bg-none border-none flex"
-                        onClick={() => {}}
-                      >
-                        <Image
-                          width={16}
-                          height={16}
-                          alt="remove-button"
-                          src={
-                            currentTheme === "dark"
-                              ? crossCircleLight
-                              : crossCircle
-                          }
-                        />
-                      </button>
-                    </div>
-                  </li>
-                ),
-            )}
+                    <Image
+                      width={16}
+                      height={16}
+                      alt="remove-button"
+                      src={
+                        currentTheme === "dark" ? crossCircleLight : crossCircle
+                      }
+                    />
+                  </button>
+                </div>
+              </li>
+            ))}
           </ul>
         </>
       )}
-      {checkIfCategoryHasDapps(categories) && (
+      {checkIfCategoryHasDapps(categories, true) && (
         <h3 className="font-semibold text-xl leading-none pt-8 pb-4 lg:text-[22px] lg:font-bold">
           Categories
         </h3>
@@ -203,46 +198,45 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
               (renderCategoryCount(category.name, true) > 0 ||
                 selectedFilters.length ||
                 selectedCategory !== "all") && (
-                <li
-                  className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
-                    selectedCategory === category.key ? "active" : ""
-                  } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
-                  key={category.name}
-                  tabIndex={0}
-                  onClick={() => {
-                    changeCategory(category.key)
-                    setFilters([])
-                    setSelectedSort(null)
-                    router.push(
-                      generateUrl({
-                        selectedSort: null,
-                        selectedFilters: [],
-                        selectedCategory: category.key,
-                      }),
-                    )
-                  }}
+                <Link
+                  href={generateUrl({
+                    selectedCategory: category.key,
+                    selectedSort,
+                    selectedFilters,
+                  })}
+                  key={category.key}
                 >
-                  <div className="flex items-center justify-center w-full lg:justify-between py-4 px-4">
-                    <div className="flex items-center flex-col lg:flex-row">
-                      <Image
-                        src={
-                          currentTheme === "dark"
-                            ? category.iconDark
-                            : category.icon
-                        }
-                        alt={category.name}
-                      />
-                      <p className="mt-2 font-semibold leading-none text-sm lg:ml-3 lg:mt-0 text-black dark:text-white">
-                        {category.name}
-                      </p>
-                    </div>
-                    <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
-                      {!selectedFilters.length
-                        ? renderCategoryCount(category.name, true)
-                        : ""}
-                    </p>
-                  </div>
-                </li>
+                  <a>
+                    <li
+                      className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
+                        selectedCategory === category.key ? "active" : ""
+                      } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
+                      key={category.name}
+                      tabIndex={0}
+                    >
+                      <div className="flex items-center justify-center w-full lg:justify-between py-4 px-4">
+                        <div className="flex items-center flex-col lg:flex-row">
+                          <Image
+                            src={
+                              currentTheme === "dark"
+                                ? category.iconDark
+                                : category.icon
+                            }
+                            alt={category.name}
+                          />
+                          <p className="mt-2 font-semibold leading-none text-sm lg:ml-3 lg:mt-0 text-black dark:text-white">
+                            {category.name}
+                          </p>
+                        </div>
+                        <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
+                          {!selectedFilters.length
+                            ? renderCategoryCount(category.name, true)
+                            : ""}
+                        </p>
+                      </div>
+                    </li>
+                  </a>
+                </Link>
               ),
           )}
       </ul>
