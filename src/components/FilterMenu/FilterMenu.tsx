@@ -143,8 +143,6 @@ const MobileMenu = ({
     )
   }
 
-  console.log(getFilteredCategories())
-
   const filteredCategories = getFilteredCategories()
 
   return (
