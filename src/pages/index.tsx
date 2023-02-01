@@ -26,10 +26,6 @@ const StyledSection = styled.section`
   .categories {
     grid-area: list;
   }
-
-  .cards {
-    grid-area: cards;
-  }
 `
 
 const Home = ({
