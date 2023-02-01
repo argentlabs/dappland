@@ -38,6 +38,29 @@
     "anonymous": false
   },
   "tokens": [],
+  "nft": {
+    "collectionContract": "0x052c936c5624517d671a6378ab0ede31e4c6d4584357ebb432bb1313af93599c",
+    "collectionLink": "https://testnet.aspect.co/collection/0x052c936c5624517d671a6378ab0ede31e4c6d4584357ebb432bb1313af93599c",
+    "collectionName": "Frens Lands maps pre-alpha",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/frenslands/frenslands-nft-01.png",
+        "name": "Frens Lands pre-alpha #250"
+      },
+      {
+        "image_url": "/dapps/frenslands/frenslands-nft-02.png",
+        "name": "Frens Lands pre-alpha #20"
+      },
+      {
+        "image_url": "/dapps/frenslands/frenslands-nft-03.png",
+        "name": "Frens Lands pre-alpha #152"
+      },
+      {
+        "image_url": "/dapps/frenslands/frenslands-nft-04.png",
+        "name": "Frens Lands pre-alpha #134"
+      }
+    ]
+  },
   "media": {
     "logoUrl": "/dapps/frenslands/Press_Logo_TrueScale.png",
     "bannerUrl": "/dapps/frenslands/Press_Banner400x160_4.png",

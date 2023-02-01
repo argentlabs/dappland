@@ -6,29 +6,21 @@
   "contracts": [
     {
       "name": "AsteroidToken",
-      "address": "0x6e4c6D9B0930073e958ABd2ABa516b885260b8Ff"
+      "address": "0x02dc57158f2f119653319d552745b9991afa5d468ecbf0609a0ac7d36ad69e5b"
     },
     {
       "name": "CrewmateToken",
-      "address": "0x746Db7B1728aF413C4e2b98216C6171B2FC9D00e"
+      "address": "0x041c4e86a03480313547a04e13fc4d43d7fb7bcb5244fd0cb93f793f304f6124"
     }
   ],
   "goerliContracts": [
     {
       "name": "AsteroidToken",
-      "address": "0x6e4c6D9B0930073e958ABd2ABa516b885260b8Ff"
+      "address": "0x02dc57158f2f119653319d552745b9991afa5d468ecbf0609a0ac7d36ad69e5b"
     },
     {
       "name": "CrewmateToken",
-      "address": "0x39efb1970Da059946849d7bEDa27f1381A05f4a6"
-    },
-    {
-      "name": "AsteroidTokenBridge",
-      "address": "0x033B302e6E0a2A9832241194FeA8d0b2C649d92E"
-    },
-    {
-      "name": "CrewmateTokenBridge",
-      "address": "0x0dE05D26437709C25f009b812Ba9c933e1531a50"
+      "address": "0x041c4e86a03480313547a04e13fc4d43d7fb7bcb5244fd0cb93f793f304f6124"
     }
   ],
   "audits": [],
@@ -51,6 +43,29 @@
     "anonymous": false
   },
   "tokens": [],
+  "nft": {
+    "collectionContract": "0x02dc57158f2f119653319d552745b9991afa5d468ecbf0609a0ac7d36ad69e5b",
+    "collectionLink": "https://testnet.aspect.co/collection/0x02dc57158f2f119653319d552745b9991afa5d468ecbf0609a0ac7d36ad69e5b",
+    "collectionName": "Influence testnet asteroids",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/influence/influence-nft-asteroid-01.jpeg",
+        "name": "SR-16286"
+      },
+      {
+        "image_url": "/dapps/influence/influence-nft-asteroid-02.jpeg",
+        "name": "ZV-7096 'srkndnr'"
+      },
+      {
+        "image_url": "/dapps/influence/influence-nft-asteroid-03.jpeg",
+        "name": "IL-7165 'Komorebi'"
+      },
+      {
+        "image_url": "/dapps/influence/influence-nft-asteroid-04.jpeg",
+        "name": "ZN-13160"
+      }
+    ]
+  },
   "media": {
     "logoUrl": "/dapps/influence/WEG3UrcU_400x400.jpg",
     "bannerUrl": "/dapps/influence/1500x500.jpeg",
