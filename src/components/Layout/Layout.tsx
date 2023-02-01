@@ -1,3 +1,4 @@
+import { useCategoryStore } from "../../hooks/useCategoryStore"
 import Footer from "./Footer"
 import Header from "./Header"
 import HomeHeader from "./HomeHeader"
@@ -26,6 +27,7 @@ export const Layout = ({
   image,
   isHome,
 }: LayoutProps) => {
+  const selectedFilters = useCategoryStore((state) => state.selectedFilters)
   return (
     <>
       <Head>
@@ -94,7 +96,7 @@ export const Layout = ({
 
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      {!isHome ? <Header /> : <HomeHeader />}
+      {!isHome || selectedFilters.length ? <Header /> : <HomeHeader />}
       <MainContainer>{children}</MainContainer>
       <Footer />
     </>

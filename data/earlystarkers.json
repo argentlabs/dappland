@@ -21,6 +21,7 @@
     "founded": "2022-07-19T00:00:00.000z",
     "anonymous": "false"
   },
+  "verified": false,
   "tokens": [],
   "media": {
     "logoUrl": "/dapps/earlystarkers/dapp-logo-earlystarkers.png",
