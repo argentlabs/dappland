@@ -143,6 +143,8 @@ const MobileMenu = ({
     )
   }
 
+  console.log(getFilteredCategories())
+
   const filteredCategories = getFilteredCategories()
 
   return (
@@ -190,63 +192,60 @@ const MobileMenu = ({
                 onMouseOver={(e) => !hovered && setHovered(true)}
                 onMouseLeave={(e) => hovered && setHovered(false)}
               >
-                {filteredCategories.map(
-                  (category) =>
-                    renderCategoryCount(category.name) > 0 && (
-                      <li
-                        className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg min-w-[108px] mx-1 cursor-pointer flex-row mb-2 justify-start active
+                {filteredCategories.map((category) => (
+                  <li
+                    className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg min-w-[108px] mx-1 cursor-pointer flex-row mb-2 justify-start active
                     ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
-                        key={category.name}
-                        tabIndex={0}
-                        onClick={() => {
-                          if (category.key === selectedCategory) {
-                            changeCategory("all")
-                            router.push(
-                              generateUrl({
-                                selectedSort,
-                                selectedFilters,
-                                selectedCategory: "all",
-                              }),
-                            )
-                          } else {
-                            addFilter(category.key)
+                    key={category.name}
+                    tabIndex={0}
+                    onClick={() => {
+                      if (category.key === selectedCategory) {
+                        changeCategory("all")
+                        router.push(
+                          generateUrl({
+                            selectedSort,
+                            selectedFilters,
+                            selectedCategory: "all",
+                          }),
+                        )
+                      } else {
+                        addFilter(category.key)
+                      }
+                    }}
+                  >
+                    <div className="flex items-center justify-between w-full py-4 px-4">
+                      <div className="flex items-center">
+                        <Image
+                          src={
+                            currentTheme === "dark"
+                              ? category.iconDark
+                              : category.icon
                           }
-                        }}
+                          alt={category.name}
+                        />
+                        <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
+                          {category.name}
+                        </p>
+                      </div>
+                      <button
+                        role="button"
+                        className="p-0 m-0 outline-0 bg-none border-none flex"
+                        onClick={() => {}}
                       >
-                        <div className="flex items-center justify-between w-full py-4 px-4">
-                          <div className="flex items-center">
-                            <Image
-                              src={
-                                currentTheme === "dark"
-                                  ? category.iconDark
-                                  : category.icon
-                              }
-                              alt={category.name}
-                            />
-                            <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
-                              {category.name}
-                            </p>
-                          </div>
-                          <button
-                            role="button"
-                            className="p-0 m-0 outline-0 bg-none border-none flex"
-                            onClick={() => {}}
-                          >
-                            <Image
-                              width={16}
-                              height={16}
-                              alt="remove-button"
-                              src={
-                                currentTheme === "dark"
-                                  ? crossCircleLight
-                                  : crossCircle
-                              }
-                            />
-                          </button>
-                        </div>
-                      </li>
-                    ),
-                )}
+                        <Image
+                          width={16}
+                          height={16}
+                          alt="remove-button"
+                          src={
+                            currentTheme === "dark"
+                              ? crossCircleLight
+                              : crossCircle
+                          }
+                        />
+                      </button>
+                    </div>
+                  </li>
+                ))}
               </ul>
             </>
           )}
