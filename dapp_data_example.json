@@ -62,6 +62,21 @@
       "symbol": "e.g. ETH"
     }
   ],
+  "nft": {
+    "collectionContract": "<Address of the NFT contract you wish to showcase>",
+    "collectionLink": "<https url for link to view full collection>",
+    "collectionName": "<Name of NFT collection>",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/yourdappname/collection-nft-01.[png, jpg, webp or svg]",
+        "name": "<NFT name and/or number>"
+      },
+      {
+        "image_url": "/dapps/yourdappname/collection-nft-02.[png, jpg, webp or svg]",
+        "name": "<NFT name and/or number>"
+      }
+    ]
+  },
   "media": {
     "logoUrl": "/dapps/yourdappname/yourdappname-logo.[png, jpg or webp] Resolution: 320 × 320 pixels>",
     "bannerUrl": "/dapps/yourdappname/yourdappname-banner.[png, jpg or webp] Resolution: 1920 × 400 pixels>",

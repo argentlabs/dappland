@@ -49,7 +49,7 @@ Steps:
 
 And that's it! 🚀
 
-Someone from the Argent team will review the PR and and contact you if they need to clarify anything.
+Someone from the Argent team will review the PR and contact you if they need to clarify anything.
 
 For any questions reach us on:
 

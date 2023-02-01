@@ -84,12 +84,9 @@ const Home = ({
 
   const filterCount = selectedFilters.length
   return (
-    <Layout>
+    <Layout isHome>
       <div className="container px-4 mx-auto mb-16 lg:mb-32">
         <StyledSection className="lg:grid lg:mt-20">
-          {!selectedFilters.length && (
-            <FeaturedCard videoUrl="/promo.mp4" className="featured" />
-          )}
           <Categories
             isHome
             className="categories lg:max-w-[340px]"
