@@ -100,12 +100,10 @@ const CategoryPage = ({
         <StyledSection className="lg:grid lg:mt-20">
           <Categories className="categories" dappCards={dappCards} />
           <div className="cards">
-            <h1 className="lg:hidden font-semibold text-xl leading-none mb-5">
-              {
+            <h1 className="lg:hidden font-semibold text-xl leading-none mb-5 mt-8">
+              {"Starknet " +
                 allCategories.find((item) => item.key === selectedCategory)
-                  ?.name
-              }{" "}
-              dapps
+                  ?.name}
             </h1>
             <div className="lg:block flex w-full">
               <FilterButton
