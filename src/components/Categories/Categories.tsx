@@ -185,7 +185,7 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
         </h3>
       )}
       <ul
-        className={`flex overflow-x-scroll lg:flex-col lg:overflow-auto ${
+        className={`flex overflow-x-scroll lg:flex-col lg:overflow-auto pb-2 lg:pb-0 ${
           hovered ? "hovered" : ""
         }`}
         onMouseOver={(e) => !hovered && setHovered(true)}
