@@ -111,11 +111,17 @@ const Categories = ({
   }
 
   const getFilteredCategories = () => {
-    return [...categories, ...reputation].filter(
-      (category) =>
-        selectedFilters.includes(category.key) ||
-        category.key === selectedCategory,
-    )
+    return [...categories, ...reputation, ...ratings]
+      .filter(
+        (category) =>
+          selectedFilters.includes(category.key) ||
+          selectedRatings.includes(category.key) ||
+          category.key === selectedCategory,
+      )
+      .map((category) => ({
+        ...category,
+        isRating: selectedRatings.includes(category.key),
+      }))
   }
 
   const filteredCategories = getFilteredCategories()
@@ -152,22 +158,42 @@ const Categories = ({
                       }),
                     )
                   } else {
-                    addFilter(category.key)
+                    if (category.isRating) {
+                      addRating(category.key)
+                    } else {
+                      addFilter(category.key)
+                    }
                   }
                 }}
               >
                 <div className="flex items-center justify-between w-full py-4 px-4">
                   <div className="flex items-center">
-                    <Image
-                      src={
-                        currentTheme === "dark"
-                          ? category.iconDark
-                          : category.icon
-                      }
-                      alt={category.name}
-                    />
+                    {category.isRating ? (
+                      <div className="flex items-center gap-1.5">
+                        {[...Array(parseInt(category.name))].map((val, i) => (
+                          <Image
+                            src={
+                              currentTheme === "dark"
+                                ? category.iconDark
+                                : category.icon
+                            }
+                            key={i}
+                            alt={category.name}
+                          />
+                        ))}
+                      </div>
+                    ) : (
+                      <Image
+                        src={
+                          currentTheme === "dark"
+                            ? category.iconDark
+                            : category.icon
+                        }
+                        alt={category.name}
+                      />
+                    )}
                     <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
-                      {category.name}
+                      {category.isRating ? "" : category.name}
                     </p>
                   </div>
                   <button
@@ -298,38 +324,40 @@ const Categories = ({
                 </li>
               ),
           )}
-        {ratings.map(
-          (category, i) =>
-            dappRatings[category.name]?.length && (
-              <li
-                className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
-                  selectedCategory === category.key ? "active" : ""
-                } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
-                key={category.name}
-                tabIndex={0}
-                onClick={() => {
-                  addRating(category.key)
-                }}
-              >
-                <div className="flex items-center justify-between w-full py-4 px-4">
-                  <div className="flex items-center">
-                    <div className="flex items-center gap-1.5">
-                      {[...Array(parseInt(category.name))].map(() => (
-                        <Image
-                          src={star}
-                          alt={category.name}
-                          key={category.name}
-                        />
-                      ))}
+        {ratings
+          .filter((rating) => !selectedRatings.includes(rating.key))
+          .map(
+            (category, i) =>
+              dappRatings[category.name]?.length && (
+                <li
+                  className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
+                    selectedCategory === category.key ? "active" : ""
+                  } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
+                  key={category.name}
+                  tabIndex={0}
+                  onClick={() => {
+                    addRating(category.key)
+                  }}
+                >
+                  <div className="flex items-center justify-between w-full py-4 px-4">
+                    <div className="flex items-center">
+                      <div className="flex items-center gap-1.5">
+                        {[...Array(parseInt(category.name))].map(() => (
+                          <Image
+                            src={star}
+                            alt={category.name}
+                            key={category.name}
+                          />
+                        ))}
+                      </div>
                     </div>
+                    <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
+                      {dappRatings[category.name].length}
+                    </p>
                   </div>
-                  <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
-                    {dappRatings[category.name].length}
-                  </p>
-                </div>
-              </li>
-            ),
-        )}
+                </li>
+              ),
+          )}
       </ul>
     </CategoryContainer>
   )
