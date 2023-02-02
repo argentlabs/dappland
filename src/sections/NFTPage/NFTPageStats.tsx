@@ -12,6 +12,20 @@ const ButtonsContainer = styled.div`
   }
 `
 
+const ImageContainer = styled.div`
+  /* Allow the NFTs to just be their default size. */
+  > span > span {
+    display: none !important;
+  }
+
+  img {
+    object-fit: contain;
+    width: 100% !important;
+    height: unset !important;
+    position: relative !important;
+  }
+`
+
 const NFTPageStats = ({
   data,
   nftCollectionPreview,
@@ -102,21 +116,20 @@ const NFTPageStats = ({
       ) : null}
       <div className="mb-8 grid xl:grid-cols-4 gap-8 xl:justify-between xl:mt-4 lg:grid-cols-4 grid-cols-2 rounded-xl">
         {nftCollectionPreview.map((nft) => (
-          <div
+          <ImageContainer
             key={nft.name}
-            className="bg-white dark:bg-white/10 rounded-xl flex flex-col shadow-box-image-shadow overflow-hidden relative"
+            className="image-container bg-white dark:bg-white/10 rounded-xl flex flex-col shadow-box-image-shadow overflow-hidden relative"
           >
             <Image
               src={nft.image_url}
               alt={`NFT image - nft.name`}
               width="100%"
               height="100%"
-              layout="responsive"
             />
             <div className="text-[16px] text-tooltip-dark dark:text-white p-3 font-semibold">
               {nft.name}
             </div>
-          </div>
+          </ImageContainer>
         ))}
       </div>
       <ButtonsContainer>
