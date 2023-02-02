@@ -4,7 +4,7 @@ import Categories from "../components/Categories/Categories"
 import FilterMenu from "../components/FilterMenu/FilterMenu"
 import Layout from "../components/Layout"
 import Select from "../components/Select/Select"
-import { getRatings } from "../helpers/rating"
+import { filterDappcardsByRating, getRatings } from "../helpers/rating"
 import sortByAttribute from "../helpers/sort"
 import { getAllDapps } from "../hooks/getAllDapps"
 import { useCategoryStore } from "../hooks/useCategoryStore"
@@ -35,7 +35,7 @@ const Home = ({
 }: {
   dappCards: DappCard[]
   featuredDapp?: DappCard
-  ratings: { [key: string]: Rating[] }
+  ratings: { [key: string]: string[] }
 }) => {
   const [showMobileFilters, setShowMobileFilters] = useState(false)
   const router = useRouter()
@@ -85,7 +85,13 @@ const Home = ({
       }, 0) === selectedFilters.length
     )
   })
-  const sortedDapps = sortByAttribute(filteredDapps, selectedSort)
+  const dappsByRating = filterDappcardsByRating({
+    dappCards: filteredDapps,
+    dappRatings: ratings,
+    isMainCategory: false,
+    selectedRatings,
+  })
+  const sortedDapps = sortByAttribute(dappsByRating, selectedSort)
   const filterCount = selectedFilters.length
   return (
     <Layout isHome>

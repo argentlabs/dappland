@@ -3,6 +3,7 @@ import crossCircleLight from "../../assets/icons/crossCircleLight.svg"
 import star from "../../assets/icons/star.svg"
 import { categories, reputation, ratings } from "../../data/categories"
 import { checkIfCategoryExists, generateUrl } from "../../helpers/category"
+import { filterDappcardsByRating } from "../../helpers/rating"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { useDarkMode } from "../../hooks/useDarkMode"
 import Image from "next/image"
@@ -31,7 +32,7 @@ interface CategoriesProps {
   className?: string
   dappCards: DappCard[]
   isHome?: boolean
-  dappRatings: { [key: string]: Rating[] }
+  dappRatings: { [key: string]: string[] }
 }
 
 const Categories = ({
@@ -73,6 +74,12 @@ const Categories = ({
   ])
 
   const renderCategoryCount = (category: string, isMainCategory?: boolean) => {
+    const dappCardsFilteredByRating = filterDappcardsByRating({
+      dappCards,
+      dappRatings,
+      selectedRatings,
+      isMainCategory,
+    })
     const selectedCategoryName =
       selectedCategory !== "all"
         ? categories.find((cat) => cat.key === selectedCategory)?.name
@@ -81,7 +88,7 @@ const Categories = ({
       selectedCategoryName && !isMainCategory
         ? [selectedCategoryName, category, ...selectedFilters]
         : [category, ...selectedFilters]
-    return dappCards.reduce((prevValue, currentValue) => {
+    return dappCardsFilteredByRating.reduce((prevValue, currentValue) => {
       const filtersCount = allFilters.reduce((prevFiltersCount, nextFilter) => {
         const filterMatched = checkIfCategoryExists(currentValue, nextFilter)
         return filterMatched ? prevFiltersCount + 1 : prevFiltersCount
@@ -103,7 +110,9 @@ const Categories = ({
     category.forEach((item) => {
       if (
         renderCategoryCount(item.name, isMainCategory) > 0 &&
-        (isMainCategory || !selectedFilters.includes(item.key))
+        (isMainCategory ||
+          !selectedFilters.includes(item.key) ||
+          !selectedRatings.includes(item.key))
       )
         activeCategories++
     })
@@ -234,6 +243,7 @@ const Categories = ({
             (category) =>
               (renderCategoryCount(category.name, true) > 0 ||
                 selectedFilters.length ||
+                selectedRatings.length ||
                 selectedCategory !== "all") && (
                 <Link
                   href={generateUrl({
@@ -267,7 +277,7 @@ const Categories = ({
                           </p>
                         </div>
                         <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
-                          {!selectedFilters.length
+                          {!selectedFilters.length && !selectedRatings.length
                             ? renderCategoryCount(category.name, true)
                             : ""}
                         </p>
@@ -278,7 +288,7 @@ const Categories = ({
               ),
           )}
       </ul>
-      {checkIfCategoryHasDapps(reputation) && (
+      {checkIfCategoryHasDapps([...reputation, ...ratings]) && (
         <h3 className="hidden lg:block font-semibold text-xl leading-none pt-8 pb-4 lg:text-[22px] lg:font-bold">
           Reputation
         </h3>

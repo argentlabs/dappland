@@ -15,7 +15,7 @@ import {
   filterDapps,
   generateUrl,
 } from "../../helpers/category"
-import { getRatings } from "../../helpers/rating"
+import { filterDappcardsByRating, getRatings } from "../../helpers/rating"
 import sortByAttribute from "../../helpers/sort"
 import { getAllDapps } from "../../hooks/getAllDapps"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
@@ -47,7 +47,7 @@ const CategoryPage = ({
 }: {
   dappCards: Array<DappCard & { categories: string[] }>
   category: string
-  dappRatings: { [key: string]: Rating[] }
+  dappRatings: { [key: string]: string[] }
 }) => {
   const router = useRouter()
   const [showMobileFilters, setShowMobileFilters] = useState(false)
@@ -97,8 +97,13 @@ const CategoryPage = ({
   }
 
   const filterCount = getFilterCount()
-
-  const sortedDapps = sortByAttribute(filteredDapps, selectedSort)
+  const dappCardsByRating = filterDappcardsByRating({
+    dappRatings,
+    dappCards: filteredDapps,
+    selectedRatings,
+    isMainCategory: false,
+  })
+  const sortedDapps = sortByAttribute(dappCardsByRating, selectedSort)
   return (
     <Layout>
       <div className="container px-4 mx-auto mb-16 lg:mb-32">
