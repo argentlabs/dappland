@@ -135,6 +135,5 @@ interface DappCard {
   featured: boolean
   annonymous: boolean
   audits: Audit[]
-  ratings?: { [key: number]: Rating[] }
   verified: boolean
 }

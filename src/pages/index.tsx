@@ -4,6 +4,7 @@ import Categories from "../components/Categories/Categories"
 import FilterMenu from "../components/FilterMenu/FilterMenu"
 import Layout from "../components/Layout"
 import Select from "../components/Select/Select"
+import { getRatings } from "../helpers/rating"
 import sortByAttribute from "../helpers/sort"
 import { getAllDapps } from "../hooks/getAllDapps"
 import { useCategoryStore } from "../hooks/useCategoryStore"
@@ -30,9 +31,11 @@ const StyledSection = styled.section`
 const Home = ({
   dappCards,
   featuredDapp,
+  ratings,
 }: {
   dappCards: DappCard[]
   featuredDapp?: DappCard
+  ratings: { [key: string]: Rating[] }
 }) => {
   const [showMobileFilters, setShowMobileFilters] = useState(false)
   const router = useRouter()
@@ -76,7 +79,6 @@ const Home = ({
     )
   })
   const sortedDapps = sortByAttribute(filteredDapps, selectedSort)
-
   const filterCount = selectedFilters.length
   return (
     <Layout isHome>
@@ -86,6 +88,7 @@ const Home = ({
             isHome
             className="categories lg:max-w-[340px]"
             dappCards={dappCards}
+            dappRatings={ratings}
           />
           <div className="cards">
             <h3 className="lg:hidden font-semibold text-xl leading-none mb-5">
@@ -131,22 +134,7 @@ const Home = ({
 
 export const getStaticProps = async () => {
   const dapps = await getAllDapps()
-  const data = await fetch(
-    "https://cloud-dev.argent-api.com/v1/tokens/dapps/ratings?pageSize=5&page=0",
-  ).then((res) => res.json())
-
-  const ratings: Rating[] = data?.ratings || []
-
-  const ratingsMap = new Map()
-
-  ratings.forEach((rating) => {
-    const key = Math.round(rating.averageRating)
-    if (!ratingsMap.get(key)) {
-      ratingsMap.set(key, [])
-    }
-    ratingsMap.set(key, [...ratingsMap.get(key), rating])
-  })
-  const ratingsParsed = Object.fromEntries(ratingsMap)
+  const ratingsParsed = await getRatings()
 
   const parsedDapps = dapps.map((dapp: DappInfo & { url: string }) => ({
     short_description: dapp.short_description,
@@ -159,13 +147,13 @@ export const getStaticProps = async () => {
     annonymous: dapp.teamInfo.anonymous,
     audits: dapp.audits,
     verified: dapp.verified,
-    ratings: ratingsParsed,
   }))
 
   return {
     props: {
       dappCards: parsedDapps,
       featuredDapp: null, //parsedDapps.filter((dapp) => dapp.featured)[0],
+      ratings: ratingsParsed,
     },
   }
 }

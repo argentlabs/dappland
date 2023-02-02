@@ -1,6 +1,7 @@
 import crossCircle from "../../assets/icons/crossCircle.svg"
 import crossCircleLight from "../../assets/icons/crossCircleLight.svg"
-import { categories, reputation } from "../../data/categories"
+import star from "../../assets/icons/star.svg"
+import { categories, reputation, ratings } from "../../data/categories"
 import { checkIfCategoryExists, generateUrl } from "../../helpers/category"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { useDarkMode } from "../../hooks/useDarkMode"
@@ -30,9 +31,15 @@ interface CategoriesProps {
   className?: string
   dappCards: DappCard[]
   isHome?: boolean
+  dappRatings: { [key: string]: Rating[] }
 }
 
-const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
+const Categories = ({
+  className,
+  dappCards,
+  dappRatings,
+  isHome,
+}: CategoriesProps) => {
   const router = useRouter()
   const [hovered, setHovered] = useState(false)
 
@@ -109,7 +116,6 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
   }
 
   const filteredCategories = getFilteredCategories()
-
   return (
     <CategoryContainer
       className={["mb-4", className ? className : ""].join(" ")}
@@ -286,6 +292,38 @@ const Categories = ({ className, dappCards, isHome }: CategoriesProps) => {
                 </li>
               ),
           )}
+        {ratings.map(
+          (category, i) =>
+            dappRatings[category.name]?.length && (
+              <li
+                className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
+                  selectedCategory === category.key ? "active" : ""
+                } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
+                key={category.name}
+                tabIndex={0}
+                onClick={() => {
+                  addFilter(category.key)
+                }}
+              >
+                <div className="flex items-center justify-between w-full py-4 px-4">
+                  <div className="flex items-center">
+                    <div className="flex items-center gap-1.5">
+                      {[...Array(parseInt(category.name))].map(() => (
+                        <Image
+                          src={star}
+                          alt={category.name}
+                          key={category.name}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
+                    {dappRatings[category.name].length}
+                  </p>
+                </div>
+              </li>
+            ),
+        )}
       </ul>
     </CategoryContainer>
   )

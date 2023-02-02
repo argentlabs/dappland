@@ -15,6 +15,7 @@ import {
   filterDapps,
   generateUrl,
 } from "../../helpers/category"
+import { getRatings } from "../../helpers/rating"
 import sortByAttribute from "../../helpers/sort"
 import { getAllDapps } from "../../hooks/getAllDapps"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
@@ -42,9 +43,11 @@ const StyledSection = styled.section`
 const CategoryPage = ({
   dappCards,
   category,
+  dappRatings,
 }: {
   dappCards: Array<DappCard & { categories: string[] }>
   category: string
+  dappRatings: { [key: string]: Rating[] }
 }) => {
   const router = useRouter()
   const [showMobileFilters, setShowMobileFilters] = useState(false)
@@ -98,7 +101,11 @@ const CategoryPage = ({
     <Layout>
       <div className="container px-4 mx-auto mb-16 lg:mb-32">
         <StyledSection className="lg:grid lg:mt-20">
-          <Categories className="categories" dappCards={dappCards} />
+          <Categories
+            className="categories"
+            dappCards={dappCards}
+            dappRatings={dappRatings}
+          />
           <div className="cards">
             <h1 className="lg:hidden font-semibold text-xl leading-none mb-5 mt-8">
               {"Starknet " +
@@ -149,6 +156,7 @@ export const getStaticProps: GetStaticProps<{ dappCards: DappCard[] }> = async (
   const category = context?.params?.category as string
 
   const dapps = await getAllDapps()
+  const ratingsParsed = await getRatings()
 
   const parsedDapps = dapps.map((dapp: DappInfo & { url: string }) => ({
     short_description: dapp.short_description,
@@ -168,6 +176,7 @@ export const getStaticProps: GetStaticProps<{ dappCards: DappCard[] }> = async (
     props: {
       dappCards: parsedDapps,
       category,
+      dappRatings: ratingsParsed,
     },
   }
 }
