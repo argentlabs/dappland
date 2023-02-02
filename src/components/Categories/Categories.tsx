@@ -62,7 +62,9 @@ const Categories = ({
       const filters = (router?.query?.filters as string)?.split(",") || []
       const sortBy = router?.query?.sort as string
       const category = (router?.query?.category as string) || "all"
+      const ratings = (router?.query?.ratings as string)?.split(",") || []
       setFilters(filters)
+      setRatings(ratings)
       setSelectedSort(sortBy && sortBy.length ? sortBy : null)
       changeCategory(category)
     }
@@ -71,6 +73,7 @@ const Categories = ({
     router?.query?.filters,
     router?.query?.sort,
     router?.query?.category,
+    router?.query?.ratings,
   ])
 
   const renderCategoryCount = (category: string, isMainCategory?: boolean) => {
