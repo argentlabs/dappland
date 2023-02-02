@@ -47,10 +47,13 @@ const Categories = ({
 
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
   const changeCategory = useCategoryStore((state) => state.changeCategory)
-  const selectedFilters = useCategoryStore((state) => state.selectedFilters)
   const selectedSort = useCategoryStore((state) => state.selectedSort)
+  const selectedFilters = useCategoryStore((state) => state.selectedFilters)
   const addFilter = useCategoryStore((state) => state.addFilter)
   const setFilters = useCategoryStore((state) => state.setFilters)
+  const selectedRatings = useCategoryStore((state) => state.selectedRatings)
+  const addRating = useCategoryStore((state) => state.addRating)
+  const setRatings = useCategoryStore((state) => state.setRatings)
   const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
 
   useEffect(() => {
@@ -116,6 +119,7 @@ const Categories = ({
   }
 
   const filteredCategories = getFilteredCategories()
+
   return (
     <CategoryContainer
       className={["mb-4", className ? className : ""].join(" ")}
@@ -143,6 +147,7 @@ const Categories = ({
                       generateUrl({
                         selectedSort: selectedSort,
                         selectedFilters: selectedFilters,
+                        selectedRatings: selectedRatings,
                         selectedCategory: "all",
                       }),
                     )
@@ -207,6 +212,7 @@ const Categories = ({
                 <Link
                   href={generateUrl({
                     selectedCategory: category.key,
+                    selectedRatings,
                     selectedSort,
                     selectedFilters,
                   })}
@@ -302,7 +308,7 @@ const Categories = ({
                 key={category.name}
                 tabIndex={0}
                 onClick={() => {
-                  addFilter(category.key)
+                  addRating(category.key)
                 }}
               >
                 <div className="flex items-center justify-between w-full py-4 px-4">

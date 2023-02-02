@@ -57,18 +57,27 @@ export const generateUrl = ({
   selectedSort,
   selectedFilters,
   selectedCategory,
+  selectedRatings = [],
 }: {
   selectedCategory: string
   selectedSort: string | null
   selectedFilters: string[]
+  selectedRatings?: string[]
 }) => {
   const allFilters = selectedFilters.join(",")
+  const allRatings = selectedRatings.join(",")
   const categoryUrl =
     selectedCategory === "all" ? "/" : `/category/${selectedCategory}`
   const url = `${categoryUrl}${
     selectedFilters.length
-      ? `?filters=${allFilters}${selectedSort ? `&sort=${selectedSort}` : ""}`
-      : `${selectedSort ? `?sort=${selectedSort}` : ""}`
+      ? `?filters=${allFilters}${selectedSort ? `&sort=${selectedSort}` : ""}${
+          selectedRatings.length ? `&ratings=${allRatings}` : ""
+        }`
+      : selectedSort
+      ? `${selectedSort ? `?sort=${selectedSort}` : ""}${
+          selectedRatings.length ? `&ratings=${allRatings}` : ""
+        }`
+      : `${selectedRatings.length ? `?ratings=${allRatings}` : ""}`
   }`
   return url
 }

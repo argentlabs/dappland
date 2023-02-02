@@ -40,12 +40,14 @@ const Home = ({
   const [showMobileFilters, setShowMobileFilters] = useState(false)
   const router = useRouter()
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
+  const selectedRatings = useCategoryStore((state) => state.selectedRatings)
   const selectedSort = useCategoryStore((state) => state.selectedSort)
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
   const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
 
   useEffect(() => {
     const allFilters = selectedFilters.join(",")
+    const allRatings = selectedRatings.join(",")
     const sortBy = selectedSort
     let url = "/"
     if (allFilters.length) {
@@ -54,10 +56,15 @@ const Home = ({
     if (sortBy && sortBy.length) {
       url += `${allFilters.length ? "&" : "?"}sort=${sortBy}`
     }
+    if (selectedRatings.length) {
+      url += `${
+        allFilters.length || (sortBy && sortBy.length) ? "&" : "?"
+      }ratings=${allRatings}`
+    }
     if (router.isReady && selectedCategory === "all") {
       router.push(url)
     }
-  }, [selectedFilters, selectedSort, selectedCategory])
+  }, [selectedFilters, selectedSort, selectedCategory, selectedRatings])
 
   const filteredDapps = dappCards.filter((dapp) => {
     return (
