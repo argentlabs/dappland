@@ -51,7 +51,8 @@ export const filterDappcardsByRating = ({
   )
   return dappCards.filter((dappCard) =>
     Object.values(availableRatings).some(
-      (array) => array.includes(dappCard.url) || isMainCategory,
+      (array) =>
+        array.includes(dappCard.url.replace("/", "")) || isMainCategory,
     ),
   )
 }
