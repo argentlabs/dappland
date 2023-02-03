@@ -76,13 +76,19 @@ const Categories = ({
     router?.query?.ratings,
   ])
 
-  const renderCategoryCount = (category: string, isMainCategory?: boolean) => {
-    const dappCardsFilteredByRating = filterDappcardsByRating({
-      dappCards,
-      dappRatings,
-      selectedRatings,
-      isMainCategory,
-    })
+  const renderCategoryCount = (
+    category: string,
+    isMainCategory?: boolean,
+    isRatingCategory?: boolean,
+  ) => {
+    const dappCardsFilteredByRating = !isRatingCategory
+      ? filterDappcardsByRating({
+          dappCards,
+          dappRatings,
+          selectedRatings,
+          isMainCategory,
+        })
+      : dappCards
     const selectedCategoryName =
       selectedCategory !== "all"
         ? categories.find((cat) => cat.key === selectedCategory)?.name
@@ -93,7 +99,11 @@ const Categories = ({
         : [category, ...selectedFilters]
     return dappCardsFilteredByRating.reduce((prevValue, currentValue) => {
       const filtersCount = allFilters.reduce((prevFiltersCount, nextFilter) => {
-        const filterMatched = checkIfCategoryExists(currentValue, nextFilter)
+        const filterMatched = checkIfCategoryExists(
+          currentValue,
+          nextFilter,
+          dappRatings,
+        )
         return filterMatched ? prevFiltersCount + 1 : prevFiltersCount
       }, 0)
       return filtersCount === allFilters.length ? prevValue + 1 : prevValue
@@ -101,23 +111,25 @@ const Categories = ({
   }
 
   const checkIfAnyCategoryIsActive = () =>
-    [...categories, ...reputation].some(
+    [...categories, ...reputation, ...ratings].some(
       (category) => category.key === selectedCategory,
     )
 
   const checkIfCategoryHasDapps = (
     category: Array<{ key: string; name: string; icon: any }>,
     isMainCategory?: boolean,
+    isRatingCategory?: boolean,
   ) => {
     let activeCategories = 0
     category.forEach((item) => {
       if (
-        renderCategoryCount(item.name, isMainCategory) > 0 &&
+        renderCategoryCount(item.name, isMainCategory, isRatingCategory) > 0 &&
         (isMainCategory ||
-          !selectedFilters.includes(item.key) ||
-          !selectedRatings.includes(item.key))
-      )
+          (!selectedFilters.includes(item.key) &&
+            !selectedRatings.includes(item.key)))
+      ) {
         activeCategories++
+      }
     })
     return Boolean(activeCategories)
   }
@@ -291,11 +303,12 @@ const Categories = ({
               ),
           )}
       </ul>
-      {checkIfCategoryHasDapps([...reputation, ...ratings]) && (
+      {checkIfCategoryHasDapps(reputation) ||
+      checkIfCategoryHasDapps(ratings, false, true) ? (
         <h3 className="hidden lg:block font-semibold text-xl leading-none pt-8 pb-4 lg:text-[22px] lg:font-bold">
           Reputation
         </h3>
-      )}
+      ) : null}
       <ul
         className={`hidden lg:block pb-5 ${hovered ? "hovered" : ""}`}
         onMouseOver={(e) => !hovered && setHovered(true)}
@@ -341,7 +354,7 @@ const Categories = ({
           .filter((rating) => !selectedRatings.includes(rating.key))
           .map(
             (category, i) =>
-              dappRatings[category.name]?.length && (
+              renderCategoryCount(category.name, false, true) > 0 && (
                 <li
                   className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer lg:flex-row lg:mb-2 lg:justify-start ${
                     selectedCategory === category.key ? "active" : ""
@@ -355,17 +368,17 @@ const Categories = ({
                   <div className="flex items-center justify-between w-full py-4 px-4">
                     <div className="flex items-center">
                       <div className="flex items-center gap-1.5">
-                        {[...Array(parseInt(category.name))].map(() => (
+                        {[...Array(parseInt(category.name))].map((val, i) => (
                           <Image
                             src={star}
-                            alt={category.name}
-                            key={category.name}
+                            alt={`${category.name}-star`}
+                            key={`${category.name}-${i}-star`}
                           />
                         ))}
                       </div>
                     </div>
                     <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto hidden lg:block">
-                      {dappRatings[category.name].length}
+                      {renderCategoryCount(category.name, false, true)}
                     </p>
                   </div>
                 </li>
