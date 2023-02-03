@@ -2,6 +2,7 @@ import moon from "../../../assets/icons/moon.svg"
 import sun from "../../../assets/icons/sun.svg"
 import logoDarkLottie from "../../../assets/logo-dark-lottie.json"
 import logoLightLottie from "../../../assets/logo-light-lottie.json"
+import { useCategoryStore } from "../../../hooks/useCategoryStore"
 import { AnnouncementBar } from "../../AnnouncementBar"
 import Button from "../../Button/Button"
 import Lottie from "lottie-react"
@@ -14,6 +15,9 @@ interface DesktopMenuProps {
 }
 
 const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
+  const setFilters = useCategoryStore((state) => state.setFilters)
+  const changeCategory = useCategoryStore((state) => state.changeCategory)
+  const setSort = useCategoryStore((state) => state.setSelectedSort)
   return (
     <div className="hidden lg:block bg-white dark:bg-light-black">
       <AnnouncementBar>
@@ -23,7 +27,14 @@ const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
       <div className="relative w-full flex justify-between items-center pr-6 border-t border-b border-border-grey dark:border-white/10">
         <div className="flex">
           <Link href="/">
-            <a className="p-6 flex justify-center items-center uppercase font-medium font-base border-r border-border-grey dark:border-white/10">
+            <a
+              className="p-6 flex justify-center items-center uppercase font-medium font-base border-r border-border-grey dark:border-white/10"
+              onClick={() => {
+                setFilters([])
+                setSort(null)
+                changeCategory("all")
+              }}
+            >
               HOME
             </a>
           </Link>
@@ -40,18 +51,26 @@ const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
           </button>
         </div>
         <Link href="/">
-          <Lottie
-            style={{
-              transform: "scale(0.5) translateY(-50%)",
-              maxHeight: "56px",
-              cursor: "pointer",
+          <div
+            onClick={() => {
+              setFilters([])
+              setSort(null)
+              changeCategory("all")
             }}
-            loop={false}
-            initialSegment={[0, 150]}
-            animationData={
-              currentTheme === "dark" ? logoDarkLottie : logoLightLottie
-            }
-          />
+          >
+            <Lottie
+              style={{
+                transform: "scale(0.5) translateY(-50%)",
+                maxHeight: "56px",
+                cursor: "pointer",
+              }}
+              loop={false}
+              initialSegment={[0, 150]}
+              animationData={
+                currentTheme === "dark" ? logoDarkLottie : logoLightLottie
+              }
+            />
+          </div>
         </Link>
         <Button
           variant="primary"

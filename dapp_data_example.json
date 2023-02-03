@@ -38,6 +38,7 @@
       "url": "URL to access the security audit. Only audits that are publicly available will be considered to be included in Dappland. If they're private, please don't include them in the 'audits' array>"
     }
   ],
+  "verified": false, // change to true if your contracts are verified on StarkScan
   "dotw": false, //leave 'false'
   "links": {
     "website": "<URL of the dapp's website. Leave empty if non-existent>",
@@ -61,6 +62,21 @@
       "symbol": "e.g. ETH"
     }
   ],
+  "nft": {
+    "collectionContract": "<Address of the NFT contract you wish to showcase>",
+    "collectionLink": "<https url for link to view full collection>",
+    "collectionName": "<Name of NFT collection>",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/yourdappname/collection-nft-01.[png, jpg, webp or svg]",
+        "name": "<NFT name and/or number>"
+      },
+      {
+        "image_url": "/dapps/yourdappname/collection-nft-02.[png, jpg, webp or svg]",
+        "name": "<NFT name and/or number>"
+      }
+    ]
+  },
   "media": {
     "logoUrl": "/dapps/yourdappname/yourdappname-logo.[png, jpg or webp] Resolution: 320 × 320 pixels>",
     "bannerUrl": "/dapps/yourdappname/yourdappname-banner.[png, jpg or webp] Resolution: 1920 × 400 pixels>",

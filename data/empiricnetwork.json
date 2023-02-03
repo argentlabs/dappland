@@ -7,18 +7,19 @@
   "goerliContracts": [
     {
       "name": "PublisherRegistry",
-      "address": "https://goerli.voyager.online/contract/0x0743e8140a56d5ee9ed08eb77a92bcbcf8257da34ab2a2ee93110709e61ab11a"
+      "address": "0x0743e8140a56d5ee9ed08eb77a92bcbcf8257da34ab2a2ee93110709e61ab11a"
     },
     {
       "name": "OracleController",
-      "address": "https://goerli.voyager.online/contract/0x012fadd18ec1a23a160cc46981400160fbf4a7a5eed156c4669e39807265bcd4"
+      "address": "0x012fadd18ec1a23a160cc46981400160fbf4a7a5eed156c4669e39807265bcd4"
     },
     {
       "name": "OracleImplementation (primary)",
-      "address": "https://goerli.voyager.online/contract/0x05a88457f9292d0596090300713e80724631024e7a92989302d458271c98cad4"
+      "address": "0x05a88457f9292d0596090300713e80724631024e7a92989302d458271c98cad4"
     }
   ],
   "audits": [],
+  "verified": true,
   "dotw": false,
   "links": {
     "website": "https://empiric.network/",

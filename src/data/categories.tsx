@@ -22,6 +22,8 @@ import profile from "../assets/icons/profile.svg"
 import profileLight from "../assets/icons/profileLight.svg"
 import swap from "../assets/icons/swap.svg"
 import swapLight from "../assets/icons/swapLight.svg"
+import verified from "../assets/icons/verified.svg"
+import verifiedLight from "../assets/icons/verifiedLight.svg"
 
 export const categories = [
   { key: "onramps", name: "Onramps", icon: card, iconDark: cardLight },
@@ -42,6 +44,12 @@ export const categories = [
 export const reputation = [
   { key: "doxxed", name: "Public team", icon: profile, iconDark: profileLight },
   { key: "audited", name: "Audited", icon: legal, iconDark: legalLight },
+  {
+    key: "verified",
+    name: "Verified contracts",
+    icon: verified,
+    iconDark: verifiedLight,
+  },
 ]
 
 export const allCategories = [...categories, ...reputation]

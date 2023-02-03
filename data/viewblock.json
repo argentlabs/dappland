@@ -2,12 +2,11 @@
   "name": "ViewBlock",
   "description": "StarkNet Explorer with full decoding, advanced analytics and prime token/NFT support.",
   "short_description": "StarkNet Block Explorer",
-  "tags": [
-    "Infrastructure"
-  ],
+  "tags": ["Infrastructure"],
   "contracts": [],
   "goerliContracts": [],
   "audits": [],
+  "verified": false,
   "dotw": false,
   "links": {
     "website": "https://v2.viewblock.io/starknet",
