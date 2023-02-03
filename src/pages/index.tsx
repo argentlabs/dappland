@@ -104,8 +104,6 @@ const Home = ({
                   options={[
                     { label: "A-Z", value: "A-Z" },
                     { label: "Z-A", value: "Z-A" },
-                    { label: "Rating", value: "rating" },
-                    { label: "New", value: "new" },
                   ]}
                   onChange={(sortBy) => setSelectedSort(sortBy)}
                 />
