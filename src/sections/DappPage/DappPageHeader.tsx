@@ -39,10 +39,14 @@ const linkOrder = [
 
 const DappPageHeader = ({
   dappInfo,
+  dappKey,
   averageRating,
+  userRating,
 }: {
   dappInfo: DappInfo
+  dappKey: string
   averageRating: number | null
+  userRating: number | null
 }) => {
   const [showArgentXInstallGuide, setArgentXInstallGuide] = useState(false)
   useEffect(() => {
@@ -147,7 +151,11 @@ const DappPageHeader = ({
           </div>
         </div>
       </div>
-      <DappPageRating dappKey={dappInfo.name} avgRating={averageRating} />
+      <DappPageRating
+        dappKey={dappKey}
+        rating={userRating}
+        avgRating={averageRating}
+      />
     </section>
   )
 }

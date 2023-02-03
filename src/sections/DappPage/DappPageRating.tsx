@@ -3,12 +3,13 @@ import star from "../../assets/icons/star.svg"
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal"
 import Modal from "../../components/Modal/Modal"
 import { connect } from "@argent/get-starknet"
+import BigNumber from "bignumber.js"
 import Image from "next/image"
 import React, { useState } from "react"
 
 type Props = {
   dappKey?: string
-  rating?: number
+  rating?: number | null
   avgRating: number | null
 }
 
@@ -43,7 +44,7 @@ const DappPageRating = ({
           domain: {
             name: "Dappland",
             chainId: "SN_GOERLI",
-            version: "0.1.0",
+            version: "1.0",
           },
           types: {
             StarkNetDomain: [
@@ -52,28 +53,34 @@ const DappPageRating = ({
               { name: "version", type: "felt" },
             ],
             Message: [
-              { name: "dappKey", type: "string" },
-              { name: "rating", type: "number" },
+              { name: "dappKey", type: "felt" },
+              { name: "rating", type: "felt" },
             ],
           },
           primaryType: "Message",
         })
 
+        const signatureFirstElement = new BigNumber(signature[0])
+        const signatureSecondElement = new BigNumber(signature[1])
+
         const bodyData = {
           dappKey,
           rating: currentRating + 1,
-          signature: "0x01231AF",
-          signer: starknet.selectedAddress,
+          signature: {
+            r: "0x" + signatureFirstElement.toString(16),
+            s: "0x" + signatureSecondElement.toString(16),
+          },
+          account: starknet.selectedAddress,
         }
         const response = await fetch(
-          "https://cloud-dev.argent-api.com/v1/tokens/dapps/ratings",
+          "https://api.hydrogen.argent47.net/v1/tokens/dapps/ratings",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(bodyData),
           },
         ).then((res) => res.json())
-        setAverageRating(response.avgRating)
+        setAverageRating(response.averageRating)
       } else {
         setCurrentRating(null)
       }
@@ -98,16 +105,16 @@ const DappPageRating = ({
           }}
         />
         <div className="flex items-end gap-1 mb-6">
-          {avgRating ? (
+          {averageRating ? (
             <>
               <h3 className="text-[64px] leading-[64px] font-bold">
-                {avgRating}
+                {averageRating}
               </h3>
               <div>/</div>
               <div>5</div>
             </>
           ) : (
-            <h3 className="text-[24px] leading-[30px]">Not Rated</h3>
+            <h3 className="text-[18px] leading-[24px]">Not rated yet</h3>
           )}
         </div>
         <div className="mb-2">Your Rating</div>

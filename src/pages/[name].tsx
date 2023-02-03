@@ -9,6 +9,7 @@ import { readdir, readFile } from "fs/promises"
 import { GetStaticPaths, GetStaticProps, NextPage } from "next"
 import Image from "next/image"
 import Router from "next/router"
+import { useRouter } from "next/router"
 import path from "path"
 import { useEffect, useState } from "react"
 import styled from "styled-components"
@@ -47,6 +48,7 @@ interface DappPageProps {
   twitterPosts: TwitterData
   nftData: NFTData | null
   averageRating: number | null
+  userRating: number | null
 }
 
 const DappPage: NextPage<DappPageProps> = ({
@@ -54,8 +56,11 @@ const DappPage: NextPage<DappPageProps> = ({
   twitterPosts,
   nftData,
   averageRating,
+  userRating,
 }) => {
   const [showPrev, setShowPrev] = useState(false)
+  const router = useRouter()
+  const name = (router?.query?.name as string) || ""
   useEffect(() => {
     // @ts-ignore
     import("swiper/css")
@@ -99,7 +104,12 @@ const DappPage: NextPage<DappPageProps> = ({
         </div>
       )}
       <div className="px-4 md:mx-[10vw] xl:mx-[15vw] 2xl:mx-[20vw] max-w-[1200px]">
-        <DappPageHeader dappInfo={dappInfo} averageRating={averageRating} />
+        <DappPageHeader
+          dappInfo={dappInfo}
+          dappKey={name}
+          averageRating={averageRating}
+          userRating={userRating}
+        />
       </div>
       {((dappInfo.media?.gallery && dappInfo.media.gallery.length > 0) ||
         dappInfo.media.videoUrl) && (
@@ -168,7 +178,7 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
   const dappInfo: DappInfo = JSON.parse(content)
 
   const dappRating = await fetch(
-    `https://cloud-dev.argent-api.com/v1/tokens/dapps/ratings/${name}`,
+    `${process.env.API_URL}tokens/dapps/ratings/${name}`,
   ).then((res) => res.json())
 
   const contracts = dappInfo.contracts
@@ -214,6 +224,7 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
     props: {
       dappInfo,
       averageRating: dappRating?.averageRating || null,
+      userRating: dappRating?.userRating || null,
       twitterPosts,
       nftData,
     },
