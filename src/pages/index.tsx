@@ -128,6 +128,7 @@ const Home = ({
             </div>
             {showMobileFilters && (
               <FilterMenu
+                dappRatings={ratings}
                 dappCards={dappCards}
                 isMobileMenuOpen={showMobileFilters}
                 setIsMobileMenuOpen={setShowMobileFilters}
