@@ -73,7 +73,7 @@ const DappPageRating = ({
           account: starknet.selectedAddress,
         }
         const response = await fetch(
-          "https://api.hydrogen.argent47.net/v1/tokens/dapps/ratings",
+          `${process.env.API_URL}tokens/dapps/ratings`,
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
