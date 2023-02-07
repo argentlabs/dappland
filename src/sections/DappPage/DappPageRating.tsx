@@ -135,8 +135,12 @@ const DappPageRating = ({
               <h3 className="text-[64px] leading-[64px] font-bold">
                 {averageRating}
               </h3>
-              <div>/</div>
-              <div>5</div>
+              <div className="text-[20px] font-bold dark:text-white text-[#8C8C8C]">
+                /
+              </div>
+              <div className="text-[20px] font-bold dark:text-white text-[#8C8C8C]">
+                5
+              </div>
             </>
           ) : (
             <h3 className="text-[18px] leading-[24px]">Not rated yet</h3>
