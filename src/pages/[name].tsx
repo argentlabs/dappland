@@ -108,7 +108,6 @@ const DappPage: NextPage<DappPageProps> = ({
           dappInfo={dappInfo}
           dappKey={name}
           averageRating={averageRating}
-          userRating={userRating}
         />
       </div>
       {((dappInfo.media?.gallery && dappInfo.media.gallery.length > 0) ||
@@ -181,12 +180,6 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
     `${process.env.API_URL}tokens/dapps/ratings/${name}`,
   ).then((res) => res.json())
 
-  const contracts = dappInfo.contracts
-  const erc721Contract = (contracts || []).find((contract) =>
-    contract.name.toLowerCase().includes("721"),
-  )
-  const contract = erc721Contract ? erc721Contract.address : null
-
   const nftData =
     dappInfo?.nft && dappInfo?.nft?.collectionContract
       ? await fetch(
@@ -228,6 +221,7 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
       twitterPosts,
       nftData,
     },
+    revalidate: 10,
   }
 }
 

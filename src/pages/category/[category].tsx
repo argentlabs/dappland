@@ -54,6 +54,7 @@ const CategoryPage = ({
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
   const changeCategory = useCategoryStore((state) => state.changeCategory)
   const setFilters = useCategoryStore((state) => state.setFilters)
+  const setRatings = useCategoryStore((state) => state.setRatings)
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
   const selectedSort = useCategoryStore((state) => state.selectedSort)
   const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
@@ -75,6 +76,7 @@ const CategoryPage = ({
     return () => {
       setFilters([])
       setSelectedSort(null)
+      setRatings([])
       changeCategory("all")
     }
   }, [])
@@ -92,7 +94,7 @@ const CategoryPage = ({
     if (selectedCategory !== "all") {
       count++
     }
-    count += selectedFilters.length
+    count += selectedFilters.length + selectedRatings.length
     return count
   }
 
@@ -140,6 +142,7 @@ const CategoryPage = ({
             </div>
             {showMobileFilters && (
               <FilterMenu
+                dappRatings={dappRatings}
                 dappCards={dappCards}
                 isMobileMenuOpen={showMobileFilters}
                 setIsMobileMenuOpen={setShowMobileFilters}

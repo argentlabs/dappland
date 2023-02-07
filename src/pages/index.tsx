@@ -92,7 +92,7 @@ const Home = ({
     selectedRatings,
   })
   const sortedDapps = sortByAttribute(dappsByRating, selectedSort)
-  const filterCount = selectedFilters.length
+  const filterCount = selectedFilters.length + selectedRatings.length
   return (
     <Layout isHome>
       <div className="container px-4 mx-auto mb-16 lg:mb-32">

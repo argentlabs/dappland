@@ -3,25 +3,27 @@ import star from "../../assets/icons/star.svg"
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal"
 import { connect } from "@argent/get-starknet"
 import BigNumber from "bignumber.js"
+import { GetServerSideProps, GetStaticProps } from "next"
 import Image from "next/image"
-import React, { useState } from "react"
+import { useRouter } from "next/router"
+import React, { useEffect, useState } from "react"
 
 type Props = {
   dappKey?: string
-  rating?: number | null
   avgRating: number | null
 }
 
-const DappPageRating = ({
-  dappKey = "my_dapp",
-  rating,
-  avgRating = 4.8,
-}: Props) => {
+const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
+  const router = useRouter()
   const [averageRating, setAverageRating] = useState(avgRating)
   const [error, setError] = useState<string | null>(null)
   const [hoverIndex, setHoverIndex] = useState<number | null>(null)
   const [currentRating, setCurrentRating] = useState<number | null>(
-    rating || null,
+    typeof window !== "undefined"
+      ? window.localStorage.getItem("dappKey")
+        ? parseInt(window.localStorage.getItem("dappKey") || "")
+        : null
+      : null,
   )
   const [isRatingModalOpen, setRatingModalOpen] = useState(false)
 
@@ -95,6 +97,9 @@ const DappPageRating = ({
           .then((res) => {
             setRatingModalOpen(false)
             setAverageRating(res.averageRating)
+            if (typeof window !== "undefined") {
+              window.localStorage.setItem(dappKey, currentRating.toString())
+            }
             setError(null)
           })
           .catch((err) => {
