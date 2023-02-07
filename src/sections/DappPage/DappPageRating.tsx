@@ -1,7 +1,6 @@
 import starEmpty from "../../assets/icons/empty_star.svg"
 import star from "../../assets/icons/star.svg"
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal"
-import Modal from "../../components/Modal/Modal"
 import { connect } from "@argent/get-starknet"
 import BigNumber from "bignumber.js"
 import Image from "next/image"
@@ -19,6 +18,7 @@ const DappPageRating = ({
   avgRating = 4.8,
 }: Props) => {
   const [averageRating, setAverageRating] = useState(avgRating)
+  const [error, setError] = useState<string | null>(null)
   const [hoverIndex, setHoverIndex] = useState<number | null>(null)
   const [currentRating, setCurrentRating] = useState<number | null>(
     rating || null,
@@ -26,8 +26,12 @@ const DappPageRating = ({
   const [isRatingModalOpen, setRatingModalOpen] = useState(false)
 
   const connectToWalletAndRate = async () => {
-    const starknet = await connect({})
+    const starknet = await connect({
+      showList: true,
+    })
+    setError(null)
     if (!starknet) {
+      setError("User rejected wallet selection or wallet not found")
       throw Error("User rejected wallet selection or wallet not found")
     }
     if (!currentRating) {
@@ -72,20 +76,40 @@ const DappPageRating = ({
           },
           account: starknet.selectedAddress,
         }
-        const response = await fetch(
-          `${process.env.API_URL}tokens/dapps/ratings`,
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(bodyData),
-          },
-        ).then((res) => res.json())
-        setAverageRating(response.averageRating)
+
+        const handleErrors = (response: any) => {
+          if (!response.ok) {
+            return response.text().then((text: string) => {
+              throw new Error(text)
+            })
+          }
+          return response.json()
+        }
+
+        await fetch(`${process.env.API_URL}tokens/dapps/ratings`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(bodyData),
+        })
+          .then(handleErrors)
+          .then((res) => {
+            setRatingModalOpen(false)
+            setAverageRating(res.averageRating)
+            setError(null)
+          })
+          .catch((err) => {
+            const parsedMessage = JSON.parse(err.message)
+            if (parsedMessage.status) {
+              setError("Error: " + parsedMessage.status)
+            } else {
+              setError("An error occurred.")
+            }
+          })
       } else {
-        setCurrentRating(null)
+        setError("Unable to connect")
       }
-    } catch (err) {
-      setCurrentRating(null)
+    } catch (err: any) {
+      setError("Error connecting")
     }
   }
 
@@ -95,12 +119,13 @@ const DappPageRating = ({
         <h2 className="text-[28px] leading-[34px] font-bold mb-4">Rating</h2>
         <ConnectWalletModal
           isOpen={isRatingModalOpen}
+          error={error}
           onClose={() => {
             setCurrentRating(null)
+            setError(null)
             setRatingModalOpen(false)
           }}
           onConfirm={() => {
-            setRatingModalOpen(false)
             connectToWalletAndRate()
           }}
         />
@@ -141,6 +166,7 @@ const DappPageRating = ({
                     ? star
                     : starEmpty
                 }
+                className="z-[2]"
                 alt="star-empty"
               />
             </button>

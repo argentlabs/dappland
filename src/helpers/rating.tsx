@@ -1,9 +1,9 @@
 import React from "react"
 
 export const getRatings = async () => {
-  const data = await fetch(
-    `${process.env.API_URL}tokens/dapps/ratings?pageSize=5&page=0`,
-  ).then((res) => res.json())
+  const data = await fetch(`${process.env.API_URL}tokens/dapps/ratings`).then(
+    (res) => res.json(),
+  )
 
   const ratings: Rating[] = data?.ratings || []
 
