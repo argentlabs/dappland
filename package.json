@@ -16,6 +16,7 @@
     "@argent/get-starknet": "^5.2.0",
     "bignumber.js": "^9.1.1",
     "bowser": "^2.11.0",
+    "cookies-next": "^2.1.1",
     "lottie-react": "^2.3.1",
     "next": "12.2.4",
     "next-themes": "^0.2.0",

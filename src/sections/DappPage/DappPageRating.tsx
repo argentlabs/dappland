@@ -3,10 +3,10 @@ import star from "../../assets/icons/star.svg"
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal"
 import { connect } from "@argent/get-starknet"
 import BigNumber from "bignumber.js"
-import { GetServerSideProps, GetStaticProps } from "next"
+import { setCookie, getCookie, hasCookie } from "cookies-next"
 import Image from "next/image"
 import { useRouter } from "next/router"
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 
 type Props = {
   dappKey?: string
@@ -20,8 +20,8 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
   const [hoverIndex, setHoverIndex] = useState<number | null>(null)
   const [currentRating, setCurrentRating] = useState<number | null>(
     typeof window !== "undefined"
-      ? window.localStorage.getItem("dappKey")
-        ? parseInt(window.localStorage.getItem("dappKey") || "")
+      ? hasCookie(dappKey)
+        ? parseInt((getCookie(dappKey) as string) || "")
         : null
       : null,
   )
@@ -97,9 +97,7 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
           .then((res) => {
             setRatingModalOpen(false)
             setAverageRating(res.averageRating)
-            if (typeof window !== "undefined") {
-              window.localStorage.setItem(dappKey, currentRating.toString())
-            }
+            setCookie(dappKey, currentRating)
             setError(null)
           })
           .catch((err) => {
