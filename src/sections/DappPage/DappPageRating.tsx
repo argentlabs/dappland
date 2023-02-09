@@ -1,6 +1,7 @@
 import starEmpty from "../../assets/icons/empty_star.svg"
 import star from "../../assets/icons/star.svg"
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal"
+import { useWalletStore } from "../../hooks/useWalletStore"
 import { connect } from "@argent/get-starknet"
 import BigNumber from "bignumber.js"
 import { setCookie, getCookie, hasCookie } from "cookies-next"
@@ -27,16 +28,25 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
   )
   const [isRatingModalOpen, setRatingModalOpen] = useState(false)
 
+  const connectedWallet = useWalletStore((state) => state.connectedWallet)
+  const setConnectedWallet = useWalletStore((state) => state.setConnectedWallet)
+
   const connectToWalletAndRate = async () => {
-    const starknet = await connect({
-      showList: true,
-    })
+    let starknet = null
+    if (connectedWallet) {
+      starknet = connectedWallet
+    } else {
+      starknet = await connect({
+        showList: true,
+      })
+      setConnectedWallet(starknet)
+    }
     setError(null)
     if (!starknet) {
       setError("User rejected wallet selection or wallet not found")
       throw Error("User rejected wallet selection or wallet not found")
     }
-    if (!currentRating) {
+    if (currentRating === null || currentRating === undefined) {
       throw Error("Not rated")
     }
     try {
