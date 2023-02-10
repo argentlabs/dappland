@@ -214,123 +214,62 @@ const MobileMenu = ({
         ].join(" ")}
       >
         <CategoryContainer>
-          {filteredCategories.length > 0 && (
-            <>
-              <h3 className="block font-semibold text-xl leading-none pt-8 pb-4 text-[22px] font-bold">
-                Active filters
-              </h3>
-              <ul
-                className={`block ${hovered ? "hovered" : ""}`}
-                onMouseOver={(e) => !hovered && setHovered(true)}
-                onMouseLeave={(e) => hovered && setHovered(false)}
-              >
-                {filteredCategories.map((category) => (
-                  <li
-                    className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg min-w-[108px] mx-1 cursor-pointer flex-row mb-2 justify-start active
-                    ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
-                    key={category.name}
-                    tabIndex={0}
-                    onClick={() => {
-                      if (category.key === selectedCategory) {
-                        changeCategory("all")
-                        router.push(
-                          generateUrl({
-                            selectedSort,
-                            selectedRatings,
-                            selectedFilters,
-                            selectedCategory: "all",
-                          }),
-                        )
-                      } else {
-                        if (category.isRating) {
-                          addRating(category.key)
-                        } else {
-                          addFilter(category.key)
-                        }
-                      }
-                    }}
-                  >
-                    <div className="flex items-center justify-between w-full py-4 px-4">
-                      <div className="flex items-center">
-                        {category.isRating ? (
-                          <div className="flex items-center gap-1.5">
-                            {[...Array(parseInt(category.name))].map(
-                              (val, i) => (
-                                <Image
-                                  src={
-                                    currentTheme === "dark"
-                                      ? category.iconDark
-                                      : category.icon
-                                  }
-                                  key={i}
-                                  alt={category.name}
-                                />
-                              ),
-                            )}
-                          </div>
-                        ) : (
-                          <Image
-                            src={
-                              currentTheme === "dark"
-                                ? category.iconDark
-                                : category.icon
-                            }
-                            alt={category.name}
-                          />
-                        )}
-                        <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
-                          {category.isRating ? "" : category.name}
-                        </p>
-                      </div>
-                      <button
-                        role="button"
-                        className="p-0 m-0 outline-0 bg-none border-none flex"
-                        onClick={() => {}}
-                      >
-                        <Image
-                          width={16}
-                          height={16}
-                          alt="remove-button"
-                          src={
-                            currentTheme === "dark"
-                              ? crossCircleLight
-                              : crossCircle
-                          }
-                        />
-                      </button>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </>
-          )}
-          {combinedFilters.length ? (
-            <>
-              {checkIfCategoryHasDapps(combinedFilters) && (
-                <h3 className="block font-semibold text-xl leading-none pt-8 pb-4 lg:text-[22px] lg:font-bold">
-                  Reputation
+          <div className="max-h-[80%] overflow-auto mb-3">
+            {filteredCategories.length > 0 && (
+              <>
+                <h3 className="block font-semibold text-xl leading-none pt-8 pb-4 text-[22px] font-bold">
+                  Active filters
                 </h3>
-              )}
-              <ul
-                className={`block pb-5 ${hovered ? "hovered" : ""}`}
-                onMouseOver={(e) => !hovered && setHovered(true)}
-                onMouseLeave={(e) => hovered && setHovered(false)}
-              >
-                {remainingFilters.map(
-                  (category) =>
-                    renderCategoryCount(category.name) > 0 && (
-                      <li
-                        className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mx-1 min-w-[108px] cursor-pointer flex-row mb-2 justify-start ${
-                          selectedCategory === category.key ? "active" : ""
-                        }`}
-                        key={category.name}
-                        tabIndex={0}
-                        onClick={() => {
-                          addFilter(category.key)
-                        }}
-                      >
-                        <div className="flex items-center justify-between w-full py-4 px-4">
-                          <div className="flex items-center">
+                <ul
+                  className={`block ${hovered ? "hovered" : ""}`}
+                  onMouseOver={(e) => !hovered && setHovered(true)}
+                  onMouseLeave={(e) => hovered && setHovered(false)}
+                >
+                  {filteredCategories.map((category) => (
+                    <li
+                      className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg min-w-[108px] mx-1 cursor-pointer flex-row mb-2 justify-start active
+                    ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
+                      key={category.name}
+                      tabIndex={0}
+                      onClick={() => {
+                        if (category.key === selectedCategory) {
+                          changeCategory("all")
+                          router.push(
+                            generateUrl({
+                              selectedSort,
+                              selectedRatings,
+                              selectedFilters,
+                              selectedCategory: "all",
+                            }),
+                          )
+                        } else {
+                          if (category.isRating) {
+                            addRating(category.key)
+                          } else {
+                            addFilter(category.key)
+                          }
+                        }
+                      }}
+                    >
+                      <div className="flex items-center justify-between w-full py-4 px-4">
+                        <div className="flex items-center">
+                          {category.isRating ? (
+                            <div className="flex items-center gap-1.5">
+                              {[...Array(parseInt(category.name))].map(
+                                (val, i) => (
+                                  <Image
+                                    src={
+                                      currentTheme === "dark"
+                                        ? category.iconDark
+                                        : category.icon
+                                    }
+                                    key={i}
+                                    alt={category.name}
+                                  />
+                                ),
+                              )}
+                            </div>
+                          ) : (
                             <Image
                               src={
                                 currentTheme === "dark"
@@ -339,54 +278,117 @@ const MobileMenu = ({
                               }
                               alt={category.name}
                             />
-                            <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
-                              {category.name}
+                          )}
+                          <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
+                            {category.isRating ? "" : category.name}
+                          </p>
+                        </div>
+                        <button
+                          role="button"
+                          className="p-0 m-0 outline-0 bg-none border-none flex"
+                          onClick={() => {}}
+                        >
+                          <Image
+                            width={16}
+                            height={16}
+                            alt="remove-button"
+                            src={
+                              currentTheme === "dark"
+                                ? crossCircleLight
+                                : crossCircle
+                            }
+                          />
+                        </button>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+            {combinedFilters.length ? (
+              <>
+                {checkIfCategoryHasDapps(combinedFilters) && (
+                  <h3 className="block font-semibold text-xl leading-none pt-8 pb-4 lg:text-[22px] lg:font-bold">
+                    Reputation
+                  </h3>
+                )}
+                <ul
+                  className={`block pb-5 ${hovered ? "hovered" : ""}`}
+                  onMouseOver={(e) => !hovered && setHovered(true)}
+                  onMouseLeave={(e) => hovered && setHovered(false)}
+                >
+                  {remainingFilters.map(
+                    (category) =>
+                      renderCategoryCount(category.name) > 0 && (
+                        <li
+                          className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mx-1 min-w-[108px] cursor-pointer flex-row mb-2 justify-start ${
+                            selectedCategory === category.key ? "active" : ""
+                          }`}
+                          key={category.name}
+                          tabIndex={0}
+                          onClick={() => {
+                            addFilter(category.key)
+                          }}
+                        >
+                          <div className="flex items-center justify-between w-full py-4 px-4">
+                            <div className="flex items-center">
+                              <Image
+                                src={
+                                  currentTheme === "dark"
+                                    ? category.iconDark
+                                    : category.icon
+                                }
+                                alt={category.name}
+                              />
+                              <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
+                                {category.name}
+                              </p>
+                            </div>
+                            <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto block">
+                              {renderCategoryCount(category.name)}
                             </p>
                           </div>
-                          <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto block">
-                            {renderCategoryCount(category.name)}
-                          </p>
-                        </div>
-                      </li>
-                    ),
-                )}
-                {remainingRatings.map(
-                  (category) =>
-                    renderCategoryCount(category.name, false, true) > 0 && (
-                      <li
-                        className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mx-1 min-w-[108px] cursor-pointer flex-row mb-2 justify-start ${
-                          selectedCategory === category.key ? "active" : ""
-                        }`}
-                        key={category.name}
-                        tabIndex={0}
-                        onClick={() => {
-                          addRating(category.key)
-                        }}
-                      >
-                        <div className="flex items-center justify-between w-full py-4 px-4">
-                          <div className="flex items-center">
-                            <div className="flex items-center gap-1.5">
-                              {[...Array(parseInt(category.name))].map(
-                                (val, i) => (
-                                  <Image
-                                    src={star}
-                                    alt={`${category.name}-star`}
-                                    key={`${category.name}-${i}-star`}
-                                  />
-                                ),
-                              )}
+                        </li>
+                      ),
+                  )}
+                  {remainingRatings.map(
+                    (category) =>
+                      renderCategoryCount(category.name, false, true) > 0 && (
+                        <li
+                          className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mx-1 min-w-[108px] cursor-pointer flex-row mb-2 justify-start ${
+                            selectedCategory === category.key ? "active" : ""
+                          }`}
+                          key={category.name}
+                          tabIndex={0}
+                          onClick={() => {
+                            addRating(category.key)
+                          }}
+                        >
+                          <div className="flex items-center justify-between w-full py-4 px-4">
+                            <div className="flex items-center">
+                              <div className="flex items-center gap-1.5">
+                                {[...Array(parseInt(category.name))].map(
+                                  (val, i) => (
+                                    <Image
+                                      src={star}
+                                      alt={`${category.name}-star`}
+                                      key={`${category.name}-${i}-star`}
+                                    />
+                                  ),
+                                )}
+                              </div>
                             </div>
+                            <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto block">
+                              {renderCategoryCount(category.name, false, true)}
+                            </p>
                           </div>
-                          <p className="text-light-charcoal dark:text-clay text-sm font-semibold leading-none ml-auto block">
-                            {renderCategoryCount(category.name, false, true)}
-                          </p>
-                        </div>
-                      </li>
-                    ),
-                )}
-              </ul>
-            </>
-          ) : null}
+                        </li>
+                      ),
+                  )}
+                </ul>
+              </>
+            ) : null}
+          </div>
           <Button
             variant="primary"
             withoutMobile
