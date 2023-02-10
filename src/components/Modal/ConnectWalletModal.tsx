@@ -29,7 +29,7 @@ const ConnectWalletModal = ({ isOpen, onClose, onConfirm, error }: Props) => (
         </Button>
       </div>
       {error && (
-        <div className="bg-black flex gap-3 items-center color-white font-[14px] p-4 rounded-lg mb-14">
+        <div className="bg-black flex gap-3 items-center text-white font-[14px] p-4 rounded-lg mb-14">
           <Image src={alert} alt="alert" />
           <div>{error}</div>
         </div>

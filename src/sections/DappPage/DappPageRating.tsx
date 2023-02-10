@@ -19,6 +19,7 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
   const [averageRating, setAverageRating] = useState(avgRating)
   const [error, setError] = useState<string | null>(null)
   const [hoverIndex, setHoverIndex] = useState<number | null>(null)
+  const cookieValue = getCookie(dappKey) as string
   const [currentRating, setCurrentRating] = useState<number | null>(
     typeof window !== "undefined"
       ? hasCookie(dappKey)
@@ -31,8 +32,9 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
   const connectedWallet = useWalletStore((state) => state.connectedWallet)
   const setConnectedWallet = useWalletStore((state) => state.setConnectedWallet)
 
-  const connectToWalletAndRate = async () => {
+  const connectToWalletAndRate = async (rating?: number) => {
     let starknet = null
+    let ratingValue = rating || currentRating
     if (connectedWallet) {
       starknet = connectedWallet
     } else {
@@ -46,16 +48,17 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
       setError("User rejected wallet selection or wallet not found")
       throw Error("User rejected wallet selection or wallet not found")
     }
-    if (currentRating === null || currentRating === undefined) {
+    if (ratingValue === null || ratingValue === undefined) {
       throw Error("Not rated")
     }
+    ratingValue++
     try {
       await starknet.enable()
       if (starknet.isConnected) {
         const signature = await starknet.account.signMessage({
           message: {
             dappKey: dappKey,
-            rating: currentRating + 1,
+            rating: ratingValue,
           },
           domain: {
             name: "Dappland",
@@ -81,7 +84,7 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
 
         const bodyData = {
           dappKey,
-          rating: currentRating + 1,
+          rating: ratingValue,
           signature: {
             r: "0x" + signatureFirstElement.toString(16),
             s: "0x" + signatureSecondElement.toString(16),
@@ -105,10 +108,10 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
         })
           .then(handleErrors)
           .then((res) => {
-            setRatingModalOpen(false)
             setAverageRating(res.averageRating)
-            setCookie(dappKey, currentRating)
+            setCookie(dappKey, ratingValue)
             setError(null)
+            setRatingModalOpen(false)
           })
           .catch((err) => {
             const parsedMessage = JSON.parse(err.message)
@@ -168,7 +171,11 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
               onMouseLeave={() => setHoverIndex(null)}
               onClick={() => {
                 setCurrentRating(val)
-                setRatingModalOpen(true)
+                if (!connectedWallet) {
+                  setRatingModalOpen(true)
+                } else {
+                  connectToWalletAndRate(val)
+                }
               }}
             >
               <Image
