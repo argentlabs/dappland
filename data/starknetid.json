@@ -18,6 +18,7 @@
     }
   ],
   "audits": [],
+  "verified": true,
   "dotw": false,
   "links": {
     "website": "https://starknet.id/",
@@ -36,6 +37,29 @@
     "anonymous": false
   },
   "tokens": [],
+  "nft": {
+    "collectionContract": "0x05dbdedc203e92749e2e746e2d40a768d966bd243df04a6b712e222bc040a9af",
+    "collectionLink": "https://aspect.co/collection/0x05dbdedc203e92749e2e746e2d40a768d966bd243df04a6b712e222bc040a9af",
+    "collectionName": "Starknet.id",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/starknetid/starknetid-nft-01.svg",
+        "name": "eth.stark"
+      },
+      {
+        "image_url": "/dapps/starknetid/starknetid-nft-02.svg",
+        "name": "ko.stark"
+      },
+      {
+        "image_url": "/dapps/starknetid/starknetid-nft-03.svg",
+        "name": "david.stark"
+      },
+      {
+        "image_url": "/dapps/starknetid/starknetid-nft-04.svg",
+        "name": "starkdefi.stark"
+      }
+    ]
+  },
   "media": {
     "logoUrl": "/dapps/starknetid/starknetid-logo.png",
     "bannerUrl": "/dapps/starknetid/starknetid-banner.png",

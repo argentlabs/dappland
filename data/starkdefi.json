@@ -6,6 +6,7 @@
   "contracts": [],
   "goerliContracts": [],
   "audits": [],
+  "verified": false,
   "dotw": false,
   "links": {
     "website": "https://www.starkdefi.com/",

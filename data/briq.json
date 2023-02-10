@@ -20,6 +20,7 @@
       "url": "https://drive.google.com/file/d/1NACPVVtGuic_GS5MqsconqcRJt423BO5/view?usp=sharing"
     }
   ],
+  "verified": false,
   "dotw": false,
   "links": {
     "website": "https://briq.construction/",
@@ -38,6 +39,29 @@
     "anonymous": false
   },
   "tokens": [],
+  "nft": {
+    "collectionContract": "0x0266b1276d23ffb53d99da3f01be7e29fa024dd33cd7f7b1eb7a46c67891c9d0",
+    "collectionLink": "https://testnet.aspect.co/collection/0x0266b1276d23ffb53d99da3f01be7e29fa024dd33cd7f7b1eb7a46c67891c9d0",
+    "collectionName": "briq testnet",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/briq/briq-nft-01.jpg",
+        "name": "Cow"
+      },
+      {
+        "image_url": "/dapps/briq/briq-nft-02.jpg",
+        "name": "Deer"
+      },
+      {
+        "image_url": "/dapps/briq/briq-nft-03.jpg",
+        "name": "Space rocket"
+      },
+      {
+        "image_url": "/dapps/briq/briq-nft-04.jpg",
+        "name": "Ping"
+      }
+    ]
+  },
   "media": {
     "logoUrl": "/dapps/briq/dapp-icon-briq.png",
     "bannerUrl": "/dapps/briq/dapp-header-briq.png",
