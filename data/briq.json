@@ -3,7 +3,20 @@
   "description": "briq is an NFT construction protocol based around fundamental elements called briqs. You can assemble your briqs into an NFT and disassemble it to get the briqs back and build something else. briqs are NFT building blocks!",
   "short_description": "The NFT building protocol",
   "tags": ["NFTs", "Games"],
-  "contracts": [],
+  "contracts": [
+    {
+      "name": "briq Sets",
+      "address": "0x01435498bf393da86b4733b9264a86b58a42b31f8d8b8ba309593e5c17847672"
+    },
+    {
+      "name": "briq Boxes",
+      "address": "0x01e1f972637ad02e0eed03b69304344c4253804e528e1a5dd5c26bb2f23a8139"
+    },
+    {
+      "name": "briq Booklets",
+      "address": "0x05faa82e2aec811d3a3b14c1f32e9bbb6c9b4fd0cd6b29a823c98c7360019aa4"
+    }
+  ],
   "goerliContracts": [
     {
       "name": "briq contract",
@@ -20,7 +33,7 @@
       "url": "https://drive.google.com/file/d/1NACPVVtGuic_GS5MqsconqcRJt423BO5/view?usp=sharing"
     }
   ],
-  "verified": false,
+  "verified": true,
   "dotw": false,
   "links": {
     "website": "https://briq.construction/",
@@ -40,9 +53,9 @@
   },
   "tokens": [],
   "nft": {
-    "collectionContract": "0x0266b1276d23ffb53d99da3f01be7e29fa024dd33cd7f7b1eb7a46c67891c9d0",
-    "collectionLink": "https://testnet.aspect.co/collection/0x0266b1276d23ffb53d99da3f01be7e29fa024dd33cd7f7b1eb7a46c67891c9d0",
-    "collectionName": "briq testnet",
+    "collectionContract": "0x01435498bf393da86b4733b9264a86b58a42b31f8d8b8ba309593e5c17847672",
+    "collectionLink": "https://aspect.co/collection/0x01435498bf393da86b4733b9264a86b58a42b31f8d8b8ba309593e5c17847672",
+    "collectionName": "briq Sets",
     "collectionPreview": [
       {
         "image_url": "/dapps/briq/briq-nft-01.jpg",
