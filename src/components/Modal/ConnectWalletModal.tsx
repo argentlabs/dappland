@@ -10,9 +10,21 @@ type Props = {
   onClose: () => void
   onConfirm: () => void
   error: any
+  fromNav?: boolean
 }
 
-const ConnectWalletModal = ({ isOpen, onClose, onConfirm, error }: Props) => (
+const textVariantDapp =
+  "To rate this dapp, you need to have used StarkNet. Please connect your StarkNet wallet and allow Dappland to check your on-chain history."
+const textVariantNav =
+  "To rate dapps, you need to have used StarkNet. Please connect your StarkNet wallet and allow Dappland to check your on-chain history."
+
+const ConnectWalletModal = ({
+  isOpen,
+  onClose,
+  onConfirm,
+  error,
+  fromNav,
+}: Props) => (
   <Modal isOpen={isOpen} onClose={onClose}>
     <div className="flex flex-col items-center justify-center mt-10">
       <Image src={argentLogo} alt="argent-logo" />
@@ -20,8 +32,7 @@ const ConnectWalletModal = ({ isOpen, onClose, onConfirm, error }: Props) => (
         Connect and rate
       </div>
       <div className="text-[20px] leading-[28px] text-center font-light text-black mt-8 mb-10 max-w-[75%]">
-        To rate this dapp, you need to have used StarkNet. Please connect your
-        StarkNet wallet and allow Dappland to check your on-chain history.
+        {fromNav ? textVariantNav : textVariantDapp}
       </div>
       <div className="pb-14">
         <Button variant="primary" onClick={onConfirm}>

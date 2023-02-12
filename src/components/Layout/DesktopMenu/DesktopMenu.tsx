@@ -54,7 +54,7 @@ const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
             </div>
           </Link>
         </div>
-        <div className="flex z-20">
+        <div className="flex z-[2]">
           <button
             type="button"
             className="p-6 flex justify-center items-center border-r border-border-grey dark:border-white/10"
@@ -79,7 +79,7 @@ const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
             </a>
           </Link>
         </div>
-        <div className="flex gap-3.5 z-20">
+        <div className="flex gap-3.5 z-[2]">
           <ConnectWallet />
           <Button
             variant="primary"
