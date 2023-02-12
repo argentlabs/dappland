@@ -41,10 +41,12 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
       starknet = await connect({
         showList: true,
       })
-      setConnectedWallet(starknet)
+      if (starknet && starknet.account) {
+        setConnectedWallet(starknet)
+      }
     }
     setError(null)
-    if (!starknet) {
+    if (!connectedWallet) {
       setError("User rejected wallet selection or wallet not found")
       throw Error("User rejected wallet selection or wallet not found")
     }
@@ -53,8 +55,8 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
     }
     ratingValue++
     try {
-      await starknet.enable()
-      if (starknet.isConnected) {
+      await connectedWallet.enable()
+      if (connectedWallet.isConnected) {
         const signature = await starknet.account.signMessage({
           message: {
             dappKey: dappKey,
@@ -123,6 +125,7 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
           })
       } else {
         setError("Unable to connect")
+        setConnectedWallet(null)
       }
     } catch (err: any) {
       setError("Error connecting")
