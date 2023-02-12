@@ -6,9 +6,10 @@ import logoLight from "../../../assets/logo-dappland-mobile-light.svg"
 import logo from "../../../assets/logo-dappland-mobile.svg"
 import { useCategoryStore } from "../../../hooks/useCategoryStore"
 import Button from "../../Button/Button"
+import ConnectWallet from "../../Button/ConnectWallet"
 import Image from "next/image"
 import Link from "next/link"
-import { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import styled from "styled-components"
 
 const MenuContainer = styled.div`
@@ -178,6 +179,9 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
           >
             Add your Dapp
           </Button>
+        </div>
+        <div className="mx-7 mt-6">
+          <ConnectWallet />
         </div>
       </div>
     </MenuContainer>

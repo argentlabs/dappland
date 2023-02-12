@@ -4,7 +4,7 @@ import powerPink from "../../assets/icons/powerPink.svg"
 import { useDarkMode } from "../../hooks/useDarkMode"
 import { useWalletStore } from "../../hooks/useWalletStore"
 import ConnectWalletModal from "../Modal/ConnectWalletModal"
-import { connect } from "@argent/get-starknet"
+import { connect, disconnect } from "@argent/get-starknet"
 import Image from "next/image"
 import React, { useState } from "react"
 
@@ -38,12 +38,17 @@ const ConnectWallet = () => {
   return (
     <>
       <button
-        onClick={() => {
-          setRatingModalOpen(true)
+        onClick={async () => {
+          if (connectedWallet) {
+            await disconnect()
+            setConnectedWallet(null)
+          } else {
+            setRatingModalOpen(true)
+          }
         }}
-        className="group relative flex items-center justify-between border-solid border border-black dark:border-white bg-none rounded-3xl hover:border-pink dark:hover:border-pink px-4 py-[10.5px] text-black dark:text-white hover:text-pink dark:hover:text-pink"
+        className="group relative flex items-center justify-between border-solid border border-black dark:border-white bg-none rounded-3xl hover:border-pink dark:hover:border-pink px-4 py-[12.5px] lg:py-[10.5px] text-black dark:text-white hover:text-pink dark:hover:text-pink w-full lg:w-auto"
       >
-        <div className="font-semibold mr-[20px]">
+        <div className="font-semibold mr-[20px] flex justify-center lg:justify-start items-center lg:items-start w-full lg:w-auto">
           {connectedWallet ? "Disconnect" : "Connect wallet"}
         </div>
         <div className="absolute w-[1px] h-full bg-black dark:bg-white right-10 group-hover:bg-pink" />

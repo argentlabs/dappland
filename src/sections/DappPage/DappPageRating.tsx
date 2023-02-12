@@ -41,12 +41,9 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
       starknet = await connect({
         showList: true,
       })
-      if (starknet && starknet.account) {
-        setConnectedWallet(starknet)
-      }
     }
     setError(null)
-    if (!connectedWallet) {
+    if (!starknet) {
       setError("User rejected wallet selection or wallet not found")
       throw Error("User rejected wallet selection or wallet not found")
     }
@@ -55,8 +52,14 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
     }
     ratingValue++
     try {
-      await connectedWallet.enable()
-      if (connectedWallet.isConnected) {
+      await starknet.enable()
+      if (starknet.account) {
+        setConnectedWallet(starknet)
+      } else {
+        setError("User rejected wallet selection or wallet not found")
+        throw Error("User rejected wallet selection or wallet not found")
+      }
+      if (starknet.isConnected) {
         const signature = await starknet.account.signMessage({
           message: {
             dappKey: dappKey,
@@ -111,7 +114,9 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
           .then(handleErrors)
           .then((res) => {
             setAverageRating(res.averageRating)
-            setCookie(dappKey, ratingValue)
+            if (ratingValue) {
+              setCookie(dappKey, ratingValue - 1)
+            }
             setError(null)
             setRatingModalOpen(false)
           })
