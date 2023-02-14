@@ -9,7 +9,7 @@
   "goerliContracts": [
     {
       "name": "Diamond Contract",
-      "address": "https://testnet-2.starkscan.co/contract/0x05ad65a92e83d652175aa914e922afd2917f6a9520047eaa0da0684749163fc4"
+      "address": "0x05ad65a92e83d652175aa914e922afd2917f6a9520047eaa0da0684749163fc4"
     }
   ],
   "audits": [
@@ -37,7 +37,7 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "/dapps/hashstack/hashstack-logo.jpg",
+    "logoUrl": "/dapps/hashstack/hashstack-logo.png",
     "bannerUrl": "/dapps/hashstack/hashstack-banner.jpg",
     "previewUrl": "/dapps/hashstack/hashstack-preview.jpg",
     "videoUrl": "",
