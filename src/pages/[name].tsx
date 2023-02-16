@@ -121,6 +121,7 @@ const DappPage: NextPage<DappPageProps> = ({
                       muted
                       loop
                       playsInline
+                      controls
                     />
                   </SwiperSlide>
                 )}
