@@ -113,6 +113,8 @@ const NFTPageStats = ({
               alt={`NFT image - nft.name`}
               width={484}
               height={644}
+              layout="responsive"
+              sizes="15vw"
             />
             <div className="text-[16px] text-tooltip-dark dark:text-white p-3 font-semibold">
               {nft.name}
