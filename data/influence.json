@@ -3,16 +3,7 @@
   "description": "Influence is an open-economy, space strategy MMO in which players own all of their content. Colonize asteroids, build infrastructure, discover technologies, engage in combat. Expand your influence across the belt.",
   "short_description": "A grand strategy space MMO",
   "tags": ["NFTs", "Games", "DAOs"],
-  "contracts": [
-    {
-      "name": "AsteroidToken",
-      "address": "0x02dc57158f2f119653319d552745b9991afa5d468ecbf0609a0ac7d36ad69e5b"
-    },
-    {
-      "name": "CrewmateToken",
-      "address": "0x041c4e86a03480313547a04e13fc4d43d7fb7bcb5244fd0cb93f793f304f6124"
-    }
-  ],
+  "contracts": [],
   "goerliContracts": [
     {
       "name": "AsteroidToken",

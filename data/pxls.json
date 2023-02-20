@@ -33,7 +33,7 @@
     },
     {
       "name": "Pxls Drawer",
-      "address": "0x021a6d69c4d0aa3e04139fc715abda0cb3f3805a8c11513c4054cdebf80bd28b"
+      "address": "0x0035345c560052c8d14dcbde85114c123fc3c65b7b5fab2d045fb3a7e57df453"
     }
   ],
   "goerliContracts": [
@@ -47,7 +47,7 @@
     }
   ],
   "audits": [],
-  "verified": false,
+  "verified": true,
   "dotw": false,
   "links": {
     "website": "https://pxls.wtf/",
