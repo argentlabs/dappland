@@ -16,8 +16,8 @@ const ConnectWallet = () => {
   const setConnectedWallet = useWalletStore((state) => state.setConnectedWallet)
 
   const onConfirm = async () => {
-    const starknet = await connect({
-      showList: true,
+    let starknet = await connect({
+      include: ["argentX"],
     })
     if (!starknet) {
       setError("User rejected wallet selection or wallet not found")

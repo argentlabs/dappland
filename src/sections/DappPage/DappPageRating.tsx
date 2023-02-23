@@ -23,7 +23,7 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
   const [currentRating, setCurrentRating] = useState<number | null>(
     typeof window !== "undefined"
       ? hasCookie(dappKey)
-        ? parseInt((getCookie(dappKey) as string) || "")
+        ? parseInt(cookieValue || "")
         : null
       : null,
   )
@@ -39,7 +39,7 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
       starknet = connectedWallet
     } else {
       starknet = await connect({
-        showList: true,
+        include: ["argentX"],
       })
     }
     setError(null)
@@ -134,6 +134,7 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
       }
     } catch (err: any) {
       setError("Error connecting")
+      setCurrentRating(cookieValue ? parseInt(cookieValue || "") : null)
     }
   }
 
