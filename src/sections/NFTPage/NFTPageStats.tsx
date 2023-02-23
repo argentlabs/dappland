@@ -1,6 +1,6 @@
 import Button from "../../components/Button/Button"
 import TooltipIconButton from "../../components/Tooltip/TooltipIconButton"
-import Image from "next/image"
+import Image from "next/future/image"
 import Link from "next/link"
 import React from "react"
 import styled from "styled-components"
@@ -12,19 +12,7 @@ const ButtonsContainer = styled.div`
   }
 `
 
-const ImageContainer = styled.div`
-  /* Allow the NFTs to just be their default size. */
-  > span > span {
-    display: none !important;
-  }
-
-  img {
-    object-fit: contain;
-    width: 100% !important;
-    height: unset !important;
-    position: relative !important;
-  }
-`
+const ImageContainer = styled.div``
 
 const NFTPageStats = ({
   data,
@@ -123,8 +111,10 @@ const NFTPageStats = ({
             <Image
               src={nft.image_url}
               alt={`NFT image - nft.name`}
-              width="100%"
-              height="100%"
+              width={484}
+              height={644}
+              layout="responsive"
+              sizes="15vw"
             />
             <div className="text-[16px] text-tooltip-dark dark:text-white p-3 font-semibold">
               {nft.name}
