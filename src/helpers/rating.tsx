@@ -1,5 +1,11 @@
 import React from "react"
 
+export const getRatingForDapp = async (name: string) => {
+  return await fetch(`${process.env.API_URL}tokens/dapps/ratings/${name}`).then(
+    (res) => res.json(),
+  )
+}
+
 export const getRatings = async () => {
   const data = await fetch(`${process.env.API_URL}tokens/dapps/ratings`).then(
     (res) => res.json(),

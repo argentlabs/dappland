@@ -1,6 +1,7 @@
 // next page with ssg for every file in `data` folder
 import arrow from "../assets/icons/arrowLeft.svg"
 import Layout from "../components/Layout"
+import { getRatingForDapp } from "../helpers/rating"
 import DappPageDetails from "../sections/DappPage/DappPageDetails"
 import DappPageHeader from "../sections/DappPage/DappPageHeader"
 import DappPageTwitter from "../sections/DappPage/DappPageTwitter"
@@ -176,9 +177,7 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
 
   const dappInfo: DappInfo = JSON.parse(content)
 
-  const dappRating = await fetch(
-    `${process.env.API_URL}tokens/dapps/ratings/${name}`,
-  ).then((res) => res.json())
+  const dappRating = await getRatingForDapp(name as string)
 
   const nftData =
     dappInfo?.nft && dappInfo?.nft?.collectionContract
