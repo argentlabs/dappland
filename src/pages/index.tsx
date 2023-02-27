@@ -134,7 +134,7 @@ const Home = ({
                 setIsMobileMenuOpen={setShowMobileFilters}
               />
             )}
-            <div className="grid grid-cols-1 w-full gap-y-8 justify-center md:grid-cols-2 lg:grid-cols-1 lg:mx-0 gap-x-8 lg:gap-y-20 xl:grid-cols-2 2xl:grid-cols-3 lg:">
+            <div className="grid grid-cols-1 w-full gap-y-8 justify-center md:grid-cols-2 lg:grid-cols-1 lg:mx-0 gap-x-20 lg:gap-y-20 xl:grid-cols-2 2xl:grid-cols-3">
               {sortedDapps.map((card) => (
                 <Card key={card.url} {...card} />
               ))}
