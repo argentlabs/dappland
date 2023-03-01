@@ -209,7 +209,7 @@ const MobileMenu = ({
       </div>
       <div
         className={[
-          "absolute top-0 left-0 w-full h-screen hidden pt-[56px] bg-smoked-white dark:bg-light-black py-3 px-4 flex flex-col justify-between",
+          "absolute top-0 left-0 w-full h-screen pt-[56px] bg-smoked-white dark:bg-light-black py-3 px-4 flex flex-col justify-between",
           isMobileMenuOpen ? "is-active-menu" : "",
         ].join(" ")}
       >
@@ -217,7 +217,7 @@ const MobileMenu = ({
           <div className="max-h-[80%] overflow-auto mb-3">
             {filteredCategories.length > 0 && (
               <>
-                <h3 className="block font-semibold text-xl leading-none pt-8 pb-4 text-[22px] font-bold">
+                <h3 className="block text-xl leading-none pt-8 pb-4 text-[22px] font-bold">
                   Active filters
                 </h3>
                 <ul
@@ -227,7 +227,7 @@ const MobileMenu = ({
                 >
                   {filteredCategories.map((category) => (
                     <li
-                      className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg min-w-[108px] mx-1 cursor-pointer flex-row mb-2 justify-start active
+                      className={`flex items-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg min-w-[108px] mx-1 cursor-pointer flex-row mb-2 justify-start active
                     ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
                       key={category.name}
                       tabIndex={0}
@@ -279,7 +279,7 @@ const MobileMenu = ({
                               alt={category.name}
                             />
                           )}
-                          <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
+                          <p className="font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
                             {category.isRating ? "" : category.name}
                           </p>
                         </div>
@@ -321,7 +321,7 @@ const MobileMenu = ({
                     (category) =>
                       renderCategoryCount(category.name) > 0 && (
                         <li
-                          className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mx-1 min-w-[108px] cursor-pointer flex-row mb-2 justify-start ${
+                          className={`flex items-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mx-1 min-w-[108px] cursor-pointer flex-row mb-2 justify-start ${
                             selectedCategory === category.key ? "active" : ""
                           }`}
                           key={category.name}
@@ -340,7 +340,7 @@ const MobileMenu = ({
                                 }
                                 alt={category.name}
                               />
-                              <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
+                              <p className="font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
                                 {category.name}
                               </p>
                             </div>
@@ -355,7 +355,7 @@ const MobileMenu = ({
                     (category) =>
                       renderCategoryCount(category.name, false, true) > 0 && (
                         <li
-                          className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mx-1 min-w-[108px] cursor-pointer flex-row mb-2 justify-start ${
+                          className={`flex items-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mx-1 min-w-[108px] cursor-pointer flex-row mb-2 justify-start ${
                             selectedCategory === category.key ? "active" : ""
                           }`}
                           key={category.name}

@@ -6,7 +6,7 @@ import Head from "next/head"
 import styled from "styled-components"
 
 const MainContainer = styled.main`
-  padding-top: 56px};
+  padding-top: 56px;
   @media (min-width: 1024px) {
     padding-top: 0;
   }

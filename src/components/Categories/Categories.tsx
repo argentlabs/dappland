@@ -166,7 +166,7 @@ const Categories = ({
           >
             {filteredCategories.map((category) => (
               <li
-                className={`flex flex-col items-center justify-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer flex-row mb-2 justify-start active
+                className={`flex items-center bg-white dark:bg-white/10 shadow-box-image-shadow rounded-lg mr-2 min-w-[108px] cursor-pointer flex-row mb-2 justify-start active
                     } ${checkIfAnyCategoryIsActive() ? "with-blur" : ""}`}
                 key={category.name}
                 tabIndex={0}
@@ -216,7 +216,7 @@ const Categories = ({
                         alt={category.name}
                       />
                     )}
-                    <p className="mt-2 font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
+                    <p className="font-semibold leading-none text-sm ml-3 mt-0 text-black dark:text-white">
                       {category.isRating ? "" : category.name}
                     </p>
                   </div>
