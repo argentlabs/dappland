@@ -45,6 +45,17 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
     }
   }, [connectedWallet])
 
+  const determineIfMainnet = () => {
+    if (typeof window !== "undefined") {
+      const { hostname } = window.location
+      return (
+        hostname.includes("dappland.com") || hostname.includes("substack.com")
+      )
+    } else {
+      return false
+    }
+  }
+
   const connectToWalletAndRate = async (rating?: number) => {
     let starknet = null
     let ratingValue = rating || currentRating
@@ -89,6 +100,7 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
         throw Error("User rejected wallet selection or wallet not found")
       }
       if (starknet.isConnected) {
+        const chainId = determineIfMainnet() ? "SN_MAIN" : "SN_GOERLI"
         const signature = await starknet.account.signMessage({
           message: {
             dappKey: dappKey,
@@ -96,7 +108,7 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
           },
           domain: {
             name: "Dappland",
-            chainId: "SN_GOERLI",
+            chainId,
             version: "1.0",
           },
           types: {
@@ -187,7 +199,9 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
           {averageRating ? (
             <>
               <h3 className="text-[64px] leading-[64px] font-bold">
-                {averageRating}
+                {averageRating - Math.floor(averageRating) !== 0
+                  ? (Math.round(averageRating * 10) / 10).toFixed(1)
+                  : averageRating}
               </h3>
               <div className="text-[20px] font-bold dark:text-white text-[#8C8C8C]">
                 /
