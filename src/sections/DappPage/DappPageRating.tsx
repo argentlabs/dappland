@@ -1,14 +1,14 @@
 import starEmpty from "../../assets/icons/empty_star.svg"
 import star from "../../assets/icons/star.svg"
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal"
+import { getRatingsFromUser } from "../../helpers/rating"
 import { useWalletStore } from "../../hooks/useWalletStore"
 import BigNumber from "bignumber.js"
 import { setCookie, getCookie, hasCookie } from "cookies-next"
 import { connect } from "get-starknet"
 import sn from "get-starknet-core"
 import Image from "next/image"
-import { useRouter } from "next/router"
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 
 type Props = {
   dappKey?: string
@@ -16,7 +16,6 @@ type Props = {
 }
 
 const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
-  const router = useRouter()
   const [averageRating, setAverageRating] = useState(avgRating)
   const [error, setError] = useState<string | null>(null)
   const [hoverIndex, setHoverIndex] = useState<number | null>(null)
@@ -32,6 +31,19 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
 
   const connectedWallet = useWalletStore((state) => state.connectedWallet)
   const setConnectedWallet = useWalletStore((state) => state.setConnectedWallet)
+
+  useEffect(() => {
+    const getUserOldRatings = async ({ account }: { account: string }) => {
+      const rating = await getRatingsFromUser({ account, dappKey })
+      if (rating !== null) {
+        setCurrentRating(rating - 1)
+      }
+    }
+    if (connectedWallet) {
+      debugger
+      getUserOldRatings({ account: connectedWallet.selectedAddress })
+    }
+  }, [connectedWallet])
 
   const connectToWalletAndRate = async (rating?: number) => {
     let starknet = null

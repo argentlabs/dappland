@@ -6,6 +6,19 @@ export const getRatingForDapp = async (name: string) => {
   )
 }
 
+export const getRatingsFromUser = async ({
+  account,
+  dappKey,
+}: {
+  account: string
+  dappKey: string
+}) => {
+  const data = await fetch(
+    `${process.env.API_URL}tokens/dapps/ratings/${dappKey}?account=${account}`,
+  ).then((res) => res.json())
+  return data?.userRating || null
+}
+
 export const getRatings = async () => {
   const data = await fetch(`${process.env.API_URL}tokens/dapps/ratings`).then(
     (res) => res.json(),
