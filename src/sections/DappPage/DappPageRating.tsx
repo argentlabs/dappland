@@ -199,7 +199,9 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
           {averageRating ? (
             <>
               <h3 className="text-[64px] leading-[64px] font-bold">
-                {(Math.round(averageRating * 10) / 10).toFixed(1)}
+                {averageRating - Math.floor(averageRating) !== 0
+                  ? (Math.round(averageRating * 10) / 10).toFixed(1)
+                  : averageRating}
               </h3>
               <div className="text-[20px] font-bold dark:text-white text-[#8C8C8C]">
                 /
