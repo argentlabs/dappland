@@ -4,7 +4,8 @@ import powerPink from "../../assets/icons/powerPink.svg"
 import { useDarkMode } from "../../hooks/useDarkMode"
 import { useWalletStore } from "../../hooks/useWalletStore"
 import ConnectWalletModal from "../Modal/ConnectWalletModal"
-import { connect, disconnect } from "@argent/get-starknet"
+import { connect, disconnect, StarknetWindowObject } from "get-starknet"
+import sn from "get-starknet-core"
 import Image from "next/image"
 import React, { useState } from "react"
 
@@ -16,22 +17,32 @@ const ConnectWallet = () => {
   const setConnectedWallet = useWalletStore((state) => state.setConnectedWallet)
 
   const onConfirm = async () => {
-    let starknet = await connect({
-      include: ["argentX"],
-    })
-    if (!starknet) {
-      setError("User rejected wallet selection or wallet not found")
-      throw Error("User rejected wallet selection or wallet not found")
-    }
-    await starknet.enable()
-    if (!starknet.account) {
-      setError("User rejected wallet selection or wallet not found")
-      throw Error("User rejected wallet selection or wallet not found")
-    }
-    if (starknet && starknet.account) {
-      setConnectedWallet(starknet)
-      setError(null)
-      setRatingModalOpen(false)
+    const wallets = await sn.getAvailableWallets()
+    const argentWallet = wallets.find(
+      (wallet: StarknetWindowObject) => wallet.id === "argentX",
+    )
+    if (argentWallet) {
+      sn.enable(argentWallet)
+        .then((res) => {
+          setConnectedWallet(res)
+          setError(null)
+          setRatingModalOpen(false)
+        })
+        .catch(() => {
+          setError("User rejected wallet selection or wallet not found")
+          throw Error("User rejected wallet selection or wallet not found")
+        })
+    } else {
+      connect()
+        .then((res) => {
+          setConnectedWallet(res)
+          setError(null)
+          setRatingModalOpen(false)
+        })
+        .catch(() => {
+          setError("User rejected wallet selection or wallet not found")
+          throw Error("User rejected wallet selection or wallet not found")
+        })
     }
   }
 

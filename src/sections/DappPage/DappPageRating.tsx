@@ -2,9 +2,10 @@ import starEmpty from "../../assets/icons/empty_star.svg"
 import star from "../../assets/icons/star.svg"
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal"
 import { useWalletStore } from "../../hooks/useWalletStore"
-import { connect } from "@argent/get-starknet"
 import BigNumber from "bignumber.js"
 import { setCookie, getCookie, hasCookie } from "cookies-next"
+import { connect } from "get-starknet"
+import sn from "get-starknet-core"
 import Image from "next/image"
 import { useRouter } from "next/router"
 import React, { useState } from "react"
@@ -38,15 +39,31 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
     if (connectedWallet) {
       starknet = connectedWallet
     } else {
-      starknet = await connect({
-        include: ["argentX"],
-      })
+      const wallets = await sn.getAvailableWallets()
+      const argentWallet = wallets.find((wallet) => wallet.id === "argentX")
+      if (argentWallet) {
+        try {
+          const res = await sn.enable(argentWallet)
+          setConnectedWallet(res)
+          starknet = res
+          setError(null)
+        } catch {
+          setError("User rejected wallet selection or wallet not found")
+          throw Error("User rejected wallet selection or wallet not found")
+        }
+      } else {
+        try {
+          const res = await connect()
+          setConnectedWallet(res)
+          starknet = res
+          setError(null)
+        } catch {
+          setError("User rejected wallet selection or wallet not found")
+          throw Error("User rejected wallet selection or wallet not found")
+        }
+      }
     }
     setError(null)
-    if (!starknet) {
-      setError("User rejected wallet selection or wallet not found")
-      throw Error("User rejected wallet selection or wallet not found")
-    }
     if (ratingValue === null || ratingValue === undefined) {
       throw Error("Not rated")
     }
