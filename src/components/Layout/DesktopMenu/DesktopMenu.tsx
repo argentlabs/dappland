@@ -20,8 +20,7 @@ const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
   const setFilters = useCategoryStore((state) => state.setFilters)
   const changeCategory = useCategoryStore((state) => state.changeCategory)
   const setSort = useCategoryStore((state) => state.setSelectedSort)
-  const connectedWallet = useWalletStore((state) => state.connectedWallet)
-  const setConnectedWallet = useWalletStore((state) => state.setConnectedWallet)
+  const setRatings = useCategoryStore((state) => state.setRatings)
   return (
     <div className="hidden lg:block bg-white dark:bg-light-black">
       <AnnouncementBar>
@@ -35,6 +34,7 @@ const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
               onClick={() => {
                 setFilters([])
                 setSort(null)
+                setRatings([])
                 changeCategory("all")
               }}
             >
@@ -71,6 +71,7 @@ const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
               onClick={() => {
                 setFilters([])
                 setSort(null)
+                setRatings([])
                 changeCategory("all")
               }}
             >

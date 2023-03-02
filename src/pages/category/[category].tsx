@@ -70,7 +70,7 @@ const CategoryPage = ({
       setDappRatings(ratings)
     }
     getAllRatings()
-  })
+  }, [])
   useEffect(() => {
     const url = generateUrl({
       selectedCategory,
