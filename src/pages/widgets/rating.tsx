@@ -1,7 +1,7 @@
 import RatingWidget from "../../components/RatingWidget/RatingWidget"
 
-function Widgets() {
+function Rating() {
   return <RatingWidget />
 }
 
-export default Widgets
+export default Rating
