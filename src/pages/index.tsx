@@ -31,19 +31,26 @@ const StyledSection = styled.section`
 const Home = ({
   dappCards,
   featuredDapp,
-  ratings,
 }: {
   dappCards: DappCard[]
   featuredDapp?: DappCard
-  ratings: { [key: string]: string[] }
 }) => {
   const [showMobileFilters, setShowMobileFilters] = useState(false)
+  const [ratings, setRatings] = useState<{ [key: string]: string[] }>({})
   const router = useRouter()
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
   const selectedRatings = useCategoryStore((state) => state.selectedRatings)
   const selectedSort = useCategoryStore((state) => state.selectedSort)
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
   const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
+
+  useEffect(() => {
+    const getAllRatings = async () => {
+      const ratings = await getRatings()
+      setRatings(ratings)
+    }
+    getAllRatings()
+  })
 
   useEffect(() => {
     const allFilters = selectedFilters.join(",")

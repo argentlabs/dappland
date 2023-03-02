@@ -15,7 +15,11 @@ import {
   filterDapps,
   generateUrl,
 } from "../../helpers/category"
-import { filterDappcardsByRating, getRatings } from "../../helpers/rating"
+import {
+  filterDappcardsByRating,
+  getRatings,
+  getRatingsFromUser,
+} from "../../helpers/rating"
 import sortByAttribute from "../../helpers/sort"
 import { getAllDapps } from "../../hooks/getAllDapps"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
@@ -43,14 +47,15 @@ const StyledSection = styled.section`
 const CategoryPage = ({
   dappCards,
   category,
-  dappRatings,
 }: {
   dappCards: Array<DappCard & { categories: string[] }>
   category: string
-  dappRatings: { [key: string]: string[] }
 }) => {
   const router = useRouter()
   const [showMobileFilters, setShowMobileFilters] = useState(false)
+  const [dappRatings, setDappRatings] = useState<{ [key: string]: string[] }>(
+    {},
+  )
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
   const changeCategory = useCategoryStore((state) => state.changeCategory)
   const setFilters = useCategoryStore((state) => state.setFilters)
@@ -59,6 +64,13 @@ const CategoryPage = ({
   const selectedSort = useCategoryStore((state) => state.selectedSort)
   const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
   const selectedRatings = useCategoryStore((state) => state.selectedRatings)
+  useEffect(() => {
+    const getAllRatings = async () => {
+      const ratings = await getRatings()
+      setDappRatings(ratings)
+    }
+    getAllRatings()
+  })
   useEffect(() => {
     const url = generateUrl({
       selectedCategory,
@@ -164,7 +176,6 @@ export const getStaticProps: GetStaticProps<{ dappCards: DappCard[] }> = async (
   const category = context?.params?.category as string
 
   const dapps = await getAllDapps()
-  const ratingsParsed = await getRatings()
 
   const parsedDapps = dapps.map((dapp: DappInfo & { url: string }) => ({
     short_description: dapp.short_description,
@@ -184,7 +195,6 @@ export const getStaticProps: GetStaticProps<{ dappCards: DappCard[] }> = async (
     props: {
       dappCards: parsedDapps,
       category,
-      dappRatings: ratingsParsed,
     },
   }
 }
