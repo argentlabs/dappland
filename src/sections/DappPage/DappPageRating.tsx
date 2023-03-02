@@ -1,7 +1,7 @@
 import starEmpty from "../../assets/icons/empty_star.svg"
 import star from "../../assets/icons/star.svg"
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal"
-import { getRatingsFromUser } from "../../helpers/rating"
+import { getRatingForDapp, getRatingsFromUser } from "../../helpers/rating"
 import { useWalletStore } from "../../hooks/useWalletStore"
 import BigNumber from "bignumber.js"
 import { setCookie, getCookie, hasCookie } from "cookies-next"
@@ -12,11 +12,10 @@ import React, { useEffect, useState } from "react"
 
 type Props = {
   dappKey?: string
-  avgRating: number | null
 }
 
-const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
-  const [averageRating, setAverageRating] = useState(avgRating)
+const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
+  const [averageRating, setAverageRating] = useState(null)
   const [error, setError] = useState<string | null>(null)
   const [hoverIndex, setHoverIndex] = useState<number | null>(null)
   const cookieValue = getCookie(dappKey) as string
@@ -28,6 +27,13 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
       : null,
   )
   const [isRatingModalOpen, setRatingModalOpen] = useState(false)
+  useEffect(() => {
+    const getRatingsData = async () => {
+      const dappRatings = await getRatingForDapp(dappKey)
+      setAverageRating(dappRatings?.averageRating || null)
+    }
+    getRatingsData()
+  }, [])
 
   const connectedWallet = useWalletStore((state) => state.connectedWallet)
   const setConnectedWallet = useWalletStore((state) => state.setConnectedWallet)
@@ -156,6 +162,7 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
             setAverageRating(res.averageRating)
             if (ratingValue) {
               setCookie(dappKey, ratingValue - 1)
+              setCurrentRating(ratingValue - 1)
             }
             setError(null)
             setRatingModalOpen(false)

@@ -50,7 +50,7 @@ const Home = ({
       setRatings(ratings)
     }
     getAllRatings()
-  })
+  }, [])
 
   useEffect(() => {
     const allFilters = selectedFilters.join(",")
