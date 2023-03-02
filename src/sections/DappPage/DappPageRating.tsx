@@ -214,7 +214,7 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
           )}
         </div>
         <div className="mb-2">Your Rating</div>
-        <div className="flex items-center gap-1">
+        <div className="relative flex items-center gap-1">
           {Array.from(Array(5).keys()).map((val) => (
             <button
               key={val}
@@ -241,7 +241,7 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
                     ? star
                     : starEmpty
                 }
-                className="z-[2]"
+                className="z-[1]"
                 alt="star-empty"
               />
             </button>
