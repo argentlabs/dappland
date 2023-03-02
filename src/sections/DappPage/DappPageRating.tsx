@@ -40,7 +40,6 @@ const DappPageRating = ({ dappKey = "my_dapp", avgRating }: Props) => {
       }
     }
     if (connectedWallet) {
-      debugger
       getUserOldRatings({ account: connectedWallet.selectedAddress })
     }
   }, [connectedWallet])
