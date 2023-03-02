@@ -1,10 +1,10 @@
 import FilterButton from "../components/Button/FilterButton"
 import Card from "../components/Card/Card"
 import Categories from "../components/Categories/Categories"
-import FeaturedCard from "../components/FeaturedCard/FeaturedVideoCard"
 import FilterMenu from "../components/FilterMenu/FilterMenu"
 import Layout from "../components/Layout"
 import Select from "../components/Select/Select"
+import { filterDappcardsByRating, getRatings } from "../helpers/rating"
 import sortByAttribute from "../helpers/sort"
 import { getAllDapps } from "../hooks/getAllDapps"
 import { useCategoryStore } from "../hooks/useCategoryStore"
@@ -31,19 +31,23 @@ const StyledSection = styled.section`
 const Home = ({
   dappCards,
   featuredDapp,
+  ratings,
 }: {
   dappCards: DappCard[]
   featuredDapp?: DappCard
+  ratings: { [key: string]: string[] }
 }) => {
   const [showMobileFilters, setShowMobileFilters] = useState(false)
   const router = useRouter()
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
+  const selectedRatings = useCategoryStore((state) => state.selectedRatings)
   const selectedSort = useCategoryStore((state) => state.selectedSort)
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
   const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
 
   useEffect(() => {
     const allFilters = selectedFilters.join(",")
+    const allRatings = selectedRatings.join(",")
     const sortBy = selectedSort
     let url = "/"
     if (allFilters.length) {
@@ -52,10 +56,15 @@ const Home = ({
     if (sortBy && sortBy.length) {
       url += `${allFilters.length ? "&" : "?"}sort=${sortBy}`
     }
+    if (selectedRatings.length) {
+      url += `${
+        allFilters.length || (sortBy && sortBy.length) ? "&" : "?"
+      }ratings=${allRatings}`
+    }
     if (router.isReady && selectedCategory === "all") {
       router.push(url)
     }
-  }, [selectedFilters, selectedSort, selectedCategory])
+  }, [selectedFilters, selectedSort, selectedCategory, selectedRatings])
 
   const filteredDapps = dappCards.filter((dapp) => {
     return (
@@ -76,9 +85,14 @@ const Home = ({
       }, 0) === selectedFilters.length
     )
   })
-  const sortedDapps = sortByAttribute(filteredDapps, selectedSort)
-
-  const filterCount = selectedFilters.length
+  const dappsByRating = filterDappcardsByRating({
+    dappCards: filteredDapps,
+    dappRatings: ratings,
+    isMainCategory: false,
+    selectedRatings,
+  })
+  const sortedDapps = sortByAttribute(dappsByRating, selectedSort)
+  const filterCount = selectedFilters.length + selectedRatings.length
   return (
     <Layout isHome>
       <div className="container px-4 mx-auto mb-16 lg:mb-32">
@@ -87,6 +101,7 @@ const Home = ({
             isHome
             className="categories lg:max-w-[340px]"
             dappCards={dappCards}
+            dappRatings={ratings}
           />
           <div className="cards">
             <h3 className="lg:hidden font-semibold text-xl leading-none mb-5">
@@ -111,12 +126,13 @@ const Home = ({
             </div>
             {showMobileFilters && (
               <FilterMenu
+                dappRatings={ratings}
                 dappCards={dappCards}
                 isMobileMenuOpen={showMobileFilters}
                 setIsMobileMenuOpen={setShowMobileFilters}
               />
             )}
-            <div className="grid grid-cols-1 w-full gap-y-8 justify-center md:grid-cols-2 lg:grid-cols-1 lg:mx-0 gap-x-8 lg:gap-y-20 xl:grid-cols-2 2xl:grid-cols-3 lg:">
+            <div className="grid grid-cols-1 w-full gap-y-8 justify-center md:grid-cols-2 lg:grid-cols-1 lg:mx-0 gap-x-20 lg:gap-y-20 xl:grid-cols-2 2xl:grid-cols-3">
               {sortedDapps.map((card) => (
                 <Card key={card.url} {...card} />
               ))}
@@ -130,6 +146,7 @@ const Home = ({
 
 export const getStaticProps = async () => {
   const dapps = await getAllDapps()
+  const ratingsParsed = await getRatings()
 
   const parsedDapps = dapps.map((dapp: DappInfo & { url: string }) => ({
     short_description: dapp.short_description,
@@ -148,6 +165,7 @@ export const getStaticProps = async () => {
     props: {
       dappCards: parsedDapps,
       featuredDapp: null, //parsedDapps.filter((dapp) => dapp.featured)[0],
+      ratings: ratingsParsed,
     },
   }
 }

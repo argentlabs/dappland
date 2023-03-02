@@ -4,6 +4,7 @@ import logoDarkLottie from "../../../assets/logo-dark-lottie.json"
 import logoLightLottie from "../../../assets/logo-light-lottie.json"
 import { AnnouncementBar } from "../../AnnouncementBar"
 import Button from "../../Button/Button"
+import ConnectWallet from "../../Button/ConnectWallet"
 import Lottie from "lottie-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -31,16 +32,19 @@ const HomeDesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
             )}
           </button>
         </div>
-        <Button
-          variant="primary"
-          className="h-min"
-          style={{ padding: "13px 24px", lineHeight: "normal" }}
-          href="https://github.com/argentlabs/dappland#-add-your-dapp-to-dappland"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Add your Dapp
-        </Button>
+        <div className="flex gap-2.5">
+          <ConnectWallet />
+          <Button
+            variant="primary"
+            className="h-min"
+            style={{ padding: "13px 24px", lineHeight: "normal" }}
+            href="https://github.com/argentlabs/dappland#-add-your-dapp-to-dappland"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Add your Dapp
+          </Button>
+        </div>
       </div>
       <div className="relative flex flex-col justify-center items-center pb-[86px]">
         <Link href="/">

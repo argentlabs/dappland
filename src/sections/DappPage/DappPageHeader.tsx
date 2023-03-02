@@ -1,3 +1,4 @@
+import starEmpty from "../../assets/icons/empty_star.svg"
 import expandIcon from "../../assets/icons/expand.svg"
 import flagIcon from "../../assets/icons/flag.svg"
 import Button from "../../components/Button/Button"
@@ -8,6 +9,7 @@ import {
 } from "../../components/Button/Download"
 import SocialLink from "../../components/SocialLink/SocialLink"
 import Tag from "../../components/Tag/Tag"
+import DappPageRating from "./DappPageRating"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
@@ -35,7 +37,15 @@ const linkOrder = [
   "mirror",
 ] as unknown as Array<keyof Links>
 
-const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
+const DappPageHeader = ({
+  dappInfo,
+  dappKey,
+  averageRating,
+}: {
+  dappInfo: DappInfo
+  dappKey: string
+  averageRating: number | null
+}) => {
   const [showArgentXInstallGuide, setArgentXInstallGuide] = useState(false)
   useEffect(() => {
     const argentXInstalled = (window as any).starknet?.id === "argentX"
@@ -139,6 +149,7 @@ const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
           </div>
         </div>
       </div>
+      <DappPageRating dappKey={dappKey} avgRating={averageRating} />
     </section>
   )
 }

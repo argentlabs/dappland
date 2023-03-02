@@ -36,7 +36,7 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        "dapp-header": "2fr 1fr",
+        "dapp-header": "3fr 1fr 1fr",
       },
     },
   },
