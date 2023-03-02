@@ -48,16 +48,12 @@ interface DappPageProps {
   dappInfo: DappInfo
   twitterPosts: TwitterData
   nftData: NFTData | null
-  averageRating: number | null
-  userRating: number | null
 }
 
 const DappPage: NextPage<DappPageProps> = ({
   dappInfo,
   twitterPosts,
   nftData,
-  averageRating,
-  userRating,
 }) => {
   const [showPrev, setShowPrev] = useState(false)
   const router = useRouter()
@@ -105,11 +101,7 @@ const DappPage: NextPage<DappPageProps> = ({
         </div>
       )}
       <div className="px-4 md:mx-[10vw] xl:mx-[15vw] 2xl:mx-[20vw] max-w-[1200px]">
-        <DappPageHeader
-          dappInfo={dappInfo}
-          dappKey={name}
-          averageRating={averageRating}
-        />
+        <DappPageHeader dappInfo={dappInfo} dappKey={name} />
       </div>
       {((dappInfo.media?.gallery && dappInfo.media.gallery.length > 0) ||
         dappInfo.media.videoUrl) && (
@@ -178,8 +170,6 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
 
   const dappInfo: DappInfo = JSON.parse(content)
 
-  const dappRating = await getRatingForDapp(name as string)
-
   const nftData =
     dappInfo?.nft && dappInfo?.nft?.collectionContract
       ? await fetch(
@@ -216,8 +206,6 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
   return {
     props: {
       dappInfo,
-      averageRating: dappRating?.averageRating || null,
-      userRating: dappRating?.userRating || null,
       twitterPosts,
       nftData,
     },
