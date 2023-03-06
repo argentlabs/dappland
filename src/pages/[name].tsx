@@ -1,6 +1,7 @@
 // next page with ssg for every file in `data` folder
 import arrow from "../assets/icons/arrowLeft.svg"
 import Layout from "../components/Layout"
+import { getRatingForDapp } from "../helpers/rating"
 import DappPageDetails from "../sections/DappPage/DappPageDetails"
 import DappPageHeader from "../sections/DappPage/DappPageHeader"
 import DappPageTwitter from "../sections/DappPage/DappPageTwitter"
@@ -9,6 +10,7 @@ import { readdir, readFile } from "fs/promises"
 import { GetStaticPaths, GetStaticProps, NextPage } from "next"
 import Image from "next/image"
 import Router from "next/router"
+import { useRouter } from "next/router"
 import path from "path"
 import { useEffect, useState } from "react"
 import styled from "styled-components"
@@ -54,6 +56,8 @@ const DappPage: NextPage<DappPageProps> = ({
   nftData,
 }) => {
   const [showPrev, setShowPrev] = useState(false)
+  const router = useRouter()
+  const name = (router?.query?.name as string) || ""
   useEffect(() => {
     // @ts-ignore
     import("swiper/css")
@@ -97,7 +101,7 @@ const DappPage: NextPage<DappPageProps> = ({
         </div>
       )}
       <div className="px-4 md:mx-[10vw] xl:mx-[15vw] 2xl:mx-[20vw] max-w-[1200px]">
-        <DappPageHeader dappInfo={dappInfo} />
+        <DappPageHeader dappInfo={dappInfo} dappKey={name} />
       </div>
       {((dappInfo.media?.gallery && dappInfo.media.gallery.length > 0) ||
         dappInfo.media.videoUrl) && (
@@ -166,12 +170,6 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
 
   const dappInfo: DappInfo = JSON.parse(content)
 
-  const contracts = dappInfo.contracts
-  const erc721Contract = (contracts || []).find((contract) =>
-    contract.name.toLowerCase().includes("721"),
-  )
-  const contract = erc721Contract ? erc721Contract.address : null
-
   const nftData =
     dappInfo?.nft && dappInfo?.nft?.collectionContract
       ? await fetch(
@@ -211,6 +209,7 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
       twitterPosts,
       nftData,
     },
+    revalidate: 10,
   }
 }
 
