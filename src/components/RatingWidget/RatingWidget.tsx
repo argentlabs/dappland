@@ -1,5 +1,5 @@
-import activeStar from "../../assets/icons/activeStar.svg"
-import inactiveStar from "../../assets/icons/inactiveStar.svg"
+import starEmpty from "../../assets/icons/starEmpty.svg"
+import starFilled from "../../assets/icons/starFilled.svg"
 import logoLight from "../../assets/logo-dappland-light.svg"
 import logo from "../../assets/logo-dappland.svg"
 import { useDarkMode } from "../../hooks/useDarkMode"
@@ -50,9 +50,23 @@ const RatingWidget = (): ReactElement => {
           <div className="mt-2">
             {Array.from({ length: totalStars }).map((_, index) =>
               activeStars && index < activeStars ? (
-                <Image src={activeStar} alt="icon active star" />
+                <span className="mx-0.5" key={index}>
+                  <Image
+                    src={starFilled}
+                    alt="icon full star"
+                    width={20}
+                    height={20}
+                  />
+                </span>
               ) : (
-                <Image src={inactiveStar} alt="icon inactive star" />
+                <span className="mx-0.5" key={index}>
+                  <Image
+                    src={starEmpty}
+                    alt="icon empty star"
+                    width={20}
+                    height={20}
+                  />
+                </span>
               ),
             )}
           </div>

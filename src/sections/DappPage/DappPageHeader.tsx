@@ -1,4 +1,3 @@
-import starEmpty from "../../assets/icons/empty_star.svg"
 import expandIcon from "../../assets/icons/expand.svg"
 import flagIcon from "../../assets/icons/flag.svg"
 import Button from "../../components/Button/Button"
