@@ -20,7 +20,7 @@ const useRatingData = (dappName: string): ResponseData => {
     const fetchReviews = async (): Promise<any> => {
       try {
         const response = await fetch(
-          `https://cloud-dev.argent-api.com/v1/tokens/dapps/ratings/${dappName}`,
+          `${process.env.API_URL}tokens/dapps/ratings/${dappName}`,
         )
         const data = (await response.json()) as RatingWidgetData
         setRatingData(data)
