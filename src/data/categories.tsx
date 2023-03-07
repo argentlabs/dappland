@@ -20,6 +20,7 @@ import legal from "../assets/icons/legal.svg"
 import legalLight from "../assets/icons/legalLight.svg"
 import profile from "../assets/icons/profile.svg"
 import profileLight from "../assets/icons/profileLight.svg"
+import star from "../assets/icons/star.svg"
 import swap from "../assets/icons/swap.svg"
 import swapLight from "../assets/icons/swapLight.svg"
 import verified from "../assets/icons/verified.svg"
@@ -52,7 +53,15 @@ export const reputation = [
   },
 ]
 
-export const allCategories = [...categories, ...reputation]
+export const ratings = [
+  { key: "5", name: "5", icon: star, iconDark: star },
+  { key: "4", name: "4", icon: star, iconDark: star },
+  { key: "3", name: "3", icon: star, iconDark: star },
+  { key: "2", name: "2", icon: star, iconDark: star },
+  { key: "1", name: "1", icon: star, iconDark: star },
+]
+
+export const allCategories = [...categories, ...reputation, ...ratings]
 
 export const changeTagsToCategoriesSlug = (tags: string[]) => {
   let categories: Array<string> = []

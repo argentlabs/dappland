@@ -60,6 +60,12 @@ interface Contract {
   address: string
 }
 
+interface Rating {
+  voteCount: number
+  averageRating: number
+  dappKey: string
+}
+
 interface Links {
   website: string
   mirror: string

@@ -57,23 +57,36 @@ export const generateUrl = ({
   selectedSort,
   selectedFilters,
   selectedCategory,
+  selectedRatings = [],
 }: {
   selectedCategory: string
   selectedSort: string | null
   selectedFilters: string[]
+  selectedRatings?: string[]
 }) => {
   const allFilters = selectedFilters.join(",")
+  const allRatings = selectedRatings.join(",")
   const categoryUrl =
     selectedCategory === "all" ? "/" : `/category/${selectedCategory}`
   const url = `${categoryUrl}${
     selectedFilters.length
-      ? `?filters=${allFilters}${selectedSort ? `&sort=${selectedSort}` : ""}`
-      : `${selectedSort ? `?sort=${selectedSort}` : ""}`
+      ? `?filters=${allFilters}${selectedSort ? `&sort=${selectedSort}` : ""}${
+          selectedRatings.length ? `&ratings=${allRatings}` : ""
+        }`
+      : selectedSort
+      ? `${selectedSort ? `?sort=${selectedSort}` : ""}${
+          selectedRatings.length ? `&ratings=${allRatings}` : ""
+        }`
+      : `${selectedRatings.length ? `?ratings=${allRatings}` : ""}`
   }`
   return url
 }
 
-export const checkIfCategoryExists = (dappCard: DappCard, category: string) => {
+export const checkIfCategoryExists = (
+  dappCard: DappCard,
+  category: string,
+  dappRatings?: { [key: string]: string[] },
+) => {
   switch (category) {
     case "Dapp of the Week":
     case "featured":
@@ -87,6 +100,15 @@ export const checkIfCategoryExists = (dappCard: DappCard, category: string) => {
     case "Verified contracts":
     case "verified":
       return dappCard.verified
+    case "1":
+    case "2":
+    case "3":
+    case "4":
+    case "5":
+      return (
+        dappRatings &&
+        dappRatings[category]?.includes(dappCard.url.replace("/", ""))
+      )
     default:
       return dappCard.tags.indexOf(category) !== -1
   }

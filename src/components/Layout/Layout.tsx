@@ -6,7 +6,7 @@ import Head from "next/head"
 import styled from "styled-components"
 
 const MainContainer = styled.main`
-  padding-top: 56px};
+  padding-top: 56px;
   @media (min-width: 1024px) {
     padding-top: 0;
   }
@@ -28,6 +28,7 @@ export const Layout = ({
   isHome,
 }: LayoutProps) => {
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
+  const selectedRatings = useCategoryStore((state) => state.selectedRatings)
   return (
     <>
       <Head>
@@ -96,7 +97,11 @@ export const Layout = ({
 
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      {!isHome || selectedFilters.length ? <Header /> : <HomeHeader />}
+      {!isHome || selectedFilters.length || selectedRatings.length ? (
+        <Header />
+      ) : (
+        <HomeHeader />
+      )}
       <MainContainer>{children}</MainContainer>
       <Footer />
     </>

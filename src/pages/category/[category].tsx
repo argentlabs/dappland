@@ -15,6 +15,11 @@ import {
   filterDapps,
   generateUrl,
 } from "../../helpers/category"
+import {
+  filterDappcardsByRating,
+  getRatings,
+  getRatingsFromUser,
+} from "../../helpers/rating"
 import sortByAttribute from "../../helpers/sort"
 import { getAllDapps } from "../../hooks/getAllDapps"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
@@ -48,28 +53,42 @@ const CategoryPage = ({
 }) => {
   const router = useRouter()
   const [showMobileFilters, setShowMobileFilters] = useState(false)
+  const [dappRatings, setDappRatings] = useState<{ [key: string]: string[] }>(
+    {},
+  )
   const selectedCategory = useCategoryStore((state) => state.selectedCategory)
   const changeCategory = useCategoryStore((state) => state.changeCategory)
   const setFilters = useCategoryStore((state) => state.setFilters)
+  const setRatings = useCategoryStore((state) => state.setRatings)
   const selectedFilters = useCategoryStore((state) => state.selectedFilters)
   const selectedSort = useCategoryStore((state) => state.selectedSort)
   const setSelectedSort = useCategoryStore((state) => state.setSelectedSort)
+  const selectedRatings = useCategoryStore((state) => state.selectedRatings)
+  useEffect(() => {
+    const getAllRatings = async () => {
+      const ratings = await getRatings()
+      setDappRatings(ratings)
+    }
+    getAllRatings()
+  }, [])
   useEffect(() => {
     const url = generateUrl({
       selectedCategory,
       selectedSort,
       selectedFilters,
+      selectedRatings,
     })
     if (router.isReady && selectedCategory !== "all" && router.asPath !== url) {
       router.push(url)
     }
-  }, [selectedFilters, selectedSort])
+  }, [selectedFilters, selectedSort, selectedRatings])
 
   useEffect(() => {
     changeCategory((router?.query?.category as string) || "all")
     return () => {
       setFilters([])
       setSelectedSort(null)
+      setRatings([])
       changeCategory("all")
     }
   }, [])
@@ -87,18 +106,27 @@ const CategoryPage = ({
     if (selectedCategory !== "all") {
       count++
     }
-    count += selectedFilters.length
+    count += selectedFilters.length + selectedRatings.length
     return count
   }
 
   const filterCount = getFilterCount()
-
-  const sortedDapps = sortByAttribute(filteredDapps, selectedSort)
+  const dappCardsByRating = filterDappcardsByRating({
+    dappRatings,
+    dappCards: filteredDapps,
+    selectedRatings,
+    isMainCategory: false,
+  })
+  const sortedDapps = sortByAttribute(dappCardsByRating, selectedSort)
   return (
     <Layout>
       <div className="container px-4 mx-auto mb-16 lg:mb-32">
         <StyledSection className="lg:grid lg:mt-20">
-          <Categories className="categories" dappCards={dappCards} />
+          <Categories
+            className="categories"
+            dappCards={dappCards}
+            dappRatings={dappRatings}
+          />
           <div className="cards">
             <h1 className="lg:hidden font-semibold text-xl leading-none mb-5 mt-8">
               {"Starknet " +
@@ -124,6 +152,7 @@ const CategoryPage = ({
             </div>
             {showMobileFilters && (
               <FilterMenu
+                dappRatings={dappRatings}
                 dappCards={dappCards}
                 isMobileMenuOpen={showMobileFilters}
                 setIsMobileMenuOpen={setShowMobileFilters}
