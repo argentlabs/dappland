@@ -1,0 +1,70 @@
+{
+  "name": "Carbonable",
+  "description": "Carbonable empowers anyone to invest in the greatest challenge of our time, by financing nature's regeneration. Get a significant, long-term and growing yield while fighting climate change.",
+  "short_description": "Invest in decarbonization",
+  "tags": ["DeFi", "NFTs"],
+  "contracts": [
+    {
+      "name": "Manjarisoa",
+      "address": "0x061bcc33b0469cd072ad47813a1efd250fd36a28425d774c31c8f33c87306e8e"
+    },
+    {
+      "name": "Banegas Farm",
+      "address": "0x04047810e4f759336f941a16b6de9d8d2f934e976b9a9431a2964646df9025c6"
+    },
+    {
+      "name": "Las Delicias",
+      "address": "0x00ebf4bbab9c934fa0212c9358331d4a9543ad66a7e0007d4a720cfa6b56061e"
+    }
+  ],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": true,
+  "dotw": false,
+  "links": {
+    "website": "https://carbonable.io/",
+    "careers": "https://fr.linkedin.com/company/carbonable",
+    "twitter": "https://twitter.com/Carbonable_io",
+    "telegram": "https://t.me/+wBP-WGlcMi9lMTRk",
+    "discord": "https://discord.com/invite/Huspzn4teW",
+    "github": "https://github.com/Carbonable",
+    "youtube": "https://www.youtube.com/channel/UCns1lmlsA4Z_4XW0BjHTb4A",
+    "medium": "https://carbonable.medium.com/",
+    "mirror": ""
+  },
+  "twitterName": "Carbonable_io",
+  "teamInfo": {
+    "founded": "2022-03-08T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "nft": {
+    "collectionContract": "0x061bcc33b0469cd072ad47813a1efd250fd36a28425d774c31c8f33c87306e8e",
+    "collectionLink": "https://aspect.co/collection/0x061bcc33b0469cd072ad47813a1efd250fd36a28425d774c31c8f33c87306e8e",
+    "collectionName": "Carbonable",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/carbonable/carbonable-Manjarisoa.jpeg",
+        "name": "Manjarisoa"
+      },
+      {
+        "image_url": "/dapps/carbonable/carbonable-Las-Delicias.jpeg",
+        "name": "Las Delicias"
+      },
+      {
+        "image_url": "/dapps/carbonable/carbonable-Banegas-Farm.jpeg",
+        "name": "Banegas Farm"
+      },
+      {
+        "image_url": "/dapps/carbonable/carbonable-Manjarisoa.jpeg",
+        "name": "Manjarisoa"
+      }
+    ]
+  },
+  "media": {
+    "logoUrl": "/dapps/carbonable/carbonable-icon.png",
+    "bannerUrl": "/dapps/carbonable/carbonable-banner.png",
+    "previewUrl": "/dapps/carbonable/carbonable-preview.png",
+    "gallery": []
+  }
+}

@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  env: {
+    API_URL: process.env.API_URL,
+  },
   swcMinify: true,
   compiler: {
     styledComponents: true,
@@ -17,10 +20,11 @@ const nextConfig = {
     return config
   },
   images: {
-    domains: ["pbs.twimg.com"], // to load images from twitter
+    domains: ["pbs.twimg.com", "mintsquare.sfo3.cdn.digitaloceanspaces.com"], // to load images
   },
   experimental: {
     scrollRestoration: true,
+    images: { allowFutureImage: true },
   },
   async rewrites() {
     return [

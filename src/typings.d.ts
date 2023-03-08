@@ -4,6 +4,21 @@ declare module "*.svg" {
   export default src
 }
 
+interface NFTData {
+  name: string
+  name_custom: string
+  total_volume_all_time: number
+  total_volume_720_hours?: number
+  total_volume_168_hours?: number
+  total_volume_24_hours?: number
+  volume_change_basis_points_720_hours?: number | string
+  volume_change_basis_points_168_hours?: number | string
+  volume_change_basis_points_24_hours?: number | string
+  number_of_owners: string
+  number_of_assets: string
+  floor_list_price: number
+}
+
 interface DappInfo {
   description: string
   short_description: string
@@ -12,12 +27,22 @@ interface DappInfo {
   contracts?: Contract[]
   goerliContracts?: Contract[]
   audits: Audit[]
+  verified: boolean
   links: Links
   teamInfo: TeamInfo
   tokens: Token[]
   media: Media
   dotw: boolean
   twitterName: string
+  nft?: {
+    collectionLink: string
+    collectionContract: string
+    collectionName: string
+    collectionPreview: {
+      image_url: string
+      name: string
+    }[]
+  }
 }
 
 interface Audit {
@@ -25,9 +50,20 @@ interface Audit {
   url: string
 }
 
+interface Verified {
+  name: string
+  url: string
+}
+
 interface Contract {
   name: string
   address: string
+}
+
+interface Rating {
+  voteCount: number
+  averageRating: number
+  dappKey: string
 }
 
 interface Links {
@@ -99,4 +135,5 @@ interface DappCard {
   featured: boolean
   annonymous: boolean
   audits: Audit[]
+  verified: boolean
 }

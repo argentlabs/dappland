@@ -3,7 +3,12 @@
   "description": "A community-led fully permissionless and composable AMM on Starknet",
   "short_description": "Community driven AMM",
   "tags": ["DeFi", "DAOs", "NFTs"],
-  "contracts": [],
+  "contracts": [
+    {
+      "name": "Router",
+      "address": "0x41fd22b238fa21cfcf5dd45a8548974d8263b3a531a60388411c5e230f97023"
+    }
+  ],
   "goerliContracts": [
     {
       "name": "Router",
@@ -15,6 +20,7 @@
     }
   ],
   "audits": [],
+  "verified": true,
   "dotw": false,
   "links": {
     "website": "https://jediswap.xyz/",

@@ -1,15 +1,15 @@
 import home from "../../../assets/icons/home.svg"
 import homeDark from "../../../assets/icons/home_dark.svg"
-import info from "../../../assets/icons/info-circle.svg"
-import infoDark from "../../../assets/icons/info-circle_dark.svg"
 import moon from "../../../assets/icons/moon.svg"
 import sun from "../../../assets/icons/sun.svg"
 import logoLight from "../../../assets/logo-dappland-mobile-light.svg"
 import logo from "../../../assets/logo-dappland-mobile.svg"
+import { useCategoryStore } from "../../../hooks/useCategoryStore"
 import Button from "../../Button/Button"
+import ConnectWallet from "../../Button/ConnectWallet"
 import Image from "next/image"
 import Link from "next/link"
-import { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import styled from "styled-components"
 
 const MenuContainer = styled.div`
@@ -86,16 +86,20 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
     }
   }, [])
 
+  const setFilters = useCategoryStore((state) => state.setFilters)
+  const changeCategory = useCategoryStore((state) => state.changeCategory)
+  const setSort = useCategoryStore((state) => state.setSelectedSort)
+
   return (
     <MenuContainer
       className={[
-        "lg:hidden z-[999] fixed top-0 left-0 w-full bg-smoked-white dark:bg-light-black",
+        "lg:hidden z-[999] fixed top-0 left-0 w-full",
         isNavbarScrolled ? "navbar-scrolled" : "",
         isMobileMenuOpen ? "is-active-menu" : "",
       ].join(" ")}
       ref={nav}
     >
-      <div className="flex justify-center py-2 relative z-50">
+      <div className="flex justify-center py-2 relative z-50 bg-smoked-white dark:bg-light-black">
         <Link href="/">
           <a className="flex items-center">
             <Image
@@ -134,7 +138,14 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
           {navbarItems.map((item) => (
             <li key={item.name}>
               <Link href={item.href}>
-                <a className="flex items-center py-3 px-6 bg-white dark:bg-light-black uppercase font-medium font-base">
+                <a
+                  className="flex items-center py-3 px-6 bg-white dark:bg-light-black uppercase font-medium font-base"
+                  onClick={() => {
+                    setFilters([])
+                    setSort(null)
+                    changeCategory("all")
+                  }}
+                >
                   <Image src={item.icon} alt={item.name} />
                   <p>{item.name}</p>
                 </a>
@@ -168,6 +179,9 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
           >
             Add your Dapp
           </Button>
+        </div>
+        <div className="mx-7 mt-6">
+          <ConnectWallet />
         </div>
       </div>
     </MenuContainer>

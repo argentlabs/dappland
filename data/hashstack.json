@@ -1,0 +1,45 @@
+{
+  "name": "Hashstack",
+  "description": "Hashstack provides a permissionless under-collateralised lending solution for crypto-native retail, enabling them to borrow up to 300% of the collateral. Product status: Public testnet on Starknet.",
+  "short_description": "Permissionless undercollateralized loans",
+  "tags": ["DeFi"],
+  "contracts": [],
+  "goerliContracts": [
+    {
+      "name": "Diamond Contract",
+      "address": "0x05ad65a92e83d652175aa914e922afd2917f6a9520047eaa0da0684749163fc4"
+    }
+  ],
+  "audits": [
+    {
+      "name": "Certik",
+      "url": "https://www.certik.com/projects/hashstack"
+    }
+  ],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://hashstack.finance/",
+    "careers": "https://angel.co/company/hashstack/jobs",
+    "twitter": "https://twitter.com/0xHashstack",
+    "telegram": "",
+    "discord": "https://discord.com/invite/hashstack-community-907151419650482217",
+    "github": "https://github.com/0xHashstack/",
+    "youtube": "https://www.youtube.com/@hashstack",
+    "medium": "https://hashstack.medium.com/",
+    "mirror": ""
+  },
+  "twitterName": "0xHashstack",
+  "teamInfo": {
+    "founded": "2021-01-10T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/hashstack/hashstack-logo.png",
+    "bannerUrl": "/dapps/hashstack/hashstack-banner.jpg",
+    "previewUrl": "/dapps/hashstack/hashstack-preview.jpg",
+    "videoUrl": "",
+    "gallery": []
+  }
+}

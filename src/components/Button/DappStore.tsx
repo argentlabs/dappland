@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { FC } from "react"
 
 export const DappStoreButton: FC<{
@@ -10,7 +11,13 @@ export const DappStoreButton: FC<{
       href={href}
       className="flex flex-row items-start px-5 py-4 gap-2 bg-black text-white border border-solid border-white rounded-lg min-w-[215px] h-[72px] overflow-hidden"
     >
-      <img src={iconUrl} alt={name} className="w-10 h-10 rounded-full" />
+      <Image
+        src={iconUrl}
+        alt={name}
+        width="40"
+        height="40"
+        className="rounded-full"
+      />
       <div>
         <p className="text-[13px] font-extralight mt-[-1px]">
           Explore Web3 with
