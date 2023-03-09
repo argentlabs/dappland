@@ -35,7 +35,7 @@ const RatingWidget = (): ReactElement => {
     <div
       className={`${
         currentTheme === "dark" ? "bg-black" : "bg-white "
-      } flex flex-col justify-center items-center border-2 border-black rounded-lg cursor-pointer max-w-[260px] min-h-[176px] py-5 px-16`}
+      } flex flex-col justify-center items-center border-2 border-black rounded-lg cursor-pointer max-w-[260px] min-h-[176px] py-5 px-16 leading-none`}
       onClick={handleClick}
     >
       {isLoading ? (
