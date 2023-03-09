@@ -1,4 +1,3 @@
-import starEmpty from "../../assets/icons/empty_star.svg"
 import expandIcon from "../../assets/icons/expand.svg"
 import flagIcon from "../../assets/icons/flag.svg"
 import Button from "../../components/Button/Button"
@@ -105,7 +104,12 @@ const DappPageHeader = ({
               href={dappInfo.links?.website + "?utm_source=dappland" || "/"}
               passHref
             >
-              <Button variant="primary" className="mr-3 visit-button">
+              <Button
+                variant="primary"
+                className="mr-3 visit-button"
+                target="_blank"
+                rel="noopener"
+              >
                 Visit Dapp
               </Button>
             </Link>
