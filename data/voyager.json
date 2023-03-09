@@ -1,7 +1,7 @@
 {
   "name": "Voyager",
-  "description": "Voyager is the first block explorer for StarkNet. Developed by an in-house team at Nethermind, it provides a window for anyone to interact with the most cutting edge ZK-Rollup. With its clean and minimal UI, Voyager is an essential component on StarkNet, providing users with transparency and convenience.",
-  "short_description": "StarkNet block explorer",
+  "description": "Voyager is the first block explorer for Starknet. Developed by an in-house team at Nethermind, it provides a window for anyone to interact with the most cutting edge ZK-Rollup. With its clean and minimal UI, Voyager is an essential component on Starknet, providing users with transparency and convenience.",
+  "short_description": "Starknet block explorer",
   "tags": ["Infrastructure"],
   "contracts": [],
   "goerliContracts": [],

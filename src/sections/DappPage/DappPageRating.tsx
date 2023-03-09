@@ -117,7 +117,7 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
             version: "1.0",
           },
           types: {
-            StarkNetDomain: [
+            StarknetDomain: [
               { name: "name", type: "felt" },
               { name: "chainId", type: "felt" },
               { name: "version", type: "felt" },

@@ -1,7 +1,7 @@
 {
   "name": "Early Starkers",
-  "description": "Early Starkers is the first non-freemint NFT collection of the StarkNet. There are 1234 ranked stars from 1 to 1234, which can be on-chain nameable by the owner. Also, every NFT star has a profile page and unique opportunities for the holders. Early Starkers is the community of pioneers, project owners, builders, researchers, adventurers and holders.",
-  "short_description": "1234 Star NFTs on the sky-map enable unique utilities and prove you are an Early Adopter on StarkNet",
+  "description": "Early Starkers is the first non-freemint NFT collection of the Starknet. There are 1234 ranked stars from 1 to 1234, which can be on-chain nameable by the owner. Also, every NFT star has a profile page and unique opportunities for the holders. Early Starkers is the community of pioneers, project owners, builders, researchers, adventurers and holders.",
+  "short_description": "1234 Star NFTs on the sky-map enable unique utilities and prove you are an Early Adopter on Starknet",
   "tags": ["NFTs", "Social", "DAOs"],
   "audits": [],
   "contracts": [

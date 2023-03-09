@@ -1,16 +1,16 @@
 <div align="center">
     <img src="./src/assets/logo-dappland.gif" alt="Dappland logo animated"width=400 alt="dappland-logo" />
-    <h4>The home for all dapps in the StarkNet ecosystem</h4>
+    <h4>The home for all dapps in the Starknet ecosystem</h4>
     <p>Built with ❤️ by <a style="text-decoration: underline; color:black" href="https://argent.xyz">Argent</p>
 </div>
 
 [![Node.js CI](https://github.com/argentlabs/dappland/actions/workflows/deploy.yml/badge.svg)](https://github.com/argentlabs/dappland/actions/workflows/deploy.yml)
 
-## 🧭 Explore the StarkNet ecosystem
+## 🧭 Explore the Starknet ecosystem
 
-Visit <a href="https://dappland.com"><b>Dappland</b></a> to explore the most influential dapps in the StarkNet ecosystem.
+Visit <a href="https://dappland.com"><b>Dappland</b></a> to explore the most influential dapps in the Starknet ecosystem.
 
-To use them, download <a href="https://github.com/argentlabs/argent-x"><b>Argent X</b></a>, the only open source wallet for StarkNet
+To use them, download <a href="https://github.com/argentlabs/argent-x"><b>Argent X</b></a>, the only open source wallet for Starknet
 
 <div align="center">
     <a href="https://chrome.google.com/webstore/detail/argent-x-starknet-wallet/dlcobpjiigpikoobohmabehhmhfoodbb">
@@ -24,7 +24,7 @@ To use them, download <a href="https://github.com/argentlabs/argent-x"><b>Argent
 
 ## ✅ Add your dapp to Dappland
 
-If you are building a dapp on StarkNet and want to showcase it in Dappland, you just need to submit a PR to this repository.
+If you are building a dapp on Starknet and want to showcase it in Dappland, you just need to submit a PR to this repository.
 
 Steps:
 
