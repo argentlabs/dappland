@@ -1,7 +1,7 @@
 {
   "name": "ViewBlock",
-  "description": "StarkNet Explorer with full decoding, advanced analytics and prime token/NFT support.",
-  "short_description": "StarkNet Block Explorer",
+  "description": "Starknet Explorer with full decoding, advanced analytics and prime token/NFT support.",
+  "short_description": "Starknet Block Explorer",
   "tags": ["Infrastructure"],
   "contracts": [],
   "goerliContracts": [],

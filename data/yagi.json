@@ -1,7 +1,7 @@
 {
   "name": "Yagi Finance",
-  "description": "Grow your Ethereum assets cheaply on the most sophisticated Layer 2. Yagi develops trustless ERC4626-compatible vaults that provide exposure to the leading StarkNet DeFi and GameFi protocols. We also expose automation infrastructure to other StarkNet developers in the form of our keeper network.",
-  "short_description": "The StarkNet Yield Aggregator",
+  "description": "Grow your Ethereum assets cheaply on the most sophisticated Layer 2. Yagi develops trustless ERC4626-compatible vaults that provide exposure to the leading Starknet DeFi and GameFi protocols. We also expose automation infrastructure to other Starknet developers in the form of our keeper network.",
+  "short_description": "The Starknet Yield Aggregator",
   "tags": ["DeFi", "Infrastructure"],
   "goerliContracts": [
     {
