@@ -104,7 +104,12 @@ const DappPageHeader = ({
               href={dappInfo.links?.website + "?utm_source=dappland" || "/"}
               passHref
             >
-              <Button variant="primary" className="mr-3 visit-button">
+              <Button
+                variant="primary"
+                className="mr-3 visit-button"
+                target="_blank"
+                rel="noopener"
+              >
                 Visit Dapp
               </Button>
             </Link>
