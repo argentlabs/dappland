@@ -117,7 +117,7 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
             version: "1.0",
           },
           types: {
-            StarknetDomain: [
+            StarkNetDomain: [
               { name: "name", type: "felt" },
               { name: "chainId", type: "felt" },
               { name: "version", type: "felt" },
@@ -187,7 +187,7 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
 
   return (
     <div>
-      <div className="xl:mt-0 mt-12">
+      <div className="mt-12 xl:mt-0">
         <h2 className="text-[28px] leading-[34px] font-bold mb-4">Rating</h2>
         <ConnectWalletModal
           isOpen={isRatingModalOpen}
