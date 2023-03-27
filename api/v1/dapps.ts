@@ -19,6 +19,7 @@ const dappsHandler: NextApiHandler = async (req, res) => {
   const { host, contractAddress } = req.query
 
   if (host) {
+    res.setHeader("Cache-Control", "s-maxage=86400")
     const result = hostSchema.safeParse({ host })
     if (!result.success) {
       return res.status(400).json({ error: result.error.errors[0].message })
@@ -32,6 +33,7 @@ const dappsHandler: NextApiHandler = async (req, res) => {
 
     return res.status(200).json(dapp)
   } else if (contractAddress) {
+    res.setHeader("Cache-Control", "s-maxage=86400")
     const result = contractAddressSchema.safeParse({ contractAddress })
     if (!result.success) {
       return res.status(400).json({ error: result.error.errors[0].message })
