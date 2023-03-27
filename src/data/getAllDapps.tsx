@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync } from "fs"
+import { readdirSync, readFileSync } from "node:fs"
 import path from "path"
 
 export const getAllDapps = async (): Promise<
