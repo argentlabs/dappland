@@ -2,7 +2,7 @@ import fs from "fs"
 import { readdir } from "fs/promises"
 import path from "path"
 
-export const getAllDapps = async () => {
+export const getAllDapps = async (): Promise<DappInfo[]> => {
   const dappsDirectory = path.join(process.cwd(), "data")
   const filenames = await readdir(dappsDirectory)
 
@@ -12,7 +12,7 @@ export const getAllDapps = async () => {
     })
     .map((filename) => filename.replace(/\.json$/, ""))
 
-  let dapps = []
+  const dapps: DappInfo[] = []
 
   for (const el of paths) {
     const dappFile = path.join(process.cwd(), "data", `${el}.json`)
