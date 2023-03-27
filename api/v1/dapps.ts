@@ -1,5 +1,5 @@
+import { readdirSync, readFileSync } from "fs"
 import type { NextApiHandler } from "next"
-import { readdirSync, readFileSync } from "node:fs"
 import path from "path"
 import { z } from "zod"
 
