@@ -1,0 +1,34 @@
+{
+  "name": "Herodotus",
+  "description": "Herodotus aims to provide smart contracts with synchronous access to on-chain data coming from other Ethereum layers. Our stack combines storage proofs with zero-knowledge proofs and allows the reading and processing of on-chain data (both historical and current). To keep it short, our tech allows developers to build contracts that are able to read L1 State on L2s, L2 State on L1s, and L2 State on L2s fully synchronously, removing the need for asynchronous messages being sent back and forth.",
+  "short_description": "Storage Proofs API",
+  "tags": ["Infrastructure"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://herodotus.dev/",
+    "careers": "mailto:marcello@herodotus.dev",
+    "twitter": "https://twitter.com/HerodotusDev",
+    "telegram": "",
+    "discord": "https://discord.gg/t6p4qs4PBw",
+    "github": "https://github.com/HerodotusDev",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "HerodotusDev",
+  "teamInfo": {
+    "founded": "2022-08-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/herodotus/herodotus-logo.png",
+    "bannerUrl": "/dapps/herodotus/herodotus-banner.png",
+    "previewUrl": "/dapps/herodotus/herodotus-preview.png",
+    "gallery": []
+  }
+}
