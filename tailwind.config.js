@@ -31,10 +31,12 @@ module.exports = {
       "border-grey": "#ededed",
       "dark-charcoal": "#5c5b59",
       "accessible-green": "#02A697",
+      "tooltip-dark": "#333333",
+      "hero-dark": "#1F1F1F",
     },
     extend: {
       gridTemplateColumns: {
-        "dapp-header": "2fr 1fr",
+        "dapp-header": "3fr 1fr 1fr",
       },
     },
   },

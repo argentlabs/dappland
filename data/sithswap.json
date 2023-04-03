@@ -1,7 +1,7 @@
 {
   "name": "SithSwap",
-  "description": "SithSwap is an advanced, composable and permissionless stableswap protocol built for StarkNet, where users and contracts can trade uncorrelated and correlated assets with variable fees and extremely low slippage. SithSwap offers an advanced and all-encompassing rewards system where users and projects can sponsor and earn weekly rewards to drive volume and liquidity to the AMM",
-  "short_description": "Powerful Stableswap and AMM Aggregator on StarkNet",
+  "description": "SithSwap is an advanced, composable and permissionless stableswap protocol built for Starknet, where users and contracts can trade uncorrelated and correlated assets with variable fees and extremely low slippage. SithSwap offers an advanced and all-encompassing rewards system where users and projects can sponsor and earn weekly rewards to drive volume and liquidity to the AMM",
+  "short_description": "Powerful Stableswap and AMM Aggregator on Starknet",
   "tags": ["DeFi"],
   "contracts": [],
   "goerliContracts": [],
@@ -11,6 +11,7 @@
       "url": "https://gateway.pinata.cloud/ipfs/QmVazibGDwm8UsZL466NnW1UDZ4dWZ3oSVyuqZQ71TYhdP"
     }
   ],
+  "verified": false,
   "dotw": false,
   "links": {
     "website": "https://sithswap.com/",
@@ -36,7 +37,7 @@
     "gallery": [
       {
         "url": "/dapps/sithswap/Screenshot_from_2022-10-06_15-32-26.png",
-        "description": "SithSwap is an advanced, composable and permissionless stableswap protocol built for StarkNet"
+        "description": "SithSwap is an advanced, composable and permissionless stableswap protocol built for Starknet"
       },
       {
         "url": "/dapps/sithswap/Screenshot_from_2022-10-06_15-33-01.png",

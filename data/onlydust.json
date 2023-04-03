@@ -1,11 +1,12 @@
 {
   "name": "Only Dust",
-  "description": "Contribute to the best projects within the StarkNet Ecosystem\nWork on the best open-source repo, gain credibility, meet amazing teams, and get paid in TOKENS or USDC.",
-  "short_description": "Contribute to the best projects on StarkNet",
+  "description": "Contribute to the best projects within the Starknet Ecosystem\nWork on the best open-source repo, gain credibility, meet amazing teams, and get paid in TOKENS or USDC.",
+  "short_description": "Contribute to the best projects on Starknet",
   "tags": ["Social"],
   "contracts": [],
   "goerliContracts": [],
   "audits": [],
+  "verified": false,
   "dotw": false,
   "links": {
     "website": "https://www.onlydust.xyz/",

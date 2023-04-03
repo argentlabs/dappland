@@ -1,0 +1,60 @@
+{
+  "name": "10KSwap",
+  "description": "10KSwap, being built on Starknet, is an AMM protocol that advances with Ethereum. 10K aims to revolutionize the performance of the AMM protocol by leveraging the rollup feature, bringing lower fees, less friction, and ultimately better liquidity to the L2 world and advance DeFi adoption.",
+  "short_description": "A Layer2 AMM protocol",
+  "tags": ["DeFi", "Infrastructure"],
+  "contracts": [
+    {
+      "name": "Router",
+      "address": "0x07a6f98c03379b9513ca84cca1373ff452a7462a3b61598f0af5bb27ad7f76d1"
+    },
+    {
+      "name": "Factory",
+      "address": "0x01c0a36e26a8f822e0d81f20a5a562b16a8f8a3dfd99801367dd2aea8f1a87a2"
+    },
+    {
+      "name": "PairClassHash",
+      "address": "0x231adde42526bad434ca2eb983efdd64472638702f87f97e6e3c084f264e06f"
+    }
+  ],
+  "goerliContracts": [
+    {
+      "name": "Router",
+      "address": "0x00975910cd99bc56bd289eaaa5cee6cd557f0ddafdb2ce6ebea15b158eb2c664"
+    },
+    {
+      "name": "Factory",
+      "address": "0x06c31f39524388c982045988de3788530605ed08b10389def2e7b1dd09d19308"
+    },
+    {
+      "name": "PairClassHash",
+      "address": "0x231adde42526bad434ca2eb983efdd64472638702f87f97e6e3c084f264e06f"
+    }
+  ],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://10kswap.com/",
+    "careers": "",
+    "twitter": "https://twitter.com/10KSwap",
+    "telegram": "",
+    "discord": "https://discord.com/invite/T77yphUPB6",
+    "github": "https://github.com/10k-swap",
+    "youtube": "",
+    "medium": "",
+    "mirror": "https://mirror.xyz/0xbf5808047D1e968D6A68580C3f61262A95eCb7Ae"
+  },
+  "twitterName": "10KSwap",
+  "teamInfo": {
+    "founded": "2022-07-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/10kswap/dapp-icon-10kswap.png",
+    "bannerUrl": "/dapps/10kswap/dapp-header-10kswap.png",
+    "previewUrl": "/dapps/10kswap/dapp-preview-10kswap.png",
+    "gallery": []
+  }
+}

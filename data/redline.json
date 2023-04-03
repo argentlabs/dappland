@@ -1,6 +1,6 @@
 {
   "name": "Redline",
-  "description": "Redline is a racing management game that runs on the StarkNet blockchain. The game revolves around collecting NFT parts and strategically building your own NFT robots. To win race prizes your robots must take maximum advantage of the terrain and weather conditions. The game is fully on chain so the distribution of prizes is trustless and transparent.",
+  "description": "Redline is a racing management game that runs on the Starknet blockchain. The game revolves around collecting NFT parts and strategically building your own NFT robots. To win race prizes your robots must take maximum advantage of the terrain and weather conditions. The game is fully on chain so the distribution of prizes is trustless and transparent.",
   "short_description": "NFT robots racing",
   "tags": ["Games", "NFTs"],
   "contracts": [],
@@ -11,6 +11,7 @@
     }
   ],
   "audits": [],
+  "verified": false,
   "dotw": false,
   "links": {
     "website": "https://redline.game/",

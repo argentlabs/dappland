@@ -1,5 +1,7 @@
+import { useCategoryStore } from "../../hooks/useCategoryStore"
 import Footer from "./Footer"
 import Header from "./Header"
+import HomeHeader from "./HomeHeader"
 import Head from "next/head"
 import styled from "styled-components"
 
@@ -15,6 +17,7 @@ interface LayoutProps {
   title?: string
   description?: string
   image?: string
+  isHome?: boolean
 }
 
 export const Layout = ({
@@ -22,21 +25,24 @@ export const Layout = ({
   title,
   description,
   image,
+  isHome,
 }: LayoutProps) => {
+  const selectedFilters = useCategoryStore((state) => state.selectedFilters)
+  const selectedRatings = useCategoryStore((state) => state.selectedRatings)
   return (
     <>
       <Head>
         <title>
           {title
-            ? `${title} on Dappland – The best dapps on StarkNet`
-            : `Dappland | The best dapps on StarkNet`}
+            ? `${title} on Dappland – The best dapps on Starknet`
+            : `Dappland | The best dapps on Starknet`}
         </title>
         <meta
           name="description"
           content={
             description
               ? `${description}`
-              : `Dappland | The best dapps on StarkNet`
+              : `Dappland | The best dapps on Starknet`
           }
         />
 
@@ -45,12 +51,15 @@ export const Layout = ({
           property="og:title"
           content={
             title
-              ? `Discover ${title} on Dappland – The best dapps on StarkNet`
-              : `Dappland | The best dapps on StarkNet`
+              ? `Discover ${title} on Dappland – The best dapps on Starknet`
+              : `Dappland | The best dapps on Starknet`
           }
         />
         {description && <meta name="og:description" content={description} />}
-        <meta name="og:image" content={image ?? "https://www.dappland.com/share-preview.png"} />
+        <meta
+          name="og:image"
+          content={image ?? "https://www.dappland.com/share-preview.png"}
+        />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -58,8 +67,8 @@ export const Layout = ({
           property="twitter:title"
           content={
             title
-              ? `Discover ${title} on Dappland – The best dapps on StarkNet`
-              : `Dappland | The best dapps on StarkNet`
+              ? `Discover ${title} on Dappland – The best dapps on Starknet`
+              : `Dappland | The best dapps on Starknet`
           }
         />
         {description && (
@@ -88,7 +97,11 @@ export const Layout = ({
 
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <Header />
+      {!isHome || selectedFilters.length || selectedRatings.length ? (
+        <Header />
+      ) : (
+        <HomeHeader />
+      )}
       <MainContainer>{children}</MainContainer>
       <Footer />
     </>

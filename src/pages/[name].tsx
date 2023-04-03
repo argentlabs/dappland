@@ -1,13 +1,16 @@
 // next page with ssg for every file in `data` folder
 import arrow from "../assets/icons/arrowLeft.svg"
 import Layout from "../components/Layout"
+import { getRatingForDapp } from "../helpers/rating"
 import DappPageDetails from "../sections/DappPage/DappPageDetails"
 import DappPageHeader from "../sections/DappPage/DappPageHeader"
 import DappPageTwitter from "../sections/DappPage/DappPageTwitter"
+import NFTPageStats from "../sections/NFTPage/NFTPageStats"
 import { readdir, readFile } from "fs/promises"
 import { GetStaticPaths, GetStaticProps, NextPage } from "next"
 import Image from "next/image"
 import Router from "next/router"
+import { useRouter } from "next/router"
 import path from "path"
 import { useEffect, useState } from "react"
 import styled from "styled-components"
@@ -44,10 +47,17 @@ const SwiperContainer = styled.div`
 interface DappPageProps {
   dappInfo: DappInfo
   twitterPosts: TwitterData
+  nftData: NFTData | null
 }
 
-const DappPage: NextPage<DappPageProps> = ({ dappInfo, twitterPosts }) => {
+const DappPage: NextPage<DappPageProps> = ({
+  dappInfo,
+  twitterPosts,
+  nftData,
+}) => {
   const [showPrev, setShowPrev] = useState(false)
+  const router = useRouter()
+  const name = (router?.query?.name as string) || ""
   useEffect(() => {
     // @ts-ignore
     import("swiper/css")
@@ -91,7 +101,7 @@ const DappPage: NextPage<DappPageProps> = ({ dappInfo, twitterPosts }) => {
         </div>
       )}
       <div className="px-4 md:mx-[10vw] xl:mx-[15vw] 2xl:mx-[20vw] max-w-[1200px]">
-        <DappPageHeader dappInfo={dappInfo} />
+        <DappPageHeader dappInfo={dappInfo} dappKey={name} />
       </div>
       {((dappInfo.media?.gallery && dappInfo.media.gallery.length > 0) ||
         dappInfo.media.videoUrl) && (
@@ -115,6 +125,7 @@ const DappPage: NextPage<DappPageProps> = ({ dappInfo, twitterPosts }) => {
                       muted
                       loop
                       playsInline
+                      controls
                     />
                   </SwiperSlide>
                 )}
@@ -132,6 +143,12 @@ const DappPage: NextPage<DappPageProps> = ({ dappInfo, twitterPosts }) => {
         </div>
       )}
       <div className="px-4 md:mx-[10vw] xl:mx-[15vw] 2xl:mx-[20vw] mb-16 lg:mb-32 max-w-[1200px]">
+        <NFTPageStats
+          data={nftData}
+          nftCollectionPreview={dappInfo?.nft?.collectionPreview}
+          nftCollectionLink={dappInfo?.nft?.collectionLink}
+          nftCollectionName={dappInfo?.nft?.collectionName}
+        />
         <DappPageDetails dappInfo={dappInfo} />
         <DappPageTwitter dappInfo={dappInfo} twitterPosts={twitterPosts} />
       </div>
@@ -153,6 +170,12 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
 
   const dappInfo: DappInfo = JSON.parse(content)
 
+  const nftData =
+    dappInfo?.nft && dappInfo?.nft?.collectionContract
+      ? await fetch(
+          `https://api.aspect.co/api/v0/contract/${dappInfo.nft.collectionContract}`,
+        ).then((res) => res.json())
+      : null
   const twitterName =
     dappInfo.twitterName ||
     (dappInfo.links?.twitter.length > 0 &&
@@ -184,7 +207,9 @@ export const getStaticProps: GetStaticProps<DappPageProps> = async (
     props: {
       dappInfo,
       twitterPosts,
+      nftData,
     },
+    revalidate: 10,
   }
 }
 

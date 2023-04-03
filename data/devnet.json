@@ -1,0 +1,40 @@
+{
+  "name": "Starknet Devnet",
+  "description": "To speed up the testing and interactions of contracts with Starknet by using Starknet Devnet. It runs a local network aimed to mimic the official Starknet testnet.",
+  "short_description": "Ganache for Starknet",
+  "tags": ["Infrastructure"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://shard-labs.github.io/starknet-devnet/",
+    "careers": "https://www.spaceshard.io/contact-us",
+    "twitter": "https://twitter.com/0xSpaceShard",
+    "telegram": "",
+    "discord": "",
+    "github": "https://github.com/Shard-Labs/starknet-devnet",
+    "youtube": "",
+    "medium": "https://medium.com/spaceshard",
+    "mirror": ""
+  },
+  "twitterName": "0xSpaceShard",
+  "teamInfo": {
+    "founded": "2021-04-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/spaceshard/320x320-devnet.png",
+    "bannerUrl": "/dapps/spaceshard/1920x400-devnet.png",
+    "previewUrl": "/dapps/spaceshard/700x400-devnet.png",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "/dapps/spaceshard/Starknet-Devnet-tutorial.png",
+        "description": "How to set up Starknet Devnet on Windows!"
+      }
+    ]
+  }
+}

@@ -1,11 +1,12 @@
 {
   "name": "StarkBoard",
-  "description": "StarkBoard is the go-to dashboard tracking StarkNet related metrics. It's also the best way to keep up with the whole ecosystem.",
+  "description": "StarkBoard is the go-to dashboard tracking Starknet related metrics. It's also the best way to keep up with the whole ecosystem.",
   "short_description": "Analytics Data Hub",
   "tags": ["Social", "DAOs", "Infrastructure"],
   "contracts": [],
   "goerliContracts": [],
   "audits": [],
+  "verified": false,
   "dotw": false,
   "links": {
     "website": "https://starkboard.io/",
@@ -31,15 +32,15 @@
     "gallery": [
       {
         "url": "/dapps/starkboard/starkboard-01.png",
-        "description": "StarkNet total value locked (TVL) on Starkboard"
+        "description": "Starknet total value locked (TVL) on Starkboard"
       },
       {
         "url": "/dapps/starkboard/starkboard-02.png",
-        "description": "StarkNet total wallets evolution on Starkboard"
+        "description": "Starknet total wallets evolution on Starkboard"
       },
       {
         "url": "/dapps/starkboard/starkboard-03.png",
-        "description": "StarkNet ecosystem on Starkboard"
+        "description": "Starknet ecosystem on Starkboard"
       }
     ]
   }

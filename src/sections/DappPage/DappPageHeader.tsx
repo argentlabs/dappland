@@ -8,6 +8,7 @@ import {
 } from "../../components/Button/Download"
 import SocialLink from "../../components/SocialLink/SocialLink"
 import Tag from "../../components/Tag/Tag"
+import DappPageRating from "./DappPageRating"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
@@ -35,7 +36,13 @@ const linkOrder = [
   "mirror",
 ] as unknown as Array<keyof Links>
 
-const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
+const DappPageHeader = ({
+  dappInfo,
+  dappKey,
+}: {
+  dappInfo: DappInfo
+  dappKey: string
+}) => {
   const [showArgentXInstallGuide, setArgentXInstallGuide] = useState(false)
   useEffect(() => {
     const argentXInstalled = (window as any).starknet?.id === "argentX"
@@ -97,7 +104,12 @@ const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
               href={dappInfo.links?.website + "?utm_source=dappland" || "/"}
               passHref
             >
-              <Button variant="primary" className="mr-3 visit-button">
+              <Button
+                variant="primary"
+                className="mr-3 visit-button"
+                target="_blank"
+                rel="noopener"
+              >
                 Visit Dapp
               </Button>
             </Link>
@@ -139,6 +151,7 @@ const DappPageHeader = ({ dappInfo }: { dappInfo: DappInfo }) => {
           </div>
         </div>
       </div>
+      <DappPageRating dappKey={dappKey} />
     </section>
   )
 }

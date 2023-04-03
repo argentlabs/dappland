@@ -11,7 +11,7 @@
     "Social",
     "DAOs",
     "Infrastructure"
-  ], //Remove all that don't apply
+  ], // Remove all that don't apply. Please delete this and all other comments.
   "contracts": [
     {
       "name": "<Name of Mainnet contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
@@ -23,16 +23,14 @@
     }
   ],
   "goerliContracts": [
-    [
-      {
-        "name": "<Name of Goerli contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
-        "address": "<Address of Goerli contract 1>"
-      },
-      {
-        "name": "<Name of Goerli contract 2 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
-        "address": "<Address of Goerli contract 2>"
-      }
-    ]
+    {
+      "name": "<Name of Goerli contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
+      "address": "<Address of Goerli contract 1>"
+    },
+    {
+      "name": "<Name of Goerli contract 2 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
+      "address": "<Address of Goerli contract 2>"
+    }
   ],
   "audits": [
     {
@@ -40,6 +38,7 @@
       "url": "URL to access the security audit. Only audits that are publicly available will be considered to be included in Dappland. If they're private, please don't include them in the 'audits' array>"
     }
   ],
+  "verified": false, // change to true if your contracts are verified on StarkScan
   "dotw": false, //leave 'false'
   "links": {
     "website": "<URL of the dapp's website. Leave empty if non-existent>",
@@ -54,8 +53,9 @@
   },
   "twitterName": "Twitter username. Leave empty if none",
   "teamInfo": {
+    "contactEmail": "<Email address>", // For Argent to be able to contact you. Will not be published on Dappland.
     "founded": "Founding date of the project. EXAMPLE: 2022-05-24T00:00:00.000Z",
-    "anonymous": false // If at least one of the founders has a public profile with their real name linked to the project, set this to true.
+    "anonymous": true // If at least one of the founders has a public profile with their real name linked to the project, set this to true.
   },
   "tokens": [
     {
@@ -63,6 +63,21 @@
       "symbol": "e.g. ETH"
     }
   ],
+  "nft": {
+    "collectionContract": "<Address of the NFT contract you wish to showcase>",
+    "collectionLink": "<https url for link to view full collection>",
+    "collectionName": "<Name of NFT collection>",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/yourdappname/collection-nft-01.[png, jpg, webp or svg]",
+        "name": "<NFT name and/or number>"
+      },
+      {
+        "image_url": "/dapps/yourdappname/collection-nft-02.[png, jpg, webp or svg]",
+        "name": "<NFT name and/or number>"
+      }
+    ]
+  },
   "media": {
     "logoUrl": "/dapps/yourdappname/yourdappname-logo.[png, jpg or webp] Resolution: 320 × 320 pixels>",
     "bannerUrl": "/dapps/yourdappname/yourdappname-banner.[png, jpg or webp] Resolution: 1920 × 400 pixels>",

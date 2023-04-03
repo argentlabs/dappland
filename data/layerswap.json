@@ -1,11 +1,12 @@
 {
   "name": "Layerswap",
-  "description": "Layerswap is the ultimate L2 gateway - offering instant and gasless on and off-ramp transactions to L2s.\nYou can use Layerswap to instantly transfer ETH, USDC, and other tokens from a centralized exchange like Coinbase, Binance, FTX.COM, Kraken, and others to all major L2s, including StarkNet, zkSync, Loopring, ImmutableX, Arbitrum, and Optimism.",
+  "description": "Layerswap is the ultimate L2 gateway - offering instant and gasless on and off-ramp transactions to L2s.\nYou can use Layerswap to instantly transfer ETH, USDC, and other tokens from a centralized exchange like Coinbase, Binance, FTX.COM, Kraken, and others to all major L2s, including Starknet, zkSync, Loopring, ImmutableX, Arbitrum, and Optimism.",
   "short_description": "CEX <> L2 Gateway",
   "tags": ["Onramps", "Bridges"],
   "contracts": [],
   "goerliContracts": [],
   "audits": [],
+  "verified": false,
   "dotw": false,
   "links": {
     "website": "https://layerswap.io/",
