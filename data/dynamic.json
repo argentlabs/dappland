@@ -5,43 +5,30 @@
   "tags": [
     "Infrastructure"
   ],
-  "contracts": [
-  ],
-  "goerliContracts": [
-    [
-    ]
-  ],
-  "audits": [
-  ],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
   "dotw": false,
   "links": {
     "website": "https://www.dynamic.xyz/",
     "careers": "https://www.dynamic.xyz/careers",
     "twitter": "https://twitter.com/dynamic_xyz",
-    "telegram": "",
-    "discord": "",
-    "github": "https://github.com/dynamic-labs",
-    "youtube": "",
-    "medium": "",
-    "mirror": ""
+    "github": "https://github.com/dynamic-labs"
   },
   "twitterName": "dynamic_xyz",
   "teamInfo": {
+    "contactEmail": "itai@dynamic.xyz",
     "founded": "2021",
     "anonymous": false
   },
-  "tokens": [
-    {
-      "address": "",
-      "symbol": ""
-    }
-  ],
+  "tokens": [],
+  "nft": {},
   "media": {
     "logoUrl": "/dapps/dynamic/dapp-logo.jpg",
     "bannerUrl": "/dapps/dynamic/dapp-header.jpg",
     "previewUrl": "/dapps/dynamic/dapp-preview.jpg",
     "videoUrl": "https://assets-global.website-files.com/626692727bba3f384e008e8a/63404e1add1499be9993648b_V6-Homepage-transcode.mp4",
-    "gallery": [
-    ]
+    "gallery": []
   }
 }
