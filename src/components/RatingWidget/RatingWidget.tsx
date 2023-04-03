@@ -12,7 +12,7 @@ import { ReactElement, useEffect, useState } from "react"
 const RatingWidget = (): ReactElement => {
   const [dappName, setDappName] = useState("")
   const { ratingData, isLoading } = useRatingData(dappName)
-  const { currentTheme } = useDarkMode()
+  const { currentTheme, setTheme } = useDarkMode()
   const totalStars = 5
   const activeStars = ratingData ? ratingData.averageRating : 0
   const url = `https://www.dappland.com/${dappName}`
@@ -28,6 +28,10 @@ const RatingWidget = (): ReactElement => {
     const name = params.get("dappname")
     if (name) {
       setDappName(name.toLowerCase())
+    }
+    const userTheme = params.get("theme")
+    if (userTheme) {
+      setTheme(userTheme)
     }
   }, [])
 
