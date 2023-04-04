@@ -1,6 +1,6 @@
 {
-  "name": "Empiric Network",
-  "description": "Empiric is the leading oracle on Starknet. Live with 20+ price feeds - powered by data sources that send their proprietary market data directly on-chain, including Alameda Research, Jane Street, Gemini, & more. Empiric's robust feeds empower leading protocols like zkLend, Nostra, Serity & CurveZero to access data that is as verifiable, transparent & secure as the smart contracts themselves.",
+  "name": "Pragma",
+  "description": "Empiric is the leading oracle on Starknet. Live with 20+ price feeds - powered by data sources that send their proprietary market data directly on-chain, including Alameda Research, Jane Street, Gemini, & more. Pragma's robust feeds empower leading protocols like zkLend, Nostra, Serity & CurveZero to access data that is as verifiable, transparent & secure as the smart contracts themselves.",
   "short_description": "Decentralized & composable data infrastructure",
   "tags": ["Infrastructure"],
   "contracts": [],
@@ -22,17 +22,17 @@
   "verified": true,
   "dotw": false,
   "links": {
-    "website": "https://empiric.network/",
-    "careers": "https://empiric.network/about/",
-    "twitter": "https://twitter.com/EmpiricNetwork",
+    "website": "https://pragmaoracle.com/",
+    "careers": "https://pragmaoracle.com/about/",
+    "twitter": "https://twitter.com/PragmaOracle",
     "telegram": "",
     "discord": "https://discord.gg/N7sM7VzfJB",
-    "github": "https://github.com/42labs",
+    "github": "https://github.com/AstralyLabs/Pragma",
     "youtube": "",
-    "medium": "https://medium.com/@EmpiricNetwork",
+    "medium": "",
     "mirror": ""
   },
-  "twitterName": "EmpiricNetwork",
+  "twitterName": "Pragma",
   "teamInfo": {
     "founded": "2022-04-01T00:00:00.000Z",
     "anonymous": false
