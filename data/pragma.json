@@ -39,9 +39,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "/dapps/empiricnetwork/dapp-icon-empiric.png",
-    "bannerUrl": "/dapps/empiricnetwork/dapp-header-empiric.jpg",
-    "previewUrl": "/dapps/empiricnetwork/dapp-preview-empiric.jpg",
+    "logoUrl": "/dapps/pragma/dapp-icon-pragma.png",
+    "bannerUrl": "/dapps/pragma/dapp-header-pragma.jpg",
+    "previewUrl": "/dapps/pragma/dapp-preview-pragma.jpg",
     "gallery": []
   }
 }
