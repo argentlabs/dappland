@@ -40,8 +40,8 @@
   "tokens": [],
   "media": {
     "logoUrl": "/dapps/pragma/dapp-icon-pragma.png",
-    "bannerUrl": "/dapps/pragma/dapp-header-pragma.jpg",
-    "previewUrl": "/dapps/pragma/dapp-preview-pragma.jpg",
+    "bannerUrl": "/dapps/pragma/dapp-header-pragma.png",
+    "previewUrl": "/dapps/pragma/dapp-preview-pragma.png",
     "gallery": []
   }
 }
