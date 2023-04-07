@@ -1,86 +1,61 @@
 {
-  "name": "Carmine Finance",
-  "description": "<100 to 500 characters description of your project>",
-  "short_description": "crypto options",
+  "name": "Carmine Options AMM",
+  "description": "Carmine Finance is revolutionizing the way stakers, traders, and crypto investors approach risk management. Our risk platform offers a comprehensive suite of options and products that enable users to hedge and insure their portfolios across multiple chains.",
+  "short_description": "DeFi Options",
   "tags": [
     "DeFi"
   ],
   "contracts": [
     {
-      "name": "<Name of Mainnet contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
-      "address": "<Address of Mainnet contract 1>"
+      "name": "Carmine Options AMM",
+      "address": "0x76dbabc4293db346b0a56b29b6ea9fe18e93742c73f12348c8747ecfc1050aa"
     },
     {
-      "name": "<Name of Mainnet contract 2 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
-      "address": "<Address of Mainnet contract 2>"
+      "name": "Carmine Governance",
+      "address": "0x1405ab78ab6ec90fba09e6116f373cda53b0ba557789a4578d8c1ec374ba0f"
     }
   ],
   "goerliContracts": [
     {
-      "name": "<Name of Goerli contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
-      "address": "<Address of Goerli contract 1>"
-    },
-    {
-      "name": "<Name of Goerli contract 2 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
-      "address": "<Address of Goerli contract 2>"
+      "name": "Carmine Options AMM",
+      "address": "0x042a7d485171a01b8c38b6b37e0092f0f096e9d3f945c50c77799171916f5a54"
     }
   ],
   "audits": [
     {
-      "name": "<Name of the publicly available Security Audit. Remove entry from 'audits' array if non-existent. Add more entries to the 'audits' array if relevant>",
-      "url": "URL to access the security audit. Only audits that are publicly available will be considered to be included in Dappland. If they're private, please don't include them in the 'audits' array>"
+      "name": "Hack A Chain"
     }
   ],
-  "verified": false, // change to true if your contracts are verified on StarkScan
+  "verified": false,
   "dotw": false,
   "links": {
-    "website": "<URL of the dapp's website. Leave empty if non-existent>",
-    "careers": "<URL of the dapp's carreer page. Can also be 'mailto:example@mydapp.com'. Leave empty if non-existent>",
-    "twitter": "<URL of the dapp's Twitter account>. Leave empty if non-existent",
-    "telegram": "<URL of the dapp's Telegram>. Leave empty if non-existent",
-    "discord": "<URL of the dapp's Discord invite>. Leave empty if non-existent",
-    "github": "<URL of the dapp's Github>. Leave empty if non-existent",
-    "youtube": "<URL of the dapp's Youtube channel>. Leave empty if non-existent",
-    "medium": "<URL of the dapp's Medium>. Leave empty if non-existent",
-    "mirror": "<URL of the dapp's Mirror page>. Leave empty if non-existent"
+    "website": "https://carmine.finance/",
+    "careers": "https://carmine.finance/#career",
+    "twitter": "https://twitter.com/CarmineOptions",
+    "telegram": "",
+    "discord": "https://discord.gg/6J6NpPxmp6",
+    "github": "https://github.com/CarmineOptions",
+    "youtube": "",
+    "medium": "https://medium.com/@carminefinanceinfo",
+    "mirror": ""
   },
   "twitterName": "@CarmineOptions",
   "teamInfo": {
-    "contactEmail": "<Email address>", // For Argent to be able to contact you. Will not be published on Dappland.
-    "founded": "Founding date of the project. EXAMPLE: 2022-05-24T00:00:00.000Z",
-    "anonymous": true // If at least one of the founders has a public profile with their real name linked to the project, set this to true.
+    "contactEmail": "business@carmine.finance",
+    "founded": "2022-04-01T00:14:30.000Z",
+    "anonymous": true
   },
   "tokens": [
     {
-      "address": "<Address of any ERC-20 Mainnet tokens created by the dapp>",
-      "symbol": "e.g. ETH"
+      "address": "0x3c0286e9e428a130ae7fbbe911b794e8a829c367dd788e7cfe3efb0367548fa",
+      "symbol": "CARM"
     }
   ],
-  "nft": {
-    "collectionContract": "<Address of the NFT contract you wish to showcase>",
-    "collectionLink": "<https url for link to view full collection>",
-    "collectionName": "<Name of NFT collection>",
-    "collectionPreview": [
-      {
-        "image_url": "/dapps/yourdappname/collection-nft-01.[png, jpg, webp or svg]",
-        "name": "<NFT name and/or number>"
-      },
-      {
-        "image_url": "/dapps/yourdappname/collection-nft-02.[png, jpg, webp or svg]",
-        "name": "<NFT name and/or number>"
-      }
-    ]
-  },
   "media": {
     "logoUrl": "/dapps/carminefinance/carmine-logo.webp",
     "bannerUrl": "/dapps/carminefinance/carmine-banner.webp",
     "previewUrl": "/dapps/carminefinance/carmine-preview-700x400.webp",
-    "videoUrl": "<URL for a video of the dapp (hosted externally)>",
-    "gallery": [
-      {
-        "url": "<URL for a promotional image or screenshots of the dapp (hosted externally) Resolution: at least 700 × 400. Add more entries to the 'gallery' array if necessary>",
-        "description": "<Desciption for the promotional image"
-      }
-    ]
+    "videoUrl": "",
+    "gallery": []
   }
 }
