@@ -1,22 +1,27 @@
 {
   "name": "Pragma",
-  "description": "Empiric is the leading oracle on Starknet. Live with 20+ price feeds - powered by data sources that send their proprietary market data directly on-chain, including Alameda Research, Jane Street, Gemini, & more. Pragma's robust feeds empower leading protocols like zkLend, Nostra, Serity & CurveZero to access data that is as verifiable, transparent & secure as the smart contracts themselves.",
+  "description": "Pragma is the leading oracle on Starknet. Live with 20+ price feeds - powered by data sources that send their proprietary market data directly on-chain, including Alameda Research, Jane Street, Gemini, & more. Pragma's robust feeds empower leading protocols like zkLend, Nostra, Serity & CurveZero to access data that is as verifiable, transparent & secure as the smart contracts themselves.",
   "short_description": "Decentralized & composable data infrastructure",
   "tags": ["Infrastructure"],
-  "contracts": [],
+  "contracts": [
+    {
+      "name": "PublisherRegistry",
+      "address": "0x4746485fa57b49dc992c35d7f12054b5a7d24b0e187021cd8f40bc2517700bc"
+    },
+    {
+      "name": "OracleProxy",
+      "address": "0x0346c57f094d641ad94e43468628d8e9c574dcb2803ec372576ccc60a40be2c4"
+    }
+  ],
   "goerliContracts": [
     {
       "name": "PublisherRegistry",
-      "address": "0x0743e8140a56d5ee9ed08eb77a92bcbcf8257da34ab2a2ee93110709e61ab11a"
+      "address": "0x5cb0afa98435de7da6da7fad3b40c9d17e747a57bca28feb1c41f05e391f54e"
     },
     {
-      "name": "OracleController",
-      "address": "0x012fadd18ec1a23a160cc46981400160fbf4a7a5eed156c4669e39807265bcd4"
+      "name": "OracleProxy",
+      "address": "0x446812bac98c08190dee8967180f4e3cdcd1db9373ca269904acb17f67f7093"
     },
-    {
-      "name": "OracleImplementation (primary)",
-      "address": "0x05a88457f9292d0596090300713e80724631024e7a92989302d458271c98cad4"
-    }
   ],
   "audits": [],
   "verified": true,
