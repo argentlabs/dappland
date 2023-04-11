@@ -1,5 +1,5 @@
-import starEmpty from "../../assets/icons/empty_star.svg"
-import star from "../../assets/icons/star.svg"
+import starEmpty from "../../assets/icons/starEmpty.svg"
+import starFilled from "../../assets/icons/starFilled.svg"
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal"
 import { getRatingForDapp, getRatingsFromUser } from "../../helpers/rating"
 import { useWalletStore } from "../../hooks/useWalletStore"
@@ -117,6 +117,7 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
             version: "1.0",
           },
           types: {
+            // IMPORTANT: Do not change StarkNetDomain to StarknetDomain
             StarkNetDomain: [
               { name: "name", type: "felt" },
               { name: "chainId", type: "felt" },
@@ -187,7 +188,7 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
 
   return (
     <div>
-      <div className="xl:mt-0 mt-12">
+      <div className="mt-12 xl:mt-0">
         <h2 className="text-[28px] leading-[34px] font-bold mb-4">Rating</h2>
         <ConnectWalletModal
           isOpen={isRatingModalOpen}
@@ -242,10 +243,10 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
                 src={
                   hoverIndex !== null
                     ? hoverIndex >= val
-                      ? star
+                      ? starFilled
                       : starEmpty
                     : currentRating !== null && currentRating >= val
-                    ? star
+                    ? starFilled
                     : starEmpty
                 }
                 className="z-[1]"
