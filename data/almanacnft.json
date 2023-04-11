@@ -1,6 +1,6 @@
 {
   "name": "AlmanacNFT",
-  "description": "One the very first NFT projects to launch on StarkNet, AlmanacNFT is  collection of unique crypto trading days: Just pick a market, pick a date, and mint a day in crypto.",
+  "description": "One the very first NFT projects to launch on StarkNet, AlmanacNFT is a collection of unique crypto trading days: Just pick a market, pick a date, and mint a day in crypto.",
   "short_description": "Pick a market, pick a date, and mint a day in crypto",
   "tags": ["NFTs"],
   "contracts": [
@@ -9,11 +9,12 @@
       "address": "0x07d4dc2bf13ede97b9e458dc401d4ff6dd386a02049de879ebe637af8299f91d"
     }
   ],
-  "goerliContracts": [[]],
+  "goerliContracts": [],
   "audits": [],
+  "verified": true,
   "dotw": false,
   "links": {
-    "website": "https://www.almanacnft.xyz/#/",
+    "website": "https://www.almanacnft.xyz/",
     "careers": "",
     "twitter": "https://twitter.com/almanacNFT",
     "telegram": "",
@@ -37,15 +38,15 @@
     "gallery": [
       {
         "url": "https://spaces.irreparabile.xyz/almanac/starknet/image/00053.png",
-        "description": "AlmanacNFT #53: SHIB/USDT on Wednesday, October 27th 2021"
+        "description": "AlmanacNFT #53: SHIB-USDT on Wednesday, October 27th 2021"
       },
       {
         "url": "https://spaces.irreparabile.xyz/almanac/starknet/image/00107.png",
-        "description": "AlmanacNFT #107: ETH/USD on Thursday, March 12th 2020"
+        "description": "AlmanacNFT #107: ETH-USD on Thursday, March 12th 2020"
       },
       {
         "url": "https://spaces.irreparabile.xyz/almanac/starknet/image/00070.png",
-        "description": "AlmanacNFT #70: LUNA/USDT on Wednesday, May 11th 2022"
+        "description": "AlmanacNFT #70: LUNA-USDT on Wednesday, May 11th 2022"
       }
     ]
   }
