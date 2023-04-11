@@ -1,0 +1,33 @@
+{
+  "name": "Checkpoint",
+  "description": "Checkpoint is a library for indexing data from Starknet events and making it accessible through GraphQL.",
+  "short_description": "From events to Api",
+  "tags": ["Infrastructure"],
+  "contracts": [],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://checkpoint.fyi",
+    "careers": "",
+    "twitter": "https://twitter.com/checkpointfyi",
+    "telegram": "https://t.me/checkpointfyi",
+    "discord": "https://discord.gg/QJupGWJbge",
+    "github": "https://github.com/snapshot-labs/checkpoint",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "Checkpoint",
+  "teamInfo": {
+    "founded": "2022-02-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/checkpoint/dapp-icon-checkpoint.png",
+    "bannerUrl": "/dapps/checkpoint/dapp-header-checkpoint.png",
+    "previewUrl": "/dapps/checkpoint/dapp-preview-checkpoint.png",
+    "gallery": []
+  }
+}
