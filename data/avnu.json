@@ -1,0 +1,34 @@
+{
+  "name": "AVNU",
+  "description": "AVNU is a decentralized exchange protocol designed to offer the best execution.\n\nOur mission is to build the Liquidity Infrastructure that aims to empower traders and dApps with the best execution. We believe that the only way to serve our customers is to secure the most competitive prices for them, as well as access to the broadest range of assets while providing an exceptional user experience that sets the industry standard.",
+  "short_description": "AVNU is a decentralized exchange protocol designed to offer the best execution",
+  "tags": ["DeFi", "Infrastructure"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://avnu.fi",
+    "careers": "https://linktr.ee/avnu_fi",
+    "twitter": "https://twitter.com/avnu_fi",
+    "telegram": "https://t.me/avnu_fi",
+    "discord": "https://discord.gg/invite/avnu-fi",
+    "github": "",
+    "youtube": "",
+    "medium": "https://avnu-fi.medium.com/",
+    "mirror": ""
+  },
+  "twitterName": "avnu_fi",
+  "teamInfo": {
+    "founded": "",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/avnu/dapp-icon-avnu.png",
+    "bannerUrl": "/dapps/avnu/dapp-header-avnu.png",
+    "previewUrl": "/dapps/avnu/dapp-header-avnu.png",
+    "gallery": []
+  }
+}
