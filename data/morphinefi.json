@@ -1,0 +1,35 @@
+{
+  "name": "MorphineFi",
+  "description": "By offering under-collateralized loans and dynamically adjusting interest rates through an on-chain rate engine, Morphine provides a high level of liquidity and less diluted rewards for lenders, while offering composable leverage and the ability to implement automations for a more transparent and efficient financial journey.",
+  "short_description": "Boost your DeFi journey",
+  "tags": ["DeFi", "Infrastructure"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": true,
+  "dotw": false,
+  "links": {
+    "website": "https://delightfi.xyz/",
+    "careers": "https://app.onlydust.xyz/projects/54f2df5e-decb-44d8-9a6e-d35f9b292569",
+    "twitter": "https://twitter.com/MorphineFi",
+    "telegram": "",
+    "discord": "https://discord.com/invite/hJupqTrK4G",
+    "github": "https://github.com/DeLightFi",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "MorphineFi",
+  "teamInfo": {
+    "contactEmail": "delightfi.contact@gmail.com",
+    "founded": "2022-10-10T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/morphinefi/dapp-icon-morphinefi.jpeg",
+    "bannerUrl": "/dapps/morphinefi/dapp-header-morphinefi.jpeg",
+    "previewUrl": "/dapps/morphinefi/dapp-preview-morphinefi.jpeg",
+    "gallery": []
+  }
+}
