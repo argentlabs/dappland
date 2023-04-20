@@ -57,7 +57,6 @@ For any questions reach us on:
   <img src="https://img.shields.io/badge/Discord-6666FF?style=for-the-badge&logo=discord&logoColor=white">
 </a>
 
-
 ## 📣 Share your dapp rating with the world
 
 Embed the Dappland rating widget
@@ -76,7 +75,9 @@ Embed the Dappland rating widget
 1. Copy and paste the snippet above
 2. In `<a href="…">` change `your_dapp_name` to exactly the same as the name of your dapp as shown in your Dappland url.
 3. Also change `your_dapp_name` in the `<iframe src="…">`
-4. That's it!
+4. (Optional) you can also set the theme to `theme=light` or `theme=dark` 😎 (default uses the device settings).  
+   Just add the `theme` param to the url after your dappname.
+5. That's it!
 
 #### Widget example
 

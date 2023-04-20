@@ -1,10 +1,11 @@
-import fs from "fs"
-import { readdir } from "fs/promises"
+import { readdirSync, readFileSync } from "node:fs"
 import path from "path"
 
-export const getAllDapps = async () => {
+export const getAllDapps = async (): Promise<
+  (DappInfo & { url: string })[]
+> => {
   const dappsDirectory = path.join(process.cwd(), "data")
-  const filenames = await readdir(dappsDirectory)
+  const filenames = readdirSync(dappsDirectory)
 
   const paths = filenames
     .filter((filename) => {
@@ -12,11 +13,11 @@ export const getAllDapps = async () => {
     })
     .map((filename) => filename.replace(/\.json$/, ""))
 
-  let dapps = []
+  const dapps: (DappInfo & { url: string })[] = []
 
   for (const el of paths) {
     const dappFile = path.join(process.cwd(), "data", `${el}.json`)
-    const content = fs.readFileSync(dappFile, { encoding: "utf8" }).toString()
+    const content = readFileSync(dappFile, { encoding: "utf8" }).toString()
 
     if (content) {
       const parsedContent = JSON.parse(content)

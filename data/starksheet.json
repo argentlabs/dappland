@@ -7,12 +7,24 @@
   "tokens": [],
   "contracts": [
     {
-      "name": "Starksheet",
+      "name": "Starksheet v0",
       "address": "0x028850a764600d53b2009b17428ae9eb980a4c4ea930a69ed8668048ef082a04"
+    },
+    {
+      "name": "Starksheet v1",
+      "address": "0x076a028b19d27310f5e9f941041ae4a3a52c0e0024d593ddcb0d34e1dcd24af1"
+    },
+    {
+      "name": "Starksheet v2",
+      "address": "0x071d48483dcfa86718a717f57cf99a72ff8198b4538a6edccd955312fe624747"
     },
     {
       "name": "Origin",
       "address": "0x4acd4b2a59eae7196f6a5c26ead8cb5f9d7ad3d911096418a23357bb2eac075"
+    },
+    {
+      "name": "VisiCalc",
+      "address": "0x0419772c05f2db85b8c2b2f92e04ef4f66884270f4eb97718c8693f3b33492f5"
     },
     {
       "name": "BasicCellRenderer",
@@ -49,7 +61,7 @@
     "website": "https://www.starksheet.xyz/",
     "careers": "",
     "twitter": "https://twitter.com/starksheet",
-    "telegram": "",
+    "telegram": "https://t.me/starksheet",
     "discord": "https://discord.gg/BtuD5HguDX",
     "github": "https://github.com/the-candy-shop/starksheet-monorepo",
     "youtube": "",

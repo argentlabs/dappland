@@ -117,7 +117,7 @@ const DappPageHeader = ({
             <div className="flex gap-10 flex-col sm:flex-row">
               <div>
                 <h3 className="font-bold text-lg mb-2">1. Install Argent X</h3>
-                <DownloadButton />
+                <DownloadButton name={dappInfo.name} />
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-2">2. Visit Dapp</h3>
