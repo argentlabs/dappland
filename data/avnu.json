@@ -4,7 +4,20 @@
   "short_description": "Best execution on Starknet. No fluff.",
   "tags": ["DeFi", "Infrastructure"],
   "contracts": [],
-  "goerliContracts": [],
+  "goerliContracts": [
+    {
+      "name": "AVNU: Exchange",
+      "address": "0x06d8cd321dcbbf54512eab67c8a6849faf920077a3996f40bb4761adc4f021d2"
+    },
+    {
+      "name": "AVNU: Fee Collector",
+      "address": "0x06936a92ca0baabf941da4ab0f200436f26072f51c580acbe668bebe4fe640ac"
+    },
+    {
+      "name": "AVNU: Early Adopters NFT",
+      "address": "0x03906107c71e94075ac691b232faecd9a724a46a5129928f44c79026b7bc9ec9"
+    }
+  ],
   "audits": [],
   "verified": false,
   "dotw": false,
