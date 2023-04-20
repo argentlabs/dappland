@@ -1,0 +1,47 @@
+{
+  "name": "AVNU",
+  "description": "AVNU is a decentralized exchange protocol designed to offer the best execution.\n\nOur mission is to build the Liquidity Infrastructure that aims to empower traders and dApps with the best execution. We believe that the only way to serve our customers is to secure the most competitive prices for them, as well as access to the broadest range of assets while providing an exceptional user experience that sets the industry standard.",
+  "short_description": "Best execution on Starknet. No fluff.",
+  "tags": ["DeFi", "Infrastructure"],
+  "contracts": [],
+  "goerliContracts": [
+    {
+      "name": "AVNU: Exchange",
+      "address": "0x06d8cd321dcbbf54512eab67c8a6849faf920077a3996f40bb4761adc4f021d2"
+    },
+    {
+      "name": "AVNU: Fee Collector",
+      "address": "0x06936a92ca0baabf941da4ab0f200436f26072f51c580acbe668bebe4fe640ac"
+    },
+    {
+      "name": "AVNU: Early Adopters NFT",
+      "address": "0x03906107c71e94075ac691b232faecd9a724a46a5129928f44c79026b7bc9ec9"
+    }
+  ],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://avnu.fi",
+    "careers": "https://linktr.ee/avnu_fi",
+    "twitter": "https://twitter.com/avnu_fi",
+    "telegram": "https://t.me/avnu_fi",
+    "discord": "https://discord.gg/invite/avnu-fi",
+    "github": "",
+    "youtube": "",
+    "medium": "https://avnu-fi.medium.com/",
+    "mirror": ""
+  },
+  "twitterName": "avnu_fi",
+  "teamInfo": {
+    "founded": "2021-11-21T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/avnu/dapp-icon-avnu.png",
+    "bannerUrl": "/dapps/avnu/dapp-header-avnu.png",
+    "previewUrl": "/dapps/avnu/dapp-preview-avnu.png",
+    "gallery": []
+  }
+}
