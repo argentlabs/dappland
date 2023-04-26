@@ -1,0 +1,50 @@
+{
+  "name": "Muggle Finance",
+  "description": "A suite of tools were built to help you create your own tokens and launchpads in a fast, with no prior code knowledge required and 100% decentralized!",
+  "short_description": "Muggle - Create Your Own StarkNet Contracts and Tokens",
+  "tags": [
+    "Tools",
+    "DeFi",
+    "Games",
+    "Social",
+    "DAOs"
+  ], 
+  "contracts": [
+    {
+      "name": "Muggle Airdrop",
+      "address": "0x79f185849da7b104540c65d907035287f0af0e50b45354a5f10085d02fb485a"
+    },
+    {
+      "name": "Mint Token Tools",
+      "address": "0x21ba4c80cfc8748dabafb798be0922dc3b4cbfe3a4f48caaec34e78493d3118"
+    }
+  ],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://www.muggle.finance/",
+    "careers": "",
+    "twitter": "https://twitter.com/MuggleFinance",
+    "telegram": "",
+    "discord": "",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "Muggle Finance",
+  "tokens": [
+    {
+      "address": "0x036aC3514ab4470Eb741000D1B1762b12B73379D84de57707fdDb9C391499213",
+      "symbol": "MC"
+    }
+  ],
+  "media": {
+    "logoUrl": "/dapps/muggle/dapp-icon-muggle.png",
+    "bannerUrl": "/dapps/muggle/dapp-header-muggle.png",
+    "previewUrl": "/dapps/muggle/dapp-preview-muggle.png",
+    "videoUrl": "",
+    "gallery": [
+    ]
+  }
+}
