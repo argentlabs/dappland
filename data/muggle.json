@@ -3,7 +3,7 @@
   "description": "A suite of tools were built to help you create your own tokens and launchpads in a fast, with no prior code knowledge required and 100% decentralized!",
   "short_description": "Muggle - Create Your Own StarkNet Contracts and Tokens",
   "tags": [
-    "Tools",
+    "Infrastructure",
     "DeFi",
     "Games",
     "Social",
@@ -19,6 +19,8 @@
       "address": "0x21ba4c80cfc8748dabafb798be0922dc3b4cbfe3a4f48caaec34e78493d3118"
     }
   ],
+  "goerliContracts": [],
+  "audits": [],
   "verified": false,
   "dotw": false,
   "links": {
@@ -32,7 +34,7 @@
     "medium": "",
     "mirror": ""
   },
-  "twitterName": "Muggle Finance",
+  "twitterName": "MuggleFinance",
   "tokens": [
     {
       "address": "0x036aC3514ab4470Eb741000D1B1762b12B73379D84de57707fdDb9C391499213",
@@ -44,7 +46,6 @@
     "bannerUrl": "/dapps/muggle/dapp-header-muggle.png",
     "previewUrl": "/dapps/muggle/dapp-preview-muggle.png",
     "videoUrl": "",
-    "gallery": [
-    ]
+    "gallery": []
   }
 }
