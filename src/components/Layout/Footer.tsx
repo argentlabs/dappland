@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Footer = () => {
   return (
     <section>
@@ -12,10 +14,15 @@ const Footer = () => {
         &nbsp;
       </iframe>
 
-      <footer className="w-full py-6 px-4 border-t border-border-grey dark:border-white/10">
-        <p className="text-center font-medium text-base leading-[16px]">
+      <footer className="w-full py-6 px-4 border-t border-border-grey dark:border-white/10 flex flex-col md:flex-row justify-between">
+        <p className="text-center font-medium text-base leading-[16px] mx-4 mb-4 md:mb-0">
           Built with ❤️ by{" "}
-          <a href="https://www.argent.xyz/?utm_source=dappland">Argent</a>
+          <Link href="https://www.argent.xyz/?utm_source=dappland">Argent</Link>
+        </p>
+        <p className="text-center font-medium text-base leading-[16px] mb-4 md:mb-0">
+          <Link href="/disclosure-statement" className="my-4">
+            Disclosure statement
+          </Link>
         </p>
       </footer>
     </section>
