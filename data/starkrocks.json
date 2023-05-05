@@ -36,24 +36,24 @@
   },
   
  "media": {
-    "logoUrl": "public/dapps/starkrocks/StarkRocksLogo.jpg",
-    "bannerUrl": "public/dapps/starkrocks/StarkRocksBanner.jpg",
-    "previewUrl": "public/dapps/starkrocks/StarkRocksPreview.jpeg",
+    "logoUrl": "/dapps/starkrocks/StarkRocksLogo.jpg",
+    "bannerUrl": "/dapps/starkrocks/StarkRocksBanner.jpg",
+    "previewUrl": "/dapps/starkrocks/StarkRocksPreview.jpeg",
     "gallery": [
       {
-        "image_url": "public/dapps/starkrocks/InfinityRock.jpeg",
+        "image_url": "/dapps/starkrocks/InfinityRock.jpeg",
         "name": "InfinityRock"
       },
       {
-        "image_url": "public/dapps/starkrocks/RareRock.jpeg",
+        "image_url": "/dapps/starkrocks/RareRock.jpeg",
         "name": "RareRock"
       },
       {
-        "image_url": "public/dapps/starkrocks/SeaRock.jpeg",
+        "image_url": "/dapps/starkrocks/SeaRock.jpeg",
         "name": "SeaRock"
       },
       {
-        "image_url": "public/dapps/starkrocks/SpaceRock.jpeg",
+        "image_url": "/dapps/starkrocks/SpaceRock.jpeg",
         "name": "SpaceRock"
       }
     ]
