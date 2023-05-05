@@ -1,0 +1,61 @@
+{
+  "name": "StarkRocks",
+  "description": "444 OG Rocks of Starknet allow their owners to swap on Fibrous with a 0% service fee.",
+  "short_description": "444 OG Rocks of Star.",
+  "tags": ["NFTs"],
+  "contracts": [
+    {
+      "name": "StarkRocks",
+      "address": "0x012f8e318fe04a1fe8bffe005ea4bbd19cb77a656b4f42682aab8a0ed20702f0"
+    }
+  ],
+  "verified": true,
+  "dotw": false,
+  "links": {
+    "website": "https://starknet.rocks/",
+    "careers": "",
+    "twitter": "https://twitter.com/StarkNetRocks",
+    "telegram": "",
+    "discord": "http://discord.gg/starkrocks",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "StarkRocks",
+  "teamInfo": {
+    "founded": "2022-12-05T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "nft": {
+    "collectionContract": "0x012f8e318fe04a1fe8bffe005ea4bbd19cb77a656b4f42682aab8a0ed20702f0",
+    "collectionLink": "https://mintsquare.io/collection/starknet/0x012f8e318fe04a1fe8bffe005ea4bbd19cb77a656b4f42682aab8a0ed20702f0",
+    "collectionName": "StarkRock",
+    
+  },
+  
+ "media": {
+    "logoUrl": "public/dapps/starkrocks/StarkRocksLogo.jpg",
+    "bannerUrl": "public/dapps/starkrocks/StarkRocksBanner.jpg",
+    "previewUrl": "public/dapps/starkrocks/StarkRocksPreview.jpeg",
+    "gallery": [
+      {
+        "image_url": "public/dapps/starkrocks/InfinityRock.jpeg",
+        "name": "InfinityRock"
+      },
+      {
+        "image_url": "public/dapps/starkrocks/RareRock.jpeg",
+        "name": "RareRock"
+      },
+      {
+        "image_url": "public/dapps/starkrocks/SeaRock.jpeg",
+        "name": "SeaRock"
+      },
+      {
+        "image_url": "public/dapps/starkrocks/SpaceRock.jpeg",
+        "name": "SpaceRock"
+      }
+    ]
+  }
+}
