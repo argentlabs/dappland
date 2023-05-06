@@ -17,6 +17,7 @@
       "url": "https://github.com/rango-exchange/rango-contracts/tree/main/audits"
     }
   ],
+  "verified": false,
   "dotw": false,
   "links": {
     "website": "https://app.rango.exchange",
@@ -31,6 +32,7 @@
   },
   "twitterName": "RangoExchange",
   "teamInfo": {
+    "contactEmail": "hi@rango.exchange",
     "founded": "2021-08-01T00:00:00.000Z",
     "anonymous": false
   },
