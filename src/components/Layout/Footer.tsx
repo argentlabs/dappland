@@ -20,8 +20,14 @@ const Footer = () => {
           <Link href="https://www.argent.xyz/?utm_source=dappland">Argent</Link>
         </p>
         <p className="text-center font-medium text-base leading-[16px] mb-4 md:mb-0">
-          <Link href="/disclosure-statement" className="my-4">
-            Disclosure statement
+          <Link href="/disclosure-statement">
+            <a className="inline-block mx-2">Disclosure statement</a>
+          </Link>
+          <Link href="/terms" className="inline-block my-4 mx-4">
+            <a className="inline-block mx-2">Terms of use</a>
+          </Link>
+          <Link href="/privacy" className="inline-block my-4 mx-4">
+            <a className="inline-block mx-2">Privacy policy</a>
           </Link>
         </p>
       </footer>
