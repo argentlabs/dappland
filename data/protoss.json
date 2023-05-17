@@ -11,10 +11,6 @@
     {
       "name": "Factory",
       "address": "0x04bd9ec70e3ee64fe0adefe0ae4eff797fe07b6fe19d72438db0b6d336ee77c8"
-    },
-    {
-      "name": "PairClassHash",
-      "address": "0x07f052fb14fc79a77eea424b14ac2126400bed7b4e79b6b01b4dbcf823ec15d0"
     }
   ],
   "goerliContracts": [
@@ -25,10 +21,6 @@
     {
       "name": "Factory",
       "address": "0x0017b7cdbd6dd86b4b9baf572e040e74bd44b419dcbb6f38a2e936aec9327b8e"
-    },
-    {
-      "name": "PairClassHash",
-      "address": "0x07f052fb14fc79a77eea424b14ac2126400bed7b4e79b6b01b4dbcf823ec15d0"
     }
   ],
   "audits": [],
@@ -52,9 +44,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "/dapps/protoss/dapp-icon-protoss.png",
-    "bannerUrl": "/dapps/protoss/dapp-header-protoss.png",
-    "previewUrl": "/dapps/protoss/dapp-preview-protoss.png",
+    "logoUrl": "/dapps/protoss/dapp-icon-protoss.jpg",
+    "bannerUrl": "/dapps/protoss/dapp-header-protoss.jpg",
+    "previewUrl": "/dapps/protoss/dapp-preview-protoss.jpg",
     "gallery": []
   }
 }
