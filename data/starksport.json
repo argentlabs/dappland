@@ -15,9 +15,22 @@
       {
         "name": "Router",
         "address": "0x2d300192ea8d3291755bfd2bb2f9e16b38f48a20e4ce98e189d2daa7be435c2"
+      },
+      {
+        "name": "Jersey",
+        "address": "0x66f271471e5134466c9cb3f7a9a4caf210b1595d9d7e1cca3b2f5c2f39347fb"
+      },
+      {
+        "name": "Logo",
+        "address": "0x07d1cd99140a68a97bc31f4af67aa345d4954ac74f8ed5cee8aecfcf1a47aaef"
       }
     ],
-    "audits": [],
+    "audits": [
+      {
+        "name": "Stark Guardians Token & NFT audits",
+        "url": "https://alpha.starkguardians.com/audit/starksport"
+      }
+    ],
     "verified": true,
     "dotw": false,
     "links": {
