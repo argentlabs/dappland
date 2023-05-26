@@ -1,0 +1,46 @@
+{
+  "name": "Rango",
+  "description": "First MultiChain Bridge and Dex Aggregator Supporting 10,000 Tokens across +40 Chains",
+  "short_description": "MultiChain Aggregator",
+  "tags": [
+    "Bridges",
+    "DeFi",
+    "Infrastructure"
+  ],
+  "contracts": [],
+  "goerliContracts": [
+    []
+  ],
+  "audits": [
+    {
+      "name": "Slowmist Audit",
+      "url": "https://github.com/rango-exchange/rango-contracts/tree/main/audits"
+    }
+  ],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://app.rango.exchange",
+    "careers": "",
+    "twitter": "https://twitter.com/RangoExchange",
+    "telegram": "https://t.me/rangoexchange",
+    "discord": "https://discord.gg/VmdCgxyKhr",
+    "github": "https://github.com/rango-exchange",
+    "youtube": "",
+    "medium": "https://medium.com/@rangoexchange",
+    "mirror": ""
+  },
+  "twitterName": "RangoExchange",
+  "teamInfo": {
+    "contactEmail": "hi@rango.exchange",
+    "founded": "2021-08-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/rango/rango-logo.jpg",
+    "bannerUrl": "/dapps/rango/rango-banner.jpg",
+    "previewUrl": "/dapps/rango/rango-preview.jpg",
+    "gallery": [ ]
+  }
+}

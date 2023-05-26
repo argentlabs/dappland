@@ -3,7 +3,12 @@
   "description": "Fibrous is a price exploration and routing algorithm across multiple AMMs that offers token exchanges with the best and cheapest rate at Starknet validity Rollup.",
   "short_description": "Gathers all AMMs of Starknet at one place.",
   "tags": ["DeFi"],
-  "contracts": [],
+  "contracts": [
+     {
+      "name": "Router Contract",
+      "address": "0x00dc1138a03d241b87a2f940db070e47f937930e2a0337f6e6ee1a97883009e7"
+    }
+  ],
   "goerliContracts": [
     {
       "name": "Router Contract",
