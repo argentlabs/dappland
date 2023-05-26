@@ -179,10 +179,6 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
         <h2 className="text-black dark:text-white text-[16px] leading-[20px] font-lighter">
           Games, NFTs, DeFi, DAOs and more.
         </h2>
-        <p className="text-center font-normal text-[14px] leading-[14px] mt-8">
-          Built with ❤️ by{" "}
-          <a href="https://www.argent.xyz/?utm_source=dappland">Argent</a>
-        </p>
       </div>
     </>
   )
