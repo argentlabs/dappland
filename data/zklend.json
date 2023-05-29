@@ -19,11 +19,11 @@
   "audits": [
     {
       "name": "Security Review Report by Nethermind",
-      "url": "https://zklend.com/documents/Nethermind---Audit-Report_20230425.pdf"
+      "url": "https://github.com/NethermindEth/PublicAuditReports/blob/main/NM0058-FINAL_ZKLEND.pdf"
     },
     {
       "name": "Formal Specification Report by Nethermind",
-      "url": "https://zklend.com/documents/Nethermind---FV-Specification-Report_20230429.pdf"
+      "url": "https://github.com/NethermindEth/PublicAuditReports/blob/main/NM0058-FINAL_ZKLEND.pdf"
     }
   ],
   "verified": false,
