@@ -18,11 +18,7 @@
   "goerliContracts": [],
   "audits": [
     {
-      "name": "Security Review Report by Nethermind",
-      "url": "https://github.com/NethermindEth/PublicAuditReports/blob/main/NM0058-FINAL_ZKLEND.pdf"
-    },
-    {
-      "name": "Formal Specification Report by Nethermind",
+      "name": "Security Review & Formal Specification",
       "url": "https://github.com/NethermindEth/PublicAuditReports/blob/main/NM0058-FINAL_ZKLEND.pdf"
     }
   ],
