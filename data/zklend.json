@@ -2,10 +2,26 @@
   "name": "zkLend",
   "description": "zkLend is a money-market protocol combining zk-rollup scalability, superior transaction speed, and cost-savings with Ethereum's security.",
   "short_description": "Money-market protocol",
-  "tags": ["DeFi"],
-  "contracts": [],
+  "tags": [
+    "DeFi"
+  ],
+  "contracts": [
+    {
+      "name": "Price Oracle",
+      "address": "0x23fb3afbff2c0e3399f896dcf7400acf1a161941cfb386e34a123f228c62832"
+    },
+    {
+      "name": "Market",
+      "address": "0x4c0a5193d58f74fbace4b74dcf65481e734ed1714121bdc571da345540efa05"
+    }
+  ],
   "goerliContracts": [],
-  "audits": [],
+  "audits": [
+    {
+      "name": "Security Review & Formal Specification",
+      "url": "https://github.com/NethermindEth/PublicAuditReports/blob/main/NM0058-FINAL_ZKLEND.pdf"
+    }
+  ],
   "verified": false,
   "dotw": false,
   "links": {
@@ -21,7 +37,8 @@
   },
   "twitterName": "zkLend",
   "teamInfo": {
-    "founded": "",
+    "contactEmail": "info@zklend.com",
+    "founded": "2022-03-31T00:00:00.000Z",
     "anonymous": false
   },
   "tokens": [],
