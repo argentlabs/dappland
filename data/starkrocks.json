@@ -1,61 +1,31 @@
 {
   "name": "StarkRocks",
-  "description": "444 OG Rocks of Starknet.",
-  "short_description": "444 OG Rocks of Starknet.",
+  "description": "444 OG Rocks of Starknet",
+  "short_description": "Rocks of Starknet",
   "tags": ["NFTs"],
+  "audits": [],
   "contracts": [
     {
-      "name": "StarkRocks",
+      "name": "StarkRock",
       "address": "0x012f8e318fe04a1fe8bffe005ea4bbd19cb77a656b4f42682aab8a0ed20702f0"
     }
   ],
-  "verified": true,
   "dotw": false,
   "links": {
     "website": "https://starknet.rocks/",
-    "careers": "",
-    "twitter": "https://twitter.com/StarkNetRocks",
-    "telegram": "",
-    "discord": "http://discord.gg/starkrocks",
-    "github": "",
-    "youtube": "",
-    "medium": "",
-    "mirror": ""
+    "discord": "https://discord.gg/starkrocks",
+    "twitter": "https://twitter.com/StarkNetRocks"
   },
-  "twitterName": "StarkRocks",
+  "twitterName": "StarkNetRocks",
   "teamInfo": {
-    "founded": "2022-12-05T00:00:00.000Z",
-    "anonymous": true
+    "founded": "2022-12-05T00:00:00.000z",
+    "anonymous": "true"
   },
+  "verified": true,
   "tokens": [],
-  "nft": {
-    "collectionContract": "0x012f8e318fe04a1fe8bffe005ea4bbd19cb77a656b4f42682aab8a0ed20702f0",
-    "collectionLink": "https://mintsquare.io/collection/starknet/0x012f8e318fe04a1fe8bffe005ea4bbd19cb77a656b4f42682aab8a0ed20702f0",
-    "collectionName": "StarkRock",
-    
-  },
-  
- "media": {
-    "logoUrl": "/dapps/starkrocks/StarkRocksLogo.jpg",
-    "bannerUrl": "/dapps/starkrocks/StarkRocksBanner.jpg",
-    "previewUrl": "/dapps/starkrocks/StarkRocksPreview.jpeg",
-    "gallery": [
-      {
-        "image_url": "/dapps/starkrocks/InfinityRock.jpeg",
-        "name": "InfinityRock"
-      },
-      {
-        "image_url": "/dapps/starkrocks/RareRock.jpeg",
-        "name": "RareRock"
-      },
-      {
-        "image_url": "/dapps/starkrocks/SeaRock.jpeg",
-        "name": "SeaRock"
-      },
-      {
-        "image_url": "/dapps/starkrocks/SpaceRock.jpeg",
-        "name": "SpaceRock"
-      }
-    ]
+  "media": {
+    "logoUrl": "/dapps/earlystarkers/dapp-logo-earlystarkers.png",
+    "bannerUrl": "/dapps/earlystarkers/dapp-banner-earlystarkers.png",
+    "previewUrl": "/dapps/earlystarkers/dapp-preview-earlystarkers.png"
   }
 }
