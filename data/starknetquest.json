@@ -1,0 +1,53 @@
+{
+  "name": "Starknet Quest",
+  "description": "Accomplish quests to collect unique NFTs on Starknet.",
+  "short_description": "Accomplish quests to collect unique NFTs on Starknet.",
+  "tags": ["NFTs", "Social"],
+  "contracts": [
+    {
+      "name": "Starknet Quest",
+      "address": "0x076503062d78f4481be03c9145022d6a4a71ec0719aa07756f79a2384dc7ef16"
+    }
+  ],
+  "goerliContracts": [
+    {
+      "name": "Starknet Quest",
+      "address": "0x0154520b48b692bb8b926434bbd24d797e806704af28b6cdcea30ea7db6a996b"
+    }
+  ],
+  "audits": [],
+  "verified": true,
+  "dotw": false,
+  "links": {
+    "website": "http://starknet.quest/",
+    "twitter": "https://twitter.com/starknet_quest"
+  },
+  "twitterName": "Starknet_quest",
+  "teamInfo": {
+    "contactEmail": "ben@starknet.id",
+    "founded": "2023-05-24T00:00:00.000Z",
+    "anonymous": false
+  },
+  "nft": {
+    "collectionContract": "0x076503062d78f4481be03c9145022d6a4a71ec0719aa07756f79a2384dc7ef16",
+    "collectionLink": "https://starkscan.co/nft-contract/0x076503062d78f4481be03c9145022d6a4a71ec0719aa07756f79a2384dc7ef16#overview",
+    "collectionName": "Starknet Quest",
+    "collectionPreview": [
+      {
+        "image_url": "https://starknet.quest/jediswap/padawan.webp",
+        "name": "JediSwap Light Saber"
+      },
+      {
+        "image_url": "https://starknet.quest/starknetid/nft1.webp",
+        "name": "Starknet ID Tribe Totem"
+      }
+    ]
+  },
+  "media": {
+    "logoUrl": "/dapps/starknetquest/starknetquestLogo.webp",
+    "bannerUrl": "/dapps/starknetid/starknetquestBanner.webp",
+    "previewUrl": "/dapps/starknetid/starknetquestPreview.webp",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
