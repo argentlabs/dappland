@@ -44,9 +44,9 @@
     ]
   },
   "media": {
-    "logoUrl": "/dapps/starknetquest/starknetquestLogo.webp",
-    "bannerUrl": "/dapps/starknetid/starknetquestBanner.webp",
-    "previewUrl": "/dapps/starknetid/starknetquestPreview.webp",
+    "logoUrl": "/dapps/starknetquest/starknetquestlogo.webp",
+    "bannerUrl": "/dapps/starknetid/starknetquestbanner.webp",
+    "previewUrl": "/dapps/starknetid/starknetquestpreview.webp",
     "videoUrl": "",
     "gallery": []
   }
