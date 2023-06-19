@@ -1,0 +1,50 @@
+{
+  "name": "Raum Network",
+  "description": "Raum Network is a cutting-edge blockchain platform focused on building decentralized financial solutions. With RaumFi as its flagship product, it offers a suite of powerful DeFi tools, including decentralized swaps and yield farming. The RN Bridge, part of Raum Network, enables seamless token transfers across chains like Polygon and StarkNet, empowering users with cross-chain interoperability. Unlocking new possibilities, Raum Network aims to revolutionize the decentralized finance landscape.",
+  "short_description": "RN DeFi ecosystem.",
+  "tags": ["DeFi", "Bridge"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": true,
+  "dotw": false,
+  "links": {
+    "website": "https://raum.network/",
+    "careers": "",
+    "twitter": "https://twitter.com/RaumNetwork",
+    "telegram": "https://guild.xyz/raum-network",
+    "discord": "https://discord.gg/3TRy4pzzHn",
+    "github": "https://github.com/Raum-Network",
+    "youtube": "",
+    "medium": "https://raumnetwork.medium.com/",
+    "mirror": ""
+  },
+  "twitterName": "@RaumNetwork",
+  "teamInfo": {
+    "contactEmail": "comms@raum.network",
+    "founded": "2021-12-01T00:14:30.000Z",
+    "anonymous": false
+  },
+  "tokens": [
+    {
+      "address": "0x054f20994579087ecae673f3904d7ffd433707ddd6c658743901b1805cc62929",
+      "symbol": "RN"
+    }
+  ],
+  "media": {
+    "logoUrl": "/dapps/raumnetwork/raum-logo.png",
+    "bannerUrl": "/dapps/raumnetwork/raum-banner.png",
+    "previewUrl": "/dapps/raumnetwork/raum-preview.png",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "/dapps/raumnetwork/rn-bridge-02.png",
+        "description": "Beta version of RN Bridge"
+      },
+      {
+        "url": "/dapps/raumnetwork/rn-bridge-01.png",
+        "description": "Alpha version of RN Bridge"
+      }
+    ]
+  }
+}
