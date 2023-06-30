@@ -1,0 +1,56 @@
+{
+  "name": "PrismDex",
+  "description": "PrismDex is an ecosystem-oriented DEX built on StarkNet.",
+  "short_description": "A Layer2 AMM protocol",
+  "tags": [
+    "DeFi",
+    "Infrastructure"
+  ],
+  "contracts": [
+    {
+      "name": "Router",
+      "address": "0x198bcfb5354558c7942ea0e1488c4e3e606988baae669d9ade6006645958e4f"
+    },
+    {
+      "name": "Factory",
+      "address": "0x451b5a258fb777734ba814ea86647e576b5b8ebb9e324e36aaae65952637076"
+    }
+  ],
+   "goerliContracts": [
+    {
+      "name": "Router",
+      "address": "0x5c767786c4888b40defea15a884eb9d36a0b69b9618e9c19ac72f44a8b28e96"
+    },
+    {
+      "name": "Factory",
+      "address": "0x0017b7cdbd6dd86b4b9baf572e040e74bd44b419dcbb6f38a2e936aec9327b8e"
+    }
+  ],
+  "audits": [],
+  "verified": true,
+  "dotw": false,
+  "links": {
+    "website": "https://www.prismdex.xyz/",
+    "careers": "",
+    "twitter": "https://twitter.com/PrismDex",
+    "telegram": "",
+    "discord": "",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "prismdex",
+  "teamInfo": {
+    "founded": "2023-05-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+
+  "media": {
+    "logoUrl": "/dapps/prismdex/prismdex-logo.png",
+    "bannerUrl": "/dapps/prismdex/prismdex-banner.png",
+    "previewUrl": "/dapps/prismdex/prismdex-preview.png",
+    "gallery": []
+  }
+}
