@@ -12,7 +12,7 @@
   "goerliContracts": [
     {
       "name": "Starknet Quest",
-      "address": "https://aspect.co/collection/0x076503062d78f4481be03c9145022d6a4a71ec0719aa07756f79a2384dc7ef16"
+      "address": "0x076503062d78f4481be03c9145022d6a4a71ec0719aa07756f79a2384dc7ef16"
     }
   ],
   "audits": [],
@@ -34,19 +34,20 @@
     "collectionName": "Starknet Quest",
     "collectionPreview": [
       {
-        "image_url": "https://starknet.quest/jediswap/padawan.webp",
+        "image_url": "/dapps/starknetquest/padawan.webp",
         "name": "JediSwap Light Saber"
       },
       {
-        "image_url": "https://starknet.quest/starknetid/nft1.webp",
+        "image_url": "/dapps/starknetquest/nft1.webp",
         "name": "Starknet ID Tribe Totem"
       }
     ]
   },
+  "tokens": [],
   "media": {
     "logoUrl": "/dapps/starknetquest/starknetquestlogo.webp",
-    "bannerUrl": "/dapps/starknetid/starknetquestbanner.webp",
-    "previewUrl": "/dapps/starknetid/starknetquestpreview.webp",
+    "bannerUrl": "/dapps/starknetquest/starknetquestbanner.webp",
+    "previewUrl": "/dapps/starknetquest/starknetquestpreview.webp",
     "videoUrl": "",
     "gallery": []
   }
