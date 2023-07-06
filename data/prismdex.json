@@ -13,7 +13,7 @@
     },
     {
       "name": "Factory",
-      "address": "0x451b5a258fb777734ba814ea86647e576b5b8ebb9e324e36aaae65952637076"
+      "address": "0xbc1ed23066cfce6ddedc837e3b37f7981fe311dc6b0cc58be7b235f2fb3a05"
     }
   ],
    "goerliContracts": [
@@ -23,7 +23,7 @@
     },
     {
       "name": "Factory",
-      "address": "0x0017b7cdbd6dd86b4b9baf572e040e74bd44b419dcbb6f38a2e936aec9327b8e"
+      "address": "0x451b5a258fb777734ba814ea86647e576b5b8ebb9e324e36aaae65952637076"
     }
   ],
   "audits": [],
