@@ -74,7 +74,7 @@ const DappPage: NextPage<DappPageProps> = ({
       image={dappInfo.media.previewUrl}
     >
       <div
-        className="relative mt-[56px] max-h-[380px] min-h-[104px] lg:min-h-[420px] w-full overflow-hidden bg-no-repeat bg-cover bg-center"
+        className="relative mt-[56px] lg:mt-0 max-h-[380px] min-h-[104px] sm:min-h-[240px] lg:min-h-[420px] w-full overflow-hidden bg-no-repeat bg-cover bg-center"
         style={{
           backgroundImage: `url(${dappInfo.media.bannerUrl})`,
         }}
