@@ -1,6 +1,6 @@
 import crossCircle from "../../assets/icons/crossCircle.svg"
 import crossCircleLight from "../../assets/icons/crossCircleLight.svg"
-import star from "../../assets/icons/star.svg"
+import star from "../../assets/icons/starFilled.svg"
 import { categories, reputation, ratings } from "../../data/categories"
 import { checkIfCategoryExists, generateUrl } from "../../helpers/category"
 import { filterDappcardsByRating } from "../../helpers/rating"

@@ -18,6 +18,7 @@
     "cookies-next": "^2.1.1",
     "get-starknet": "^2.0.0",
     "get-starknet-core": "^2.0.0",
+    "lodash.chunk": "^4.2.0",
     "lottie-react": "^2.3.1",
     "next": "12.2.4",
     "next-themes": "^0.2.0",
@@ -26,6 +27,7 @@
     "starknet": "^4.9.0",
     "styled-components": "^5.3.5",
     "swiper": "^8.3.2",
+    "zod": "^3.21.4",
     "zustand": "^4.1.1"
   },
   "devDependencies": {
@@ -33,6 +35,7 @@
     "@commitlint/config-conventional": "^17.0.3",
     "@svgr/webpack": "^6.3.1",
     "@trivago/prettier-plugin-sort-imports": "^3.3.0",
+    "@types/lodash.chunk": "^4.2.7",
     "@types/node": "18.6.4",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",

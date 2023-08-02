@@ -62,7 +62,7 @@ const HomeDesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
           />
         </Link>
         <h1 className="bg-black dark:bg-white text-white dark:text-black pl-4 pr-4 pt-1 pb-2 text-center text-[32px] font-bold leading-[38px] rounded-md mb-6">
-          Discover the best dapps on StarkNet
+          Discover the best dapps on Starknet
         </h1>
         <h2 className="text-black dark:text-white text-[28px] leading-[34px] font-lighter">
           Games, NFTs, DeFi, DAOs and more.

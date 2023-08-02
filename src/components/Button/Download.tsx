@@ -23,24 +23,30 @@ export function getStoreVersionFromBrowser(): StoreVersions {
   }
 }
 
-export const DownloadButton: FC = () => {
+export const DownloadButton: FC<{
+  name: string
+}> = ({ name }) => {
   const [storeVersion, setStoreVersion] = useState<StoreVersions>(null)
   useEffect(() => {
     setStoreVersion(getStoreVersionFromBrowser())
   }, [])
   return storeVersion === "chrome" ? (
-    <DownloadChrome />
+    <DownloadChrome name={name} />
   ) : storeVersion === "firefox" ? (
-    <DownloadFirefox />
+    <DownloadFirefox name={name} />
   ) : null
 }
 
-export const DownloadFirefox: FC = () => {
+export const DownloadFirefox: FC<{
+  name: string
+}> = ({ name }) => {
   return (
     <a
-      href="https://addons.mozilla.org/en-US/firefox/addon/argent-x"
-      target="_blank"
-      rel="noopener noreferrer"
+      href={
+        "https://addons.mozilla.org/en-US/firefox/addon/argent-x?utm_source=dappland&utm_medium=referral&utm_campaign=" +
+        name
+      }
+      target="_blank" rel="noreferrer"
     >
       <svg
         width="215"
@@ -313,12 +319,16 @@ export const DownloadFirefox: FC = () => {
   )
 }
 
-export const DownloadChrome: FC = () => {
+export const DownloadChrome: FC<{
+  name: string
+}> = ({ name }) => {
   return (
     <a
-      href="https://chrome.google.com/webstore/detail/argent-x/dlcobpjiigpikoobohmabehhmhfoodbb"
-      target="_blank"
-      rel="noopener noreferrer"
+      href={
+        "https://chrome.google.com/webstore/detail/argent-x/dlcobpjiigpikoobohmabehhmhfoodbb?utm_source=dappland&utm_medium=referral&utm_campaign=" +
+        name
+      }
+      target="_blank" rel="noreferrer"
     >
       <svg
         width="219"

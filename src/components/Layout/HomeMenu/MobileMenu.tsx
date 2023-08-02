@@ -174,15 +174,11 @@ const MobileMenu = ({ currentTheme, setTheme }: MobileMenuProps) => {
         className={`flex flex-col justify-center items-center pb-8 mt-3 pt-[56px] bg-white dark:bg-hero-dark lg:hidden`}
       >
         <h1 className="bg-black dark:bg-white text-white dark:text-black pl-4 pr-4 pt-1 pb-2 text-center text-[18px] font-semibold leading-[22px] rounded-md mb-2">
-          Discover the best dapps on StarkNet
+          Discover the best dapps on Starknet
         </h1>
         <h2 className="text-black dark:text-white text-[16px] leading-[20px] font-lighter">
           Games, NFTs, DeFi, DAOs and more.
         </h2>
-        <p className="text-center font-normal text-[14px] leading-[14px] mt-8">
-          Built with ❤️ by{" "}
-          <a href="https://www.argent.xyz/?utm_source=dappland">Argent</a>
-        </p>
       </div>
     </>
   )

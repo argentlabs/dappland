@@ -1,0 +1,52 @@
+{
+  "name": "Pragma",
+  "description": "Pragma is the leading oracle on Starknet. Live with 20+ price feeds - powered by data sources that send their proprietary market data directly on-chain, including Alameda Research, Jane Street, Gemini, & more. Pragma's robust feeds empower leading protocols like zkLend, Nostra, Serity & CurveZero to access data that is as verifiable, transparent & secure as the smart contracts themselves.",
+  "short_description": "Decentralized & composable data infrastructure",
+  "tags": ["Infrastructure"],
+  "contracts": [
+    {
+      "name": "PublisherRegistry",
+      "address": "0x4746485fa57b49dc992c35d7f12054b5a7d24b0e187021cd8f40bc2517700bc"
+    },
+    {
+      "name": "OracleProxy",
+      "address": "0x0346c57f094d641ad94e43468628d8e9c574dcb2803ec372576ccc60a40be2c4"
+    }
+  ],
+  "goerliContracts": [
+    {
+      "name": "PublisherRegistry",
+      "address": "0x5cb0afa98435de7da6da7fad3b40c9d17e747a57bca28feb1c41f05e391f54e"
+    },
+    {
+      "name": "OracleProxy",
+      "address": "0x446812bac98c08190dee8967180f4e3cdcd1db9373ca269904acb17f67f7093"
+    }
+  ],
+  "audits": [],
+  "verified": true,
+  "dotw": false,
+  "links": {
+    "website": "https://pragmaoracle.com/",
+    "careers": "https://pragmaoracle.com/about/",
+    "twitter": "https://twitter.com/PragmaOracle",
+    "telegram": "",
+    "discord": "https://discord.gg/N7sM7VzfJB",
+    "github": "https://github.com/AstralyLabs/Pragma",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "Pragma",
+  "teamInfo": {
+    "founded": "2022-04-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/pragma/dapp-icon-pragma.png",
+    "bannerUrl": "/dapps/pragma/dapp-header-pragma.png",
+    "previewUrl": "/dapps/pragma/dapp-preview-pragma.png",
+    "gallery": []
+  }
+}

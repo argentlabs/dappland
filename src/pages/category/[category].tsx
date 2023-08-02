@@ -10,6 +10,7 @@ import {
   changeTagsToCategoriesSlug,
   reputation,
 } from "../../data/categories"
+import { getAllDapps } from "../../data/getAllDapps"
 import {
   filterCategoryDapps,
   filterDapps,
@@ -21,7 +22,6 @@ import {
   getRatingsFromUser,
 } from "../../helpers/rating"
 import sortByAttribute from "../../helpers/sort"
-import { getAllDapps } from "../../hooks/getAllDapps"
 import { useCategoryStore } from "../../hooks/useCategoryStore"
 import { GetStaticPaths, GetStaticProps } from "next"
 import { useRouter } from "next/router"

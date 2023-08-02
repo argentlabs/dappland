@@ -14,9 +14,9 @@ type Props = {
 }
 
 const textVariantDapp =
-  "To rate this dapp, you need to have used StarkNet. Please connect your StarkNet wallet and allow Dappland to check your on-chain history."
+  "To rate this dapp, you need to have used Starknet. Please connect your Starknet wallet and allow Dappland to check your on-chain history."
 const textVariantNav =
-  "To rate dapps, you need to have used StarkNet. Please connect your StarkNet wallet and allow Dappland to check your on-chain history."
+  "To rate dapps, you need to have used Starknet. Please connect your Starknet wallet and allow Dappland to check your on-chain history."
 
 const ConnectWalletModal = ({
   isOpen,

@@ -1,7 +1,7 @@
 {
-  "name": "StarkNet Devnet",
-  "description": "To speed up the testing and interactions of contracts with StarkNet by using StarkNet Devnet. It runs a local network aimed to mimic the official StarkNet testnet.",
-  "short_description": "Ganache for StarkNet",
+  "name": "Starknet Devnet",
+  "description": "To speed up the testing and interactions of contracts with Starknet by using Starknet Devnet. It runs a local network aimed to mimic the official Starknet testnet.",
+  "short_description": "Ganache for Starknet",
   "tags": ["Infrastructure"],
   "contracts": [],
   "goerliContracts": [],
@@ -33,7 +33,7 @@
     "gallery": [
       {
         "url": "/dapps/spaceshard/Starknet-Devnet-tutorial.png",
-        "description": "How to set up StarkNet Devnet on Windows!"
+        "description": "How to set up Starknet Devnet on Windows!"
       }
     ]
   }

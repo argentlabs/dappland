@@ -1,0 +1,37 @@
+{
+  "name": "Starknet Social",
+  "description": "The First Social Network Protocol on Starknet built by Dolven Labs. Mint your Social Space on Starknet by setting up your Identity, NFT dAvatar, and a lot more all in one place!",
+  "short_description": "Social Network Protocol on Starknet",
+  "tags": ["Social", "NFTs"],
+  "contracts": [],
+  "goerliContracts": [
+    {
+      "name": "Starknet Social Resolver",
+      "address": "0x564742bd75538e017a0ba7f23c9b6746d956458ce76e9d00e9182ba0b934acd"
+    }
+  ],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://starknet.social/",
+    "careers": "mailto:info@dolvenlabs.com?subject=Job+enquiry+via+Dappland",
+    "twitter": "https://twitter.com/StarknetSocial",
+    "discord": "https://discord.gg/invite/UG5tkPa3xn",
+    "github": "https://github.com/dolven-labs-catalyst/starknet-social",
+    "medium": "https://medium.com/@starknetsocial",
+    "mirror": ""
+  },
+  "twitterName": "StarknetSocial",
+  "teamInfo": {
+    "founded": "2023-01-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/starknetsocial/dapp-logo-sns.png",
+    "bannerUrl": "/dapps/starknetsocial/dapp-header-sns.jpg",
+    "previewUrl": "/dapps/starknetsocial/dapp-preview-sns.png",
+    "gallery": []
+  }
+}

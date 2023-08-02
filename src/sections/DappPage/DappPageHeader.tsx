@@ -1,4 +1,3 @@
-import starEmpty from "../../assets/icons/empty_star.svg"
 import expandIcon from "../../assets/icons/expand.svg"
 import flagIcon from "../../assets/icons/flag.svg"
 import Button from "../../components/Button/Button"
@@ -105,7 +104,12 @@ const DappPageHeader = ({
               href={dappInfo.links?.website + "?utm_source=dappland" || "/"}
               passHref
             >
-              <Button variant="primary" className="mr-3 visit-button">
+              <Button
+                variant="primary"
+                className="mr-3 visit-button"
+                target="_blank"
+                rel="noopener"
+              >
                 Visit Dapp
               </Button>
             </Link>
@@ -113,7 +117,7 @@ const DappPageHeader = ({
             <div className="flex gap-10 flex-col sm:flex-row">
               <div>
                 <h3 className="font-bold text-lg mb-2">1. Install Argent X</h3>
-                <DownloadButton />
+                <DownloadButton name={dappInfo.name} />
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-2">2. Visit Dapp</h3>

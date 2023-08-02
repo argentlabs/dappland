@@ -1,7 +1,7 @@
 {
   "name": "STARKSCAN",
-  "description": "Next-generation StarkNet block explorer.",
-  "short_description": "StarkNet block explorer",
+  "description": "Next-generation Starknet block explorer.",
+  "short_description": "Starknet block explorer",
   "tags": ["Infrastructure"],
   "contracts": [],
   "goerliContracts": [],

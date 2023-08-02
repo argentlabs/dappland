@@ -6,7 +6,7 @@ import Head from "next/head"
 import styled from "styled-components"
 
 const MainContainer = styled.main`
-  padding-top: 56px;
+  padding-top: 0;
   @media (min-width: 1024px) {
     padding-top: 0;
   }
@@ -34,15 +34,15 @@ export const Layout = ({
       <Head>
         <title>
           {title
-            ? `${title} on Dappland – The best dapps on StarkNet`
-            : `Dappland | The best dapps on StarkNet`}
+            ? `${title} on Dappland – The best dapps on Starknet`
+            : `Dappland | The best dapps on Starknet`}
         </title>
         <meta
           name="description"
           content={
             description
               ? `${description}`
-              : `Dappland | The best dapps on StarkNet`
+              : `Dappland | The best dapps on Starknet`
           }
         />
 
@@ -51,8 +51,8 @@ export const Layout = ({
           property="og:title"
           content={
             title
-              ? `Discover ${title} on Dappland – The best dapps on StarkNet`
-              : `Dappland | The best dapps on StarkNet`
+              ? `Discover ${title} on Dappland – The best dapps on Starknet`
+              : `Dappland | The best dapps on Starknet`
           }
         />
         {description && <meta name="og:description" content={description} />}
@@ -67,8 +67,8 @@ export const Layout = ({
           property="twitter:title"
           content={
             title
-              ? `Discover ${title} on Dappland – The best dapps on StarkNet`
-              : `Dappland | The best dapps on StarkNet`
+              ? `Discover ${title} on Dappland – The best dapps on Starknet`
+              : `Dappland | The best dapps on Starknet`
           }
         />
         {description && (

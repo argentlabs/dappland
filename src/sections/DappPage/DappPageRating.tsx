@@ -1,14 +1,15 @@
-import starEmpty from "../../assets/icons/empty_star.svg"
-import star from "../../assets/icons/star.svg"
+import starEmpty from "../../assets/icons/starEmpty.svg"
+import starFilled from "../../assets/icons/starFilled.svg"
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal"
 import { getRatingForDapp, getRatingsFromUser } from "../../helpers/rating"
 import { useWalletStore } from "../../hooks/useWalletStore"
-import BigNumber from "bignumber.js"
 import { setCookie, getCookie, hasCookie } from "cookies-next"
 import { connect } from "get-starknet"
 import sn from "get-starknet-core"
+import chunk from "lodash.chunk"
 import Image from "next/image"
 import React, { useEffect, useState } from "react"
+import { Signature, number } from "starknet"
 
 type Props = {
   dappKey?: string
@@ -106,7 +107,7 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
       }
       if (starknet.isConnected) {
         const chainId = determineIfMainnet() ? "SN_MAIN" : "SN_GOERLI"
-        const signature = await starknet.account.signMessage({
+        const signature: Signature = await starknet.account.signMessage({
           message: {
             dappKey: dappKey,
             rating: ratingValue,
@@ -117,6 +118,7 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
             version: "1.0",
           },
           types: {
+            // IMPORTANT: Do not change StarkNetDomain to StarknetDomain
             StarkNetDomain: [
               { name: "name", type: "felt" },
               { name: "chainId", type: "felt" },
@@ -130,16 +132,15 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
           primaryType: "Message",
         })
 
-        const signatureFirstElement = new BigNumber(signature[0])
-        const signatureSecondElement = new BigNumber(signature[1])
+        const signatures = chunk(signature, 2).map((sign) => ({
+          r: number.toHexString(sign[0]),
+          s: number.toHexString(sign[1]),
+        }))
 
         const bodyData = {
           dappKey,
+          signatures,
           rating: ratingValue,
-          signature: {
-            r: "0x" + signatureFirstElement.toString(16),
-            s: "0x" + signatureSecondElement.toString(16),
-          },
           account: starknet.selectedAddress,
         }
 
@@ -187,7 +188,7 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
 
   return (
     <div>
-      <div className="xl:mt-0 mt-12">
+      <div className="mt-12 xl:mt-0">
         <h2 className="text-[28px] leading-[34px] font-bold mb-4">Rating</h2>
         <ConnectWalletModal
           isOpen={isRatingModalOpen}
@@ -242,10 +243,10 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
                 src={
                   hoverIndex !== null
                     ? hoverIndex >= val
-                      ? star
+                      ? starFilled
                       : starEmpty
                     : currentRating !== null && currentRating >= val
-                    ? star
+                    ? starFilled
                     : starEmpty
                 }
                 className="z-[1]"

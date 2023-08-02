@@ -1,0 +1,60 @@
+{
+  "name": "Carmine Options AMM",
+  "description": "Carmine Finance is revolutionizing the way stakers, traders, and crypto investors approach risk management. Our risk platform offers a comprehensive suite of options and products that enable users to hedge and insure their portfolios across multiple chains.",
+  "short_description": "DeFi Options",
+  "tags": ["DeFi"],
+  "contracts": [
+    {
+      "name": "Carmine Options AMM",
+      "address": "0x76dbabc4293db346b0a56b29b6ea9fe18e93742c73f12348c8747ecfc1050aa"
+    },
+    {
+      "name": "Carmine Governance",
+      "address": "0x1405ab78ab6ec90fba09e6116f373cda53b0ba557789a4578d8c1ec374ba0f"
+    }
+  ],
+  "goerliContracts": [
+    {
+      "name": "Carmine Options AMM",
+      "address": "0x042a7d485171a01b8c38b6b37e0092f0f096e9d3f945c50c77799171916f5a54"
+    }
+  ],
+  "audits": [
+    {
+      "name": "Hackachain",
+      "url": "https://carmine.finance/audit/hack-a-chain"
+    }
+  ],
+  "verified": true,
+  "dotw": false,
+  "links": {
+    "website": "https://carmine.finance/",
+    "careers": "https://carmine.finance/#career",
+    "twitter": "https://twitter.com/CarmineOptions",
+    "telegram": "",
+    "discord": "https://discord.gg/6J6NpPxmp6",
+    "github": "https://github.com/CarmineOptions",
+    "youtube": "",
+    "medium": "https://medium.com/@carminefinanceinfo",
+    "mirror": ""
+  },
+  "twitterName": "@CarmineOptions",
+  "teamInfo": {
+    "contactEmail": "business@carmine.finance",
+    "founded": "2022-04-01T00:14:30.000Z",
+    "anonymous": true
+  },
+  "tokens": [
+    {
+      "address": "0x3c0286e9e428a130ae7fbbe911b794e8a829c367dd788e7cfe3efb0367548fa",
+      "symbol": "CARM"
+    }
+  ],
+  "media": {
+    "logoUrl": "/dapps/carminefinance/carmine-logo.webp",
+    "bannerUrl": "/dapps/carminefinance/carmine-banner.webp",
+    "previewUrl": "/dapps/carminefinance/carmine-preview-700x400.webp",
+    "videoUrl": "",
+    "gallery": []
+  }
+}

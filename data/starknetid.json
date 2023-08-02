@@ -61,9 +61,9 @@
     ]
   },
   "media": {
-    "logoUrl": "/dapps/starknetid/starknetid-logo.png",
-    "bannerUrl": "/dapps/starknetid/starknetid-banner.png",
-    "previewUrl": "/dapps/starknetid/starknetid-preview.png",
+    "logoUrl": "/dapps/starknetid/logo.svg",
+    "bannerUrl": "/dapps/starknetid/starknetid-banner.webp",
+    "previewUrl": "/dapps/starknetid/starknetid-preview.webp",
     "videoUrl": "",
     "gallery": []
   }
