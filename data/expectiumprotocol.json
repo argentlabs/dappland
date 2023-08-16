@@ -1,0 +1,62 @@
+{
+  "name": "Expectium Protocol",
+  "description": "Expectium is an information markets platform that lets you trade on the world’s most highly-debated topics (e.g. politics, current events, etc). On Expectium, you build a portfolio based on your forecasts and earn a return if you are right. When you decide to buy shares in a market, you are weighing in with your own knowledge and research. As a result, Expectium is a leading source of unbiased and real-time data about future events.",
+  "short_description": "Decentralized Information Market",
+  "tags": [
+    "Games",
+    "NFTs",
+    "Social",
+    "DAOs",
+    "Infrastructure"
+  ],
+  "contracts": [
+  ],
+  "goerliContracts": [
+    {
+      "name": "One of Information Market - Will Erdogan be the next Turkish president?",
+      "address": "https://testnet.starkscan.co/contract/0xbed970d6788dc028436722a8a85038274fb29ead41bf6e50a4eb5887f6a35c"
+    }
+  ],
+  "audits": [
+  ],
+  "verified": false,
+  "dotw": false, 
+  "links": {
+    "website": "https://expectium.io/",
+    "careers": "mailto:bora@expectium.io",
+    "twitter": "https://twitter.com/expectiumio",
+    "telegram": "https://t.me/expectiumprotocol",
+    "discord": "https://discord.com/invite/TU54zXjNuq",
+    "github": "",
+    "youtube": "",
+    "medium": "https://medium.com/@expectium",
+    "mirror": ""
+  },
+  "twitterName": "expectiumio",
+  "teamInfo": {
+    "contactEmail": "bora@expectium.io",
+    "founded": "Founding date of the project. EXAMPLE: 2023-04-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [
+  ],
+  "nft": {
+    "collectionContract": "0x02c72e26926e05d060ae52d07cbebafdb520e6fe23c39e036f4593351d5b83c5",
+    "collectionLink": "<https url for link to view full collection>",
+    "collectionName": "Expectium Shares",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/expectiumprotocol/nft.webp",
+        "name": "#1"
+      }
+    ]
+  },
+  "media": {
+    "logoUrl": "/dapps/expectiumprotocol/dapp-icon-expectium.png",
+    "bannerUrl": "/dapps/expectiumprotocol/dapp-header-expectium.png",
+    "previewUrl": "/dapps/expectiumprotocol/dapp-preview-expectium.png",
+    "videoUrl": "",
+    "gallery": [
+    ]
+  }
+}
