@@ -1,0 +1,48 @@
+{
+  "name": "Pyramid Market",
+  "description": "Discover a new dimension on Pyramid NFT Marketplace ⚡ Collect and trade, unique digital assets",
+  "short_description": "Discover a new dimension on Pyramid NFT Marketplace",
+  "tags": ["NFTs", "Social", "Infrastructure"],
+  "contracts": [
+    {
+      "name": "Marketplace",
+      "address": "0x0364847c4f39b869760a8b213186b5b553127e9420e594075d13d1ce8a1d9157"
+    }
+  ],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://pyramid.market/",
+    "careers": "",
+    "twitter": "https://twitter.com/MarketPyramid",
+    "telegram": "",
+    "discord": "https://discord.dolvenlabs.com/",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "MarketPyramid",
+  "teamInfo": {
+    "founded": "2022-08-10T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/pyramid/pyramid-logo.jpg",
+    "bannerUrl": "/dapps/pyramid/pyramid-banner.png",
+    "previewUrl": "/dapps/pyramid/pyramid-preview.png",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "https://pbs.twimg.com/media/F3p8Eu9WQAEMmiX?format=jpg&name=large",
+        "description": "Top Collectors"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/F3p8E95WQAAOrkE?format=jpg&name=large",
+        "description": "Collection"
+      }
+    ]
+  }
+}
