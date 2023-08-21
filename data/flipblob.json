@@ -1,0 +1,39 @@
+{
+  "name": "flipblob",
+  "description": "flipblob is a Starknet-based (dApp) that provides a secure and transparent platform for coin-flipping. Win, and you'll receive double your stake.",
+  "short_description": "flipblob",
+  "tags": ["Games"],
+  "contracts": [],
+  "goerliContracts": [
+    {
+      "name": "Flipping",
+      "address": "0x5e0d6073a790b78b9b049c96605f6cc98e9dd760bd328e95dc561ba8b8c39f3"
+    }
+  ],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://flipblob.com/",
+    "careers": "",
+    "twitter": "https://twitter.com/flipblob",
+    "telegram": "",
+    "discord": "",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "flipblob",
+  "teamInfo": {
+    "contactEmail": "flipblob@protonmail.com",
+    "founded": "2023-08-23T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/flipblob/flipblob-logo.webp",
+    "bannerUrl": "/dapps/yourdappname/flipblob-banner.webp",
+    "previewUrl": "/dapps/yourdappname/flipblob-preview.webp"
+  }
+}
