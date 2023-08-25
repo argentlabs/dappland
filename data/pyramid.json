@@ -37,15 +37,15 @@
     "videoUrl": "",
     "gallery": [
       {
-        "url": "/dapps/pyramid/1.png",
+        "url": "/dapps/pyramid/1.jpg",
         "description": "Collection Page"
       },
       {
-        "url": "/dapps/pyramid/2.png",
+        "url": "/dapps/pyramid/2.jpg",
         "description": "Asset Page"
       },
       {
-        "url": "/dapps/pyramid/3.png",
+        "url": "/dapps/pyramid/3.jpg",
         "description": "Asset Details"
       }
     ]
