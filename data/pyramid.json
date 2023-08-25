@@ -11,6 +11,7 @@
   ],
   "goerliContracts": [],
   "audits": [],
+  "verified": false,
   "dotw": false,
   "links": {
     "website": "https://pyramid.market/",
@@ -34,7 +35,7 @@
     "bannerUrl": "/dapps/pyramid/pyramid-banner.png",
     "previewUrl": "/dapps/pyramid/pyramid-preview.png",
     "videoUrl": "",
-    "gallery": [  
+    "gallery": [
       {
         "url": "/dapps/pyramid/1.png",
         "description": "Collection Page"
