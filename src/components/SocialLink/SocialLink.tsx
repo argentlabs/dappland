@@ -36,8 +36,13 @@ const icons: {
 const SocialLink = ({ name, link }: SocialLinkProps) => {
   if (name === "website" || name === "careers") return null
   return link.length > 0 ? (
-    <Link href={link} target="_blank" rel="noopener noreferrer">
-      <a className="mr-6" aria-label={name}>
+    <Link href={link}>
+      <a
+        className="mr-6"
+        aria-label={name}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Icon className="active-icon cursor-pointer" as="i">
           {icons[name]}
         </Icon>

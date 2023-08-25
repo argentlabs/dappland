@@ -3,7 +3,12 @@
   "description": "AVNU is a decentralized exchange protocol designed to offer the best execution.\n\nOur mission is to build the Liquidity Infrastructure that aims to empower traders and dApps with the best execution. We believe that the only way to serve our customers is to secure the most competitive prices for them, as well as access to the broadest range of assets while providing an exceptional user experience that sets the industry standard.",
   "short_description": "Best execution on Starknet. No fluff.",
   "tags": ["DeFi", "Infrastructure"],
-  "contracts": [],
+  "contracts": [
+    {
+      "name": "AVNU: Exchange",
+      "address": "0x04270219d365d6b017231b52e92b3fb5d7c8378b05e9abc97724537a80e93b0f"
+    }
+  ],
   "goerliContracts": [
     {
       "name": "AVNU: Exchange",
@@ -22,7 +27,7 @@
   "verified": false,
   "dotw": false,
   "links": {
-    "website": "https://avnu.fi",
+    "website": "https://app.avnu.fi/",
     "careers": "https://linktr.ee/avnu_fi",
     "twitter": "https://twitter.com/avnu_fi",
     "telegram": "https://t.me/avnu_fi",
