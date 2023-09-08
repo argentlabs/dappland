@@ -39,7 +39,7 @@
   "tokens": [],
   "nft": {
     "collectionContract": "0x05dbdedc203e92749e2e746e2d40a768d966bd243df04a6b712e222bc040a9af",
-    "collectionLink": "https://aspect.co/collection/0x05dbdedc203e92749e2e746e2d40a768d966bd243df04a6b712e222bc040a9af",
+    "collectionLink": "https://unframed.co/collection/0x05dbdedc203e92749e2e746e2d40a768d966bd243df04a6b712e222bc040a9af",
     "collectionName": "Starknet.id",
     "collectionPreview": [
       {
@@ -62,8 +62,8 @@
   },
   "media": {
     "logoUrl": "/dapps/starknetid/logo.svg",
-    "bannerUrl": "/dapps/starknetid/starknetid-banner.png",
-    "previewUrl": "/dapps/starknetid/starknetid-preview.png",
+    "bannerUrl": "/dapps/starknetid/starknetid-banner.webp",
+    "previewUrl": "/dapps/starknetid/starknetid-preview.webp",
     "videoUrl": "",
     "gallery": []
   }

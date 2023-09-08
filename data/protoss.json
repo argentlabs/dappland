@@ -1,0 +1,52 @@
+{
+  "name": "Protoss DEX",
+  "description": "Protoss DEX is an AMM protocol on Starknet, advancing with Ethereum. It leverages rollup to bring lower fees, less friction, and better liquidity to L2, boosting DeFi adoption.",
+  "short_description": "AMM protocol on top of Starknet",
+  "tags": ["Infrastructure", "DeFi"],
+  "contracts": [
+    {
+      "name": "Router",
+      "address": "0x07a0922657e550ba1ef76531454cb6d203d4d168153a0f05671492982c2f7741"
+    },
+    {
+      "name": "Factory",
+      "address": "0x04bd9ec70e3ee64fe0adefe0ae4eff797fe07b6fe19d72438db0b6d336ee77c8"
+    }
+  ],
+  "goerliContracts": [
+    {
+      "name": "Router",
+      "address": "0x02E071Eb551c4B084B751947aD172C3B210176eD2FC679C5e9C2Cc47Db91df2F"
+    },
+    {
+      "name": "Factory",
+      "address": "0x0017b7cdbd6dd86b4b9baf572e040e74bd44b419dcbb6f38a2e936aec9327b8e"
+    }
+  ],
+  "audits": [],
+  "verified": true,
+  "dotw": false,
+  "links": {
+    "website": "https://protoss.org/",
+    "careers": "",
+    "twitter": "https://twitter.com/protossdex",
+    "telegram": "https://t.me/ProtossDEX",
+    "discord": "https://discord.gg/8nufdtrUq2",
+    "github": "https://github.com/protoss-exchange",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "protossdex",
+  "teamInfo": {
+    "founded": "2023-05-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/protoss/dapp-icon-protoss.png",
+    "bannerUrl": "/dapps/protoss/dapp-header-protoss.jpg",
+    "previewUrl": "/dapps/protoss/dapp-preview-protoss.jpg",
+    "gallery": []
+  }
+}
