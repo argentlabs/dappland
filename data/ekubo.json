@@ -1,0 +1,91 @@
+{
+  "name": "Ekubo",
+  "description": "Ekubo is an automated market maker protocol featuring concentrated liquidity and extensibility, together combined to provide the best pricing on Starknet.",
+  "short_description": "Next-generation AMM built for Starknet",
+  "tags": [
+    "DeFi",
+    "Infrastructure"
+  ],
+  "contracts": [
+    {
+      "name": "Core",
+      "address": "0x00000005dd3D2F4429AF886cD1a3b08289DBcEa99A294197E9eB43b0e0325b4b"
+    },
+    {
+      "name": "Positions",
+      "address": "0x02e0af29598b407c8716b17f6d2795eca1b471413fa03fb145a5e33722184067"
+    },
+    {
+      "name": "Positions NFT",
+      "address": "0x07b696af58c967c1b14c9dde0ace001720635a660a8e90c565ea459345318b30"
+    },
+    {
+      "name": "Quoter",
+      "address": "0x07f133f62810621fe62b11b7eff60c52fec7ef3d326420de6a808b74a2443529"
+    },
+    {
+      "name": "Simple Swapper",
+      "address": "0x07a83729aaaae6344d6fca558614cd22ecdd3f5cd90ec0cd20c8d6bf08170431"
+    }
+  ],
+  "goerliContracts": [
+    {
+      "name": "Core",
+      "address": "0x031e8a7ab6a6a556548ac85cbb8b5f56e8905696e9f13e9a858142b8ee0cc221"
+    },
+    {
+      "name": "Positions",
+      "address": "0x073fa8432bf59f8ed535f29acfd89a7020758bda7be509e00dfed8a9fde12ddc"
+    },
+    {
+      "name": "Positions NFT",
+      "address": "0x01090e3cfd9990c396f246cd1d5c7fb091905cba9f99739653db1f2960a3311f"
+    },
+    {
+      "name": "Quoter",
+      "address": "0x04f8d162d7d62f7c489a022bee6bfa8acf45f60c89d5ff3eccb098d09584d73a"
+    },
+    {
+      "name": "Simple Swapper",
+      "address": "0x064f7ed2dc5070133ae8ccdf85f01e82507facbe5cdde456e1418e3901dc51a0"
+    }
+  ],
+  "audits": [
+  ],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://ekubo.org",
+    "careers": "https://ekubo.org/contact",
+    "twitter": "https://twitter.com/EkuboProtocol",
+    "telegram": "https://t.me/Ekubo_Protocol",
+    "discord": "https://discord.com/invite/RFbSXxtqUG",
+    "github": "https://github.com/EkuboProtocol",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "EkuboProtocol",
+  "teamInfo": {
+    "contactEmail": "eng@ekubo.org",
+    "founded": "2023-06-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [
+  ],
+  "nft": {
+    "collectionContract": "0x07b696af58c967c1b14c9dde0ace001720635a660a8e90c565ea459345318b30",
+    "collectionLink": "https://unframed.co/collection/0x07b696af58c967c1b14c9dde0ace001720635a660a8e90c565ea459345318b30",
+    "collectionName": "Ekubo Position",
+    "collectionPreview": [
+    ]
+  },
+  "media": {
+    "logoUrl": "/dapps/ekubo/ekubo-logo.png",
+    "bannerUrl": "/dapps/ekubo/ekubo-banner.png",
+    "previewUrl": "/dapps/ekubo/ekubo-preview.png",
+    "videoUrl": "",
+    "gallery": [
+    ]
+  }
+}
