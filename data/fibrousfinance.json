@@ -5,8 +5,8 @@
   "tags": ["DeFi"],
   "contracts": [
      {
-      "name": "Router Contract V1",
-      "address": "0x1b23ed400b210766111ba5b1e63e33922c6ba0c45e6ad56ce112e5f4c578e62"
+      "name": "Router Contract V2",
+      "address": "0x03201e8057a781dca378564b9d3bbe9b5b7617fac4ad9d9deaa1024cf63f877e"
     }
   ],
   "goerliContracts": [
@@ -23,7 +23,7 @@
     "careers": "",
     "twitter": "https://twitter.com/FibrousFinance",
     "telegram": "",
-    "discord": "",
+    "discord": "https://discord.gg/vW3cah6m",
     "github": "https://github.com/Fibrous-Finance",
     "youtube": "",
     "medium": "https://medium.com/@fibrous",
