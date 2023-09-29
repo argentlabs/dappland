@@ -1,0 +1,74 @@
+{
+    "name": "Starksport",
+    "description": "Connect the world's major sporting events with Defi and NFT market services",
+    "short_description": "Connect the world's major sporting events with Defi and NFT market services",
+    "tags": [
+      "DeFi",
+      "Games",
+      "NFTs"
+    ],
+    "contracts": [
+      {
+        "name": "Factory",
+        "address": "0x594074315e98393351438011f5a558466f1733fde666f73f41738a39804c27"
+      },
+      {
+        "name": "Router",
+        "address": "0x2d300192ea8d3291755bfd2bb2f9e16b38f48a20e4ce98e189d2daa7be435c2"
+      },
+      {
+        "name": "Jersey",
+        "address": "0x66f271471e5134466c9cb3f7a9a4caf210b1595d9d7e1cca3b2f5c2f39347fb"
+      },
+      {
+        "name": "Logo",
+        "address": "0x07d1cd99140a68a97bc31f4af67aa345d4954ac74f8ed5cee8aecfcf1a47aaef"
+      }
+    ],
+    "audits": [
+      {
+        "name": "Stark Guardians Token & NFT audits",
+        "url": "https://alpha.starkguardians.com/audit/starksport"
+      }
+    ],
+    "verified": true,
+    "dotw": false,
+    "links": {
+      "website": "http://starksport.finance",
+      "careers": "",
+      "twitter": "https://twitter.com/starkfinance",
+      "telegram": "https://t.me/starksportchanel",
+      "discord": "https://discord.gg/rX38ZwbqKw",
+      "github": "https://github.com/starksport-project",
+      "youtube": "",
+      "medium": "",
+      "mirror": ""
+    },
+    "twitterName": "@starkfinance",
+    "teamInfo": {
+      "contactEmail": "support@starksport.finance",
+      "founded": "2022-11-11",
+      "anonymous": true
+    },
+    "tokens": [
+      {
+        "address": "0x00482c9ba8eac039eba45c875eeac660eb91768ca4a32cf3c5ae804cc62dccd2",
+        "symbol": "SFN"
+      }
+    ],
+    "nft": {
+      "collectionContract": "",
+      "collectionLink": "",
+      "collectionName": "",
+      "collectionPreview": [
+      ]
+    },
+    "media": {
+        "logoUrl": "/dapps/starksport/dapp-icon-starksport.png",
+        "bannerUrl": "/dapps/starksport/dapp-header-starksport.png",
+        "previewUrl": "/dapps/starksport/dapp-header-starksport.png",
+      "videoUrl": "",
+      "gallery": []
+    }
+  }
+  
