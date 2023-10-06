@@ -1,0 +1,46 @@
+{
+    "name": "Flexing.GG",
+    "description": "The first dynamic marketplace on Starknet with full support for NFT and Gaming Projects",
+    "short_description": "Flex NFT Marketplace",
+    "tags": [
+      "NFT",
+      "Marketplace",
+      "Gaming"
+    ], //Remove all that don't apply
+    "contracts": [
+      {
+        "name": "Flexing.GG",
+        "address": "0x04b1b3fdf34d00288a7956e6342fb366a1510a9387d321c87f3301d990ac19d4"
+      }
+    ],
+    "verified": true, // Change to true if all contracts verified on starkscan
+    "dotw": false, //leave 'false'
+    "links": {
+      "website": "https://flexing.gg", //if a dapp, please enter dapp url
+      "careers": "https://flexing.gg",
+      "twitter": "https://twitter.com/Flex_strk",
+      "telegram": "",
+      "discord": "https://discord.com/invite/6HvG4ckx9T",
+      "github": "",
+      "youtube": "",
+      "medium": "",
+      "mirror": "https://mirror.xyz/0x4522b644fCD50cBB71Bc8682d67A0E7c2031ABd1"
+    },
+    "twitterName": "FearmeKVV",
+    "teamInfo": {
+      "founded": "2022-10-10T00:00:00.000Z",
+      "anonymous": true // If at least one of the founders has a public profile with their real name linked to the project, set this to true.
+    },
+    
+    "media": {
+      "logoUrl": "/dapps/flex/dapp-icon-flex.png",
+      "bannerUrl": "/dapps/flex/dapp-preview-flex.png",
+      "previewUrl": "/dapps/flex/dapp-header-flex.png",
+      "gallery": [
+        {
+          "url": "/dapps/flex/dapp-header-flex.png",
+          "description": "Flexing Marketplace"
+        }
+      ]
+    }
+  }
