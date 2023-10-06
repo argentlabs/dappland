@@ -1,0 +1,40 @@
+{
+  "name": "Flex Marketplace",
+  "description": "🛒 The 1st Dynamic Marketplace for Starknet - By community for the community. Building the Big Picture, Not Just MARKET.",
+  "short_description": "The 1st Dynamic Marketplace for Starknet",
+  "tags": ["NFTs", "Social", "Infrastructure", "Games", "DAOs"],
+  "contracts": [
+    {
+      "name": "Marketplace",
+      "address": "0x04b1b3fdf34d00288a7956e6342fb366a1510a9387d321c87f3301d990ac19d4"
+    }
+  ],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://flexing.gg/",
+    "careers": "",
+    "twitter": "https://twitter.com/Flex_strk",
+    "telegram": "",
+    "discord": "https://discord.com/invite/6HvG4ckx9T",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "Flex",
+  "teamInfo": {
+    "founded": "2022-09-09T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/flex/flex-logo.png",
+    "bannerUrl": "/dapps/flex/flex-banner.png",
+    "previewUrl": "/dapps/flex/flex-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
