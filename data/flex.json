@@ -2,7 +2,7 @@
   "name": "Flex Marketplace",
   "description": "🛒 The 1st Dynamic Marketplace for Starknet - By community for the community. Building the Big Picture, Not Just MARKET.",
   "short_description": "The 1st Dynamic Marketplace for Starknet",
-  "tags": ["NFTs", "Social", "Infrastructure", "Games", "DAOs"],
+  "tags": ["NFTs", "Infrastructure"],
   "contracts": [
     {
       "name": "Marketplace",
