@@ -1,0 +1,39 @@
+{
+  "name": "Element",
+  "description": "The First Community-driven Aggregated Marketplace, the most gas-saving trading place for NFTs.",
+  "short_description": "The most gas-saving NFT marketplace",
+  "tags": ["NFTs", "Infrastructure"],
+  "contracts": [
+    {
+      "name": "Element NFT Marketplace",
+      "address": "0xxxxxxx"
+    }
+  ],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": true,
+  "dotw": false,
+  "links": {
+    "website": "https://element.market/",
+    "careers": "",
+    "twitter": "https://twitter.com/Element_Market",
+    "telegram": "",
+    "discord": "https://discord.com/invite/elementmarket",
+    "github": "https://github.com/element-market",
+    "youtube": "",
+    "medium": "https://element-market.medium.com/",
+    "mirror": ""
+  },
+  "twitterName": "Element_Market",
+  "teamInfo": {
+    "founded": "2021-06-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/element/dapp-icon-element.png",
+    "bannerUrl": "/dapps/element/dapp-header-element.png",
+    "previewUrl": "/dapps/element/dapp-preview-element.png",
+    "gallery": []
+  }
+}
