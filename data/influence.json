@@ -3,17 +3,25 @@
   "description": "Influence is an open-economy, space strategy MMO in which players own all of their content. Colonize asteroids, build infrastructure, discover technologies, engage in combat. Expand your influence across the belt.",
   "short_description": "A grand strategy space MMO",
   "tags": ["NFTs", "Games", "DAOs"],
-  "contracts": [],
-  "goerliContracts": [
+  "contracts": [
     {
-      "name": "AsteroidToken",
-      "address": "0x02dc57158f2f119653319d552745b9991afa5d468ecbf0609a0ac7d36ad69e5b"
+      "name": "Dispatcher",
+      "address": "0x0422d33a3638dcc4c62e72e1d6942cd31eb643ef596ccac2351e0e21f6cd4bf4"
     },
     {
-      "name": "CrewmateToken",
-      "address": "0x041c4e86a03480313547a04e13fc4d43d7fb7bcb5244fd0cb93f793f304f6124"
+      "name": "Asteroid",
+      "address": "0x0603cf837055c64d026a3c5a9e3a83036cea6c4a3f68a9e19f7a687d726fe817"
+    },
+    {
+      "name": "Crew",
+      "address": "0x07280a807c8b79379bec87919433b7b836b93a92e6d71b24ee99f4ffe33dd337"
+    },
+    {
+      "name": "Crewmate",
+      "address": "0x0241b9c4ce12c06f49fee2ec7c16337386fa5185168f538a7631aacecdf3df74"
     }
   ],
+  "goerliContracts": [],
   "audits": [],
   "verified": false,
   "dotw": false,
@@ -35,25 +43,25 @@
   },
   "tokens": [],
   "nft": {
-    "collectionContract": "0x02dc57158f2f119653319d552745b9991afa5d468ecbf0609a0ac7d36ad69e5b",
-    "collectionLink": "https://testnet.aspect.co/collection/0x02dc57158f2f119653319d552745b9991afa5d468ecbf0609a0ac7d36ad69e5b",
-    "collectionName": "Influence testnet asteroids",
+    "collectionContract": "0x0603cf837055c64d026a3c5a9e3a83036cea6c4a3f68a9e19f7a687d726fe817",
+    "collectionLink": "https://unframed.co/collection/0x0603cf837055c64d026a3c5a9e3a83036cea6c4a3f68a9e19f7a687d726fe817",
+    "collectionName": "Influence Asteroids",
     "collectionPreview": [
       {
-        "image_url": "/dapps/influence/influence-nft-asteroid-01.jpeg",
-        "name": "SR-16286"
+        "image_url": "/dapps/influence/influence-asteroid-1.png",
+        "name": "Aurelion"
       },
       {
-        "image_url": "/dapps/influence/influence-nft-asteroid-02.jpeg",
-        "name": "ZV-7096 'srkndnr'"
+        "image_url": "/dapps/influence/influence-asteroid-2.png",
+        "name": "104-CMS"
       },
       {
-        "image_url": "/dapps/influence/influence-nft-asteroid-03.jpeg",
-        "name": "IL-7165 'Komorebi'"
+        "image_url": "/dapps/influence/influence-asteroid-3.png",
+        "name": "Adalia Prime"
       },
       {
-        "image_url": "/dapps/influence/influence-nft-asteroid-04.jpeg",
-        "name": "ZN-13160"
+        "image_url": "/dapps/influence/influence-asteroid-4.png",
+        "name": "The Lasteroid"
       }
     ]
   },
@@ -64,20 +72,20 @@
     "videoUrl": "/dapps/influence/video.mp4",
     "gallery": [
       {
-        "url": "/dapps/influence/influence-01.jpg",
-        "description": "Influence Starknet space strategy game video still"
+        "url": "/dapps/influence/influence-screen-4.png",
+        "description": "Asteroid close-up in Influence space strategy game"
       },
       {
-        "url": "/dapps/influence/influence-02.jpg",
-        "description": "Influence Starknet MMO in game graphics"
+        "url": "/dapps/influence/influence-screen-3.png",
+        "description": "Crewmate with traits in Influence space strategy game"
       },
       {
-        "url": "/dapps/influence/influence-03.jpg",
-        "description": "Asteroid closeup from Influence Starknet MMO game"
+        "url": "/dapps/influence/influence-screen-2.png",
+        "description": "Computing route between asteroids in Influence space strategy game"
       },
       {
-        "url": "/dapps/influence/influence-04.jpg",
-        "description": "Asteroid from Influence Starknet MMO game"
+        "url": "/dapps/influence/influence-screen-1.png",
+        "description": "Habitat on the surface of an asteroid in Influence space strategy game"
       }
     ]
   }
