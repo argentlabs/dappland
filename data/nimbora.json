@@ -1,0 +1,56 @@
+{
+  "name": "Nimbora",
+  "description": "Nimbora: DeFi pooling made easy >> 1-click DeFi",
+  "short_description": "Interact with your favorite L1 protocols, at a fraction of the cost of L2!",
+  "tags": [
+    "Bridges",
+    "DeFi"
+  ],
+  "contracts": [
+    {
+      "name": "275% Trove",
+      "address": "0x03580a65260563b5511ddf2eafb83d6b309dce7fc25271df8c040a437f09a399"
+    },
+    {
+      "name": "400% Trove",
+      "address": "0x02a67288e48a8c4e2881aee422da7841fc11fef195e0a81f929871c77f07509d"
+    }
+  ],
+  "goerliContracts": [
+    {
+      "name": "275% Trove",
+      "address": "0x03b3e6f26fa0b0e932a356d5394d3bc43b098962bf7982f4204350c561aada2f"
+    },
+    {
+      "name": "400% Trove",
+      "address": "0x43acb79a8436b35d98a9231be51ee69e7aaea6e0feb3eaf186ef0d3ba4d8c7f"
+    }
+  ],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://www.nimbora.io",
+    "careers": "",
+    "twitter": "https://twitter.com/Nimbora_",
+    "telegram": "https://t.me/+606MBKpVsdthYTU0",
+    "discord": "https://discord.gg/a2qEBHWZ",
+    "github": "https://github.com/0xSpaceShard/liquity-L2",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "Nimbora_",
+  "teamInfo": {
+    "contactEmail": "info@nimbora.io",
+    "founded": "2023-10-24T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/nimbora/nimbora_logo.png",
+    "bannerUrl": "/dapps/nimbora/nimbora_banner.png",
+    "previewUrl": "/dapps/nimbora/nimbora_preview.png",
+    "gallery": []
+  }
+}
