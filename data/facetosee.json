@@ -1,0 +1,35 @@
+{
+  "name": "Face To See",
+  "description": "F2C is the 1st NFT collection with 666 Unique NFTs in the product suite of DeColGen Labs, aiming to build a collective of mini-games and entertainment dapps.",
+  "short_description": "Starknet 666 NFTs",
+  "tags": ["Games", "NFTs", "DAOs"],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "",
+    "careers": "",
+    "twitter": "https://twitter.com/FaceToSee_",
+    "telegram": "",
+    "discord": "https://discord.gg/djU2mEJcSq",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "@FaceToSee_",
+  "teamInfo": {
+    "contactEmail": "decolgenlabs@gmail.com",
+    "founded": "2023-08-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/facetosee/face-to-see-logo.png",
+    "bannerUrl": "/dapps/facetosee/face-to-see-banner.png",
+    "previewUrl": "/dapps/facetosee/face-to-see-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
