@@ -1,5 +1,5 @@
 {
-  "name": "Aura",
+  "name": "Opus",
   "description": "An advanced on-chain cross-margin borrowing solution for synthetic assets",
   "short_description": "Autonomous and dynamic synthetic issuance platform",
   "tags": ["DeFi"],
@@ -9,26 +9,26 @@
   "verified": false,
   "dotw": false,
   "links": {
-    "website": "https://www.auraprotocol.com/",
+    "website": "https://www.opus.money",
     "careers": "https://www.lindylabs.net/",
-    "twitter": "https://twitter.com/AuraProtocol",
+    "twitter": "https://twitter.com/OpusMoney",
     "telegram": "",
-    "discord": "",
+    "discord": "https://discord.gg/RqRMhZmP",
     "github": "https://github.com/lindy-labs",
     "youtube": "",
     "medium": "https://medium.com/aura-protocol",
     "mirror": ""
   },
-  "twitterName": "AuraProtocol",
+  "twitterName": "OpusMoney",
   "teamInfo": {
     "founded": "2022-01-01T00:00:00.000Z",
     "anonymous": false
   },
   "tokens": [],
   "media": {
-    "logoUrl": "/dapps/aura/aura-logo.png",
-    "bannerUrl": "/dapps/aura/aura-banner.png",
-    "previewUrl": "/dapps/aura/aura-preview.png",
+    "logoUrl": "/dapps/opus/opus-logo.png",
+    "bannerUrl": "/dapps/opus/opus-banner.png",
+    "previewUrl": "/dapps/opus/opus-preview.png",
     "gallery": []
   }
 }
