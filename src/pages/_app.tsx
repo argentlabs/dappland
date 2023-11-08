@@ -1,3 +1,4 @@
+import { WalletConnectionProvider } from "../context/useWalletConnectionContext"
 import "../styles/globals.css"
 import { ThemeProvider } from "next-themes"
 import type { AppProps } from "next/app"
@@ -13,7 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         data-api="/x/api/event"
         src="/x/js/script.js"
       />
-      <Component {...pageProps} />
+      <WalletConnectionProvider>
+        <Component {...pageProps} />
+      </WalletConnectionProvider>
     </ThemeProvider>
   )
 }
