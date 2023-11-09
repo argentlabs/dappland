@@ -41,9 +41,6 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
   useEffect(() => {
     const getUserOldRatings = async ({ account }: { account: string }) => {
       const rating = await getRatingsFromUser({ account, dappKey })
-      console.log("rating", rating)
-      console.log("current rating", currentRating)
-
       if (rating !== null) {
         setCurrentRating(rating - 1)
       }
@@ -66,7 +63,6 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
 
   const connectToWalletAndRate = async (rating?: number) => {
     let ratingValue = rating ?? currentRating
-    console.log("first ratingValue", ratingValue)
 
     if (connectedWallet?.isConnected && connectedWallet?.id === "argentX") {
       setError(null)
@@ -88,8 +84,6 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
     ratingValue++
     if (connectedWallet && connectedWallet.isConnected) {
       const chainId = determineIfMainnet() ? "SN_MAIN" : "SN_GOERLI"
-      console.log("rating value before sign", ratingValue)
-
       const signature = await connectedWallet.account.signMessage({
         message: {
           dappKey: dappKey,
@@ -208,14 +202,10 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
               onMouseEnter={() => setHoverIndex(val)}
               onMouseLeave={() => setHoverIndex(null)}
               onClick={() => {
-                console.log("1st val", val)
-
                 setCurrentRating(val)
                 if (!connectedWallet) {
                   setRatingModalOpen(true)
                 } else {
-                  console.log(val)
-
                   connectToWalletAndRate(val)
                 }
               }}
