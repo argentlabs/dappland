@@ -1,8 +1,12 @@
-import { useWalletConnection } from "../hooks/useWalletConnection"
+import {
+  UseWalletConnectionProps,
+  useWalletConnection,
+} from "../hooks/useWalletConnection"
 import React, { ReactNode, createContext, useContext } from "react"
 
-// TODO: pass default value to context
-const WalletConnectionContext = createContext()
+const WalletConnectionContext = createContext<UseWalletConnectionProps | null>(
+  null,
+)
 
 export const useWalletConnectionContext = () => {
   return useContext(WalletConnectionContext)

@@ -1,7 +1,7 @@
 import starEmpty from "../../assets/icons/starEmpty.svg"
 import starFilled from "../../assets/icons/starFilled.svg"
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal"
-import { useWalletConnectionContext } from "../../context/useWalletConnectionContext"
+import { useWalletConnectionContext } from "../../contexts/WalletConnectionProvider"
 import { getRatingForDapp, getRatingsFromUser } from "../../helpers/rating"
 import { UseWalletConnectionProps } from "../../hooks/useWalletConnection"
 import { setCookie, getCookie, hasCookie } from "cookies-next"
@@ -41,6 +41,9 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
   useEffect(() => {
     const getUserOldRatings = async ({ account }: { account: string }) => {
       const rating = await getRatingsFromUser({ account, dappKey })
+      console.log("rating", rating)
+      console.log("current rating", currentRating)
+
       if (rating !== null) {
         setCurrentRating(rating - 1)
       }
@@ -62,7 +65,9 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
   }
 
   const connectToWalletAndRate = async (rating?: number) => {
-    let ratingValue = rating || currentRating
+    let ratingValue = rating ?? currentRating
+    console.log("first ratingValue", ratingValue)
+
     if (connectedWallet?.isConnected && connectedWallet?.id === "argentX") {
       setError(null)
     } else {
@@ -83,6 +88,8 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
     ratingValue++
     if (connectedWallet && connectedWallet.isConnected) {
       const chainId = determineIfMainnet() ? "SN_MAIN" : "SN_GOERLI"
+      console.log("rating value before sign", ratingValue)
+
       const signature = await connectedWallet.account.signMessage({
         message: {
           dappKey: dappKey,
@@ -109,9 +116,8 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
       })
 
       const signatures = chunk(signature, 2).map((sign) => ({
-        // TODO: check type
-        r: num.toHexString(sign[0]),
-        s: num.toHexString(sign[1]),
+        r: num.toHexString(String(sign[0])),
+        s: num.toHexString(String(sign[1])),
       }))
 
       const bodyData = {
@@ -202,10 +208,14 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
               onMouseEnter={() => setHoverIndex(val)}
               onMouseLeave={() => setHoverIndex(null)}
               onClick={() => {
+                console.log("1st val", val)
+
                 setCurrentRating(val)
                 if (!connectedWallet) {
                   setRatingModalOpen(true)
                 } else {
+                  console.log(val)
+
                   connectToWalletAndRate(val)
                 }
               }}

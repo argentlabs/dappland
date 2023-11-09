@@ -1,7 +1,7 @@
 import power from "../../assets/icons/power.svg"
 import powerLight from "../../assets/icons/powerLight.svg"
 import powerPink from "../../assets/icons/powerPink.svg"
-import { useWalletConnectionContext } from "../../context/useWalletConnectionContext"
+import { useWalletConnectionContext } from "../../contexts/WalletConnectionProvider"
 import { useDarkMode } from "../../hooks/useDarkMode"
 import { UseWalletConnectionProps } from "../../hooks/useWalletConnection"
 import ConnectWalletModal from "../Modal/ConnectWalletModal"
