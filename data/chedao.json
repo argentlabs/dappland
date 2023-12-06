@@ -1,0 +1,46 @@
+{
+  "name": "CheDAOLabs",
+  "description": "CheDAO is a Web3 autonomous organization formed by a group of rebellious game lovers. Inspired by the spirit of Che Guevara, our mission is to liberate the productive forces of gaming. Our vision is to establish an eternal, onchain autonomous world.CheDAO also is the parent company of [@AW_Research](https://twitter.com/AW_Research) & [@cryptsncaverns](https://twitter.com/cryptsncaverns)",
+  "short_description": "<One-liner description. Max 20 characters>",
+  "tags": ["Games", "NFTs", "DAOs"],
+  "links": {
+    "website": "https://www.chedao.io/",
+    "careers": "",
+    "twitter": "https://twitter.com/CheDAOLabs",
+    "telegram": "",
+    "discord": "https://discord.gg/XWGSNJ7vv5",
+    "github": "https://github.com/CheDAOLabs",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "@CheDAOLabs",
+  "teamInfo": {
+    "contactEmail": "cenozoic.xyz@gmail.com",
+    "founded": "2023-01-02T00:00:00.000Z",
+    "anonymous": true
+  },
+  "media": {
+    "logoUrl": "/dapps/chedao/dapp-chedao-icon.png",
+    "bannerUrl": "/dapps/chedao/dapp-chedao-banner.png",
+    "previewUrl": "/dapps/chedao/dapp-chedao-preview.png",
+    "gallery": [
+      {
+        "url": "/dapps/chedao/chedao-cheverse.png",
+        "description": "Enter CHEVERSE: CHEDAO's revolutionary, decentralized universe, breaking gaming monopolies and fostering player creativity with Che Guevara's spirit. Join the rebellion!"
+      },
+      {
+        "url": "/dapps/chedao/chedao-globegrafter.png",
+        "description": "CheDAO won an Ethereum hackathon prize for their GlobeGrafter-powered project, creating a sample roguelike game."
+      },
+      {
+        "url": "/dapps/chedao/chedao-talas-01.png",
+        "description": "Talas, by CheDAO, is your epic journey through a continent, with legendary blacksmiths, the Mystic Forest Dungeon, and thrilling card duels!"
+      },
+      {
+        "url": "/dapps/chedao/chedao-talas-02.png",
+        "description": "CheDAO's Talas: Conquer a continent, forge alliances with legendary blacksmiths, brave the Mystic Forest Dungeon, and engage in epic card duels in this dynamic multiplayer adventure!"
+      }
+    ]
+  }
+}
