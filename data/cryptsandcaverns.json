@@ -1,0 +1,67 @@
+{
+  "name": "Crypts and Caverns",
+  "description": "Crypts and Caverns is a generative, on-chain, Lootverse ‘lego’. Each NFT is programmatically generated within the contract, meaning no two maps are alike. The data within each map has been carefully optimized to play nicely within the loot ecosystem, supporting text, 2d, and 3d worlds. This means that developers, designers and artists alike can call the contract directly to integrate their own mechanics, adventures and tilesets on top.",
+  "short_description": "On-chain Lootverse Lego, Unique Maps for Versatile Integration",
+  "tags": ["Games", "NFTs"],
+  "contracts": [
+    {
+      "name": "Crypts and Caverns (CAVERNS) NFT [on Ethereum]",
+      "address": "0x86f7692569914B5060Ef39aAb99e62eC96A6Ed45"
+    }
+  ],
+  "links": {
+    "website": "https://threepwave.com/cryptsandcaverns",
+    "careers": "",
+    "twitter": "https://twitter.com/cryptsncaverns",
+    "telegram": "",
+    "discord": "https://t.co/9eVrqycVCG",
+    "github": "https://github.com/CheDAOLabs/cryptsandcaverns",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "@cryptsncaverns",
+  "teamInfo": {
+    "contactEmail": "cenozoic.xyz@gmail.com",
+    "founded": "2021-11-20T00:00:00.000Z",
+    "anonymous": true
+  },
+  "nft": {
+    "collectionContract": "0x86f7692569914B5060Ef39aAb99e62eC96A6Ed45",
+    "collectionLink": "https://opensea.io/collection/crypts-and-caverns",
+    "collectionName": "crypts-and-caverns",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/cryptsandcaverns/crypts-and-caverns-nft-01.svg",
+        "name": "Landing of the golem"
+      },
+      {
+        "image_url": "/dapps/cryptsandcaverns/crypts-and-caverns-nft-02.svg",
+        "name": "Shrine"
+      }
+    ]
+  },
+  "media": {
+    "logoUrl": "/dapps/cryptsandcaverns/dapp-cc-icon.png",
+    "bannerUrl": "/dapps/cryptsandcaverns/dapp-cc-banner.png",
+    "previewUrl": "/dapps/cryptsandcaverns/dapp-cc-preview.png",
+    "gallery": [
+      {
+        "url": "/dapps/cryptsandcaverns/cc-01.png",
+        "description": "Discover a new era in on-chain gaming with Crypts and Caverns. Exclusive NFT maps seamlessly blend into the Lootverse, unlocking decentralized adventures."
+      },
+      {
+        "url": "/dapps/cryptsandcaverns/cc-02.png",
+        "description": "Step into decentralized gaming's future with Crypts and Caverns. Unique NFT maps intricately weave into the Lootverse, reshaping on-chain experiences."
+      },
+      {
+        "url": "/dapps/cryptsandcaverns/cc-03.png",
+        "description": "Unleash on-chain gaming potential with Crypts and Caverns' distinctive NFT maps. Integrated into the Lootverse, they redefine decentralized gaming landscapes."
+      },
+      {
+        "url": "/dapps/cryptsandcaverns/cc-04.png",
+        "description": "Embark on a journey with Crypts and Caverns into decentralized gaming. Unique NFT maps, finely attuned to the Lootverse, promise a revolutionary blockchain experience."
+      }
+    ]
+  }
+}
