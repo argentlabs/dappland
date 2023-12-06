@@ -1,0 +1,50 @@
+{
+  "name": "AW Research",
+  "description": "AW Research stands as a TripleA, Chain Agnostic, Engine Agnostic, and Language Agnostic, research institution for the builder, by the builder, and of the builder. We are committed to exploring the potential of innovative Autonomous World (AW) projects.In this rapidly evolving, multifaceted diegesis, AW research strives to understand and unify the future primitives in complex and high-frequency blockchain transactions. Our global developer network transcends borders, departments, and disciplines, bringing together curious minds immersed in rigorous logic, cryptographical, and computational reasoning.",
+  "short_description": "Research institution exploring AW.",
+  "tags": ["Infrastructure"],
+  "links": {
+    "website": "https://www.chedao.io/",
+    "careers": "",
+    "twitter": "https://twitter.com/AW_Research",
+    "telegram": "",
+    "discord": "https://discord.gg/XWGSNJ7vv5",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": "https://mirror.xyz/0x8046108b92EEAa28b8970B6294BfD432dc382c7D"
+  },
+  "twitterName": "@AW_Research",
+  "teamInfo": {
+    "contactEmail": "awresearch.mkt@gmail.com",
+    "founded": "2023-05-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "media": {
+    "logoUrl": "/dapps/awresearch/dapp-awr-icon.png",
+    "bannerUrl": "/dapps/awresearch/dapp-awr-banner.png",
+    "previewUrl": "/dapps/awresearch/dapp-awr-preview.png",
+    "gallery": [
+      {
+        "url": "/dapps/awresearch/awr-01.png",
+        "description": "AW Research Thesis"
+      },
+      {
+        "url": "/dapps/awresearch/awr-02.png",
+        "description": "AW DAY at Token 2049"
+      },
+      {
+        "url": "/dapps/awresearch/awr-03.png",
+        "description": "QUEST ITEMS @AW DAY"
+      },
+      {
+        "url": "/dapps/awresearch/awr-04.png",
+        "description": "FOCG in AW @AW DAY"
+      },
+      {
+        "url": "/dapps/awresearch/awr-05.png",
+        "description": "Fireside Chats @AW DAY"
+      }
+    ]
+  }
+}
