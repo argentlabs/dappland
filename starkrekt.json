@@ -1,0 +1,38 @@
+{
+  "name": "StarkRekt",
+  "description": "StarkRekt enables users to check and reset their token spending permissions on StarkNet",
+  "short_description": "Revoke Tool",
+  "tags": [
+    "Infrastructure"
+  ], 
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false, 
+  "dotw": false,
+  "links": {
+    "website": "https://starkrekt.com/",
+    "careers": "",
+    "twitter": "https://twitter.com/StarkRekt",
+    "telegram": "",
+    "discord": "",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "StarkRekt",
+  "teamInfo": {
+    "contactEmail": "gsozanim001@hotmail.com",
+    "founded": "2023-08-21T00:00:00.000Z",
+    "anonymous": true 
+  "tokens": [],
+  "nft": {},
+  "media": {
+    "logoUrl": "/dapps/starkrekt/starkrekt-logo.png",
+    "bannerUrl": "/dapps/starkrekt/starkrekt-banner.png",
+    "previewUrl": "/dapps/starkrekt/starkrekt-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
