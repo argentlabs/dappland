@@ -1,0 +1,42 @@
+{
+  "name": "rhino.fi",
+  "description": "The lightning-fast secure bridge for seamless cross-chain transactions.",
+  "short_description": "Secure L2 Bridge.",
+  "tags": [
+    "Bridges",
+    "DeFi"
+  ],
+  "contracts": [
+    {
+      "name": "Bridge",
+      "address": "0x0259fec57cd26d27385cd8948d3693bbf26bed68ad54d7bdd1fdb901774ff0e8"
+    }
+  ],
+  "audits": [
+    {
+      "name": "rhino.fi audits",
+      "url": "https://rhino.fi/audit/"
+    }
+  ],
+  "dotw": false,
+  "links": {
+    "website": "https://app.rhino.fi/",
+    "careers": "https://rhino.fi/careers/",
+    "twitter": "https://twitter.com/rhinofi",
+    "telegram": "https://t.me/rhinofi",
+    "discord": "https://discord.gg/JvN3dcQrhk",
+    "github": "https://github.com/rhinofi/",
+    "youtube": "https://www.youtube.com/@rhinofi",
+    "medium": "https://rhino.fi/blog/"
+  },
+  "twitterName": "rhinofi",
+  "teamInfo": {
+    "founded": "2020-06-04T00:00:00.000Z",
+    "anonymous": false
+  },
+  "media": {
+    "logoUrl": "/dapps/rhinofi/dapp-icon-rhinofi.png",
+    "bannerUrl": "/dapps/rhinofi/dapp-header-rhinofi.png",
+    "previewUrl": "/dapps/rhinofi/dapp-preview-rhino.png"
+  }
+}
