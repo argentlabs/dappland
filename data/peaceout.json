@@ -1,0 +1,34 @@
+{
+  "name": "Peaceout Omini",
+  "description": "Peaceout is not just a decentralized exchange dapp, it's a visionary ecosystem where traders, collectors, and enthusiasts come together to explore the exciting realms of both DeFi and NFTs on all major L2s, including Starknet, ZkSync, Base, Scroll, Arbitrum, and Optimism.",
+  "short_description": "Explore the exciting realms of both DeFi and NFTs",
+  "tags": ["DeFi", "NFTs"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": true,
+  "dotw": false,
+  "links": {
+    "website": "https://peaceout.tech/",
+    "careers": "",
+    "twitter": "https://twitter.com/peaceoutOmini",
+    "telegram": "",
+    "discord": "",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "peaceoutOmini",
+  "teamInfo": {
+    "founded": "2021-11-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/peaceout/peaceout-logo.png",
+    "bannerUrl": "/dapps/peaceout/peaceout-banner.png",
+    "previewUrl": "/dapps/peaceout/peaceout-preview.png",
+    "gallery": []
+  }
+}
