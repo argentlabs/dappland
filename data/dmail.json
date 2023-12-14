@@ -1,0 +1,42 @@
+{
+  "name": "Dmail Network",
+  "description": "Discover encrypted emails, unified notifications, and targeted marketing across multiple chains and dApps.",
+  "short_description": "Start your encrypted messages on Starknet.",
+  "tags": [
+    "Social",
+    "Infrastructure",
+    "NFTs",
+    "DAOs"
+  ],
+  "contracts": [
+    {
+      "name": "Dmail Network",
+      "address": "0x0454f0bd015e730e5adbb4f080b075fdbf55654ff41ee336203aa2e1ac4d4309"
+    }
+  ],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": true,
+  "dotw": false,
+  "links": {
+    "website": "https://dmail.ai/",
+    "twitter": "https://twitter.com/Dmailofficial",
+    "telegram": "https://t.me/dmailofficial",
+    "discord": "https://discord.gg/QbvaeqwMFg",
+    "youtube": "https://www.youtube.com/channel/UCbLt26cFfNtQ1Vwei3FI8YQ",
+    "medium": "https://blog.dmail.ai/"
+  },
+  "twitterName": "Dmailofficial",
+  "teamInfo": {
+    "founded": "2021-08-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/dmail/dmail-logo.png",
+    "bannerUrl": "/dapps/dmail/dmail-banner.png",
+    "previewUrl": "/dapps/dmail/dmail-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
