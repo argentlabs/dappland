@@ -8,8 +8,8 @@ import ballLight from "../assets/icons/crystal-ball-light.svg"
 import ball from "../assets/icons/crystal-ball.svg"
 import database from "../assets/icons/database.svg"
 import databaseLight from "../assets/icons/databaseLight.svg"
-import dotw from "../assets/icons/dotw.svg"
-import dotwLight from "../assets/icons/dotwLight.svg"
+import dotm from "../assets/icons/dotm.svg"
+import dotmLight from "../assets/icons/dotmLight.svg"
 import gallery from "../assets/icons/gallery.svg"
 import galleryLight from "../assets/icons/galleryLight.svg"
 import gaming from "../assets/icons/gaming.svg"
@@ -45,6 +45,7 @@ export const categories = [
 export const reputation = [
   { key: "doxxed", name: "Public team", icon: profile, iconDark: profileLight },
   { key: "audited", name: "Audited", icon: legal, iconDark: legalLight },
+  { key: "dotm", name: "Dapp of the Month", icon: dotm, iconDark: dotmLight },
   {
     key: "verified",
     name: "Verified contracts",

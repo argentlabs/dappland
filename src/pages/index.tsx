@@ -76,10 +76,10 @@ const Home = ({
   const filteredDapps = dappCards.filter((dapp) => {
     return (
       selectedFilters.reduce((acc, val) => {
-        if (val === "dotw" && dapp.featured) {
+        if (val === "dotm" && dapp.featured) {
           acc = acc + 1
         }
-        if (val === "doxxed" && !dapp.annonymous) {
+        if (val === "doxxed" && !dapp.anonymous) {
           acc = acc + 1
         }
         if (val === "audited" && dapp.audits && dapp.audits.length > 0) {
@@ -162,8 +162,8 @@ export const getStaticProps = async () => {
     url: dapp.url,
     logo: dapp.media.logoUrl,
     image: dapp.media.previewUrl,
-    featured: dapp.dotw,
-    annonymous: dapp.teamInfo.anonymous,
+    featured: dapp.dotm,
+    anonymous: dapp.teamInfo.anonymous,
     audits: dapp.audits,
     verified: dapp.verified,
   }))

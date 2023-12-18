@@ -4,7 +4,7 @@
   "short_description": "Gathers all AMMs of Starknet at one place.",
   "tags": ["DeFi"],
   "contracts": [
-     {
+    {
       "name": "Router Contract V2",
       "address": "0x03201e8057a781dca378564b9d3bbe9b5b7617fac4ad9d9deaa1024cf63f877e"
     }
@@ -17,7 +17,7 @@
   ],
   "audits": [],
   "verified": false,
-  "dotw": false,
+  "dotm": false,
   "links": {
     "website": "https://fibrous.finance/",
     "careers": "",

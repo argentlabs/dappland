@@ -185,8 +185,8 @@ export const getStaticProps: GetStaticProps<{ dappCards: DappCard[] }> = async (
     logo: dapp.media.logoUrl,
     image: dapp.media.previewUrl,
     categories: changeTagsToCategoriesSlug(dapp.tags),
-    featured: dapp.dotw,
-    annonymous: dapp.teamInfo.anonymous,
+    featured: dapp.dotm,
+    anonymous: dapp.teamInfo.anonymous,
     audits: dapp.audits,
     verified: dapp.verified,
   }))

@@ -39,7 +39,7 @@
     }
   ],
   "verified": false, // change to true if your contracts are verified on StarkScan
-  "dotw": false, //leave 'false'
+  "dotm": false, //leave 'false'
   "links": {
     "website": "<URL of the dapp's website. Leave empty if non-existent>",
     "careers": "<URL of the dapp's carreer page. Can also be 'mailto:example@mydapp.com'. Leave empty if non-existent>",

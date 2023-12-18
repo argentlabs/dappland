@@ -2,10 +2,7 @@
   "name": "Ekubo",
   "description": "Ekubo is an automated market maker protocol featuring concentrated liquidity and extensibility, together combined to provide the best pricing on Starknet.",
   "short_description": "Next-generation AMM built for Starknet",
-  "tags": [
-    "DeFi",
-    "Infrastructure"
-  ],
+  "tags": ["DeFi", "Infrastructure"],
   "contracts": [
     {
       "name": "Core",
@@ -50,10 +47,9 @@
       "address": "0x064f7ed2dc5070133ae8ccdf85f01e82507facbe5cdde456e1418e3901dc51a0"
     }
   ],
-  "audits": [
-  ],
+  "audits": [],
   "verified": false,
-  "dotw": false,
+  "dotm": false,
   "links": {
     "website": "https://ekubo.org",
     "careers": "https://ekubo.org/contact",
@@ -71,21 +67,18 @@
     "founded": "2023-06-01T00:00:00.000Z",
     "anonymous": false
   },
-  "tokens": [
-  ],
+  "tokens": [],
   "nft": {
     "collectionContract": "0x07b696af58c967c1b14c9dde0ace001720635a660a8e90c565ea459345318b30",
     "collectionLink": "https://unframed.co/collection/0x07b696af58c967c1b14c9dde0ace001720635a660a8e90c565ea459345318b30",
     "collectionName": "Ekubo Position",
-    "collectionPreview": [
-    ]
+    "collectionPreview": []
   },
   "media": {
     "logoUrl": "/dapps/ekubo/ekubo-logo.png",
     "bannerUrl": "/dapps/ekubo/ekubo-banner.png",
     "previewUrl": "/dapps/ekubo/ekubo-preview.png",
     "videoUrl": "",
-    "gallery": [
-    ]
+    "gallery": []
   }
 }

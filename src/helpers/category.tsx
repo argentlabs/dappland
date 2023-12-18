@@ -6,11 +6,11 @@ export const filterCategoryDapps = ({
   category: string
 }) => {
   return dappCards.filter((dapp) => {
-    if (category === "dotw") {
+    if (category === "dotm") {
       return dapp.featured
     }
     if (category === "doxxed") {
-      return !dapp.annonymous
+      return !dapp.anonymous
     }
     if (category === "audited") {
       return dapp.audits && dapp.audits.length > 0
@@ -32,10 +32,10 @@ export const filterDapps = ({
   return dappCards.filter((dapp) => {
     return (
       filters.reduce((acc, val) => {
-        if (val === "dotw" && dapp.featured) {
+        if (val === "dotm" && dapp.featured) {
           acc = acc + 1
         }
-        if (val === "doxxed" && !dapp.annonymous) {
+        if (val === "doxxed" && !dapp.anonymous) {
           acc = acc + 1
         }
         if (val === "audited" && dapp.audits && dapp.audits.length > 0) {
@@ -88,12 +88,12 @@ export const checkIfCategoryExists = (
   dappRatings?: { [key: string]: string[] },
 ) => {
   switch (category) {
-    case "Dapp of the Week":
+    case "Dapp of the Month":
     case "featured":
       return dappCard.featured
     case "Public team":
     case "doxxed":
-      return !dappCard.annonymous
+      return !dappCard.anonymous
     case "Audited":
     case "audited":
       return dappCard.audits && dappCard.audits.length

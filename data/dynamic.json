@@ -2,14 +2,12 @@
   "name": "Dynamic",
   "description": "A smart, beautiful and dynamic multi-chain wallet login flow, and powerful developer tools to match",
   "short_description": "Your multi-chain web3 auth platform",
-  "tags": [
-    "Infrastructure"
-  ],
+  "tags": ["Infrastructure"],
   "contracts": [],
   "goerliContracts": [],
   "audits": [],
   "verified": false,
-  "dotw": false,
+  "dotm": false,
   "links": {
     "website": "https://www.dynamic.xyz/",
     "careers": "https://www.dynamic.xyz/careers",
