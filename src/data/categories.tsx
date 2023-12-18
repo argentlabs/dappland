@@ -45,7 +45,12 @@ export const categories = [
 export const reputation = [
   { key: "doxxed", name: "Public team", icon: profile, iconDark: profileLight },
   { key: "audited", name: "Audited", icon: legal, iconDark: legalLight },
-  { key: "dotm", name: "Dapp of the Month", icon: dotm, iconDark: dotmLight },
+  {
+    key: "featured",
+    name: "Dapp of the Month",
+    icon: dotm,
+    iconDark: dotmLight,
+  },
   {
     key: "verified",
     name: "Verified contracts",

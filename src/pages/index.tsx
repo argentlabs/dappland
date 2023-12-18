@@ -1,6 +1,8 @@
+import featuredDappImage from "../../public/dapps/ekubo/dotm-ekubo.jpg"
 import FilterButton from "../components/Button/FilterButton"
 import Card from "../components/Card/Card"
 import Categories from "../components/Categories/Categories"
+import DappOfTheMonth from "../components/FeaturedCard/DappOfTheMonth"
 import FilterMenu from "../components/FilterMenu/FilterMenu"
 import Layout from "../components/Layout"
 import Select from "../components/Select/Select"
@@ -76,7 +78,7 @@ const Home = ({
   const filteredDapps = dappCards.filter((dapp) => {
     return (
       selectedFilters.reduce((acc, val) => {
-        if (val === "dotm" && dapp.featured) {
+        if (val === "featured" && dapp.featured) {
           acc = acc + 1
         }
         if (val === "doxxed" && !dapp.anonymous) {
@@ -101,7 +103,7 @@ const Home = ({
   const sortedDapps = sortByAttribute(dappsByRating, selectedSort)
   const filterCount = selectedFilters.length + selectedRatings.length
   return (
-    <Layout isHome>
+    <Layout /*isHome*/>
       <div className="container px-4 mx-auto mb-16 lg:mb-32">
         <StyledSection className="lg:grid lg:mt-20">
           <Categories
@@ -111,6 +113,12 @@ const Home = ({
             dappRatings={ratings}
           />
           <div className="cards">
+            <DappOfTheMonth
+              name="Ekubo"
+              image={featuredDappImage}
+              url="/ekubo"
+              className="featured"
+            />
             <h3 className="lg:hidden font-semibold text-xl leading-none mb-5">
               All dapps
             </h3>

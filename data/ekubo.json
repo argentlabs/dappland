@@ -49,7 +49,7 @@
   ],
   "audits": [],
   "verified": false,
-  "dotm": false,
+  "dotm": true,
   "links": {
     "website": "https://ekubo.org",
     "careers": "https://ekubo.org/contact",

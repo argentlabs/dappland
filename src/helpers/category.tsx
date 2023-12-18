@@ -6,7 +6,7 @@ export const filterCategoryDapps = ({
   category: string
 }) => {
   return dappCards.filter((dapp) => {
-    if (category === "dotm") {
+    if (category === "featured") {
       return dapp.featured
     }
     if (category === "doxxed") {
@@ -32,7 +32,7 @@ export const filterDapps = ({
   return dappCards.filter((dapp) => {
     return (
       filters.reduce((acc, val) => {
-        if (val === "dotm" && dapp.featured) {
+        if (val === "featured" && dapp.featured) {
           acc = acc + 1
         }
         if (val === "doxxed" && !dapp.anonymous) {
