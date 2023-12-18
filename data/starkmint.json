@@ -2,7 +2,7 @@
   "name": "StarkMint",
   "description": "With StarkMint, you have the power to craft your very own ERC20 tokens and ERC721 NFTs effortlessly. Just link your wallet, and you're good to go, no coding skills required!",
   "short_description": "Create Your Own ERC20 Token & ERC721 NFT on Starknet- Effortlessly!",
-  "tags": ["nfts", "infrastructure"],
+  "tags": ["DeFi", "NFTs", "Infrastructure"],
   "contracts": [],
   "goerliContracts": [],
   "audits": [],
