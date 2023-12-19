@@ -241,7 +241,9 @@ const Categories = ({
         </>
       )}
       {checkIfCategoryHasDapps(categories, true) && (
-        <h3 className="font-semibold text-xl leading-none pt-8 pb-4 lg:text-[22px] lg:font-bold">
+        <h3
+          className={`font-semibold text-xl leading-none pt-8 pb-4 lg:text-[22px] lg:font-bold"`}
+        >
           Categories
         </h3>
       )}

@@ -2,9 +2,7 @@
   "name": "zkLend",
   "description": "zkLend is a money-market protocol combining zk-rollup scalability, superior transaction speed, and cost-savings with Ethereum's security.",
   "short_description": "Money-market protocol",
-  "tags": [
-    "DeFi"
-  ],
+  "tags": ["DeFi"],
   "contracts": [
     {
       "name": "Price Oracle",
@@ -23,7 +21,7 @@
     }
   ],
   "verified": false,
-  "dotw": false,
+  "dotm": false,
   "links": {
     "website": "https://zklend.com/",
     "careers": "mailto:info@zklend.com",
