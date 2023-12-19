@@ -43,7 +43,7 @@
     }
   ],
   "verified": false, // change to true if your contracts are verified on StarkScan
-  "dotw": false, //leave 'false'
+  "dotm": false, //leave 'false'
   "links": {
     // Leave empty string, i.e. "" if any empty
     "website": "<URL of the dapp's website. Leave empty string if non-existent>",

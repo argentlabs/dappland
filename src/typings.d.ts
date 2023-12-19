@@ -32,7 +32,7 @@ interface DappInfo {
   teamInfo: TeamInfo
   tokens: Token[]
   media: Media
-  dotw: boolean
+  dotm: boolean
   twitterName: string
   nft?: {
     collectionLink: string
@@ -133,7 +133,7 @@ interface DappCard {
   image: string
   logo: string
   featured: boolean
-  annonymous: boolean
+  anonymous: boolean
   audits: Audit[]
   verified: boolean
 }

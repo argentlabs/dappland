@@ -2,10 +2,7 @@
   "name": "rhino.fi",
   "description": "The lightning-fast secure bridge for seamless cross-chain transactions.",
   "short_description": "Secure L2 Bridge.",
-  "tags": [
-    "Bridges",
-    "DeFi"
-  ],
+  "tags": ["Bridges", "DeFi"],
   "contracts": [
     {
       "name": "Bridge",
@@ -20,7 +17,7 @@
   ],
   "tokens": [],
   "verified": true,
-  "dotw": false,
+  "dotm": false,
   "links": {
     "website": "https://app.rhino.fi/",
     "careers": "https://rhino.fi/careers/",
