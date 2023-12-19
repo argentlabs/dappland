@@ -23,7 +23,12 @@
       "address": "0x03906107c71e94075ac691b232faecd9a724a46a5129928f44c79026b7bc9ec9"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "name": "Nethermind audit #1",
+      "url": "https://github.com/avnu-labs/avnu-contracts-v2/blob/main/audit/Nethermind-avnu-protocol-audit.pdf"
+    }
+  ],
   "verified": false,
   "dotw": false,
   "links": {

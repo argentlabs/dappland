@@ -1,3 +1,4 @@
+// Delete all comments, including this one.
 {
   "name": "<Name of your Dapp>",
   "description": "<100 to 500 characters description of your project>",
@@ -11,8 +12,9 @@
     "Social",
     "DAOs",
     "Infrastructure"
-  ], // Remove all that don't apply. Please delete this and all other comments.
+  ], // Remove all that don't apply
   "contracts": [
+    // If no contracts yet, delete from here to closing curly brace
     {
       "name": "<Name of Mainnet contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
       "address": "<Address of Mainnet contract 1>"
@@ -23,6 +25,7 @@
     }
   ],
   "goerliContracts": [
+    // If no contracts yet, delete from here to closing curly brace
     {
       "name": "<Name of Goerli contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
       "address": "<Address of Goerli contract 1>"
@@ -33,6 +36,7 @@
     }
   ],
   "audits": [
+    // If no audits, delete from here to closing curly brace
     {
       "name": "<Name of the publicly available Security Audit. Remove entry from 'audits' array if non-existent. Add more entries to the 'audits' array if relevant>",
       "url": "URL to access the security audit. Only audits that are publicly available will be considered to be included in Dappland. If they're private, please don't include them in the 'audits' array>"
@@ -41,23 +45,25 @@
   "verified": false, // change to true if your contracts are verified on StarkScan
   "dotw": false, //leave 'false'
   "links": {
-    "website": "<URL of the dapp's website. Leave empty if non-existent>",
-    "careers": "<URL of the dapp's carreer page. Can also be 'mailto:example@mydapp.com'. Leave empty if non-existent>",
-    "twitter": "<URL of the dapp's Twitter account>. Leave empty if non-existent",
-    "telegram": "<URL of the dapp's Telegram>. Leave empty if non-existent",
-    "discord": "<URL of the dapp's Discord invite>. Leave empty if non-existent",
-    "github": "<URL of the dapp's Github>. Leave empty if non-existent",
-    "youtube": "<URL of the dapp's Youtube channel>. Leave empty if non-existent",
-    "medium": "<URL of the dapp's Medium>. Leave empty if non-existent",
-    "mirror": "<URL of the dapp's Mirror page>. Leave empty if non-existent"
+    // Leave empty string, i.e. "" if any empty
+    "website": "<URL of the dapp's website. Leave empty string if non-existent>",
+    "careers": "<URL of the dapp's carreer page. Can also be 'mailto:example@mydapp.com'. Leave empty string if non-existent>",
+    "twitter": "<URL of the dapp's Twitter account>. Leave empty string if non-existent",
+    "telegram": "<URL of the dapp's Telegram>. Leave empty string if non-existent",
+    "discord": "<URL of the dapp's Discord invite>. Leave empty string if non-existent",
+    "github": "<URL of the dapp's Github>. Leave empty string if non-existent",
+    "youtube": "<URL of the dapp's Youtube channel>. Leave empty string if non-existent",
+    "medium": "<URL of the dapp's Medium>. Leave empty string if non-existent",
+    "mirror": "<URL of the dapp's Mirror page>. Leave empty string if non-existent"
   },
-  "twitterName": "Twitter username. Leave empty if none",
+  "twitterName": "Twitter username. Leave empty string if none",
   "teamInfo": {
     "contactEmail": "<Email address>", // For Argent to be able to contact you. Will not be published on Dappland.
     "founded": "Founding date of the project. EXAMPLE: 2022-05-24T00:00:00.000Z",
     "anonymous": true // If at least one of the founders has a public profile with their real name linked to the project, set this to true.
   },
   "tokens": [
+    // Delete from here to closing curly brace if no token
     {
       "address": "<Address of any ERC-20 Mainnet tokens created by the dapp>",
       "symbol": "e.g. ETH"

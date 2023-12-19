@@ -1,6 +1,6 @@
 {
   "name": "Nimbora",
-  "description": "Nimbora: DeFi pooling made easy >> 1-click DeFi",
+  "description": "Interact with your favorite L1 protocols, at a fraction of the cost of L2!",
   "short_description": "Interact with your favorite L1 protocols, at a fraction of the cost of L2!",
   "tags": [
     "Bridges",
@@ -37,7 +37,7 @@
     "discord": "https://discord.gg/a2qEBHWZ",
     "github": "https://github.com/0xSpaceShard/liquity-L2",
     "youtube": "",
-    "medium": "",
+    "medium": "https://medium.com/@Nimbora",
     "mirror": ""
   },
   "twitterName": "Nimbora_",
