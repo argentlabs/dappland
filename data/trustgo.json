@@ -1,0 +1,35 @@
+{
+  "name": "TrustGo",
+  "description": "Trusta Labs aims to continuously develop MEDIA Score as the infrastructure for on-chain user reputation assessment. In the KYA product called TrustGo, every user can look up their own unique MEDIA Score on Starknet. It helps to fairly identify accounts that contribute to the Starknet ecosystem. Through MEDIA Score, users can gain a deeper understanding of their on-chain activities and value, while project teams can accurately allocate resources and incentives to users who truly contribute. TrustGo and MEDIA score will accelerate the grow of Starknet ecosystem.",
+  "short_description": "Know Your Account. Track Your Web3 Journey.",
+  "tags": [
+    "Infrastructure"
+  ],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "dotw": false,
+  "links": {
+    "website": "https://trustgo.trustalabs.ai/",
+    "careers": "",
+    "twitter": "https://twitter.com/TrustaLabs",
+    "telegram": "https://t.me/Trusta_Labs",
+    "discord": "https://discord.com/invite/rtwSQxDM6F",
+    "github": "https://github.com/TrustaLabs",
+    "youtube": "",
+    "medium": "https://medium.com/@trustalabs.ai",
+    "mirror": ""
+  },
+  "twitterName": "TrustaLabs",
+  "teamInfo": {
+    "founded": "2022-08-08T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/trustgo/dapp-icon-trustgo.png",
+    "bannerUrl": "/dapps/trustgo/dapp-header-trustgo.png",
+    "previewUrl": "/dapps/trustgo/dapp-preview-trustgo.png",
+    "gallery": []
+  }
+}
