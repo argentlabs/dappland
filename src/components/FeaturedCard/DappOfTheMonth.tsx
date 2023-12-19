@@ -38,7 +38,7 @@ const FeaturedCard = ({
         ].join(" ")}
         image={image}
       >
-        <div className="flex flex-col lg:flex-col-reverse lg:absolute lg:top-8 lg:left-8 lg:z-10">
+        <div className="flex flex-col lg:flex-col-reverse lg:absolute lg:top-8 lg:left-8 lg:z-[1]">
           {
             <p className="mb-1 text-[15px] leading-none text-light-charcoal font-semibold lg:bg-black lg:py-2 lg:px-4 lg:text-white lg:font-normal lg:max-w-max lg:text-[20px]">
               January 2024
@@ -54,7 +54,7 @@ const FeaturedCard = ({
             Dapp of the Month: {name}
           </h2>
         </div>
-        <div className="absolute z-10 bottom-4 right-4 lg:bottom-auto lg:top-4 max-w-[120px] max-h-[120px] xl:max-w-[214px] xl:max-h-[214px]">
+        <div className="absolute z-[1] bottom-4 right-4 lg:bottom-auto lg:top-4 max-w-[120px] max-h-[120px] xl:max-w-[214px] xl:max-h-[214px]">
           <Image src={award} alt="award - dapp of the month" />
         </div>
         <div className="w-full rounded-xl">
