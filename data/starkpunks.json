@@ -32,16 +32,16 @@
   },
   "twitterName": "@starkpunks_nft",
   "teamInfo": {
-    "contactEmail": "<Email address>",
+    "contactEmail": "",
     "founded": "Founding date of the project. EXAMPLE: 2022-12-16T00:00:00.000Z",
-    "anonymous": true // If at least one of the founders has a public profile with their real name linked to the project, set this to true.
+    "anonymous": true
   },
   "tokens": [
    
     ]
   },
   "media": {
-    "logoUrl": "/dapps/yourdappname/yourdappname-logo.[png, jpg or webp] Resolution: 320 × 320 pixels>",
+    "logoUrl": "data/logo starkpunks320.png",
     "bannerUrl": "/dapps/yourdappname/yourdappname-banner.[png, jpg or webp] Resolution: 1920 × 400 pixels>",
     "previewUrl": "/dapps/yourdappname/yourdappname-preview.[png, jpg or webp] Resolution: 700 × 400 pixels>",
     "videoUrl": "<URL for a video of the dapp (hosted externally)>",
