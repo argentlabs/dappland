@@ -1,0 +1,55 @@
+{
+  "name": "<Starkpunks>",
+  "description": "<Starkpunks launched as the first 10k NFTs collection on StarkNet in 2022>",
+  "short_description": "<first 10k NFTs collection on StarkNet in 2022>",
+  "tags": [
+   "NFTs",
+  ],
+  "contracts": [
+   
+    {
+      "name": "Main",
+      "address": "<0x0727a63f78ee3f1bd18f78009067411ab369c31dece1ae22e16f567906409905>"
+    },
+   
+  ],
+  "audits": [
+   
+  ],
+  "verified": true,
+  "dotm": false,
+  "links": {
+    
+    "website": "https://www.starkpunks.com/",
+    "careers": "",
+    "twitter": "https://twitter.com/starkpunks_nft",
+    "telegram": "",
+    "discord": "https://discord.com/invite/n9hdZ4Smva",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": "https://linktr.ee/starkpunks"
+  },
+  "twitterName": "@starkpunks_nft",
+  "teamInfo": {
+    "contactEmail": "snowchris99@msn.com",
+    "founded": "Founding date of the project. EXAMPLE: 2022-12-16T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [
+   
+    ]
+  },
+  "media": {
+    "logoUrl": "data/logo starkpunks320.png",
+    "bannerUrl": "data/banner_2.png",
+    "previewUrl": "data/banner_23.png",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "",
+        "description": ""
+      }
+    ]
+  }
+}
