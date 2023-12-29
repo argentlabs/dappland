@@ -1,14 +1,14 @@
 {
   "name": "<Starkpunks>",
   "description": "<Starkpunks launched as the first 10k NFTs collection on StarkNet in 2022>",
-  "short_description": "<first 10k NFTs on StarkNet>",
+  "short_description": "<first 10k NFTs collection on StarkNet in 2022>",
   "tags": [
    "NFTs",
   ],
   "contracts": [
    
     {
-      "name": "<Main)>",
+      "name": "Main",
       "address": "<0x0727a63f78ee3f1bd18f78009067411ab369c31dece1ae22e16f567906409905>"
     },
    
@@ -17,9 +17,9 @@
    
   ],
   "verified": true,
-  "dotm": false, //leave 'false'
+  "dotm": false,
   "links": {
-    // Leave empty string, i.e. "" if any empty
+    
     "website": "https://www.starkpunks.com/",
     "careers": "",
     "twitter": "https://twitter.com/starkpunks_nft",
@@ -28,11 +28,11 @@
     "github": "",
     "youtube": "",
     "medium": "",
-    "mirror": ""
+    "mirror": "https://linktr.ee/starkpunks"
   },
   "twitterName": "@starkpunks_nft",
   "teamInfo": {
-    "contactEmail": "",
+    "contactEmail": "snowchris99@msn.com",
     "founded": "Founding date of the project. EXAMPLE: 2022-12-16T00:00:00.000Z",
     "anonymous": true
   },
@@ -42,13 +42,13 @@
   },
   "media": {
     "logoUrl": "data/logo starkpunks320.png",
-    "bannerUrl": "/dapps/yourdappname/yourdappname-banner.[png, jpg or webp] Resolution: 1920 × 400 pixels>",
-    "previewUrl": "/dapps/yourdappname/yourdappname-preview.[png, jpg or webp] Resolution: 700 × 400 pixels>",
-    "videoUrl": "<URL for a video of the dapp (hosted externally)>",
+    "bannerUrl": "data/banner_2.png",
+    "previewUrl": "data/banner_23.png",
+    "videoUrl": "",
     "gallery": [
       {
-        "url": "<URL for a promotional image or screenshots of the dapp (hosted externally) Resolution: at least 700 × 400. Add more entries to the 'gallery' array if necessary>",
-        "description": "<Desciption for the promotional image"
+        "url": "",
+        "description": ""
       }
     ]
   }
