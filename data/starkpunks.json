@@ -1,14 +1,14 @@
 {
-  "name": "<Name of your Dapp>",
-  "description": "<100 to 500 characters description of your project>",
-  "short_description": "<One-liner description. Max 20 characters>",
+  "name": "Starkpunks",
+  "description": "Starkpunks launched as the first 10k NFTs collection on StarkNet in 2022",
+  "short_description": "First 10k collection on Starknet",
   "tags": [
     "NFTs", "Social",
   ],
   "contracts": [
     {
-      "name": "<main>",
-      "address": "<0x0727a63f78ee3f1bd18f78009067411ab369c31dece1ae22e16f567906409905>"
+      "name": "main",
+      "address": "0x0727a63f78ee3f1bd18f78009067411ab369c31dece1ae22e16f567906409905"
     },
    ],
   "audits": [
@@ -18,7 +18,7 @@
   "links": {
     "website": "https://www.starkpunks.com",
     "careers": "",
-    "twitter": "",
+    "twitter": "https://twitter.com/starkpunks_nft",
     "telegram": "",
     "discord": "https://discord.com/invite/n9hdZ4Smva",
     "github": "",
@@ -34,7 +34,7 @@
   },
   "tokens": [
     {
-      "address": "<0x026e0852e1de834db3858b644270c52c4e0cab5be1da710751711c11b74eefed>",
+      "address": "0x026e0852e1de834db3858b644270c52c4e0cab5be1da710751711c11b74eefed",
       "symbol": "PUNK"
     }
   ],
