@@ -1,0 +1,68 @@
+{
+  "name": "<Name of your Dapp>",
+  "description": "<100 to 500 characters description of your project>",
+  "short_description": "<One-liner description. Max 20 characters>",
+  "tags": [
+    "NFTs",
+  ],
+  "contracts": [
+    {
+      "name": "<main>",
+      "address": "<0x0727a63f78ee3f1bd18f78009067411ab369c31dece1ae22e16f567906409905>"
+    },
+   ],
+  "audits": [
+  ],
+  "verified": true, 
+  "dotm": false,
+  "links": {
+    "website": "https://www.starkpunks.com",
+    "careers": "",
+    "twitter": "",
+    "telegram": "",
+    "discord": "https://discord.com/invite/n9hdZ4Smva",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": "https://linktr.ee/starkpunks"
+  },
+  "twitterName": "@starkpunks_nft",
+  "teamInfo": {
+    "contactEmail": "",
+    "founded": "Founding date of the project. EXAMPLE: 2022-12-14T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [
+    {
+      "address": "<0x026e0852e1de834db3858b644270c52c4e0cab5be1da710751711c11b74eefed>",
+      "symbol": "PUNK"
+    }
+  ],
+  "nft": {
+    "collectionContract": "0x0727a63f78ee3f1bd18f78009067411ab369c31dece1ae22e16f567906409905",
+    "collectionLink": "https://element.market/collections/starkpunks",
+    "collectionName": "Starkpunks",
+    "collectionPreview": [
+      {
+        "image_url": "",
+        "name": ""
+      },
+      {
+        "image_url": "",
+        "name": ""
+      }
+    ]
+  },
+  "media": {
+    "logoUrl": "public/dapps/starkpunks/logo starkpunks320.png",
+    "bannerUrl": "public/dapps/starkpunks/banner_23.png",
+    "previewUrl": "public/dapps/starkpunks/banner_2.png",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "",
+        "description": ""
+      }
+    ]
+  }
+}
