@@ -54,9 +54,9 @@
     ]
   },
   "media": {
-    "logoUrl": "public/dapps/starkpunks/logo starkpunks320.png",
-    "bannerUrl": "public/dapps/starkpunks/banner_23.png",
-    "previewUrl": "public/dapps/starkpunks/banner_2.png",
+    "logoUrl": "/dapps/starkpunks/logo starkpunks320.png",
+    "bannerUrl": "/dapps/starkpunks/banner_23.png",
+    "previewUrl": "/dapps/starkpunks/banner_2.png",
     "videoUrl": "",
     "gallery": [
       {
