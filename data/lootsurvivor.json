@@ -1,0 +1,57 @@
+{
+  "name": "Loot Survivor",
+  "description": "Survivors is the first Loot adventure game exploring the Play2Die mechanic. It is a game of onchain survival where you must defeat beasts and collect gear in the fight to stay alive and make it to the top of the leaderboard.",
+  "short_description": "Game of onchain survival",
+  "tags": ["Games"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://survivor.realms.world/",
+    "careers": "",
+    "twitter": "https://twitter.com/LootRealms",
+    "telegram": "",
+    "discord": "",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "@LootRealms",
+  "teamInfo": {
+    "founded": "2021-08-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [
+    {
+      "address": "0x0124aeb495b947201f5fac96fd1138e326ad86195b98df6dec9009158a533b49",
+      "symbol": "LORDS"
+    }
+  ],
+  "media": {
+    "logoUrl": "/dapps/lootsurvivor/lootsurvivor-logo.png",
+    "bannerUrl": "/dapps/lootsurvivor/lootsurvivor-banner.png",
+    "previewUrl": "/dapps/lootsurvivor/lootsurvivor-preview.png",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "/dapps/lootsurvivor/gallery/gallery-01.webp",
+        "description": ""
+      },
+      {
+        "url": "/dapps/lootsurvivor/gallery/gallery-02.webp",
+        "description": ""
+      },
+      {
+        "url": "/dapps/lootsurvivor/gallery/gallery-03.webp",
+        "description": ""
+      },
+      {
+        "url": "/dapps/lootsurvivor/gallery/gallery-04.webp",
+        "description": ""
+      }
+    ]
+  }
+}
