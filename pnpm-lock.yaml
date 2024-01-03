@@ -45,8 +45,8 @@ dependencies:
     specifier: 5.18.0
     version: 5.18.0
   starknetkit:
-    specifier: ^1.0.21
-    version: 1.0.21(starknet@5.18.0)
+    specifier: ^1.0.29
+    version: 1.0.29(starknet@5.18.0)
   styled-components:
     specifier: ^5
     version: 5.3.5(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
@@ -5604,10 +5604,10 @@ packages:
       - encoding
     dev: false
 
-  /starknetkit@1.0.21(starknet@5.18.0):
-    resolution: {integrity: sha512-gtc0XfNCsfXNq9D7Z0i4L2ruR/SavtG9kY5haFxZwbswT6RyBNXHtyU9eftPPHVGKxvjQAS1fu/Aj+HTXxg+1g==}
+  /starknetkit@1.0.29(starknet@5.18.0):
+    resolution: {integrity: sha512-wuxF4nahZsHVUUuhIuUJlK/E2NOTbwQTLSAQPsfVloUSJkZY6LrUCQEHEFyyJ56ecEQ3VqWYAUdb6RktBnHEqQ==}
     peerDependencies:
-      starknet: ^5.18.0
+      starknet: ^5.24.3
     dependencies:
       '@trpc/client': 10.43.1(@trpc/server@10.43.1)
       '@trpc/server': 10.43.1
