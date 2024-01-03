@@ -8,7 +8,8 @@
   "contracts": [],
   "goerliContracts": [],
   "audits": [],
-  "dotw": false,
+  "verified": false,
+  "dotm": false,
   "links": {
     "website": "https://trustgo.trustalabs.ai/",
     "careers": "",
