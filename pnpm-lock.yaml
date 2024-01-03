@@ -19,10 +19,10 @@ dependencies:
     version: 2.1.1
   get-starknet:
     specifier: ^3.0.1
-    version: 3.0.1(starknet@5.18.0)
+    version: 3.0.1(starknet@5.25.0)
   get-starknet-core:
     specifier: ^3.2.0
-    version: 3.2.0(starknet@5.18.0)
+    version: 3.2.0(starknet@5.25.0)
   lodash.chunk:
     specifier: ^4.2.0
     version: 4.2.0
@@ -42,11 +42,11 @@ dependencies:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
   starknet:
-    specifier: 5.18.0
-    version: 5.18.0
+    specifier: 5.25.0
+    version: 5.25.0
   starknetkit:
     specifier: ^1.0.29
-    version: 1.0.29(starknet@5.18.0)
+    version: 1.0.29(starknet@5.25.0)
   styled-components:
     specifier: ^5
     version: 5.3.5(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
@@ -1917,18 +1917,14 @@ packages:
     dev: false
     optional: true
 
-  /@noble/curves@1.0.0:
-    resolution: {integrity: sha512-2upgEu0iLiDVDZkNLeFV2+ht0BAVgQnEmCk6JsOch9Rp8xfkMCbvbAZlA2pBHQc73dbl+vFOXfqkf4uemdn0bw==}
+  /@noble/curves@1.3.0:
+    resolution: {integrity: sha512-t01iSXPuN+Eqzb4eBX0S5oubSqXbK/xXa1Ne18Hj8f9pStxztHCE2gfboSp/dZRLSqfuLpRK2nDXDK+W9puocA==}
     dependencies:
-      '@noble/hashes': 1.3.0
+      '@noble/hashes': 1.3.3
     dev: false
 
-  /@noble/hashes@1.3.0:
-    resolution: {integrity: sha512-ilHEACi9DwqJB0pw7kv+Apvh50jiiSyR/cQ3y4W7lOR5mhvn/50FLUfsnfJz0BDZtl/RR16kXvptiv6q1msYZg==}
-    dev: false
-
-  /@noble/hashes@1.3.2:
-    resolution: {integrity: sha512-MVC8EAQp7MvEcm30KWENFjgR+Mkmf+D189XJTkFIlwohU5hcBbn1ZkKq7KVTi2Hme3PMGF390DaL52beVrIihQ==}
+  /@noble/hashes@1.3.3:
+    resolution: {integrity: sha512-V7/fPHgl+jsVPXqqeOzT8egNj2iBIVt+ECeMMG8TdcnTikP3oaBtUVqpT/gYCR68aEBJSF+XbYUxStjbFMqIIA==}
     engines: {node: '>= 16'}
     dev: false
 
@@ -1956,6 +1952,17 @@ packages:
   /@rushstack/eslint-patch@1.1.4:
     resolution: {integrity: sha512-LwzQKA4vzIct1zNZzBmRKI9QuNpLgTQMEjsQLf3BXuGYb3QPTP4Yjf6mkdX+X1mYttZ808QpOwAzZjv28kq7DA==}
     dev: true
+
+  /@scure/base@1.1.5:
+    resolution: {integrity: sha512-Brj9FiG2W1MRQSTB212YVPRrcbjkv48FoZi/u4l/zds/ieRrqsh7aUf6CLwkAq61oKXr/ZlTzlY66gLIj3TFTQ==}
+    dev: false
+
+  /@scure/starknet@1.0.0:
+    resolution: {integrity: sha512-o5J57zY0f+2IL/mq8+AYJJ4Xpc1fOtDhr+mFQKbHnYFmm3WQrC+8zj2HEgxak1a+x86mhmBC1Kq305KUpVf0wg==}
+    dependencies:
+      '@noble/curves': 1.3.0
+      '@noble/hashes': 1.3.3
+    dev: false
 
   /@stablelib/aead@1.0.1:
     resolution: {integrity: sha512-q39ik6sxGHewqtO0nP4BuSe3db5G1fEJE8ukvngS2gLkBXyy6E7pLubhbYgnkDFv6V8cWaxcE4Xn0t6LWcJkyg==}
@@ -3981,19 +3988,19 @@ packages:
       has-symbols: 1.0.3
     dev: true
 
-  /get-starknet-core@3.2.0(starknet@5.18.0):
+  /get-starknet-core@3.2.0(starknet@5.25.0):
     resolution: {integrity: sha512-SZhxtLlKoPKLZ2H3l9WIU7CiNmkL3qLWGksALmvZdAXa/9PykYfLtvIB5B8A2UZMpf2ojTZlWLfuo1KhgmVobA==}
     peerDependencies:
       starknet: ^5.18.0
     dependencies:
-      starknet: 5.18.0
+      starknet: 5.25.0
     dev: false
 
-  /get-starknet@3.0.1(starknet@5.18.0):
+  /get-starknet@3.0.1(starknet@5.25.0):
     resolution: {integrity: sha512-EyUl+DVQH5PXW2OUdY06/yaqlMizzLKRLzp3S+VhYz+l6wGvW5pmhTXHLaYI4hWfebIDfFkFvAPxVPv/TkWLyA==}
     dependencies:
       bowser: 2.11.0
-      get-starknet-core: 3.2.0(starknet@5.18.0)
+      get-starknet-core: 3.2.0(starknet@5.25.0)
     transitivePeerDependencies:
       - starknet
     dev: false
@@ -4654,13 +4661,6 @@ packages:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
     dev: true
-
-  /micro-starknet@0.2.3:
-    resolution: {integrity: sha512-6XBcC+GerlwJSR4iA0VaeXtS2wrayWFcA4PEzrJPMuFmWCaUtuGIq5K/DB5F/XgnL54/zl2Bxo690Lj7mYVA8A==}
-    dependencies:
-      '@noble/curves': 1.0.0
-      '@noble/hashes': 1.3.2
-    dev: false
 
   /micromatch@4.0.5:
     resolution: {integrity: sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==}
@@ -5591,20 +5591,21 @@ packages:
     deprecated: 'Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility'
     dev: true
 
-  /starknet@5.18.0:
-    resolution: {integrity: sha512-2b5+F+kfp8fTBAfBpHNmtjhuljZb3P2JMhubP/KWIJAGXwBAalPklOwEYY7Bb2slkPjfkDH0kPxI4037sQcQ+Q==}
+  /starknet@5.25.0:
+    resolution: {integrity: sha512-ja5pV610voxTCw/MzXhZoZcwe+XZ5RVWkpa/Fhxsy0OP635DxKDbnPQSKCLWXmSi/BkfkpeefXXv4IUvYJo4kw==}
     dependencies:
-      '@noble/curves': 1.0.0
+      '@noble/curves': 1.3.0
+      '@scure/base': 1.1.5
+      '@scure/starknet': 1.0.0
       isomorphic-fetch: 3.0.0
       lossless-json: 2.0.11
-      micro-starknet: 0.2.3
       pako: 2.1.0
       url-join: 4.0.1
     transitivePeerDependencies:
       - encoding
     dev: false
 
-  /starknetkit@1.0.29(starknet@5.18.0):
+  /starknetkit@1.0.29(starknet@5.25.0):
     resolution: {integrity: sha512-wuxF4nahZsHVUUuhIuUJlK/E2NOTbwQTLSAQPsfVloUSJkZY6LrUCQEHEFyyJ56ecEQ3VqWYAUdb6RktBnHEqQ==}
     peerDependencies:
       starknet: ^5.24.3
@@ -5616,9 +5617,9 @@ packages:
       detect-browser: 5.3.0
       eventemitter3: 5.0.1
       events: 3.3.0
-      get-starknet-core: 3.2.0(starknet@5.18.0)
+      get-starknet-core: 3.2.0(starknet@5.25.0)
       lodash-es: 4.17.21
-      starknet: 5.18.0
+      starknet: 5.25.0
       svelte-forms: 2.3.1
       trpc-browser: 1.3.6(@trpc/client@10.43.1)(@trpc/server@10.43.1)
     transitivePeerDependencies:
