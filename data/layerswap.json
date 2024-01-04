@@ -1,7 +1,7 @@
 {
   "name": "Layerswap",
-  "description": "Layerswap is the ultimate L2 gateway - offering instant and gasless on and off-ramp transactions to L2s.\nYou can use Layerswap to instantly transfer ETH, USDC, and other tokens from a centralized exchange like Coinbase, Binance, FTX.COM, Kraken, and others to all major L2s, including Starknet, zkSync, Loopring, ImmutableX, Arbitrum, and Optimism.",
-  "short_description": "CEX <> L2 Gateway",
+  "description": "Layerswap provides a one-stop gateway for onboarding users to Web3 projects from any funding source - be it cards, banks, blockchain networks, or custodians like CEXes.\nWallet integrations, 24/7 customer support, and a pre-established reward system make the onboarding process comprehensive and smooth for web3 projects and their users.",
+  "short_description": "One-stop web3 onboarding",
   "tags": ["Onramps", "Bridges"],
   "contracts": [],
   "goerliContracts": [],
