@@ -47,7 +47,7 @@
   "links": {
     // Leave empty string, i.e. "" if any empty
     "website": "<URL of the dapp's website. Leave empty string if non-existent>",
-    "careers": "<URL of the dapp's carreer page. Can also be 'mailto:example@mydapp.com'. Leave empty string if non-existent>",
+    "careers": "<URL of the dapp's career page. Can also be 'mailto:example@mydapp.com'. Leave empty string if non-existent>",
     "twitter": "<URL of the dapp's Twitter account>. Leave empty string if non-existent",
     "telegram": "<URL of the dapp's Telegram>. Leave empty string if non-existent",
     "discord": "<URL of the dapp's Discord invite>. Leave empty string if non-existent",
@@ -92,7 +92,7 @@
     "gallery": [
       {
         "url": "<URL for a promotional image or screenshots of the dapp (hosted externally) Resolution: at least 700 × 400. Add more entries to the 'gallery' array if necessary>",
-        "description": "<Desciption for the promotional image"
+        "description": "<Description for the promotional image"
       }
     ]
   }
