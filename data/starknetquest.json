@@ -19,8 +19,15 @@
   "verified": true,
   "dotm": false,
   "links": {
-    "website": "https://starknet.quest/",
-    "twitter": "https://twitter.com/starknet_quest"
+    "website": "https://starknet.quest/?utm_source=dappland",
+    "careers": "",
+    "twitter": "https://twitter.com/starknet_quest",
+    "telegram": "",
+    "discord": "https://discord.com/invite/8uS2Mgcsza",
+    "github": "https://github.com/starknet-id",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
   },
   "twitterName": "Starknet_quest",
   "teamInfo": {
