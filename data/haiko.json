@@ -6,6 +6,7 @@
     "DeFi",
     "Infrastructure"
   ],
+  "contracts": [],
   "goerliContracts": [
     {
       "name": "MarketManager",
@@ -24,6 +25,7 @@
       "address": "0x4dd8fd99352f5fa5e192e32c78ec5a888f8538b394f4ba76af2c9cc44e16e30"
     }
   ],
+  "audits": [],
   "verified": false,
   "dotm": false,
   "links": {
@@ -39,13 +41,14 @@
   },
   "twitterName": "haikoxyz",
   "teamInfo": {
-    "contactEmail": "contact@haiko.xuz",
+    "contactEmail": "contact@haiko.xyz",
     "founded": "2023-05-31T00:00:00.000Z",
     "anonymous": false
   },
   "media": {
     "logoUrl": "/dapps/haiko/haiko-logo.png",
     "bannerUrl": "/dapps/haiko/haiko-banner.png",
-    "previewUrl": "/dapps/haiko/haiko-preview.png"
+    "previewUrl": "/dapps/haiko/haiko-preview.png",
+    "gallery": []
   }
 }
