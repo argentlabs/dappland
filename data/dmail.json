@@ -8,16 +8,11 @@
     "NFTs",
     "DAOs"
   ],
-  "contracts": [
-    {
-      "name": "Dmail Network",
-      "address": "0x0454f0bd015e730e5adbb4f080b075fdbf55654ff41ee336203aa2e1ac4d4309"
-    }
-  ],
+  "contracts": [],
   "goerliContracts": [],
   "audits": [],
   "verified": true,
-  "dotw": false,
+  "dotm": false,
   "links": {
     "website": "https://dmail.ai/",
     "twitter": "https://twitter.com/Dmailofficial",
