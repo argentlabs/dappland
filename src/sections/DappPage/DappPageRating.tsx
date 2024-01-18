@@ -83,7 +83,6 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
     }
     ratingValue++
     if (connectedWallet && connectedWallet.isConnected) {
-      const chainId = determineIfMainnet() ? "SN_MAIN" : "SN_GOERLI"
       const signature = await connectedWallet.account.signMessage({
         message: {
           dappKey: dappKey,
@@ -91,7 +90,7 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
         },
         domain: {
           name: "Dappland",
-          chainId,
+          chainId: connectedWallet.chainId,
           version: "1.0",
         },
         types: {
