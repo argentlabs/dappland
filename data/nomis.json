@@ -1,0 +1,40 @@
+{
+  "name": "Nomis",
+  "description": "Nomis represents the Reputation Layer for web3, specifically designed to empower users to access and leverage their wallet history. It serves as a valuable tool for BUIDLers, enabling accelerated growth through active engagement and incentives for genuine contributors and early adopters.",
+  "short_description": "Nomis Score represents your Onchain Reputation within the Starknet ecosystem.",
+  "tags": ["Infrastructure"],
+  "contracts": [
+    {
+      "name": "NomisScore",
+      "address": "0x06d462dbfed44bc473e31fc361ed7ba720173b94cf42af2a2b704b65c13821d2"
+    }
+  ],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://nomis.cc/",
+    "careers": "mailto:gm@nomis.cc",
+    "twitter": "https://twitter.com/0xNomis",
+    "telegram": "https://t.me/nomis_protocol",
+    "discord": "https://discord.gg/nomis",
+    "github": "https://github.com/Nomis-cc",
+    "youtube": "https://www.youtube.com/@0xNomis",
+    "medium": "https://medium.com/@0xNomis",
+    "mirror": "https://mirror.xyz/0xnomis.eth"
+  },
+  "twitterName": "0xNomis",
+  "teamInfo": {
+    "contactEmail": "gm@nomis.cc",
+    "founded": "2022-08-02T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/nomis/dapp-icon-nomis.png",
+    "bannerUrl": "/dapps/nomis/dapp-header-nomis.png",
+    "previewUrl": "/dapps/nomis/dapp-preview-nomis.png",
+    "gallery": []
+  }
+}
