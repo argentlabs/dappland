@@ -1,7 +1,7 @@
 {
   "name": "Nomis",
   "description": "Nomis represents the Reputation Layer for web3, specifically designed to empower users to access and leverage their wallet history. It serves as a valuable tool for BUIDLers, enabling accelerated growth through active engagement and incentives for genuine contributors and early adopters.",
-  "short_description": "Nomis Score represents your Onchain Reputation within the Starknet ecosystem.",
+  "short_description": "Know your onchain Starknet Reputation.",
   "tags": ["Infrastructure"],
   "contracts": [
     {
