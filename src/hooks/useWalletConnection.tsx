@@ -23,14 +23,14 @@ export const useWalletConnection = (): UseWalletConnectionProps => {
   useEffect(() => {
     const connectToStarknet = async () => {
       try {
-        const connection = await connect({
+        const { wallet } = await connect({
           modalMode: "neverAsk",
           webWalletUrl: "https://web.argent.xyz",
         })
-        if (connection && connection.isConnected) {
-          setConnectedWallet(connection)
-          setProvider(connection.account)
-          setAddress(connection.selectedAddress)
+        if (wallet && wallet.isConnected) {
+          setConnectedWallet(wallet)
+          setProvider(wallet.account)
+          setAddress(wallet.selectedAddress)
         }
       } catch (error) {
         console.error("Error connecting to starknet:", error)
@@ -41,13 +41,13 @@ export const useWalletConnection = (): UseWalletConnectionProps => {
 
   const connectWallet = async () => {
     try {
-      const connection = await connect({
+      const { wallet } = await connect({
         webWalletUrl: "https://web.argent.xyz",
       })
-      if (connection && connection.isConnected) {
-        setConnectedWallet(connection)
-        setProvider(connection.account)
-        setAddress(connection.selectedAddress)
+      if (wallet && wallet.isConnected) {
+        setConnectedWallet(wallet)
+        setProvider(wallet.account)
+        setAddress(wallet.selectedAddress)
       }
     } catch (error) {
       console.error("Unable to connect to your wallet:", error)
