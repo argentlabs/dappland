@@ -1,7 +1,7 @@
 {
-  "name": "Realms",
-  "description": "Dare you enter the Realms?\nExplore an eternal on-chain universe, filled with heroes, villains, magic and monsters.\nThere are multiple games set in the Realms universe, connected by a shared economy, resources and game assets.\nStep forth, begin your journey, and enjoy true ownership of the value you create through play.",
-  "short_description": "Massive multiplayer on-chain game of economics and chivalry",
+  "name": "Realms.World",
+  "description": "Realms.World is a fantasy multiverse filled with fully onchain games",
+  "short_description": "Realms.World is a fantasy multiverse filled with fully onchain games",
   "tags": ["Games", "NFTs", "DAOs"],
   "contracts": [
     {
@@ -14,7 +14,7 @@
   "verified": false,
   "dotm": false,
   "links": {
-    "website": "https://realmseternum.com/?utm_source=dappland",
+    "website": "https://realms.world/",
     "careers": "https://discord.gg/RnC9VNRzZH",
     "twitter": "https://twitter.com/LootRealms",
     "telegram": "",
