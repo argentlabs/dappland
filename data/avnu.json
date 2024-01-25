@@ -23,11 +23,16 @@
       "address": "0x03906107c71e94075ac691b232faecd9a724a46a5129928f44c79026b7bc9ec9"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "name": "Nethermind audit #1",
+      "url": "https://github.com/avnu-labs/avnu-contracts-v2/blob/main/audit/Nethermind-avnu-protocol-audit.pdf"
+    }
+  ],
   "verified": false,
-  "dotw": false,
+  "dotm": false,
   "links": {
-    "website": "https://app.avnu.fi/",
+    "website": "https://app.avnu.fi/?utm_source=dappland",
     "careers": "https://linktr.ee/avnu_fi",
     "twitter": "https://twitter.com/avnu_fi",
     "telegram": "https://t.me/avnu_fi",
@@ -44,9 +49,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "/dapps/avnu/dapp-icon-avnu.png",
+    "logoUrl": "/dapps/avnu/dapp-icon-avnu.jpg",
     "bannerUrl": "/dapps/avnu/dapp-header-avnu.png",
-    "previewUrl": "/dapps/avnu/dapp-preview-avnu.png",
+    "previewUrl": "/dapps/avnu/dapp-preview-avnu.jpg",
     "gallery": []
   }
 }

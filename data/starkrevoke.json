@@ -1,41 +1,37 @@
 {
-    "name": "StarkRevoke",
-    "description": "StarkRevoke empowers you with easy and selective approval management on StarkNet. Revoke approvals for tokens and NFTs effortlessly, giving you enhanced security. Experience the freedom of selective control to safeguard your digital assets. 🛡️🚀",
-    "short_description": "StarkRevoke: Streamlined Approvals, Enhanced Security, Effortless Control",
-    "tags": [
-        "DeFi",
-        "NFTs",
-        "Infrastructure"
-    ],
-    "contracts": [],
-    "goerliContracts": [],
-    "audits": [],
-    "verified": false,
-    "dotw": false,
-    "links": {
-        "website": "https://www.starkrevoke.com/",
-        "careers": "",
-        "twitter": "https://twitter.com/starkrevoke",
-        "telegram": "https://t.me/starkrevoke",
-        "discord": "",
-        "github": "https://github.com/yusufferdogan/STARKREVOKE",
-        "youtube": "",
-        "medium": "",
-        "mirror": ""
-    },
-    "twitterName": "starkrevoke",
-    "teamInfo": {
-        "contactEmail": "yusuffx03@gmail.com",
-        "founded": "2023-08-12T00:00:00.000Z",
-        "anonymous": true
-    },
-    "tokens": [],
-    "nft": {},
-    "media": {
-        "logoUrl": "/dapps/starkrevoke/dapp-icon-starkrevoke.png",
-        "bannerUrl": "/dapps/starkrevoke/dapp-header-starkrevoke.png",
-        "previewUrl": "/dapps/starkrevoke/dapp-preview-starkrevoke.png",
-        "videoUrl": "",
-        "gallery": []
-    }
+  "name": "StarkRevoke",
+  "description": "StarkRevoke empowers you with easy and selective approval management on StarkNet. Revoke approvals for tokens and NFTs effortlessly, giving you enhanced security. Experience the freedom of selective control to safeguard your digital assets. 🛡️🚀",
+  "short_description": "StarkRevoke: Streamlined Approvals, Enhanced Security, Effortless Control",
+  "tags": ["DeFi", "NFTs", "Infrastructure"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://www.starkrevoke.com/?utm_source=dappland",
+    "careers": "",
+    "twitter": "https://twitter.com/starkrevoke",
+    "telegram": "https://t.me/starkrevoke",
+    "discord": "",
+    "github": "https://github.com/yusufferdogan/STARKREVOKE",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "starkrevoke",
+  "teamInfo": {
+    "contactEmail": "yusuffx03@gmail.com",
+    "founded": "2023-08-12T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "nft": {},
+  "media": {
+    "logoUrl": "/dapps/starkrevoke/dapp-icon-starkrevoke.png",
+    "bannerUrl": "/dapps/starkrevoke/dapp-header-starkrevoke.png",
+    "previewUrl": "/dapps/starkrevoke/dapp-preview-starkrevoke.png",
+    "videoUrl": "",
+    "gallery": []
+  }
 }

@@ -7,9 +7,9 @@
   "goerliContracts": [],
   "audits": [],
   "verified": false,
-  "dotw": false,
+  "dotm": false,
   "links": {
-    "website": "https://shard-labs.github.io/starknet-devnet/",
+    "website": "https://shard-labs.github.io/starknet-devnet/?utm_source=dappland",
     "careers": "https://www.spaceshard.io/contact-us",
     "twitter": "https://twitter.com/0xSpaceShard",
     "telegram": "",

@@ -72,7 +72,7 @@ const DappPageHeader = ({
               {dappInfo.name}
             </h1>
             {dappInfo.links?.website && (
-              <Link href={dappInfo.links.website + "?utm_source=dappland"}>
+              <Link href={dappInfo.links.website}>
                 <a
                   className="block text-xl leading-[26px] font-semibold text-pink mt-4"
                   target="_blank"
@@ -100,10 +100,7 @@ const DappPageHeader = ({
         </p>
         <HeaderButtonsContainer className="flex mt-8">
           {!showArgentXInstallGuide ? (
-            <Link
-              href={dappInfo.links?.website + "?utm_source=dappland" || "/"}
-              passHref
-            >
+            <Link href={dappInfo.links?.website || "/"} passHref>
               <Button
                 variant="primary"
                 className="mr-3 visit-button"
@@ -124,7 +121,7 @@ const DappPageHeader = ({
                 <DappStoreButton
                   iconUrl={dappInfo.media.logoUrl}
                   name={dappInfo.name}
-                  href={dappInfo.links.website + "?utm_source=dappland"}
+                  href={dappInfo.links.website}
                 />
               </div>
             </div>

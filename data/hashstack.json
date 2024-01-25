@@ -1,9 +1,14 @@
 {
   "name": "Hashstack",
-  "description": "Hashstack provides a permissionless under-collateralised lending solution for crypto-native retail, enabling them to borrow up to 300% of the collateral. Product status: Public testnet on Starknet.",
+  "description": "Yield farm on Starknet through Hashstack's permissionless under-collateralised loans. Product status: Mainnet V1 live on Starknet.",
   "short_description": "Permissionless undercollateralized loans",
   "tags": ["DeFi"],
-  "contracts": [],
+  "contracts": [
+    {
+      "name": "Diamond Contract",
+      "address": "0x1b862c518939339b950d0d21a3d4cc8ead102d6270850ac8544636e558fab68"
+    }
+  ],
   "goerliContracts": [
     {
       "name": "Diamond Contract",
@@ -17,9 +22,9 @@
     }
   ],
   "verified": false,
-  "dotw": false,
+  "dotm": false,
   "links": {
-    "website": "https://hashstack.finance/",
+    "website": "https://app.hashstack.finance/?utm_source=dappland",
     "careers": "https://angel.co/company/hashstack/jobs",
     "twitter": "https://twitter.com/0xHashstack",
     "telegram": "",
