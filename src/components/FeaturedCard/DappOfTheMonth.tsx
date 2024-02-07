@@ -41,13 +41,10 @@ const FeaturedCard = ({
         <div className="flex flex-col lg:flex-col-reverse lg:absolute lg:top-8 lg:left-8 lg:z-[1]">
           {
             <p className="mb-1 text-[15px] leading-none text-light-charcoal font-semibold lg:bg-black lg:py-2 lg:px-4 lg:text-white lg:font-normal lg:max-w-max lg:text-[20px]">
-              January 2024
-              {/*
               {new Date().toLocaleDateString("en-EN", {
                 month: "long",
                 year: "numeric",
               })}
-              */}
             </p>
           }
           <h2 className="font-semibold text-xl leading-none mb-2 lg:bg-black lg:py-2 lg:px-4 lg:font-bold lg:text-[28px] lg:text-white lg:max-w-max">
