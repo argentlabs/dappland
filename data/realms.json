@@ -1,20 +1,15 @@
 {
   "name": "Realms.World",
   "description": "Realms.World is a fantasy multiverse filled with fully onchain games",
-  "short_description": "Realms.World is a fantasy multiverse filled with fully onchain games",
+  "short_description": "Fantasy multiverse filled with fully onchain games",
   "tags": ["Games", "NFTs", "DAOs"],
-  "contracts": [
-    {
-      "name": "Realms NFT contract (ERC-721)  [on Ethereum]",
-      "address": "0x7afe30cb3e53dba6801aa0ea647a0ecea7cbe18d"
-    }
-  ],
+  "contracts": [],
   "goerliContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,
   "links": {
-    "website": "https://realms.world/",
+    "website": "https://realms.world/?utm_source=dappland",
     "careers": "https://discord.gg/RnC9VNRzZH",
     "twitter": "https://twitter.com/LootRealms",
     "telegram": "",
@@ -29,13 +24,9 @@
     "founded": "2021-08-31T00:00:00.000Z",
     "anonymous": true
   },
-  "tokens": [
-    {
-      "address": "0x686f2404e77ab0d9070a46cdfb0b7fecdd2318b0"
-    }
-  ],
+  "tokens": [],
   "media": {
-    "logoUrl": "/dapps/realms/dapp-icon-realms.jpeg",
+    "logoUrl": "/dapps/realms/dapp-icon-realms.png",
     "bannerUrl": "/dapps/realms/dapp-header-realms.jpeg",
     "previewUrl": "/dapps/realms/dapp-preview-realms.jpeg",
     "gallery": [
