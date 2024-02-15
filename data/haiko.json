@@ -3,7 +3,20 @@
   "description": "Haiko is an AMM providing simple access to market making yield through strategies. It also features limit orders, flexible market schemas and other powerful LP features.",
   "short_description": "Starknet AMM with strategies",
   "tags": ["DeFi", "Infrastructure"],
-  "contracts": [],
+  "contracts": [
+    {
+      "name": "MarketManager",
+      "address": "0x38925b0bcf4dce081042ca26a96300d9e181b910328db54a6c89e5451503f5"
+    },
+    {
+      "name": "ReplicatingStrategy",
+      "address": "0x2ffce9d48390d497f7dfafa9dfd22025d9c285135bcc26c955aea8741f081d2"
+    },
+    {
+      "name": "Quoter",
+      "address": "0x5860f2d7c1efc21e27fdeb1716a806c7604770603d1c5f161e473231eb261dc"
+    }
+  ],
   "goerliContracts": [
     {
       "name": "MarketManager",
