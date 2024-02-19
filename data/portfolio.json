@@ -1,0 +1,36 @@
+{
+  "name": "Argent Portfolio",
+  "description": "Meet Portfolio. The all-in-one solution for managing your Starknet assets. With Portfolio, you can wave goodbye to fragmented account management. Connect multiple wallets, track your assets, monitor DeFi positions. If you're a Starknet power user, Portfolio is exactly what you've been looking for.",
+  "short_description": "Manage your Starknet assets",
+  "tags": ["DeFi", "Games", "NFTs", "Social", "DAOs"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://portfolio.argent.xyz/?utm_source=dappland",
+    "careers": "https://www.argent.xyz/careers/",
+    "twitter": "https://twitter.com/argentHQ",
+    "telegram": "",
+    "discord": "https://discord.com/invite/GWSyrHg",
+    "github": "https://github.com/argentlabs",
+    "youtube": "https://www.youtube.com/argentHQ",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "argentHQ",
+  "teamInfo": {
+    "contactEmail": "<Email address>",
+    "founded": "2018-01-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "nft": {},
+  "media": {
+    "logoUrl": "/dapps/portfolio/portfolio-logo.png",
+    "bannerUrl": "/dapps/portfolio/portfolio-banner.jpg",
+    "previewUrl": "/dapps/portfolio/portfolio-preview.png",
+    "videoUrl": ""
+  }
+}
