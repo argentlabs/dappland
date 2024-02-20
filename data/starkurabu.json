@@ -1,0 +1,70 @@
+{
+  "name": "starkurabu",
+  "description": "Starkurabu is a 10,000 customizable on-chain PFP collection on Starknet. With Starkurabu you have the power to create your unique PFP to showcase your personality and on-chain reputation!",
+  "short_description": "Your Starknet customizable PFP",
+  "tags": ["NFTs", "Games"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": true,
+  "dotm": false,
+  "links": {
+    "website": "https://starkurabu.com/",
+    "careers": "",
+    "twitter": "https://twitter.com/starkurabu",
+    "telegram": "",
+    "discord": "https://discord.com/invite/8uS2Mgcsza",
+    "github": "https://github.com/starknet-id",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "stakurabu",
+  "teamInfo": {
+    "founded": "2024-01-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "nft": {
+    "collectionContract": "",
+    "collectionLink": "",
+    "collectionName": "Starkurabu",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/starkurabu/starkurabu-nft-01.jpg",
+        "name": "avnu.stark"
+      },
+      {
+        "image_url": "/dapps/starkurabu/starkurabu-nft-02.png",
+        "name": "myswaap.stark"
+      },
+      {
+        "image_url": "/dapps/starkurabu/starkurabu-nft-03.png",
+        "name": "starknetid.stark"
+      },
+      {
+        "image_url": "/dapps/starkurabu/starkurabu-nft-04.png",
+        "name": "jediswap.stark"
+      }
+    ]
+  },
+  "media": {
+    "logoUrl": "/dapps/starkurabu/dapp-icon-starkurabu.png",
+    "bannerUrl": "/dapps/starkurabu/dapp-header-starkurabu.png",
+    "previewUrl": "/dapps/starkurabu/dapp-preview-starkurabu.png",
+    "gallery": [
+      {
+        "url": "/dapps/starkurabu/starkurabu-01.png",
+        "description": "starkurabu homepage – Learn more about starkurabu and our customization concept."
+      },
+      {
+        "url": "/dapps/starkurabu/starkurabu-02.png",
+        "description": "starkurabu customization – custom your starkurabu NFT."
+      },
+      {
+        "url": "/dapps/starkurabu/starkurabu-03.png",
+        "description": "starkurabu staking - stake your NFT, get rewards to collect new traits."
+      }
+    ]
+  }
+}
