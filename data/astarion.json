@@ -1,0 +1,43 @@
+{
+  "name": "ASTARION",
+  "description": "Deploy your own NFT Smrt Contarcts, mint and earn the minting fee. Withdraw the minting fee to your wallet throughout our UI, without any programming knowledge.",
+  "short_description": "Create your Web3 Infrastructure",
+  "tags": [
+    "NFTs",
+    "Infrastructure"
+  ], 
+  "contracts": [
+    {
+      "name": "Crazy Ape",
+      "address": "0x013a5f02a92d31cd155899634e031801e759d6b4535b63f0b52e3ee9a748d477"
+    }
+  ],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false, 
+  "dotw": false, 
+  "links": {
+    "website": "https://astarion.net",
+    "careers": "",
+    "twitter": "https://twitter.com/ASTARION11111",
+    "telegram": "https://t.me/astarionproject",
+    "discord": "",
+    "github": "https://github.com/ASTARIONCrypto",
+    "youtube": "https://www.youtube.com/@ASTARIONHQ",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "ASTARION11111",
+  "teamInfo": {
+    "contactEmail": "contact@astarion.net",
+    "founded": "2023-06-22T00:00:00.000Z",
+    "anonymous": true 
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/astarion/astarion-logo.png",
+    "bannerUrl": "/dapps/astarion/astarion-banner.png",
+    "previewUrl": "/dapps/astarion/astarion-preview.png",
+    "gallery": []
+  }
+}
