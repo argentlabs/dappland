@@ -17,7 +17,16 @@
       "address": "0x2383504fa1365cf31921c1411e14ea45b6376e9a0da8890d51359fd05575f48"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "name": "Nethermind audit",
+      "url": "https://github.com/starknet-id/auto_renew_contract/blob/main/audits/nethermind.pdf"
+    },
+    {
+      "name": "Chainsecurity audit",
+      "url": "https://github.com/starknet-id/auto_renew_contract/blob/main/audits/chainsecurity.pdf"
+    }
+  ],
   "verified": true,
   "dotm": false,
   "links": {
