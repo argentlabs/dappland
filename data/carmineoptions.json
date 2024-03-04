@@ -2,11 +2,13 @@
   "name": "Carmine Options AMM",
   "description": "Carmine Finance is revolutionizing the way stakers, traders, and crypto investors approach risk management. Our risk platform offers a comprehensive suite of options and products that enable users to hedge and insure their portfolios across multiple chains.",
   "short_description": "DeFi Options",
-  "tags": ["DeFi"],
+  "tags": [
+    "DeFi"
+  ],
   "contracts": [
     {
       "name": "Carmine Options AMM",
-      "address": "0x76dbabc4293db346b0a56b29b6ea9fe18e93742c73f12348c8747ecfc1050aa"
+      "address": "0x047472e6755afc57ada9550b6a3ac93129cc4b5f98f51c73e0644d129fd208d9"
     },
     {
       "name": "Carmine Governance",
@@ -23,6 +25,10 @@
     {
       "name": "Hackachain",
       "url": "https://carmine.finance/audit/hack-a-chain"
+    },
+    {
+      "name": "Nethermind",
+      "url": "https://carmine.finance/carmine-audit-by-nethermind.pdf"
     }
   ],
   "verified": true,
@@ -36,7 +42,7 @@
     "github": "https://github.com/CarmineOptions",
     "youtube": "",
     "medium": "https://medium.com/@carminefinanceinfo",
-    "mirror": ""
+    "mirror": "https://mirror.xyz/carminefinance.eth"
   },
   "twitterName": "@CarmineOptions",
   "teamInfo": {
@@ -51,9 +57,9 @@
     }
   ],
   "media": {
-    "logoUrl": "/dapps/carminefinance/carmine-logo.webp",
-    "bannerUrl": "/dapps/carminefinance/carmine-banner.webp",
-    "previewUrl": "/dapps/carminefinance/carmine-preview-700x400.webp",
+    "logoUrl": "/dapps/carminefinance/logo.webp",
+    "bannerUrl": "/dapps/carminefinance/banner-1920x400.webp",
+    "previewUrl": "/dapps/carminefinance/preview-700x400.webp",
     "videoUrl": "",
     "gallery": []
   }
