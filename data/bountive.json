@@ -1,0 +1,41 @@
+{
+  "name": "Bountive",
+  "description": "Bountive is the first decentralized prize savings protocol on Starknet, empowering users with no-risk prize games. Bountive is based on the proven concept known as “Prize Linked Savings Accounts”. This product helps to boost savings. Now, we’re bringing this to the blockchain.",
+  "short_description": "No Loss Protocol on Starknet",
+  "tags": ["DeFi"],
+  "contracts": [
+    {
+      "name": "Raffle Factory",
+      "address": "0x04d4d906bcfbca37dafe7bec483734ddf2ee7bd36ec5dddcd2052a4a18bd8969"
+    }
+  ],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://www.bountive.fi/",
+    "careers": "https://linktr.ee/bountive",
+    "twitter": "https://twitter.com/Bountive",
+    "telegram": "",
+    "discord": "https://discord.com/invite/ZxmMwektnx",
+    "github": "",
+    "youtube": "",
+    "medium": "https://medium.com/@bountive",
+    "mirror": ""
+  },
+  "twitterName": "Bountive",
+  "teamInfo": {
+    "contactEmail": "bountive@gmail.com",
+    "founded": "2023-10-30T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/bountive/dapp-icon-bountive.png",
+    "bannerUrl": "/dapps/bountive/dapp-header-bountive.png",
+    "previewUrl": "/dapps/bountive/dapp-preview-bountive.png",
+    "videoUrl": "/dapps/bountive/bountive.mp4",
+    "gallery": []
+  }
+}
