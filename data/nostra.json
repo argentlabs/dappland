@@ -1,9 +1,26 @@
 {
   "name": "Nostra",
-  "description": "Nostra is a permissionless non-custodial lending and borrowing protocol built on Starknet, where everyday users can lend and borrow crypto assets without the need for a trusted third party to act as an intermediary.",
-  "short_description": "Liquidity at your fingertips",
+  "description": "Nostra is the crypto Super App, powered by Starknet, where users can lend, borrow, swap, and bridge cryptocurrencies.",
+  "short_description": "The crypto Super App",
   "tags": ["DeFi"],
-  "contracts": [],
+  "contracts": [
+    {
+      "name": "Money Market: CDP Manager",
+      "address": "0x073f6addc9339de9822cab4dac8c9431779c09077f02ba7bc36904ea342dd9eb"
+    },
+    {
+      "name": "Money Market: Interest Rate Model",
+      "address": "0x059a943ca214c10234b9a3b61c558ac20c005127d183b86a99a8f3c60a08b4ff"
+    },
+    {
+      "name": "Pools: Factory",
+      "address": "0x352e14b9bdc0138e48b55d45914b059f0388284c77a23a97776e6197852f050"
+    },
+    {
+      "name": "Pools: Router",
+      "address": "0x6720b763aac6608ceba3f9069bebb0f990cd96b26071b3fa2a2109940f90db2"
+    }
+  ],
   "goerliContracts": [],
   "audits": [],
   "verified": false,
@@ -14,7 +31,7 @@
     "twitter": "https://twitter.com/nostrafinance",
     "telegram": "https://www.t.me/nostrafinance",
     "discord": "https://discord.com/invite/Eqp53YafYP",
-    "github": "",
+    "github": "https://github.com/nostrafinance",
     "youtube": "https://www.youtube.com/channel/UCNpgWHKk22_zmpQHMt7Hg-w",
     "medium": "",
     "mirror": "https://mirror.xyz/0x845605C411132BAA06024a521a85B653F3C802dF"
@@ -26,9 +43,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "/dapps/nostra/dapp-icon-nostra.png",
-    "bannerUrl": "/dapps/nostra/dapp-header-nostra.png",
-    "previewUrl": "/dapps/nostra/dapp-preview-nostra.png",
+    "logoUrl": "/dapps/nostra/nostra-logo.png",
+    "bannerUrl": "/dapps/nostra/nostra-banner.png",
+    "previewUrl": "/dapps/nostra/nostra-preview.png",
     "gallery": []
   }
 }
