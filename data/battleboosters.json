@@ -1,0 +1,36 @@
+{
+  "name": "BattleBoosters",
+  "description": "Play BattleBoosters, a Fantasy MMA web3 game. Collect, trade, and compete with NFTs for prizes. Immerse yourself in the strategic world of MMA card gaming.",
+  "short_description": "BattleBoosters",
+  "tags": ["Games", "NFTs"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "careers": "https://battleboosters.com/contact",
+    "youtube": "",
+    "mirror": "",
+    "website": "https://battleboosters.com",
+    "github": "https://github.com/BattleBoosters",
+    "twitter": "https://twitter.com/battleboosters",
+    "medium": "https://medium.com/@battleboosters",
+    "discord": "https://github.com/BattleBoosters",
+    "telegram": "https://t.me/BattleBoosters"
+  },
+  "twitterName": "BattleBoosters",
+  "teamInfo": {
+    "contactEmail": "contact@battleboosters.com",
+    "founded": "2023-06-28T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/battleboosters/battleboosters-logo.png",
+    "bannerUrl": "/dapps/battleboosters/battleboosters-banner.png",
+    "previewUrl": "/dapps/battleboosters/battleboosters-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
