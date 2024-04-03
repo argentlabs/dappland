@@ -2,14 +2,12 @@
   "name": "Starknet Governance",
   "description": "Where the community propose, debate and vote on the direction of Starknet",
   "short_description": "Where the community propose, debate and vote on the direction of Starknet",
-  "tags": [
-    "Social",
-    "DAOs"
-  ],
-  "contracts": [
-  ],
-  "verified": true
-  "dotm": false, 
+  "tags": ["Social", "DAOs"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
   "links": {
     "website": "https://governance.starknet.io/",
     "careers": "",
@@ -23,9 +21,9 @@
   },
   "twitterName": "@StarknetFndn",
   "teamInfo": {
-    "contactEmail": "<Email address>",
-    "founded": "",
-    "anonymous": true 
+    "contactEmail": "",
+    "founded": "2024-02-20T00:00:00.000Z",
+    "anonymous": false
   },
   "tokens": [
     {
@@ -33,31 +31,12 @@
       "symbol": "vSTRK"
     }
   ],
-  "nft": {
-    "collectionContract": "",
-    "collectionLink": "",
-    "collectionName": "",
-    "collectionPreview": [
-      {
-        "image_url": "",
-        "name": ""
-      },
-      {
-        "image_url": "",
-        "name": ""
-      }
-    ]
-  },
+  "nft": {},
   "media": {
-    "logoUrl": "/dapps/starknetgovernance/starknetgovernance-icon.png",
-    "bannerUrl": "/dapps/starknetgovernance/starknetgovernance-header.png",
+    "logoUrl": "/dapps/starknetgovernance/starknetgovernance-logo.png",
+    "bannerUrl": "/dapps/starknetgovernance/starknetgovernance-banner.png",
     "previewUrl": "/dapps/starknetgovernance/starknetgovernance-preview.png",
     "videoUrl": "",
-    "gallery": [
-      {
-        "url": "<",
-        "description": ""
-      }
-    ]
+    "gallery": []
   }
 }
