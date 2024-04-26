@@ -1,0 +1,46 @@
+{
+    "name": "RetroBridge",
+    "description": "RetroBridge is an advanced cross-chain bridging solution designed to streamline the process of transferring assets across different blockchain networks.",
+    "short_description": "Cross-chain bridge",
+    "tags": ["Bridges", "DeFi","Infrastructure"],
+    "contracts": [],
+    "goerliContracts": [],
+    "audits": [
+      {
+        "name": "Independent Security Audit",
+        "url": "https://retrobridge.io/audit.pdf"
+      },
+      {
+        "name": "PeckShield Security Monitoring",
+        "url": "https://retrobridge.io/security-monitoring.pdf"
+      }
+    ],
+    "verified": false,
+    "dotm": false,
+    "links": {
+      "website": "https://retrobridge.io/?utm_source=dappland",
+      "careers": "",
+      "twitter": "https://twitter.com/retro_bridge",
+      "telegram": "",
+      "discord": "https://discord.gg/retrobridge",
+      "github": "https://github.com/retro-bridge",
+      "youtube": "",
+      "medium": "https://retro-bridge.medium.com/",
+      "mirror": ""
+    },
+    "twitterName": "retro_bridge",
+    "teamInfo": {
+      "founded": "2023-08-05T00:00:00.000Z",
+      "anonymous": false
+    },
+    "tokens": [],
+    "nft": {},
+    "media": {
+      "logoUrl": "/dapps/retrobridge/logo.png",
+      "bannerUrl": "/dapps/retrobridge/banner.png",
+      "previewUrl": "/dapps/retrobridge/preview.png",
+      "videoUrl": "",
+      "gallery": []
+    }
+  }
+  
