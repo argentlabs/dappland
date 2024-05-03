@@ -1,0 +1,54 @@
+{
+  "name": "Stark Arcade",
+  "description": "A central platform for blockchain gaming on Starknet.",
+  "short_description": "A Degen Hub for Fully On-Chain Gaming",
+  "tags": ["Games", "DAOs", "NFTs"],
+  "contracts": [
+    {
+      "name": "Lottery",
+      "address": "0x03b41b4957e3cf6c8925049c84616606acab70f816a08f541f687ba60c62ce5d"
+    },
+    {
+      "name": "Strk ",
+      "address": "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d"
+    },
+    {
+      "name": "Ticket",
+      "address": "0x0043d10af1c387c68e9d3a003d85bca14b9fc9bd64329228102c02cd888b7c2b"
+    },
+    {
+      "name": "Governance",
+      "address": "0x017e2317c1bbdcf00cc78e88e6d5744ed9c0a2372713da3ea99adb4f67c2af39"
+    }
+  ],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": true,
+  "dotm": true,
+  "links": {
+    "website": "https://www.starkarcade.com/",
+    "careers": "",
+    "twitter": "https://twitter.com/starkarcade",
+    "discord": "https://discord.com/invite/fPV9UJMk",
+    "telegram": "",
+    "github": "https://github.com/decolgen-labs",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "starkarcade",
+  "teamInfo": {
+    "contactEmail": "<Email address>",
+    "founded": "2023-08-02T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "nft": {},
+  "media": {
+    "logoUrl": "/dapps/starkarcade/starkarcade-logo.png",
+    "bannerUrl": "/dapps/starkarcade/starkarcade-banner.png",
+    "previewUrl": "/dapps/starkarcade/starkarcade-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
