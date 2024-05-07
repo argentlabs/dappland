@@ -1,0 +1,53 @@
+{
+    "name": "Ventory Marketplace",
+    "description": "Ventory is the cutting-edge protocol that enables NFT enthusiast to create, trade and earn the latest NFT designed on the market. Our comprehensive tools enables 721, 404 NFT and derivatives NFT trading on various networks",
+    "short_description": "Multichain NFT Marketplace exclusively for entertaining games & NFT liquidity solutions",
+    "tags": ["NFTs", "Social", "Infrastructure", "Games"],
+    "contracts": [
+      {
+        "name": "Marketplace",
+        "address": "0x008755a98ccf7d25e69aa90ef3b73b07c470ba4ec6391b0b0c7c598f992c3fee"
+      }
+    ],
+    "goerliContracts": [],
+    "audits": [],
+    "verified": false,
+    "dotm": false,
+    "links": {
+      "website": "https://ventory.gg",
+      "careers": "",
+      "twitter": "https://twitter.com/Ventory_gg",
+      "telegram": "https://t.me/ventorychannel",
+      "discord": "https://discord.gg/W6aCg9sU3e",
+      "github": "https://github.com/ventorymarket",
+      "youtube": "https://www.youtube.com/@VentoryNFT",
+      "medium": "https://medium.com/@ventorymarket",
+      "mirror": ""
+    },
+    "twitterName": "Ventory_gg",
+    "teamInfo": {
+      "founded": "2023-05-11T00:00:00.000Z",
+      "anonymous": true
+    },
+    "tokens": [],
+    "media": {
+      "logoUrl": "/dapps/ventory/ventory-logo.png",
+      "bannerUrl": "/dapps/ventory/ventory-banner.png",
+      "previewUrl": "/dapps/ventory/ventory-preview.png",
+      "videoUrl": "https://ipfs.ventory.gg/ventory/media/ventory_preview.mp4",
+      "gallery": [
+        {
+          "url": "/dapps/ventory/1.png",
+          "description": "Collection Page"
+        },
+        {
+          "url": "/dapps/ventory/2.png",
+          "description": "Quest Page"
+        },
+        {
+          "url": "/dapps/ventory/3.png",
+          "description": "Ranking Page"
+        }
+      ]
+    }
+  }
