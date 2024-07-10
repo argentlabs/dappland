@@ -44,7 +44,7 @@
   "teamInfo": {
     "contactEmail": "hello@vesu.xyz",
     "founded": "2024-03-20T00:00:00.000Z",
-    "anonymous": true
+    "anonymous": false
   },
   "tokens": [
     {
@@ -76,7 +76,7 @@
     "logoUrl": "/dapps/vesu/vesu-logo.png",
     "bannerUrl": "/dapps/vesu/vesu-banner.png",
     "previewUrl": "/dapps/vesu/vesu-preview.png",
-    "videoUrl": "https://github.com/vesuxyz/assets/blob/main/video/vesu-teaser.mp4",
+    "videoUrl": "/dapps/vesu/vesu-teaser.mp4",
     "gallery": []
   }
 }
