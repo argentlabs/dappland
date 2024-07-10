@@ -1,0 +1,79 @@
+{
+  "name": "Teahouse Finance",
+  "description": "Teahouse is a multi-strategy DeFi asset manager similar to a hedge fund. We help enterprise and individual clients grow their crypto assets on our secure and transparent platform.",
+  "short_description": "Teahouse: DeFi asset manager for growing crypto securely and transparently.",
+  "tags": ["DeFi"],
+  "contracts": [
+    {
+      "name": "WSTETH-ETH 0.01%",
+      "address": "0x069f4f5ce1597fd9900c2fbed64b84edc31b7c563632cdf0e5decc1ff6f42e7c"
+    },
+    {
+      "name": "STRK-USDC 1%",
+      "address": "0x075205228ce0db6f47cd442bd5687a081d10cf40b46b4f847e86ae880e228698"
+    },
+    {
+      "name": "WBTC-ETH 0.05%",
+      "address": "0x06b18536837097a755b368ac681ae5ae079fe078e7a825186a9b8ca5584d6992"
+    },
+    {
+      "name": "STRK-USDC 1%",
+      "address": "0x075205228ce0db6f47cd442bd5687a081d10cf40b46b4f847e86ae880e228698"
+    },
+    {
+      "name": "STRK-USDC 0.05%",
+      "address": "0x033cc2ccad8df1386acd3f09d13de371ba71218b20b1e903c89bad31d2114f6b"
+    },
+    {
+      "name": "USDC-DAI 0.01%",
+      "address": "0x04b06bbe8fd1fbe0564ad37f1bd37a19078672c4c08507bc5090001119baff3b"
+    },
+    {
+      "name": "USDC-USDT 0.01%",
+      "address": "0x005a9ea21b7c8450d6e710bc19fac12003a64dca08160a049b71e5934c129513"
+    },
+    {
+      "name": "STRK-ETH 0.05%",
+      "address": "0x0755afc533e7e01b585d715b8dd7300cbce632018daabc4ad6fb144f24308ff5"
+    },
+    {
+      "name": "ETH-USDC 0.05%",
+      "address": "0x07d03a029137e8307f2370096a5afaa43ec64971b43cbe0309ff98858d070936"
+    }
+  ],
+  "goerliContracts": [],
+  "audits": [
+    {
+      "name": "Teahouse Vault Cairo Security Report",
+      "url": "https://331710191-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FiYB1[…]df?alt=media&token=a05b8316-66cc-4669-b977-7cc461bd42cb"
+    }
+  ],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://teahouse.finance/",
+    "careers": " ",
+    "twitter": "https://x.com/TeahouseFinance",
+    "telegram": "https://t.me/tgteahousefinance",
+    "discord": "https://discord.gg/teahouse-finance/",
+    "github": "https://github.com/TeahouseFinance",
+    "youtube": "https://www.youtube.com/@teahousefinance5019",
+    "medium": "https://medium.com/@teahouse.finance",
+    "mirror": " "
+  },
+  "twitterName": "Teahouse Finance",
+  "teamInfo": {
+    "contactEmail": "support@teahouse.finance>",
+    "founded": "2021-07-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "nft": {},
+  "media": {
+    "logoUrl": "/dapps/teahousefinance/teahousefinance-logo.png",
+    "bannerUrl": "/dapps/teahousefinance/teahousefinance-banner.png",
+    "previewUrl": "/dapps/teahousefinance/teahousefinance-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
