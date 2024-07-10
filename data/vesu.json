@@ -1,0 +1,82 @@
+{
+  "name": "Vesu",
+  "description": "Vesu is a public lending protocol allowing everyone to earn, borrow and build freely and securely.",
+  "short_description": "Best lending experience on Starknet",
+  "tags": [
+    "DeFi"
+  ],
+  "contracts": [
+    {
+      "name": "Singleton",
+      "address": "0x02545b2e5d519fc230e9cd781046d3a64e092114f07e44771e0d719d148725ef"
+    },
+    {
+      "name": "Default Extension",
+      "address": "0x002334189e831d804d4a11d3f71d4a982ec82614ac12ed2e9ca2f8da4e6374fa"
+    }
+  ],
+  "goerliContracts": [
+  ],
+  "audits": [
+    {
+      "name": "Chain Security",
+      "url": "https://github.com/vesuxyz/security/blob/main/audits/2024-06-07_ChainSecurity_Vesu-Protocol_audit.pdf"
+    },
+    {
+      "name": "Cairo Security Clan",
+      "url": "https://github.com/vesuxyz/security/blob/main/audits/2024-07-02_CairoSecurityClan_Vesu-Protocol_audit.pdf"
+    }
+  ],
+  "verified": true,
+  "dotm": false,
+  "links": {
+    "website": "https://vesu.xyz",
+    "careers": "",
+    "twitter": "https://x.com/vesuxyz",
+    "telegram": "",
+    "discord": "https://discord.gg/G9Gxgujj8T",
+    "github": "https://github.com/vesuxyz",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "vesuxyz",
+  "teamInfo": {
+    "contactEmail": "hello@vesu.xyz",
+    "founded": "2024-03-20T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [
+    {
+      "address": "0x021fe2ca1b7e731e4a5ef7df2881356070c5d72db4b2d19f9195f6b641f75df0",
+      "symbol": "vETH"
+    },
+    {
+      "address": "0x06b0ef784eb49c85f4d9447f30d7f7212be65ce1e553c18d516c87131e81dbd6",
+      "symbol": "vWBTC"
+    },
+    {
+      "address": "0x01610abab2ff987cdfb5e73cccbf7069cbb1a02bbfa5ee31d97cc30e29d89090",
+      "symbol": "vUSDC"
+    },
+    {
+      "address": "0x032dd20efeb027ee51e676280df60c609ac6f6dcff798e4523515bc1668ed715",
+      "symbol": "vUSDT"
+    },
+    {
+      "address": "0x044a8304cd9d00a1730e4acbc31fb3a2f8cf1272d95c39c76e338841026fd001",
+      "symbol": "vWSTETH"
+    },
+    {
+      "address": "0x037ae3f583c8d644b7556c93a04b83b52fa96159b2b0cbd83c14d3122aef80a2",
+      "symbol": "vSTRK"
+    }
+  ],
+  "media": {
+    "logoUrl": "/dapps/vesu/vesu-logo.png",
+    "bannerUrl": "/dapps/vesu/vesu-banner.png",
+    "previewUrl": "/dapps/vesu/vesu-preview.png",
+    "videoUrl": "/dapps/vesu/vesu-teaser.mp4",
+    "gallery": []
+  }
+}
