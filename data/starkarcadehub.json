@@ -24,7 +24,7 @@
   "goerliContracts": [],
   "audits": [],
   "verified": true,
-  "dotm": true,
+  "dotm": false,
   "links": {
     "website": "https://www.starkarcade.com/",
     "careers": "",

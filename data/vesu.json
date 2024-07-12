@@ -2,9 +2,7 @@
   "name": "Vesu",
   "description": "Vesu is a public lending protocol allowing everyone to earn, borrow and build freely and securely.",
   "short_description": "Best lending experience on Starknet",
-  "tags": [
-    "DeFi"
-  ],
+  "tags": ["DeFi"],
   "contracts": [
     {
       "name": "Singleton",
@@ -15,8 +13,7 @@
       "address": "0x002334189e831d804d4a11d3f71d4a982ec82614ac12ed2e9ca2f8da4e6374fa"
     }
   ],
-  "goerliContracts": [
-  ],
+  "goerliContracts": [],
   "audits": [
     {
       "name": "Chain Security",
@@ -28,7 +25,7 @@
     }
   ],
   "verified": true,
-  "dotm": false,
+  "dotm": true,
   "links": {
     "website": "https://vesu.xyz",
     "careers": "",
@@ -74,8 +71,8 @@
   ],
   "media": {
     "logoUrl": "/dapps/vesu/vesu-logo.png",
-    "bannerUrl": "/dapps/vesu/vesu-banner.png",
-    "previewUrl": "/dapps/vesu/vesu-preview.png",
+    "bannerUrl": "/dapps/vesu/vesu-banner.jpg",
+    "previewUrl": "/dapps/vesu/vesu-preview.jpg",
     "videoUrl": "/dapps/vesu/vesu-teaser.mp4",
     "gallery": []
   }

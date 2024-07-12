@@ -1,4 +1,4 @@
-import featuredDappImage from "../../public/dapps/ekubo/dotm-ekubo.jpg"
+import featuredDappImage from "../../public/dapps/vesu/dotm-vesu.jpg"
 import FilterButton from "../components/Button/FilterButton"
 import Card from "../components/Card/Card"
 import Categories from "../components/Categories/Categories"
@@ -114,9 +114,9 @@ const Home = ({
           />
           <div className="cards">
             <DappOfTheMonth
-              name="Ekubo"
+              name="Vesu"
               image={featuredDappImage}
-              url="/ekubo"
+              url="/vesu"
               className="featured"
             />
             <h3 className="lg:hidden font-semibold text-xl leading-none mb-5">
