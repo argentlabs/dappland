@@ -60,15 +60,15 @@
     "gallery": [
       {
         "url": "/dapps/terracon-quest/terracon-quest-gallery1.png",
-        "description": "Displays character metadata preview"
+        "description": "Preview your Character metadata once revealed in Your Tokens page"
       },
       {
         "url": "/dapps/terracon-quest/terracon-quest-gallery2.png",
-        "description": "Displays story creation module"
+        "description": "Create a story for your character based on your own decisions"
       },
       {
         "url": "/dapps/terracon-quest/terracon-quest-gallery3.png",
-        "description": "Displays stats assignment module"
+        "description": "Asign stats based on the events that your character in his life story that you craft"
       }
     ]
   }
