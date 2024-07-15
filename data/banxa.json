@@ -4,7 +4,7 @@
   "short_description": "The leading global on & off-ramp solution",
   "tags": ["Onramps", "DeFi", "Bridges"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

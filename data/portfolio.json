@@ -4,7 +4,7 @@
   "short_description": "Manage your Starknet assets",
   "tags": ["DeFi", "Games", "NFTs", "Social", "DAOs"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

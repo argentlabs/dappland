@@ -13,7 +13,7 @@
       "address": "0x02a67288e48a8c4e2881aee422da7841fc11fef195e0a81f929871c77f07509d"
     }
   ],
-  "goerliContracts": [
+  "sepoliaContracts": [
     {
       "name": "275% Trove",
       "address": "0x03b3e6f26fa0b0e932a356d5394d3bc43b098962bf7982f4204350c561aada2f"

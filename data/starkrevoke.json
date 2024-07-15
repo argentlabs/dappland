@@ -4,7 +4,7 @@
   "short_description": "StarkRevoke: Streamlined Approvals, Enhanced Security, Effortless Control",
   "tags": ["DeFi", "NFTs", "Infrastructure"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

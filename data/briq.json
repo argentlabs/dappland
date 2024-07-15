@@ -17,7 +17,7 @@
       "address": "0x05faa82e2aec811d3a3b14c1f32e9bbb6c9b4fd0cd6b29a823c98c7360019aa4"
     }
   ],
-  "goerliContracts": [
+  "sepoliaContracts": [
     {
       "name": "briq contract",
       "address": "0x01317354276941f7f799574c73fd8fe53fa3f251084b4c04d88cf601b6bd915e"

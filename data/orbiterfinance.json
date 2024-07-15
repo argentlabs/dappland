@@ -4,7 +4,7 @@
   "short_description": "Decentralized cross-rollup bridge",
   "tags": ["Bridges"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

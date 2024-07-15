@@ -4,7 +4,7 @@
   "short_description": "Use Hardhat on Starknet",
   "tags": ["Infrastructure"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

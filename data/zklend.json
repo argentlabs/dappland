@@ -13,7 +13,7 @@
       "address": "0x4c0a5193d58f74fbace4b74dcf65481e734ed1714121bdc571da345540efa05"
     }
   ],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [
     {
       "name": "Security Review & Formal Specification",

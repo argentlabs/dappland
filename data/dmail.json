@@ -4,7 +4,7 @@
   "short_description": "Start your encrypted messages on Starknet.",
   "tags": ["Social", "Infrastructure", "NFTs", "DAOs"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": true,
   "dotm": false,

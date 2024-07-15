@@ -24,15 +24,15 @@
       "address": "<Address of Mainnet contract 2>"
     }
   ],
-  "goerliContracts": [
+  "sepoliaContracts": [
     // If no contracts yet, delete from here to closing curly brace
     {
-      "name": "<Name of Goerli contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
-      "address": "<Address of Goerli contract 1>"
+      "name": "<Name of Sepolia contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
+      "address": "<Address of Sepolia contract 1>"
     },
     {
-      "name": "<Name of Goerli contract 2 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
-      "address": "<Address of Goerli contract 2>"
+      "name": "<Name of Sepolia contract 2 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
+      "address": "<Address of Sepolia contract 2>"
     }
   ],
   "audits": [

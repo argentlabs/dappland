@@ -4,7 +4,7 @@
   "short_description": "DAO to ignite and fuel fully on-chain games",
   "tags": ["DAOs"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

@@ -25,7 +25,7 @@ interface DappInfo {
   name: string
   tags: string[]
   contracts?: Contract[]
-  goerliContracts?: Contract[]
+  sepoliaContracts?: Contract[]
   audits: Audit[]
   verified: boolean
   links: Links

@@ -25,7 +25,7 @@
       "address": "0x07a83729aaaae6344d6fca558614cd22ecdd3f5cd90ec0cd20c8d6bf08170431"
     }
   ],
-  "goerliContracts": [
+  "sepoliaContracts": [
     {
       "name": "Core",
       "address": "0x031e8a7ab6a6a556548ac85cbb8b5f56e8905696e9f13e9a858142b8ee0cc221"

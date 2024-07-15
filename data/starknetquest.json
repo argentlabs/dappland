@@ -9,7 +9,7 @@
       "address": "0x076503062d78f4481be03c9145022d6a4a71ec0719aa07756f79a2384dc7ef16"
     }
   ],
-  "goerliContracts": [
+  "sepoliaContracts": [
     {
       "name": "Starknet Quest",
       "address": "0x076503062d78f4481be03c9145022d6a4a71ec0719aa07756f79a2384dc7ef16"

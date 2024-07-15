@@ -17,7 +17,7 @@
       "address": "0x5860f2d7c1efc21e27fdeb1716a806c7604770603d1c5f161e473231eb261dc"
     }
   ],
-  "goerliContracts": [
+  "sepoliaContracts": [
     {
       "name": "MarketManager",
       "address": "0xbaa40f0fc9b0e069639a88c8f642d6f2e85e18332060592acf600e46564204"

@@ -17,7 +17,7 @@
       "address": "0x231adde42526bad434ca2eb983efdd64472638702f87f97e6e3c084f264e06f"
     }
   ],
-  "goerliContracts": [
+  "sepoliaContracts": [
     {
       "name": "Router",
       "address": "0x00975910cd99bc56bd289eaaa5cee6cd557f0ddafdb2ce6ebea15b158eb2c664"

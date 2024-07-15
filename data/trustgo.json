@@ -4,7 +4,7 @@
   "short_description": "Know Your Account. Track Your Web3 Journey.",
   "tags": ["Infrastructure"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

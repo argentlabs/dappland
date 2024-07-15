@@ -21,7 +21,7 @@
       "address": "0x6720b763aac6608ceba3f9069bebb0f990cd96b26071b3fa2a2109940f90db2"
     }
   ],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

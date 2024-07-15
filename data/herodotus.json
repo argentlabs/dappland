@@ -4,7 +4,7 @@
   "short_description": "Storage Proofs API",
   "tags": ["Infrastructure"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

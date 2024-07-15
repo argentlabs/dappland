@@ -4,7 +4,7 @@
   "short_description": "Ethereum <> Starknet Bridge",
   "tags": ["Bridges"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

@@ -4,7 +4,7 @@
   "short_description": "Truly fun, secure and crypto-native games",
   "tags": ["Games"],
   "contracts": [],
-  "goerliContracts": [
+  "sepoliaContracts": [
     {
       "name": "Ninth (erc20)",
       "address": "0x06fbd3f381ddcdf541d361a938717e97ff12ba3c77e4f96f9517d79055123293"

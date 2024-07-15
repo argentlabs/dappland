@@ -4,7 +4,7 @@
   "short_description": "Starknet block explorer",
   "tags": ["Infrastructure"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

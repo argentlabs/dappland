@@ -1,44 +1,44 @@
 {
-    "name": "STRKFarm",
-    "description": "STRKFarm is a DeFi yield aggregator on Starknet that automatically invests your assets across various DeFi protocols within a given strategy to maximise your returns!",
-    "short_description": "Starknet Yield Aggregator",
-    "tags": ["DeFi", "Infrastructure"],
-    "contracts": [
-      {
-        "name": "STRK Strategy",
-        "address": "0x00541681b9ad63dff1b35f79c78d8477f64857de29a27902f7298f7b620838ea"
-      },
-      {
-        "name": "USDC Strategy",
-        "address": "0x016912b22d5696e95ffde888ede4bd69fbbc60c5f873082857a47c543172694f"
-      }
-    ],
-    "goerliContracts": [],
-    "audits": [],
-    "verified": false,
-    "dotm": false,
-    "links": {
-      "website": "https://www.strkfarm.xyz/?utm_source=dappland",
-      "careers": "",
-      "twitter": "https://twitter.com/strkfarm",
-      "telegram": "https://t.me/+HQ_eHaXmF-1lZDc1",
-      "discord": "",
-      "github": "https://github.com/strkfarm",
-      "youtube": "",
-      "medium": "",
-      "mirror": ""
+  "name": "STRKFarm",
+  "description": "STRKFarm is a DeFi yield aggregator on Starknet that automatically invests your assets across various DeFi protocols within a given strategy to maximise your returns!",
+  "short_description": "Starknet Yield Aggregator",
+  "tags": ["DeFi", "Infrastructure"],
+  "contracts": [
+    {
+      "name": "STRK Strategy",
+      "address": "0x00541681b9ad63dff1b35f79c78d8477f64857de29a27902f7298f7b620838ea"
     },
-    "twitterName": "strkfarm",
-    "teamInfo": {
-      "founded": "2024-02-10T00:00:00.000Z",
-      "anonymous": false
-    },
-    "tokens": [],
-    "media": {
-      "logoUrl": "/dapps/strkfarm/strkfarm-logo.png",
-      "bannerUrl": "/dapps/strkfarm/strkfarm-banner.png",
-      "previewUrl": "/dapps/strkfarm/strkfarm-preview.png",
-      "videoUrl": "",
-      "gallery": []
+    {
+      "name": "USDC Strategy",
+      "address": "0x016912b22d5696e95ffde888ede4bd69fbbc60c5f873082857a47c543172694f"
     }
+  ],
+  "sepoliaContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://www.strkfarm.xyz/?utm_source=dappland",
+    "careers": "",
+    "twitter": "https://twitter.com/strkfarm",
+    "telegram": "https://t.me/+HQ_eHaXmF-1lZDc1",
+    "discord": "",
+    "github": "https://github.com/strkfarm",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "strkfarm",
+  "teamInfo": {
+    "founded": "2024-02-10T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/strkfarm/strkfarm-logo.png",
+    "bannerUrl": "/dapps/strkfarm/strkfarm-banner.png",
+    "previewUrl": "/dapps/strkfarm/strkfarm-preview.png",
+    "videoUrl": "",
+    "gallery": []
   }
+}

@@ -4,7 +4,7 @@
   "short_description": "Powerful Stableswap and AMM Aggregator on Starknet",
   "tags": ["DeFi"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [
     {
       "name": "Nethermind Cairo Audit (AMM)",
