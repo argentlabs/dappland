@@ -1,7 +1,7 @@
 {
   "name": "Teahouse Finance",
   "description": "Teahouse is a multi-strategy DeFi asset manager similar to a hedge fund. We help enterprise and individual clients grow their crypto assets on our secure and transparent platform.",
-  "short_description": "Teahouse: DeFi asset manager for growing crypto securely and transparently.",
+  "short_description": "Multi-strategy DeFi asset manager",
   "tags": ["DeFi"],
   "contracts": [
     {
@@ -56,14 +56,14 @@
   "dotm": false,
   "links": {
     "website": "https://teahouse.finance/",
-    "careers": " ",
+    "careers": "",
     "twitter": "https://x.com/TeahouseFinance",
     "telegram": "https://t.me/tgteahousefinance",
     "discord": "https://discord.gg/teahouse-finance/",
     "github": "https://github.com/TeahouseFinance",
     "youtube": "https://www.youtube.com/@teahousefinance5019",
     "medium": "https://medium.com/@teahouse.finance",
-    "mirror": " "
+    "mirror": ""
   },
   "twitterName": "Teahouse Finance",
   "teamInfo": {
