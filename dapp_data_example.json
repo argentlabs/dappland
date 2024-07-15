@@ -53,14 +53,14 @@
     "discord": "<URL of the dapp's Discord invite>. Leave empty string if non-existent",
     "github": "<URL of the dapp's Github>. Leave empty string if non-existent",
     "youtube": "<URL of the dapp's Youtube channel>. Leave empty string if non-existent",
-    "medium": "<URL of the dapp's Medium>. Leave empty string if non-existent",
+    "medium": "<URL of the dapp's Medium or self-hosted Blog>. Leave empty string if non-existent",
     "mirror": "<URL of the dapp's Mirror page>. Leave empty string if non-existent"
   },
   "twitterName": "Twitter username. Leave empty string if none",
   "teamInfo": {
     "contactEmail": "<Email address>", // For Argent to be able to contact you. Will not be published on Dappland.
     "founded": "Founding date of the project. EXAMPLE: 2022-05-24T00:00:00.000Z",
-    "anonymous": true // If at least one of the founders has a public profile with their real name linked to the project, set this to true.
+    "anonymous": true // If at least one of the founders has a public profile with their real name linked to the project, set this to false.
   },
   "tokens": [
     // Delete from here to closing curly brace if no token
