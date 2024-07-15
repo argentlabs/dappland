@@ -44,8 +44,12 @@
   "goerliContracts": [],
   "audits": [
     {
-      "name": "Teahouse Vault Cairo Security Report",
-      "url": "https://331710191-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FiYB1[…]df?alt=media&token=a05b8316-66cc-4669-b977-7cc461bd42cb"
+      "name": "Teahouse Audit Report",
+      "url": "https://vault.teahouse.finance/Teahouse-Finance_audit_report_2023-06-14.pdf"
+    },
+    {
+      "name": "Teahouse Audit Report in Document",
+      "url": "https://docs.teahouse.finance/docs/security/audit-reports/teavault-v3-audit-reports"
     }
   ],
   "verified": false,
