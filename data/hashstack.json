@@ -9,7 +9,7 @@
       "address": "0x1b862c518939339b950d0d21a3d4cc8ead102d6270850ac8544636e558fab68"
     }
   ],
-  "goerliContracts": [
+  "sepoliaContracts": [
     {
       "name": "Diamond Contract",
       "address": "0x05ad65a92e83d652175aa914e922afd2917f6a9520047eaa0da0684749163fc4"

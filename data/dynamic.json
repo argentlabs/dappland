@@ -4,7 +4,7 @@
   "short_description": "Your multi-chain web3 auth platform",
   "tags": ["Infrastructure"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

@@ -35,7 +35,7 @@
       "address": "0x00f3be869afa2abb57ab452c2659a2239cb4c83594902fd7f4d07d91316e9894"
     }
   ],
-  "goerliContracts": [
+  "sepoliaContracts": [
     [
       {
         "name": "Starksheet",

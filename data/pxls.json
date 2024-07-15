@@ -36,7 +36,7 @@
       "address": "0x0035345c560052c8d14dcbde85114c123fc3c65b7b5fab2d045fb3a7e57df453"
     }
   ],
-  "goerliContracts": [
+  "sepoliaContracts": [
     {
       "name": "Pxls ERC-721",
       "address": "0x07ffe4bd0b457e10674a2842164b91fea646ed4027d3b606a0fcbf056a4c8827"

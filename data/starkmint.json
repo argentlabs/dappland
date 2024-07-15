@@ -4,7 +4,7 @@
   "short_description": "Create Your Own ERC20 Token & ERC721 NFT on Starknet- Effortlessly!",
   "tags": ["DeFi", "NFTs", "Infrastructure"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

@@ -4,7 +4,7 @@
   "short_description": "Starknet Gaming Console",
   "tags": ["Games"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

@@ -90,7 +90,7 @@ const DappPageDetails = ({ dappInfo }: { dappInfo: DappInfo }) => {
           dappInfo.contracts.map((item) => (
             <p key={item.name} className="mt-2">
               <a
-                href={`https://starkscan.co/contract/${item.address}`}
+                href={`https://voyager.online/contract/${item.address}#code`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-pink text-base truncate max-w-[200px] leading-6 font-semibold"
@@ -99,11 +99,11 @@ const DappPageDetails = ({ dappInfo }: { dappInfo: DappInfo }) => {
               </a>
             </p>
           ))
-        ) : dappInfo.goerliContracts?.length ? (
-          dappInfo.goerliContracts.map((item) => (
+        ) : dappInfo.sepoliaContracts?.length ? (
+          dappInfo.sepoliaContracts.map((item) => (
             <p key={item.name} className="mt-2">
               <a
-                href={`https://testnet.starkscan.co/contract/${item.address}`}
+                href={`https://sepolia.voyager.online/contract/${item.address}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-pink text-base truncate max-w-[200px] leading-6 font-semibold"

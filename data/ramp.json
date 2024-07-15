@@ -4,7 +4,7 @@
   "short_description": "Safe and easy way to buy crypto",
   "tags": ["Onramps"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [
     {
       "name": "App penetration tests conducted by Securitum.",

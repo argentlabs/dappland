@@ -75,7 +75,7 @@ function compareContractAddress(contractAddress: string, dapp: DappInfo) {
     dapp.contracts?.some(({ address }) =>
       equalAddress(address, contractAddress),
     ) ||
-    dapp.goerliContracts?.some(({ address }) =>
+    dapp.sepoliaContracts?.some(({ address }) =>
       equalAddress(address, contractAddress),
     )
   )

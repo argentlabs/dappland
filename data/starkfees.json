@@ -4,7 +4,7 @@
   "short_description": "Fees you've shed, showcased",
   "tags": ["DeFi"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

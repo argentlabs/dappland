@@ -4,7 +4,7 @@
   "short_description": "Social Network Protocol on Starknet",
   "tags": ["Social", "NFTs"],
   "contracts": [],
-  "goerliContracts": [
+  "sepoliaContracts": [
     {
       "name": "Starknet Social Resolver",
       "address": "0x564742bd75538e017a0ba7f23c9b6746d956458ce76e9d00e9182ba0b934acd"

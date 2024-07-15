@@ -4,9 +4,9 @@
   "short_description": "Start your encrypted messages on Starknet.",
   "tags": ["Social", "Infrastructure", "NFTs", "DAOs"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
-  "verified": true,
+  "verified": false,
   "dotm": false,
   "links": {
     "website": "https://dmail.ai/?utm_source=dappland",

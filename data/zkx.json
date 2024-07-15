@@ -4,7 +4,7 @@
   "short_description": "The first perpetual futures exchange on Starknet",
   "tags": ["DeFi", "DAOs"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [
     {
       "name": "Nethermind",

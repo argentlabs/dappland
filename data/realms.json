@@ -4,7 +4,7 @@
   "short_description": "Fantasy multiverse filled with fully onchain games",
   "tags": ["Games", "NFTs", "DAOs"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

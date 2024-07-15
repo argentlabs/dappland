@@ -4,7 +4,7 @@
   "short_description": "DAO Based Ecosystem Catalyst for projects built on Starknet",
   "tags": ["DAOs", "DeFi"],
   "contracts": [],
-  "goerliContracts": [
+  "sepoliaContracts": [
     {
       "name": "StrategyVault",
       "address": "0x02dcc7bbea2ddbefa7492a10df128cfebaf3bf532a6ac168222d0adb64c917a9"

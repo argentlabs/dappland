@@ -4,7 +4,7 @@
   "short_description": "Where the community propose, debate and vote on the direction of Starknet",
   "tags": ["Social", "DAOs"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,

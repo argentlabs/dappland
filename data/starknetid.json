@@ -27,7 +27,7 @@
       "url": "https://github.com/starknet-id/auto_renew_contract/blob/main/audits/chainsecurity.pdf"
     }
   ],
-  "verified": true,
+  "verified": false,
   "dotm": false,
   "links": {
     "website": "https://app.starknet.id/?sponsor=0x64d28d1d1d53a0b5de12e3678699bc9ba32c1cb19ce1c048578581ebb7f8396&utm_source=dappland",

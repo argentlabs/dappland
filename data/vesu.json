@@ -13,7 +13,7 @@
       "address": "0x002334189e831d804d4a11d3f71d4a982ec82614ac12ed2e9ca2f8da4e6374fa"
     }
   ],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [
     {
       "name": "Chain Security",

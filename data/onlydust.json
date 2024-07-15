@@ -4,7 +4,7 @@
   "short_description": "Contribute to the best projects on Starknet",
   "tags": ["Social"],
   "contracts": [],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [],
   "verified": false,
   "dotm": false,
