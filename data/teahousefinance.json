@@ -41,7 +41,7 @@
       "address": "0x07d03a029137e8307f2370096a5afaa43ec64971b43cbe0309ff98858d070936"
     }
   ],
-  "goerliContracts": [],
+  "sepoliaContracts": [],
   "audits": [
     {
       "name": "Teahouse Audit Report",
