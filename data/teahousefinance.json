@@ -44,12 +44,8 @@
   "sepoliaContracts": [],
   "audits": [
     {
-      "name": "Teahouse Audit Report",
-      "url": "https://vault.teahouse.finance/Teahouse-Finance_audit_report_2023-06-14.pdf"
-    },
-    {
-      "name": "Teahouse Audit Report in Document",
-      "url": "https://docs.teahouse.finance/docs/security/audit-reports/teavault-v3-audit-reports"
+      "name": "TeaVault V3 Cairo",
+      "url": "https://331710191-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FiYB1[…]df?alt=media&token=a05b8316-66cc-4669-b977-7cc461bd42cb"
     }
   ],
   "verified": false,
@@ -59,7 +55,7 @@
     "careers": "",
     "twitter": "https://x.com/TeahouseFinance",
     "telegram": "https://t.me/tgteahousefinance",
-    "discord": "https://discord.gg/teahouse-finance/",
+    "discord": "https://discord.gg/teahouse-finance",
     "github": "https://github.com/TeahouseFinance",
     "youtube": "https://www.youtube.com/@teahousefinance5019",
     "medium": "https://medium.com/@teahouse.finance",
