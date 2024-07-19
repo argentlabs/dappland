@@ -11,21 +11,18 @@
     {
       "name": "Mainnet contract",
       "address": "0xF338cad020D506e8e3d9B4854986E0EcE6C23640"
-    },
+    }
   ],
   "sepoliaContracts": [
     {
       "name": "Sepolia contract",
       "address": "0x582CC5d9b509391232cd544cDF9da036e55833Af"
-    },
+    }
   ],
-  "audits": [
-    
-  ],
-  "verified": false, // change to true if your contracts are verified on StarkScan
+  "audits": [],
+  "verified": false,
   "dotm": false,
   "links": {
-    // TODO
     "website": "https://app.paradex.trade/trade/BTC-USD-PERP",
     "careers": "https://www.paradex.trade/careers",
     "twitter": "https://x.com/tradeparadex",
@@ -36,19 +33,14 @@
     "medium": "",
     "mirror": ""
   },
-  // TODO
   "twitterName": "tradeparadex",
   "teamInfo": {
-    // TODO
-    "contactEmail": "<marketing@paradex.trade>", // For Argent to be able to contact you. Will not be published on Dappland.
-    "founded": "2023-08-18T16:31:28",
-    "anonymous": false // If at least one of the founders has a public profile with their real name linked to the project, set this to false.
+    "contactEmail": "marketing@paradex.trade",
+    "founded": "2023-08-18T16:31:28.000Z",
+    "anonymous": false
   },
-  "tokens": "N/A"
-  
-  ],
+  "tokens": "N/A",
   "nft": {
-  
     "collectionContract": "0x6b2c57E34224FA389F5C6fB05b47ae802cF733c0",
     "collectionLink": "https://opensea.io/collection/shizomori",
     "collectionName": "Shizomori",
@@ -56,8 +48,6 @@
       {
         "image_url": "/dapps/paradex/collection-nft-01.jpg",
         "name": "Shizomori"
-      },
-      {
       }
     ]
   },
