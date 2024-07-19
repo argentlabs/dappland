@@ -1,35 +1,23 @@
 {
   "name": "Paradex",
-  "description": "ZK powered Layer 2 network purpose built for high-performance derivatives trading",
-  "short_description": "TODO",
+  "description": "We've optimized for the most degen experience possible which means you can expect clean UX, deep liquidity, low fees and lightning fast performance. Anything less is a compromise. Paradex is self-custodial and our risk-engine (which is insanely optimized for capital efficiency) is on-chain which means all the complex business logic that goes into derivative transactions is validated on the L2. That's pretty rad, seriously.",
+  "short_description": "ZK powered Layer 2 network purpose built for high-performance derivatives trading",
   "tags": [
     "DeFi",
     "Social",
     "Infrastructure"
   ],
   "contracts": [
-    // If no contracts yet, delete from here to closing curly brace
-    // TODO
     {
-      "name": "<Name of Mainnet contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
-      "address": "<Address of Mainnet contract 1>"
+      "name": "Mainnet contract",
+      "address": "0xF338cad020D506e8e3d9B4854986E0EcE6C23640"
     },
-    {
-      "name": "<Name of Mainnet contract 2 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
-      "address": "<Address of Mainnet contract 2>"
-    }
   ],
   "sepoliaContracts": [
-    // If no contracts yet, delete from here to closing curly brace
-    // TODO @SergeyVolynkin
     {
-      "name": "<Name of Sepolia contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
-      "address": "<Address of Sepolia contract 1>"
+      "name": "Sepolia contract",
+      "address": "0x582CC5d9b509391232cd544cDF9da036e55833Af"
     },
-    {
-      "name": "<Name of Sepolia contract 2 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
-      "address": "<Address of Sepolia contract 2>"
-    }
   ],
   "audits": [
     
@@ -38,45 +26,38 @@
   "dotm": false,
   "links": {
     // TODO
-    "website": "<URL of the dapp's website. Leave empty string if non-existent>",
-    "careers": "<URL of the dapp's career page. Can also be 'mailto:example@mydapp.com'. Leave empty string if non-existent>",
-    "twitter": "<URL of the dapp's Twitter account>. Leave empty string if non-existent",
-    "telegram": "<URL of the dapp's Telegram>. Leave empty string if non-existent",
-    "discord": "<URL of the dapp's Discord invite>. Leave empty string if non-existent",
-    "github": "<URL of the dapp's Github>. Leave empty string if non-existent",
-    "youtube": "<URL of the dapp's Youtube channel>. Leave empty string if non-existent",
-    "medium": "<URL of the dapp's Medium or self-hosted Blog>. Leave empty string if non-existent",
-    "mirror": "<URL of the dapp's Mirror page>. Leave empty string if non-existent"
+    "website": "https://app.paradex.trade/trade/BTC-USD-PERP",
+    "careers": "https://www.paradex.trade/careers",
+    "twitter": "https://x.com/tradeparadex",
+    "telegram": "https://t.me/paradex",
+    "discord": "https://discord.gg/paradex",
+    "github": "https://github.com/tradeparadex",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
   },
   // TODO
-  "twitterName": "Twitter username. Leave empty string if none",
+  "twitterName": "tradeparadex",
   "teamInfo": {
     // TODO
-    "contactEmail": "<Email address>", // For Argent to be able to contact you. Will not be published on Dappland.
-    "founded": "Founding date of the project. EXAMPLE: 2022-05-24T00:00:00.000Z",
-    "anonymous": true // If at least one of the founders has a public profile with their real name linked to the project, set this to false.
+    "contactEmail": "<marketing@paradex.trade>", // For Argent to be able to contact you. Will not be published on Dappland.
+    "founded": "2023-08-18T16:31:28",
+    "anonymous": false // If at least one of the founders has a public profile with their real name linked to the project, set this to false.
   },
-  "tokens": [
-    // TODO: @SergeyVolynkin
-    // Delete from here to closing curly brace if no token
-    {
-      "address": "<Address of any ERC-20 Mainnet tokens created by the dapp>",
-      "symbol": "e.g. ETH"
-    }
+  "tokens": "N/A"
+  
   ],
   "nft": {
-    // TODO: add Shizo Collective
-    "collectionContract": "<Address of the NFT contract you wish to showcase>",
-    "collectionLink": "<https url for link to view full collection>",
-    "collectionName": "<Name of NFT collection>",
+  
+    "collectionContract": "0x6b2c57E34224FA389F5C6fB05b47ae802cF733c0",
+    "collectionLink": "https://opensea.io/collection/shizomori",
+    "collectionName": "Shizomori",
     "collectionPreview": [
       {
         "image_url": "/dapps/yourdappname/collection-nft-01.[png, jpg, webp or svg]",
-        "name": "<NFT name and/or number>"
+        "name": "Shizomori"
       },
       {
-        "image_url": "/dapps/yourdappname/collection-nft-02.[png, jpg, webp or svg]",
-        "name": "<NFT name and/or number>"
       }
     ]
   },
@@ -86,7 +67,7 @@
     "previewUrl": "/dapps/paradex/preview.png",
     "gallery": [
       {
-        "url": "https://cdn.prod.website-files.com/632b1650d518e93de132751a/668cf44fa9714fffd4a98f70_Paradex-Ecosystem-Rewards.webp",
+        "url": "https://www.paradex.trade/ecosystem-rewards-hub",
         "description": "Exclusive Points Drops and Boosts for new Paradex Ecosystem Partners"
       }
     ]
