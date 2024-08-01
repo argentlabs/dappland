@@ -1,0 +1,75 @@
+{
+  "name": "Terracon Quest",
+  "description": "Terracon Quest is a new concept game powered by the Ethereum blockchain, launching on Starknet. Mint your own legendary Greek persona, craft intricate stories, and embark on epic adventures.",
+  "short_description": "An historically realistic online game with blockchain and AI integration.",
+  "tags": ["Games", "Blockchain", "NFT", "Starknet"],
+  "contracts": [
+    {
+      "name": "Terracon Quest NFT Mint",
+      "address": "0x01d658eace57b891497b4aa302781f1e8e9d360e42622388dcefb7da9c46a93f"
+    }
+  ],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://terracon.quest",
+    "careers": "",
+    "twitter": "https://x.com/terraconquestus",
+    "telegram": "https://t.me/terraconquest",
+    "discord": "",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "@terraconquestus",
+  "teamInfo": {
+    "founded": "2023-01-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "nft": {
+    "collectionContract": "0x01d658eace57b891497b4aa302781f1e8e9d360e42622388dcefb7da9c46a93f",
+    "collectionLink": "https://unframed.co/collection/0x01d658eace57b891497b4aa302781f1e8e9d360e42622388dcefb7da9c46a93f",
+    "collectionName": "Terracon Quest Characters",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/terraconquest/terraconquest-nft01.jpg",
+        "name": "Character 1"
+      },
+      {
+        "image_url": "/dapps/terraconquest/terraconquest-nft02.jpg",
+        "name": "Character 2"
+      },
+      {
+        "image_url": "/dapps/terraconquest/terraconquest-nft03.jpg",
+        "name": "Character 3"
+      },
+      {
+        "image_url": "/dapps/terraconquest/terraconquest-nft04.jpg",
+        "name": "Character 4"
+      }
+    ]
+  },
+  "media": {
+    "logoUrl": "/dapps/terraconquest/terraconquest-logo.jpg",
+    "bannerUrl": "/dapps/terraconquest/terraconquest-banner.jpg",
+    "previewUrl": "/dapps/terraconquest/terraconquest-preview.jpg",
+    "gallery": [
+      {
+        "url": "/dapps/terraconquest/terraconquest-gallery1.jpg",
+        "description": "Preview your Character metadata once revealed in Your Tokens page"
+      },
+      {
+        "url": "/dapps/terraconquest/terraconquest-gallery2.jpg",
+        "description": "Create a story for your character based on your own decisions"
+      },
+      {
+        "url": "/dapps/terraconquest/terraconquest-gallery3.jpg",
+        "description": "Asign stats based on the events that your character in his life story that you craft"
+      }
+    ]
+  }
+}
