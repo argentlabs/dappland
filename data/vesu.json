@@ -1,6 +1,6 @@
 {
   "name": "Vesu",
-  "description": "Vesu is a public lending protocol allowing everyone to earn, borrow and build freely and securely.",
+  "description": "Vesu is an open lending protocol built on Starknet allowing everyone to earn, borrow and build seamlessly.",
   "short_description": "Best lending experience on Starknet",
   "tags": ["DeFi"],
   "contracts": [
@@ -27,7 +27,7 @@
   "verified": true,
   "dotm": true,
   "links": {
-    "website": "https://vesu.xyz",
+    "website": "https://vesu.xyz/?utm_source=dappland",
     "careers": "",
     "twitter": "https://x.com/vesuxyz",
     "telegram": "",

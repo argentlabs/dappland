@@ -1,0 +1,50 @@
+{
+  "name": "Paradex",
+  "description": "We've optimized for the most degen experience possible which means you can expect clean UX, deep liquidity, low fees and lightning fast performance. Anything less is a compromise. Paradex is self-custodial and our risk-engine (which is insanely optimized for capital efficiency) is on-chain which means all the complex business logic that goes into derivative transactions is validated on the L2. That's pretty rad, seriously.",
+  "short_description": "Purpose built for high-performance derivatives trading",
+  "tags": ["DeFi", "Social", "Infrastructure"],
+  "contracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://app.paradex.trade/trade/BTC-USD-PERP/?utm_source=dappland",
+    "careers": "https://www.paradex.trade/careers",
+    "twitter": "https://x.com/tradeparadex",
+    "telegram": "https://t.me/paradex",
+    "discord": "https://discord.gg/paradex",
+    "github": "https://github.com/tradeparadex",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "tradeparadex",
+  "teamInfo": {
+    "contactEmail": "marketing@paradex.trade",
+    "founded": "2023-08-18T16:31:28.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "nft": {
+    "collectionContract": "0x6b2c57E34224FA389F5C6fB05b47ae802cF733c0",
+    "collectionLink": "https://opensea.io/collection/shizomori",
+    "collectionName": "Shizomori",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/paradex/collection-nft-01.jpg",
+        "name": "Shizomori"
+      }
+    ]
+  },
+  "media": {
+    "logoUrl": "/dapps/paradex/logo.png",
+    "bannerUrl": "/dapps/paradex/banner.png",
+    "previewUrl": "/dapps/paradex/preview.png",
+    "gallery": [
+      {
+        "url": "https://www.paradex.trade/ecosystem-rewards-hub",
+        "description": "Exclusive Points Drops and Boosts for new Paradex Ecosystem Partners"
+      }
+    ]
+  }
+}
