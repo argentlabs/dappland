@@ -2,11 +2,7 @@
   "name": "Paradex",
   "description": "We've optimized for the most degen experience possible which means you can expect clean UX, deep liquidity, low fees and lightning fast performance. Anything less is a compromise. Paradex is self-custodial and our risk-engine (which is insanely optimized for capital efficiency) is on-chain which means all the complex business logic that goes into derivative transactions is validated on the L2. That's pretty rad, seriously.",
   "short_description": "ZK powered Layer 2 network purpose built for high-performance derivatives trading",
-  "tags": [
-    "DeFi",
-    "Social",
-    "Infrastructure"
-  ],
+  "tags": ["DeFi", "Social", "Infrastructure"],
   "contracts": [
     {
       "name": "Mainnet contract",
@@ -23,7 +19,7 @@
   "verified": true,
   "dotm": false,
   "links": {
-    "website": "https://app.paradex.trade/trade/BTC-USD-PERP",
+    "website": "https://app.paradex.trade/trade/BTC-USD-PERP/?utm_source=dappland",
     "careers": "https://www.paradex.trade/careers",
     "twitter": "https://x.com/tradeparadex",
     "telegram": "https://t.me/paradex",
