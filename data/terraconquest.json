@@ -36,38 +36,38 @@
     "collectionName": "Terracon Quest Characters",
     "collectionPreview": [
       {
-        "image_url": "/dapps/terracon-quest/terracon-quest-nft01.png",
+        "image_url": "/dapps/terraconquest/terraconquest-nft01.jpg",
         "name": "Character 1"
       },
       {
-        "image_url": "/dapps/terracon-quest/terracon-quest-nft02.png",
+        "image_url": "/dapps/terraconquest/terraconquest-nft02.jpg",
         "name": "Character 2"
       },
       {
-        "image_url": "/dapps/terracon-quest/terracon-quest-nft03.png",
+        "image_url": "/dapps/terraconquest/terraconquest-nft03.jpg",
         "name": "Character 3"
       },
       {
-        "image_url": "/dapps/terracon-quest/terracon-quest-nft04.png",
+        "image_url": "/dapps/terraconquest/terraconquest-nft04.jpg",
         "name": "Character 4"
       }
     ]
   },
   "media": {
-    "logoUrl": "/dapps/terracon-quest/terracon-quest-logo.png",
-    "bannerUrl": "/dapps/terracon-quest/terracon-quest-banner.png",
-    "previewUrl": "/dapps/terracon-quest/terracon-quest-preview.png",
+    "logoUrl": "/dapps/terraconquest/terraconquest-logo.jpg",
+    "bannerUrl": "/dapps/terraconquest/terraconquest-banner.jpg",
+    "previewUrl": "/dapps/terraconquest/terraconquest-preview.jpg",
     "gallery": [
       {
-        "url": "/dapps/terracon-quest/terracon-quest-gallery1.png",
+        "url": "/dapps/terraconquest/terraconquest-gallery1.jpg",
         "description": "Preview your Character metadata once revealed in Your Tokens page"
       },
       {
-        "url": "/dapps/terracon-quest/terracon-quest-gallery2.png",
+        "url": "/dapps/terraconquest/terraconquest-gallery2.jpg",
         "description": "Create a story for your character based on your own decisions"
       },
       {
-        "url": "/dapps/terracon-quest/terracon-quest-gallery3.png",
+        "url": "/dapps/terraconquest/terraconquest-gallery3.jpg",
         "description": "Asign stats based on the events that your character in his life story that you craft"
       }
     ]
