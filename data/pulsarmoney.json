@@ -1,0 +1,39 @@
+  {
+    "name": "Pulsar Money",
+    "description": "Pulsar Money is all about making digital payments seamless and more intuitive for everyone, whether you're handling personal finances or running a business. Our aim is to automate and enhance the efficiency of on-chain transfers, minimising friction and maximising ease of use for both personal and business users. Our suite of products is built to integrate smoothly into daily operations, simplifying complex financial tasks and making advanced tools readily accessible to everyone.",
+    "short_description": "Smart Payments Hub with Social Pay, Smart Transfers, Airdrops, and way more.",
+    "tags": ["Payments", "Infrastructure"],
+    "contracts": [
+      {
+        "name": "Social Pay",
+        "address": "0x0105aac6fcf07895956fa0289de2185903dd605f5be54146a9adf40c8a3a2599"
+      }
+    ],
+    "sepoliaContracts": [],
+    "audits": [],
+    "verified": false,
+    "dotm": false,
+    "links": {
+      "website": "https://starknet.pulsar.money",
+      "twitter": "https://x.com/pulsarmoneyapp",
+      "telegram": "https://t.me/PulsarMoney",
+      "discord": "https://discord.com/invite/qzfjuzfBNY",
+      "github": "https://github.com/pulsarmoney",
+      "youtube": "https://www.youtube.com/@PulsarMoney",
+      "medium": "https://medium.com/@PulsarMoney",
+      "careers": "https://54oownhzrer.typeform.com/to/iIMnbXJb"
+    },
+    "twitterName": "pulsarmoneyapp",
+    "teamInfo": {
+      "founded": "2023-05-01T00:00:00.000Z",
+      "anonymous": false
+    },
+    "tokens": [],
+    "media": {
+      "logoUrl": "/dapps/pulsarmoney/pulsarmoney-logo.png",
+      "bannerUrl": "/dapps/pulsarmoney/pulsarmoney-banner.png",
+      "previewUrl": "/dapps/pulsarmoney/pulsarmoney-preview.jpeg",
+      "gallery": []
+    }
+  }
+  
