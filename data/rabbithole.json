@@ -1,0 +1,59 @@
+{
+  "name": "Gift crypto",
+  "description": "“Red pill” your friends. Gift crypto to anyone, anywhere and send them down the rabbit hole. No middleman. No fees (except a couple of cents for the transaction). This is the easiest way to onboard your friends and family, no matter where they are in the world.",
+  "short_description": "Gift crypto to anyone",
+  "tags": ["Onramps", "Payments", "Infrastructure"],
+  "contracts": [
+    {
+      "name": "Gift Factory",
+      "address": "0x03667b42afbb0c8539aa411a6b181ab30b9da64725bdf61e997820dd630f39fa"
+    },
+    {
+      "name": "Escrow Account",
+      "address": "0x64d28d1d1d53a0b5de12e3678699bc9ba32c1cb19ce1c048578581ebb7f8396"
+    }
+  ],
+  "sepoliaContracts": [
+    {
+      "name": "Gift Factory",
+      "address": "0x42a18d85a621332f749947a96342ba682f08e499b9f1364325903a37c5def60"
+    },
+    {
+      "name": "Escrow Account",
+      "address": "0x6b054e8dbc5756e3f43b70cf1bfa4639c560898a3c70b2f753ba53bef549a1c"
+    }
+  ],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://gift.argent.xyz/?utm_source=dappland",
+    "careers": "https://www.argent.xyz/careers",
+    "twitter": "https://twitter.com/argentHQ",
+    "telegram": "",
+    "discord": "https://discordapp.com/invite/GWSyrHg",
+    "github": "https://github.com/argentlabs",
+    "youtube": "https://youtube.com/argentHQ",
+    "medium": "https://www.argent.xyz/blog",
+    "mirror": ""
+  },
+  "twitterName": "argentHQ",
+  "teamInfo": {
+    "founded": "2018-01-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "nft": {},
+  "media": {
+    "logoUrl": "/dapps/rabbithole/rabbithole-logo.jpg",
+    "bannerUrl": "/dapps/rabbithole/rabbithole-banner.jpg",
+    "previewUrl": "/dapps/rabbithole/rabbithole-preview.jpg",
+    "videoUrl": "/dapps/rabbithole/white-rabbit.mp4",
+    "gallery": [
+      {
+        "url": "/dapps/rabbithole/rabbithole-screenshot.jpg",
+        "description": "Gift crypto to anyone, anywhere."
+      }
+    ]
+  }
+}
