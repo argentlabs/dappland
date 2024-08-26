@@ -27,9 +27,9 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "/dapps/starknetscaffold/logo.jpg",
-    "bannerUrl": "/dapps/starknetscaffold/banner.jpg",
-    "previewUrl": "/dapps/starknetscaffold/banner.jpg",
+    "logoUrl": "/dapps/starknetscaffold/starknetscaffold-logo.jpg",
+    "bannerUrl": "/dapps/starknetscaffold/starknetscaffold-banner.jpg",
+    "previewUrl": "/dapps/starknetscaffold/starknetscaffold-banner.jpg",
     "videoUrl": "",
     "gallery": []
   }
