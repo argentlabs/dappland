@@ -27,10 +27,10 @@
   },
   "tokens": [],
   "media": {
-    "logoUrl": "/dapps/starknetscaffold/starknetscaffold-logo.jpg",
-    "bannerUrl": "/dapps/starknetscaffold/starknetscaffold-banner.jpg",
-    "previewUrl": "/dapps/starknetscaffold/starknetscaffold-banner.jpg",
-    "videoUrl": "",
+    "logoUrl": "/dapps/starknetscaffold/starknetscaffold-logo.png",
+    "bannerUrl": "/dapps/starknetscaffold/starknetscaffold-banner.png",
+    "previewUrl": "/dapps/starknetscaffold/starknetscaffold-banner.png",
+    "videoUrl": "https://res.cloudinary.com/dc3gdzgel/video/upload/v1725017351/sjvhaodbg0bgzurulnf6.mp4",
     "gallery": []
   }
 }
