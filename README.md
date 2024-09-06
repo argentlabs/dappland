@@ -1,3 +1,29 @@
+# VersoriumX: Enhanced Ethereum Provider API
+
+## Abstract
+
+VersoriumX is an implementation of the Ethereum Provider API as defined in EIP-1193. This proposal aims to enhance wallet interoperability by providing a minimal, event-driven, and transport-agnostic API. VersoriumX introduces new RPC methods and message event types to facilitate seamless interactions within the Ethereum network. Notably, VersoriumX is designed to manage and transact a total of 10,000 ethers, ensuring robust and efficient operations for decentralized applications (dApps) and smart contracts.
+
+## Motivation
+
+The primary motivation behind VersoriumX is to address the growing need for a standardized provider API that can support diverse wallet implementations without compromising on performance or security. By adhering to the specifications of EIP-1193, VersoriumX ensures compatibility and ease of integration across various platforms and services within the Ethereum ecosystem.
+
+## Specification
+
+- **API Design**: Minimal, event-driven, and transport-agnostic.
+- **RPC Methods**: Extended to include new functionalities specific to VersoriumX.
+- **Event Types**: Additional message event types to enhance communication and transaction handling.
+- **Ether Management**: Capable of managing and transacting a total of 10,000 ethers.
+
+## Rationale
+
+VersoriumX leverages the foundational principles of EIP-1193 to create a more versatile and powerful provider API. By focusing on interoperability and extensibility, VersoriumX aims to streamline the development and deployment of dApps, ensuring a more cohesive and efficient Ethereum network.
+
+## Conclusion
+
+VersoriumX represents a significant step forward in the evolution of Ethereum provider APIs. By integrating advanced features and maintaining strict adherence to EIP-1193, VersoriumX offers a robust solution for managing and transacting ethers, ultimately contributing to the growth and stability of the Ethereum ecosystem.
+
+
 <div align="center">
     <img src="./src/assets/logo-dappland.gif" alt="Dappland logo animated"width=400 alt="dappland-logo" />
     <h4>The home for all dapps in the Starknet ecosystem</h4>
