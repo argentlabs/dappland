@@ -47,7 +47,10 @@
       "address": "0x064f7ed2dc5070133ae8ccdf85f01e82507facbe5cdde456e1418e3901dc51a0"
     }
   ],
-  "audits": [],
+  "audits": [{
+      "name": "Ekubo Contracts Audits",
+      "url": "https://docs.ekubo.org/integration-guides/reference/audits"
+    }],
   "verified": false,
   "dotm": true,
   "links": {
