@@ -1,0 +1,36 @@
+{
+  "name": "Starknet Scaffold",
+  "description": "🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on Starknet. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts. \n ⚙️ Built using NextJS, Starknet.js, Starknet-React, Starknetkit, Typescript, Scarb, and Starknet-Foundry.",
+  "short_description": "An open-source, up-to-date toolkit for building decentralized applications (dapps) on Starknet.",
+  "tags": ["Infrastructure"],
+  "contracts": [],
+  "sepoliaContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://www.starknetscaffold.xyz/",
+    "careers": "",
+    "twitter": "https://x.com/horuslabsio",
+    "telegram": "https://t.me/+sH0ug1mZ_WtjNmM0",
+    "discord": "",
+    "github": "https://github.com/horuslabsio/Starknet-Scaffold",
+    "youtube": "https://www.youtube.com/@horuslabs",
+    "medium": "https://medium.com/@horuslabsio",
+    "mirror": ""
+  },
+  "twitterName": "horuslabsio",
+  "teamInfo": {
+    "contactEmail": "horuslabsio@gmail.com",
+    "founded": "2024-01-24T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/starknetscaffold/starknetscaffold-logo.png",
+    "bannerUrl": "/dapps/starknetscaffold/starknetscaffold-banner.png",
+    "previewUrl": "/dapps/starknetscaffold/starknetscaffold-banner.png",
+    "videoUrl": "https://res.cloudinary.com/dc3gdzgel/video/upload/v1725017351/sjvhaodbg0bgzurulnf6.mp4",
+    "gallery": []
+  }
+}
