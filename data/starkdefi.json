@@ -5,7 +5,10 @@
   "tags": ["DeFi"],
   "contracts": [],
   "sepoliaContracts": [],
-  "audits": [],
+  "audits": [{
+      "name": "Blaize Security StarkDefi Audit",
+      "url": "https://github.com/blaize-security/blaize-security-audits/blob/main/s/starkdefi/StarkDeFi-audit-report-v2-%5B23-Oct-2023%5D.pdf"
+    }],
   "verified": false,
   "dotm": false,
   "links": {
