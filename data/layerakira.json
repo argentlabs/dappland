@@ -1,7 +1,7 @@
 {
   "name": "LayerAkira",
   "description": "LayerAkira is a spot order book exchange built on Starknet. Powered by institutional order book liquidity, our mission is to provide users with the best pricing on Starknet and allow users to trade with size.",
-  "short_description": "Spot DEX, powered by institutional order book liquidity",
+  "short_description": "Order book spot DEX",
   "tags": ["DeFi", "Infrastructure"],
   "contracts": [
     {
