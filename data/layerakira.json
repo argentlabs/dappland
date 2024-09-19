@@ -1,0 +1,46 @@
+{
+  "name": "LayerAkira",
+  "description": "LayerAkira is a spot order book exchange built on Starknet. Powered by institutional order book liquidity, our mission is to provide users with the best pricing on Starknet and allow users to trade with size.",
+  "short_description": "Spot DEX, powered by institutional order book liquidity",
+  "tags": ["DeFi", "Infrastructure"],
+  "contracts": [
+    {
+      "name": "LayerAkira DEX",
+      "address": "0x07ebdb799d26422ada4f2b591a53f2a5ddae4bd01bc52159f24ece7dd1131cbf"
+    }
+  ],
+  "sepoliaContracts": [],
+  "audits": [
+    {
+      "name": "Nethermind",
+      "url": "https://github.com/NethermindEth/PublicAuditReports/blob/main/NM0237-FINAL_LAYERAKIRA.pdf"
+    }
+  ],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://layerakira.xyz",
+    "careers": "",
+    "twitter": "https://x.com/LayerAkira",
+    "telegram": "",
+    "discord": "https://discord.gg/M7XyJp2kA4",
+    "github": "https://github.com/LayerAkira/kurosawa_akira",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "LayerAkira",
+  "teamInfo": {
+    "contactEmail": "mickey@layerakira.xyz",
+    "founded": "2023-09-11T00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/layerakira/layerakira-logo.jpg",
+    "bannerUrl": "/dapps/layerakira/layerakira-banner.png",
+    "previewUrl": "/dapps/layerakira/layerakira-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
