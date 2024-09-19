@@ -19,7 +19,10 @@
       "address": "0x06c872d0696e7bf45735239393774f51455e3bdb08760a0dc76cd7c8688cfd60"
     }
   ],
-  "audits": [],
+  "audits": [ {
+      "name": "Jediswap audit",
+      "url": "https://github.com/jediswaplabs/JediSwap-v2-core/tree/main/audits"
+    }],
   "verified": true,
   "dotm": false,
   "links": {
