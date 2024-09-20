@@ -2,7 +2,7 @@
   "name": "Gift crypto",
   "description": "“Red pill” your friends. Gift crypto to anyone, anywhere and send them down the rabbit hole. No middleman. No fees (except a couple of cents for the transaction). This is the easiest way to onboard your friends and family, no matter where they are in the world. Built by Argent.",
   "short_description": "Gift crypto to anyone",
-  "tags": ["Onramps", "Payments", "Infrastructure"],
+  "tags": ["Onramps", "Infrastructure"],
   "contracts": [
     {
       "name": "Gift Factory",
