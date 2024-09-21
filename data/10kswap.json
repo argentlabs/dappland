@@ -31,7 +31,10 @@
       "address": "0x231adde42526bad434ca2eb983efdd64472638702f87f97e6e3c084f264e06f"
     }
   ],
-  "audits": [],
+  "audits": [  {
+      "name": "Scalebit 10k Swap Audit Report",
+      "url": "https://scalebit.xyz/reports/10K-Swap-Audit-Report.pdf"
+    }],
   "verified": false,
   "dotm": false,
   "links": {
