@@ -1,0 +1,34 @@
+name: StarkNet CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install StarkNet CLI
+        run: |
+          curl -fsSL https://install.starknet.io | sh
+          export PATH=$PATH:/usr/local/starknet/bin
+
+      - name: Compile contract
+        run: |
+          starknet-compile --output contract.cairo contract.stark
+
+      - name: Test contract
+        run: |
+          starknet-test --contract contract.cairo
+
+      - name: Deploy contract
+        env:
+          STARKNET_NETWORK: testnet
+          STARKNET_ACCOUNT: ${{ secrets.STARKNET_ACCOUNT }}
+          STARKNET_PRIVATE_KEY: ${{ secrets.STARKNET_PRIVATE_KEY }}
+        run: |
+          starknet deploy --network $STARKNET_NETWORK --account $STARKNET_ACCOUNT --private-key $STARKNET_PRIVATE_KEY contract.cairo
