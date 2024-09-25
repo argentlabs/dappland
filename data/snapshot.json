@@ -1,0 +1,47 @@
+{
+  "name": "Snapshot",
+  "description": "Snapshot is a voting platform that allows DAOs, DeFi protocols, NFT communities or any community to vote easily",
+  "short_description": "Where decisions get made",
+  "tags": [
+    "Social",
+    "DAOs"
+  ], 
+  "audits": [
+    {
+      "name": "OpenZeppelin SnapshotX audit",
+      "url": "https://github.com/snapshot-labs/sx-starknet/blob/develop/audits/OpenZeppelin-SnapshotX-Audit.pdf"
+    },
+    {
+      "name": "ChainSecurity SnapshotX audit",
+      "url": "https://github.com/snapshot-labs/sx-evm/blob/main/audits/ChainSecurity_Snapshot_Snapshot_X_audit.pdf"
+    }
+  ],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://snapshot.box",
+    "careers": "https://x.com/SnapshotLabs/jobs",
+    "twitter": "https://x.com/SnapshotLabs",
+    "telegram": "",
+    "discord": "https://discord.snapshot.org",
+    "github": "https://github.com/snapshot-labs",
+    "youtube": "",
+    "medium": "",
+    "mirror": "https://snapshot.mirror.xyz/"
+  },
+  "twitterName": "SnapshotLabs",
+  "teamInfo": {
+    "contactEmail": "", 
+    "founded": "2020-08-25T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [
+  ],
+  "media": {
+    "logoUrl": "/dapps/snapshot/snapshot-logo.png",
+    "bannerUrl": "/dapps/snapshot/snapshot-banner.png",
+    "previewUrl": "/dapps/snapshot/snapshot-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
