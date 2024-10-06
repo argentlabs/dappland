@@ -1,6 +1,11 @@
 import React from "react"
 
+const validNames = ["dapp1", "dapp2", "dapp3"]; // Add all valid names here
+
 export const getRatingForDapp = async (name: string) => {
+  if (!validNames.includes(name)) {
+    throw new Error("Invalid dapp name");
+  }
   return await fetch(`${process.env.API_URL}tokens/dapps/ratings/${name}`).then(
     (res) => res.json(),
   )
