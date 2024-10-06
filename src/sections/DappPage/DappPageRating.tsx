@@ -53,9 +53,8 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
   const determineIfMainnet = () => {
     if (typeof window !== "undefined") {
       const { hostname } = window.location
-      return (
-        hostname.includes("dappland.com") || hostname.includes("substack.com")
-      )
+      const allowedHosts = ["dappland.com", "substack.com"]
+      return allowedHosts.some(allowedHost => hostname === allowedHost || hostname.endsWith(`.${allowedHost}`))
     } else {
       return false
     }
