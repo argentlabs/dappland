@@ -1,0 +1,45 @@
+{
+  "name": "0LiqLend",
+  "description": "0LiqLend is a peer-to-peer yield marketplace where sophisticated borrowers compete to offer the best fixed/variable yield for unsophisticated/passive lenders",
+  "short_description": "Peer-to-peer lending platform on Starknet",
+  "tags": ["DeFi", "Infrastructure"],
+  "contracts": [
+    {
+      "name": "Core",
+      "address": "0x02ad97557ec0bb9f3617f31b0086eeb165ee405fbfefd71073b1766f682816b4"
+    }
+  ],
+  "sepoliaContracts": [
+  ],
+  "audits": [
+  ],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://0LiqLend.com",
+    "careers": "",
+    "twitter": "https://twitter.com/0LiqLend",
+    "telegram": "",
+    "discord": "https://discord.gg/mN8gZUgFS7",
+    "github": "https://github.com/zkcairo",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "0LiqLend",
+  "teamInfo": {
+    "contactEmail": "",
+    "founded": "2024-05-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "nft": {
+  },
+  "media": {
+    "logoUrl": "/dapps/0liqlend/0liqlend-logo.png",
+    "bannerUrl": "/dapps/0liqlend/0liqlend-banner.png",
+    "previewUrl": "/dapps/0liqlend/0liqlend-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
