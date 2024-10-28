@@ -16,14 +16,11 @@
   "sepoliaContracts": [],
   "audits": [
     {
-      "name": "Chain Security",
-      "url": "https://github.com/vesuxyz/security/blob/main/audits/2024-06-07_ChainSecurity_Vesu-Protocol_audit.pdf"
-    },
-    {
-      "name": "Cairo Security Clan",
-      "url": "https://github.com/vesuxyz/security/blob/main/audits/2024-07-02_CairoSecurityClan_Vesu-Protocol_audit.pdf"
+      "name": "Vesu audits",
+      "url": "https://docs.vesu.xyz/security/security-audit"
     }
   ],
+
   "verified": true,
   "dotm": true,
   "links": {
