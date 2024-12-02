@@ -1,65 +1,63 @@
 {
-    "name": "Endur",
-    "description": "Endur is a platform offering xSTRK, a tradeable Liquid Staking Token (LST) on Starknet. xSTRK allows STRK token holders to stake their assets while maintaining liquidity.",
-    "short_description": "Starknet's Leading LST",
-    "tags": [
-        "DeFi",
-        "Infrastructure"
-    ],
-    "contracts": [
-        {
-            "name": "xSTRK Token Contract",
-            "address": "0x28d709c875c0ceac3dce7065bec5328186dc89fe254527084d1689910954b0a"
-        },
-        {
-            "name": "Withdraw Queue NFT",
-            "address": "0x518a66e579f9eb1603f5ffaeff95d3f013788e9c37ee94995555026b9648b6"
-        }
-    ],
-    "sepoliaContracts": [
-        {
-            "name": "xSTRK Token Contract",
-            "address": "0x42de5b868da876768213c48019b8d46cd484e66013ae3275f8a4b97b31fc7eb"
-        },
-        {
-            "name": "Withdraw Queue NFT",
-            "address": "0x254cbdaf8275cb1b514ae63ccedb04a3a9996b1489829e5d6bbaf759ac100b6"
-        }
-    ],
-    "audits": [
-        {
-            "name": "Cairo Security Clan",
-            "url": "https://drive.google.com/file/d/1EufZmcW9k5yq5Jivek1MjTCVnft5WRER/view"
-        }
-    ],
-    "verified": false,
-    "dotm": false,
-    "links": {
-        "website": "https://endur.fi/",
-        "careers": "",
-        "discord": "",
-        "github": "https://github.com/Endur-fi/",
-        "youtube": "",
-        "medium": "https://blog.endur.fi/",
-        "mirror": ""
+  "name": "Endur",
+  "description": "Endur is a platform offering xSTRK, a tradeable Liquid Staking Token (LST) on Starknet. xSTRK allows STRK token holders to stake their assets while maintaining liquidity.",
+  "short_description": "Starknet's Leading LST",
+  "tags": ["DeFi", "Infrastructure"],
+  "contracts": [
+    {
+      "name": "xSTRK Token Contract",
+      "address": "0x28d709c875c0ceac3dce7065bec5328186dc89fe254527084d1689910954b0a"
     },
-    "twitterName": "endurfi",
-    "teamInfo": {
-        "contactEmail": "contact@karnot.xyz",
-        "founded": "2024-11-05T00:00:00.000Z",
-        "anonymous": false
-    },
-    "tokens": [],
-    "media": {
-        "logoUrl": "/dapps/endur/endur-logo.png",
-        "bannerUrl": "/dapps/endur/endur-banner.png",
-        "previewUrl": "/dapps/endur/endur-preview.png",
-        "videoUrl": "https://youtu.be/xr4Nu3wiXX8",
-        "gallery": [
-            {
-                "url": "/dapps/endur/endur-01.png",
-                "description": "Endur homepage"
-            }
-        ]
+    {
+      "name": "Withdraw Queue NFT",
+      "address": "0x518a66e579f9eb1603f5ffaeff95d3f013788e9c37ee94995555026b9648b6"
     }
+  ],
+  "sepoliaContracts": [
+    {
+      "name": "xSTRK Token Contract",
+      "address": "0x42de5b868da876768213c48019b8d46cd484e66013ae3275f8a4b97b31fc7eb"
+    },
+    {
+      "name": "Withdraw Queue NFT",
+      "address": "0x254cbdaf8275cb1b514ae63ccedb04a3a9996b1489829e5d6bbaf759ac100b6"
+    }
+  ],
+  "audits": [
+    {
+      "name": "Cairo Security Clan",
+      "url": "https://drive.google.com/file/d/1EufZmcW9k5yq5Jivek1MjTCVnft5WRER/view"
+    }
+  ],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://endur.fi/?utm_source=dappland",
+    "careers": "",
+    "twitter": "https://twitter.com/endurfi",
+    "discord": "",
+    "github": "https://github.com/Endur-fi/",
+    "youtube": "",
+    "medium": "https://blog.endur.fi/",
+    "mirror": ""
+  },
+  "twitterName": "endurfi",
+  "teamInfo": {
+    "contactEmail": "contact@karnot.xyz",
+    "founded": "2024-11-05T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/endur/endur-logo.png",
+    "bannerUrl": "/dapps/endur/endur-banner.png",
+    "previewUrl": "/dapps/endur/endur-preview.png",
+    "videoUrl": "https://youtu.be/xr4Nu3wiXX8",
+    "gallery": [
+      {
+        "url": "/dapps/endur/endur-01.png",
+        "description": "Endur homepage"
+      }
+    ]
+  }
 }
