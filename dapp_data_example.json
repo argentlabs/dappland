@@ -46,7 +46,7 @@
   "dotm": false, //leave 'false'
   "links": {
     // Leave empty string, i.e. "" if any empty
-    "website": "<URL of the dapp's website. Leave empty string if non-existent>",
+    "website": "https://your-dapp.com/?utm_source=dappland",
     "careers": "<URL of the dapp's career page. Can also be 'mailto:example@mydapp.com'. Leave empty string if non-existent>",
     "twitter": "<URL of the dapp's Twitter account>. Leave empty string if non-existent",
     "telegram": "<URL of the dapp's Telegram>. Leave empty string if non-existent",
