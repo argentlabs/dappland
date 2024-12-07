@@ -23,6 +23,8 @@ import profileLight from "../assets/icons/profileLight.svg"
 import star from "../assets/icons/starFilled.svg"
 import swap from "../assets/icons/swap.svg"
 import swapLight from "../assets/icons/swapLight.svg"
+import telegram from "../assets/icons/telegram.svg"
+import telegramLight from "../assets/icons/telegramLight.svg"
 import verified from "../assets/icons/verified.svg"
 import verifiedLight from "../assets/icons/verifiedLight.svg"
 
@@ -31,6 +33,12 @@ export const categories = [
   { key: "bridges", name: "Bridges", icon: bridges, iconDark: bridgesLight },
   { key: "defi", name: "DeFi", icon: swap, iconDark: swapLight },
   { key: "games", name: "Games", icon: gaming, iconDark: gamingLight },
+  {
+    key: "telegram",
+    name: "Telegram",
+    icon: telegram,
+    iconDark: telegramLight,
+  },
   { key: "nfts", name: "NFTs", icon: gallery, iconDark: galleryLight },
   { key: "social", name: "Social", icon: heart, iconDark: heartLight },
   {
