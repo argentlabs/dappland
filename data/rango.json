@@ -8,7 +8,7 @@
   "audits": [
     {
       "name": "Slowmist Audit",
-      "url": "https://github.com/rango-exchange/rango-contracts/tree/main/audits"
+      "url": "https://github.com/rango-exchange/rango-contracts-v2/tree/main/audits"
     }
   ],
   "verified": false,
