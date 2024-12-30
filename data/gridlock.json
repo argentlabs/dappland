@@ -1,41 +1,39 @@
 {
-    "name": "Grid-Lock ",
-    "description": "Grid-Lock is a fully on-chain strategic puzzle game on Telegram where players manipulate blocks to unlock pathways, combining problem-solving skills with timing and precision..",
-    "short_description": "Grid-Lock is a fully on-chain game on Telegram.",
-    "tags": [
-        "Game"
-    ],
-    "contracts": [
-        {
-            "name": "Gridlock Worldr",
-            "address": "0x7587d3e7fd01da96ef1df90b26e46f9a3dd4ab4a2085ad8baa2fe48322656fd"
-        }
-    ],
-    "verified": true,
-    "dotm": true,
-    "links": {
-        "website": "https://www.boltwade.xyz/",
-        "careers": "",
-        "twitter": "https://x.com/BoltwadeStudio",
-        "telegram": "https://t.me/leetangeth",
-        "discord": "",
-        "github": "https://github.com/BoltWade-Studio/gridlock-contracts",
-        "youtube": "",
-        "medium": "",
-        "mirror": ""
-    },
-    "twitterName": "Boltwade ⚡",
-    "teamInfo": {
-        "contactEmail": "leetangeth@gmail.com",
-        "founded": "2024-06-03T00:00:00.000Z",
-        "anonymous": false
-    },
-    "tokens": [],
-    "media": {
-        "logoUrl": "/dapps/gridlock/logo.png",
-        "bannerUrl": "/dapps/gridlock/banner.png",
-        "previewUrl": "/dapps/gridlock/preview.png",
-        "videoUrl": "",
-        "gallery": []
+  "name": "Grid-Lock ",
+  "description": "Grid-Lock is a fully on-chain strategic puzzle game on Telegram where players manipulate blocks to unlock pathways, combining problem-solving skills with timing and precision..",
+  "short_description": "Grid-Lock is a fully on-chain game on Telegram.",
+  "tags": ["Game"],
+  "contracts": [
+    {
+      "name": "Gridlock Worldr",
+      "address": "0x7587d3e7fd01da96ef1df90b26e46f9a3dd4ab4a2085ad8baa2fe48322656fd"
     }
+  ],
+  "verified": true,
+  "dotm": true,
+  "links": {
+    "website": "https://www.boltwade.xyz/",
+    "careers": "",
+    "twitter": "https://x.com/BoltwadeStudio",
+    "telegram": "https://t.me/leetangeth",
+    "discord": "",
+    "github": "https://github.com/BoltWade-Studio/gridlock-contracts",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "Boltwade ⚡",
+  "teamInfo": {
+    "contactEmail": "leetangeth@gmail.com",
+    "founded": "2024-06-03T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/gridlock/logo.png",
+    "bannerUrl": "/dapps/gridlock/banner.png",
+    "previewUrl": "/dapps/gridlock/preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
 }
