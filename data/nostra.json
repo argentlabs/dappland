@@ -1,6 +1,6 @@
 {
   "name": "Nostra",
-  "description": "Nostra is the crypto Super App, powered by Starknet, where users can lend, borrow, swap, and bridge cryptocurrencies.",
+  "description": "Lend, borrow, swap & bridge crypto. All in Nostra",
   "short_description": "The crypto Super App",
   "tags": ["DeFi"],
   "contracts": [
@@ -27,7 +27,7 @@
   "dotm": false,
   "links": {
     "website": "https://nostra.finance/?utm_source=dappland",
-    "careers": "https://angel.co/company/tempusfinance/jobs",
+    "careers": "",
     "twitter": "https://twitter.com/nostrafinance",
     "telegram": "https://www.t.me/nostrafinance",
     "discord": "https://discord.com/invite/Eqp53YafYP",
@@ -41,7 +41,12 @@
     "founded": "2022-08-15T00:00:00.000Z",
     "anonymous": false
   },
-  "tokens": [],
+  "tokens": [
+    {
+      "symbol": "NSTR",
+      "address": "0x00c530f2c0aa4c16a0806365b0898499fba372e5df7a7172dc6fe9ba777e8007"
+    }
+  ],
   "media": {
     "logoUrl": "/dapps/nostra/nostra-logo.png",
     "bannerUrl": "/dapps/nostra/nostra-banner.png",
