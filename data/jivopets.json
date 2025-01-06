@@ -1,0 +1,56 @@
+{
+  "name": "Jivo Pets",
+  "description": "Jivo Pets is a Telegram mini-app game inspired by Tamagotchi, where players care for virtual pets, explore, and participate in events. The game progresses through 3 stages, introducing new mechanics and challenges. Combining interactive gameplay, social engagement, and web3 education. Jivo Pets helps players to learn and grow in new technologies. Our vision is to create a decentralized platform within TON Space with Starknet integration, offering immersive Web3 experiences through daily play.",
+  "short_description": "Take care of a pet",
+  "tags": [
+    "Telegram",
+    "Games",
+    "Social",
+    "NFTs"
+  ],
+  "contracts": [],
+  "sepoliaContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://jivopets.com/?utm_source=dappland",
+    "careers": "",
+    "twitter": "https://x.com/jivopets",
+    "telegram": "https://t.me/jivopets",
+    "discord": "https://discord.gg/A4SwqaW3Kc",
+    "github": "",
+    "youtube": "https://youtu.be/awGR9ZijaOM?si=iuS-eWMTxVAPYw9D",
+    "medium": "https://medium.com/@jivopets/jivo-pets-mechanics-of-the-first-stage-of-the-game-0df336c54647",
+    "mirror": ""
+  },
+  "twitterName": "jivopets",
+  "teamInfo": {
+    "contactEmail": "jivopets@gmail.com",
+    "founded": "2023-01-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "nft": {
+    "collectionContract": "",
+    "collectionLink": "",
+    "collectionName": "",
+    "collectionPreview": []
+  },
+  "media": {
+    "logoUrl": "/dapps/jivopets/jivopets-logo.png",
+    "bannerUrl": "/dapps/jivopets/jivopets-banner.png",
+    "previewUrl": "/dapps/jivopets/jivopets-preview.png",
+    "videoUrl": "https://youtu.be/awGR9ZijaOM?si=iuS-eWMTxVAPYw9D",
+    "gallery": [
+      {
+        "url": "/dapps/jivopets/jivopets-gallery-1.jpg",
+        "description": "Gameplay screenshot 1"
+      },
+      {
+        "url": "/dapps/jivopets/jivopets-gallery-2.jpg",
+        "description": "Gameplay screenshot 2"
+      }
+    ]
+  }
+}
