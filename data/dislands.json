@@ -1,0 +1,41 @@
+{
+  "name": "D'islands",
+  "description": "D'islands is an Autonomous World powered by Starknet & Dojo Engine",
+  "short_description": "Endless Autonomous World",
+  "tags": [
+    "Games",
+    "NFTs",
+    "Social"
+  ],
+  "contracts": [],
+  "sepoliaContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://dislands.com/",
+    "careers": "",
+    "twitter": "https://twitter.com/0xDislands",
+    "telegram": "",
+    "discord": "https://discord.gg/5fmwxUUeG8",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "0xDislands",
+  "teamInfo": {
+    "contactEmail": "contact@dislands.com",
+    "founded": "2023-01-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "nft": {},
+  "media": {
+    "logoUrl": "/dapps/dislands/Dislands-logo.png",
+    "bannerUrl": "/dapps/dislands/Dislands-banner.png",
+    "previewUrl": "/dapps/dislands/Dislands-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
