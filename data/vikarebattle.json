@@ -1,0 +1,54 @@
+{
+  "name": "Vikare Battle",
+  "description": "Everai Vikare Battle is a story-driven idle game on Telegram with web3 mechanics and social gameplay.",
+  "short_description": "Telegram Idle Game.",
+  "tags": [
+    "Telegram",
+    "Games"    
+  ],
+  "contracts": [    
+  ],
+  "sepoliaContracts": [    
+  ],
+  "audits": [    
+  ],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "",
+    "careers": "",
+    "twitter": "https://x.com/Everai",
+    "telegram": "https://t.me/+cFs1yQmrVuUxODJk",
+    "discord": "https://discord.gg/GXY8cnXe",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "Everai",
+  "teamInfo": {
+    "contactEmail": "fabio@screenshot.co",
+    "founded": "22/11/2024",
+    "anonymous": true
+  },
+  "tokens": [    
+  ],
+  "nft": {
+    "collectionContract": "",
+    "collectionLink": "",
+    "collectionName": "",
+    "collectionPreview": []
+  },
+  "media": {
+    "logoUrl": "/dapps/vikarebattle/dapp-icon-vikarebattle.jpg",
+    "bannerUrl": "/dapps/vikarebattle/dapp-header-vikarebattle.jpg",
+    "previewUrl": "/dapps/vikarebattle/dapp-preview-vikarebattle.jpg",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "/dapps/vikarebattle/gallery1.jpg",
+        "description": ""
+      }
+    ]
+  }
+}
