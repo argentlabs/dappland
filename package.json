@@ -55,5 +55,9 @@
   },
   "resolutions": {
     "styled-components": "^5"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
   }
 }
