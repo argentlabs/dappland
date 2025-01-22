@@ -1,0 +1,61 @@
+
+{
+  "name": "Coinbine",
+  "description": "Merge tiles, boost your score, and claim rewards! With Coinbine, your skills in merging tiles turn into rewards. The more you play, the more you earn!",
+  "short_description": "Merge tiles, boost your score, and earn rewards",
+  "tags": [
+    "Telegram",
+    "Games"
+  ], 
+  "contracts": [
+    {
+      "name": "Score Contract",
+      "address": "0x066bf6ccc497e595d5696d7814845b46e2c7e51bc9e26f0c6d1bcd4e7401f556"
+    }
+
+  ],
+  "sepoliaContracts": [
+ ],
+  "audits": [
+
+  ],
+  "verified": false, 
+  "dotm": false, 
+  "links": {
+    "website": "https://www.coinbine.io/",
+    "careers": "",
+    "twitter": "https://x.com/coinbine",
+    "telegram": "https://t.me/coinbine",
+    "discord": "",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "Coinbine",
+  "teamInfo": {
+    "contactEmail": "contact@coinbine.io", 
+    "founded": "2024-09-15T00:00:00.000Z",
+    "anonymous": true 
+  },
+  "tokens": [
+   
+  ],
+  "nft": {
+    "collectionContract": "",
+    "collectionLink": "",
+    "collectionName": "",
+    "collectionPreview": [
+ 
+    ]
+  },
+  "media": {
+    "logoUrl": "/dapps/coinbine/coinbine-logo.png",
+    "bannerUrl": "dapps/coinbine/coinbine--banner.png",
+    "previewUrl": "/dapps/coinbine/coinbine--preview.png",
+    "videoUrl": "",
+    "gallery": [
+   
+    ]
+  }
+}
