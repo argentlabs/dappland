@@ -5,7 +5,18 @@
   "tags": ["DeFi"],
   "contracts": [],
   "sepoliaContracts": [],
-  "audits": [],
+  "audits": [{
+      "name": "Trail Of Bits 2023",
+      "url": "https://github.com/lindy-labs/opus_contracts/blob/main/audits/2023-08-report-trail-of-bits.pdf"
+    },
+  {
+      "name": "Trail Of Bits 2024",
+      "url": "https://github.com/lindy-labs/opus_contracts/blob/main/audits/2023-12-report-trail-of-bits.pdf"
+    },
+   {
+      "name": "code4rena",
+      "url": "https://github.com/lindy-labs/opus_contracts/blob/main/audits/2024-03-report-code4rena.pdf"
+    }],
   "verified": false,
   "dotm": false,
   "links": {
