@@ -9,13 +9,12 @@
     "Infrastructure"
   ], 
   "contracts": [
-    
   ],
+  "sepoliaContracts": [],
   "audits": [
-    
   ],
-  "verified": false, // change to true if your contracts are verified on StarkScan
-  "dotm": false, //leave 'false'
+  "verified": false, 
+  "dotm": false, 
   "links": {
     "website": "https://www.unruggable.meme/",
     "careers": "",
@@ -37,8 +36,6 @@
     
   ],
   "nft": {
-    
-    ]
   },
   "media": {
     "logoUrl": "/dapps/yourdappname/Unruggable_Meme-logo.png",
