@@ -1,0 +1,48 @@
+{
+  "name": "Unruggable Meme",
+  "description": "A memecoin standard and deployment tool designed to ensure a maximum safety for memecoin traders.",
+  "short_description": "Tired of getting rugpulled? Introducing Unruggable Meme",
+  "tags": [
+    "Games",
+    "Social",
+    "DAOs",
+    "Infrastructure"
+  ], 
+  "contracts": [
+  ],
+  "sepoliaContracts": [],
+  "audits": [
+  ],
+  "verified": false, 
+  "dotm": false, 
+  "links": {
+    "website": "https://www.unruggable.meme/",
+    "careers": "",
+    "twitter": "https://x.com/BrotherUnrug",
+    "telegram": "",
+    "discord": "",
+    "github": "https://github.com/keep-starknet-strange/unruggable.meme/tree/main",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "@BrotherUnrug",
+  "teamInfo": {
+    "contactEmail": "", 
+    "founded": "",
+    "anonymous": false 
+  },
+  "tokens": [
+    
+  ],
+  "nft": {
+  },
+  "media": {
+    "logoUrl": "/dapps/unruggablememe/unruggablememe-logo.png",
+    "bannerUrl": "/dapps/unruggablememe/unruggablememe-banner.png",
+    "previewUrl": "/dapps/unruggablememe/unruggablememe-preview.png",
+    "videoUrl": "",
+    "gallery": [
+    ]
+  }
+}
