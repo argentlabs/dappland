@@ -38,9 +38,9 @@
   "nft": {
   },
   "media": {
-    "logoUrl": "/dapps/yourdappname/unruggablememe-logo.png",
-    "bannerUrl": "/dapps/yourdappname/unruggablememe-banner.png",
-    "previewUrl": "/dapps/yourdappname/unruggablememe-preview.png",
+    "logoUrl": "/dapps/unruggablememe/unruggablememe-logo.png",
+    "bannerUrl": "/dapps/unruggablememe/unruggablememe-banner.png",
+    "previewUrl": "/dapps/unruggablememe/unruggablememe-preview.png",
     "videoUrl": "",
     "gallery": [
     ]
