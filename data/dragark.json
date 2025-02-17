@@ -1,0 +1,51 @@
+{
+    "name": "Dragark",
+    "description": "Dragark is a Starknet-native fully on-chain game set in the fantastic Sky Kingdom, where players can take their Dragarks on a journey to explore, conquer, exploit, expand their sky territories, and craft & trade the in-game assets within a dynamic economy",
+    "short_description": "Dominate islands with Dragarks! A fully onchain game on Starknet for dragon's power: Conquer skies, build empires, rule onchain!",
+    "tags": ["NFTs", "Social", "Games"],
+    "contracts": [
+      {
+        "name": "World",
+        "address": "0x00c04152642b3a27ccfdb941cda1de0fbbfcb8f547ae96c4dfa65e649f5f1409"
+      }
+    ],
+    "sepoliaContracts": [],
+    "audits": [],
+    "verified": false,
+    "dotm": false,
+    "links": {
+      "website": "https://dragark.net",
+      "careers": "",
+      "twitter": "https://x.com/playDRAGARK",
+      "telegram": "",
+      "discord": "https://discord.gg/KEChMrdk7z",
+      "github": "https://github.com/DragarkTeam",
+      "youtube": "https://www.youtube.com/@playDRAGARK",
+      "medium": "",
+      "mirror": ""
+    },
+    "twitterName": "playDRAGARK",
+    "teamInfo": {
+      "contactEmail": "",
+      "founded": "2024-07-01T00:00:00.000Z",
+      "anonymous": true
+    },
+    "tokens": [],
+    "media": {
+      "logoUrl": "/dapps/dragark/dragark-logo.png",
+      "bannerUrl": "/dapps/dragark/dragark-banner.png",
+      "previewUrl": "/dapps/dragark/dragark-preview.png",
+      "videoUrl": "https://assets.dragark.net/dragark/upload/dragark-trailer.mp4",
+      "gallery": [
+        {
+          "url": "/dapps/dragark/1.png",
+          "description": "Game app"
+        },
+        {
+          "url": "/dapps/dragark/2.png",
+          "description": "Ranking Page"
+        }
+      ]
+    }
+  }
+  
