@@ -1,0 +1,50 @@
+{
+  "name": "oxLand",
+  "description": "oxLand is a roguelike dungeon crawler game built on StarkNet. Explore dungeons, defeat bosses, and earn rewards while connecting to the StarkNet ecosystem. Playable on web, support for both PC and mobile.",
+  "short_description": "Roguelike Dungeon Crawler on StarkNet",
+  "tags": [
+    "Games",
+    "NFTs",
+    "DeFi"
+  ],
+  "contracts": [
+  ],
+  "sepoliaContracts": [
+    {
+      "name": "oxLand Sepolia Contract",
+      "address": "0x500c401aa2403a36d40bca5e005be4ecf98a7842906cf6590b860082f265b95"
+    }
+  ],
+  "audits": [
+  ],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://www.oxland.site",
+    "careers": "",
+    "twitter": "https://x.com/oxLand_bot",
+    "telegram": "https://t.me/oxLand_bot",
+    "discord": "",
+    "github": "",
+    "youtube": "https://www.youtube.com/watch?v=lNsbFZuZWOM",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "oxLand_bot",
+  "teamInfo": {
+    "contactEmail": "nlyrthiia@outlook.com",
+    "founded": "2024-11-24T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [
+  ],
+  "nft": {
+  },
+  "media": {
+    "logoUrl": "/dapps/oxland/oxland-logo.png",
+    "bannerUrl": "/dapps/oxland/oxland-banner.png",
+    "previewUrl": "/dapps/oxland/oxland-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
