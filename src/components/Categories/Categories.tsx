@@ -12,7 +12,7 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import styled from "styled-components"
 
-const CategoryContainer = styled.div`
+const CategoryContainer = styled.div<React.HTMLProps<HTMLDivElement>>`
   ul.hovered li {
     transition: opacity 0.2s ease-in-out;
     opacity: 0.6;

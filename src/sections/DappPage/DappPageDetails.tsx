@@ -2,7 +2,7 @@ import expand from "../../assets/icons/expand.svg"
 import Image from "next/image"
 import styled from "styled-components"
 
-const DetailsContainer = styled.div`
+const DetailsContainer = styled.div<React.HTMLProps<HTMLDivElement>>`
   display: flex;
   flex-direction: column;
   padding: 2.5rem 2rem;

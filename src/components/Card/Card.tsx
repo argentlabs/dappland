@@ -3,14 +3,14 @@ import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import styled from "styled-components"
 
-const CoverImage = styled.div`
+const CoverImage = styled.div<React.HTMLProps<HTMLDivElement>>`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 12px;
 `
 
-const CardContainer = styled.div`
+const CardContainer = styled.div<React.HTMLProps<HTMLDivElement>>`
   grid-template-columns: 64px auto auto;
 `
 

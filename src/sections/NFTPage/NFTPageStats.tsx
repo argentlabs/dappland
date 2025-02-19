@@ -12,7 +12,7 @@ const ButtonsContainer = styled.div`
   }
 `
 
-const ImageContainer = styled.div``
+const ImageContainer = styled.div<React.HTMLProps<HTMLDivElement>>``
 
 const NFTPageStats = ({
   data,

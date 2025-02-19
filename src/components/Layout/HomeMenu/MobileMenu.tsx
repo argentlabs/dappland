@@ -13,7 +13,7 @@ import Link from "next/link"
 import React, { useEffect, useRef, useState } from "react"
 import styled from "styled-components"
 
-const MenuContainer = styled.div`
+const MenuContainer = styled.div<React.HTMLProps<HTMLDivElement>>`
   box-shadow: none;
 
   &.navbar-scrolled:not(.is-active-menu) {
