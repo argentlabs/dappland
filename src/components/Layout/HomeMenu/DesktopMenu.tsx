@@ -5,10 +5,16 @@ import logoLightLottie from "../../../assets/logo-light-lottie.json"
 import { AnnouncementBar } from "../../AnnouncementBar"
 import Button from "../../Button/Button"
 import ConnectWallet from "../../Button/ConnectWallet"
-import Lottie from "lottie-react"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
+import dynamic from "next/dynamic"
+
+// Disable server-side rendering for this component
+// old method worked on vercel but not locally. This should work on both
+const Lottie = dynamic(() => import("lottie-react"), {
+  ssr: false,
+})
 
 interface DesktopMenuProps {
   currentTheme?: string
