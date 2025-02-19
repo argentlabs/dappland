@@ -109,13 +109,31 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
       }
 
       const signature = await connectedWallet.account.signMessage(types)
-
-      const signatures = [
-        {
-          r: num.toHexString(String(signature[3])),
-          s: num.toHexString(String(signature[4])),
-        },
-      ]
+      console.log("signature", signature)
+      const numSigners = parseInt(signature[0])
+      let signatures = []
+      if (numSigners === 1) {
+        signatures = [
+          {
+            r: num.toHexString(String(signature[3])),
+            s: num.toHexString(String(signature[4])),
+          },
+        ]
+      } else if (numSigners === 2) {
+        // Smart account with two signers
+        signatures = [
+          {
+            r: num.toHexString(String(signature[3])),
+            s: num.toHexString(String(signature[4])),
+          },
+          {
+            r: num.toHexString(String(signature[7])),
+            s: num.toHexString(String(signature[8])),
+          },
+        ]
+      } else {
+        throw new Error(`Sig format not recognised.`)
+      }
 
       const bodyData = {
         dappKey: dappKey,
