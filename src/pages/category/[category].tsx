@@ -28,7 +28,7 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import styled from "styled-components"
 
-const StyledSection = styled.section`
+const StyledSection = styled.section<React.HTMLProps<HTMLElement>>`
   grid-template-areas:
     "list cards"
     "list cards";

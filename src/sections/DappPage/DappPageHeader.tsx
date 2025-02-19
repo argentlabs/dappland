@@ -14,7 +14,7 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 import styled from "styled-components"
 
-const HeaderButtonsContainer = styled.div`
+const HeaderButtonsContainer = styled.div<React.HTMLProps<HTMLDivElement>>`
   .visit-button {
     padding: 10px 24px;
     line-height: normal;
