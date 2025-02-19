@@ -8,7 +8,7 @@ import { setCookie, getCookie, hasCookie } from "cookies-next"
 import chunk from "lodash.chunk"
 import Image from "next/image"
 import React, { useEffect, useState } from "react"
-import { num } from "starknet"
+import { num, TypedData } from "starknet"
 
 type Props = {
   dappKey?: string
@@ -83,16 +83,7 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
     }
     ratingValue++
     if (connectedWallet && connectedWallet.isConnected) {
-      const signature = await connectedWallet.account.signMessage({
-        message: {
-          dappKey: dappKey,
-          rating: ratingValue,
-        },
-        domain: {
-          name: "Dappland",
-          chainId: connectedWallet.chainId,
-          version: "1.0",
-        },
+      const types: TypedData = {
         types: {
           // IMPORTANT: Do not change StarkNetDomain to StarknetDomain
           StarkNetDomain: [
@@ -106,18 +97,31 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
           ],
         },
         primaryType: "Message",
-      })
+        message: {
+          dappKey: dappKey,
+          rating: ratingValue,
+        },
+        domain: {
+          name: "Dappland",
+          chainId: connectedWallet.chainId,
+          version: "1.0",
+        },
+      }
 
-      const signatures = chunk(signature, 2).map((sign) => ({
-        r: num.toHexString(String(sign[0])),
-        s: num.toHexString(String(sign[1])),
-      }))
+      const signature = await connectedWallet.account.signMessage(types)
+
+      const signatures = [
+        {
+          r: num.toHexString(String(signature[3])),
+          s: num.toHexString(String(signature[4])),
+        },
+      ]
 
       const bodyData = {
-        dappKey,
-        signatures,
-        rating: ratingValue,
+        dappKey: dappKey,
         account: connectedWallet.selectedAddress,
+        signatures: signatures,
+        rating: ratingValue,
       }
 
       const handleErrors = (response: any) => {
@@ -218,8 +222,8 @@ const DappPageRating = ({ dappKey = "my_dapp" }: Props) => {
                       ? starFilled
                       : starEmpty
                     : currentRating !== null && currentRating >= val
-                    ? starFilled
-                    : starEmpty
+                      ? starFilled
+                      : starEmpty
                 }
                 className="z-[1]"
                 alt="star-empty"

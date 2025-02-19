@@ -74,10 +74,10 @@ export const generateUrl = ({
           selectedRatings.length ? `&ratings=${allRatings}` : ""
         }`
       : selectedSort
-      ? `${selectedSort ? `?sort=${selectedSort}` : ""}${
-          selectedRatings.length ? `&ratings=${allRatings}` : ""
-        }`
-      : `${selectedRatings.length ? `?ratings=${allRatings}` : ""}`
+        ? `${selectedSort ? `?sort=${selectedSort}` : ""}${
+            selectedRatings.length ? `&ratings=${allRatings}` : ""
+          }`
+        : `${selectedRatings.length ? `?ratings=${allRatings}` : ""}`
   }`
   return url
 }

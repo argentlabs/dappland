@@ -29,7 +29,7 @@ const CategoryContainer = styled.div`
   }
 `
 
-const MenuContainer = styled.div`
+const MenuContainer = styled.div<React.HTMLProps<HTMLDivElement>>`
   box-shadow: none;
   transition: all 0.2s ease;
 

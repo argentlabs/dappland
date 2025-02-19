@@ -12,7 +12,9 @@ interface FeaturedCardProps {
   isHome?: boolean
 }
 
-const StyledCard = styled.div<{ image: StaticImageData }>`
+const StyledCard = styled.div<
+  { image: StaticImageData } & React.HTMLProps<HTMLDivElement>
+>`
   @media (min-width: 1024px) {
     background-image: ${({ image }) => `url(${image?.src})`};
     background-repeat: no-repeat;
