@@ -26,7 +26,7 @@ const dappsHandler: NextApiHandler = async (req, res) => {
       return res.status(400).json({ error: result.error.errors[0].message })
     }
 
-    const dapp = await getDappByhost(result.data.host)
+    const dapp = await getDappByHost(result.data.host)
 
     if (!dapp) {
       return res.status(404).json({ error: "Dapp not found" })
@@ -62,7 +62,7 @@ function compareHost(host: string, dapp: DappInfo) {
     return false
   }
 }
-async function getDappByhost(host: string) {
+async function getDappByHost(host: string) {
   const dapps = await dappsPromise
   return dapps.find((dapp) => compareHost(host, dapp))
 }
