@@ -19,7 +19,7 @@
   "twitterName": "earlystarkers",
   "teamInfo": {
     "founded": "2022-07-19T00:00:00.000z",
-    "anonymous": "false"
+    "anonymous": false
   },
   "verified": false,
   "tokens": [],
