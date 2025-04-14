@@ -36,24 +36,22 @@
     }
   ],
   "sepoliaContracts": [
-    [
-      {
-        "name": "Starksheet",
-        "address": "0x00b45604338d4d9b4daf5a8eb368b7d9d0447b2029d64684e47fd2fc4be3f497"
-      },
-      {
-        "name": "Origin",
-        "address": "0x160ced9da188040d8be670d95d68219fb11c2eebe6fa4cc1bdf5e36ae6b5f6c"
-      },
-      {
-        "name": "BasicCellRenderer",
-        "address": "0x048ee4bccae62f50ec929c757d1c53141ac3866e5ca67d5cff0edaa8e833f34b"
-      },
-      {
-        "name": "math",
-        "address": "0x021e46c69d5e116b2d7fce672cad513038ea9ad1d8a32050139201f6168cdf8c"
-      }
-    ]
+    {
+      "name": "Starksheet",
+      "address": "0x00b45604338d4d9b4daf5a8eb368b7d9d0447b2029d64684e47fd2fc4be3f497"
+    },
+    {
+      "name": "Origin",
+      "address": "0x160ced9da188040d8be670d95d68219fb11c2eebe6fa4cc1bdf5e36ae6b5f6c"
+    },
+    {
+      "name": "BasicCellRenderer",
+      "address": "0x048ee4bccae62f50ec929c757d1c53141ac3866e5ca67d5cff0edaa8e833f34b"
+    },
+    {
+      "name": "math",
+      "address": "0x021e46c69d5e116b2d7fce672cad513038ea9ad1d8a32050139201f6168cdf8c"
+    }
   ],
   "verified": true,
   "dotm": false,
