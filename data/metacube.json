@@ -1,0 +1,89 @@
+{
+  "name": "Metacube",
+  "description": "Metacube is a free-to-play, massively multiplayer web browser game on Starknet. Players join thousands of others in an epic quest to conquer and dismantle the mysterious Metacube, collecting unique NFTs and digital assets along the way. The game features the exclusive Metacube: Genesis and Metacube: Passcards collections, offering players special powers and unique advantages in the game world.",
+  "short_description": "Massively Multiplayer, free-to-play game on Starknet.",
+  "tags": ["Games", "NFTs"],
+  "contracts": [
+    {
+      "name": "Marketplace",
+      "address": "0x03ffcdb47b567c5621150e355f652244690c7afe64a31cdc06037444fa7b9ffb"
+    },
+    {
+      "name": "Genesis Collection",
+      "address": "0x007ca74fd0a9239678cc6355e38ac1e7820141501727ae37f9c733e5ed1c3592"
+    },
+    {
+      "name": "Passcards Collection",
+      "address": "0x0602c301f6a1c2ef174bafaab7389c3f6165df34736befcf2ca3df7764934caf"
+    },
+    {
+      "name": "All Stars Collection",
+      "address": "0x0680e5fe0b71702a1227fa8bcd083c7a8cf7aa535e848b2dd0a82b4d01257255"
+    },
+    {
+      "name": "Og Stove Collection",
+      "address": "0x05c15109745fd726f302ac7a16fad3f5f073aa07ff6e0fa9291e2c89eb7bc5cd"
+    },
+    {
+      "name": "Zombie Collection",
+      "address": "0x05bee0ba034b07c6246c2e1e6fea2fb7df2c2108603895c367bdece3d0e0b478"
+    }
+  ],
+  "sepoliaContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://metacube.games/",
+    "careers": "mailto:contact@metacube.games",
+    "twitter": "https://x.com/MetacubeGames",
+    "discord": "https://discord.gg/3Ka4jACr7b",
+    "github": "https://github.com/metacube-games",
+    "youtube": "https://www.youtube.com/@metacube8650"
+  },
+  "twitterName": "MetacubeGames",
+  "teamInfo": {
+    "contactEmail": "contact@metacube.games",
+    "anonymous": false
+  },
+  "tokens": [],
+  "nft": {
+    "collectionContract": "0x0680e5fe0b71702a1227fa8bcd083c7a8cf7aa535e848b2dd0a82b4d01257255",
+    "collectionLink": "https://market.metacube.games/collection/allstars",
+    "collectionName": "Metacube: All Stars",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/metacube/collection-nft-4.png",
+        "name": "Doge"
+      },
+      {
+        "image_url": "/dapps/metacube/collection-nft-39.png",
+        "name": "Wojack McBomalds"
+      },
+      {
+        "image_url": "/dapps/metacube/collection-nft-677.png",
+        "name": "Pepe"
+      }
+    ]
+  },
+  "media": {
+    "logoUrl": "/dapps/metacube/metacube-logo.png",
+    "bannerUrl": "/dapps/metacube/metacube-banner.jpeg",
+    "previewUrl": "/dapps/metacube/metacube-preview.png",
+    "videoUrl": "https://www.youtube.com/watch?v=NrqrzNGqnwM",
+    "gallery": [
+      {
+        "url": "https://dashboard-assets.dappradar.com/document/50214/metacube-project-collectibles-50214-image1_aa8b030bfcb5fe48656ab5b9090d2371.png",
+        "description": "Player facing the partially destroyed Metacube."
+      },
+      {
+        "url": "https://dashboard-assets.dappradar.com/document/50214/metacube-project-collectibles-50214-image2_084e6a5e5a1ebb44aa589763d25fab15.png",
+        "description": "Spawn Spaceship seen from below."
+      },
+      {
+        "url": "https://dashboard-assets.dappradar.com/document/50214/metacube-project-collectibles-50214-image3_53e05fc0770b4ea001e0ca89525462f5.png",
+        "description": "Full Metacube seen from the top."
+      }
+    ]
+  }
+}
