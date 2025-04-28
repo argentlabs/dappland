@@ -1,0 +1,48 @@
+{
+  "name": "RemusDEX",
+  "description": "RemusDEX redefines trading with a user-centric order book experience, combining the speed of Starknet with the trust of decentralization.",
+  "short_description": "Starknet's first fully onchain orderbook DEX",
+  "tags": ["DeFi", "Infrastructure"],
+  "contracts": [
+    {
+      "name": "RemusDEX mainnet",
+      "address": "<0x067e7555f9ff00f5c4e9b353ad1f400e2274964ea0942483fae97363fd5d7958>"
+    }
+  ],
+  "sepoliaContracts": [
+    {
+      "name": "RemusDEX Sepolia",
+      "address": "0x04e1ac8fe63b465a583740a684aeff3589428d50869b79da2dd296c380ee4bd8"
+    }
+  ],
+  "audits": [
+    {
+      "name": "CODESPECT",
+      "url": "https://remusdex.gitbook.io/remusdex-docs/audit"
+    }
+  ],
+  "verified": false, // change to true if your contracts are verified on StarkScan
+  "dotm": false, //leave 'false'
+  "links": {
+    "website": "https://www.remusdex.xyz/",
+    "careers": "",
+    "twitter": "https://x.com/RemusDEX",
+    "telegram": "",
+    "discord": "<https://discord.gg/2QqscKrP",
+    "github": "https://github.com/RemusDEX",
+    "youtube": "",
+    "medium": "",
+    "mirror": "https://mirror.xyz/0xbde7cA6E6C1a1585F62095455414FAe2D18Bd029"
+  },
+  "twitterName": "RemusDEX",
+  "teamInfo": {
+    "contactEmail": "admin@remusdex.com",
+    "founded": "2024-11-1T00:00:00.000Z",
+    "anonymous": true 
+  },
+  "media": {
+    "logoUrl": "/dapps/remusdex/dappname-logo RemusDEX.png",
+    "bannerUrl": "/dapps/remusdex/dappname-banner RemusDEX.png",
+    "previewUrl": "/dapps/remusdex/dappname-preview RemusDEX.png"
+  }
+}
