@@ -21,8 +21,8 @@
       "url": "https://remusdex.gitbook.io/remusdex-docs/audit"
     }
   ],
-  "verified": false, // change to true if your contracts are verified on StarkScan
-  "dotm": false, //leave 'false'
+  "verified": false,
+  "dotm": false,
   "links": {
     "website": "https://www.remusdex.xyz/",
     "careers": "",
