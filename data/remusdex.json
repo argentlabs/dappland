@@ -40,19 +40,12 @@
     "founded": "2024-11-1T00:00:00.000Z",
     "anonymous": true 
   },
-  "nft": {
-    "collectionContract": "",
-    "collectionLink": "",
-    "collectionName": "",
-    "collectionPreview": [
-    ]
-  },
+  "nft": {},
   "media": {
     "logoUrl": "/dapps/remusdex/remusdex-logo.png",
     "bannerUrl": "/dapps/remusdex/remusdex-banner.png",
     "previewUrl": "/dapps/remusdex/remusdex-preview.png",
     "videoUrl": "",
-    "gallery": [
-    ]
+    "gallery": []
   }
 }
