@@ -28,7 +28,7 @@
     "careers": "",
     "twitter": "https://x.com/RemusDEX",
     "telegram": "",
-    "discord": "<https://discord.gg/2QqscKrP",
+    "discord": "https://discord.gg/2QqscKrP",
     "github": "https://github.com/RemusDEX",
     "youtube": "",
     "medium": "",
@@ -41,6 +41,11 @@
     "anonymous": true 
   },
   "nft": {
+    "collectionContract": "",
+    "collectionLink": "",
+    "collectionName": "",
+    "collectionPreview": [
+    ]
   },
   "media": {
     "logoUrl": "/dapps/remusdex/remusdex-logo.png",
