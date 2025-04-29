@@ -6,7 +6,7 @@
   "contracts": [
     {
       "name": "RemusDEX mainnet",
-      "address": "<0x067e7555f9ff00f5c4e9b353ad1f400e2274964ea0942483fae97363fd5d7958>"
+      "address": "0x067e7555f9ff00f5c4e9b353ad1f400e2274964ea0942483fae97363fd5d7958"
     }
   ],
   "sepoliaContracts": [
