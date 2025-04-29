@@ -14,7 +14,7 @@
     "Infrastructure"
   ], // Remove all that don't apply
   "contracts": [
-    // If no contracts yet, delete from here to closing curly brace
+    // If no contracts yet, delete from here to closing curly brace, leave the array
     {
       "name": "<Name of Mainnet contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
       "address": "<Address of Mainnet contract 1>"
@@ -63,13 +63,13 @@
     "anonymous": true // If at least one of the founders has a public profile with their real name linked to the project, set this to false.
   },
   "tokens": [
-    // Delete from here to closing curly brace if no token
+    // Delete from here to closing curly brace if no token, leave the array even if empty
     {
       "address": "<Address of any ERC-20 Mainnet tokens created by the dapp>",
       "symbol": "e.g. ETH"
     }
   ],
-  "nft": {
+  "nft": { // leave this object even if empty, "nft": {},
     "collectionContract": "<Address of the NFT contract you wish to showcase>",
     "collectionLink": "<https url for link to view full collection>",
     "collectionName": "<Name of NFT collection>",
@@ -89,7 +89,7 @@
     "bannerUrl": "/dapps/yourdappname/yourdappname-banner.[png, jpg or webp] Resolution: 1920 × 400 pixels>",
     "previewUrl": "/dapps/yourdappname/yourdappname-preview.[png, jpg or webp] Resolution: 700 × 400 pixels>",
     "videoUrl": "<URL for a video of the dapp (hosted externally)>",
-    "gallery": [
+    "gallery": [ // leave the array even if empty -- "gallery": []
       {
         "url": "<URL for a promotional image or screenshots of the dapp (hosted externally) Resolution: at least 700 × 400. Add more entries to the 'gallery' array if necessary>",
         "description": "<Description for the promotional image"
