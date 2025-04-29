@@ -37,13 +37,18 @@
     "website": "https://metacube.games/",
     "careers": "mailto:contact@metacube.games",
     "twitter": "https://x.com/MetacubeGames",
+    "telegram": "",
     "discord": "https://discord.gg/3Ka4jACr7b",
     "github": "https://github.com/metacube-games",
-    "youtube": "https://www.youtube.com/@metacube8650"
+    "youtube": "https://www.youtube.com/@metacube8650",
+    "medium": "",
+    "mirror": ""
+
   },
   "twitterName": "MetacubeGames",
   "teamInfo": {
     "contactEmail": "contact@metacube.games",
+    "founded": "2025-04-05T00:00:00.000Z",
     "anonymous": false
   },
   "tokens": [],
