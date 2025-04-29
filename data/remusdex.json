@@ -41,8 +41,8 @@
     "anonymous": true 
   },
   "media": {
-    "logoUrl": "/dapps/remusdex/dappname-logo RemusDEX.png",
-    "bannerUrl": "/dapps/remusdex/dappname-banner RemusDEX.png",
-    "previewUrl": "/dapps/remusdex/dappname-preview RemusDEX.png"
+    "logoUrl": "/dapps/remusdex/remusdex-logo.png",
+    "bannerUrl": "/dapps/remusdex/remusdex-banner.png",
+    "previewUrl": "/dapps/remusdex/remusdex-preview.png"
   }
 }
