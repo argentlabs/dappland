@@ -21,10 +21,12 @@
     },
     "twitterName": "Oneramp",
     "teamInfo": {
+      "contactEmail": "",
       "founded": "2024-10-10T00:00:00.000Z",
       "anonymous": false
     },
     "tokens": [],
+    "nft" : {},
     "media": {
       "logoUrl": "/dapps/oneramp/oneramp-logo.png",
       "bannerUrl": "/dapps/oneramp/oneramp-banner.png",
