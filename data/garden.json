@@ -1,0 +1,47 @@
+{
+    "name": "Garden",
+    "description": "Garden is the fastest Bitcoin bridge, enabling cross-chain Bitcoin swaps in as little as 30 seconds. It is built using an intents-based architecture with trustless settlements, ensuring zero custody risk for the users.",
+    "tags": [
+        "bridge"
+    ],
+    "contracts": [
+        {
+            "name": "WBTC",
+            "address": "0x7defd8eb3b770005ab1ca5f89ad31f98fb5bc3c52deaeafd130be3b49f967b4"
+        }
+    ],
+    "sepoliaContracts": [
+        {
+            "name": "WBTC",
+            "address": "0x06579d255314109429a4477d89629bc2b94f529ae01979c2f8014f9246482603"
+        }
+    ],
+    "audits": [],
+    "verified": false,
+    "dotm": false,
+    "links": {
+        "website": "https://garden.finance/",
+        "twitter": "https://x.com/intent/follow?screen_name=garden_finance",
+        "discord": "https://discord.com/invite/kqMBgeAKAh",
+        "github": "https://github.com/gardenfi"
+    },
+    "twitterName": "garden_finance",
+    "teamInfo": {
+        "contactEmail": "pankaj@hashira.io",
+        "anonymous": true
+    },
+    "tokens": [
+        {
+            "address": "0x7defd8eb3b770005ab1ca5f89ad31f98fb5bc3c52deaeafd130be3b49f967b4",
+            "symbol": "WBTC"
+        }
+    ],
+    "nft": {},
+    "media": {
+        "logoUrl": "/dapps/garden/daaplandlogo.webp",
+        "bannerUrl": "/dapps/garden/daaplandbannercut.webp",
+        "previewUrl": "/dapps/garden/daaplandl.webp",
+        "videoUrl": "https://x.com/i/status/1917202592058183837",
+        "gallery": []
+    }
+}
