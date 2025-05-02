@@ -1,6 +1,7 @@
 {
     "name": "Garden",
     "description": "Garden is the fastest Bitcoin bridge, enabling cross-chain Bitcoin swaps in as little as 30 seconds. It is built using an intents-based architecture with trustless settlements, ensuring zero custody risk for the users.",
+    "short_description": "",
     "tags": [
         "Bridge",
         "DeFi",
@@ -25,7 +26,12 @@
         "website": "https://garden.finance/",
         "twitter": "https://x.com/intent/follow?screen_name=garden_finance",
         "discord": "https://discord.com/invite/kqMBgeAKAh",
-        "github": "https://github.com/gardenfi"
+        "github": "https://github.com/gardenfi",
+        "careers": "",
+        "telegram": "",
+        "youtube": "",
+        "medium": "",
+        "mirror": ""
     },
     "twitterName": "garden_finance",
     "teamInfo": {
@@ -33,6 +39,8 @@
         "founded": "2023",
         "anonymous": true
     },
+    "tokens": [
+    ],
     "nft": {},
     "media": {
         "logoUrl": "/dapps/garden/daaplandlogo.webp",
