@@ -1,0 +1,101 @@
+{
+  "name": "Coloniz",
+  "description": "Coloniz is a framework that makes it easy to design and execute unique community experiences for hundreds of niches and use cases.\nWith Coloniz, you own the entire community engine, from engagements, to support, to monetization, and so much more.",
+  "short_description": "Stop renting your audience — own, grow, and monetize your community with Coloniz.",
+  "tags": ["Social", "Infrastructure"],
+  "contracts": [
+    {
+      "name": "COLONIZ_HUB",
+      "address": "0x56977e22ad4751ea5b3df958da3080971c7f26036127452b98c154fbea86d06"
+    },
+    {
+      "name": "COLONIZ_NFT_CONTRACT",
+      "address": "0x514071685ff87aa9867599069d6d8808342f3b7bcd540fafb3c013b9eb3c716"
+    },
+    {
+      "name": "TOKEN_BOUND_ACCOUNT_REGISTRY_HASH",
+      "address": "0x002cbf50931c7ec9029c5188985ea5fa8aedc728d352bde12ec889c212f0e8b3"
+    },
+    {
+      "name": "TOKEN_BOUND_ACCOUNT_IMPLEMENTATION_HASH",
+      "address": "0xbe8863311f24317dff8af16deb1285ec5b035e57cf9beda545c341c339b925"
+    },
+    {
+      "name": "HANDLES_CONTRACT",
+      "address": "0x5cc4644374e3f91b52cfe64937dacaec91b2d81fe2f146a860ab5b3bb751ce8"
+    },
+    {
+      "name": "TOKEN_BOUND_ACCOUNT_REGISTRY",
+      "address": "0x755064b6e9a68d7c5b7dbed7bbdb23404603e08d67b44a0f97589addfd8ae27"
+    },
+    {
+      "name": "HANDLE_REGISTRY",
+      "address": "0x79914426e3cc5336c479ee87770380ceeda4b60496657e70c3ee7d57a992226"
+    },
+    {
+      "name": "TOKENBOUND_PROXY",
+      "address": "0x430d7262fb9ad2c830d793471c3a07e08afe54f9a5f0d28db48712bc918f5f"
+    }
+  ],
+  "sepoliaContracts": [
+    {
+      "name": "COLONIZ_HUB",
+      "address": "0x04bd89ef797c5a34a3c8bcc9dafca270959d9edcd568ea22a2364ffb3af959f0"
+    },
+    {
+      "name": "COLONIZ_NFT_CONTRACT",
+      "address": "0x036053a7520d7ff5cb1ce8ebec7acaf8b6364130865662937ab1e2a36d4e00c1"
+    },
+    {
+      "name": "TOKEN_BOUND_ACCOUNT_REGISTRY_HASH",
+      "address": "0x29d2a1b11dd97289e18042502f11356133a2201dd19e716813fb01fbee9e9a4"
+    },
+    {
+      "name": "TOKEN_BOUND_ACCOUNT_IMPLEMENTATION_HASH",
+      "address": "0x02d365a9e93fb1a87e5b5f8b69091d71b222b1a20873fb40ce956846f4b7048b"
+    },
+    {
+      "name": "HANDLES_CONTRACT",
+      "address": "0x41f87c7b00c3fb50cc7744f896f2d3438414be33912bd24f17318c9f48523a1"
+    },
+    {
+      "name": "TOKEN_BOUND_ACCOUNT_REGISTRY",
+      "address": "0x41f87c7b00c3fb50cc7744f896f2d3438414be33912bd24f17318c9f48523a1"
+    },
+    {
+      "name": "HANDLE_REGISTRY",
+      "address": "0x0122223d4da13bd2854b606079cf6016c7e4b20d67236fd740ab1713c43e8919"
+    },
+    {
+      "name": "TOKENBOUND_PROXY",
+      "address": "0x6b4920765fec19419c6e93ae1ac43d45d2ba397ec4d0f15579cf71dd8d8d460"
+    }
+  ],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://coloniz.xyz/",
+    "careers": "",
+    "twitter": "https://x.com/colonizxyz",
+    "telegram": "",
+    "discord": "",
+    "github": "https://github.com/horuslabsio",
+    "youtube": "https://www.youtube.com/@horuslabs",
+    "medium": "https://medium.com/@horuslabsio",
+    "mirror": "",
+    "coloniz": "https://community.coloniz.xyz"
+  },
+  "twitterName": "Coloniz",
+  "teamInfo": {
+    "contactEmail": "contact@horuslabs.co",
+    "founded": "2024-01-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "media": {
+    "logoUrl": "/dapps/dapp-coloniz-logo.png",
+    "bannerUrl": "/dapps/dapp-coloniz-banner.png",
+    "previewUrl": "/dapps/dapp-coloniz-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
