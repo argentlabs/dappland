@@ -1,0 +1,39 @@
+{
+  "name": "Owlto Finance",
+  "description": "Owlto Finance is a decentralized cross-rollup bridge that focuses on L2, providing 'safe, fast, cheap, and easy-to-use' services",
+  "short_description": "Decentralized cross-rollup bridge focused on L2",
+  "tags": ["Bridges"], 
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [
+    {
+      "name": "Beosin Audit",
+      "url": "https://docs.owlto.finance/security"
+    }
+  ],
+  "verified": false, 
+  "dotw": false, 
+  "links": {
+    "website": "https://owlto.finance",
+    "careers": "",
+    "twitter": "https://twitter.com/Owlto_Finance",
+    "telegram": "",
+    "discord": "https://discord.gg/dyArfVwdxm",
+    "github": "https://github.com/owlto-finance/",
+    "youtube": "",
+    "medium": "https://owlto-finance.medium.com/",
+    "mirror": ""
+  },
+  "twitterName": "Owlto_Finance",
+  "teamInfo": {
+    "founded": "2023-03-01T00:00:00.000Z",
+    "anonymous": true 
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/owltofinance/dapp-icon-owlto.png",
+    "bannerUrl": "/dapps/owltofinance/dapp-header-owlto.png",
+    "previewUrl": "/dapps/owltofinance/dapp-preview-owlto.png",
+    "gallery": []
+  }
+}
