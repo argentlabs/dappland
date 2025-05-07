@@ -1,0 +1,38 @@
+{
+  "name": "StarkExport",
+  "description": "StarkExport makes it easy to Starknet transactions to different table formats like CSV, XLS, TXT, HTML, JSON, ODS, XML",
+  "short_description": "Export Starknet transactions",
+  "tags": [
+    "Infrastructure"
+  ],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://starkexport.xyz",
+    "careers": "",
+    "twitter": "",
+    "telegram": "",
+    "discord": "",
+    "github": "https://github.com/mylastwanto/StarkExport",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "",
+  "teamInfo": {
+    "contactEmail": "lastwanto@gmail.com",
+    "founded": "2023-10-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/starkexport/starkexport-logo.jpg",
+    "bannerUrl": "/dapps/starkexport/starkexport-banner.png",
+    "previewUrl": "/dapps/starkexport/starkexport-preview.jpg",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
