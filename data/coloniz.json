@@ -71,6 +71,7 @@
       "address": "0x6b4920765fec19419c6e93ae1ac43d45d2ba397ec4d0f15579cf71dd8d8d460"
     }
   ],
+  "audits": [],
   "verified": false,
   "dotm": false,
   "links": {
@@ -82,8 +83,7 @@
     "github": "https://github.com/horuslabsio",
     "youtube": "https://www.youtube.com/@horuslabs",
     "medium": "https://medium.com/@horuslabsio",
-    "mirror": "",
-    "coloniz": "https://community.coloniz.xyz"
+    "mirror": ""
   },
   "twitterName": "Coloniz",
   "teamInfo": {
@@ -91,10 +91,12 @@
     "founded": "2024-01-01T00:00:00.000Z",
     "anonymous": false
   },
+  "tokens": [],
+  "nft" : {},
   "media": {
-    "logoUrl": "/dapps/dapp-coloniz-logo.png",
-    "bannerUrl": "/dapps/dapp-coloniz-banner.png",
-    "previewUrl": "/dapps/dapp-coloniz-preview.png",
+    "logoUrl": "/dapps/coloniz/dapp-coloniz-logo.png",
+    "bannerUrl": "/dapps/coloniz/dapp-coloniz-banner.png",
+    "previewUrl": "/dapps/coloniz/dapp-coloniz-preview.png",
     "videoUrl": "",
     "gallery": []
   }
