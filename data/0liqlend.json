@@ -1,6 +1,6 @@
 {
-  "name": "0LiqLend",
-  "description": "0LiqLend is a peer-to-peer yield marketplace where sophisticated borrowers compete to offer the best fixed/variable yield for unsophisticated/passive lenders",
+  "name": "FixedLend",
+  "description": "FixedLend is a peer-to-peer yield marketplace where sophisticated borrowers compete to offer the best fixed/variable yield for unsophisticated/passive lenders",
   "short_description": "Peer-to-peer lending platform on Starknet",
   "tags": ["DeFi", "Infrastructure"],
   "contracts": [
@@ -16,7 +16,7 @@
   "verified": false,
   "dotm": false,
   "links": {
-    "website": "https://0LiqLend.com",
+    "website": "https://FixedLend.com",
     "careers": "",
     "twitter": "https://twitter.com/0LiqLend",
     "telegram": "",
@@ -26,7 +26,7 @@
     "medium": "",
     "mirror": ""
   },
-  "twitterName": "0LiqLend",
+  "twitterName": "FixedLend",
   "teamInfo": {
     "contactEmail": "",
     "founded": "2024-05-01T00:00:00.000Z",
@@ -36,9 +36,9 @@
   "nft": {
   },
   "media": {
-    "logoUrl": "/dapps/0liqlend/0liqlend-logo.jpg",
-    "bannerUrl": "/dapps/0liqlend/0liqlend-banner.jpg",
-    "previewUrl": "/dapps/0liqlend/0liqlend-preview.png",
+    "logoUrl": "/dapps/0LiqLend/FixedLend-logo.jpg",
+    "bannerUrl": "/dapps/0LiqLend/FixedLend-banner.jpg",
+    "previewUrl": "/dapps/0LiqLend/FixedLend-preview.png",
     "videoUrl": "",
     "gallery": []
   }
