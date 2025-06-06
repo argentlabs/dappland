@@ -1,0 +1,49 @@
+{
+  "name": "Forge Yields",
+  "description": "ForgeYields is a cross-chain yield aggregator that curates the most performant strategies across DeFi. Deposit from any chain, mint a yield-bearing token, and let Forge allocate across the best opportunities—whether it's LSTs, LRTs, stablecoins, LPs, or incentive-driven farms. Auto-compounded. Risk-aware. Zero friction.",
+  "short_description": "ForgeYields finds the best DeFi yield across chains—automatically. One click in, optimized returns out.",
+  "tags": [
+    "DeFi"
+  ],
+  "contracts": [
+    {
+      "name": "Forge ETH Token gateway",
+      "address": "0x030bbf27c4e9e698dfb5c8df4efe712985444603c7f721144416227bfd7c10c5"
+    }
+  ],
+  "sepoliaContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://app.forgeyields.com/",
+    "twitter": "<https://x.com/ForgeYields",
+    "telegram": "https://t.me/+o7B0qr0O7j4zOThk",
+    "github": "https://github.com/ForgeYields",
+    "careers": "",
+    "discord": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "ForgeYields",
+  "teamInfo": {
+    "contactEmail": "forgeyields@gmail.com",
+    "founded": "2025-03-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [
+    {
+      "address": "0x030bbf27c4e9e698dfb5c8df4efe712985444603c7f721144416227bfd7c10c5",
+      "symbol": "fETH"
+    }
+  ],
+  "nft": {},
+  "media": {
+    "logoUrl": "/dapps/forgeyields/forgeyields-logo.jpg",
+    "bannerUrl": "/dapps/forgeyields/forgeyields-banner.jpg",
+    "previewUrl": "/dapps/forgeyields/forgeyields-preview.jpg",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
