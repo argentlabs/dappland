@@ -30,7 +30,7 @@ const DesktopMenu = ({ currentTheme, setTheme }: DesktopMenuProps) => {
     <div className="hidden lg:block bg-white dark:bg-light-black">
       <AnnouncementBar>
         The best Starknet Dapps. Built by{" "}
-        <a href="https://www.argent.xyz/?utm_source=dappland">Argent</a>
+        <a href="https://www.ready.co/?utm_source=dappland">Ready</a>
       </AnnouncementBar>
       <div className="relative w-full flex justify-between items-center pr-6 border-t border-b border-border-grey dark:border-white/10">
         <div className="absolute w-full h-full flex justify-center items-center">
