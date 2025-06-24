@@ -27,12 +27,12 @@ const Home = () => {
 
         <p className="my-4">
           This is the privacy policy (&quot;Privacy Policy”) for dappland.com
-          (&quot;Dappland”) operated by ARGENT LABS LIMITED, company
-          registration number 11093638, with its registered office address at 5
-          New Street Square, London, England, EC4A 3TW (&quot;our”, &quot;we”,
-          or &quot;Argent”). Argent is the controller of your personal data
-          collected through Dappland and we are committed to protecting and
-          respecting your privacy.
+          (&quot;Dappland”) operated by ARGENT LABS LIMITED, doing business as
+          “Ready”, company registration number 11093638, with its registered
+          office address at 5 New Street Square, London, England, EC4A 3TW
+          (&quot;our”, &quot;we”, or &quot;Ready). Ready is the controller of
+          your personal data collected through Dappland and we are committed to
+          protecting and respecting your privacy.
         </p>
 
         <h3 className="text-[24px] font-bold mt-[32px]">1. Introduction</h3>
@@ -87,8 +87,8 @@ const Home = () => {
           anyone under the age of 18 and we do not knowingly collect data
           relating to children. If you believe we have collected personal
           information about your child, you may contact us at{" "}
-          <a href="mailto:legal@argent.xyz" className="text-pink">
-            legal@argent.xyz
+          <a href="mailto:legal@ready.co" className="text-pink">
+            legal@ready.co
           </a>{" "}
           and request that we remove information about them.
         </p>
@@ -174,8 +174,8 @@ const Home = () => {
         <p className="my-4">
           If you want to update the information you have previously given to us,
           you can contact us at{" "}
-          <a href="mailto:legal@argent.xyz" className="text-pink">
-            legal@argent.xyz
+          <a href="mailto:legal@ready.co" className="text-pink">
+            legal@ready.co
           </a>
           .
         </p>
@@ -267,7 +267,7 @@ const Home = () => {
             or buyer of such business or assets;
           </li>
           <li className="mb-2">
-            if Argent or substantially all of its assets are acquired by a third
+            if Ready or substantially all of its assets are acquired by a third
             party, in which case personal information held by us about our
             customers will be one of the transferred assets; or
           </li>
@@ -349,13 +349,13 @@ const Home = () => {
 
         <h3 className="text-[24px] font-bold mt-[32px]">5. Security</h3>
         <p className="my-4">
-          Argent takes the protection of your information very seriously. We
-          have put in place appropriate physical, electronic and managerial
-          security measures to prevent your personal data from being
-          accidentally lost, used or accessed in an unauthorised way, altered or
-          disclosed, including use of secure servers, passwords and industry
-          standard encryption for data both in transit and at rest (for data in
-          transit we use up-to-date versions of SSL and for data at rest we use
+          Ready takes the protection of your information very seriously. We have
+          put in place appropriate physical, electronic and managerial security
+          measures to prevent your personal data from being accidentally lost,
+          used or accessed in an unauthorised way, altered or disclosed,
+          including use of secure servers, passwords and industry standard
+          encryption for data both in transit and at rest (for data in transit
+          we use up-to-date versions of SSL and for data at rest we use
           AES-256).
         </p>
         <p className="my-4">
@@ -403,8 +403,8 @@ const Home = () => {
           By submitting your personal information, you agree to this transfer,
           storing or processing. If you would like more information about the
           mechanism via which your personal data is transferred please contact{" "}
-          <a href="mailto:legal@argent.xyz" className="text-pink">
-            legal@argent.xyz
+          <a href="mailto:legal@ready.co" className="text-pink">
+            legal@ready.co
           </a>
           .
         </p>
@@ -597,8 +597,8 @@ const Home = () => {
           If you have any queries regarding this Privacy Policy, if you wish to
           exercise any of your rights set out above or if you think that the
           Privacy Policy has not been followed, please contact us by emailing at{" "}
-          <a href="mailto:legal@argent.xyz" className="text-pink">
-            legal@argent.xyz
+          <a href="mailto:legal@ready.co" className="text-pink">
+            legal@ready.co
           </a>
           .
         </p>

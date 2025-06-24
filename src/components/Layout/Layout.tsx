@@ -75,7 +75,7 @@ export const Layout = ({
           <meta name="twitter:description" content={description} />
         )}
         {image && <meta name="twitter:image" content={image} />}
-        <meta name="twitter:site" content="@argentHQ" />
+        <meta name="twitter:site" content="@ready_co" />
 
         <link
           rel="apple-touch-icon"

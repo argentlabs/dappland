@@ -27,9 +27,9 @@ const Home = () => {
         <p>
           The dapps accessible via dappland.com are presented for informational
           purposes only and their inclusion does not constitute an endorsement
-          or validation by Argent. Argent has not audited the dapps and bears no
+          or validation by Ready. Ready has not audited the dapps and bears no
           responsibility for their legality, security, reliability or otherwise.
-          Your use of any dapps and dappland.com is at your own risk and Argent
+          Your use of any dapps and dappland.com is at your own risk and Ready
           will not be responsible to you for any losses you suffer as a result
           of your use.
         </p>

@@ -1,7 +1,7 @@
 <div align="center">
     <img src="./src/assets/logo-dappland.gif" alt="Dappland logo animated"width=400 alt="dappland-logo" />
     <h4>The home for all dapps in the Starknet ecosystem</h4>
-    <p>Built with ❤️ by <a style="text-decoration: underline; color:black" href="https://argent.xyz">Argent</p>
+    <p>Built with ❤️ by <a style="text-decoration: underline; color:black" href="https://ready.co">Ready</p>
 </div>
 
 [![Node.js CI](https://github.com/argentlabs/dappland/actions/workflows/deploy.yml/badge.svg)](https://github.com/argentlabs/dappland/actions/workflows/deploy.yml)
@@ -10,7 +10,7 @@
 
 Visit <a href="https://dappland.com"><b>Dappland</b></a> to explore the most influential dapps in the Starknet ecosystem.
 
-To use them, download <a href="https://github.com/argentlabs/argent-x"><b>Argent X</b></a>, the only open source wallet for Starknet
+To use them, download <a href="https://github.com/argentlabs/argent-x"><b>Ready Wallet</b></a>, the only open source wallet for Starknet
 
 <div align="center">
     <a href="https://chrome.google.com/webstore/detail/argent-x-starknet-wallet/dlcobpjiigpikoobohmabehhmhfoodbb">

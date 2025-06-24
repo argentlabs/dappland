@@ -1,5 +1,5 @@
 {
-  "name": "Argent Portfolio",
+  "name": "Ready Portfolio",
   "description": "Meet Portfolio. The all-in-one solution for managing your Starknet assets. With Portfolio, you can wave goodbye to fragmented account management. Connect multiple wallets, track your assets, monitor DeFi positions. If you're a Starknet power user, Portfolio is exactly what you've been looking for.",
   "short_description": "Manage your Starknet assets",
   "tags": ["DeFi", "Games", "NFTs", "Social", "DAOs"],
@@ -9,9 +9,9 @@
   "verified": false,
   "dotm": false,
   "links": {
-    "website": "https://portfolio.argent.xyz/?utm_source=dappland",
-    "careers": "https://www.argent.xyz/careers/",
-    "twitter": "https://twitter.com/argentHQ",
+    "website": "https://portfolio.ready.co/?utm_source=dappland",
+    "careers": "https://www.ready.co/careers/",
+    "twitter": "https://twitter.com/ready_co",
     "telegram": "",
     "discord": "https://discord.com/invite/GWSyrHg",
     "github": "https://github.com/argentlabs",
@@ -19,7 +19,7 @@
     "medium": "",
     "mirror": ""
   },
-  "twitterName": "argentHQ",
+  "twitterName": "Ready",
   "teamInfo": {
     "contactEmail": "<Email address>",
     "founded": "2018-01-01T00:00:00.000Z",

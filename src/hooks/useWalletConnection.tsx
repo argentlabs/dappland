@@ -25,7 +25,7 @@ export const useWalletConnection = (): UseWalletConnectionProps => {
       try {
         const { wallet } = await connect({
           modalMode: "neverAsk",
-          webWalletUrl: "https://web.argent.xyz",
+          webWalletUrl: "https://web.ready.co",
         })
         if (wallet && wallet.isConnected) {
           setConnectedWallet(wallet)
@@ -42,7 +42,7 @@ export const useWalletConnection = (): UseWalletConnectionProps => {
   const connectWallet = async () => {
     try {
       const { wallet } = await connect({
-        webWalletUrl: "https://web.argent.xyz",
+        webWalletUrl: "https://web.ready.co",
       })
       if (wallet && wallet.isConnected) {
         setConnectedWallet(wallet)
