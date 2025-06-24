@@ -113,7 +113,9 @@ const DappPageHeader = ({
           ) : (
             <div className="flex gap-10 flex-col sm:flex-row">
               <div>
-                <h3 className="font-bold text-lg mb-2">1. Install Argent X</h3>
+                <h3 className="font-bold text-lg mb-2">
+                  1. Install Ready Wallet
+                </h3>
                 <DownloadButton name={dappInfo.name} />
               </div>
               <div>

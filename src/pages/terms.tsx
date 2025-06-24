@@ -38,7 +38,7 @@ const Home = () => {
           The Site is provided on an &quot;as is&quot; and &quot;as
           available&quot; basis. Access to the Site may be suspended due to
           technical maintenance, migration or updates, or due to breakdowns or
-          constraints in relation with the operation of the Internet. Argent
+          constraints in relation with the operation of the Internet. Ready
           gives no warranty regarding the Site and to the maximum extent
           permitted by law accepts no liability for any losses you suffer as a
           result of using the Site.
@@ -48,15 +48,15 @@ const Home = () => {
           Intellectual Property Rights
         </h3>
         <p>
-          Argent is the sole owner of all intellectual property rights related
-          to the Site. Any content presently displayed or made available in the
+          Ready is the sole owner of all intellectual property rights related to
+          the Site. Any content presently displayed or made available in the
           future, such as text, logos, images, music, digital downloads, and
-          data compilations, is the property of Argent, its affiliates or its
+          data compilations, is the property of Ready, its affiliates or its
           suppliers and is protected by English and international intellectual
-          property law. Argent&apos;s names and logos are trademarks of Argent.
+          property law. Ready&apos;s names and logos are trademarks of Ready.
           Accordingly, you agree not to reproduce, represent, extract and use in
-          any way any or all of Argent&apos;s trademarks, logos, or other
-          content on the Site.
+          any way any or all of Ready&apos;s trademarks, logos, or other content
+          on the Site.
         </p>
 
         <h3 className="text-[24px] font-bold mt-[24px]">Disclaimer</h3>

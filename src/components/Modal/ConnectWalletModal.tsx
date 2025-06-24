@@ -1,4 +1,4 @@
-import argentLogo from "../../assets/argentLogo.svg"
+import readyLogo from "../../assets/ready-logo-linear.svg"
 import alert from "../../assets/icons/alert.svg"
 import Button from "../Button/Button"
 import Modal from "./Modal"
@@ -27,7 +27,7 @@ const ConnectWalletModal = ({
 }: Props) => (
   <Modal isOpen={isOpen} onClose={onClose}>
     <div className="flex flex-col items-center justify-center mt-10">
-      <Image src={argentLogo} alt="argent-logo" />
+      <Image src={readyLogo} alt="ready-logo" width={500} height={200} />
       <div className="text-[40px] leading-[40px] font-bold mt-8 text-black text-center">
         Connect and rate
       </div>
