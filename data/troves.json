@@ -1,0 +1,65 @@
+{
+  "name": "Troves",
+  "description": "Troves is a DeFi yield aggregator on Starknet that automatically invests your assets across various DeFi protocols within a given strategy to maximise your returns!",
+  "short_description": "Starknet Yield Aggregator",
+  "tags": ["DeFi", "Infrastructure"],
+  "contracts": [
+    {
+      "name": "Ekubo xSTRK/STRK",
+      "address": "0x01f083b98674bc21effee29ef443a00c7b9a500fd92cf30341a3da12c73f2324"
+    },
+    {
+      "name": "xSTRK Sensei",
+      "address": "0x07023a5cadc8a5db80e4f0fde6b330cbd3c17bbbf9cb145cbabd7bd5e6fb7b0b"
+    },
+    {
+      "name": "Vesu Fusion ETH",
+      "address": "0x05eaf5ee75231cecf79921ff8ded4b5ffe96be718bcb3daf206690ad1a9ad0ca"
+    },
+    {
+      "name": "Vesu Fusion STRK",
+      "address": "0x07fb5bcb8525954a60fde4e8fb8220477696ce7117ef264775a1770e23571929"
+    },
+    {
+      "name": "Vesu Fusion USDC",
+      "address": "0x00a858c97e9454f407d1bd7c57472fc8d8d8449a777c822b41d18e387816f29c"
+    },
+    {
+      "name": "Vesu Fusion USDT",
+      "address": "0x0115e94e722cfc4c77a2f15c4aefb0928c1c0029e5a57570df24c650cb7cec2c"
+    }
+  ],
+  "sepoliaContracts": [],
+  "audits": [
+    {
+      "name": "Troves audits",
+      "url": "https://assets.troves.fi/troves/audit_report_vesu_and_ekubo_strats.pdf"
+    }
+  ],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://www.troves.fi/?utm_source=dappland",
+    "careers": "",
+    "twitter": "https://x.com/trovesfi",
+    "telegram": "https://troves.fi/tg",
+    "discord": "",
+    "github": "https://github.com/trovesfi",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "trovesfi",
+  "teamInfo": {
+    "founded": "2024-02-10T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/troves/troves-logo.png",
+    "bannerUrl": "/dapps/troves/troves-banner.png",
+    "previewUrl": "/dapps/troves/troves-preview.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
