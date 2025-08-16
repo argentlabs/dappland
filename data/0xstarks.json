@@ -1,0 +1,61 @@
+{
+  "name": "0xStarks",
+  "description": "The Starks is a collection of 200 Wolf profile pictures stored on the blockchain as an NFT. Each of them is a unique digital collectible living on the StarkNet blockchain. Your Wolf NFT acts as a membership card and grants access to members-only benefits, the first of which is access to THE DEN, a private discord channel where the community will discuss and decide the future of the project.",
+  "short_description": "An NFT Collection of 200 Wolves",
+  "tags": ["NFTs", "Games", "DeFi"],
+  "contracts": [
+    {
+      "name": "The Starks proxy",
+      "address": "0x0485209349294398d62ad18849b8ec0940ab7fe63117fb59eba2ab7446d78394"
+    }
+  ],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://www.thestarks.art/",
+    "careers": "",
+    "twitter": "https://twitter.com/Gen0_Stark",
+    "telegram": "",
+    "discord": "http://discord.gg/S3uMh9X4su",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "The Starks",
+  "teamInfo": {
+    "founded": "2022-09-09T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "nft": {
+    "collectionContract": "0x0485209349294398d62ad18849b8ec0940ab7fe63117fb59eba2ab7446d78394",
+    "collectionLink": "https://mintsquare.io/collection/starknet/0x0485209349294398d62ad18849b8ec0940ab7fe63117fb59eba2ab7446d78394",
+    "collectionName": "The Starks",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/0xstarks/nft1.png",
+        "name": "Wolf"
+      },
+      {
+        "image_url": "/dapps/0xstarks/nft2.png",
+        "name": "Wolf"
+      },
+      {
+        "image_url": "/dapps/0xstarks/nft3.png",
+        "name": "Wolf"
+      },
+      {
+        "image_url": "/dapps/0xstarks/nft4.png",
+        "name": "Wolf"
+      }
+    ]
+  },
+  "media": {
+    "logoUrl": "/dapps/0xstarks/320x320red.png",
+    "bannerUrl": "/dapps/0xstarks/banner1920x400.png",
+    "previewUrl": "/dapps/0xstarks/banner700x400.png",
+    "gallery": []
+  }
+}
