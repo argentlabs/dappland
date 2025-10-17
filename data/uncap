@@ -1,0 +1,62 @@
+{
+  "name": "Uncap Finance",
+  "description": "BTC-backed CDP stablecoin. Deposit Bitcoin, mint USDU at your own interest rate.",
+  "short_description": "BTC-backed CDP stablecoin for Bitcoin Finance>",
+  "tags": [
+    "DeFi",
+    "Infrastructure"
+  ],
+  "contracts": [
+{
+      "name": "CollateralRegistry",
+      "address": "0x076512e6722f1891ce15ca7e7ff6514b6898872fb8e6ce881d16108e26457e90"
+    },
+    {
+      "name": "WBTC BorrowerOperations",
+      "address": "0x7346e65e80eb61cdfcc56f6f21de07b312e93fe770fb17a6e43c1950acfdbab"
+    }
+  ],
+  "sepoliaContracts": [
+  ],
+  "audits": [
+    {
+      "name": "ChainSecurity",
+      "url": "https://www.chainsecurity.com/security-audit/uncap-finance"
+    }
+  ],
+  "verified": true,
+  "dotm": false,
+  "links": {
+    "website": "https://uncap.finance/",
+    "careers": "",
+    "twitter": "https://x.com/uncapfinance",
+    "telegram": "",
+    "discord": "",
+    "github": "https://github.com/UncapLabs",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "@uncapfinance",
+  "teamInfo": {
+    "contactEmail": "antoine@uncap.finance",
+    "founded": "2025-10-07T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [
+    {
+      "address": "0x2f94539f80158f9a48a7acf3747718dfbec9b6f639e2742c1fb44ae7ab5aa04",
+      "symbol": "USDU"
+    }
+  ],
+  "nft": { 
+  },
+  "media": {
+    "logoUrl": "/dapps/uncap/uncap-logo.png",
+    "bannerUrl": "/dapps/uncap/uncap-banner.png",
+    "previewUrl": "/dapps/uncap/uncap-preview.png",
+    "videoUrl": "",
+    "gallery": [ 
+    ]
+  }
+}
