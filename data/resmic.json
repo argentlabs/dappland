@@ -1,0 +1,45 @@
+{
+  "name": "Resmic",
+  "description": "Resmic is a Decentralise, Non-Custodial, Peer-to-Peer payment infrastructure aiming to revolutionise the way businesses & individuals transact using cryptocurrencies. At its core, Resmic offers easy integration tools, ensuring 0 downtime and providing cutting-edge payment solutions. It is composed of key features such as Quick links for instantaneous crypto payments, Instant Invoicing, and a unique solution, ProlancePay, which caters specifically to freelancers ensuring trust in transactions.",
+  "short_description": "Decentralised payment infrastructure",
+  "tags": [
+    "DeFi",
+    "Infrastructure"
+  ],
+  "contracts": [
+  ],
+  "goerliContracts": [
+  ],
+  "audits": [
+  ],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://resmic.com",
+    "careers": "",
+    "twitter": "https://twitter.com/0xResmic/",
+    "telegram": "",
+    "discord": "",
+    "github": "https://github.com/0xResmic",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "0xResmic",
+  "teamInfo": {
+    "contactEmail": "aditya@resmic.com",
+    "founded": "2023-01-11T00:00:00.000Z",
+    "anonymous": true 
+  },
+  "tokens": [
+  ],
+  "nft": {
+  },
+  "media": {
+    "logoUrl": "/dapps/resmic/resmic_logo_320.png",
+    "bannerUrl": "/dapps/resmic/resmic_banner_1920_400.png",
+    "previewUrl": "/dapps/resmic/resmic_preview_700_400.png",
+    "videoUrl": "",
+    "gallery": []
+  }
+}
