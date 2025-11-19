@@ -1,0 +1,67 @@
+{
+  "name": "Sandclock",
+  "description": "The world’s first trustless wealth management platform. When you deposit to Sandclock, the contract invests your initial deposit to a predetermined strategy chosen by you, then, it automagically splits  your principal from the yield generated. You can then subdivide them however many times you want and stream your yield (or principal) to anything you want, allowing you to keep, give, invest, or allocate to another wallet or contract.",
+  "short_description": "The world’s first trustless wealth management platform.",
+  "tags": [
+    "Onramps",
+    "DeFi",
+    "NFTs",
+    "Infrastructure"
+  ],
+  "contracts": [
+    {
+      "name": "<Name of Mainnet contract 1 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
+      "address": "<Address of Mainnet contract 1>"
+    },
+    {
+      "name": "<Name of Mainnet contract 2 (remove entry in array if it doesn't apply, add more entries if there are more contracts)>",
+      "address": "<Address of Mainnet contract 2>"
+    }
+  ],
+  "goerliContracts": [],
+  "audits": [
+    {
+      "name": "Security Documentation",
+      "url": "https://docs.sandclock.org/current/security"
+    }
+  ],
+  "dotw": false,
+  "links": {
+    "website": "https://sandclock.org",
+    "careers": "https://www.sandclock.org/careers",
+    "twitter": "https://twitter.org/SandclockOrg",
+    "telegram": "",
+    "discord": "https://discord.gg/KsGxRspajU",
+    "github": "https://github.com/lindy-labs/sc_solidity-contracts",
+    "youtube": "",
+    "medium": "https://medium.com/sandclock",
+    "mirror": ""
+  },
+  "twitterName": "SandclockOrg",
+  "teamInfo": {
+    "founded": "2021-01-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [
+    {
+      "address": "0xbA8A621b4a54e61C442F5Ec623687e2a942225ef",
+      "symbol": "QUARTZ"
+    }
+  ],
+  "media": {
+    "logoUrl": "/dapps/sandclock/dapp-icon-sandclock.png Resolution: 320 × 320 pixels>",
+    "bannerUrl": "/dapps/sandclock/dapp-header-sandclock.png Resolution: 1920 × 400 pixels>",
+    "previewUrl": "/dapps/sandclock/dapp-preview-sandclock.png Resolution: 700 × 400 pixels>",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "https://1890138587-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MeLp5OA4N-EJ4pU0vqw%2Fuploads%2FJNONY6tZccIHAeqFUXdB%2Fimage.png?alt=media&token=61d17490-bc95-4be3-939a-bf0adcdce752",
+        "description": "Dashboard"
+      },
+      {
+        "url": "https://1890138587-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MeLp5OA4N-EJ4pU0vqw%2Fuploads%2FO5dB7otMdFEDtmGBA5VE%2Fimage.png?alt=media&token=29c3dd37-1c9f-4b70-a7b2-0a0b6882731c",
+        "description": "Yield Splitting"
+      }
+    ]
+  }
+}
