@@ -1,0 +1,42 @@
+{
+  "name": "OKX Wallet's DEX",
+  "description": "A multi-chain, cross-chain decentralized exchange aggregator of 300+ other DEXs and approximately 15 bridges, with 200,000+ coins and more than 20 blockchains supported.",
+  "short_description": "Cross-chain DEX",
+  "tags": [
+    "DEX",
+    "wallet",
+    "multi-chain",
+    "cross-chain",
+    "OKX",
+    "bridge",
+    "blockchain"
+  ],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://www.okx.com/web3/dex",
+    "careers": "https://www.okx.com/join-us",
+    "twitter": "https://twitter.com/okxweb3",
+    "telegram": "",
+    "discord": "https://discord.gg/okx",
+    "github": "https://www.okx.com/web3/build/docs/api/dex-introduction",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "",
+  "teamInfo": {
+    "founded": "2022-11-02T00:00:00.000Z",
+    "anonymous": false
+  },
+
+  "media": {
+    "logoUrl": "/dapps/okx/dapp-logo-okx.png",
+    "bannerUrl": "/dapps/okx/dapp-header-okx.png",
+    "previewUrl": "/dapps/okx/dapp-preview-okx.png",
+    "gallery": [{}]
+  }
+}
