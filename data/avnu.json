@@ -1,6 +1,6 @@
 {
-  "name": "AVNU",
-  "description": "AVNU is a decentralized exchange protocol designed to offer the best execution.\n\nOur mission is to build the Liquidity Infrastructure that aims to empower traders and dApps with the best execution. We believe that the only way to serve our customers is to secure the most competitive prices for them, as well as access to the broadest range of assets while providing an exceptional user experience that sets the industry standard.",
+  "name": "avnu",
+  "description": "avnu is a decentralized trading and liquidity protocol built on Starknet, designed to deliver reliable execution and a smooth user experience.\n\nOur mission is to build the Liquidity Infrastructure that powers trading and integrations across Starknet. We focus on removing friction by abstracting complexity, optimizing routing, and making everyday actions like swapping, DCA, and interacting with liquidity simpler for both users and dApps. We believe the best way to serve the ecosystem is to combine competitive pricing, broad asset access, and a product experience that feels natural to use.",
   "short_description": "Best execution on Starknet. No fluff.",
   "tags": ["DeFi", "Infrastructure"],
   "contracts": [
@@ -25,8 +25,8 @@
   ],
   "audits": [
     {
-      "name": "Nethermind audit #1",
-      "url": "https://github.com/avnu-labs/avnu-contracts-v2/blob/main/audit/Nethermind-avnu-protocol-audit.pdf"
+      "name": "Contracts & Audits",
+      "url": "https://docs.avnu.fi/resources/contracts"
     }
   ],
   "verified": false,
@@ -36,8 +36,8 @@
     "careers": "https://linktr.ee/avnu_fi",
     "twitter": "https://twitter.com/avnu_fi",
     "telegram": "https://t.me/avnu_fi",
-    "discord": "https://discord.gg/invite/avnu-fi",
-    "github": "",
+    "discord": "https://discord.com/invite/kfTV4WHpeW",
+    "github": "https://github.com/avnu-labs/avnu-contracts-v2",
     "youtube": "",
     "medium": "https://avnu-fi.medium.com/",
     "mirror": ""

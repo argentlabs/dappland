@@ -8,23 +8,36 @@
   "contracts": [
     {
       "name": "Forge ETH Token gateway",
-      "address": "0x030bbf27c4e9e698dfb5c8df4efe712985444603c7f721144416227bfd7c10c5"
+      "address": "0x050707bc3b8730022f10530c2c6f6b9467644129c50c2868ad0036c5e4e9e616"
+    },
+    {
+      "name": "Forge USDC Token gateway",
+      "address": "0x07fDcec0ceF01294C9C3D52415215949805C77bAe8003702A7928fd6D2c36BC1"
+    },
+    {
+      "name": "Forge WBTC Token gateway",
+      "address": "0x04DD39DE0a588F5e1c7A8377e1BEf2C49CAAeE49a11433429d2c48F587b3A492"
     }
   ],
   "sepoliaContracts": [],
-  "audits": [],
+  "audits": [
+    {
+      "name": "Cairo Security Clan",
+      "url": "https://github.com/Cairo-Security-Clan/Audit-Portfolio/blob/main/Forge_Yields_Audit_Report.pdf"
+    }
+  ],
   "verified": false,
   "dotm": false,
   "links": {
     "website": "https://app.forgeyields.com/",
-    "twitter": "<https://x.com/ForgeYields",
+    "twitter": "https://x.com/ForgeYields",
     "telegram": "https://t.me/+o7B0qr0O7j4zOThk",
     "github": "https://github.com/ForgeYields",
     "careers": "",
-    "discord": "",
     "youtube": "",
     "medium": "",
-    "mirror": ""
+    "mirror": "",
+    "discord": "https://discord.com/invite/cgRCuHtqGy"
   },
   "twitterName": "ForgeYields",
   "teamInfo": {
@@ -32,12 +45,7 @@
     "founded": "2025-03-01T00:00:00.000Z",
     "anonymous": false
   },
-  "tokens": [
-    {
-      "address": "0x030bbf27c4e9e698dfb5c8df4efe712985444603c7f721144416227bfd7c10c5",
-      "symbol": "fETH"
-    }
-  ],
+  "tokens": [],
   "nft": {},
   "media": {
     "logoUrl": "/dapps/forgeyields/forgeyields-logo.jpg",
