@@ -1,0 +1,43 @@
+{
+  "name": "IP Creator",
+  "description": "",
+  "short_description": "Zero Fees Programmable IP for the Integrity Web",
+  "tags": ["NFT", "Infrastructure"],
+  "contracts": [
+    {
+      "name": "Mediolano Protocol: IP Collections",
+      "address": ""
+    }
+  ],
+  
+  "audits": [
+    {
+      "name": "",
+      "url": ""
+    }
+  ],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://mediolano.app",
+    "careers": "https://mediolano.xyz/contact/",
+    "twitter": "https://twitter.com/mediolanoapp",
+    "telegram": "https://t.me/integrityweb",
+    "discord": "",
+    "github": "https://github.com/mediolano-app/mediolano-app",
+    "youtube": "https://www.youtube.com/@Mediolano-app",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "mediolanoapp",
+  "teamInfo": {
+    "founded": "2024-10-01T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/ip-creator/dapp-icon-ip-creator.png",
+    "bannerUrl": "/dapps/ip-creator/dapp-header-ip-creator.png",
+    "previewUrl": "/dapps/ip-creator/dapp-preview-ip-creator.png",
+  }
+}
