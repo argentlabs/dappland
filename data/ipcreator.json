@@ -1,6 +1,6 @@
 {
   "name": "IP Creator",
-  "description": "",
+  "description": "IP Creator permissionless dapp by Mediolano empowers creators, ai agents and organizations with zero-fee platform and protocol for tokenizing and licensing intellectual property, powered on Starknet. With IP Creator tokenization creative works, rwa, data and other IP is protected with the Berne Convention, a global framework across 181 countries. Mediolano generates immutable and decentralized IP NFT digital assets that can be remixed, shared, traded and generate new revenue streams",
   "short_description": "Zero Fees Programmable IP for the Integrity Web",
   "tags": ["NFT", "Infrastructure"],
   "contracts": [
