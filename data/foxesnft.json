@@ -1,0 +1,55 @@
+{
+  "name": "<Foxes NFT>",
+  "description": "<500 free NFTs created to increase community interaction in the Starknet NFT ecosystem>",
+  "short_description": "<500 free NFTs >",
+  "tags": ["NFTs , DAO "], 
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false, // change to true if your contracts are verified on StarkScan
+  "dotw": false, //leave 'false'
+  "links": {
+    "website": "",
+    "careers": "",
+    "twitter": "https://twitter.com/foxesnftt",
+    "telegram": "",
+    "discord": "",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "Foxesnftt",
+  "teamInfo": {
+    "founded": "Founding date of the project. EXAMPLE: 2022-05-24T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "nft": {
+    "collectionContract": "<Address of the NFT contract you wish to showcase>",
+    "collectionLink": "<https url for link to view full collection>",
+    "collectionName": "<Name of NFT collection>",
+    "collectionPreview": [
+      {
+        "image_url": "/dapps/yourdappname/collection-nft-01.[png, jpg, webp or svg]",
+        "name": "<NFT name and/or number>"
+      },
+      {
+        "image_url": "/dapps/yourdappname/collection-nft-02.[png, jpg, webp or svg]",
+        "name": "<NFT name and/or number>"
+      }
+    ]
+  },
+  "media": {
+    "logoUrl": "/dapps/foxesnft/dapp-icon-foxesnft.jpg",
+    "bannerUrl": "/dapps/foxesnft/dapp-header-foxesnft.jpg",
+    "previewUrl": "/dapps/foxesnft/dapp-preview-foxesnft.jpg",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "<URL for a promotional image or screenshots of the dapp (hosted externally) Resolution: at least 700 × 400. Add more entries to the 'gallery' array if necessary>",
+        "description": "<Desciption for the promotional image"
+      }
+    ]
+  }
+}
