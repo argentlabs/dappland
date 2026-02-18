@@ -1,0 +1,35 @@
+{
+  "name": "Glass Wallet",
+  "description": "The wallet operates as a virtual machine that simulates a cold wallet, integrating navigation and transactions within an autonomous system to mitigate hacking risks in managed accounts."
+  "short_description": "Virtual Wallet for Starknet",
+  "tags": ["Infrastructure"],
+  "contracts": [],
+  "goerliContracts": [],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://www.gwallet.cloud",
+    "careers": "",
+    "twitter": "https://twitter.com/mrwad3001",
+    "telegram": "",
+    "discord": "",
+    "github": "https://github.com/ifilex/GlassWallet",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "mrwad3001",
+  "teamInfo": {
+    "founded": "2022-011-05T00:00:00.000Z",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/gwallet/320x320-gwallet.png",
+    "bannerUrl": "/dapps/gwallet/1920x400-gwallet.png",
+    "previewUrl": "/dapps/gwallet/700x400-gwallet.png",
+    "videoUrl": "",
+    "gallery": ""
+  }
+}
