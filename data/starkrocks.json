@@ -1,0 +1,31 @@
+{
+  "name": "StarkRocks",
+  "description": "444 OG Rocks of Starknet",
+  "short_description": "Rocks of Starknet",
+  "tags": ["NFTs"],
+  "audits": [],
+  "contracts": [
+    {
+      "name": "StarkRock",
+      "address": "0x012f8e318fe04a1fe8bffe005ea4bbd19cb77a656b4f42682aab8a0ed20702f0"
+    }
+  ],
+  "dotw": false,
+  "links": {
+    "website": "https://starknet.rocks/",
+    "discord": "https://discord.gg/starkrocks",
+    "twitter": "https://twitter.com/StarkNetRocks"
+  },
+  "twitterName": "StarkNetRocks",
+  "teamInfo": {
+    "founded": "2022-12-05T00:00:00.000z",
+    "anonymous": "true"
+  },
+  "verified": true,
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/earlystarkers/dapp-logo-earlystarkers.png",
+    "bannerUrl": "/dapps/earlystarkers/dapp-banner-earlystarkers.png",
+    "previewUrl": "/dapps/earlystarkers/dapp-preview-earlystarkers.png"
+  }
+}
