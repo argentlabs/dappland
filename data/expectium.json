@@ -1,0 +1,92 @@
+{
+  "name": "Expectium",
+  "description": "Expectium is an information markets platform that lets you trade on the world's most highly-debated topics (e.g. politics, economics, current events and more.) . On Expectium, you trade shares like Happens or Not of these topics based on your forecasts and earn return if you are right at market resolvation.",
+  "short_description": "Decentralized Prediction Market",
+  "tags": [
+
+    "DeFi",
+    "NFTs",
+    "Social",
+    "DAOs"
+
+  ], 
+  "contracts": [
+    {
+      "name": "",
+      "address": ""
+    },
+    {
+      "name": "",
+      "address": ""
+    }
+  ],
+  "goerliContracts": [
+    {
+      "name": "STARKNET AIRDROP CONTRACT",
+      "address": "0x040fe04a56d0515c5a95e52c1bb68aa1dc2bdb0a64a2586edaec4ef498148f32"
+    },
+    {
+      "name": "BTC OVER 35K CONTRACT",
+      "address": "0x05a9cee499caeb7da735a1f43010741d3e4bd1d04cd8008aa6829953b2a605b4"
+    }
+  ],
+  "audits": [
+
+  ],
+  "verified": false, 
+  "dotw": false, 
+  "links": {
+    "website": "https://expectium.io/",
+    "careers": "",
+    "twitter": "https://twitter.com/expectiumio",
+    "telegram": "",
+    "discord": "https://discord.gg/tdFqsbP4U9",
+    "github": "",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "expectiumio",
+  "teamInfo": {
+    "contactEmail": "expectiumprotocol@gmail.com", 
+    "founded": "2023-05-01T00:00:00.000Z",
+    "anonymous": true // If at least one of the founders has a public profile with their real name linked to the project, set this to true.
+  },
+  "tokens": [
+    {
+      "address": "",
+      "symbol": ""
+    }
+  ],
+  "nft": {
+    "collectionContract": "",
+    "collectionLink": "",
+    "collectionName": "",
+    "collectionPreview": [
+      {
+        "image_url": "",
+        "name": ""
+      },
+      {
+        "image_url": "",
+        "name": ""
+      }
+    ]
+  },
+  "media": {
+    "logoUrl": "/dapps/expectium/expectium-logo.jpg Resolution: 320 × 320 pixels>",
+    "bannerUrl": "/dapps/expectium/expectium-banner.webp Resolution: 1920 × 400 pixels>",
+    "previewUrl": "/dapps/expectium/expectium-preview.webp Resolution: 700 × 400 pixels>",
+    "videoUrl": "<URL for a video of the dapp (hosted externally)>",
+    "gallery": [
+      {
+        "url": "/dapps/expectium/expectium-01.jpg",
+        "description": "Expectium is a prediction market on Starknet"
+      },
+      {
+        "url": "/dapps/expectium/expectium-02.jpg",
+        "description": "Expectium Prediction Pools"
+      }
+    ]
+  }
+}
