@@ -1,0 +1,75 @@
+{
+  "name": "disperse-starknet",
+  "description": "This dapp can assist you in disperse ERC20 tokens on the Starknet mainnet and testnet to multiple wallet addresses, similar to the Disperse dapp on Ethereum. Thanks to the multicall feature of starknetjs, you can conveniently distribute your ERC20 tokens with a single click. This DApp utilizes the Cairo 1.0 contract, so currently the contract cannot be verified in Starkscan and Voyager. The frontend of this DApp is open-source, and the contract source code is included on its GitHub page. You can deploy the contract by yourself and modify the deployment variables on the github to have your own disperse-starknet dapp.",
+  "short_description": "This dapp helps you in disperse ERC20 tokens on the StarkNet mainnet and testnet to multiple wallet addresses.",
+  "tags": [
+    "DeFi"
+  ],
+  "contracts": [
+    {
+      "address": "0x00ecbd1107cdd47d0762908f6933b75d5b96896893dbf20c399c3808410ce940"
+    }
+  ],
+  "goerliContracts": [
+    {
+      "address": "0x01cddfc8b081342199e75413caccff64f2ff7f15954267ad95152fdacf66d25b"
+    }
+  ],
+  "audits": [
+    {
+      "note": "The project is very easy and lightweight, and I can't afford audits"
+    }
+  ],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://disperse-starknet.vercel.app/",
+    "careers": "",
+    "twitter": "",
+    "telegram": "",
+    "discord": "",
+    "github": "https://github.com/Scotthamy/disperse-starknet",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "",
+  "teamInfo": {
+    "contactEmail": "hstanzhuo@gmail.com",
+    "founded": "",
+    "anonymous": true 
+  },
+  "tokens": [
+    {
+      "address": "",
+      "symbol": ""
+    }
+  ],
+  "nft": {
+    "collectionContract": "",
+    "collectionLink": "",
+    "collectionName": "",
+    "collectionPreview": [
+      {
+        "image_url": "",
+        "name": ""
+      },
+      {
+        "image_url": "",
+        "name": ""
+      }
+    ]
+  },
+  "media": {
+    "logoUrl": "/dapps/disperse-starknet/disperse-starknet-logo.png",
+    "bannerUrl": "/dapps/disperse-starknet/disperse-starknet-banner.png",
+    "previewUrl": "/dapps/disperse-starknet/disperse-starknet-preview.png",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "url": "",
+        "description": ""
+      }
+    ]
+  }
+}
