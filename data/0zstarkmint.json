@@ -1,0 +1,34 @@
+{
+  "name": "0z StarkMint",
+  "description": "With 0z StarkMint, you can create your ERC20 tokens,create liquidity and lock your liquidity to secure investors. It also provide staking as a service. Just connect your wallet, it's all set up, no dev required!",
+  "short_description": "Create Your ERC20 Token, lock your liquidity, create your staking pool on Starknet- Effortlessly!",
+  "tags": ["DeFi", "NFTs", "Infrastructure"],
+  "contracts": [],
+  "goerliContracts": ["0x061a4c53f11e29716e4c0bb28192fa03b74346a3cfdf08fcef43148b92679887","0x06a50384b5785dc4d4b1b5ea5101906bf94a9030e7932729123133942c352503"],
+  "audits": [],
+  "verified": false,
+  "dotm": false,
+  "links": {
+    "website": "https://starkmint.com/",
+    "careers": "",
+    "twitter": "https://twitter.com/starkminzor",
+    "telegram": "",
+    "discord": "",
+    "github": "https://github.com/Kuurus/starkmint",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "",
+  "teamInfo": {
+    "founded": "2023-11-30",
+    "anonymous": false
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/0zstarkmint/starkmint-starknet-logo.png",
+    "bannerUrl": "/dapps/0zstarkmint/starkmint-starknet-banner.png",
+    "previewUrl": "/dapps/0zstarkmint/starkmint-starknet-preview.png",
+    "gallery": []
+  }
+}
