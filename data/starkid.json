@@ -1,0 +1,35 @@
+{
+  "name": "StarkID",
+  "description": "StarkID is the most user-friendly decentralized naming service platform on Starknet, offering customized DIDs for users, with the suffix .stk.",
+  "short_description": "A Starknet digital naming platform",
+  "tags": ["DeFi", "DID"],
+  "contracts": [
+  ],
+  "audits": [],
+  "verified": false,
+  "dotw": false,
+  "links": {
+    "website": "https://starkid.pro",
+    "careers": "",
+    "twitter": "https://x.com/Stark_DID",
+    "telegram": "",
+    "discord": "https://discord.gg/PgqEfU8D" ,
+    "github": "https://github.com/zduiw",
+    "youtube": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "twitterName": "StarkID",
+  "teamInfo": {
+    "founded": "2022-07-01T00:00:00.000Z",
+    "anonymous": true
+  },
+  "tokens": [],
+  "media": {
+    "logoUrl": "/dapps/starkid/dapp-icon-starkgate.png",
+    "bannerUrl": "/dapps/starkid/dapp-header-starkgate.png",
+    "previewUrl": "/dapps/starkid/dapp-preview-starkgate.png",
+    "gallery": []
+  }
+}
+
