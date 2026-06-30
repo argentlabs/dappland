@@ -1,0 +1,35 @@
+{
+    "name": "YieldStark",
+    "description": "The Simplest Way to grow bitcoin on starknet - stake, swap and earn yield in one place. Yieldstark is an all-in-one Bitcoin app that enables users to earn BTC-denominated yield across DeFi protocols, swap, stake, and save securely,all in one click.",
+    "short_description": "Btcfi dApp on starknet",
+    "tags": ["Defi"],
+    "contracts": [],
+    "sepoliaContracts": [],
+    "audits": [],
+    "verified": false,
+    "dotm": false,
+    "links": {
+      "website": "https://www.yieldstark.xyz/",
+      "careers": "",
+      "twitter": "https://x.com/yieldstark",
+      "telegram": "https://t.me/+ZTV7qYFfdU43NTU0",
+      "discord": "",
+      "github": "https://github.com/yieldstark",
+      "youtube": "https://www.youtube.com/@YieldStark",
+      "medium": "",
+      "mirror": ""
+    },
+    "twitterName": "@yieldstark",
+    "teamInfo": {
+      "contactEmail": "tobilobamusic@gmail.com", 
+      "founded": "2025-04-01T00:00:00.000Z",
+      "anonymous": false
+    },
+    "tokens": [],
+    "media": {
+      "logoUrl": "/dapps/yieldstark/yieldstark-logo.png",
+      "bannerUrl": "/dapps/yieldstark/yieldstark-banner.png",
+      "previewUrl": "/dapps/yieldstark/yieldstark-preview.png",
+      "gallery": []
+    }
+  }
